@@ -37,20 +37,30 @@ import re
 
 
 #%%
-def format_prompt(section_text, dialogue):
-    # # Normalize the dialogue by removing extra whitespace and normalizing line breaks
-    # normalized_dialogue = re.sub(r'\s+', ' ', dialogue).strip()
-    
+def format_prompt(dialogue):
     return f"""
-    <section_text>
-    {section_text}
-    </section_text>
-    <dialogue>
+    Given this conversation:
     {dialogue}
-    </dialogue>
 
-    Normalize the dialogue section exactly without changing the content. Give the output in the same format as the dialogue section.
+    Task: Convert this dialogue into a clear, professional format by:
+    1. Removing filler words (um, ah, la)
+    2. Converting informal speech into clear, complete sentences
+    3. Maintaining the core meaning and intent
+    4. Using consistent speaker labels (Agent/Patient)
+    5. Making the language more direct and professional
+    
+    Rules:
+    - Keep the same turn-taking structure
+    - Preserve all important medical information
+    - Make the language more accessible
+    - Remove hesitations and repetitions
+    - Keep the same meaning but make it clearer
+
+    Format each line as:
+    Agent: [Clear professional statement]
+    Patient: [Clear response]
     """
+    
     
 #%%
 
@@ -69,18 +79,19 @@ llm = LLM(
     dtype="float16",
     gpu_memory_utilization=0.9,
     tensor_parallel_size=1,
-    max_num_batched_tokens=1024,
+    max_num_batched_tokens=4096,  # Increased to match max_model_len
     max_num_seqs=64,
-    max_model_len=8192,
+    max_model_len=4096,
 )
 
 monitor_gpu_memory("After initialization")
 
 #%%
 sampling_params = SamplingParams(
-    temperature=0.7,  # Keep low temperature for deterministic output
-    max_tokens=512,    # Further reduced since we only need a few words
-    top_p=0.95,
+    temperature=0.7,  # Increased temperature for more creative variations
+    max_tokens=1024,  # Keep max tokens high for complete responses
+    top_p=0.95,      # Increased top_p to allow more diverse outputs
+    stop=["</think>", "```"],  # Keep stop tokens to prevent unwanted output
 )
 
 #%%
@@ -90,7 +101,7 @@ def process_dialogues(df, llm, sampling_params):
     results = []
     
     for idx, row in tqdm(df.iterrows(), total=len(df)):
-        prompt = format_prompt(row['section_text'], row['dialogue'])
+        prompt = format_prompt(row['dialogue'])
         
         try:
             outputs = llm.generate(prompt, sampling_params)
@@ -117,14 +128,14 @@ def process_dialogues(df, llm, sampling_params):
 print("Starting dialogue processing...")
 results_df = process_dialogues(df, llm, sampling_params)
 
-# Save results
+#%%
 output_path = '/content/drive/MyDrive/MTSdata/normalized_dialogues.csv'
 results_df.to_csv(output_path, index=False)
 print(f"Results saved to {output_path}")
 
 # Display sample results
 print("\nSample results:")
-print(results_df.head())
+print(results_df["normalized_dialogue"][0])
 
 
 
