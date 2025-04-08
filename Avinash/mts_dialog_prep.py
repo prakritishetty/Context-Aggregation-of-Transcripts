@@ -88,10 +88,10 @@ monitor_gpu_memory("After initialization")
 
 #%%
 sampling_params = SamplingParams(
-    temperature=0.7,  # Increased temperature for more creative variations
-    max_tokens=1024,  # Keep max tokens high for complete responses
-    top_p=0.95,      # Increased top_p to allow more diverse outputs
-    stop=["</think>", "```"],  # Keep stop tokens to prevent unwanted output
+    temperature=0.3,  # Reduced temperature for more focused outputs
+    max_tokens=512,   # Reduced as we don't need as many tokens
+    top_p=0.9,
+    stop=["</think>", "```", "\n\n\n"],  # Added extra newlines as stop token
 )
 
 #%%
