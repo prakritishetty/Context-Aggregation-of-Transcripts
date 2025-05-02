@@ -39,7 +39,7 @@ class SOAPNoteEvaluator:
 
         # Embedding models
         self.sbert = SentenceTransformer("all-mpnet-base-v2", device=device)
-        self.clinbert = SentenceTransformer("emilyalsentzer/Bio_ClinicalBERT", device=device)
+        self.clinbert = SentenceTransformer("pritamdeka/S-BioBert-snli-multinli-stsb", device=device)
 
         # Entailment model
         self.entail_tokenizer = AutoTokenizer.from_pretrained("facebook/bart-large-mnli")
@@ -64,20 +64,41 @@ class SOAPNoteEvaluator:
         self.rouge = evaluate.load("rouge")
 
     # ----- Internal helpers using arbitrary contexts -----
+    # def _qa_factuality(self, contexts: List[str]) -> List[Dict[str, float]]:
+    #     out = []
+    #     for ctx, note in zip(contexts, self.generated_notes):
+    #         qs = self.qg(note)
+    #         correct = 0
+    #         total = len(qs)
+    #         for q in qs:
+    #             ans_note = self.qa(question=q['question'], context=note)
+    #             ans_ctx  = self.qa(question=q['question'], context=ctx)
+    #             if ans_note['answer'].strip().lower() == ans_ctx['answer'].strip().lower():
+    #                 correct += 1
+    #         acc = correct / total if total > 0 else 1.0
+    #         out.append({"accuracy": acc, "n_questions": total})
+    #     return out
+
     def _qa_factuality(self, contexts: List[str]) -> List[Dict[str, float]]:
-        out = []
-        for ctx, note in zip(contexts, self.generated_notes):
-            qs = self.qg(note)
-            correct = 0
-            total = len(qs)
-            for q in qs:
-                ans_note = self.qa(question=q['question'], context=note)
-                ans_ctx  = self.qa(question=q['question'], context=ctx)
-                if ans_note['answer'].strip().lower() == ans_ctx['answer'].strip().lower():
-                    correct += 1
-            acc = correct / total if total > 0 else 1.0
-            out.append({"accuracy": acc, "n_questions": total})
-        return out
+      out = []
+      for ctx, note in zip(contexts, self.generated_notes):
+          # 1) generate raw questions
+          raw_qs    = self.qg(note)
+          # 2) extract the question text
+          questions = [q["generated_text"] for q in raw_qs]
+
+          # 3) answer + compare
+          correct = 0
+          for question in questions:
+              ans_note = self.qa(question=question, context=note)["answer"]
+              ans_ctx  = self.qa(question=question, context=ctx)["answer"]
+              if ans_note.strip().lower() == ans_ctx.strip().lower():
+                  correct += 1
+
+          total = len(questions)
+          acc   = correct / total if total > 0 else 1.0
+          out.append({"accuracy": acc, "n_questions": total})
+      return out
 
     def _entailment(self, contexts: List[str]) -> List[Dict[str, float]]:
         out = []
@@ -105,7 +126,7 @@ class SOAPNoteEvaluator:
     def _clinical_relevance(self, contexts: List[str]) -> List[Dict[str, float]]:
         out = []
         for ctx, note in zip(contexts, self.generated_notes):
-            bs = self.bertscore.compute(predictions=[note], references=[ctx], model_type="emilyalsentzer/Bio_ClinicalBERT")
+            bs = self.bertscore.compute(predictions=[note], references=[ctx], model_type="allenai/scibert_scivocab_uncased")
             note_emb = self.clinbert.encode(note, convert_to_tensor=True)
             ctx_emb = self.clinbert.encode(ctx, convert_to_tensor=True)
             sim = util.pytorch_cos_sim(note_emb, ctx_emb).item()
@@ -198,7 +219,7 @@ class SOAPNoteEvaluator:
             "entail_diag": self.entailment_dialogue(),
             "halluc_diag": self.hallucination_rate_dialogue(),
             "sem_diag": self.semantic_similarity_dialogue(),
-            "clin_diag": self.clinical_relevance_dialogue(),
+            #"clin_diag": self.clinical_relevance_dialogue(),
             "structure": self.evaluate_structure()
         }
         if self.summary_notes:
@@ -206,9 +227,9 @@ class SOAPNoteEvaluator:
                 "qa_sum": self.qa_factuality_summary(),
                 "entail_sum": self.entailment_summary(),
                 "halluc_sum": self.hallucination_rate_summary(),
-                "sem_sum": self.semantic_similarity_summary(),
-                "clin_sum": self.clinical_relevance_summary()
+                "sem_sum": self.semantic_similarity_summary()
+                #"clin_sum": self.clinical_relevance_summary()
             })
-        if hasattr(openai, 'api_key') and openai.api_key:
-            res["llm"] = self.evaluate_llm()
+        # if hasattr(openai, 'api_key') and openai.api_key:
+        #     res["llm"] = self.evaluate_llm()
         return res
