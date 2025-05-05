@@ -2,7 +2,7 @@
 #    pip install datasets transformers sentence-transformers evaluate openai
 
 from datasets import load_dataset
-# from soap_note_evaluator import SOAPNoteEvaluator
+from soap_note_evaluator import SOAPNoteEvaluator
 import numpy as np
 import pandas as pd
 
@@ -12,52 +12,77 @@ def main():
     ds_all = load_dataset("ClinicianFOCUS/ACI-Bench-Refined", split="train")
 
     # number of examples you want
-    n = 1
+    n = 2
     ds = ds_all.select(range(n))
 
     # 3. Pull out the three fields:
-    dialogues       = ds["dialogue"]       # raw medical dialogue
-    summary_notes   = ds["note"]             # free-text summary (NOT SOAP)
+    dialogues = ds["dialogue"]       # raw medical dialogue
+    summary_notes = ds["note"]       # free-text summary (NOT SOAP)
     augmented_notes = ds["augmented note"]   # your generated SOAP notes
 
     # 4. Initialize the evaluator
     evaluator = SOAPNoteEvaluator(
-        dialogues       = dialogues,
-        generated_notes = augmented_notes,
-        summary_notes   = summary_notes,      # so we also evaluate vs the free-text note
-        openai_api_key  = None,  # omit or set None to skip LLM judgments
-        device          = "cpu"                  # or "cpu" if you don't have a GPU
+        dialogues=dialogues,
+        generated_notes=augmented_notes,
+        summary_notes=summary_notes,      # so we also evaluate vs the free-text note
+        openai_api_key=None,  # omit or set None to skip LLM judgments
+        device="cpu"          # or "cpu" if you don't have a GPU
     )
 
     # 5. Run every metric (dialogue-based and summary-based)
     results = evaluator.run_all()
+    
+    # 6. Convert results to a dataframe
+    df_results = create_dataframe(results, n)
+    
+    # 7. Display the dataframe
+    print(df_results)
+    
+    return df_results
 
-    # 6. Peek at a few of the results
-    print("First example, QA vs dialogue:", results["qa_diag"][0])
-    print("First example, QA vs summary :", results["qa_sum"][0] if "qa_sum" in results else "—")
-    print("First example, structure    :", results["structure"][0])
-
-    # 7. Aggregate into a DataFrame for analysis
-    df = pd.DataFrame({
-        # QA factuality
-        "qa_vs_dialogue":      [r["accuracy"] for r in results["qa_diag"]],
-        "qa_vs_summary":       [r["accuracy"] for r in results.get("qa_sum", [])],
-        # Entailment & hallucination
-        "entail_vs_dialogue":  [r["entailment_score"] for r in results["entail_diag"]],
-        "halluc_vs_dialogue":  [r["hallucination_rate"] for r in results["halluc_diag"]],
-        "entail_vs_summary":   [r["entailment_score"] for r in results.get("entail_sum", [])],
-        "halluc_vs_summary":   [r["hallucination_rate"] for r in results.get("halluc_sum", [])],
-        # Semantic similarity
-        "sem_sim_diag":        [r["semantic_similarity"] for r in results["sem_diag"]],
-        "sem_sim_sum":         [r["semantic_similarity"] for r in results.get("sem_sum", [])],
-        # Clinical BERT relevance
-        # "clin_f1_diag":        [r["bertscore_f1"] for r in results["clin_diag"]],
-        # "clin_sim_diag":       [r["embedding_similarity"] for r in results["clin_diag"]],
-        # "clin_f1_sum":         [r["bertscore_f1"] for r in results.get("clin_sum", [])],
-        # "clin_sim_sum":        [r["embedding_similarity"] for r in results.get("clin_sum", [])],
-    })
-
-    print(df.describe())
+def create_dataframe(results, n_samples):
+    """
+    Convert evaluation results to a pandas DataFrame
+    """
+    # Initialize a list to store data for each sample
+    data = []
+    
+    # Process each sample
+    for i in range(n_samples):
+        sample_data = {
+            'sample_id': i,
+            # Structure metrics
+            'section_presence_S': results['structure'][i]['section_presence']['S'],
+            'section_presence_O': results['structure'][i]['section_presence']['O'],
+            'section_presence_A': results['structure'][i]['section_presence']['A'],
+            'section_presence_P': results['structure'][i]['section_presence']['P'],
+            'order_correct': results['structure'][i]['order_correct'],
+            # QA factuality metrics
+            'qa_accuracy': results['qa_comb'][i]['accuracy'],
+            'qa_n_questions': results['qa_comb'][i]['n_questions'],
+            # Entailment metrics
+            'entailment_score': results['entail_comb'][i]['entailment_score'],
+            # Hallucination metrics
+            'hallucination_rate': results['halluc_comb'][i]['hallucination_rate'],
+            # Semantic similarity metrics
+            'semantic_similarity': results['sem_comb'][i]['semantic_similarity'],
+            # Clinical relevance metrics
+            'bertscore_f1': results['clin_comb'][i]['bertscore_f1'],
+            'embedding_similarity': results['clin_comb'][i]['embedding_similarity']
+        }
+        
+        # Add LLM metrics if available
+        if 'llm' in results:
+            for criterion, score in results['llm'][i].items():
+                sample_data[f'llm_{criterion}'] = score
+        
+        data.append(sample_data)
+    
+    # Create DataFrame
+    df = pd.DataFrame(data)
+    return df
 
 if __name__ == "__main__":
     main()
+
+
