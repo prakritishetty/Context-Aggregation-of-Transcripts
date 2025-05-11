@@ -7,8 +7,9 @@ import json
 from typing import List, Dict, Optional
 import openai
 import evaluate
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForCausalLM, pipeline
 from sentence_transformers import SentenceTransformer, util
+import torch
 
 
 class SOAPNoteEvaluator:
@@ -36,6 +37,10 @@ class SOAPNoteEvaluator:
         self.generated_notes = generated_notes
         self.summary_notes = summary_notes
 
+        
+        # device for torch models
+        self.device = torch.device(device if device != "cpu" else "cpu")
+
         # QA pipelines
         self.qg = pipeline(
             "text2text-generation",
@@ -61,6 +66,13 @@ class SOAPNoteEvaluator:
         # Tokenizer for chunking inputs to BERTScore
         self.bs_tokenizer = AutoTokenizer.from_pretrained("allenai/scibert_scivocab_uncased")
 
+        # Perplexity (GPT-2)
+        self.ppl_tokenizer = AutoTokenizer.from_pretrained("gpt2")
+        self.ppl_model = AutoModelForCausalLM.from_pretrained("gpt2").to(self.device)
+        # make sure pad token exists
+        if self.ppl_tokenizer.pad_token is None:
+            self.ppl_tokenizer.pad_token = self.ppl_tokenizer.eos_token
+
 
     #----- Run All ---------------------------------------
     def run_all(self) -> Dict[str, List[Dict[str, float]]]:
@@ -72,12 +84,14 @@ class SOAPNoteEvaluator:
             # 1) Structure checks
             "structure": self.evaluate_structure(),
             # 2) QA‐based factuality over dialogue+summary
-            "qa_comb":   self.qa_factuality_combined(),
+             "qa_comb":   self.qa_factuality_combined(),
             # 3) Clinical relevance (BERTScore + embed sim) over dialogue+summary
             "clin_comb": self.clinical_relevance_combined(),
+            # 4) Fluency via perplexity
+            "perplexity": self._perplexity(),
         }
 
-        # 4) LLM-as-judge, if an OpenAI key is configured
+        # 5) LLM-as-judge, if an OpenAI key is configured
         if getattr(openai, "api_key", None):
             results["llm"] = self.evaluate_llm()
 
@@ -87,6 +101,29 @@ class SOAPNoteEvaluator:
     #----- Main Functions --------------------------------
     def qa_factuality_combined(self): return self._qa_factuality(self._combined_context())
     def clinical_relevance_combined(self): return self._clinical_relevance(self._combined_context())
+
+    def _perplexity(self) -> List[Dict[str, float]]:
+        """
+        Compute perplexity of each generated note under GPT-2.
+        Returns a list of {"perplexity": float}.
+        """
+        out = []
+        self.ppl_model.eval()
+        for note in self.generated_notes:
+            enc = self.ppl_tokenizer(
+                note,
+                return_tensors="pt",
+                truncation=True,
+                padding="longest",
+            ).to(self.device)
+
+            with torch.no_grad():
+                # labels=input_ids to compute loss over entire sequence
+                output = self.ppl_model(**enc, labels=enc["input_ids"])
+                # output.loss is average negative log likelihood
+                ppl = torch.exp(output.loss).item()
+            out.append({"perplexity": ppl})
+        return out
 
     def evaluate_llm(
     self,
@@ -171,21 +208,42 @@ class SOAPNoteEvaluator:
 
         return results
 
-
     def evaluate_structure(self) -> List[Dict[str, object]]:
-        """Evaluates SOAP note structure to check for order and presence of 4 sections."""
+        """
+        Evaluates SOAP note structure by:
+          - Checking presence of each of S, O, A, P headers
+          - Verifying they appear in the correct order
+        """
         out = []
-        secs = ["S", "O", "A", "P"]
+        # We look for either the single‐letter or full‐word header + colon:
+        header_order = ["S", "O", "A", "P"]
+        header_patterns = {
+            "S": r"^\s*(?:S|Subjective):",
+            "O": r"^\s*(?:O|Objective):",
+            "A": r"^\s*(?:A|Assessment):",
+            "P": r"^\s*(?:P|Plan):",
+        }
+
         for note in self.generated_notes:
-            pres, idxs = {}, []
-            for s in secs:
-                m = re.search(rf"^{s}", note, re.IGNORECASE | re.MULTILINE)
-                has = bool(m)
-                pres[s] = has
-                idxs.append(m.start() if has else float('inf'))
+            presence = {}
+            positions = {}
+            for sec in header_order:
+                pat = header_patterns[sec]
+                m = re.search(pat, note, flags=re.IGNORECASE | re.MULTILINE)
+                presence[sec] = bool(m)
+                positions[sec] = m.start() if m else float("inf")
+
+            # Now check that the four positions are in ascending order
+            idxs = [positions[s] for s in header_order]
             order_ok = idxs == sorted(idxs)
-            out.append({"section_presence": pres, "order_correct": order_ok})
+
+            out.append({
+                "section_presence": presence,
+                "order_correct":     order_ok
+            })
+
         return out
+
 
     #----- Internal helpers using arbitrary contexts -----
     def _qa_factuality(self, contexts: List[str]) -> List[Dict[str, float]]:
