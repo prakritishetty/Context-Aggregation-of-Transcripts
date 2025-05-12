@@ -1,0 +1,4 @@
+Donnie/chroma_db/
+MedRAG/corpus/
+*.sqlite3
+*.bin
