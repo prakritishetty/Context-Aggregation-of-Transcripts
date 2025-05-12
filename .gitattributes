@@ -1,0 +1,4 @@
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+Donnie/chroma_db/** filter=lfs diff=lfs merge=lfs -text
+Donnie/MedRAG/corpus/** filter=lfs diff=lfs merge=lfs -text
