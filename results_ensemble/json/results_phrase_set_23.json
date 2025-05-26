@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "i just woke up one day it was hurting",
+    "from my elbow all the way up to the neck",
+    "achiness achiness heaviness",
+    "no nothing nothing really unusual mowed grass and that's about it",
+    "some motrin",
+    "not really still kinda comes and goes and aches",
+    "chest pain comes with the elbow pain arm pain",
+    "it kinda goes up my neck sometimes too",
+    "slight murmur with your heart here and i don't think we've heard that before",
+    "concerned you might be having a mild heart attack",
+    "aspirin and nitroglycerin",
+    "i do n't check them",
+    "blood pressure is a little bit high it was one fifty over ninety",
+    "one twenty five over seventy two",
+    "denies any shortness of breath"
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    3,
+    3,
+    0,
+    2,
+    1,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11733611673116684,
+    "calinski_harabasz_score": 3.61872959330639,
+    "davies_bouldin_score": 1.5183374005207115
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9975169897079468,
+      0.9983705282211304,
+      0.9981167316436768
+    ],
+    [
+      0.9975169897079468,
+      0.9999998807907104,
+      0.9942107200622559,
+      0.9980955719947815
+    ],
+    [
+      0.9983705282211304,
+      0.9942107200622559,
+      1.0,
+      0.9963416457176208
+    ],
+    [
+      0.9981167316436768,
+      0.9980955719947815,
+      0.9963416457176208,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03734571486711502,
+    "1": -0.21780474483966827,
+    "2": -0.025451382622122765,
+    "3": -0.165843203663826
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "i just woke up one day it was hurting"
+      ],
+      "0": [
+        "no nothing nothing really unusual mowed grass and that's about it",
+        "slight murmur with your heart here and i don't think we've heard that before"
+      ],
+      "1": [
+        "blood pressure is a little bit high it was one fifty over ninety"
+      ]
+    },
+    "0": {
+      "2": [
+        "from my elbow all the way up to the neck"
+      ],
+      "0": [
+        "not really still kinda comes and goes and aches",
+        "it kinda goes up my neck sometimes too",
+        "i do n't check them"
+      ],
+      "1": [
+        "chest pain comes with the elbow pain arm pain"
+      ]
+    },
+    "1": {
+      "2": [
+        "achiness achiness heaviness"
+      ],
+      "0": [
+        "some motrin"
+      ],
+      "1": [
+        "one twenty five over seventy two"
+      ]
+    },
+    "3": {
+      "2": [
+        "concerned you might be having a mild heart attack"
+      ],
+      "0": [
+        "aspirin and nitroglycerin"
+      ],
+      "1": [
+        "denies any shortness of breath"
+      ]
+    }
+  }
+}

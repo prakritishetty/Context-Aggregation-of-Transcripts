@@ -1,0 +1,33 @@
+soap_category,main_cluster,subcluster,phrase
+O,3,2,it's hurting on the inside of my elbow
+O,3,2,when I roll over and it just wakes me up
+S,2,2,pain radiates down my arm and along that inside of my arm
+A,1,2,on a scale of one to ten... about a seven
+O,3,2,ibuprofen isn't really helping
+A,1,0,tried a little bit of ice at first
+O,3,0,I've been doing some pottery... making a ceramic bowl and I'm gonna paint it... working on it a lot
+O,3,1,for my son's birthday
+O,3,2,it’s been hurting for about four days and it’s just not getting better
+O,3,2,"no, I haven’t [injured my elbow before]"
+P,0,1,history of hypertension... on ten milligrams of lisinopril
+P,0,2,checking my blood pressures regularly... one teens to one thirties
+P,0,2,taking my medications everyday... set an alarm for that lisinopril
+P,0,2,diabetes... on five hundred milligrams of metformin twice a day
+O,3,1,sometimes I forget... having a medication twice a day
+P,0,0,I have a sweet tooth... love to bake... make cakes and cinnamon rolls
+S,2,0,moderate tenderness at the medial epicondyle
+S,2,1,pain with resisted pronation of forearm
+S,2,1,pain with flexion and bending the wrist
+P,0,0,no bruising or swelling... no discoloration or lesions
+P,0,0,x-ray of my elbow... no fracture or bony abnormality
+S,2,0,consistent with medial epicondylitis
+P,0,2,order a sling for your arm... apply ice for twenty minutes three times a day
+P,0,1,take six hundred milligrams of ibuprofen every six hours
+P,0,1,hold off on pottery for the next couple of weeks
+P,0,1,increase metformin to a thousand milligrams twice a day
+A,1,2,order an A1C... evaluate other options if sugars aren’t under control
+P,0,1,refer to diabetic counseling
+P,0,1,continue lisinopril at ten milligrams
+A,1,1,walk around the neighborhood... one to two miles a day
+O,3,2,I’ll just let him know that I maybe I’ll take a picture of what I have far
+O,3,2,friends tell me something about combining a protein if I eat something sweet

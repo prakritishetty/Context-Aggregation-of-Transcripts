@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "shortness of breath",
+    "palpitating a lot",
+    "shortness of breath",
+    "it happens more often lately.",
+    "Last time I saw you, you were smoking two packs a day. How much are you smoking?",
+    "it's gone down quite a bit... probably once a day or something.",
+    "my moments... some days when I feel everything was great... other days I feel extremely low.",
+    "depression's stable... still taking the Effexor.",
+    "Neurontin is helping control the pain... but it does come every now and then.",
+    "try to get as much rest as I can... haven\u2019t made yoga a habit.",
+    "asthma or COPD",
+    "diaphragm is a little bit flatter... consistent with COPD.",
+    "COPD... not able to exhale appropriately.",
+    "Combivent, two puffs twice a day... albuterol as needed... prednisone taper pack.",
+    "keep taking the Effexor... continue Neurontin as is.",
+    "counseled on smoking cessation... encouraged to practice yoga for depression and back pain.",
+    "no questions... this is good. Thank you."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    1,
+    2,
+    2,
+    2,
+    1,
+    2,
+    2,
+    3,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "P",
+    "2": "S",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19045448303222656,
+    "calinski_harabasz_score": 3.8052804364369957,
+    "davies_bouldin_score": 1.4769005463478513
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9978631734848022,
+      0.9980099201202393,
+      0.9971893429756165
+    ],
+    [
+      0.9978631734848022,
+      0.9999996423721313,
+      0.9980772733688354,
+      0.9974350929260254
+    ],
+    [
+      0.9980099201202393,
+      0.9980772733688354,
+      1.000000238418579,
+      0.9958850145339966
+    ],
+    [
+      0.9971893429756165,
+      0.9974350929260254,
+      0.9958850145339966,
+      0.9999995827674866
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.027855178341269493,
+    "1": 0.1898047775030136,
+    "2": 0.07241218537092209,
+    "3": 0.07761789113283157
+  },
+  "cluster_phrases": {
+    "3": {
+      "1": [
+        "shortness of breath",
+        "shortness of breath"
+      ],
+      "0": [
+        "palpitating a lot"
+      ],
+      "2": [
+        "asthma or COPD"
+      ]
+    },
+    "1": {
+      "1": [
+        "it happens more often lately."
+      ],
+      "0": [
+        "depression's stable... still taking the Effexor."
+      ],
+      "2": [
+        "keep taking the Effexor... continue Neurontin as is."
+      ]
+    },
+    "2": {
+      "2": [
+        "Last time I saw you, you were smoking two packs a day. How much are you smoking?"
+      ],
+      "0": [
+        "it's gone down quite a bit... probably once a day or something.",
+        "my moments... some days when I feel everything was great... other days I feel extremely low.",
+        "Neurontin is helping control the pain... but it does come every now and then.",
+        "try to get as much rest as I can... haven\u2019t made yoga a habit."
+      ],
+      "1": [
+        "no questions... this is good. Thank you."
+      ]
+    },
+    "0": {
+      "2": [
+        "diaphragm is a little bit flatter... consistent with COPD."
+      ],
+      "0": [
+        "COPD... not able to exhale appropriately.",
+        "Combivent, two puffs twice a day... albuterol as needed... prednisone taper pack."
+      ],
+      "1": [
+        "counseled on smoking cessation... encouraged to practice yoga for depression and back pain."
+      ]
+    }
+  }
+}

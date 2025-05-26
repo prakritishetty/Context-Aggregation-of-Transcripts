@@ -1,0 +1,32 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,I know the nurse told you about Dax. I'd like to tell Dax a little bit about you when we get started.
+O,0,2,Your hemoglobin was low.
+P,1,2,"I've been feeling really tired lately. Over the past couple of months, I've noticed that my energy has really gone down."
+S,2,1,I used to be really active... I've just been tired and exhausted and I haven't been able to really keep up with the way I was going with my exercise.
+P,1,2,"I've noticed a little bit [weight loss], but that's because I've been doing really well with my exercise."
+P,1,1,I haven't been smoking. I quit cold turkey and I haven't gone back since.
+S,2,0,"During the changes of season, it gets a little bit harder for me to breathe, but that's just because of my allergies."
+S,2,1,"I've been doing really well with [diet]... staying away from the French fries, and all the other salty foods that I love to eat."
+O,0,2,No swelling in your legs or anything?
+O,0,0,"No, not that I've noticed."
+O,0,2,No blood in your stools at all?
+O,0,2,"No, not really."
+P,3,0,Are your stools dark or charry or black looking?
+O,0,0,"No, not that I've noticed."
+P,3,0,Are you spotting a lot with your periods?
+O,0,2,"No, I'm not."
+O,0,2,Any weight loss?
+P,3,0,I've noticed a little bit...
+O,0,2,"I hear a slight two out of six systolic heart, systolic ejection murmur on your heart exam."
+O,0,1,Your abdomen... had some tenderness to palpation in your lower quadrant on your abdominal exam.
+O,0,2,No lower extremity edema.
+O,0,1,"Your hemoglobin level is 8.2. Somebody you should have a hemoglobin of about 13, 14."
+P,3,1,We need to investigate why it's low... some of your anemia labs are still pending at this time that's part of the workup.
+S,2,0,I'm going to order an endoscopy and a colonoscopy just to make sure that you're not bleeding from inside your belly.
+P,1,1,Continue staying away from smoking. It doesn't sound like you need any inhalers at this time.
+O,0,2,"Continue you on the Toprol, continue you on the lisinopril and we'll continue you on your current diuretic dosing of 20, lasix 20 milligrams a day."
+O,0,1,I'll be in touch when those labs come back to see what further workup we need to do.
+P,1,1,I'm going to go ahead and order that referral to gastroenterology.
+O,0,0,You feel you have a good support system?
+P,1,1,My boyfriend is great and I have my brother down the road.
+S,2,0,"I'll be in touch over the next week or so, and we'll get this all sorted out."

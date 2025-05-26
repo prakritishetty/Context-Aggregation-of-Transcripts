@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,I'm having a lot of trouble sleeping... can't get comfortable when I lay down in bed.
+S,1,2,I feel I'm just choking a few minutes after I lay down to sleep... can't catch my breath.
+A,0,2,This has been going on for about the past two weeks.
+A,0,0,Your oxygen level here is ninety-two... a little bit on the low side.
+S,1,0,I can't see my ankles anymore... gained about ten pounds.
+S,1,1,I don't think I am [taking Lasix regularly].
+S,1,2,I'm bringing a whole bunch of yuck up once in a while... first thing in the morning.
+S,1,0,I did it a couple of weeks ago [checking blood sugar]... it was about two thirty.
+O,3,0,Slight swelling in your neck... mild JVD... rales in both bases... 1.5+ pitting edema in ankles.
+P,2,2,Increase Lasix from 20 mg to 60 mg for four days... use albuterol and Atrovent.
+A,0,1,Check your weights daily... follow up in a couple of days.
+P,2,0,Order another hemoglobin A1c... adjust metformin or add medication.
+P,2,1,Prescribe Naprosyn and Flexeril... exercises to get off the couch.
+A,0,0,If symptoms don’t improve... we may have to increase the dose or send you to the hospital.
+A,0,1,Alright sounds good... no questions.

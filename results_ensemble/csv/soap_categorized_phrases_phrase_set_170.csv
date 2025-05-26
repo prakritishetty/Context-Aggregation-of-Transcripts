@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+O,2,2,Right foot ulcer that's been there for a couple of weeks
+S,3,0,It's been there gosh it's six or eight weeks and it's just not going away... maybe even gotten a little worse.
+O,2,0,No pain at all
+A,1,0,Diabetic... on some insulin... sugars been running... a little higher than normal
+O,2,1,Last hemoglobin A1c was above nine
+A,1,2,Initially... stepped on a nail or there was some other work... led to anything
+A,1,0,No fever or chills... tension headaches pretty often
+A,1,0,Occasionally... numbness and tingling in feet... colder weather
+A,1,0,Former smoker... two packs a day for twenty plus years... stopped four years ago
+A,1,0,No pain in calves when walking... no shortness of breath
+O,2,2,No palpable dorsalis pedis or posterior tibial pulses
+P,0,2,Two by three centimeter ulcerated lesion... lateral foot near the fifth metatarsal... no cellulitis... granulation tissue and slight purulent discharge
+P,0,0,Nonhealing ulcer of your foot... need to do some studies... blood supply to heal this foot wound
+P,0,1,Vascular surgeon's office... stent to one of your arteries... bypass surgery... improve blood supply
+A,1,1,Continue with aspirin... help with blood supply
+P,0,1,Arterial ultrasound of lower extremities... podiatry consult... improve wound care
+A,1,1,Diabetes... unstable... need to get better controlled... impacts wound healing
+A,1,1,Coronary artery disease... statin... cardiologist for medical clearance

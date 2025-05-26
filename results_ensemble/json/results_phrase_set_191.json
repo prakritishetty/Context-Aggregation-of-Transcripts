@@ -1,0 +1,131 @@
+{
+  "phrases": [
+    "I was skiing over the weekend... tried moguls, which jumping over those big hills, I tend to get my strap caught on my finger... it bent it back a bit.",
+    "it happened... Sunday.",
+    "I tried putting ice on it. I've been taking ibuprofen, but it's still very painful.",
+    "appendix taken out when I was 18",
+    "tenderness over your distal phalanx... pain with flexion",
+    "no fractures... everything lines up pretty... normal",
+    "diagnosis would be a hand... contusion... tip of the finger",
+    "splint... Motrin 600 mg every 6 hours for a week"
+  ],
+  "cluster_labels": [
+    1,
+    2,
+    1,
+    2,
+    3,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18715611100196838,
+    "calinski_harabasz_score": 3.410039332478767,
+    "davies_bouldin_score": 0.905950498511711
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9948109984397888,
+      0.9976816773414612,
+      0.9972996115684509
+    ],
+    [
+      0.9948109984397888,
+      1.000000238418579,
+      0.9958215951919556,
+      0.9907306432723999
+    ],
+    [
+      0.9976816773414612,
+      0.9958215951919556,
+      1.0000003576278687,
+      0.99314284324646
+    ],
+    [
+      0.9972996115684509,
+      0.9907306432723999,
+      0.99314284324646,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.02697710134088993,
+    "1": 0.09256410598754883,
+    "2": 0.1892983466386795,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "0": [
+        "I was skiing over the weekend... tried moguls, which jumping over those big hills, I tend to get my strap caught on my finger... it bent it back a bit.",
+        "I tried putting ice on it. I've been taking ibuprofen, but it's still very painful."
+      ]
+    },
+    "2": {
+      "0": [
+        "it happened... Sunday.",
+        "appendix taken out when I was 18"
+      ]
+    },
+    "3": {
+      "0": [
+        "tenderness over your distal phalanx... pain with flexion"
+      ]
+    },
+    "0": {
+      "2": [
+        "no fractures... everything lines up pretty... normal"
+      ],
+      "0": [
+        "diagnosis would be a hand... contusion... tip of the finger"
+      ],
+      "1": [
+        "splint... Motrin 600 mg every 6 hours for a week"
+      ]
+    }
+  }
+}

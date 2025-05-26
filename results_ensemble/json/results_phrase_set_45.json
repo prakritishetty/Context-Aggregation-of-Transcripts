@@ -1,0 +1,195 @@
+{
+  "phrases": [
+    "complaints of shortness of breath.",
+    "I\u2019ve noticed that I\u2019ve been swelling up a little bit. A lot of it has to do with going to some house parties, eating some salty foods. I feel really lethargic.",
+    "shortness of breath when walking up a flight of stairs.",
+    "probably about 10 days",
+    "problems lying flat in bed? [Patient]: I\u2019m a little uncomfortable when I wake up in the morning and I feel pretty stiff.",
+    "Do you ever wake up acutely short of breath at night? [Patient]: It happened once, probably about a week ago, but it hasn\u2019t happened since.",
+    "I\u2019ve been pretty good about monitoring [blood sugars] during the working week. But on Saturdays or Sundays we\u2019re busy I forget to monitor it.",
+    "I love chocolate bars.",
+    "It\u2019s been a crazy year and a half. I\u2019ve tried some natural solutions. In the summer I did stretches outdoors every morning, which was great, but the weather changed and I\u2019ve got to find some alternatives. I\u2019m not ready to try any medications just yet.",
+    "I\u2019m open to some suggestions.",
+    "I\u2019m better [with alcohol intake] during the holiday season.",
+    "cutting back on my Red Bull and caffeine.",
+    "a slight 3 out of 6 systolic ejection murmur.",
+    "some crackles, bilaterally, at the bases.",
+    "1+ pitting edema.",
+    "retaining some fluid. It\u2019s probably from some of the dietary indiscretion.",
+    "Acute heart failure exacerbation.",
+    "Initiate Lasix 40 milligrams a day. I want you to weigh yourself every day.",
+    "Refer you to psychiatry, just for some talk therapy to help you through that. No medications.",
+    "Continue you on the omeprazole, 20 milligrams a day.",
+    "No. No. Absolutely not"
+  ],
+  "cluster_labels": [
+    1,
+    2,
+    1,
+    3,
+    0,
+    0,
+    2,
+    3,
+    2,
+    0,
+    0,
+    3,
+    1,
+    3,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13173691928386688,
+    "calinski_harabasz_score": 6.900302848073974,
+    "davies_bouldin_score": 1.5492167942689667
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9962804913520813,
+      0.9971538782119751,
+      0.9978161454200745
+    ],
+    [
+      0.9962804913520813,
+      0.9999996423721313,
+      0.989152729511261,
+      0.9986771941184998
+    ],
+    [
+      0.9971538782119751,
+      0.989152729511261,
+      0.9999998807907104,
+      0.9918836355209351
+    ],
+    [
+      0.9978161454200745,
+      0.9986771941184998,
+      0.9918836355209351,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13180164992809296,
+    "1": 0.12749849259853363,
+    "2": 0.2415148764848709,
+    "3": 0.12149985134601593
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "complaints of shortness of breath.",
+        "Acute heart failure exacerbation."
+      ],
+      "0": [
+        "shortness of breath when walking up a flight of stairs.",
+        "a slight 3 out of 6 systolic ejection murmur."
+      ],
+      "1": [
+        "1+ pitting edema."
+      ]
+    },
+    "2": {
+      "2": [
+        "I\u2019ve noticed that I\u2019ve been swelling up a little bit. A lot of it has to do with going to some house parties, eating some salty foods. I feel really lethargic."
+      ],
+      "0": [
+        "I\u2019ve been pretty good about monitoring [blood sugars] during the working week. But on Saturdays or Sundays we\u2019re busy I forget to monitor it."
+      ],
+      "1": [
+        "It\u2019s been a crazy year and a half. I\u2019ve tried some natural solutions. In the summer I did stretches outdoors every morning, which was great, but the weather changed and I\u2019ve got to find some alternatives. I\u2019m not ready to try any medications just yet."
+      ]
+    },
+    "3": {
+      "2": [
+        "probably about 10 days"
+      ],
+      "0": [
+        "I love chocolate bars.",
+        "cutting back on my Red Bull and caffeine.",
+        "some crackles, bilaterally, at the bases."
+      ],
+      "1": [
+        "No. No. Absolutely not"
+      ]
+    },
+    "0": {
+      "2": [
+        "problems lying flat in bed? [Patient]: I\u2019m a little uncomfortable when I wake up in the morning and I feel pretty stiff.",
+        "Do you ever wake up acutely short of breath at night? [Patient]: It happened once, probably about a week ago, but it hasn\u2019t happened since."
+      ],
+      "0": [
+        "I\u2019m open to some suggestions."
+      ],
+      "1": [
+        "I\u2019m better [with alcohol intake] during the holiday season.",
+        "retaining some fluid. It\u2019s probably from some of the dietary indiscretion.",
+        "Initiate Lasix 40 milligrams a day. I want you to weigh yourself every day.",
+        "Refer you to psychiatry, just for some talk therapy to help you through that. No medications.",
+        "Continue you on the omeprazole, 20 milligrams a day."
+      ]
+    }
+  }
+}

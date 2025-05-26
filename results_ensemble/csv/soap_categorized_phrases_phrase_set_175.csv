@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,Recurrent lung infections.
+A,1,1,I'm a farmer.
+A,1,2,coughing a lot a lot of mucus even had some shortness of breath and even a low-grade fever.
+A,1,0,every month or every other month especially over the past six months.
+O,2,2,started unloading a lot of hay which I don't usually do
+A,1,2,my symptoms start the days that I'm unloading hay.
+O,2,0,no I don't [wear a mask]
+A,1,1,none of us do.
+O,2,2,I've been helping my brother out
+A,1,1,there is ten of us [siblings].
+O,2,1,"no I have never had any problems with allergies,"
+O,2,0,"I don't smoke,"
+A,1,1,live with anybody who does.
+P,0,2,respiratory rate is twenty
+P,0,0,oxygen satting fine at ninety nine percent.
+P,0,0,some fine rales on your lung exam
+P,0,0,no murmurs rubs or gallops.
+P,0,2,round glass opacities
+S,3,0,hypersensitivity pneumonitis... another name is farmer's lung
+P,0,2,bacteria and/or mold in the hay.
+P,0,1,"prescribe a course of an oral steroid,"
+P,0,1,"CT scan of your lungs,"
+P,0,2,pulmonary function test.
+A,1,2,eliminate your exposure to the hay or wear a respirator when moving hay.
+P,0,2,the patient understands and agrees with the recommended medical treatment plan.

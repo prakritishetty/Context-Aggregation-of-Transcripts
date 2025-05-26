@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "i have a little bit of some shortness of breath that i noticed over the weekend",
+    "i would take them for mile long walks everyday... i could only walk down to the end of the street",
+    "i've been having a dry cough no phlegm",
+    "every time i swallow it hurts... in my chest",
+    "some crackles in your lungs bilaterally... could mean you have some fluid in there",
+    "some erythema on the anterior aspect of your chest... due to that radiation burn",
+    "chest x-ray... shows evidence of mild radiation umitis [pneumonitis]",
+    "continue you on that chemo regimen... cisplatin and a topicide [etoposide]",
+    "prescribe you a low dose steroid prednisone forty milligrams... for five days",
+    "prescribe you a lidocaine squishy and swallow... four times a day",
+    "radiation pneumonitis... creeping up to your esophagus causing the pain",
+    "vitals are normal your pulse ox is everything's good",
+    "no fever... no body aches... no sinus pain",
+    "zofran helped with nausea and fatigue",
+    "the tumor has just gotten little smaller and we can go inside and and take it out",
+    "follow-up in two weeks"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18013295531272888,
+    "calinski_harabasz_score": 3.6415688919214415,
+    "davies_bouldin_score": 1.2267187081632076
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9981822967529297,
+      0.9976125955581665,
+      0.9955027103424072
+    ],
+    [
+      0.9981822967529297,
+      0.9999996423721313,
+      0.9969534873962402,
+      0.9965983629226685
+    ],
+    [
+      0.9976125955581665,
+      0.9969534873962402,
+      1.0,
+      0.9947949647903442
+    ],
+    [
+      0.9955027103424072,
+      0.9965983629226685,
+      0.9947949647903442,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.08940573036670685,
+    "1": 0.03591061010956764,
+    "2": 0.14872734248638153,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "i have a little bit of some shortness of breath that i noticed over the weekend",
+        "i would take them for mile long walks everyday... i could only walk down to the end of the street",
+        "some crackles in your lungs bilaterally... could mean you have some fluid in there"
+      ],
+      "0": [
+        "i've been having a dry cough no phlegm",
+        "every time i swallow it hurts... in my chest"
+      ],
+      "1": [
+        "vitals are normal your pulse ox is everything's good"
+      ]
+    },
+    "2": {
+      "1": [
+        "some erythema on the anterior aspect of your chest... due to that radiation burn"
+      ],
+      "0": [
+        "chest x-ray... shows evidence of mild radiation umitis [pneumonitis]"
+      ],
+      "2": [
+        "radiation pneumonitis... creeping up to your esophagus causing the pain"
+      ]
+    },
+    "0": {
+      "2": [
+        "continue you on that chemo regimen... cisplatin and a topicide [etoposide]"
+      ],
+      "0": [
+        "prescribe you a low dose steroid prednisone forty milligrams... for five days",
+        "prescribe you a lidocaine squishy and swallow... four times a day",
+        "no fever... no body aches... no sinus pain",
+        "zofran helped with nausea and fatigue"
+      ],
+      "1": [
+        "follow-up in two weeks"
+      ]
+    },
+    "3": {
+      "0": [
+        "the tumor has just gotten little smaller and we can go inside and and take it out"
+      ]
+    }
+  }
+}

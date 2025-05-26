@@ -1,0 +1,30 @@
+soap_category,main_cluster,subcluster,phrase
+S,3,2,I fell off of my tandem bike with my partner and my knee has been hurting ever since.
+O,1,2,maybe two weeks ago
+S,3,0,my knee has been hurting ever since... hit it on the curb.
+S,3,1,took some ibuprofen and washed it out and put a band-aid on it but it's been hurting everyday since.
+P,0,2,it clicks when straightening
+O,1,2,sometimes it shifts back a little bit
+P,0,1,pain on inclines
+O,1,0,walking up a hill any incline really hurts
+A,2,2,tenderness on the medial joint line
+P,0,0,1+ posterior drawer test
+P,0,0,negative McMurray test
+A,2,2,recommend MRI to evaluate for possible posterior cruciate ligament injury
+O,1,0,getting an mri scan to look at what you may have done inside there
+P,0,1,brace and physical therapy
+O,1,0,get you into a brace here get you into some therapy
+O,1,1,continue ibuprofen or try prescription
+P,0,2,we can try this other prescription first
+O,1,1,follow-up in 4-6 weeks
+O,1,0,see you back here in maybe four to six weeks
+A,2,0,dime-sized abrasion over the medial patella
+A,2,0,dime size little abrasions dry looks about a week week old over the medial patella
+A,2,1,no fractures or dislocations on x-rays
+A,2,1,x-rays... reveal no evidence of any fractures or dislocations
+A,2,2,posterior cruciate ligament sprain suspected
+O,1,0,you may have injured that ligament
+P,0,1,weakness vs. pain distinction
+O,1,0,"are you weak... no, it hurts"
+P,0,1,swimming discontinued post-injury
+O,1,2,"no, I haven't... recommend that"

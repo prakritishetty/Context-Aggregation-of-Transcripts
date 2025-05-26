@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,"left elbow that's really been bothering me... after work, it's really hard for me to open and close my left elbow, and it's been just really stiff and, and hurts."
+P,0,2,swelling there on the tip
+O,1,2,a little bit of weakness
+P,0,0,"no numbing or tingling in hands,"
+O,1,1,no fever or chills.
+O,1,0,"last seizure was a year ago,"
+P,0,1,"still taking Keppra,"
+S,2,0,"therapy has been good... still feel a little down and stressed,"
+O,1,0,peptic ulcer disease... endoscopy showed gastritis.
+P,0,0,"erythema and edema of the left elbow,"
+P,0,0,"pain to palpation of the olecranon,"
+P,0,2,"warm to palpation,"
+P,0,0,pain with flexion and extension.
+A,3,2,olecranon bursitis caused by repetitive trauma
+A,3,0,It's just caused by repetitive trauma
+P,0,1,"meloxicam 15mg once a day,"
+P,0,1,"continue Keppra 500mg twice daily,"
+P,0,1,"start Lexapro 10mg once daily,"
+O,1,1,continue Protonix 40mg before meals.
+O,1,0,"right-handed... can still write,"
+P,0,1,"nasal congestion from allergies,"
+O,1,1,no suicidal or homicidal ideations.
+A,3,1,"left arm x-ray shows no evidence of elbow fracture,"
+P,0,1,endoscopy results showed gastritis.
+P,0,2,understands and agrees with the recommended medical treatment plan.

@@ -1,0 +1,12 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,2,"feeling some really bad, knee pain"
+S,0,2,only while swimming. I use the breaststroke where the legs kick out a frog
+S,0,0,"no injury? you didn't fall or twist it or anything that you remember? [patient] no, not that I can remember."
+P,3,0,chondromalacia of the patella
+P,3,0,prescribed ibuprofen 600 mg four times a day with food
+A,2,0,do some straight leg raising exercises
+A,2,2,avoid anything that puts extra pressure on your knees for a little while
+S,0,1,"avoid the breaststroke. If you're comfortable, you can also do other swimming strokes where your knees are straight instead"
+A,2,1,chronic back pain... been doing really
+O,1,0,depression... been going really... medication and therapy and trying to get outside more it's been really helping me
+O,1,0,carpal tunnel... doing really... full range of motion and it's felt a lot better

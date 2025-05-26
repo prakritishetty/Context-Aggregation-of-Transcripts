@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,one of the antibodies your body makes to fight infections.
+S,1,1,I get a lot of colds and they do seem to linger for a long time.
+S,1,0,no abdominal infections... no diarrhea.
+A,2,2,started on metformin
+S,1,0,no one in my family has immune deficiencies.
+O,0,2,"no fever, normal vitals,"
+O,0,0,"regular heart rhythm with no murmurs,"
+A,2,0,"clear lungs,"
+O,0,1,soft abdomen without tenderness.
+S,1,0,lab results are consistent with an IgA deficiency.
+A,2,1,other antibodies
+P,3,0,infections that don’t stop
+O,0,1,severe diarrhea.
+S,1,1,"if you ever need blood products, they need to know about your IgA deficiency to avoid a strong reaction."

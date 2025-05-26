@@ -1,0 +1,203 @@
+{
+  "phrases": [
+    "I did have this hacking cough for about three days.",
+    "she has been sick with the same symptoms and this cough has just started off with a gradual cough and I've just been coughing up some green phlegm here.",
+    "I'm having a little bit of a sore throat here and a little bit of some nasal congestion.",
+    "I haven't had a fever yet",
+    "no shortness of breath.",
+    "I've been taking some cough medication over the counter and it seems it's not really working.",
+    "Around spring time I get a little bit of sneezing and the runny runny nose.",
+    "My blood sugars have been running around one twenty range.",
+    "The metformin is a new medication for you you've been tolerating it",
+    "no diarrhea.",
+    "Blood pressure has been a little bit high I've noticed... one forties the top number... seventies.",
+    "I've been taking [hydrochlorothiazide] everyday.",
+    "I'm having a little bit of trouble with that [sugar intake].",
+    "Bilateral maxillary sinus tenderness",
+    "no frontal sinus tenderness.",
+    "Erythema of the pharynx... no exudates.",
+    "Anterior cervical adenopathy.",
+    "Lungs are nice and clear... no wheezes, rales or rhonchi.",
+    "2 out of 6 systolic ejection murmur at the left base.",
+    "Upper respiratory infection... most likely it's a virus that's causing your symptoms.",
+    "Continue with... drinking lots of fluids... Coricidin HBP... rest... [and] check for COVID-19.",
+    "Continue you on your metformin 500 mg... [and] check hemoglobin A1c at next visit.",
+    "Increase hydrochlorothiazide to 25 mg once a day... take it in the morning... continue checking blood pressure at home."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    3,
+    1,
+    3,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    1,
+    2,
+    0,
+    2,
+    2,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    2,
+    1,
+    2,
+    1,
+    0,
+    2,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17045298218727112,
+    "calinski_harabasz_score": 5.903215125895916,
+    "davies_bouldin_score": 1.5784351714929727
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9970912337303162,
+      0.998501181602478,
+      0.9946969747543335
+    ],
+    [
+      0.9970912337303162,
+      1.0000001192092896,
+      0.9977659583091736,
+      0.9981395602226257
+    ],
+    [
+      0.998501181602478,
+      0.9977659583091736,
+      0.9999997615814209,
+      0.9956421852111816
+    ],
+    [
+      0.9946969747543335,
+      0.9981395602226257,
+      0.9956421852111816,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.14771553874015808,
+    "1": 0.06636396795511246,
+    "2": -0.0056703113950788975,
+    "3": 0.4287971258163452
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I did have this hacking cough for about three days.",
+        "I'm having a little bit of a sore throat here and a little bit of some nasal congestion.",
+        "Around spring time I get a little bit of sneezing and the runny runny nose.",
+        "My blood sugars have been running around one twenty range."
+      ],
+      "0": [
+        "she has been sick with the same symptoms and this cough has just started off with a gradual cough and I've just been coughing up some green phlegm here.",
+        "I've been taking some cough medication over the counter and it seems it's not really working."
+      ],
+      "1": [
+        "I haven't had a fever yet",
+        "The metformin is a new medication for you you've been tolerating it",
+        "Blood pressure has been a little bit high I've noticed... one forties the top number... seventies.",
+        "I've been taking [hydrochlorothiazide] everyday.",
+        "I'm having a little bit of trouble with that [sugar intake]."
+      ]
+    },
+    "1": {
+      "2": [
+        "no shortness of breath.",
+        "Erythema of the pharynx... no exudates.",
+        "Continue with... drinking lots of fluids... Coricidin HBP... rest... [and] check for COVID-19."
+      ],
+      "0": [
+        "no diarrhea."
+      ],
+      "1": [
+        "2 out of 6 systolic ejection murmur at the left base."
+      ]
+    },
+    "3": {
+      "2": [
+        "Bilateral maxillary sinus tenderness"
+      ],
+      "0": [
+        "no frontal sinus tenderness."
+      ],
+      "1": [
+        "Anterior cervical adenopathy."
+      ]
+    },
+    "2": {
+      "2": [
+        "Lungs are nice and clear... no wheezes, rales or rhonchi."
+      ],
+      "0": [
+        "Upper respiratory infection... most likely it's a virus that's causing your symptoms.",
+        "Increase hydrochlorothiazide to 25 mg once a day... take it in the morning... continue checking blood pressure at home."
+      ],
+      "1": [
+        "Continue you on your metformin 500 mg... [and] check hemoglobin A1c at next visit."
+      ]
+    }
+  }
+}

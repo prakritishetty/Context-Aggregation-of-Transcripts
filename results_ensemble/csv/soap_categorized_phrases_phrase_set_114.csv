@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,Right ankle pain and swelling.
+S,3,2,I was going out to take off the trash and I was icy... I slipped and I was on the ground.
+S,3,0,When it first happened I couldn't... my friend had to help me up.
+S,3,1,"I was keeping it elevated, icing it... taken some ibuprofen."
+S,3,1,I could put a little bit more weight on it but I'm definitely still limping.
+A,0,2,"No, not that no I haven't had any numbness."
+O,1,0,Ecchymosis... bruising over the lateral malleolus... tenderness to palpation anterolaterally.
+P,2,0,Capillary refill is less than three seconds... sensation is intact to light touch.
+A,0,0,Ankle x-ray and it showed no fracture that's good.
+O,1,2,Symptoms are consistent with ankle sprain.
+P,2,0,Keep your leg elevated... continue to ice it... given an Aircast... crutches for the next one to two days.
+O,1,1,Continue to take the NSAIDs as needed.
+A,0,1,Follow up with you and see how you're doing... in a few weeks how if you're ready to go play soccer again.
+A,0,1,You'll be watching it for a while instead of playing it though.
+A,0,1,When will I be able to play?

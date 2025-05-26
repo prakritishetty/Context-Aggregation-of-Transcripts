@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "my ankles were swelling and couldn't get them to go down even when I went to bed and couldn't breathe very good had to get propped up in bed",
+    "I called my friend Diane and she said I probably ought to call nine one one since I was having a hard time talking",
+    "my blood pressure was high also it was two hundred over ninety",
+    "I might miss one but I try to take them all time",
+    "I eat those probably everyday",
+    "I have almost incontinence",
+    "your blood pressure looks pretty good today at one twenty eight over seventy two",
+    "your lungs are clear bilaterally and your lower extremities show just trace edema",
+    "echocardiogram i reviewed those results and it does show a preserved ef of fifty five percent abnormal diastolic filling and mild-to-moderate mitral regurgitation",
+    "continue on your Bumex 2 mg once daily",
+    "keep a log of what your blood pressures are and when it's up think about what you've eaten",
+    "order a renal artery ultrasound just to be sure we're not missing anything",
+    "see you again in three months",
+    "i'll i'll give that a try anything that will help",
+    "i'll try to use it everyday"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    3,
+    3,
+    3,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12856809794902802,
+    "calinski_harabasz_score": 3.928383646868332,
+    "davies_bouldin_score": 1.2749437920820597
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9970017671585083,
+      0.9932132959365845,
+      0.9985424876213074
+    ],
+    [
+      0.9970017671585083,
+      0.9999997019767761,
+      0.9932700395584106,
+      0.9974145889282227
+    ],
+    [
+      0.9932132959365845,
+      0.9932700395584106,
+      0.9999996423721313,
+      0.9907597303390503
+    ],
+    [
+      0.9985424876213074,
+      0.9974145889282227,
+      0.9907597303390503,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.15213146805763245,
+    "1": -0.04748969152569771,
+    "2": 0.0,
+    "3": 0.11815480887889862
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "my ankles were swelling and couldn't get them to go down even when I went to bed and couldn't breathe very good had to get propped up in bed"
+      ],
+      "0": [
+        "I called my friend Diane and she said I probably ought to call nine one one since I was having a hard time talking"
+      ],
+      "1": [
+        "my blood pressure was high also it was two hundred over ninety"
+      ]
+    },
+    "3": {
+      "2": [
+        "I might miss one but I try to take them all time"
+      ],
+      "0": [
+        "I eat those probably everyday",
+        "I have almost incontinence"
+      ],
+      "1": [
+        "i'll i'll give that a try anything that will help",
+        "i'll try to use it everyday"
+      ]
+    },
+    "0": {
+      "2": [
+        "your blood pressure looks pretty good today at one twenty eight over seventy two",
+        "order a renal artery ultrasound just to be sure we're not missing anything"
+      ],
+      "0": [
+        "your lungs are clear bilaterally and your lower extremities show just trace edema",
+        "continue on your Bumex 2 mg once daily",
+        "see you again in three months"
+      ],
+      "1": [
+        "keep a log of what your blood pressures are and when it's up think about what you've eaten"
+      ]
+    },
+    "2": {
+      "0": [
+        "echocardiogram i reviewed those results and it does show a preserved ef of fifty five percent abnormal diastolic filling and mild-to-moderate mitral regurgitation"
+      ]
+    }
+  }
+}

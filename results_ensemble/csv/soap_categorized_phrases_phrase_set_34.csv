@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+A,3,2,I was up on a ladder painting and kinda reaching out and fell took a fall and kinda braced myself but I was painting.
+P,0,2,this happened about three weeks ago
+A,3,0,I iced the arm and I also took some Advil.
+P,0,0,pain all the time
+P,0,0,about a six
+P,0,0,down to about a four
+A,3,1,I did when I initially hurt it but I'm not no longer having any numbness or tingling.
+O,2,2,limited active and passive range of motion
+O,2,0,tenderness to the greater tuberosity of the humerus
+O,2,1,no fracture or bony abnormality
+S,1,0,rotator cuff tendinopathy
+P,0,0,order an MRI of that shoulder
+P,0,1,refer you to physical therapy
+P,0,1,six to eight weeks
+S,1,0,steroid injection
+P,0,0,continue to take an NSAID
+P,0,1,see you again in two weeks

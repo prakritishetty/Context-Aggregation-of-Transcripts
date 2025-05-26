@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,He is here today for ongoing management of rheumatoid arthritis.
+O,1,0,"it did, maybe for a couple of weeks."
+O,1,0,"it's about a 3 or, but, typically on a normal day it's around 6."
+O,1,0,"since i was last here a couple weeks after that. About, maybe two months."
+S,3,2,"i'm taking it everyday, and i'm also taking celebrex which i started maybe 2 months ago."
+P,2,0,range of motion slightly diminished
+O,1,0,i see some pitting around the knee and ankle.
+S,3,0,We can give you another steroid injection for that. I also want to get an x-ray of that knee.
+O,1,0,Let's do it. Sounds go to me.
+S,3,1,"when it really hurts, is when i've been sitting for a while, and i have to try and get up. I'm stiff getting up i have to use a cane to get my bearings."
+O,1,1,salt does have a tendency to make your body hold on to water... reducing your salt intake could help with some of the swelling.
+A,0,0,"The knee was accessed through the lateral approach with 3 milliliters of initially clear fluid, bloo- blood tinged fluid... injected with 80 milligrams of triamcinolone, and one milliliter of lidocaine."
+A,0,0,"The risks, benefits, and alternatives were explained... Verbal consent was attained."
+O,1,0,we need to check your cmp levels every couple of months.
+S,3,0,"We'll set that up for you... if nothing is helping, we really might need to get a surgery consult."
+S,3,1,"the whole thing was n't swollen this, but i tried to wear compression socks a lot of the time, but it has n't been helping."

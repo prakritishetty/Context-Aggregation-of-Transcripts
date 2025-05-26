@@ -1,0 +1,207 @@
+{
+  "phrases": [
+    "he started to get a runny nose.",
+    "he also has a cough, but it's not barky.",
+    "he's been pulling on his ears,",
+    "he's also been going crazy rubbing at his nose too.",
+    "rectal temperature and it was 100.3.",
+    "he's irritable.",
+    "he can't go to sleep, he's fighting it really hard.",
+    "his older sister's been sick.",
+    "we had a play date with my nephew, who I learned later had a sinus infection.",
+    "saline mist in his nose.",
+    "I gave him Tylenol really early this morning.",
+    "baby Vicks on his feet last night",
+    "used the humidifier.",
+    "ears look...",
+    "he's just getting started with this, and we're seeing something viral.",
+    "sinus infections will start out as a virus and will become bacterial infections if left alone.",
+    "keep up with the fluids, rest, and I would watch him very carefully for a barking cough.",
+    "if he develops a barky cough, I want you to give him a half a teaspoon of his sister's medicine.",
+    "Zarbee's for the stuffy nose",
+    "no honey for him... instead, you can give them agave.",
+    "recommended Head & Shoulders, or Selsun Blue, or Nizoral AD... 2 times per week.",
+    "avoid getting the shampoo in the patient's eyes.",
+    "his cradle cap has gotten a little worse.",
+    "using the cradle cap brush, and I use regular Aveeno shampoo.",
+    "return in one week for a re-check."
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    1,
+    3,
+    0,
+    1,
+    3,
+    1,
+    3,
+    1,
+    3,
+    1,
+    0,
+    1,
+    3,
+    2,
+    3,
+    3,
+    1,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    1,
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16449043154716492,
+    "calinski_harabasz_score": 5.390731084410151,
+    "davies_bouldin_score": 1.624424689087461
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9991647005081177,
+      0.9964951276779175,
+      0.9973055124282837
+    ],
+    [
+      0.9991647005081177,
+      1.000000238418579,
+      0.9965068101882935,
+      0.9981250762939453
+    ],
+    [
+      0.9964951276779175,
+      0.9965068101882935,
+      1.0000001192092896,
+      0.9959119558334351
+    ],
+    [
+      0.9973055124282837,
+      0.9981250762939453,
+      0.9959119558334351,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0993647649884224,
+    "1": 0.08536286652088165,
+    "2": 0.0,
+    "3": 0.1780262142419815
+  },
+  "cluster_phrases": {
+    "1": {
+      "0": [
+        "he started to get a runny nose.",
+        "he's irritable.",
+        "his older sister's been sick.",
+        "saline mist in his nose.",
+        "ears look..."
+      ],
+      "2": [
+        "he's been pulling on his ears,",
+        "baby Vicks on his feet last night"
+      ],
+      "1": [
+        "Zarbee's for the stuffy nose"
+      ]
+    },
+    "3": {
+      "1": [
+        "he also has a cough, but it's not barky.",
+        "I gave him Tylenol really early this morning.",
+        "if he develops a barky cough, I want you to give him a half a teaspoon of his sister's medicine.",
+        "no honey for him... instead, you can give them agave.",
+        "his cradle cap has gotten a little worse."
+      ],
+      "2": [
+        "he's also been going crazy rubbing at his nose too.",
+        "he can't go to sleep, he's fighting it really hard.",
+        "keep up with the fluids, rest, and I would watch him very carefully for a barking cough."
+      ],
+      "0": [
+        "we had a play date with my nephew, who I learned later had a sinus infection.",
+        "he's just getting started with this, and we're seeing something viral."
+      ]
+    },
+    "0": {
+      "2": [
+        "rectal temperature and it was 100.3."
+      ],
+      "1": [
+        "used the humidifier.",
+        "avoid getting the shampoo in the patient's eyes.",
+        "using the cradle cap brush, and I use regular Aveeno shampoo.",
+        "return in one week for a re-check."
+      ],
+      "0": [
+        "recommended Head & Shoulders, or Selsun Blue, or Nizoral AD... 2 times per week."
+      ]
+    },
+    "2": {
+      "0": [
+        "sinus infections will start out as a virus and will become bacterial infections if left alone."
+      ]
+    }
+  }
+}

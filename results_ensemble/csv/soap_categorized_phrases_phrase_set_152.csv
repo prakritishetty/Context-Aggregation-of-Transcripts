@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+O,3,2,I was jumping on my kid's trampoline and I could just slipped out from under me
+A,1,2,about four days ago
+O,3,0,I felt a little pop and it swelled up really big afterward
+O,3,0,I took some ibuprofen and I put some ice on it
+O,3,0,it's still really hard to get around
+A,1,0,the inside part of my kneecap
+P,2,2,able to put weight on it
+S,0,2,some pain on palpation on the inside little bit of pain on the outside of the knee
+S,0,0,little bit of limited range of motion as pain on both flexion and extension on the knee
+A,1,2,McMurray's test is negative
+A,1,2,concerned about a torn or injured MCL
+O,3,1,put you in a straight leg brace and I'll prescribe some Mobic
+S,0,2,ice your knee once an hour for about fifteen minutes
+P,2,0,send you out for an MRI
+A,1,1,history of diabetes
+P,2,1,forget to check [sugars] quite a bit
+P,2,1,managing [diabetes] pretty [well]
+S,0,1,recheck on your hemoglobin A1c
+S,0,1,refill on the metformin that you have been taking five hundred milligrams

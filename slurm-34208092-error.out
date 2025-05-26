@@ -1,0 +1,25 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:55<00:55, 55.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:26<00:00, 41.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:26<00:00, 43.39s/it]
+Traceback (most recent call last):
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/ft_inference_batch.py", line 134, in <module>
+    main() 
+    ^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/ft_inference_batch.py", line 92, in main
+    results_df = pd.read_csv(output_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/myenv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1898, in _make_engine
+    return mapping[engine](f, **self.options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/myenv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 93, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 581, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file

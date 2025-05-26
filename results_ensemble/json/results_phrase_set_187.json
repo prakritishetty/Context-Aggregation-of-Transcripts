@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "Brian is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow-up of his chronic problems.",
+    "I just feel out of sorts lately. I don\u2019t know if it\u2019s the change in the seasons or if we\u2019re just doing a lot of projects around the house and some construction on our own. I\u2019m just feeling out of it. Lack of energy. I\u2019m just tired and fatigued, and I feel kinda. I feel lightheaded every once in a while.",
+    "Probably since Labor Day, about five weeks or.",
+    "We began construction on our kitchen over Labor Day weekend, and it was hard to cook or prepare meals. We ate out a lot, and not always the best food out. It wreaked havoc; it\u2019s been maybe off a little bit.",
+    "Yes, I am [taking my medications].",
+    "Jugular venous distention to about eight centimeters.",
+    "A three out of six systolic ejection murmur.",
+    "Fine crackles at the bases bilaterally.",
+    "1+ pitting edema in the lower extremities.",
+    "Chest x-ray demonstrates a mild amount of fluid in the lungs.",
+    "Echocardiogram shows a reduced ejection fraction of 45% and mild mitral regurgitation.",
+    "Increase Lasix to 80mg once a day.",
+    "Wean yourself every day. I want you to call me if you\u2019re gaining more weight.",
+    "Order another echocardiogram.",
+    "Continue lisinopril 20mg a day for hypertension.",
+    "I monitor it regularly. My wife makes sure I stay on top of that, but it\u2019s been pretty good.",
+    "Slight cramps [chest pain] that go away after about an hour.",
+    "A slight cough, and again, I\u2019m not sure if it\u2019s just the change of seasons and I\u2019m getting a cold.",
+    "That sounds fine."
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    0,
+    3,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0,
+    1,
+    3,
+    0,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.20461705327033997,
+    "calinski_harabasz_score": 7.788044019303535,
+    "davies_bouldin_score": 1.2252329376595041
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9985285401344299,
+      0.9931390285491943,
+      0.9939907789230347
+    ],
+    [
+      0.9985285401344299,
+      0.9999998807907104,
+      0.9928147196769714,
+      0.9927977323532104
+    ],
+    [
+      0.9931390285491943,
+      0.9928147196769714,
+      0.9999998807907104,
+      0.9919660091400146
+    ],
+    [
+      0.9939907789230347,
+      0.9927977323532104,
+      0.9919660091400146,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.08931972086429596,
+    "1": 0.08549950271844864,
+    "2": 0.0,
+    "3": 0.17655113339424133
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Brian is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow-up of his chronic problems."
+      ]
+    },
+    "3": {
+      "2": [
+        "I just feel out of sorts lately. I don\u2019t know if it\u2019s the change in the seasons or if we\u2019re just doing a lot of projects around the house and some construction on our own. I\u2019m just feeling out of it. Lack of energy. I\u2019m just tired and fatigued, and I feel kinda. I feel lightheaded every once in a while."
+      ],
+      "0": [
+        "We began construction on our kitchen over Labor Day weekend, and it was hard to cook or prepare meals. We ate out a lot, and not always the best food out. It wreaked havoc; it\u2019s been maybe off a little bit."
+      ],
+      "1": [
+        "Wean yourself every day. I want you to call me if you\u2019re gaining more weight.",
+        "I monitor it regularly. My wife makes sure I stay on top of that, but it\u2019s been pretty good.",
+        "A slight cough, and again, I\u2019m not sure if it\u2019s just the change of seasons and I\u2019m getting a cold."
+      ]
+    },
+    "0": {
+      "2": [
+        "Probably since Labor Day, about five weeks or.",
+        "That sounds fine."
+      ],
+      "1": [
+        "Yes, I am [taking my medications].",
+        "Slight cramps [chest pain] that go away after about an hour."
+      ],
+      "0": [
+        "A three out of six systolic ejection murmur.",
+        "Fine crackles at the bases bilaterally.",
+        "Order another echocardiogram."
+      ]
+    },
+    "1": {
+      "2": [
+        "Jugular venous distention to about eight centimeters.",
+        "1+ pitting edema in the lower extremities."
+      ],
+      "0": [
+        "Chest x-ray demonstrates a mild amount of fluid in the lungs.",
+        "Echocardiogram shows a reduced ejection fraction of 45% and mild mitral regurgitation."
+      ],
+      "1": [
+        "Increase Lasix to 80mg once a day.",
+        "Continue lisinopril 20mg a day for hypertension."
+      ]
+    }
+  }
+}

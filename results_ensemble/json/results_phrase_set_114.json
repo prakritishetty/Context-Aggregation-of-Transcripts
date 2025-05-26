@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Right ankle pain and swelling.",
+    "I was going out to take off the trash and I was icy... I slipped and I was on the ground.",
+    "When it first happened I couldn't... my friend had to help me up.",
+    "I was keeping it elevated, icing it... taken some ibuprofen.",
+    "I could put a little bit more weight on it but I'm definitely still limping.",
+    "No, not that no I haven't had any numbness.",
+    "Ecchymosis... bruising over the lateral malleolus... tenderness to palpation anterolaterally.",
+    "Capillary refill is less than three seconds... sensation is intact to light touch.",
+    "Ankle x-ray and it showed no fracture that's good.",
+    "Symptoms are consistent with ankle sprain.",
+    "Keep your leg elevated... continue to ice it... given an Aircast... crutches for the next one to two days.",
+    "Continue to take the NSAIDs as needed.",
+    "Follow up with you and see how you're doing... in a few weeks how if you're ready to go play soccer again.",
+    "You'll be watching it for a while instead of playing it though.",
+    "When will I be able to play?"
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11392363160848618,
+    "calinski_harabasz_score": 3.36799299940396,
+    "davies_bouldin_score": 1.5360505122197663
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9979599714279175,
+      0.9977654814720154,
+      0.9987757205963135
+    ],
+    [
+      0.9979599714279175,
+      0.9999998807907104,
+      0.9978334903717041,
+      0.9957383871078491
+    ],
+    [
+      0.9977654814720154,
+      0.9978334903717041,
+      0.9999998807907104,
+      0.9964542388916016
+    ],
+    [
+      0.9987757205963135,
+      0.9957383871078491,
+      0.9964542388916016,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.04652933403849602,
+    "1": 0.06892049312591553,
+    "2": 0.030955705791711807,
+    "3": 0.12652356922626495
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Right ankle pain and swelling.",
+        "Symptoms are consistent with ankle sprain."
+      ],
+      "0": [
+        "Ecchymosis... bruising over the lateral malleolus... tenderness to palpation anterolaterally."
+      ],
+      "1": [
+        "Continue to take the NSAIDs as needed."
+      ]
+    },
+    "3": {
+      "2": [
+        "I was going out to take off the trash and I was icy... I slipped and I was on the ground."
+      ],
+      "0": [
+        "When it first happened I couldn't... my friend had to help me up."
+      ],
+      "1": [
+        "I was keeping it elevated, icing it... taken some ibuprofen.",
+        "I could put a little bit more weight on it but I'm definitely still limping."
+      ]
+    },
+    "0": {
+      "2": [
+        "No, not that no I haven't had any numbness."
+      ],
+      "0": [
+        "Ankle x-ray and it showed no fracture that's good."
+      ],
+      "1": [
+        "Follow up with you and see how you're doing... in a few weeks how if you're ready to go play soccer again.",
+        "You'll be watching it for a while instead of playing it though.",
+        "When will I be able to play?"
+      ]
+    },
+    "2": {
+      "0": [
+        "Capillary refill is less than three seconds... sensation is intact to light touch.",
+        "Keep your leg elevated... continue to ice it... given an Aircast... crutches for the next one to two days."
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,I was skiing in Vermont last weekend and I caught my ski when I was coming off the lift and I fell and my knee popped and it's hurt ever since.
+S,1,0,it hurts on the outside but it also feels it won't hold my weight
+S,1,0,it’s been hurting ever since
+A,0,2,the feeling of instability and buckling.
+S,1,1,I had to be taken down by the ski patrol I was unable to bear weight.
+S,1,1,I was immediately able to bend it but not really
+S,1,1,somewhat [able to straighten] but it really hurts when I try to straighten all the way.
+P,2,2,no numbing or tingling in [my] toes
+A,0,2,can feel [my] toes.
+A,0,0,taking ibuprofen
+A,0,0,is helping somewhat
+P,2,2,"edema and an effusion over the knee,"
+P,2,2,"pain to palpation of the lateral knee,"
+P,2,2,"decreased flexion and extension,"
+A,0,0,positive Lachman sign.
+O,3,0,x-ray of the knee did not show any bony abnormality
+A,0,1,concerned that you have ruptured your ACL.
+P,2,0,"order a knee MRI to confirm,"
+P,2,2,"continue ibuprofen 600 to 800 mg every 8 hours,"
+P,2,2,brace to support the knee.
+P,2,2,active with skiing and taking care of her 4-year-old twins
+A,0,0,get back into running.
+S,1,1,husband is home with me but he also works a job where he is gone quite a bit.
+P,2,2,"regular heart rate and rhythm, clear lungs,"
+P,2,2,"palpable dorsalis pedis and posterior tibial pulse,"
+P,2,1,no leg edema in the ankle.
+A,0,0,see you again soon

@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,"I'm having this left shoulder pain lately, and it's paining a lot."
+S,2,0,"I was in gymnastics class... Maybe I must have toppled over into some weird position, it started to pain since, because of a certain move."
+P,3,0,"It's been a week, doctor."
+O,1,2,Any movement on my left shoulder hurts.
+S,2,2,"I did take a Tylenol for two or three days, but that didn't help at all."
+O,1,0,Pain with any movement of the left shoulder.
+A,0,2,"From the x-ray, it doesn't look there is any broken bone or fracture."
+A,0,0,"Continue using the pain reliever, maybe just 600 milligram of ibuprofen three times a day and use it for a week."
+A,0,0,"If it's still painful, you can use ice or heat pad... might help relieve your pain."
+O,1,1,Definitely not [carrying heavy weights]. Use hand instead... rest your left arm while it's healing.
+A,0,1,Come back to see me if the pain still there after maybe three weeks... may repeat the left shoulder x-ray at that time.
+S,2,1,I did have past surgery on my left arm... that doesn't seem related to your pain.
+P,3,0,You can also try Advil... Aleve.

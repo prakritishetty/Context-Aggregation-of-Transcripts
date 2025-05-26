@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,"I’ve been putting a few more miles on the bike each day… my knees have been killing me, just more in the last three or four days"
+P,1,2,both equally
+P,1,1,stiff and sore
+O,0,0,swelling… redness… inflamed in the morning
+O,0,0,no other joints bothering you… just the knees
+A,2,2,"no fever, chills, abdominal pain, nausea, or vomiting"
+A,2,1,coronary artery disease… stent placed last year
+O,0,0,taking aspirin every day… no problems with Crestor
+O,0,1,lupus… been in the background… no issues with kidney function
+A,2,0,bilateral edema and slight erythema… slight effusion present on the knee
+A,2,0,pain to palpation of the knee… decreased range of motion bilaterally
+A,2,1,2/6 systolic ejection murmur… stable
+A,2,0,"knee x-ray… no boney abnormality, no fracture"
+O,0,0,"EKG… looks really good, no concerns from a heart standpoint"
+S,3,0,concerned that it might be from a flareup of your lupus
+P,1,0,order an autoimmune panel
+P,1,0,order a lipid panel and another echocardiogram
+P,1,1,continue current regimen
+P,1,1,no questions

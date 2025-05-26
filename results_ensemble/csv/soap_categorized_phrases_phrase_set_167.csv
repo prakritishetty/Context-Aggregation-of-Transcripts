@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,I was playing tennis and I was trying to volley the ball... I got in front of another player and ended up falling on top of my foot.
+S,2,2,I quickly twisted myself around her because I was trying to catch myself but I started to feel some pain in my foot.
+S,2,0,I had to stop... I had to be held from the field because I couldn't put weight on my foot.
+S,2,1,I wrapped it... iced it last night and kept it up on a pillow... took some ibuprofen.
+S,2,1,"No, I injured my other foot before not this foot."
+S,2,1,No numbness... I can still feel my foot.
+P,3,0,Bruising of the plantar and dorsal aspects of the foot... associated swelling... tenderness to palpation of the midfoot... positive piano key test of the first and second metatarsals... warm to touch.
+P,3,0,Subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases... presence of a bony fragment in the Lisfranc joint space.
+O,1,0,Foot pain consistent with a Lisfranc fracture... fracture to one of your second metatarsal bones near the top of your foot.
+A,0,2,I am going to recommend surgery... place the bones in their proper positions using plates and screws... prevent further complications.
+O,1,0,I will be ordering an MRI to further assess the fracture and any injury to the ligaments.
+A,0,0,Day surgery... go home the same day... cast and crutches... six to eight weeks... gradually walking on your foot.
+A,0,2,Do I have to do the surgery?... I hate that word surgery doc... how long is the procedure usually too?
+A,0,0,"Out for the rest of the season... physical therapy... risks include bleeding, loss of sensation, nerve damage... chronic pain."
+A,0,1,Follow up with me here in the clinic in about a week... physical therapy to strengthen the muscles.
+S,2,1,Your foot is probably your dominant one... you won't be able to drive... need somebody to take you home.

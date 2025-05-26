@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,"She's here for a new visit with her mother for acne located on the face, which started about two years ago and is present most every day."
+O,1,2,"She has been using persa-gel and washing regularly, which is somewhat helpful."
+S,0,0,"The biggest flare, probably, was when she started school sports in the fall, just with all the sweating."
+A,2,0,"No associated symptoms including itching, bleeding, or pain."
+S,0,2,"In the morning, I wipe my face with water and a washcloth. At night, I use an elf facial cleanser called the super clarity cleanser, followed by a toner and the persa-gel."
+O,1,0,"She wears sunscreen in the summer, spf 30."
+P,3,0,"Multiple benign nevi on the trunk and extremities. Scattered skin colored papules. Open and closed comedones. And erythmateous papules on the face, primarily on the forehead and with also some on the central cheeks and chin."
+A,2,0,"Mild to moderate acne, mostly comodonal with small inflammatory component."
+P,3,0,"Start with a topical therapy first... adapalene, 0.1% cream... apply in a thin layer to the areas you generally get acne... follow that with clean and clear persa-gel... noncomedogenic moisturizer."
+O,1,0,You will need to wear sunscreen when you are outside.
+O,1,0,We will see if you have any progress over the next six months and follow up at that time.
+S,0,1,"Multiple benign moles on your arms, legs, back and abdomen. This means they all look normal with no worrisome features."
+O,1,1,She plays basketball and volleyball and tap.

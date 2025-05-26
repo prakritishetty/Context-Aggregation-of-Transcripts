@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "nonhealing foot ulcer",
+    "I've had it for about two months",
+    "it's recently become red and is draining",
+    "walking barefoot on the beach",
+    "I didn't pick them up from the pharmacy yet",
+    "I take my medication but I don't check my sugar all the time",
+    "they told me it was around ten",
+    "1 by 2 inch circular wound on the dorsal aspect of the lateral foot just proximal to the fifth mtp joint",
+    "some redness some drainage present you have some edema around it",
+    "I don't see any necrosis you don't have any odor and I don't appreciate any bony exposure",
+    "no evidence of osteomyelitis",
+    "order an abi ankle brachial index",
+    "perform a debridement",
+    "prescribe clindamycin 400 mg twice a day for seven days",
+    "get you a shoe",
+    "see you back in two weeks",
+    "call the office if anything happens in between",
+    "go to the urgent care or the er if you feel fever or if you get black or anything",
+    "sometimes it does feel there is some throbbing going on"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    3,
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    3,
+    0,
+    2,
+    2,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12326905876398087,
+    "calinski_harabasz_score": 4.3266204366024406,
+    "davies_bouldin_score": 1.5927654252636128
+  },
+  "similarity_matrix": [
+    [
+      0.9999995231628418,
+      0.9952841401100159,
+      0.9981945753097534,
+      0.9966291189193726
+    ],
+    [
+      0.9952841401100159,
+      0.9999999403953552,
+      0.9984433650970459,
+      0.9961645603179932
+    ],
+    [
+      0.9981945753097534,
+      0.9984433650970459,
+      1.0000003576278687,
+      0.9981122016906738
+    ],
+    [
+      0.9966291189193726,
+      0.9961645603179932,
+      0.9981122016906738,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.18223869800567627,
+    "1": 0.10619274526834488,
+    "2": -0.0645170584321022,
+    "3": -0.0025989189743995667
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "nonhealing foot ulcer"
+      ],
+      "0": [
+        "1 by 2 inch circular wound on the dorsal aspect of the lateral foot just proximal to the fifth mtp joint"
+      ],
+      "1": [
+        "order an abi ankle brachial index",
+        "prescribe clindamycin 400 mg twice a day for seven days"
+      ]
+    },
+    "1": {
+      "2": [
+        "I've had it for about two months",
+        "I didn't pick them up from the pharmacy yet",
+        "they told me it was around ten"
+      ],
+      "0": [
+        "I take my medication but I don't check my sugar all the time",
+        "I don't see any necrosis you don't have any odor and I don't appreciate any bony exposure"
+      ],
+      "1": [
+        "some redness some drainage present you have some edema around it",
+        "sometimes it does feel there is some throbbing going on"
+      ]
+    },
+    "3": {
+      "0": [
+        "it's recently become red and is draining",
+        "perform a debridement"
+      ]
+    },
+    "2": {
+      "2": [
+        "walking barefoot on the beach",
+        "no evidence of osteomyelitis"
+      ],
+      "0": [
+        "get you a shoe",
+        "see you back in two weeks"
+      ],
+      "1": [
+        "call the office if anything happens in between",
+        "go to the urgent care or the er if you feel fever or if you get black or anything"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,nonhealing foot ulcer
+O,1,2,I've had it for about two months
+P,3,0,it's recently become red and is draining
+A,2,2,walking barefoot on the beach
+O,1,2,I didn't pick them up from the pharmacy yet
+O,1,0,I take my medication but I don't check my sugar all the time
+O,1,2,they told me it was around ten
+S,0,0,1 by 2 inch circular wound on the dorsal aspect of the lateral foot just proximal to the fifth mtp joint
+O,1,1,some redness some drainage present you have some edema around it
+O,1,0,I don't see any necrosis you don't have any odor and I don't appreciate any bony exposure
+A,2,2,no evidence of osteomyelitis
+S,0,1,order an abi ankle brachial index
+P,3,0,perform a debridement
+S,0,1,prescribe clindamycin 400 mg twice a day for seven days
+A,2,0,get you a shoe
+A,2,0,see you back in two weeks
+A,2,1,call the office if anything happens in between
+A,2,1,go to the urgent care or the er if you feel fever or if you get black or anything
+O,1,1,sometimes it does feel there is some throbbing going on

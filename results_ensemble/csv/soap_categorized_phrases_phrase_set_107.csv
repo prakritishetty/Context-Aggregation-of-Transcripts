@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,Non-healing foot ulcer
+O,3,2,I can't get this ulcer to heal
+A,1,2,It's been about a year
+O,3,0,It just seemed a little blister and I picked at it and it did get a little bit red and infected
+O,3,0,"I went on some antibiotics [Keflex], it seemed to get better but nothing is really making it go away"
+O,3,1,No pain but I don’t have much feeling in my foot
+A,1,0,You’ve got neuropathy
+O,3,0,There has been a lot more drainage and I just feel a little more tired
+A,1,2,Blood sugars are running better than they were but still in the two hundreds
+A,1,1,Last A1C was about ten
+S,2,0,1 by 2 centimeter wound on the dorsal aspect of the lateral foot... yellow slough... minimal granulation tissue... no surrounding erythema or cellulitis... no bony exposure... no odor
+P,0,1,No evidence of osteomyelitis
+P,0,0,Order an ABI to determine blood supply
+P,0,1,Debridement here in the office
+P,0,1,Prescribe colaganase ointment... cover with sterile dressing
+P,0,1,Get you a surgical shoe to take pressure off the area
+P,0,1,Follow-up in two weeks for re-evaluation
+O,3,1,I’ll probably be walking around at the zoo... eating out and not doing anything my doctor wants me to do

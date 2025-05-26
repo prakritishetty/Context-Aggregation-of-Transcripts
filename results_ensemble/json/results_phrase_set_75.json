@@ -1,0 +1,151 @@
+{
+  "phrases": [
+    "difficulty swallowing... something is always stuck in my throat... have to wash it down on occasion.",
+    "noticed over the last four to five weeks.",
+    "painful... solids require more effort... never fully choked but worried about choking.",
+    "no coughing... no blood in stools or vomiting... no weight loss, chest pain, or shortness of breath.",
+    "taking metformin 500 mg twice a day... checks blood sugars ~80% of the time... within target range.",
+    "Norvasc... blood pressure in office 120/50... home readings occasionally lower but mostly in range.",
+    "no neck swelling, masses, or lymph nodes... normal thyroid... clear lungs, normal heart... epigastric tenderness.",
+    "narrowing in the throat/esophagus... possible stricture requiring dilation.",
+    "refer to gastroenterology for scope... start Prilosec 20 mg daily.",
+    "chew food thoroughly, avoid hard solids without care... ER if food gets stuck.",
+    "repeat hemoglobin A1c, kidney function tests... eye referral for retinopathy.",
+    "Norvasc refill requested and provided."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    2,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    2,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18201808631420135,
+    "calinski_harabasz_score": 3.137929202848741,
+    "davies_bouldin_score": 1.2697463544479533
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9970287084579468,
+      0.9983892440795898,
+      0.9980352520942688
+    ],
+    [
+      0.9970287084579468,
+      1.0000001192092896,
+      0.9959852695465088,
+      0.9950066804885864
+    ],
+    [
+      0.9983892440795898,
+      0.9959852695465088,
+      1.0,
+      0.9977164268493652
+    ],
+    [
+      0.9980352520942688,
+      0.9950066804885864,
+      0.9977164268493652,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.01480038184672594,
+    "1": 0.02090507000684738,
+    "2": 0.1905072182416916,
+    "3": 0.18644338846206665
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "difficulty swallowing... something is always stuck in my throat... have to wash it down on occasion."
+      ],
+      "0": [
+        "painful... solids require more effort... never fully choked but worried about choking."
+      ],
+      "1": [
+        "chew food thoroughly, avoid hard solids without care... ER if food gets stuck."
+      ]
+    },
+    "1": {
+      "0": [
+        "noticed over the last four to five weeks.",
+        "Norvasc refill requested and provided."
+      ]
+    },
+    "3": {
+      "0": [
+        "no coughing... no blood in stools or vomiting... no weight loss, chest pain, or shortness of breath.",
+        "no neck swelling, masses, or lymph nodes... normal thyroid... clear lungs, normal heart... epigastric tenderness."
+      ]
+    },
+    "0": {
+      "2": [
+        "taking metformin 500 mg twice a day... checks blood sugars ~80% of the time... within target range."
+      ],
+      "0": [
+        "Norvasc... blood pressure in office 120/50... home readings occasionally lower but mostly in range.",
+        "refer to gastroenterology for scope... start Prilosec 20 mg daily."
+      ],
+      "1": [
+        "narrowing in the throat/esophagus... possible stricture requiring dilation.",
+        "repeat hemoglobin A1c, kidney function tests... eye referral for retinopathy."
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+phrases,cluster_labels
+"Barbara is a 31-year-old female with a history of diabetes type two and asthma, here today with abdominal pain.",0
+"I’ve been having this pain for the past one week... I’ve been drinking too much coffee lately, don’t know if that triggered my gastritis.",2
+The pain is gradually increasing in severity.,0
+Nausea and vomiting are on and off; experienced nausea three times in the past week and vomited a couple of times.,0
+The pain is in both sides of my upper abdomen and increases when I work out or jog.,0
+No fever with the pain.,3
+Diabetes is under control with blood sugars at 80-100; currently on metformin 500 mg twice daily.,0
+"Asthma managed with Flovent twice daily and albuterol as needed, but sometimes forget to take Flovent.",1
+"Physical exam shows mild tenderness in the epigastrium, soft abdomen, no tenderness in lower or right upper quadrants.",0
+Heart exam reveals a grade 3/6 systolic ejection murmur unchanged from prior.,0
+"Lung exam shows mild end-expiratory wheezes, very faint.",0
+Assessment: Acute gastritis likely related to increased caffeine intake and alcohol use.,1
+"Plan: Reduce caffeine and alcohol, prescribe Zantac twice daily, order urinalysis, CBC, and metabolic panel.",1
+Adjust metformin to 1000 mg morning and 500 mg evening.,3
+Continue Flovent daily and albuterol as needed for asthma.,1
+Patient agrees to cut back on spicy food as well.,3
+Follow-up in four weeks.,3

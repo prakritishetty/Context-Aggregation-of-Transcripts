@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,Roger is a 62-year-old male here for emergency room follow-up for some chest pain.
+A,2,2,We were doing a bunch of yard work and it was really hot over the weekend and I was short of breath and I felt a little chest pain for probably about an hour or.
+P,0,1,"No, I never have [had chest pain before]."
+A,2,0,"After we were done, I felt fine ever since, but I thought it was worth looking into."
+O,1,2,No other symptoms since?
+P,0,1,"No, not on my immediate family, but I have on my cousin's side of the family [for heart disease]."
+O,1,2,No problem in rehab and recovery [after knee surgery].
+P,0,0,No chest pain while you were doing exercises in PT for your knee? No.
+A,2,1,"They were a little concerned about [blood pressure], but they kept me there for a few hours and it seemed to regulate after effect. It didn't seem to be a problem when I went home."
+P,0,1,Your blood pressure was about 180 over 95 when you went into the emergency room.
+S,3,0,"I feel a little enlarged thyroid here that's not tender. You have a carotid bruit on the right side and your lungs are clear. Your heart is in a regular rate and rhythm, but I hear a three out of six systolic ejection murmur. Your abdomen is nice and soft. There is the healed scar on your knee from your prior knee surgery, and there's no lower extremity edema."
+O,1,0,Your EKG is normal.
+P,0,0,Your ejection fraction on echocardiogram was abnormal [described as 'a little bit of a low pumping function'].
+P,0,1,Your blood pressure's still high.
+O,1,2,I suspect an element of coronary artery disease as well as pumping dysfunction.
+P,0,1,"We'll change your blood pressure regimen. We'll put you on carvedilol, 25 milligrams twice a day. That helps with coronary disease as well as your pumping function of your heart."
+P,0,1,I want to go ahead and order a cardiac catheterization on you and make sure that we don't have any blockages in your heart arteries responsible for the chest pain.
+O,1,2,Continue lisinopril 10 milligrams a day.
+O,1,0,Schedule that cath for you.
+O,1,1,Sounds good
+O,1,1,could be related to severe hypertension or heart disease

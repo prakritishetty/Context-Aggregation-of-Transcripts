@@ -1,0 +1,11 @@
+soap_category,main_cluster,subcluster,phrase
+P,1,0,next patient is melissa sanchez... being seen in office today for status post mitral valve repair done on 8/3/2020.
+S,0,1,"At her previous follow-up on 9/17, we felt that she was doing quite from a cardiac standpoint, and we recommended she continue with the same medication."
+S,0,0,"I'm still getting some chest pains sometimes, and my breathing gets shallow... if I feel that, if I'm exerting myself, I slow down a bit which helps... episodes last a few minutes... goes away for a couple weeks."
+S,0,2,"I've been trying to keep up with that. There's a lot of extra pills, but I have a reminder app, I do pretty."
+O,3,0,Ecg taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response. T-wave inversion anteriorly... no significant changes compared to the previous study.
+O,3,0,"Head and neck no jvd detected... lungs have reduced breath, but auscultation and percussion are clear... rhythm is irregularly irregular... trace peripheral edema on extremities."
+A,2,2,"it's when your heart doesn't beat with the correct rhythm, and whatever rhythm it doesn't have a pattern to it... part of the atrial fibrillation."
+A,2,0,"Coumadin 4 milligrams, lasix at 40 milligrams a day, and the atenolol, you're taking that every day as... 50 milligrams every day."
+A,2,1,Continue on your current meds... let's do a followup in about six to nine months.
+P,1,0,"history of mitral regurgitation and atrial fibrillation, history of diabetes, asthma, and recurrent chest discomfort with negative cardiac workup for coronary artery disease."

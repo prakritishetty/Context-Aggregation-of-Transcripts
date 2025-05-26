@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "Back pain, usually on the left, sometimes sharp, sometimes moving.",
+    "I\u2019ve had some back pain it\u2019s usually on the left and he asked some questions and he said I should come see you.",
+    "I\u2019ve been having these sore throats and fibroid I\u2019m told I have strep... I\u2019ve had four in the last five months.",
+    "I\u2019ve been drinking a lot more water and I do realize that I wake up sometimes during the night to use the restroom to pee more than I normally do.",
+    "I ride a bike every so often... I\u2019m in the process of switching jobs. My new job will be at a restaurant.",
+    "I have a brother who smokes I\u2019ve told him not to smoke he doesn\u2019t listen.",
+    "No tenderness on palpation... no erythema no swelling... no wheezes rales rhonchi... heart sounds great no murmur no rub no gallop.",
+    "The CT is showing a couple things that we are a little concerned about... potentially caused by glomerular nephritis.",
+    "Lipid panel, UA, CMP, CBC, vitamin D, and a TSH.",
+    "Refer you to an ENT... consider taking out your tonsils.",
+    "They are going to be free ninety nine because your mom is paying for them... I have a class after this and have to go to work.",
+    "Come back in a week... we could do that over the phone by the way.",
+    "Do I need to get a shot today?... When do I have to do those tests?",
+    "Watch your salt intake... provide a work note.",
+    "The free food at the restaurant might be an issue because your salt intake is about to be very important."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.22581879794597626,
+    "calinski_harabasz_score": 5.005854872178692,
+    "davies_bouldin_score": 0.8694441659656257
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9970983266830444,
+      0.9952203035354614,
+      0.9966198205947876
+    ],
+    [
+      0.9970983266830444,
+      1.0000004768371582,
+      0.990373432636261,
+      0.9939554929733276
+    ],
+    [
+      0.9952203035354614,
+      0.990373432636261,
+      1.000000238418579,
+      0.9937810301780701
+    ],
+    [
+      0.9966198205947876,
+      0.9939554929733276,
+      0.9937810301780701,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07979423552751541,
+    "1": 0.14743193984031677,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Back pain, usually on the left, sometimes sharp, sometimes moving."
+      ],
+      "1": [
+        "The CT is showing a couple things that we are a little concerned about... potentially caused by glomerular nephritis.",
+        "Come back in a week... we could do that over the phone by the way.",
+        "Do I need to get a shot today?... When do I have to do those tests?",
+        "The free food at the restaurant might be an issue because your salt intake is about to be very important."
+      ],
+      "0": [
+        "Refer you to an ENT... consider taking out your tonsils.",
+        "Watch your salt intake... provide a work note."
+      ]
+    },
+    "1": {
+      "2": [
+        "I\u2019ve had some back pain it\u2019s usually on the left and he asked some questions and he said I should come see you."
+      ],
+      "0": [
+        "I\u2019ve been having these sore throats and fibroid I\u2019m told I have strep... I\u2019ve had four in the last five months.",
+        "I\u2019ve been drinking a lot more water and I do realize that I wake up sometimes during the night to use the restroom to pee more than I normally do.",
+        "I ride a bike every so often... I\u2019m in the process of switching jobs. My new job will be at a restaurant.",
+        "I have a brother who smokes I\u2019ve told him not to smoke he doesn\u2019t listen."
+      ],
+      "1": [
+        "They are going to be free ninety nine because your mom is paying for them... I have a class after this and have to go to work."
+      ]
+    },
+    "3": {
+      "0": [
+        "No tenderness on palpation... no erythema no swelling... no wheezes rales rhonchi... heart sounds great no murmur no rub no gallop."
+      ]
+    },
+    "2": {
+      "0": [
+        "Lipid panel, UA, CMP, CBC, vitamin D, and a TSH."
+      ]
+    }
+  }
+}

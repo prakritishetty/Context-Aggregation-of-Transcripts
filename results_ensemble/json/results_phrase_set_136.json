@@ -1,0 +1,151 @@
+{
+  "phrases": [
+    "I was bowling and as I was running up to the lane, I had my bowling ball all the way back, and when I slung it forward, I hit it into my leg instead of the lane and I fell.",
+    "It\u2019s very sore",
+    "A little bit on the back- back end, that side",
+    "I\u2019ve been going back and forth between taking ibuprofen and Tylenol",
+    "Yes. I have eczema",
+    "I take fluocinonide when it gets really itchy",
+    "I had a\u2026 some diverticulosis and I went into diverticulitis and they ended up going in and having to remove a little bit of my colon",
+    "You have some significant tenderness to the lateral aspect of your upper leg",
+    "No pain or tenderness with flexion or extension of the lower leg",
+    "This is a normal femur\u2026 really don\u2019t see any evidence of a fracture or any swelling, it\u2019s essentially a normal x-ray",
+    "I\u2019m going to start you on an ant-inflammatory. It\u2019s going to be Mobic 15 milligrams, once a day",
+    "Use some ice for the pain"
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    1,
+    0,
+    1,
+    0,
+    3,
+    2,
+    2,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1639241725206375,
+    "calinski_harabasz_score": 3.340475277807784,
+    "davies_bouldin_score": 1.2082047786774743
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9970626831054688,
+      0.9956316947937012,
+      0.9971063733100891
+    ],
+    [
+      0.9970626831054688,
+      1.0,
+      0.9957307577133179,
+      0.9938653707504272
+    ],
+    [
+      0.9956316947937012,
+      0.9957307577133179,
+      0.9999998807907104,
+      0.9931750893592834
+    ],
+    [
+      0.9971063733100891,
+      0.9938653707504272,
+      0.9931750893592834,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.08369316160678864,
+    "1": 0.06295088678598404,
+    "2": 0.39526239037513733,
+    "3": 0.0006321599357761443
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "I was bowling and as I was running up to the lane, I had my bowling ball all the way back, and when I slung it forward, I hit it into my leg instead of the lane and I fell.",
+        "I had a\u2026 some diverticulosis and I went into diverticulitis and they ended up going in and having to remove a little bit of my colon"
+      ]
+    },
+    "0": {
+      "2": [
+        "It\u2019s very sore"
+      ],
+      "0": [
+        "I\u2019ve been going back and forth between taking ibuprofen and Tylenol",
+        "I take fluocinonide when it gets really itchy",
+        "I\u2019m going to start you on an ant-inflammatory. It\u2019s going to be Mobic 15 milligrams, once a day"
+      ],
+      "1": [
+        "This is a normal femur\u2026 really don\u2019t see any evidence of a fracture or any swelling, it\u2019s essentially a normal x-ray"
+      ]
+    },
+    "1": {
+      "2": [
+        "A little bit on the back- back end, that side"
+      ],
+      "0": [
+        "Yes. I have eczema"
+      ],
+      "1": [
+        "Use some ice for the pain"
+      ]
+    },
+    "2": {
+      "0": [
+        "You have some significant tenderness to the lateral aspect of your upper leg",
+        "No pain or tenderness with flexion or extension of the lower leg"
+      ]
+    }
+  }
+}

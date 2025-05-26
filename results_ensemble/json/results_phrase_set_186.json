@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "I hurt my knee when I was skiing two weeks ago.",
+    "I ran into a tree and twisted my knee.",
+    "I heard a pop in my left knee.",
+    "pain lasts for as long as my walk is.",
+    "swelling and stiff in the morning until I get walking.",
+    "wear a brace and I have used a lot of THC cream on it.",
+    "THC gummies from grandma.",
+    "I had surgery on my knee before when I was fourteen.",
+    "I ski probably three times a week.",
+    "start three times a week",
+    "prescribe meloxicam fifteen milligrams... ibuprofen eight hundred milligrams a day.",
+    "discontinue the use of your THC gummies while taking these medications.",
+    "I would recommend not skiing or doing any gymnastics for."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    3,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    2,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.20606067776679993,
+    "calinski_harabasz_score": 3.933100320920696,
+    "davies_bouldin_score": 1.0019692697959184
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9980524778366089,
+      0.9972445368766785,
+      0.9980394244194031
+    ],
+    [
+      0.9980524778366089,
+      1.0,
+      0.9974664449691772,
+      0.9958701133728027
+    ],
+    [
+      0.9972445368766785,
+      0.9974664449691772,
+      0.9999999403953552,
+      0.9971866011619568
+    ],
+    [
+      0.9980394244194031,
+      0.9958701133728027,
+      0.9971866011619568,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.15256185829639435,
+    "1": 0.18544217944145203,
+    "2": 0.004301866050809622,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "1": [
+        "I hurt my knee when I was skiing two weeks ago.",
+        "swelling and stiff in the morning until I get walking.",
+        "wear a brace and I have used a lot of THC cream on it.",
+        "I had surgery on my knee before when I was fourteen.",
+        "I would recommend not skiing or doing any gymnastics for."
+      ],
+      "2": [
+        "I heard a pop in my left knee."
+      ],
+      "0": [
+        "pain lasts for as long as my walk is."
+      ]
+    },
+    "0": {
+      "2": [
+        "I ran into a tree and twisted my knee."
+      ],
+      "0": [
+        "THC gummies from grandma."
+      ],
+      "1": [
+        "I ski probably three times a week."
+      ]
+    },
+    "3": {
+      "0": [
+        "start three times a week"
+      ]
+    },
+    "2": {
+      "0": [
+        "prescribe meloxicam fifteen milligrams... ibuprofen eight hundred milligrams a day.",
+        "discontinue the use of your THC gummies while taking these medications."
+      ]
+    }
+  }
+}

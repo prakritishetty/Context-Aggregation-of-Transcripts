@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,I was trying to go out and play some pickup soccer games over the weekend and went to go plank kick the ball and just felt a pop in my knee.
+P,0,2,about three days ago
+O,1,1,it it's swollen some some of that swelling has gone down
+O,1,0,my knee is just not as functionally it's not moving as as what it used to be it seems to be a little limited
+O,1,1,it's somewhere between six and seven it's about four or five with some of the swelling going down
+O,1,1,the ibuprofen helped a little bit but i'm on it pretty on a pretty regular basis
+S,2,2,marked limp on your looks it's your leg upon ambulation
+S,2,0,significant effusion in the knee just a slight bit of ecchymosis
+S,2,0,pain with palpation at the medial joint line
+S,2,0,difficulty with some passive range of motion
+P,0,2,lacking a few degrees of terminal extension to about a hundred and fifteen degrees
+S,2,0,lacking about maybe twenty to thirty degrees of terminal flexion on the secondary secondary to the pain here
+P,0,0,positive lachman exam
+A,3,0,your knee injury is really suggestive of anterior cruciate ligament tear
+P,0,1,order an mri because i wan na evaluate the integrity of that acl
+S,2,2,order some ant nflammatory medication meloxicam fifty milligrams a day
+P,0,0,ice the knee
+P,0,2,moderate your activities
+S,2,1,wear a knee immobilizer and also use crutches when you walk around
+S,2,1,no jogging for a while until we get results of that mri
+O,1,1,i typically sit behind a desk but it's not been very comfortable sitting here lately

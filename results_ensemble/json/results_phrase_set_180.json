@@ -1,0 +1,127 @@
+{
+  "phrases": [
+    "I was playing basketball and Jerry ran into me and the inside of my knee hurts.",
+    "I landed on my side I was not able to continue on.",
+    "On the inside",
+    "Yes it hurts",
+    "I do see some ecchymosis and swelling on the inside of that knee and when I push around that knee I can see that there is fluid in the knee a little bit of fluid in the knee we call that effusion.",
+    "There is a negative varus and valgus stress test.",
+    "The bony alignment's in good position I don't see any evidence of any fractures I do notice the effusion around the knee.",
+    "You have may have a medial collateral ligament strain from maybe the twisting motion before you fell to the ground."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    1,
+    1,
+    2,
+    0,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2428400069475174,
+    "calinski_harabasz_score": 4.307528081856678,
+    "davies_bouldin_score": 0.9508550730256325
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9940685629844666,
+      0.9977777600288391,
+      0.9962332248687744
+    ],
+    [
+      0.9940685629844666,
+      1.0000004768371582,
+      0.9922305345535278,
+      0.993390679359436
+    ],
+    [
+      0.9977777600288391,
+      0.9922305345535278,
+      1.000000238418579,
+      0.9978929162025452
+    ],
+    [
+      0.9962332248687744,
+      0.993390679359436,
+      0.9978929162025452,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0010863261995837092,
+    "1": 0.23073731362819672,
+    "2": 0.26838791370391846,
+    "3": 0.24001310765743256
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "I was playing basketball and Jerry ran into me and the inside of my knee hurts.",
+        "I landed on my side I was not able to continue on."
+      ]
+    },
+    "1": {
+      "0": [
+        "On the inside",
+        "Yes it hurts"
+      ]
+    },
+    "2": {
+      "0": [
+        "I do see some ecchymosis and swelling on the inside of that knee and when I push around that knee I can see that there is fluid in the knee a little bit of fluid in the knee we call that effusion.",
+        "The bony alignment's in good position I don't see any evidence of any fractures I do notice the effusion around the knee."
+      ]
+    },
+    "0": {
+      "0": [
+        "There is a negative varus and valgus stress test.",
+        "You have may have a medial collateral ligament strain from maybe the twisting motion before you fell to the ground."
+      ]
+    }
+  }
+}

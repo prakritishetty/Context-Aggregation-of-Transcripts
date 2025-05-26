@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,John is a 55-year-old male with a past medical history significant for anxiety and epilepsy who presents with an abnormal lab finding.
+A,0,2,"They had to treat you for that, what was going on?"
+P,3,2,We've been going from place to place for different events and we've had a lot of visitors over the last couple of weeks and I just wasn't monitoring my sugar intake and a little too much stress and strain over the last couple of weeks.
+P,3,0,"Your hemoglobin A1c here is 8, last time we had seen it, it was about 6 and we hadn't put you on medications."
+O,1,2,Your blood sugar and it was 162
+A,0,2,They put you on medication? They did. ... Metformin?
+P,3,1,"In terms of your anxiety, I'm sure that this didn't help much"
+P,3,2,"I had my moments but it's almost the weekend, it's been a little bit better. Things are under control."
+A,0,0,"Any seizures recently? Not in a while, it's been quite a few months and it was something minor but nothing major ever since."
+A,0,1,You do have some trace pitting edema to your lower extremities
+A,0,2,Did they give you a lot of fluid in the emergency room? They did.
+A,0,1,Continue on the metformin 500mg twice a day. We'll probably increase that over time.
+O,1,2,I'm gonna go ahead and order hemoglobin A1c for the future.
+O,1,0,Continue Keppra at current dosage
+O,1,1,Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+O,1,0,"not at this point, no"
+A,0,1,They started you on metformin 500 mg twice daily during that time
+O,1,0,He continues to take Keppra

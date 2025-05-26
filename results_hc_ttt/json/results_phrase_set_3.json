@@ -1,0 +1,131 @@
+{
+  "phrases": [
+    "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+    "Back to work with full range of motion and no issues since carpal tunnel release.",
+    "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned.",
+    "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week.",
+    "It does [happen when walking]... it does [go away with rest]... no [at rest].",
+    "No numbing and tingling in your hands? [Patient] no.",
+    "No lower extremity edema, or muscle aches, or fever chills?",
+    "No, nothing...",
+    "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen.",
+    "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist.",
+    "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation.",
+    "ECG prior coronary artery disease. No new changes.",
+    "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily.",
+    "If you have recurrent symptoms, let me know."
+  ],
+  "cluster_labels": [
+    1,
+    2,
+    3,
+    3,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": {
+    "0": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "8": 0,
+    "9": 1,
+    "10": 1,
+    "12": 1,
+    "1": 2,
+    "5": 1,
+    "6": 0,
+    "7": 1,
+    "11": 1,
+    "13": 1
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12850245833396912,
+    "calinski_harabasz_score": 2.9486587047576904,
+    "davies_bouldin_score": 1.4515984645469604
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9837523698806763,
+      0.9737896919250488,
+      0.9770786762237549
+    ],
+    [
+      0.9837523698806763,
+      0.9999998807907104,
+      0.970805287361145,
+      0.9864332675933838
+    ],
+    [
+      0.9737896919250488,
+      0.970805287361145,
+      1.0000003576278687,
+      0.9609391689300537
+    ],
+    [
+      0.9770786762237549,
+      0.9864332675933838,
+      0.9609391689300537,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.05301355943083763,
+    "1": -0.04073260724544525,
+    "2": 0.0346783846616745,
+    "3": 0.21495521068572998
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I've been doing well with my herniated disc in my back, no back pain or limitations in movement."
+      ],
+      "0": [
+        "It does [happen when walking]... it does [go away with rest]... no [at rest]."
+      ],
+      "1": [
+        "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist.",
+        "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation.",
+        "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily."
+      ]
+    },
+    "2": {
+      "2": [
+        "Back to work with full range of motion and no issues since carpal tunnel release."
+      ],
+      "0": [
+        "No lower extremity edema, or muscle aches, or fever chills?"
+      ]
+    },
+    "3": {
+      "0": [
+        "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned.",
+        "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week.",
+        "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen."
+      ]
+    },
+    "0": {
+      "1": [
+        "No numbing and tingling in your hands? [Patient] no.",
+        "No, nothing...",
+        "ECG prior coronary artery disease. No new changes.",
+        "If you have recurrent symptoms, let me know."
+      ]
+    }
+  }
+}

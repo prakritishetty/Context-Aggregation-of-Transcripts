@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+O,3,1,shortness of breath
+O,3,0,palpitating a lot
+O,3,1,shortness of breath
+P,1,1,it happens more often lately.
+S,2,2,"Last time I saw you, you were smoking two packs a day. How much are you smoking?"
+S,2,0,it's gone down quite a bit... probably once a day or something.
+S,2,0,my moments... some days when I feel everything was great... other days I feel extremely low.
+P,1,0,depression's stable... still taking the Effexor.
+S,2,0,Neurontin is helping control the pain... but it does come every now and then.
+S,2,0,try to get as much rest as I can... haven’t made yoga a habit.
+O,3,2,asthma or COPD
+A,0,2,diaphragm is a little bit flatter... consistent with COPD.
+A,0,0,COPD... not able to exhale appropriately.
+A,0,0,"Combivent, two puffs twice a day... albuterol as needed... prednisone taper pack."
+P,1,2,keep taking the Effexor... continue Neurontin as is.
+A,0,1,counseled on smoking cessation... encouraged to practice yoga for depression and back pain.
+S,2,1,no questions... this is good. Thank you.

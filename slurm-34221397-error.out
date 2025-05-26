@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/main.py", line 4, in <module>
+    from src.components.step3_keyPhraseExtraction.kpe_for_ft import main_extractKPE_for_ft
+  File "/work/pi_hzamani_umass_edu/psshetty_umass_edu/Context-Aggregation-of-Transcripts/src/components/step3_keyPhraseExtraction/kpe_for_ft.py", line 11, in <module>
+    mp.set_start_method('spawn', force=True)
+    ^^
+NameError: name 'mp' is not defined. Did you mean: 'map'?

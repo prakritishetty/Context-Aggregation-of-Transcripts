@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "Right great toe pain.",
+    "It's almost a throbbing pain but occasionally it becomes almost a sharp stabbing pain especially if I move it or spend too much time walking.",
+    "It\u2019s been going on off and on for about two weeks but last week is when it really became painful.",
+    "I was at a trade show convention and I couldn\u2019t walk the halls I couldn\u2019t do anything I just had to stand there and it really hurt the whole time I was there.",
+    "When I\u2019m in bed at night and those sheets come down on it or I roll over that hurts a lot.",
+    "I take two ibuprofen a day and that doesn\u2019t seem to help.",
+    "10 degrees of plantar flexion",
+    "it\u2019s grinding a little bit",
+    "You have a large spur there on the top of your big toe joint",
+    "lost a lot of the cartilage.",
+    "Hallux rigidus.",
+    "Custom orthotics",
+    "meloxicam once a day.",
+    "See you back in two weeks to see how you\u2019re doing with that.",
+    "I want you to keep working I want you to do your regular activities.",
+    "I don\u2019t remember an injury",
+    "Yes it does",
+    "Feeling a little bit of bone spur here",
+    "We even just have to fuse the big toe joint"
+  ],
+  "cluster_labels": [
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    3,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1804937869310379,
+    "calinski_harabasz_score": 5.369742327388874,
+    "davies_bouldin_score": 1.3937274687200523
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9974747896194458,
+      0.9980075359344482,
+      0.9970892667770386
+    ],
+    [
+      0.9974747896194458,
+      0.9999995231628418,
+      0.9950408339500427,
+      0.99763423204422
+    ],
+    [
+      0.9980075359344482,
+      0.9950408339500427,
+      0.9999998211860657,
+      0.9955997467041016
+    ],
+    [
+      0.9970892667770386,
+      0.99763423204422,
+      0.9955997467041016,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.17733430862426758,
+    "1": 0.08670581877231598,
+    "2": 0.11586277931928635,
+    "3": 0.030370516702532768
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Right great toe pain.",
+        "Hallux rigidus."
+      ],
+      "0": [
+        "10 degrees of plantar flexion",
+        "Custom orthotics"
+      ],
+      "1": [
+        "meloxicam once a day."
+      ]
+    },
+    "2": {
+      "2": [
+        "It's almost a throbbing pain but occasionally it becomes almost a sharp stabbing pain especially if I move it or spend too much time walking."
+      ],
+      "0": [
+        "It\u2019s been going on off and on for about two weeks but last week is when it really became painful.",
+        "I was at a trade show convention and I couldn\u2019t walk the halls I couldn\u2019t do anything I just had to stand there and it really hurt the whole time I was there.",
+        "When I\u2019m in bed at night and those sheets come down on it or I roll over that hurts a lot.",
+        "I take two ibuprofen a day and that doesn\u2019t seem to help.",
+        "See you back in two weeks to see how you\u2019re doing with that."
+      ],
+      "1": [
+        "I want you to keep working I want you to do your regular activities."
+      ]
+    },
+    "0": {
+      "2": [
+        "it\u2019s grinding a little bit",
+        "I don\u2019t remember an injury"
+      ],
+      "0": [
+        "You have a large spur there on the top of your big toe joint",
+        "We even just have to fuse the big toe joint"
+      ],
+      "1": [
+        "Feeling a little bit of bone spur here"
+      ]
+    },
+    "3": {
+      "0": [
+        "lost a lot of the cartilage.",
+        "Yes it does"
+      ]
+    }
+  }
+}

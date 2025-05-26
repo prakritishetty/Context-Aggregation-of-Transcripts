@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,i have a little bit of some shortness of breath that i noticed over the weekend
+S,1,2,i would take them for mile long walks everyday... i could only walk down to the end of the street
+S,1,0,i've been having a dry cough no phlegm
+S,1,0,every time i swallow it hurts... in my chest
+S,1,2,some crackles in your lungs bilaterally... could mean you have some fluid in there
+O,2,1,some erythema on the anterior aspect of your chest... due to that radiation burn
+O,2,0,chest x-ray... shows evidence of mild radiation umitis [pneumonitis]
+P,0,2,continue you on that chemo regimen... cisplatin and a topicide [etoposide]
+P,0,0,prescribe you a low dose steroid prednisone forty milligrams... for five days
+P,0,0,prescribe you a lidocaine squishy and swallow... four times a day
+O,2,2,radiation pneumonitis... creeping up to your esophagus causing the pain
+S,1,1,vitals are normal your pulse ox is everything's good
+P,0,0,no fever... no body aches... no sinus pain
+P,0,0,zofran helped with nausea and fatigue
+A,3,0,the tumor has just gotten little smaller and we can go inside and and take it out
+P,0,1,follow-up in two weeks

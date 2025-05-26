@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,My back has been bothering me for a long time.
+S,3,2,Thirty years ago when I fell off the roof it was really really bothersome they said maybe there was a fracture or something.
+O,1,2,It’s been really bad for about a month.
+O,1,2,It’s an electrical toothache and it goes down the whole leg.
+S,3,0,It’s less bad I didn’t take my medications because I wanted you to see me as I am but it’s six out of ten but when it gets really bad I’d say it’s thirteen out of ten.
+O,1,0,Sitting in the waiting area for thirty minutes and that definitely makes the symptoms worse.
+P,2,0,The only thing that seems to make it better is laying down.
+O,1,0,Standing walking seems to make it worse coughing sneezing makes it worse.
+A,0,2,Positive for pain to palpation at the L4 vertebrae.
+A,0,2,Positive for pain with flexion and extension of your back.
+A,0,0,4 out of 5 strength in the left and five out of five on the does look that reflexes are brisk and motor and sensory is intact in both lower extremities.
+A,0,1,The MRI shows a disk herniation at the level of L4 L5 vertebrae and it is associated with some nerve root impingement.
+A,0,1,Acute disk herniation at L4 L5 with that nerve root impingement that’s causing that pain down your leg and your lower back pain.
+S,3,1,I’m going to recommend an epidural steroid injection and we’re going to do that today for you if you agree to it.
+O,1,2,I want you to see PT and I want you to see me again in about a month.
+O,1,1,I’ve been bedridden
+O,1,1,I’ve had to use a cane
+A,0,2,Denied any numbness or tingling
+O,1,1,I’ve tried NSAIDs in the past without relief
+P,2,0,done some PT.

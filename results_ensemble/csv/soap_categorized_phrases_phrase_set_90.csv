@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,"Emily Hernandez is a 20-year-old female being seen today for our yearly follow-up for asthma, allergic rhinitis, and food allergy."
+O,0,2,"Due to insurance changes since our last office appointment in April 2020, she was switched from Symbicort to Wixela."
+O,0,0,"She also uses Zyrtec in the spring, summer, and fall for her seasonal allergy symptoms, which tend to work."
+O,0,0,"She has known peanut allergy, she does tolerate almonds and cashews."
+O,0,0,She uses Wixela (250/50 dose) one puff twice daily (morning and night).
+A,2,2,"She rarely uses her albuterol inhaler, only before workouts or strenuous activity as a preventative measure."
+A,2,2,"She has been reducing her Wixela dose to one puff once daily 3–4 days per week, using it twice daily on other days."
+A,2,0,She denies urgent care/ER visits or prednisone use for breathing issues in the past year.
+O,0,0,Her Asthma Control Test (ACT) score is 21.
+O,0,1,She is trying to join the military and must demonstrate fitness without inhalers during testing.
+O,0,1,"The military will administer a fitness test without allowing inhalers, and she aims to qualify by early 2022."
+A,2,2,"She is weaning off inhalers to meet military requirements, using albuterol only for exertional activities."
+O,0,0,She has a known peanut allergy and carries an EpiPen at all times.
+A,2,2,She had a reaction from peanut exposure while cleaning a rental car (Enterprise) but tolerates almonds and cashews.
+A,2,2,"She avoids all tree nuts despite tolerating almonds in the past, citing caution."
+O,0,1,Zyrtec works well for seasonal allergies but is used only 3–4 days per week (primarily during spring/fall and outdoor work).
+O,0,0,She avoids daily Zyrtec in summer unless outdoors extensively.
+A,2,1,She admitted to vaping and smoking but is actively trying to quit in preparation for military enlistment.
+O,0,1,"Spirometry results today are better than in 2019, which were impacted by wildfire smoke."
+P,1,2,"The doctor plans to step down from Wixela to Alvesco (80 mcg, 2 puffs twice daily) for potential asthma control."
+S,3,0,"Alvesco will be prescribed as a trial, with Wixela kept as a backup."
+P,1,0,Repeat spirometry and ACT in 4 months to assess progress.
+P,1,0,"EpiPen refilled, Zyrtec continued as needed, and strict peanut avoidance maintained."
+P,1,1,Emily aims to prove asthma control without daily inhalers for military eligibility.
+A,2,0,She acknowledges the risks of smoking/vaping and is reducing use.

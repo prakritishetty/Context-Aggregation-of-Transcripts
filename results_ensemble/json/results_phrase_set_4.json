@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "history of depression",
+    "It's been a pretty stressful winter and spring... we've been onboarding a couple new employees and we have been pretty short-staffed in the meantime.",
+    "the diet is off the charts... out the window.",
+    "I usually wake up at about 5:00 in the morning... a little early.",
+    "no feelings of want to hurt yourself or anybody? No, no.",
+    "high blood pressure has been under relatively good control recently.",
+    "lungs are clear... heart is regular... grade two systolic ejection murmur... no edema... a little bit of weight.",
+    "lisinopril 5 milligrams a day",
+    "zoloft 50 milligrams a day.",
+    "see you back in about a month... three months."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1692231297492981,
+    "calinski_harabasz_score": 3.163099042873234,
+    "davies_bouldin_score": 0.8024033309919313
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9968382120132446,
+      0.9945551753044128,
+      0.9960440397262573
+    ],
+    [
+      0.9968382120132446,
+      1.0,
+      0.9944475889205933,
+      0.9969238042831421
+    ],
+    [
+      0.9945551753044128,
+      0.9944475889205933,
+      0.9999999403953552,
+      0.9923900365829468
+    ],
+    [
+      0.9960440397262573,
+      0.9969238042831421,
+      0.9923900365829468,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.01659378409385681,
+    "1": 0.04311655834317207,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "history of depression"
+      ],
+      "0": [
+        "lisinopril 5 milligrams a day"
+      ],
+      "2": [
+        "zoloft 50 milligrams a day."
+      ]
+    },
+    "1": {
+      "2": [
+        "It's been a pretty stressful winter and spring... we've been onboarding a couple new employees and we have been pretty short-staffed in the meantime."
+      ],
+      "0": [
+        "I usually wake up at about 5:00 in the morning... a little early.",
+        "no feelings of want to hurt yourself or anybody? No, no.",
+        "see you back in about a month... three months."
+      ],
+      "1": [
+        "lungs are clear... heart is regular... grade two systolic ejection murmur... no edema... a little bit of weight."
+      ]
+    },
+    "2": {
+      "0": [
+        "the diet is off the charts... out the window."
+      ]
+    },
+    "3": {
+      "0": [
+        "high blood pressure has been under relatively good control recently."
+      ]
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "phrases": [
+    "Left ankle pain.",
+    "I was just talking to her and stepped off the curb and landed on it wrong.",
+    "It's been killing me for a couple days",
+    "localized to the outside of it.",
+    "It's about an eight",
+    "maybe a seven",
+    "I have taken some ibuprofen and just tried to elevate it and ice it a little bit.",
+    "Ecchymosis or bruising over the lateral malleolus,",
+    "some swelling,",
+    "tenderness to palpation on the lateral side,",
+    "no laxity in the joint",
+    "bony tenderness.",
+    "Capillary refill is brisk less than three seconds,",
+    "strong dorsalis pedis pulses,",
+    "motor and sensation intact.",
+    "No fracture or any bony abnormalities.",
+    "Symptoms are consistent with an ankle sprain of the lateral ligament complex.",
+    "Continue the RICE protocol,",
+    "prescribe an air cast to stabilize the ankle,",
+    "prescribe crutches to stay off the leg.",
+    "Follow up with you in two weeks",
+    "come back in if you have a lot of pain.",
+    "Symptoms will get better significantly over the first four to six days."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    3,
+    0,
+    3,
+    0,
+    2,
+    3,
+    2,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2,
+    3,
+    2,
+    2,
+    2,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    2,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11240432411432266,
+    "calinski_harabasz_score": 4.459414149498485,
+    "davies_bouldin_score": 1.7033346333145338
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9963750839233398,
+      0.9975501298904419,
+      0.9963632822036743
+    ],
+    [
+      0.9963750839233398,
+      1.0000004768371582,
+      0.9986850619316101,
+      0.9982693791389465
+    ],
+    [
+      0.9975501298904419,
+      0.9986850619316101,
+      1.0000004768371582,
+      0.9969946146011353
+    ],
+    [
+      0.9963632822036743,
+      0.9982693791389465,
+      0.9969946146011353,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09145411849021912,
+    "1": 0.18184298276901245,
+    "2": -0.015290603041648865,
+    "3": 0.11619535088539124
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Left ankle pain.",
+        "motor and sensation intact."
+      ],
+      "0": [
+        "bony tenderness."
+      ],
+      "1": [
+        "strong dorsalis pedis pulses,"
+      ]
+    },
+    "0": {
+      "2": [
+        "I was just talking to her and stepped off the curb and landed on it wrong."
+      ],
+      "0": [
+        "It's been killing me for a couple days",
+        "It's about an eight",
+        "come back in if you have a lot of pain."
+      ],
+      "1": [
+        "I have taken some ibuprofen and just tried to elevate it and ice it a little bit."
+      ]
+    },
+    "3": {
+      "2": [
+        "localized to the outside of it."
+      ],
+      "0": [
+        "maybe a seven",
+        "some swelling,"
+      ],
+      "1": [
+        "Continue the RICE protocol,"
+      ]
+    },
+    "2": {
+      "2": [
+        "Ecchymosis or bruising over the lateral malleolus,",
+        "tenderness to palpation on the lateral side,",
+        "no laxity in the joint",
+        "No fracture or any bony abnormalities.",
+        "Symptoms are consistent with an ankle sprain of the lateral ligament complex."
+      ],
+      "0": [
+        "Capillary refill is brisk less than three seconds,"
+      ],
+      "1": [
+        "prescribe an air cast to stabilize the ankle,",
+        "prescribe crutches to stay off the leg.",
+        "Follow up with you in two weeks",
+        "Symptoms will get better significantly over the first four to six days."
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "phrases": [
+    "My anxiety was brutal in November and December 2021, leading me to feel overwhelmed.",
+    "Dr. Ward prescribed Singulair, which can cause anxiety, but I'm unsure if that was the issue."
+  ],
+  "cluster_labels": [
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.0,
+    "calinski_harabasz_score": 0.0,
+    "davies_bouldin_score": 0.0
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9987943172454834
+    ],
+    [
+      0.9987943172454834,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0,
+    "1": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "0": [
+        "My anxiety was brutal in November and December 2021, leading me to feel overwhelmed."
+      ]
+    },
+    "0": {
+      "0": [
+        "Dr. Ward prescribed Singulair, which can cause anxiety, but I'm unsure if that was the issue."
+      ]
+    }
+  }
+}

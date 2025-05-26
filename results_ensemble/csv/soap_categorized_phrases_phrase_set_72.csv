@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,my primary care doctor wanted me to see you for this back pain that I've been having for a couple of years
+S,0,2,it all happened I started having back pain after I was moving furniture one weekend
+S,0,0,it feels a sharp stabbing pain in my back and it does go down even down to my leg sometimes all the way down to my toe it feels my big toe
+S,0,2,I just can't get comfortable which is worse when I sit down
+S,0,0,I do get some numbness and tingling especially to my leg that goes down to my foot
+S,0,1,I've tried some physical therapy before and when it gets really bad they've even had to prescribe some strong pain medications for me but that was only temporary and they even mentioned surgery to me in the past but I really would to avoid surgery
+A,2,2,midline tenderness at L4 L5 disk space with -sided lumbar paravertebral tenderness
+P,1,2,pain with lumbar flexion
+O,3,2,supine straight leg test is positive
+A,2,0,decreased sensation to light touch at the lateral thigh at L4 dermatome
+P,1,0,patellar and Achilles reflexes are symmetrical
+A,2,1,MRI... shows disk herniation with nerve impingement
+A,2,1,symptoms are consistent with an L4 L5 herniated disk with radiculopathy
+P,1,1,spinal injection with a strong inflammatory medication called a corticosteroid... under fluoroscopy
+O,3,0,we usually do not do more than four times a year
+O,3,1,not a long procedure... relatively quick and common and you should be out of the office within an hour
+O,3,0,alright thank you

@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "stepping off a curb",
+    "turned over my ankle.",
+    "the outside of my knee.",
+    "it clicks when I walk,",
+    "feels locked and I have to ease into walking again,",
+    "pain when I rest it on my heel.",
+    "no unless I stand on one foot for an extended period of time,",
+    "full squat... the most clicking.",
+    "ibuprofen... at night helps me settle down and sleep better.",
+    "I ride the bike... peloton.",
+    "broken my foot my second toe... numbness depending upon the shoe.",
+    "slight edema... slight effusion,",
+    "no pain to palpation,",
+    "positive varus test,",
+    "negative Lachman sign.",
+    "no acute fracture or bony abnormality.",
+    "lateral collateral ligament strain.",
+    "refer to physical therapy,",
+    "prescribe meloxicam 15 mg,",
+    "consider an MRI if pain does not improve."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    1,
+    2,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15710319578647614,
+    "calinski_harabasz_score": 3.6376702301464148,
+    "davies_bouldin_score": 1.6750982210683876
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9981144666671753,
+      0.9981369376182556,
+      0.9984080791473389
+    ],
+    [
+      0.9981144666671753,
+      0.9999998807907104,
+      0.997077226638794,
+      0.9975247383117676
+    ],
+    [
+      0.9981369376182556,
+      0.997077226638794,
+      1.0000001192092896,
+      0.9966030716896057
+    ],
+    [
+      0.9984080791473389,
+      0.9975247383117676,
+      0.9966030716896057,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.009625985287129879,
+    "1": 0.1459757536649704,
+    "2": 0.1282053142786026,
+    "3": 0.1394600123167038
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "stepping off a curb"
+      ],
+      "0": [
+        "it clicks when I walk,"
+      ],
+      "1": [
+        "full squat... the most clicking."
+      ]
+    },
+    "1": {
+      "2": [
+        "turned over my ankle.",
+        "the outside of my knee.",
+        "pain when I rest it on my heel.",
+        "ibuprofen... at night helps me settle down and sleep better."
+      ],
+      "0": [
+        "feels locked and I have to ease into walking again,"
+      ],
+      "1": [
+        "I ride the bike... peloton.",
+        "broken my foot my second toe... numbness depending upon the shoe."
+      ]
+    },
+    "0": {
+      "2": [
+        "no unless I stand on one foot for an extended period of time,"
+      ],
+      "0": [
+        "slight edema... slight effusion,",
+        "no pain to palpation,",
+        "refer to physical therapy,",
+        "prescribe meloxicam 15 mg,"
+      ],
+      "1": [
+        "positive varus test,",
+        "negative Lachman sign."
+      ]
+    },
+    "3": {
+      "2": [
+        "no acute fracture or bony abnormality."
+      ],
+      "0": [
+        "lateral collateral ligament strain."
+      ],
+      "1": [
+        "consider an MRI if pain does not improve."
+      ]
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "John is a 55-year-old male with a past medical history significant for anxiety and epilepsy who presents with an abnormal lab finding.",
+    "They had to treat you for that, what was going on?",
+    "We've been going from place to place for different events and we've had a lot of visitors over the last couple of weeks and I just wasn't monitoring my sugar intake and a little too much stress and strain over the last couple of weeks.",
+    "Your hemoglobin A1c here is 8, last time we had seen it, it was about 6 and we hadn't put you on medications.",
+    "Your blood sugar and it was 162",
+    "They put you on medication? They did. ... Metformin?",
+    "In terms of your anxiety, I'm sure that this didn't help much",
+    "I had my moments but it's almost the weekend, it's been a little bit better. Things are under control.",
+    "Any seizures recently? Not in a while, it's been quite a few months and it was something minor but nothing major ever since.",
+    "You do have some trace pitting edema to your lower extremities",
+    "Did they give you a lot of fluid in the emergency room? They did.",
+    "Continue on the metformin 500mg twice a day. We'll probably increase that over time.",
+    "I'm gonna go ahead and order hemoglobin A1c for the future.",
+    "Continue Keppra at current dosage",
+    "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.",
+    "not at this point, no",
+    "They started you on metformin 500 mg twice daily during that time",
+    "He continues to take Keppra"
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    3,
+    3,
+    1,
+    0,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    1,
+    2,
+    0,
+    1,
+    2,
+    1,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.08719054609537125,
+    "calinski_harabasz_score": 3.630765145035093,
+    "davies_bouldin_score": 1.5090496008094365
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9984148144721985,
+      0.9933274984359741,
+      0.9984386563301086
+    ],
+    [
+      0.9984148144721985,
+      1.0,
+      0.9926491975784302,
+      0.9958455562591553
+    ],
+    [
+      0.9933274984359741,
+      0.9926491975784302,
+      1.0000001192092896,
+      0.9921770095825195
+    ],
+    [
+      0.9984386563301086,
+      0.9958455562591553,
+      0.9921770095825195,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0886433869600296,
+    "1": -0.0315522700548172,
+    "2": 0.0,
+    "3": 0.07885859161615372
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "John is a 55-year-old male with a past medical history significant for anxiety and epilepsy who presents with an abnormal lab finding."
+      ]
+    },
+    "0": {
+      "2": [
+        "They had to treat you for that, what was going on?",
+        "They put you on medication? They did. ... Metformin?",
+        "Did they give you a lot of fluid in the emergency room? They did."
+      ],
+      "0": [
+        "Any seizures recently? Not in a while, it's been quite a few months and it was something minor but nothing major ever since."
+      ],
+      "1": [
+        "You do have some trace pitting edema to your lower extremities",
+        "Continue on the metformin 500mg twice a day. We'll probably increase that over time.",
+        "They started you on metformin 500 mg twice daily during that time"
+      ]
+    },
+    "3": {
+      "2": [
+        "We've been going from place to place for different events and we've had a lot of visitors over the last couple of weeks and I just wasn't monitoring my sugar intake and a little too much stress and strain over the last couple of weeks.",
+        "I had my moments but it's almost the weekend, it's been a little bit better. Things are under control."
+      ],
+      "0": [
+        "Your hemoglobin A1c here is 8, last time we had seen it, it was about 6 and we hadn't put you on medications."
+      ],
+      "1": [
+        "In terms of your anxiety, I'm sure that this didn't help much"
+      ]
+    },
+    "1": {
+      "2": [
+        "Your blood sugar and it was 162",
+        "I'm gonna go ahead and order hemoglobin A1c for the future."
+      ],
+      "0": [
+        "Continue Keppra at current dosage",
+        "not at this point, no",
+        "He continues to take Keppra"
+      ],
+      "1": [
+        "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    }
+  }
+}

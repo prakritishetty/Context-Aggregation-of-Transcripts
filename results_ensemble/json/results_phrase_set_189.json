@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "helping my daughter with some heavy equipment and lifted some boxes a little too quickly, and they were a little too heavy.",
+    "I thought I heard a pop when I moved and I had to lie down for about an hour before it relieved the pain. And it's been a little stiff ever since.",
+    "my lower back.",
+    "I took some Tylenol, I took some ibuprofen, I used a little bit of icy heat on the spot but it really didn't seem to help.",
+    "I felt some tingling in my toes on my foot until about Sunday afternoon. And that seemed to go away.",
+    "It's really tough to find a comfortable spot sleeping at night. I tend to lie on my side and that seemed to help a little bit.",
+    "pain to palpation of the lumbar spine. And you have pain with flexion and extension of the back. And you have a negative straight leg raise.",
+    "back x-ray... normal x-ray of your back.",
+    "Love peanut butter cups. And I have to say that when we were helping my daughter, we were on the fly and on the go and haven't had a home cooked meal in weeks, our diets were less than stellar.",
+    "your hemoglobin A1c is a little elevated at eight.",
+    "Blood pressure's a little elevated here in the office... you could be in some pain, which could make your blood pressure go up.",
+    "increase the lisinopril from 10mg to 20mg a day.",
+    "If I run too much or if I've lift boxes that are a little too heavy, I start to feel the strain.",
+    "no chest pain, nausea or vomiting... no fever, chills.",
+    "prescribe you some meloxicam 15mg once a day... refer you to physical therapy.",
+    "increase the metformin to 1000mg twice a day. And I'm going to repeat a hemoglobin A1c in about 6 months.",
+    "no that's fine. I agree."
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    3,
+    2,
+    3,
+    1,
+    1,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10299563407897949,
+    "calinski_harabasz_score": 4.516512582324595,
+    "davies_bouldin_score": 1.454286052063699
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9967260956764221,
+      0.9921605587005615,
+      0.999059796333313
+    ],
+    [
+      0.9967260956764221,
+      1.0,
+      0.9967406988143921,
+      0.998194694519043
+    ],
+    [
+      0.9921605587005615,
+      0.9967406988143921,
+      1.000000238418579,
+      0.9938889741897583
+    ],
+    [
+      0.999059796333313,
+      0.998194694519043,
+      0.9938889741897583,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.08956512063741684,
+    "1": 0.04826221987605095,
+    "2": 0.0,
+    "3": 0.10924018174409866
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "helping my daughter with some heavy equipment and lifted some boxes a little too quickly, and they were a little too heavy.",
+        "If I run too much or if I've lift boxes that are a little too heavy, I start to feel the strain."
+      ],
+      "0": [
+        "Blood pressure's a little elevated here in the office... you could be in some pain, which could make your blood pressure go up."
+      ],
+      "1": [
+        "no that's fine. I agree."
+      ]
+    },
+    "0": {
+      "2": [
+        "I thought I heard a pop when I moved and I had to lie down for about an hour before it relieved the pain. And it's been a little stiff ever since."
+      ],
+      "0": [
+        "I took some Tylenol, I took some ibuprofen, I used a little bit of icy heat on the spot but it really didn't seem to help.",
+        "I felt some tingling in my toes on my foot until about Sunday afternoon. And that seemed to go away.",
+        "It's really tough to find a comfortable spot sleeping at night. I tend to lie on my side and that seemed to help a little bit.",
+        "Love peanut butter cups. And I have to say that when we were helping my daughter, we were on the fly and on the go and haven't had a home cooked meal in weeks, our diets were less than stellar."
+      ],
+      "1": [
+        "increase the metformin to 1000mg twice a day. And I'm going to repeat a hemoglobin A1c in about 6 months."
+      ]
+    },
+    "1": {
+      "2": [
+        "my lower back.",
+        "your hemoglobin A1c is a little elevated at eight."
+      ],
+      "1": [
+        "pain to palpation of the lumbar spine. And you have pain with flexion and extension of the back. And you have a negative straight leg raise.",
+        "no chest pain, nausea or vomiting... no fever, chills.",
+        "prescribe you some meloxicam 15mg once a day... refer you to physical therapy."
+      ],
+      "0": [
+        "back x-ray... normal x-ray of your back."
+      ]
+    },
+    "2": {
+      "0": [
+        "increase the lisinopril from 10mg to 20mg a day."
+      ]
+    }
+  }
+}

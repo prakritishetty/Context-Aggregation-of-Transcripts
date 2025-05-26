@@ -1,0 +1,24 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,this is probably my seventh or eighth kidney stone
+P,1,1,this one passed about three days ago
+P,1,2,no no more blood
+S,3,2,i definitely think we can get you a referral to urology
+A,0,1,we can get you that road to doctor harris.
+A,0,0,your blood pressure was a little bit high it was a one fifty over ninety
+A,0,0,at home my blood pressure is always great.
+P,1,2,i have been taking [Norvasc] regularly
+A,0,1,i take my metformin.
+S,3,0,it's hard to give up the fast food altogether because it's a lot of on the go
+P,1,1,less time to make food.
+S,3,1,i do wan na give you a consult to nutrition
+P,1,0,your a1c was six point seven
+P,1,1,start checking your blood sugar before every meal.
+S,3,1,i stay awake just kinda worrying about things
+O,2,0,recommended ten milligrams of melatonin as needed.
+P,1,1,"lungs are clear bilaterally,"
+O,2,0,"grade two out of six systolic ejection murmur,"
+P,1,2,no tenderness of the cva.
+P,1,1,come back in three months
+A,0,1,pharmacy just sends them through when i call
+P,1,1,i can try that
+P,1,1,that sounds a plan.

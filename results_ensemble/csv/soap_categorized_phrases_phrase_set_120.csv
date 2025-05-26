@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+A,1,2,Annual exam.
+A,1,0,"congestive heart failure, depression and hypertension"
+S,3,2,I've been traveling a lot recently... I feel safer about traveling. I've been doing a lot of hiking.
+S,3,0,I resisted... the salty foods that I love to eat. I've been doing a really good job.
+S,3,1,"I'm still forgetting to take my blood pressure medication. And I've noticed when work gets more stressful, my blood pressure goes up."
+S,3,0,I've been going every week... for the past year... that's been really helpful for me.
+P,0,2,"No, not that I've noticed"
+O,2,0,Grade 3/6 systolic ejection murmur... 1+ pitting edema of the bilateral lower extremities.
+O,2,0,Echocardiogram... decreased ejection fraction of 45%. Mitral regurgitation is present. Lipid panel: Elevated cholesterol.
+P,0,0,"Increase your lisinopril to 40 milligrams a day... start you on some Lasix, 20 milligrams a day."
+P,0,0,Your blood pressure's high... retaining a little bit of fluid.
+P,0,0,"It's been a lot of long hours, late nights... with the responsibility comes the stress."
+P,0,0,Repeat another echocardiogram... schedule for a mammogram.
+P,0,1,Can I take all my pills at the same time?
+P,0,1,You can certainly take them all at the same time... set an alarm.
+A,1,1,Endorsing some nasal congestion from some of the fall pollen and allergies.
+P,0,1,"No, nothing that... [no feelings of wanting to harm self/others]."

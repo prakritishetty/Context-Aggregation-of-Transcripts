@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "I heard a snap and instant pain when I was on the trampoline.",
+    "That's the first time I'd ever done something like that.",
+    "I tried to elevate it and that was about it.",
+    "The Tylenol didn't really help.",
+    "My blood pressure is 180 over 80.",
+    "I don't monitor my blood pressures at home.",
+    "I check my blood sugars 4 to 5 times a week.",
+    "I\u2019m not consistent with exercise.",
+    "I\u2019m trying to watch my carbs but not counting.",
+    "There\u2019s ecchymosis and edema along the lateral aspect of the knee.",
+    "No effusion and decent range of motion, but pain with movement.",
+    "The X-ray showed no evidence of fracture or bony abnormality.",
+    "Prescribe meloxicam 15 mg daily for pain and swelling.",
+    "Refer to physical therapy to strengthen muscles around the knee.",
+    "Order an echocardiogram to evaluate hypertension.",
+    "Continue lisinopril 20 mg but may need medication adjustment.",
+    "Order an A1C and lipid panel for diabetes management.",
+    "Continue metformin 500 mg as prescribed."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1,
+    3,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    0,
+    1,
+    2,
+    1,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.20862159132957458,
+    "calinski_harabasz_score": 4.724496066258611,
+    "davies_bouldin_score": 1.115249186320506
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9975008964538574,
+      0.9956250190734863,
+      0.9955324530601501
+    ],
+    [
+      0.9975008964538574,
+      1.0,
+      0.9966042637825012,
+      0.9981269836425781
+    ],
+    [
+      0.9956250190734863,
+      0.9966042637825012,
+      0.9999998807907104,
+      0.994050145149231
+    ],
+    [
+      0.9955324530601501,
+      0.9981269836425781,
+      0.994050145149231,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.15237459540367126,
+    "1": 0.072983019053936,
+    "2": 0.0,
+    "3": 0.41845738887786865
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "I heard a snap and instant pain when I was on the trampoline.",
+        "My blood pressure is 180 over 80.",
+        "I check my blood sugars 4 to 5 times a week."
+      ],
+      "2": [
+        "That's the first time I'd ever done something like that.",
+        "I don't monitor my blood pressures at home.",
+        "I\u2019m not consistent with exercise.",
+        "I\u2019m trying to watch my carbs but not counting."
+      ],
+      "0": [
+        "I tried to elevate it and that was about it.",
+        "The Tylenol didn't really help."
+      ]
+    },
+    "1": {
+      "2": [
+        "There\u2019s ecchymosis and edema along the lateral aspect of the knee."
+      ],
+      "1": [
+        "No effusion and decent range of motion, but pain with movement.",
+        "Refer to physical therapy to strengthen muscles around the knee."
+      ],
+      "0": [
+        "Prescribe meloxicam 15 mg daily for pain and swelling.",
+        "Continue lisinopril 20 mg but may need medication adjustment.",
+        "Continue metformin 500 mg as prescribed."
+      ]
+    },
+    "2": {
+      "0": [
+        "The X-ray showed no evidence of fracture or bony abnormality."
+      ]
+    },
+    "3": {
+      "0": [
+        "Order an echocardiogram to evaluate hypertension.",
+        "Order an A1C and lipid panel for diabetes management."
+      ]
+    }
+  }
+}

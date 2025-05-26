@@ -1,0 +1,203 @@
+{
+  "phrases": [
+    "your sugars are not very controlled",
+    "increase your glimepiride",
+    "I'm still taking the two milligrams",
+    "take two of the pills, twice a day",
+    "we do n't have any pasta in the house. We do n't often have bread, and if we do, we buy wheat bread",
+    "try to cut down on the number of slices you eat per day",
+    "I just got new glasses",
+    "he did that and i had to wait for a month to get healed up and he wrote my prescription",
+    "Not happy with this lens ; it's kinda funny. The other one is good",
+    "Are you taking all of those?",
+    "A couple of weeks ago, it was 116 on the dot",
+    "the feet is what we call peripheral neuropathy",
+    "mildly decreased sensation in the tips of the first and second toes",
+    "still smoking",
+    "not ready to quit",
+    "i've been coughing here lately because i've been congested",
+    "it's relatively clear",
+    "it takes me a little more time",
+    "once in a while",
+    "Heart exam : rhythm is regular, normal rate, s1 and s2 are crisp. I do not hear any murmurs today",
+    "Extremities are without edema. Pulses are palpable on the dorsalis pedis posterial tibial. She has thickened nails",
+    "Hemoglobin A1C 9.9%",
+    "Watch for low sugars, weak, shaky, sweaty",
+    "The new prescription will be for four milligrams twice a day"
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    1,
+    0,
+    1,
+    0,
+    3,
+    1,
+    3,
+    3,
+    3,
+    1,
+    0,
+    0,
+    0,
+    1,
+    3,
+    3,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    1,
+    1,
+    2,
+    0,
+    2,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10674933344125748,
+    "calinski_harabasz_score": 4.008956835195604,
+    "davies_bouldin_score": 1.6046038020906672
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9978204369544983,
+      0.9909732937812805,
+      0.9979822635650635
+    ],
+    [
+      0.9978204369544983,
+      0.9999998807907104,
+      0.9949052333831787,
+      0.9987509250640869
+    ],
+    [
+      0.9909732937812805,
+      0.9949052333831787,
+      1.0,
+      0.9917939901351929
+    ],
+    [
+      0.9979822635650635,
+      0.9987509250640869,
+      0.9917939901351929,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.030956024304032326,
+    "1": 0.03392403572797775,
+    "2": 0.0,
+    "3": 0.0379122756421566
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "your sugars are not very controlled"
+      ],
+      "1": [
+        "I just got new glasses",
+        "Are you taking all of those?",
+        "A couple of weeks ago, it was 116 on the dot",
+        "it's relatively clear",
+        "it takes me a little more time"
+      ],
+      "0": [
+        "Not happy with this lens ; it's kinda funny. The other one is good"
+      ]
+    },
+    "0": {
+      "2": [
+        "increase your glimepiride",
+        "take two of the pills, twice a day",
+        "try to cut down on the number of slices you eat per day",
+        "not ready to quit",
+        "Hemoglobin A1C 9.9%",
+        "The new prescription will be for four milligrams twice a day"
+      ],
+      "0": [
+        "mildly decreased sensation in the tips of the first and second toes",
+        "Watch for low sugars, weak, shaky, sweaty"
+      ],
+      "1": [
+        "still smoking",
+        "once in a while"
+      ]
+    },
+    "1": {
+      "2": [
+        "I'm still taking the two milligrams",
+        "we do n't have any pasta in the house. We do n't often have bread, and if we do, we buy wheat bread",
+        "i've been coughing here lately because i've been congested",
+        "Heart exam : rhythm is regular, normal rate, s1 and s2 are crisp. I do not hear any murmurs today"
+      ],
+      "0": [
+        "he did that and i had to wait for a month to get healed up and he wrote my prescription"
+      ],
+      "1": [
+        "the feet is what we call peripheral neuropathy"
+      ]
+    },
+    "2": {
+      "0": [
+        "Extremities are without edema. Pulses are palpable on the dorsalis pedis posterial tibial. She has thickened nails"
+      ]
+    }
+  }
+}

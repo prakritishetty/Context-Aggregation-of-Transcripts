@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,1,"Injury occurred while moving boxes during his son's college dorm move, resulting in lower back pain."
+S,1,2,Symptoms began approximately four months ago.
+S,1,0,Initially experienced tingling in the toes that resolved within an hour.
+P,3,0,Reports leg weakness only when carrying heavy objects.
+S,1,0,"Experiences sharp lower back pain when turning or rolling in sleep, resolving with repositioning."
+S,1,1,"Utilized Tylenol, ibuprofen, heat, and ice for pain with minimal relief."
+S,1,1,Previously declined an MRI due to insurance concerns.
+O,0,0,"Physical exam revealed decreased lumbar flexion/extension, positive straight leg raise, and paraspinal muscle spasm."
+S,1,1,Bilateral lower extremity strength is intact.
+O,0,2,Lumbar X-ray showed no acute bony abnormalities or fractures.
+A,2,0,Diagnosed with possible acute disc herniation based on history and exam.
+A,2,0,Ordered lumbar spine MRI to evaluate disc herniation.
+S,1,0,Prescribed meloxicam 15 mg daily for pain management.
+P,3,0,Referral to physical therapy through the health system arranged.

@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "Bilateral knee pain that I've been having for about six months.",
+    "Honestly, I don't I can't think of any specific event that caused the pain initially.",
+    "It's behind my kneecaps... a deep achy pain.",
+    "Anytime if I'm sitting at my desk and I get up I have a lot of pain... going up and down the stairs.",
+    "I work from home... my office is downstairs.",
+    "I'm a big runner... I run about five to six miles a day... barely can even do half a mile now.",
+    "No redness or swelling... no effusion... tender to palpation.",
+    "Positive patellar grind test... Lachman, anterior and posterior drawer, and McMurray test are all negative bilaterally.",
+    "X-rays of both my knees show no fractures or osteoarthritis.",
+    "Symptoms are consistent with patellofemoral pain syndrome.",
+    "Continue with over-the-counter NSAIDs... refer her to physical therapy to strengthen lower extremities and correct running mechanics.",
+    "Will I be able to run again?",
+    "Absolutely... we\u2019re going to get you back."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    3,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12500634789466858,
+    "calinski_harabasz_score": 3.2939293078318017,
+    "davies_bouldin_score": 1.2003321647938339
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9964459538459778,
+      0.9975413084030151,
+      0.9976188540458679
+    ],
+    [
+      0.9964459538459778,
+      1.0,
+      0.9984762072563171,
+      0.9940804243087769
+    ],
+    [
+      0.9975413084030151,
+      0.9984762072563171,
+      0.9999998807907104,
+      0.9957054257392883
+    ],
+    [
+      0.9976188540458679,
+      0.9940804243087769,
+      0.9957054257392883,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.021145572885870934,
+    "1": 0.24653741717338562,
+    "2": 0.12698717415332794,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "Bilateral knee pain that I've been having for about six months."
+      ],
+      "0": [
+        "Honestly, I don't I can't think of any specific event that caused the pain initially.",
+        "It's behind my kneecaps... a deep achy pain.",
+        "I work from home... my office is downstairs."
+      ],
+      "1": [
+        "Anytime if I'm sitting at my desk and I get up I have a lot of pain... going up and down the stairs.",
+        "I'm a big runner... I run about five to six miles a day... barely can even do half a mile now."
+      ]
+    },
+    "0": {
+      "2": [
+        "No redness or swelling... no effusion... tender to palpation."
+      ],
+      "0": [
+        "X-rays of both my knees show no fractures or osteoarthritis.",
+        "Continue with over-the-counter NSAIDs... refer her to physical therapy to strengthen lower extremities and correct running mechanics."
+      ],
+      "1": [
+        "Symptoms are consistent with patellofemoral pain syndrome."
+      ]
+    },
+    "3": {
+      "0": [
+        "Positive patellar grind test... Lachman, anterior and posterior drawer, and McMurray test are all negative bilaterally."
+      ]
+    },
+    "1": {
+      "0": [
+        "Will I be able to run again?",
+        "Absolutely... we\u2019re going to get you back."
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,"I have high blood sugar, osteoarthritis, atrial fibrillation, and reflux."
+A,1,2,I've been eating a ton of sweets recently... there is always something sweet available.
+S,3,2,"I just felt really light-headed and I could see spots, really dizzy."
+S,3,0,They gave me some fluids and told me to cut out sweets and get back into my normal routine.
+A,1,0,I'm still staying with my family... my mom and grandmother are big bakers.
+A,1,1,Your thyroid is a little enlarged but non-tender... heart is in irregular rate and rhythm.
+O,0,0,Both your blood sugar and hemoglobin A1c are elevated.
+A,1,2,You do have this diagnosis of diabetes... we're not sure if it's type I or type II.
+P,2,0,Start you on metformin 500 mg twice a day... glucometer to monitor.
+P,2,0,Continue metoprolol 25 mg twice daily... protonix 40 mg once daily.
+S,3,0,I've been taking the medication that you prescribed to me and that's been helping a lot.
+S,3,1,"Only when I'm really anxious. I feel it, pumping a little bit."
+A,1,0,"I do have osteoarthritis though, that... nothing out of the norm for me."
+O,0,1,"No, not at this time"

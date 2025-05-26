@@ -1,0 +1,23 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,presenting today with an upper respiratory infection.
+S,1,2,"I started to feel really tired, was short of breath."
+S,1,2,we're not wearing masks as much at the end of the summer and I caught my first cold and it just got worse.
+A,3,2,I've had both [COVID vaccines].
+O,0,1,none whatsoever [seasonal allergies].
+A,3,0,it was lifting or carrying something... got really winded.
+A,3,0,"not yet, but I feel that's next"
+S,1,0,"I felt a little warm, but I just thought it was because I was exerting myself"
+S,1,1,my elbows hurt quite a bit and my knees were pretty tired... tension around my knees... lifting the bags.
+S,1,2,"my wife got me into barre classes, to help me relax and it's working."
+S,1,1,monitoring my sugar levels while I'm going to work... not on weekends... diet's been pretty good except for house parties.
+O,0,0,"monitoring blood pressures at home... during the week, but not on weekends... under control."
+O,0,1,"scattered rhonchi bilaterally... clears with cough,"
+O,0,1,"edema of lower extremities,"
+O,0,1,pain to palpation of bilateral elbows.
+O,0,1,"no airspace disease, no pneumonia."
+P,2,2,hemoglobin A1c is a little elevated at eight.
+O,0,1,send a covid test... Robitussin for cough... ibuprofen/tylenol for fever.
+A,3,1,maybe in a few months we'll check on that [psychotherapy/medication].
+P,2,0,increase metformin to 1000 mg twice daily... repeat hemoglobin A1c in four months.
+P,2,1,continue lisinopril 20 mg daily... order a lipid panel.
+A,3,1,make a follow-up appointment... see you again in about four months.

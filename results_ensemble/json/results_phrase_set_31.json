@@ -1,0 +1,223 @@
+{
+  "phrases": [
+    "cough started about a week ago or I just started bringing up some yellow stuff",
+    "not feeling the greatest the last two days though",
+    "feeling warm but never really took my temperature",
+    "no chills just a little bit of achy at times",
+    "no shortness of breath",
+    "congested kinda drainage down my throat and a little bit of pressure in my sinuses",
+    "twisted my knee... I fell down the stairs... four or five stairs",
+    "my knee... hurts mostly on the inside... little bit of a limp",
+    "don\u2019t check it at all",
+    "I don\u2019t take my blood sugars either... I\u2019m a bad patient",
+    "history of hypertension... we kinda battled with that over the past year",
+    "taking the lisinopril 20 milligrams a day",
+    "taking the metformin... big pill",
+    "temperature is ninety eight point four",
+    "blood pressure is one twenty five over sixty two",
+    "oxygenation is ninety seven percent on room air",
+    "pain to palpation of the bilateral maxillary sinuses",
+    "erythema and edema of the nasal turbinates bilaterally with associated yellow discharge",
+    "coarse rhonchi present bilaterally that clears with cough",
+    "pain to palpation on the knee... decreased flexion and extension... ecchymosis to the medial knee",
+    "viral syndrome at this time... mild bronchitis",
+    "prescribe guaifenesin six hundred milligrams twice a day",
+    "no antibiotics at this time... consider a chest x-ray if symptoms worsen",
+    "medial collateral ligament strain... meloxicam fifteen milligrams once a day... physical therapy... knee x-ray",
+    "continue lisinopril... order a lipid panel",
+    "order a hemoglobin A1c... monitor your sugar intake... report blood sugars through patient portal",
+    "I\u2019ll try that I try my best",
+    "you\u2019re a bad patient that\u2019s it happens... want you to stay healthy"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    3,
+    1,
+    1,
+    3,
+    3,
+    1,
+    2,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13751381635665894,
+    "calinski_harabasz_score": 4.546437334789473,
+    "davies_bouldin_score": 1.7811497697234535
+  },
+  "similarity_matrix": [
+    [
+      0.9999997019767761,
+      0.9978212714195251,
+      0.9959769248962402,
+      0.9961984753608704
+    ],
+    [
+      0.9978212714195251,
+      0.9999999403953552,
+      0.9978179335594177,
+      0.9980053305625916
+    ],
+    [
+      0.9959769248962402,
+      0.9978179335594177,
+      0.9999999403953552,
+      0.9957910776138306
+    ],
+    [
+      0.9961984753608704,
+      0.9980053305625916,
+      0.9957910776138306,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06868395209312439,
+    "1": -0.0926445722579956,
+    "2": 0.021174298599362373,
+    "3": -0.06574556976556778
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "cough started about a week ago or I just started bringing up some yellow stuff",
+        "feeling warm but never really took my temperature"
+      ],
+      "0": [
+        "no chills just a little bit of achy at times",
+        "congested kinda drainage down my throat and a little bit of pressure in my sinuses",
+        "twisted my knee... I fell down the stairs... four or five stairs"
+      ],
+      "1": [
+        "my knee... hurts mostly on the inside... little bit of a limp",
+        "I don\u2019t take my blood sugars either... I\u2019m a bad patient",
+        "I\u2019ll try that I try my best",
+        "you\u2019re a bad patient that\u2019s it happens... want you to stay healthy"
+      ]
+    },
+    "1": {
+      "2": [
+        "not feeling the greatest the last two days though",
+        "no shortness of breath",
+        "oxygenation is ninety seven percent on room air",
+        "coarse rhonchi present bilaterally that clears with cough",
+        "prescribe guaifenesin six hundred milligrams twice a day"
+      ],
+      "0": [
+        "don\u2019t check it at all",
+        "taking the lisinopril 20 milligrams a day",
+        "taking the metformin... big pill",
+        "order a hemoglobin A1c... monitor your sugar intake... report blood sugars through patient portal"
+      ],
+      "1": [
+        "viral syndrome at this time... mild bronchitis",
+        "no antibiotics at this time... consider a chest x-ray if symptoms worsen",
+        "continue lisinopril... order a lipid panel"
+      ]
+    },
+    "3": {
+      "2": [
+        "history of hypertension... we kinda battled with that over the past year"
+      ],
+      "0": [
+        "temperature is ninety eight point four"
+      ],
+      "1": [
+        "blood pressure is one twenty five over sixty two"
+      ]
+    },
+    "2": {
+      "2": [
+        "pain to palpation of the bilateral maxillary sinuses"
+      ],
+      "0": [
+        "erythema and edema of the nasal turbinates bilaterally with associated yellow discharge"
+      ],
+      "1": [
+        "pain to palpation on the knee... decreased flexion and extension... ecchymosis to the medial knee",
+        "medial collateral ligament strain... meloxicam fifteen milligrams once a day... physical therapy... knee x-ray"
+      ]
+    }
+  }
+}

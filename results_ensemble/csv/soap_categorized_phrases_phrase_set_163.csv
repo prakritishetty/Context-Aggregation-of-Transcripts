@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,Bilateral knee pain that I've been having for about six months.
+S,2,0,"Honestly, I don't I can't think of any specific event that caused the pain initially."
+S,2,0,It's behind my kneecaps... a deep achy pain.
+S,2,1,Anytime if I'm sitting at my desk and I get up I have a lot of pain... going up and down the stairs.
+S,2,0,I work from home... my office is downstairs.
+S,2,1,I'm a big runner... I run about five to six miles a day... barely can even do half a mile now.
+P,0,2,No redness or swelling... no effusion... tender to palpation.
+A,3,0,"Positive patellar grind test... Lachman, anterior and posterior drawer, and McMurray test are all negative bilaterally."
+P,0,0,X-rays of both my knees show no fractures or osteoarthritis.
+P,0,1,Symptoms are consistent with patellofemoral pain syndrome.
+P,0,0,Continue with over-the-counter NSAIDs... refer her to physical therapy to strengthen lower extremities and correct running mechanics.
+O,1,0,Will I be able to run again?
+O,1,0,Absolutely... we’re going to get you back.

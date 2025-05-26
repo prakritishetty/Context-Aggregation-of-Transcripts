@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+S,3,2,I've been using the medication you prescribed me last time and going to therapy every week. And that's really helped me manage.
+S,3,0,It's been a little bit up and down... hasn't really stayed put.
+S,3,1,my diet's been a little all over the place. I have been really stressed with work and putting in more hours... eating a lot of frozen meals.
+S,3,1,I have some headaches but i just thought that was looking at a computer screen all day.
+A,0,2,my carpal tunnel release has been doing... great. No numbness or tingling in your hands?
+A,0,0,your exam's essentially normal... your labs are essentially normal.
+A,0,1,increase your lisinopril to 10 milligrams a day... come back in a month.
+O,1,2,depression... doing great... continue current regimen.
+O,1,0,denies any thoughts of self-harm or harming others.
+A,0,1,your blood pressure is a little bit high.
+O,1,1,"Neurologically intact... strength is good, pulses are good."
+P,2,0,Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.

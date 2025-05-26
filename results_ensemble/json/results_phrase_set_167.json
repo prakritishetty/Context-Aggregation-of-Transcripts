@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "I was playing tennis and I was trying to volley the ball... I got in front of another player and ended up falling on top of my foot.",
+    "I quickly twisted myself around her because I was trying to catch myself but I started to feel some pain in my foot.",
+    "I had to stop... I had to be held from the field because I couldn't put weight on my foot.",
+    "I wrapped it... iced it last night and kept it up on a pillow... took some ibuprofen.",
+    "No, I injured my other foot before not this foot.",
+    "No numbness... I can still feel my foot.",
+    "Bruising of the plantar and dorsal aspects of the foot... associated swelling... tenderness to palpation of the midfoot... positive piano key test of the first and second metatarsals... warm to touch.",
+    "Subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases... presence of a bony fragment in the Lisfranc joint space.",
+    "Foot pain consistent with a Lisfranc fracture... fracture to one of your second metatarsal bones near the top of your foot.",
+    "I am going to recommend surgery... place the bones in their proper positions using plates and screws... prevent further complications.",
+    "I will be ordering an MRI to further assess the fracture and any injury to the ligaments.",
+    "Day surgery... go home the same day... cast and crutches... six to eight weeks... gradually walking on your foot.",
+    "Do I have to do the surgery?... I hate that word surgery doc... how long is the procedure usually too?",
+    "Out for the rest of the season... physical therapy... risks include bleeding, loss of sensation, nerve damage... chronic pain.",
+    "Follow up with me here in the clinic in about a week... physical therapy to strengthen the muscles.",
+    "Your foot is probably your dominant one... you won't be able to drive... need somebody to take you home."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2360072284936905,
+    "calinski_harabasz_score": 5.3894459507563335,
+    "davies_bouldin_score": 1.196277127879303
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9968531727790833,
+      0.9982144832611084,
+      0.9965558052062988
+    ],
+    [
+      0.9968531727790833,
+      1.0000001192092896,
+      0.9955447912216187,
+      0.9967455863952637
+    ],
+    [
+      0.9982144832611084,
+      0.9955447912216187,
+      1.0000001192092896,
+      0.9945996999740601
+    ],
+    [
+      0.9965558052062988,
+      0.9967455863952637,
+      0.9945996999740601,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.12302877008914948,
+    "1": 0.08964557200670242,
+    "2": 0.1731051802635193,
+    "3": 0.1909009963274002
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "I was playing tennis and I was trying to volley the ball... I got in front of another player and ended up falling on top of my foot.",
+        "I quickly twisted myself around her because I was trying to catch myself but I started to feel some pain in my foot."
+      ],
+      "0": [
+        "I had to stop... I had to be held from the field because I couldn't put weight on my foot."
+      ],
+      "1": [
+        "I wrapped it... iced it last night and kept it up on a pillow... took some ibuprofen.",
+        "No, I injured my other foot before not this foot.",
+        "No numbness... I can still feel my foot.",
+        "Your foot is probably your dominant one... you won't be able to drive... need somebody to take you home."
+      ]
+    },
+    "3": {
+      "0": [
+        "Bruising of the plantar and dorsal aspects of the foot... associated swelling... tenderness to palpation of the midfoot... positive piano key test of the first and second metatarsals... warm to touch.",
+        "Subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases... presence of a bony fragment in the Lisfranc joint space."
+      ]
+    },
+    "1": {
+      "0": [
+        "Foot pain consistent with a Lisfranc fracture... fracture to one of your second metatarsal bones near the top of your foot.",
+        "I will be ordering an MRI to further assess the fracture and any injury to the ligaments."
+      ]
+    },
+    "0": {
+      "2": [
+        "I am going to recommend surgery... place the bones in their proper positions using plates and screws... prevent further complications.",
+        "Do I have to do the surgery?... I hate that word surgery doc... how long is the procedure usually too?"
+      ],
+      "0": [
+        "Day surgery... go home the same day... cast and crutches... six to eight weeks... gradually walking on your foot.",
+        "Out for the rest of the season... physical therapy... risks include bleeding, loss of sensation, nerve damage... chronic pain."
+      ],
+      "1": [
+        "Follow up with me here in the clinic in about a week... physical therapy to strengthen the muscles."
+      ]
+    }
+  }
+}

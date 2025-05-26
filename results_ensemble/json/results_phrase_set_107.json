@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "Non-healing foot ulcer",
+    "I can't get this ulcer to heal",
+    "It's been about a year",
+    "It just seemed a little blister and I picked at it and it did get a little bit red and infected",
+    "I went on some antibiotics [Keflex], it seemed to get better but nothing is really making it go away",
+    "No pain but I don\u2019t have much feeling in my foot",
+    "You\u2019ve got neuropathy",
+    "There has been a lot more drainage and I just feel a little more tired",
+    "Blood sugars are running better than they were but still in the two hundreds",
+    "Last A1C was about ten",
+    "1 by 2 centimeter wound on the dorsal aspect of the lateral foot... yellow slough... minimal granulation tissue... no surrounding erythema or cellulitis... no bony exposure... no odor",
+    "No evidence of osteomyelitis",
+    "Order an ABI to determine blood supply",
+    "Debridement here in the office",
+    "Prescribe colaganase ointment... cover with sterile dressing",
+    "Get you a surgical shoe to take pressure off the area",
+    "Follow-up in two weeks for re-evaluation",
+    "I\u2019ll probably be walking around at the zoo... eating out and not doing anything my doctor wants me to do"
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    1,
+    3,
+    3,
+    3,
+    1,
+    3,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "S",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.202540785074234,
+    "calinski_harabasz_score": 6.3066211141923,
+    "davies_bouldin_score": 1.2708541305867715
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9981829524040222,
+      0.9937873482704163,
+      0.9941791892051697
+    ],
+    [
+      0.9981829524040222,
+      0.9999997615814209,
+      0.9913743138313293,
+      0.9962441921234131
+    ],
+    [
+      0.9937873482704163,
+      0.9913743138313293,
+      0.9999998211860657,
+      0.9908558130264282
+    ],
+    [
+      0.9941791892051697,
+      0.9962441921234131,
+      0.9908558130264282,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0422678180038929,
+    "1": 0.1186637207865715,
+    "2": 0.0,
+    "3": 0.14562436938285828
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Non-healing foot ulcer"
+      ],
+      "1": [
+        "No evidence of osteomyelitis",
+        "Debridement here in the office",
+        "Prescribe colaganase ointment... cover with sterile dressing",
+        "Get you a surgical shoe to take pressure off the area",
+        "Follow-up in two weeks for re-evaluation"
+      ],
+      "0": [
+        "Order an ABI to determine blood supply"
+      ]
+    },
+    "3": {
+      "2": [
+        "I can't get this ulcer to heal"
+      ],
+      "0": [
+        "It just seemed a little blister and I picked at it and it did get a little bit red and infected",
+        "I went on some antibiotics [Keflex], it seemed to get better but nothing is really making it go away",
+        "There has been a lot more drainage and I just feel a little more tired"
+      ],
+      "1": [
+        "No pain but I don\u2019t have much feeling in my foot",
+        "I\u2019ll probably be walking around at the zoo... eating out and not doing anything my doctor wants me to do"
+      ]
+    },
+    "1": {
+      "2": [
+        "It's been about a year",
+        "Blood sugars are running better than they were but still in the two hundreds"
+      ],
+      "0": [
+        "You\u2019ve got neuropathy"
+      ],
+      "1": [
+        "Last A1C was about ten"
+      ]
+    },
+    "2": {
+      "0": [
+        "1 by 2 centimeter wound on the dorsal aspect of the lateral foot... yellow slough... minimal granulation tissue... no surrounding erythema or cellulitis... no bony exposure... no odor"
+      ]
+    }
+  }
+}

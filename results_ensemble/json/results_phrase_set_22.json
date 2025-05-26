@@ -1,0 +1,227 @@
+{
+  "phrases": [
+    "I fell off of my tandem bike with my partner and my knee has been hurting ever since.",
+    "maybe two weeks ago",
+    "my knee has been hurting ever since... hit it on the curb.",
+    "took some ibuprofen and washed it out and put a band-aid on it but it's been hurting everyday since.",
+    "it clicks when straightening",
+    "sometimes it shifts back a little bit",
+    "pain on inclines",
+    "walking up a hill any incline really hurts",
+    "tenderness on the medial joint line",
+    "1+ posterior drawer test",
+    "negative McMurray test",
+    "recommend MRI to evaluate for possible posterior cruciate ligament injury",
+    "getting an mri scan to look at what you may have done inside there",
+    "brace and physical therapy",
+    "get you into a brace here get you into some therapy",
+    "continue ibuprofen or try prescription",
+    "we can try this other prescription first",
+    "follow-up in 4-6 weeks",
+    "see you back here in maybe four to six weeks",
+    "dime-sized abrasion over the medial patella",
+    "dime size little abrasions dry looks about a week week old over the medial patella",
+    "no fractures or dislocations on x-rays",
+    "x-rays... reveal no evidence of any fractures or dislocations",
+    "posterior cruciate ligament sprain suspected",
+    "you may have injured that ligament",
+    "weakness vs. pain distinction",
+    "are you weak... no, it hurts",
+    "swimming discontinued post-injury",
+    "no, I haven't... recommend that"
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    3,
+    3,
+    0,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0,
+    1,
+    0,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14220848679542542,
+    "calinski_harabasz_score": 5.268867371835325,
+    "davies_bouldin_score": 1.7176093924640636
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9984626770019531,
+      0.9975547194480896,
+      0.9944815039634705
+    ],
+    [
+      0.9984626770019531,
+      0.9999998211860657,
+      0.9976017475128174,
+      0.9972192049026489
+    ],
+    [
+      0.9975547194480896,
+      0.9976017475128174,
+      1.0,
+      0.9945229887962341
+    ],
+    [
+      0.9944815039634705,
+      0.9972192049026489,
+      0.9945229887962341,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.016167374327778816,
+    "1": -0.11816060543060303,
+    "2": 0.0785326287150383,
+    "3": 0.3449050486087799
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I fell off of my tandem bike with my partner and my knee has been hurting ever since."
+      ],
+      "0": [
+        "my knee has been hurting ever since... hit it on the curb."
+      ],
+      "1": [
+        "took some ibuprofen and washed it out and put a band-aid on it but it's been hurting everyday since."
+      ]
+    },
+    "1": {
+      "2": [
+        "maybe two weeks ago",
+        "sometimes it shifts back a little bit",
+        "no, I haven't... recommend that"
+      ],
+      "0": [
+        "walking up a hill any incline really hurts",
+        "getting an mri scan to look at what you may have done inside there",
+        "get you into a brace here get you into some therapy",
+        "see you back here in maybe four to six weeks",
+        "you may have injured that ligament",
+        "are you weak... no, it hurts"
+      ],
+      "1": [
+        "continue ibuprofen or try prescription",
+        "follow-up in 4-6 weeks"
+      ]
+    },
+    "0": {
+      "2": [
+        "it clicks when straightening",
+        "we can try this other prescription first"
+      ],
+      "1": [
+        "pain on inclines",
+        "brace and physical therapy",
+        "weakness vs. pain distinction",
+        "swimming discontinued post-injury"
+      ],
+      "0": [
+        "1+ posterior drawer test",
+        "negative McMurray test"
+      ]
+    },
+    "2": {
+      "2": [
+        "tenderness on the medial joint line",
+        "recommend MRI to evaluate for possible posterior cruciate ligament injury",
+        "posterior cruciate ligament sprain suspected"
+      ],
+      "0": [
+        "dime-sized abrasion over the medial patella",
+        "dime size little abrasions dry looks about a week week old over the medial patella"
+      ],
+      "1": [
+        "no fractures or dislocations on x-rays",
+        "x-rays... reveal no evidence of any fractures or dislocations"
+      ]
+    }
+  }
+}

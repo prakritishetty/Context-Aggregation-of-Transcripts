@@ -1,0 +1,199 @@
+{
+  "phrases": [
+    "I've been in a lot of pain it started about three days ago.",
+    "the pain that you're having is it constant or does it come and go",
+    "it's constant... I can't get comfortable.",
+    "I started seeing some blood",
+    "this might be my third time",
+    "no fever some chills and I just can't eat and I do feel a little nauseous.",
+    "I've been taking Tylenol I have had to try some ibuprofen... it's not really working.",
+    "usually about three four days to pass it",
+    "your blood pressure was a little bit high... probably because you are in a bunch of pain.",
+    "you were up there in the one eighties which was really high",
+    "my french fries",
+    "we don't want strokes we don't want a scope and all the french fries",
+    "your A1c was a little bit higher at seven point three",
+    "those have been pretty good they are in the low one hundreds",
+    "grade two out of six systolic ejection murmur... not really worried about that currently.",
+    "tenderness to palpation of the abdomen... CVA tenderness on your flank.",
+    "prescribe you some oxycodone five milligrams... continue to take that Tylenol for breakthrough pain.",
+    "push fluids... urine strainer... refer you to urology.",
+    "keep you on that two point five Norvasc... home blood pressure monitoring 3 times per week.",
+    "refer you to nutrition to a dietitian... write a diet for you.",
+    "continue metformin 500 mg daily... home glucose monitoring before meals.",
+    "that sounds good and I just want this pain to go away thank you"
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    3,
+    0,
+    2,
+    3,
+    3,
+    2,
+    3,
+    0,
+    2,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
+    1,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17346252501010895,
+    "calinski_harabasz_score": 5.081626952377989,
+    "davies_bouldin_score": 1.4618920220334388
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9972114562988281,
+      0.9977327585220337,
+      0.9984151124954224
+    ],
+    [
+      0.9972114562988281,
+      1.000000238418579,
+      0.9973164796829224,
+      0.9976577162742615
+    ],
+    [
+      0.9977327585220337,
+      0.9973164796829224,
+      0.9999998807907104,
+      0.9969024062156677
+    ],
+    [
+      0.9984151124954224,
+      0.9976577162742615,
+      0.9969024062156677,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.007271675858646631,
+    "1": 0.07302702963352203,
+    "2": -0.031628482043743134,
+    "3": 0.16844071447849274
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I've been in a lot of pain it started about three days ago."
+      ],
+      "0": [
+        "it's constant... I can't get comfortable.",
+        "I've been taking Tylenol I have had to try some ibuprofen... it's not really working."
+      ],
+      "1": [
+        "no fever some chills and I just can't eat and I do feel a little nauseous.",
+        "your blood pressure was a little bit high... probably because you are in a bunch of pain."
+      ]
+    },
+    "0": {
+      "2": [
+        "the pain that you're having is it constant or does it come and go"
+      ],
+      "0": [
+        "I started seeing some blood",
+        "you were up there in the one eighties which was really high",
+        "your A1c was a little bit higher at seven point three"
+      ],
+      "1": [
+        "that sounds good and I just want this pain to go away thank you"
+      ]
+    },
+    "2": {
+      "2": [
+        "this might be my third time",
+        "my french fries"
+      ],
+      "0": [
+        "usually about three four days to pass it",
+        "those have been pretty good they are in the low one hundreds"
+      ],
+      "1": [
+        "we don't want strokes we don't want a scope and all the french fries"
+      ]
+    },
+    "1": {
+      "2": [
+        "grade two out of six systolic ejection murmur... not really worried about that currently.",
+        "tenderness to palpation of the abdomen... CVA tenderness on your flank.",
+        "push fluids... urine strainer... refer you to urology."
+      ],
+      "0": [
+        "prescribe you some oxycodone five milligrams... continue to take that Tylenol for breakthrough pain."
+      ],
+      "1": [
+        "keep you on that two point five Norvasc... home blood pressure monitoring 3 times per week.",
+        "refer you to nutrition to a dietitian... write a diet for you.",
+        "continue metformin 500 mg daily... home glucose monitoring before meals."
+      ]
+    }
+  }
+}

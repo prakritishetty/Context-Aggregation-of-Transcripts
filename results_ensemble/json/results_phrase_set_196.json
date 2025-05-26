@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "I was walking up and down the stairs... I slipped and tried to catch myself... my wrist started to hurt real bad and it got real swollen.",
+    "On a scale of one to ten... it's a nine.",
+    "I did the ice thing... ACE wrap... ibuprofen.",
+    "Obvious swelling and bruising... tenderness on palpation... bony crepitus.",
+    "Pain on flexion and extension... radial deviation and lateral deviation.",
+    "Colles' fracture... dinner fork deformity... ulnar styloid fracture.",
+    "Thumb spica brace... surgery as soon as possible... overnight stay... physical therapy a few weeks after surgery... six weeks in the brace.",
+    "Ultram 50 mg every six hours.",
+    "Going on vacation in a month... postpone... consult physical therapy.",
+    "A little numbness and tingling in the fingers.",
+    "Blood pressure elevated at 140/70... heart rate 80 bpm.",
+    "Fracture could heal and malform if not stabilized with screws.",
+    "Physical therapy three times a week to strengthen the wrist."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    1,
+    0,
+    1,
+    1,
+    3,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13335734605789185,
+    "calinski_harabasz_score": 3.0077052266624538,
+    "davies_bouldin_score": 1.213234003311126
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9976583123207092,
+      0.9965298175811768,
+      0.9958993196487427
+    ],
+    [
+      0.9976583123207092,
+      0.9999999403953552,
+      0.9982308149337769,
+      0.9972010850906372
+    ],
+    [
+      0.9965298175811768,
+      0.9982308149337769,
+      1.0,
+      0.9971864819526672
+    ],
+    [
+      0.9958993196487427,
+      0.9972010850906372,
+      0.9971864819526672,
+      1.0000004768371582
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.037670668214559555,
+    "1": -0.018254593014717102,
+    "2": 0.04251675680279732,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I was walking up and down the stairs... I slipped and tried to catch myself... my wrist started to hurt real bad and it got real swollen."
+      ],
+      "0": [
+        "On a scale of one to ten... it's a nine.",
+        "I did the ice thing... ACE wrap... ibuprofen."
+      ],
+      "1": [
+        "Going on vacation in a month... postpone... consult physical therapy."
+      ]
+    },
+    "2": {
+      "2": [
+        "Obvious swelling and bruising... tenderness on palpation... bony crepitus."
+      ],
+      "0": [
+        "Pain on flexion and extension... radial deviation and lateral deviation.",
+        "Colles' fracture... dinner fork deformity... ulnar styloid fracture."
+      ],
+      "1": [
+        "Thumb spica brace... surgery as soon as possible... overnight stay... physical therapy a few weeks after surgery... six weeks in the brace."
+      ]
+    },
+    "1": {
+      "2": [
+        "Ultram 50 mg every six hours."
+      ],
+      "0": [
+        "A little numbness and tingling in the fingers.",
+        "Physical therapy three times a week to strengthen the wrist."
+      ],
+      "1": [
+        "Blood pressure elevated at 140/70... heart rate 80 bpm."
+      ]
+    },
+    "3": {
+      "0": [
+        "Fracture could heal and malform if not stabilized with screws."
+      ]
+    }
+  }
+}

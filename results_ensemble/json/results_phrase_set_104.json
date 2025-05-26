@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "I've had it for about a week and... tried some over the counter stuff but it doesn't go away.",
+    "I twisted on my left and maybe I might have picked something up... the pain came back after a few hours.",
+    "It's more towards the middle maybe on the lower side... aggravated when I do some sudden movement to the left.",
+    "The pain is located in the center but goes across to the left side.",
+    "Lungs are clear and your heart has a regular rate and rhythm.",
+    "Pain to palpation of the midline of the lower back, especially on the left... mildly positive straight leg rise on the right, positive on the left.",
+    "History of diabetes... taking metformin twice a day.",
+    "Blood sugar numbers have been a bit towards the higher side.",
+    "Family owns the bakery... I end up getting some stuff but it's not that much.",
+    "Order a low back x-ray... start with physical therapy... take 400 mg ibuprofen up to 3 times a day... Flexeril as a muscle relaxant.",
+    "A1C test needed... continue diet and exercise... check blood sugar first thing in the morning.",
+    "Avoid donuts and sweets from the bakery... occasional treats are fine but watch carbohydrates.",
+    "Referral to a pain doctor if pain continues after x-ray and possible CAT scan.",
+    "No numbness or tingling in feet during physical exam."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    2,
+    1,
+    0,
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.20080900192260742,
+    "calinski_harabasz_score": 4.364834041919607,
+    "davies_bouldin_score": 1.3857583088811039
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9986118078231812,
+      0.9976294040679932,
+      0.9968546032905579
+    ],
+    [
+      0.9986118078231812,
+      0.9999998807907104,
+      0.9970937967300415,
+      0.99483722448349
+    ],
+    [
+      0.9976294040679932,
+      0.9970937967300415,
+      0.9999996423721313,
+      0.9965299963951111
+    ],
+    [
+      0.9968546032905579,
+      0.99483722448349,
+      0.9965299963951111,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06954874843358994,
+    "1": 0.11016404628753662,
+    "2": 0.1629973202943802,
+    "3": 0.1568528711795807
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I've had it for about a week and... tried some over the counter stuff but it doesn't go away."
+      ],
+      "0": [
+        "I twisted on my left and maybe I might have picked something up... the pain came back after a few hours.",
+        "It's more towards the middle maybe on the lower side... aggravated when I do some sudden movement to the left."
+      ],
+      "1": [
+        "Family owns the bakery... I end up getting some stuff but it's not that much."
+      ]
+    },
+    "2": {
+      "0": [
+        "The pain is located in the center but goes across to the left side.",
+        "Blood sugar numbers have been a bit towards the higher side."
+      ]
+    },
+    "1": {
+      "2": [
+        "Lungs are clear and your heart has a regular rate and rhythm."
+      ],
+      "0": [
+        "Referral to a pain doctor if pain continues after x-ray and possible CAT scan."
+      ],
+      "1": [
+        "No numbness or tingling in feet during physical exam."
+      ]
+    },
+    "0": {
+      "2": [
+        "Pain to palpation of the midline of the lower back, especially on the left... mildly positive straight leg rise on the right, positive on the left."
+      ],
+      "0": [
+        "History of diabetes... taking metformin twice a day.",
+        "A1C test needed... continue diet and exercise... check blood sugar first thing in the morning.",
+        "Avoid donuts and sweets from the bakery... occasional treats are fine but watch carbohydrates."
+      ],
+      "1": [
+        "Order a low back x-ray... start with physical therapy... take 400 mg ibuprofen up to 3 times a day... Flexeril as a muscle relaxant."
+      ]
+    }
+  }
+}

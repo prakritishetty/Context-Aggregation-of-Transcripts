@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,"Brian is a 58-year-old male with a past medical history significant for congestive heart failure and hypertension, who presents today for follow-up of his chronic problems."
+P,3,2,"I just feel out of sorts lately. I don’t know if it’s the change in the seasons or if we’re just doing a lot of projects around the house and some construction on our own. I’m just feeling out of it. Lack of energy. I’m just tired and fatigued, and I feel kinda. I feel lightheaded every once in a while."
+A,0,2,"Probably since Labor Day, about five weeks or."
+P,3,0,"We began construction on our kitchen over Labor Day weekend, and it was hard to cook or prepare meals. We ate out a lot, and not always the best food out. It wreaked havoc; it’s been maybe off a little bit."
+A,0,1,"Yes, I am [taking my medications]."
+O,1,2,Jugular venous distention to about eight centimeters.
+A,0,0,A three out of six systolic ejection murmur.
+A,0,0,Fine crackles at the bases bilaterally.
+O,1,2,1+ pitting edema in the lower extremities.
+O,1,0,Chest x-ray demonstrates a mild amount of fluid in the lungs.
+O,1,0,Echocardiogram shows a reduced ejection fraction of 45% and mild mitral regurgitation.
+O,1,1,Increase Lasix to 80mg once a day.
+P,3,1,Wean yourself every day. I want you to call me if you’re gaining more weight.
+A,0,0,Order another echocardiogram.
+O,1,1,Continue lisinopril 20mg a day for hypertension.
+P,3,1,"I monitor it regularly. My wife makes sure I stay on top of that, but it’s been pretty good."
+A,0,1,Slight cramps [chest pain] that go away after about an hour.
+P,3,1,"A slight cough, and again, I’m not sure if it’s just the change of seasons and I’m getting a cold."
+A,0,2,That sounds fine.

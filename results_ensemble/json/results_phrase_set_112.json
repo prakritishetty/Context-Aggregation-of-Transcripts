@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "Right elbow pain",
+    "Hurt it about a week ago playing lacrosse with my kids",
+    "At the tip of the elbow",
+    "Hurts anytime I move it",
+    "Radiates down the forearm",
+    "Tried taking Advil a couple of days but usually just forget about it",
+    "Blood pressure's a little bit high today: 150/90 mmHg",
+    "On 20 mg of lisinopril daily",
+    "Family follows a Mediterranean diet, low salt intake",
+    "On 500 mg of metformin daily",
+    "Blood sugars run between 80 to 100 when checked",
+    "Grade 2/6 systolic ejection murmur",
+    "Pain to palpation of the olecranon area of the posterior elbow",
+    "Mild pain with flexion and extension but normal range of motion",
+    "Swelling and mild ecchymosis noted over the right elbow",
+    "X-ray of the right elbow demonstrates no evidence of fracture or bony abnormalities",
+    "Prescribe 800 mg ibuprofen twice daily and ice 3 times a day for 20 minutes",
+    "Avoid playing lacrosse for the next couple of weeks",
+    "Continue lisinopril 20 mg daily for hypertension",
+    "Order a hemoglobin A1c to evaluate diabetes medication adjustments",
+    "Patient understands and agrees with the recommended plan"
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14098334312438965,
+    "calinski_harabasz_score": 3.665064467761128,
+    "davies_bouldin_score": 1.4256737615105401
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9979392886161804,
+      0.9984654784202576,
+      0.9953981637954712
+    ],
+    [
+      0.9979392886161804,
+      1.0,
+      0.9969045519828796,
+      0.9923131465911865
+    ],
+    [
+      0.9984654784202576,
+      0.9969045519828796,
+      0.9999998807907104,
+      0.9939490556716919
+    ],
+    [
+      0.9953981637954712,
+      0.9923131465911865,
+      0.9939490556716919,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.038970958441495895,
+    "1": 0.09259101003408432,
+    "2": -0.03598988801240921,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Right elbow pain",
+        "At the tip of the elbow",
+        "Radiates down the forearm"
+      ],
+      "0": [
+        "On 20 mg of lisinopril daily",
+        "On 500 mg of metformin daily",
+        "Grade 2/6 systolic ejection murmur",
+        "Prescribe 800 mg ibuprofen twice daily and ice 3 times a day for 20 minutes",
+        "Continue lisinopril 20 mg daily for hypertension",
+        "Order a hemoglobin A1c to evaluate diabetes medication adjustments"
+      ],
+      "1": [
+        "Blood sugars run between 80 to 100 when checked",
+        "Avoid playing lacrosse for the next couple of weeks"
+      ]
+    },
+    "2": {
+      "2": [
+        "Hurt it about a week ago playing lacrosse with my kids",
+        "Tried taking Advil a couple of days but usually just forget about it",
+        "Blood pressure's a little bit high today: 150/90 mmHg"
+      ],
+      "0": [
+        "Hurts anytime I move it"
+      ],
+      "1": [
+        "Family follows a Mediterranean diet, low salt intake"
+      ]
+    },
+    "1": {
+      "2": [
+        "Pain to palpation of the olecranon area of the posterior elbow"
+      ],
+      "0": [
+        "Mild pain with flexion and extension but normal range of motion"
+      ],
+      "1": [
+        "Swelling and mild ecchymosis noted over the right elbow",
+        "X-ray of the right elbow demonstrates no evidence of fracture or bony abnormalities"
+      ]
+    },
+    "3": {
+      "0": [
+        "Patient understands and agrees with the recommended plan"
+      ]
+    }
+  }
+}

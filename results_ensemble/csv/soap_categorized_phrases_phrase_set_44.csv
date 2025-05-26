@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,my arm hurts here. Toward my wrist. This part of my arm.
+S,1,0,"I was playing tennis... hit the top of the net but the pole part. And, and it just jarred my arm."
+S,1,2,It did. It got a little bit of swelling. Not a lot.
+A,0,0,a little bit when I move my wrist
+A,0,0,no numbness in my hand.
+A,0,2,I have allergies. And I take flonase.
+S,1,0,I had a trauma of a stabbing of... I fell doing lawn work on my rake.
+O,3,0,tenderness over your distal radius
+A,0,0,"pain when I stress especially your thumb, and, and flex your thumb."
+S,1,2,don’t see any fractures... don’t really see any abnormalities at all. It looks essentially normal.
+S,1,0,you have pain following hitting your arm on the net... what you have is just a strain and maybe a contusion to that muscle.
+P,2,0,ice... for the pain and swelling
+A,0,1,"anti-inflammatory... Motrin, 800 milligrams three times a day, with food."
+S,1,1,"if it doesn’t get any better in the next week or let me know, and we’ll take a look at you again."

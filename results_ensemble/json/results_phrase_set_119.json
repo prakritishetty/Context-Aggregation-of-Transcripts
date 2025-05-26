@@ -1,0 +1,139 @@
+{
+  "phrases": [
+    "I hurt my knee the other day when I was running around with my niece... I fell and I twisted my knee in some funky way.",
+    "Honestly it's been hurting on both sides more on the inside than the the outside.",
+    "It started off as a four but it's getting worse and it's starting it's a throbbing pain.",
+    "I've been taking some Tylenol... and wrapped it with kinesiology tape.",
+    "I can't take any Advil or ibuprofen",
+    "The Tylenol helps a little bit but it's got a time limit... by hour or two it hurts again.",
+    "Edema and effusion noted... moderate range of motion... pain on flexion and extension... negative Lachman's test and a negative valgus and varus test.",
+    "X-ray of your left knee... was normal... no fractures no bony abnormalities.",
+    "I believe you have a MCL strain or a medial collateral ligament... strained that ligament there.",
+    "I'm going to give you tramadol 50 mg twice a day... knee immobilizer for the next week... ice 3 or 4 times a day... don't want you to be running probably for the next three weeks... call if getting worse."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    1,
+    0,
+    0,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14935638010501862,
+    "calinski_harabasz_score": 2.856717437202052,
+    "davies_bouldin_score": 0.7740300490276475
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9964346289634705,
+      0.9962515234947205,
+      0.9942768812179565
+    ],
+    [
+      0.9964346289634705,
+      1.0,
+      0.9965410232543945,
+      0.9974390268325806
+    ],
+    [
+      0.9962515234947205,
+      0.9965410232543945,
+      1.0000001192092896,
+      0.9952751994132996
+    ],
+    [
+      0.9942768812179565,
+      0.9974390268325806,
+      0.9952751994132996,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0006727735162712634,
+    "1": 0.042249634861946106,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I hurt my knee the other day when I was running around with my niece... I fell and I twisted my knee in some funky way."
+      ],
+      "0": [
+        "Honestly it's been hurting on both sides more on the inside than the the outside.",
+        "It started off as a four but it's getting worse and it's starting it's a throbbing pain.",
+        "I've been taking some Tylenol... and wrapped it with kinesiology tape.",
+        "The Tylenol helps a little bit but it's got a time limit... by hour or two it hurts again."
+      ],
+      "1": [
+        "I'm going to give you tramadol 50 mg twice a day... knee immobilizer for the next week... ice 3 or 4 times a day... don't want you to be running probably for the next three weeks... call if getting worse."
+      ]
+    },
+    "3": {
+      "0": [
+        "I can't take any Advil or ibuprofen"
+      ]
+    },
+    "0": {
+      "0": [
+        "Edema and effusion noted... moderate range of motion... pain on flexion and extension... negative Lachman's test and a negative valgus and varus test.",
+        "X-ray of your left knee... was normal... no fractures no bony abnormalities."
+      ]
+    },
+    "2": {
+      "0": [
+        "I believe you have a MCL strain or a medial collateral ligament... strained that ligament there."
+      ]
+    }
+  }
+}

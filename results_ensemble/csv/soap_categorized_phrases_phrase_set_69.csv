@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,1,Right elbow pain... outside part... been killing me for the last three weeks.
+O,1,2,It's probably an eight when I'm just using it... three when I'm resting.
+A,2,2,"All of the above—shooting, stabbing, very sharp."
+P,3,2,History of diabetes type two and mild intermittent asthma.
+S,0,2,Metformin 500 mg twice a day... Flovent twice a day and albuterol as needed.
+O,1,0,Blood sugars are a bit off... one fifty to one sixty... Easter and my kids got a whole bunch of candies.
+P,3,0,Allergy to penicillin.
+A,2,0,Gallbladder out ten years ago by Dr. Nelson.
+P,3,1,Grade three out of six systolic ejection murmur... unchanged from prior exam.
+S,0,0,Moderate lateral epicondylar tenderness... moderate pain with passive range of motion... mild pain with resisted extension of the wrist.
+S,0,0,No acute fracture or other bony abnormality... no malalignment or sign of joint effusion.
+S,0,0,Acute lateral epicondylitis... due to overuse... increase in tennis activity.
+S,0,1,Stop tennis for four to six weeks... ice for twenty minutes three times a day... brace for forearm... Ultram 50 mg once per day.
+S,0,1,Increase metformin to 1000 mg twice a day... check blood sugar twice daily for two weeks.
+S,0,2,Flovent and albuterol remain unchanged... refill of albuterol prescribed.
+S,0,0,See you in four weeks to reevaluate... consider additional imaging or physical therapy if needed.
+O,1,2,It sounds pretty good... I get it.
+A,2,1,Take a break for a bit and ease back into it.
+O,1,1,"No, I don’t think [fever]."

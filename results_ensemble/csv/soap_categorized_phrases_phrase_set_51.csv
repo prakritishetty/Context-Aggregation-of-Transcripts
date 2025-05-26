@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,0,he started to get a runny nose.
+P,3,1,"he also has a cough, but it's not barky."
+S,1,2,"he's been pulling on his ears,"
+P,3,2,he's also been going crazy rubbing at his nose too.
+O,0,2,rectal temperature and it was 100.3.
+S,1,0,he's irritable.
+P,3,2,"he can't go to sleep, he's fighting it really hard."
+S,1,0,his older sister's been sick.
+P,3,0,"we had a play date with my nephew, who I learned later had a sinus infection."
+S,1,0,saline mist in his nose.
+P,3,1,I gave him Tylenol really early this morning.
+S,1,2,baby Vicks on his feet last night
+O,0,1,used the humidifier.
+S,1,0,ears look...
+P,3,0,"he's just getting started with this, and we're seeing something viral."
+A,2,0,sinus infections will start out as a virus and will become bacterial infections if left alone.
+P,3,2,"keep up with the fluids, rest, and I would watch him very carefully for a barking cough."
+P,3,1,"if he develops a barky cough, I want you to give him a half a teaspoon of his sister's medicine."
+S,1,1,Zarbee's for the stuffy nose
+P,3,1,"no honey for him... instead, you can give them agave."
+O,0,0,"recommended Head & Shoulders, or Selsun Blue, or Nizoral AD... 2 times per week."
+O,0,1,avoid getting the shampoo in the patient's eyes.
+P,3,1,his cradle cap has gotten a little worse.
+O,0,1,"using the cradle cap brush, and I use regular Aveeno shampoo."
+O,0,1,return in one week for a re-check.

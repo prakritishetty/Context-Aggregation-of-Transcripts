@@ -1,0 +1,145 @@
+{
+  "phrases": [
+    "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+    "Back to work with full range of motion and no issues since carpal tunnel release.",
+    "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned.",
+    "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week.",
+    "It does [happen when walking]... it does [go away with rest]... no [at rest].",
+    "No numbing and tingling in your hands? [Patient] no.",
+    "No lower extremity edema, or muscle aches, or fever chills?",
+    "No, nothing...",
+    "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen.",
+    "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist.",
+    "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation.",
+    "ECG prior coronary artery disease. No new changes.",
+    "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily.",
+    "If you have recurrent symptoms, let me know."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0,
+    1,
+    3,
+    3,
+    0,
+    3,
+    0
+  ],
+  "subcluster_labels": {
+    "0": 13,
+    "1": 14,
+    "2": 1,
+    "3": 3,
+    "4": 4,
+    "5": 11,
+    "6": 12,
+    "7": 6,
+    "8": 2,
+    "9": 8,
+    "10": 9,
+    "11": 7,
+    "12": 10,
+    "13": 5
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "S",
+    "2": "S",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13186194002628326,
+    "calinski_harabasz_score": 3.061375379562378,
+    "davies_bouldin_score": 1.522380207606473
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9968492984771729,
+      0.9980970621109009,
+      0.9974302649497986
+    ],
+    [
+      0.9968492984771729,
+      1.0000001192092896,
+      0.9964554309844971,
+      0.9955227375030518
+    ],
+    [
+      0.9980970621109009,
+      0.9964554309844971,
+      1.0,
+      0.9984058141708374
+    ],
+    [
+      0.9974302649497986,
+      0.9955227375030518,
+      0.9984058141708374,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.013587434776127338,
+    "1": 0.21495521068572998,
+    "2": 0.11313561350107193,
+    "3": 0.003302535740658641
+  },
+  "cluster_phrases": {
+    "2": {
+      "13": [
+        "I've been doing well with my herniated disc in my back, no back pain or limitations in movement."
+      ],
+      "14": [
+        "Back to work with full range of motion and no issues since carpal tunnel release."
+      ],
+      "11": [
+        "No numbing and tingling in your hands? [Patient] no."
+      ],
+      "12": [
+        "No lower extremity edema, or muscle aches, or fever chills?"
+      ]
+    },
+    "1": {
+      "1": [
+        "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned."
+      ],
+      "3": [
+        "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week."
+      ],
+      "2": [
+        "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen."
+      ]
+    },
+    "0": {
+      "4": [
+        "It does [happen when walking]... it does [go away with rest]... no [at rest]."
+      ],
+      "6": [
+        "No, nothing..."
+      ],
+      "7": [
+        "ECG prior coronary artery disease. No new changes."
+      ],
+      "5": [
+        "If you have recurrent symptoms, let me know."
+      ]
+    },
+    "3": {
+      "8": [
+        "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist."
+      ],
+      "9": [
+        "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation."
+      ],
+      "10": [
+        "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily."
+      ]
+    }
+  }
+}

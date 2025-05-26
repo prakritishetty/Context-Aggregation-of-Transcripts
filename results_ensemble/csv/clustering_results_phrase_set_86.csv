@@ -1,0 +1,18 @@
+phrases,cluster_labels
+"I've been feeling tired, really lacking a lot of energy, and I have swollen joints in my elbows, just really hurts.",1
+"I've been a little nauseous. I have n't been able to eat much. I've been trying just to keep,, toast and crackers and that's all about I've been able to stomach, really.",1
+Michelle is a 31-year-old female with a past medical history of type 2 diabetes and hypertension who presents with abnormal lab finding.,2
+"You had had an insect bite, and, it came back positive for Lyme.",0
+Have you noticed any other rash anywhere else? [Patient]: I have. [Doctor]: Sometimes they describe it as looking as a bull's-eye. [Patient]: Yes.,1
+"On physical examination, you do have some swelling of your elbow joints bilaterally. Does it hurt when I touch them? [Patient]: It does.",1
+"On your skin examination, you do have a bull's-eye rash on your abdomen on the left-hand side. It’s warm to palpation. Any pain with that? [Patient]: No, no pain for that.",1
+"Hey, Dragon, show me the Lyme titer. You can see here, in reviewing the results of your Lyme titer, it is elevated.",0
+"In reviewing the results of your labs, everything else looks good. Again, you don’t have an elevated white blood cell count or anything that.",3
+"I want to prescribe you doxycycline, 100 milligrams twice a day. You have to take it for three weeks.",1
+I’m going to touch base with an infectious disease doctor to make sure that there’s not anything else that we need to do.,3
+I want you to continue to record your blood pressure regularly.,0
+I’m going to order a hemoglobin A1c and just this. Make sure we don’t have to make any changes to the metformin.,3
+"I’m going to continue you on the lisinopril, 10 milligrams a day, and I’m going to go ahead and order a lipid panel.",3
+You’re doing a really good job of managing your hypertension.,3
+You have been compliant with dietary modifications including limiting your sodium intake.,0
+I want to see you again next week for a follow-up for this.,0

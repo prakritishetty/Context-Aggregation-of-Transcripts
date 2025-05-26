@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "I was jumping on my kid's trampoline and I could just slipped out from under me",
+    "about four days ago",
+    "I felt a little pop and it swelled up really big afterward",
+    "I took some ibuprofen and I put some ice on it",
+    "it's still really hard to get around",
+    "the inside part of my kneecap",
+    "able to put weight on it",
+    "some pain on palpation on the inside little bit of pain on the outside of the knee",
+    "little bit of limited range of motion as pain on both flexion and extension on the knee",
+    "McMurray's test is negative",
+    "concerned about a torn or injured MCL",
+    "put you in a straight leg brace and I'll prescribe some Mobic",
+    "ice your knee once an hour for about fifteen minutes",
+    "send you out for an MRI",
+    "history of diabetes",
+    "forget to check [sugars] quite a bit",
+    "managing [diabetes] pretty [well]",
+    "recheck on your hemoglobin A1c",
+    "refill on the metformin that you have been taking five hundred milligrams"
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    3,
+    3,
+    3,
+    1,
+    2,
+    0,
+    0,
+    1,
+    1,
+    3,
+    0,
+    2,
+    1,
+    2,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1805664449930191,
+    "calinski_harabasz_score": 4.983604893809197,
+    "davies_bouldin_score": 1.6455104369461497
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9979835152626038,
+      0.9976035356521606,
+      0.9965304136276245
+    ],
+    [
+      0.9979835152626038,
+      1.000000238418579,
+      0.9988420605659485,
+      0.9960851073265076
+    ],
+    [
+      0.9976035356521606,
+      0.9988420605659485,
+      0.9999999403953552,
+      0.9960177540779114
+    ],
+    [
+      0.9965304136276245,
+      0.9960851073265076,
+      0.9960177540779114,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.10761012136936188,
+    "1": -0.19169482588768005,
+    "2": 0.04751494154334068,
+    "3": -0.011931151151657104
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I was jumping on my kid's trampoline and I could just slipped out from under me"
+      ],
+      "0": [
+        "I felt a little pop and it swelled up really big afterward",
+        "I took some ibuprofen and I put some ice on it",
+        "it's still really hard to get around"
+      ],
+      "1": [
+        "put you in a straight leg brace and I'll prescribe some Mobic"
+      ]
+    },
+    "1": {
+      "2": [
+        "about four days ago",
+        "McMurray's test is negative",
+        "concerned about a torn or injured MCL"
+      ],
+      "0": [
+        "the inside part of my kneecap"
+      ],
+      "1": [
+        "history of diabetes"
+      ]
+    },
+    "2": {
+      "2": [
+        "able to put weight on it"
+      ],
+      "0": [
+        "send you out for an MRI"
+      ],
+      "1": [
+        "forget to check [sugars] quite a bit",
+        "managing [diabetes] pretty [well]"
+      ]
+    },
+    "0": {
+      "2": [
+        "some pain on palpation on the inside little bit of pain on the outside of the knee",
+        "ice your knee once an hour for about fifteen minutes"
+      ],
+      "0": [
+        "little bit of limited range of motion as pain on both flexion and extension on the knee"
+      ],
+      "1": [
+        "recheck on your hemoglobin A1c",
+        "refill on the metformin that you have been taking five hundred milligrams"
+      ]
+    }
+  }
+}

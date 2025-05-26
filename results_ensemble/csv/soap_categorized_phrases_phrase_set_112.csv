@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,Right elbow pain
+S,2,2,Hurt it about a week ago playing lacrosse with my kids
+A,0,2,At the tip of the elbow
+S,2,0,Hurts anytime I move it
+A,0,2,Radiates down the forearm
+S,2,2,Tried taking Advil a couple of days but usually just forget about it
+S,2,2,Blood pressure's a little bit high today: 150/90 mmHg
+A,0,0,On 20 mg of lisinopril daily
+S,2,1,"Family follows a Mediterranean diet, low salt intake"
+A,0,0,On 500 mg of metformin daily
+A,0,1,Blood sugars run between 80 to 100 when checked
+A,0,0,Grade 2/6 systolic ejection murmur
+O,1,2,Pain to palpation of the olecranon area of the posterior elbow
+O,1,0,Mild pain with flexion and extension but normal range of motion
+O,1,1,Swelling and mild ecchymosis noted over the right elbow
+O,1,1,X-ray of the right elbow demonstrates no evidence of fracture or bony abnormalities
+A,0,0,Prescribe 800 mg ibuprofen twice daily and ice 3 times a day for 20 minutes
+A,0,1,Avoid playing lacrosse for the next couple of weeks
+A,0,0,Continue lisinopril 20 mg daily for hypertension
+A,0,0,Order a hemoglobin A1c to evaluate diabetes medication adjustments
+P,3,0,Patient understands and agrees with the recommended plan

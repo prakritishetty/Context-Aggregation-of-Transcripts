@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "Right foot ulcer that's been there for a couple of weeks",
+    "It's been there gosh it's six or eight weeks and it's just not going away... maybe even gotten a little worse.",
+    "No pain at all",
+    "Diabetic... on some insulin... sugars been running... a little higher than normal",
+    "Last hemoglobin A1c was above nine",
+    "Initially... stepped on a nail or there was some other work... led to anything",
+    "No fever or chills... tension headaches pretty often",
+    "Occasionally... numbness and tingling in feet... colder weather",
+    "Former smoker... two packs a day for twenty plus years... stopped four years ago",
+    "No pain in calves when walking... no shortness of breath",
+    "No palpable dorsalis pedis or posterior tibial pulses",
+    "Two by three centimeter ulcerated lesion... lateral foot near the fifth metatarsal... no cellulitis... granulation tissue and slight purulent discharge",
+    "Nonhealing ulcer of your foot... need to do some studies... blood supply to heal this foot wound",
+    "Vascular surgeon's office... stent to one of your arteries... bypass surgery... improve blood supply",
+    "Continue with aspirin... help with blood supply",
+    "Arterial ultrasound of lower extremities... podiatry consult... improve wound care",
+    "Diabetes... unstable... need to get better controlled... impacts wound healing",
+    "Coronary artery disease... statin... cardiologist for medical clearance"
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10153396427631378,
+    "calinski_harabasz_score": 3.2815886603037576,
+    "davies_bouldin_score": 1.5223968174544917
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.99842369556427,
+      0.9972565174102783,
+      0.9918574690818787
+    ],
+    [
+      0.99842369556427,
+      1.000000238418579,
+      0.9987456798553467,
+      0.9940766096115112
+    ],
+    [
+      0.9972565174102783,
+      0.9987456798553467,
+      1.000000238418579,
+      0.9930365681648254
+    ],
+    [
+      0.9918574690818787,
+      0.9940766096115112,
+      0.9930365681648254,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.018112557008862495,
+    "1": 0.02974051609635353,
+    "2": -0.11828436702489853,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "Right foot ulcer that's been there for a couple of weeks",
+        "No palpable dorsalis pedis or posterior tibial pulses"
+      ],
+      "0": [
+        "No pain at all"
+      ],
+      "1": [
+        "Last hemoglobin A1c was above nine"
+      ]
+    },
+    "3": {
+      "0": [
+        "It's been there gosh it's six or eight weeks and it's just not going away... maybe even gotten a little worse."
+      ]
+    },
+    "1": {
+      "0": [
+        "Diabetic... on some insulin... sugars been running... a little higher than normal",
+        "No fever or chills... tension headaches pretty often",
+        "Occasionally... numbness and tingling in feet... colder weather",
+        "Former smoker... two packs a day for twenty plus years... stopped four years ago",
+        "No pain in calves when walking... no shortness of breath"
+      ],
+      "2": [
+        "Initially... stepped on a nail or there was some other work... led to anything"
+      ],
+      "1": [
+        "Continue with aspirin... help with blood supply",
+        "Diabetes... unstable... need to get better controlled... impacts wound healing",
+        "Coronary artery disease... statin... cardiologist for medical clearance"
+      ]
+    },
+    "0": {
+      "2": [
+        "Two by three centimeter ulcerated lesion... lateral foot near the fifth metatarsal... no cellulitis... granulation tissue and slight purulent discharge"
+      ],
+      "0": [
+        "Nonhealing ulcer of your foot... need to do some studies... blood supply to heal this foot wound"
+      ],
+      "1": [
+        "Vascular surgeon's office... stent to one of your arteries... bypass surgery... improve blood supply",
+        "Arterial ultrasound of lower extremities... podiatry consult... improve wound care"
+      ]
+    }
+  }
+}

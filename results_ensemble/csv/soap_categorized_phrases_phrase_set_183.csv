@@ -1,0 +1,24 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,Left ankle pain.
+S,0,2,I was just talking to her and stepped off the curb and landed on it wrong.
+S,0,0,It's been killing me for a couple days
+P,3,2,localized to the outside of it.
+S,0,0,It's about an eight
+P,3,0,maybe a seven
+S,0,1,I have taken some ibuprofen and just tried to elevate it and ice it a little bit.
+A,2,2,"Ecchymosis or bruising over the lateral malleolus,"
+P,3,0,"some swelling,"
+A,2,2,"tenderness to palpation on the lateral side,"
+A,2,2,no laxity in the joint
+O,1,0,bony tenderness.
+A,2,0,"Capillary refill is brisk less than three seconds,"
+O,1,1,"strong dorsalis pedis pulses,"
+O,1,2,motor and sensation intact.
+A,2,2,No fracture or any bony abnormalities.
+A,2,2,Symptoms are consistent with an ankle sprain of the lateral ligament complex.
+P,3,1,"Continue the RICE protocol,"
+A,2,1,"prescribe an air cast to stabilize the ankle,"
+A,2,1,prescribe crutches to stay off the leg.
+A,2,1,Follow up with you in two weeks
+S,0,0,come back in if you have a lot of pain.
+A,2,1,Symptoms will get better significantly over the first four to six days.

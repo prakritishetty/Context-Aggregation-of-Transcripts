@@ -1,0 +1,345 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{naaclhlt2019}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{url}
+\usepackage{listings}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\aclfinalcopy 
+
+\title{Hierarchical Context Aggregation for Quality Automated Medical Notes}
+
+\author{Prakriti Shetty \\
+  {\tt \small psshetty@umass.edu} \\\And
+  Priya Balakrishnan \\
+  {\tt \small pbalakrishna@umass.edu} \\\And
+  Avinash Nandyala \\
+  {\tt \small anandyala@umass.edu} \\\And
+  Donald Winkleman \\
+  {\tt \small dwinkelman@umass.edu} \\}
+  
+% \setlength\textwidth{16.0cm}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Electronic Health Records (EHRs) have been widely adopted to digitize and automate the collection of patient records, including medical history, consultation notes, and overall case documentation.
+
+However, current EHR systems primarily rely on manual data entry, which requires healthcare professionals to manually input information. This manual approach leads to several issues, such as data-entry errors, inconsistent documentation, reduced readability, and increased administrative workload. Consequently, this process not only affects data accuracy and usability but also contributes to physician dissatisfaction due to the significant time investment required for documentation. 
+
+To mitigate these challenges, recent advancements have explored automated clinical documentation systems, commonly referred to as digital scribes. These systems aim to capture and transcribe physician-patient conversations into structured clinical notes, allowing healthcare professionals to focus on patient care rather than administrative tasks. However, many existing solutions primarily depend on automatic speech recognition (ASR) followed by named entity recognition (NER) to extract relevant medical terms, often presenting the output as a tabular summary of keywords. While such approaches offer some level of automation, they fail to capture the nuanced and structured nature of clinical documentation required for effective decision-making and seamless integration into EHR systems. 
+
+Recent solutions prevalent in emerging AI scribing companies rely heavily on LLMs to generate clinical notes. Although LLMs excel at at constructing complex SOAP notes with minimal engineering, they frequently hallucinate and omit critical details. Equally concerning is the size of these models necessitating these services to be served on the AI scribing company's servers. Despite these companies promoting their servers are HIPAA compliant, this poses a significant security risk for patient info and rightfully leads to physicians avoiding these services.
+
+In this work, 
+% we will introduce Clinician Note, a fine-tuned LLM which excels in generating accurate and comprehensive SOAP notes. Furthermore, we introduce GRPO Arena, a novel fine tuning pipeline which uses GRPO (Group Relative Policy Optimization) and an ensemble reward system involving Gemini 2.5 Pro and Deepseek V3 to train Clinician Note. We further propose an advanced automated pipeline that processes audio transcripts from doctor-patient interactions to systematically extract key medical information and categorize it according to the standard SOAP (Subjective, Objective, Assessment, Plan) format. This system is used to further aid Clinician Note during inference. 
+we focus on developing and evaluating methods for automatically generating high-quality SOAP-format notes from doctor–patient dialogue transcripts. Our main goal is to conduct a comparative study of multiple approaches to identify the most effective strategy for producing clinically useful and factually accurate notes.\\The four approaches we investigate are:
+\begin{itemize}
+    \item \textbf{Approach 1: Baseline LLM Generation:} Using the state-of-the-art Qwen 3 model to generate SOAP notes without any fine-tuning or structural enhancements.
+    \item \textbf{Approach 2: Finetuned LLM Generation:} Improving note quality by fine-tuning Qwen 3 using GRPO Arena. GRPO (Group Relative Policy Optimisation)  Arena evaluates generated notes side-by-side to guide model optimization through a voting-based ensemble reward system involving Gemini 2.5 Pro and Deepseek V3
+    \item \textbf{Approach 3: Baseline LLM + Hybrid Architecture utilizing Key Phrase Extraction and Hierarchical Clustering:} Exploring a novel approach that applies key-phrase extraction (KPE) and hierarchical clustering (HC) to enhance the structure and content organization of baseline LLM generated notes. This architecture is inspired by related work in discourse structuring and segmentation.
+    \item \textbf{Approach 4: Finetuned LLM + Hybrid Architecture utilizing Key Phrase Extraction and Hierarchical Clustering:} Exploring a novel approach that applies key-phrase extraction (KPE) and hierarchical clustering (HC) to enhance the structure and content organization of the notes generated by the finetuned LLM. 
+    
+\end{itemize}
+By analyzing and comparing these methods, both independently and in combination, we aim to determine which pipeline produces the most coherent, factual, and clinically relevant SOAP notes. 
+
+\section{Pipeline Implementation}
+
+Our end-to-end pipeline for automated SOAP note generation is implemented as a modular sequence of processing steps, each corresponding to a dedicated script in our codebase. The following summarizes the workflow:
+
+\begin{enumerate}
+    \item \textbf{Data Extraction:} Extract and preprocess raw medical dialogues into a unified format.
+    \item \textbf{Spoken Language Normalization:} Clean and normalize dialogue text, removing fillers and standardizing language.
+    \item \textbf{Key-Phrase Extraction:} Identify salient key phrases from normalized dialogues using LLM-based extraction.
+    \item \textbf{Hierarchical Clustering:} Cluster extracted key phrases into SOAP categories (Subjective, Objective, Assessment, Plan) using semantic embeddings and hierarchical clustering.
+    \item \textbf{SOAP Note Generation:} Generate coherent, sectioned SOAP notes from clustered key phrases using summarization models.
+    \item \textbf{Evaluation:} Assess the quality, factuality, and structure of generated SOAP notes using a suite of automated metrics and LLM-based evaluation.
+\end{enumerate}
+
+\subsection{Text Normalization}
+The normalization process employs a hybrid approach combining rule-based cleaning with medical terminology standardization. The algorithm processes both dialogue and clinical notes to ensure consistent formatting and remove conversational artifacts while preserving medical accuracy.
+
+\begin{algorithm}[H]
+\caption{Medical Text Normalization}
+\label{alg:text_normalization}
+\begin{algorithmic}[1]
+\Require Dialogue text $D$, Note text $N$
+\Ensure Normalized dialogue $D'$, Normalized note $N'$
+
+\State \textbf{Define Filler Patterns:} Initialize set of patterns to remove
+\State $F \gets \{\mathrm{um}, \mathrm{uh}, \mathrm{hmm}, \mathrm{like}, \mathrm{you\ know}, \mathrm{i\ mean},..\}$
+
+\State \textbf{Normalize Dialogue:}
+\State $D' \gets D.\mathrm{lower}()$ 
+\For{each pattern $p \in F$}
+    \State $D' \gets \mathrm{remove\_pattern}(D', p)$
+\EndFor
+\State $D' \gets \mathrm{clean\_spacing}(D')$ 
+\State $D' \gets \mathrm{capitalize\_sentences}(D')$ 
+
+\State \textbf{Clean Medical Measurements:}
+\State $D' \gets \mathrm{fix\_fractions}(D')$ 
+\State $D' \gets \mathrm{fix\_measurements}(D')$ 
+
+\State \textbf{Normalize Note:}
+\State $N' \gets N.\mathrm{strip}()$ 
+\State $N' \gets \mathrm{clean\_spacing}(N')$ 
+\State $N' \gets \mathrm{clean\_newlines}(N')$ 
+
+\Return $(D', N')$
+
+\end{algorithmic}
+\end{algorithm}
+
+The algorithm implements a comprehensive cleaning process that:
+\begin{itemize}
+    \item Removes conversational fillers and disfluencies
+    \item Standardizes spacing and formatting
+    \item Preserves medical terminology and measurements
+    \item Maintains clinical note structure
+\end{itemize}
+
+This normalization step is crucial for ensuring consistent input for downstream processing while preserving the medical accuracy of the content.
+
+\subsection{Key Phrase Extraction}
+The key phrase extraction process uses an LLM-based approach to identify salient information from medical dialogues. The algorithm processes both the dialogue and its corresponding note to extract meaningful key phrases that capture the essential medical information.
+
+\begin{algorithm}[H]
+\caption{Key Phrase Extraction via LLM}
+\label{alg:key_phrase_extraction}
+\begin{algorithmic}[1]
+\Require Dialogue text $D$, Note text $N$, LLM model $M$
+\Ensure Set of key phrases $K$
+
+\State \textbf{Normalize Input:} Apply text normalization to both dialogue and note
+\State $(D', N') \gets \mathrm{normalize\_medical\_data}(D, N)$
+
+\State \textbf{Construct Context:} Combine dialogue and note for context
+\State $C \gets \mathrm{format\_context}(D', N')$
+
+\State \textbf{Generate Key Phrases:} Use LLM to extract key phrases
+\State $K \gets \emptyset$
+\State $prompt \gets$ ``Extract key phrases that capture the main features and important information from this medical conversation. Remember that the key phrases should be exact sentences from the dialogue (or 99\% similarity paraphrases). Do NOT simply replicate the actual dialogue.''
+\State $response \gets M(prompt, C)$
+
+\State \textbf{Process Response:} Extract and clean key phrases
+\State $K \gets \mathrm{extract\_after\_think}(response)$
+
+\Return $K$
+
+\end{algorithmic}
+\end{algorithm}
+
+The algorithm employs a hybrid approach combining rule-based normalization with LLM-based extraction. The normalization step removes filler words, standardizes medical terminology, and ensures consistent formatting. The LLM then processes the normalized text to identify key phrases that capture the essential medical information while maintaining semantic accuracy. This approach ensures that the extracted phrases are both clinically relevant and faithful to the original dialogue.
+
+\begin{algorithm}[H]
+\caption{Hierarchical Clustering with SOAP Mapping}
+\label{alg:hierarchical_clustering}
+\begin{algorithmic}[1]
+\REQUIRE Set of phrases $P = \{p_1, p_2, \ldots, p_n\}$, embedding model $E$, number of clusters $k=4$
+\ENSURE SOAP-mapped clusters $C = \{C_S, C_O, C_A, C_P\}$
+
+\STATE \textbf{Step 1: Generate Prompt-Aware Embeddings}
+\STATE $V \gets \emptyset$ \COMMENT{Store embeddings for all phrases}
+\FOR{each phrase $p \in P$}
+    \STATE $v_p \gets E(p)$ \COMMENT{Generate embedding with SOAP-aware prompt}
+    \STATE $V \gets V \cup \{v_p\}$
+\ENDFOR
+
+\STATE \textbf{Step 2: Compute Linkage Matrix}
+\STATE $L \gets \text{linkage}(V, \text{method}='\text{ward}')$ 
+\COMMENT{Build hierarchical clustering tree}
+
+\STATE \textbf{Step 3: Perform Clustering}
+\STATE $H \gets \text{AgglomerativeClustering}(n\_clusters=k, \text{linkage}='\text{ward}')$
+\STATE $cluster\_labels \gets H.fit\_predict(V)$
+
+\STATE \textbf{Step 4: Evaluate Clustering}
+\STATE $metrics \gets \emptyset$
+\IF{$|P| > 2$}
+    \STATE $metrics.\text{silhouette} \gets \text{silhouette\_score}(V, cluster\_labels)$
+    \STATE $metrics.\text{calinski\_harabasz} \gets \text{calinski\_harabasz\_score}(V, cluster\_labels)$
+    \STATE $metrics.\text{davies\_bouldin} \gets \text{davies\_bouldin\_score}(V, cluster\_labels)$
+\ENDIF
+
+\STATE \textbf{Step 5: Map Clusters to SOAP}
+\STATE $C \gets \emptyset$
+\FOR{each cluster $i \in \{0,1,\ldots,k-1\}$}
+    \STATE $cluster\_phrases \gets \{p_j \mid cluster\_labels[j] = i\}$
+    \STATE $cluster\_embeddings \gets \{v_j \mid cluster\_labels[j] = i\}$
+    \STATE $soap\_category \gets \text{determine\_soap\_category}(cluster\_phrases, cluster\_embeddings)$
+    \STATE $C[soap\_category] \gets cluster\_phrases$
+\ENDFOR
+
+\STATE \textbf{Step 6: Perform Subclustering}
+\FOR{each SOAP category $cat \in \{S,O,A,P\}$}
+    \STATE $subcluster\_labels \gets \text{perform\_subclustering}(C[cat], n\_subclusters=3)$
+    \STATE $C[cat] \gets \text{organize\_by\_subclusters}(C[cat], subcluster\_labels)$
+\ENDFOR
+
+\RETURN $C$
+
+\end{algorithmic}
+\end{algorithm}
+
+\section{What you proposed vs.\ what you accomplished}
+
+This section summarizes the tasks proposed at the start of the project and the goals currently accomplished. We will define the previous goals in italics and then mention what we achieved below.
+\begin{itemize}
+\item \textit{Collect and clean medical dialogue
+datasets}\\ - Found and normalized the ACI-Bench dataset using regex expressions.
+\item \textit{Wasn't in the initial proposal}
+\\ - Decided to define Approach 1, to directly generate SOAP notes by inferencing and then running the evaluation on it.
+\\ - Decided to define Approach 2, and finetune the Qwen3 Model using the MTS-dialog dataset and GRPO with an ensemble reward model. Consequently also decided to define Approach 4, to use the finetuned model for the KPE-HC-SOAP pipeline (pipeline explained in the next step).
+\item \textit{Design and implement a full end-to-end pipeline including key phrase extraction (KPE), hierarchical clustering (HC), and SOAP generation}
+\\ -  Achieved and exceeded by adding other approaches to the solution.
+\item \textit{Wasn't in the initial proposal}
+\\ - Evaluate and compare four methods for SOAP note generation: Baseline LLM, fine-tuned LLM, Baseline LLM + KPE + HC hybrid, and a fine-tuned LLM + KPE/HC pipeline
+\end{itemize}
+
+\section{Related work}
+\cite{SR}'s systematic review on intelligent solutions for automatic speech recognition (ASR) and automatic documentation in medical interviews provided a comprehensive understanding of the problem landscape. Most of the selected studies followed a standardized pipeline, beginning with speech capture using tools such as the Google Speech-to-Text API or commercial ASR systems like Dragon NaturallySpeaking (Nuance). Speaker diarization and recognition were commonly implemented using Hidden Markov Models (HMMs) and Gaussian Mixture Models (GMMs), followed by speech enhancement techniques using Generative Adversarial Networks (GANs), or noise suppression using CNNs. The extracted information was then aligned with medical knowledge bases, including SNOMED-CT and BioPortal, to ensure accuracy and contextual relevance. Finally, structured tabular summaries were generated using machine learning and deep learning techniques, including Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs) such as Long Short-Term Memory (LSTM) networks, and Natural Language Processing (NLP) and Knowledge Extraction modules.
+
+% \subsection*{Fine-tuned LLM - ! Donnie}
+
+% Please fill in this section, feel free to change the header to whatever you think is appropriate. 
+
+
+\subsection*{Speaker Normalization}
+\cite{aliero2023systematic} provides a comprehensive methodology review of text normalization research across 54 papers from 2018-2022. It subdivides text normalization techniques into four methods shown in figure 1.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figs/normalization.png}
+    \caption{Text Normalization Techniques and some of their classification}
+    \label{fig:enter-label}
+\end{figure}
+Neural networks generally have high accuracy, especially with the exponential growth in LLM capabilities in recent years, but come at the cost of computational complexity. Rule-Based and Statistical Methods have the opposite tradeoff for general translation. However, Rule-Based techniques can succeed in domain-specific areas such as medicine when processing to and from specific terminology. 
+\par
+Recently, research has shifted towards exploring hybrid approaches which generally utilize neural networks alongside rule-based, statistical methods, or both. For the small tradeoff in computational efficiency that comes with using multiple methods, higher accuracy can be achieved on domain-specific language normalization. Therefore, this technique would be best suited for our application.
+
+
+\subsection*{Topic Categorization}
+Topic categorization in medical dialogues has traditionally relied on manual annotation by domain experts. 
+However, recent research suggests automated approaches using hierarchical clustering can achieve comparable results. 
+Two notable papers propose hierarchical clustering methods for topic modeling: \cite{kapoor2024qualitativeinsightstoolqualit} focused specifically on news reports achieving strong performance metrics, and \cite{khandelwal2025usingllmbasedapproachesenhance} presented a more generalized document-level approach that enables nuanced topic categorization.
+While some approaches like prompt-based classification and document-to-document summarization techniques exist, they tend to require more manual effort or may not be as well-suited for dialogue-specific topic modeling.
+
+\subsection*{Generation of Doctor Notes}
+Prior work in automated clinical documentation has explored various approaches to structuring transcribed medical conversations. \cite{wenceslao} mapped transcribed text to multiple clinically relevant categories, including time expression identification, medical entity identification, attribute classification, and primary diagnosis classification. Similarly, \cite{khattak} structured clinical notes into distinct categories, such as sign and symptom mentions, measurement annotations, disease and disorder mentions, medication mentions, and procedure mentions, thereby facilitating more organized and accessible documentation. 
+
+\cite{understandingmedicalconvo} employed a Named Entity Recognition (NER) tagging approach using Recurrent Neural Network Transducers (RNN-Ts) instead of conventional Conditional Random Fields (CRFs). This choice was motivated by the need to capture temporal dependencies, which play a crucial role in knowledge extraction. 
+Building upon this, \cite{dlbasedtranscribing} proposed a more structured approach, reducing lengthy text transcripts into a labeled set categorized into four key aspects: patient details, symptoms, previous prescriptions, and the current medical situation, and used a Support Vector Machine (SVM) model to evaluate classification accuracy.
+
+A more contextually aware strategy was introduced by \cite{contextagg}, who incorporated real-time health information extracted from consultation transcripts to construct patient profiles. This approach aimed to enhance the utility of extracted data for clinical decision-making and personalized patient care by integrating dynamically updated medical information alongside demographic details such as age and gender. An alternative line of research has explored generating summaries or paraphrased versions of transcriptions to improve clarity and expressiveness, but without much success.
+
+In our work, we adopt the SOAP (Subjective, Objective, Assessment, and Plan) format for clinical documentation, originally introduced by \cite{SOAP}. This structured framework has long been a cornerstone of problem-oriented medical notes, providing a standardized and interpretable format for organizing clinical information. However, we extend this approach by integrating the contextual profiling methodology proposed by \cite{contextagg}. Unlike their approach, which includes demographic attributes, our dataset does not contain patient demographic information. Instead, we synthesize a structured patient profile solely from the consultation transcript, ensuring that relevant clinical context is preserved without introducing demographic fields. By combining these methodologies, our approach seeks to balance structured documentation with dynamic, context-aware medical information extraction, ultimately enhancing both the usability and comprehensiveness of automated clinical notes.
+
+\section{Datasets} 
+We use ACI-Bench-Refined dataset comprising 207 doctor-patient transcripts for the inference in approach 1 and 2, and for the extraction of key phrases in approach 3 and 4. 
+\\Note that the finetuned model was finetuned on the MTS-Dialog dataset. ACI Bench contains a very high quality set of simulated doctor-patient interaction transcripts which we deemed would give us the best results in fine tuning. 
+\begin{table}[ht]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+\toprule
+\textbf{Encounter ID} & D2N169 \\
+\textbf{Dataset} & virtassist \\
+\textbf{Dialogue} & \texttt{[doctor]} hi alan, how are you? \texttt{[patient]} hi, I'm okay, just feeling short of breath lately. \texttt{[doctor]} how long have you had this symptom? \\
+\textbf{Note} & \texttt{CHIEF COMPLAINT} Shortness of breath. \texttt{HISTORY OF PRESENT ILLNESS} The patient reports experiencing shortness of breath for the past three days... \\
+\textbf{Augmented Note} & \texttt{S: \textbf{Chief Complaint:}} Shortness of breath. \texttt{\textbf{History of Present Illness:}} The patient reports experiencing shortness of breath for the past three days... \\
+\bottomrule
+\end{tabularx}
+\caption{Example instance from the ACI-Bench-Refined dataset.}
+\label{tab:aci-example}
+\end{table}
+
+
+% \subsection{Data preprocessing}
+% In addition to a transcript and ground truth note, ACI Bench Refined also contains an augmented note generated for each data point generated by us using Gemini 2.5 to selectively enhance the ground truth note without losing any info. While this augmented note ground truth appeared superior to the ground truth, capturing knowledge in the transcript that the original note might have missed, it was not necessary for GRPO Arena only the unmodified transcripts were used.
+
+\section{Baselines - ! Priya}
+Our baseline is Approach 1 as that includes using a SOTA LLM for direct inference (SOAP Note Generation). 
+\\
+\textbf{Working:}
+\begin{itemize}
+    \item Given the dialogue, and note from the dataset, choose the Qwen3-4b model to 
+\end{itemize}
+What are your baselines, how do they work, and what are their results? Why did you choose these baselines over other models? Additionally, explain how each one works, and list the hyperparameters you are using and how you tuned them! Describe your train/validation/test split. If you have tuned any hyperparameters on your test set, expect a major point deduction! 
+
+other apporachers leave it out
+
+We will use prompt Qwen LLM to generate soap notes in appropriate format and
+
+\section{Your approach}
+What is your approach and how does it work? Do you expect it to fail in similar ways to your baselines? Did you manage to complete a working implementation? What libraries did you use to accomplish this? Did you rely on help from any existing implementations? If so, please link to them here. \textbf{What models did you implement yourself, and what files in your uploaded code are associated with these models?} What kind of computers are you running your experiments on? Are there any issues that you could not solve? If you used Colab, were there any Colab-specific hacks you needed to make to train your model? What results did your model achieve, and how do these results compare to your baselines? Be specific!!! Note that there could be many other important details specific to your approach that you should include here if appropriate.
+
+\subsection{GRPO Arena -- !Donnie }
+Clinician Note was created by fine tuning Qwen 3 using GRPO and an ensemble voting strategy with Gemini 2.5 Pro and Deepseek V3 as the reward function. To determine completion rewards, Gemini 2.5 Pro and Deepseek V3 evaluate two SOAP notes side-by-side and determine the better note. If they pick the same note, it is assigned a positive reward while the unpicked note is assigned a negative reward. If the evaluators disagree, neutral rewards are assigned.
+
+This method was inspired by LMArena, which ranks chatbots using an ELO system where a diverse set of human evaluators evaluate completions side by side and pick the best one. This method led to significantly better training stability and results than assigning rewards based on a single evaluator model and prompting evaluator models for absolute scores. 
+
+\subsection{Key Phrase Extraction -- !Priya}
+
+\subsection{Hierarchical Clusterning}
+
+\subsection{Generating SOAP Notes}
+
+\subsection{Evaluation -- Priya}
+
+
+\section{Results}
+What kinds of inputs do your baselines fail at? What about your approach? Are there any semantic or syntactic commonalities between these difficult examples? \textbf{We would like to see a manual error analysis (e.g., annotate 100-200 failed examples for various properties, and then discuss the results and hypothesize about why the ).} 
+
+\section{Contributions of group members}
+List what each member of the group contributed to this project here. For example: 
+\begin{itemize}
+    \item member 1: did data collection / processing and lots of writing
+    \item member 2: built and trained models
+    \item member 3: error analysis and annotations
+\end{itemize}
+
+\textbf{If you would like to privately share more information about the workload division that may have caused extenuating circumstances (e.g., a member of the group was unreachable and did no work), please send a detailed note to the instructors GMail account. We will take these notes into account when assigning individual grades.}
+
+\section{Conclusion}
+You've now gotten your hands dirty with NLP tools and techniques! What takeaways do you have about your project? What proved surprisingly difficult to accomplish? Were your surprised by your results? If you could continue working on your project in the future, what directions would you pursue?
+
+\section{AI Disclosure}
+\begin{itemize}
+    \item Did you use any AI assistance to complete this proposal? If so, please also specify what AI you used.
+    \begin{itemize}
+        \item your response here
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{If you answered yes to the above question, please complete the following as well:}
+
+\begin{itemize}
+    \item  If you used a large language model to assist you, please paste *all* of the prompts that you used below. Add a separate bullet for each prompt, and specify which part of the proposal is associated with which prompt.
+    \begin{itemize}
+        \item your response here
+    \end{itemize}
+    \item \textbf{Free response:} For each section or paragraph for which you used assistance, describe your overall experience with the AI. How helpful was it? Did it just directly give you a good output, or did you have to edit it? Was its output ever obviously wrong or irrelevant? Did you use it to generate new text, check your own ideas, or rewrite text?
+    \begin{itemize}
+        \item your response here
+    \end{itemize}
+\end{itemize}
+
+
+\bibliographystyle{apalike}
+\footnotesize
+\bibliography{yourbib}
+
+
+\end{document}

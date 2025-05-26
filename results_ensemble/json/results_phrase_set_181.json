@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "Difficulty swallowing.",
+    "It's been hard for me to swallow certain foods and I also have pain when I swallow down in my chest.",
+    "It's really just the bigger pieces of food that seem they're getting stuck.",
+    "I've been drinking more, eating things like pizza burgers... it's been pretty busy",
+    "I've gained some weight",
+    "My belly hurts up here",
+    "Two areas of mild narrowing in the mid and lower portions of your esophagus... consistent with esophagitis.",
+    "Acute esophagitis.",
+    "Prescribe protonix 40 mg once a day... first thing in the morning.",
+    "Carafate 1 gram four times a day for one month.",
+    "Schedule you for an upper endoscopy.",
+    "Eat slowly and chew your food more thoroughly... avoid citrus foods, fruits, and spicy foods until your symptoms improve.",
+    "See you again next week for that endoscopy.",
+    "Pain to palpation of epigastric area... no peritoneal signs or rebound.",
+    "I can see how that would increase your stress"
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    3,
+    3,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1688982993364334,
+    "calinski_harabasz_score": 4.4377264512702155,
+    "davies_bouldin_score": 1.3707343665419793
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9970630407333374,
+      0.9977856874465942,
+      0.9952239990234375
+    ],
+    [
+      0.9970630407333374,
+      0.9999997615814209,
+      0.9959376454353333,
+      0.9977878332138062
+    ],
+    [
+      0.9977856874465942,
+      0.9959376454353333,
+      1.0,
+      0.9923210144042969
+    ],
+    [
+      0.9952239990234375,
+      0.9977878332138062,
+      0.9923210144042969,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.032394662499427795,
+    "1": 0.002694389084354043,
+    "2": 0.0814344510436058,
+    "3": 0.13232532143592834
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "Difficulty swallowing."
+      ],
+      "0": [
+        "Acute esophagitis."
+      ],
+      "1": [
+        "Schedule you for an upper endoscopy."
+      ]
+    },
+    "3": {
+      "2": [
+        "It's been hard for me to swallow certain foods and I also have pain when I swallow down in my chest."
+      ],
+      "0": [
+        "It's really just the bigger pieces of food that seem they're getting stuck."
+      ],
+      "1": [
+        "I've been drinking more, eating things like pizza burgers... it's been pretty busy"
+      ]
+    },
+    "1": {
+      "2": [
+        "I've gained some weight"
+      ],
+      "0": [
+        "My belly hurts up here",
+        "See you again next week for that endoscopy."
+      ],
+      "1": [
+        "I can see how that would increase your stress"
+      ]
+    },
+    "0": {
+      "2": [
+        "Two areas of mild narrowing in the mid and lower portions of your esophagus... consistent with esophagitis."
+      ],
+      "0": [
+        "Prescribe protonix 40 mg once a day... first thing in the morning.",
+        "Carafate 1 gram four times a day for one month.",
+        "Pain to palpation of epigastric area... no peritoneal signs or rebound."
+      ],
+      "1": [
+        "Eat slowly and chew your food more thoroughly... avoid citrus foods, fruits, and spicy foods until your symptoms improve."
+      ]
+    }
+  }
+}

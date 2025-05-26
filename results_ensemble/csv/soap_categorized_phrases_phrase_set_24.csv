@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,0,Karen is a 34-year-old female with a history of chronic migraines and hypertension who is here today with abdominal pain.
+S,1,0,Abdominal pain started about ten days ago with mild discomfort on my side and it seems to be getting worse over the last couple of days.
+O,3,2,"The pain waxes and wanes in severity, generally around a four or five but sometimes up to seven or eight."
+O,3,0,"The pain is usually worse after a meal and localized to the side, with mild radiation to the left."
+P,0,2,"No nausea or vomiting, but some nausea and heartburn."
+O,3,0,Pain is tender to touch and worsens in certain positions when severe.
+P,0,1,"No urinary symptoms, blood in urine, diarrhea, or blood in stool."
+P,0,2,"Appetite decreased due to nausea, and fatigue over the last week."
+P,0,0,"No unusual travel or exposures recently, except returning to Wisconsin."
+O,3,0,"Migraines are rare, managed with Excedrin Migraine, and sumatriptan for breakthrough pain."
+O,3,1,"Blood pressure at home is controlled (systolic 120s-130s, diastolic 70s), but slightly elevated in the office."
+A,2,2,Grade 3 out of 6 systolic ejection murmur unchanged from prior exam.
+A,2,0,Mild to moderate tenderness in the right upper quadrant with equivocal Murphy’s sign.
+A,2,1,"Ordered CBC, chem 12, urinalysis, pregnancy test, and right upper quadrant ultrasound."
+A,2,1,Concern for gallstones or cholecystitis based on tenderness.
+P,0,1,Advised to remain NPO pending test results.
+P,0,1,"Continued lisinopril 20 mg daily with refill, and sumatriptan refill for migraines."
+P,0,1,Counseling on avoiding alcohol/caffeine binges and maintaining sleep for migraines.
+P,0,1,Follow-up in four weeks or sooner based on test results.
+P,0,1,Patient denies fever but reports chills.

@@ -1,0 +1,3 @@
+  0%|          | 0/207 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A/var/spool/slurm/slurmd/job34209594/slurm_script: line 19: 2355414 Killed                  python main.py
+slurmstepd-gypsum-gpu082: error: Detected 1 oom_kill event in StepId=34209594.batch. Some of the step tasks have been OOM Killed.

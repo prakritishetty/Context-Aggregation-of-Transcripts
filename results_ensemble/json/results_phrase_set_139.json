@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "abnormal lab findings",
+    "low hemoglobin",
+    "very lightheaded",
+    "slightly decreased appetite",
+    "nauseous at times when sitting in the back of the car",
+    "no blood in stools",
+    "no abdominal pain, fever, chills, vomiting, or recent weight loss",
+    "none of that",
+    "no night sweats or cough",
+    "knee replacement... works just fine",
+    "lung cancer... biopsy... benign",
+    "tenderness to the lower quadrant",
+    "heart regular, lungs clear",
+    "hemoglobin is 8.2",
+    "gastritis and a slight polyp with biopsy pending",
+    "protonix 40 mg once a day",
+    "reduce caffeine, avoid NSAIDs and alcohol",
+    "repeat CBC ordered",
+    "patient agrees with the treatment plan",
+    "You're the doctor. I don't know what it is."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    3,
+    3,
+    0,
+    0,
+    0,
+    3,
+    1,
+    1,
+    0,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    2,
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    2,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.07898132503032684,
+    "calinski_harabasz_score": 3.3804773390479106,
+    "davies_bouldin_score": 1.4932184889429934
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.998862624168396,
+      0.9931992292404175,
+      0.9982149600982666
+    ],
+    [
+      0.998862624168396,
+      1.0,
+      0.9940869808197021,
+      0.9988800287246704
+    ],
+    [
+      0.9931992292404175,
+      0.9940869808197021,
+      0.9999997019767761,
+      0.9949110150337219
+    ],
+    [
+      0.9982149600982666,
+      0.9988800287246704,
+      0.9949110150337219,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11212660372257233,
+    "1": -0.09023592621088028,
+    "2": 0.0,
+    "3": 0.15132202208042145
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "abnormal lab findings",
+        "low hemoglobin",
+        "very lightheaded",
+        "tenderness to the lower quadrant",
+        "hemoglobin is 8.2",
+        "repeat CBC ordered",
+        "patient agrees with the treatment plan"
+      ],
+      "0": [
+        "slightly decreased appetite"
+      ],
+      "1": [
+        "none of that",
+        "heart regular, lungs clear"
+      ]
+    },
+    "1": {
+      "2": [
+        "nauseous at times when sitting in the back of the car",
+        "no blood in stools",
+        "no night sweats or cough"
+      ],
+      "0": [
+        "no abdominal pain, fever, chills, vomiting, or recent weight loss"
+      ],
+      "1": [
+        "protonix 40 mg once a day",
+        "reduce caffeine, avoid NSAIDs and alcohol"
+      ]
+    },
+    "3": {
+      "1": [
+        "knee replacement... works just fine"
+      ],
+      "0": [
+        "lung cancer... biopsy... benign"
+      ],
+      "2": [
+        "gastritis and a slight polyp with biopsy pending"
+      ]
+    },
+    "2": {
+      "0": [
+        "You're the doctor. I don't know what it is."
+      ]
+    }
+  }
+}

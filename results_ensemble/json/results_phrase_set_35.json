@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "I have trouble adjusting in the dark dim environment.",
+    "when I look at straight lines in your door frame it looks things have been looking a little crooked to me.",
+    "straight lines they always look wavy to me.",
+    "history of high blood pressure.",
+    "smoking about a pack a day.",
+    "drusen in the macula, retinal thickening, presence of subretinal fluid and exudate accumulation, and it is positive for a hemorrhage for your left eye.",
+    "choroidal neovascular membrane can also be visualized in that test.",
+    "focal area of the leakage in the eye is consistent with neurovascular age-related macular degeneration.",
+    "neovascular age-related macular degeneration, also called wet macular degeneration.",
+    "this happens when those abnormal blood vessels start to grow beneath the retina leaking fluid and blood.",
+    "injections of lucent... once a month.",
+    "patients report no pain at all for the actual injection.",
+    "injections given over time can slow the rate of the vision decline and maybe even stop it.",
+    "there could be a situation where you may still note a small amount of vision loss.",
+    "important to take your blood pressure medication as prescribed.",
+    "cut back or quit smoking altogether.",
+    "as long as you think it won't hurt a lot that will be good."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    3,
+    0,
+    2,
+    1,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    2,
+    1,
+    2,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1774366945028305,
+    "calinski_harabasz_score": 4.355392346512164,
+    "davies_bouldin_score": 1.1663870773963292
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9968530535697937,
+      0.9969466328620911,
+      0.9951056241989136
+    ],
+    [
+      0.9968530535697937,
+      1.000000238418579,
+      0.9983270168304443,
+      0.9965616464614868
+    ],
+    [
+      0.9969466328620911,
+      0.9983270168304443,
+      1.0,
+      0.9955260157585144
+    ],
+    [
+      0.9951056241989136,
+      0.9965616464614868,
+      0.9955260157585144,
+      1.0000004768371582
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.12566322088241577,
+    "1": 0.0637432187795639,
+    "2": 0.1977998912334442,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "I have trouble adjusting in the dark dim environment.",
+        "straight lines they always look wavy to me."
+      ],
+      "0": [
+        "when I look at straight lines in your door frame it looks things have been looking a little crooked to me.",
+        "as long as you think it won't hurt a lot that will be good."
+      ],
+      "1": [
+        "there could be a situation where you may still note a small amount of vision loss."
+      ]
+    },
+    "1": {
+      "2": [
+        "history of high blood pressure."
+      ],
+      "1": [
+        "smoking about a pack a day.",
+        "injections of lucent... once a month.",
+        "important to take your blood pressure medication as prescribed.",
+        "cut back or quit smoking altogether."
+      ],
+      "0": [
+        "neovascular age-related macular degeneration, also called wet macular degeneration."
+      ]
+    },
+    "0": {
+      "2": [
+        "drusen in the macula, retinal thickening, presence of subretinal fluid and exudate accumulation, and it is positive for a hemorrhage for your left eye.",
+        "focal area of the leakage in the eye is consistent with neurovascular age-related macular degeneration."
+      ],
+      "0": [
+        "choroidal neovascular membrane can also be visualized in that test."
+      ],
+      "1": [
+        "this happens when those abnormal blood vessels start to grow beneath the retina leaking fluid and blood.",
+        "injections given over time can slow the rate of the vision decline and maybe even stop it."
+      ]
+    },
+    "3": {
+      "0": [
+        "patients report no pain at all for the actual injection."
+      ]
+    }
+  }
+}

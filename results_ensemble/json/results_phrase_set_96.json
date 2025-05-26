@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "He is here today for ongoing management of rheumatoid arthritis.",
+    "it did, maybe for a couple of weeks.",
+    "it's about a 3 or, but, typically on a normal day it's around 6.",
+    "since i was last here a couple weeks after that. About, maybe two months.",
+    "i'm taking it everyday, and i'm also taking celebrex which i started maybe 2 months ago.",
+    "range of motion slightly diminished",
+    "i see some pitting around the knee and ankle.",
+    "We can give you another steroid injection for that. I also want to get an x-ray of that knee.",
+    "Let's do it. Sounds go to me.",
+    "when it really hurts, is when i've been sitting for a while, and i have to try and get up. I'm stiff getting up i have to use a cane to get my bearings.",
+    "salt does have a tendency to make your body hold on to water... reducing your salt intake could help with some of the swelling.",
+    "The knee was accessed through the lateral approach with 3 milliliters of initially clear fluid, bloo- blood tinged fluid... injected with 80 milligrams of triamcinolone, and one milliliter of lidocaine.",
+    "The risks, benefits, and alternatives were explained... Verbal consent was attained.",
+    "we need to check your cmp levels every couple of months.",
+    "We'll set that up for you... if nothing is helping, we really might need to get a surgery consult.",
+    "the whole thing was n't swollen this, but i tried to wear compression socks a lot of the time, but it has n't been helping."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    2,
+    1,
+    3,
+    1,
+    3,
+    1,
+    0,
+    0,
+    1,
+    3,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10304267704486847,
+    "calinski_harabasz_score": 4.130343579387304,
+    "davies_bouldin_score": 1.3234805370258964
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9952017068862915,
+      0.9907616376876831,
+      0.9940306544303894
+    ],
+    [
+      0.9952017068862915,
+      1.000000238418579,
+      0.9938074946403503,
+      0.9988034963607788
+    ],
+    [
+      0.9907616376876831,
+      0.9938074946403503,
+      1.0,
+      0.9905561208724976
+    ],
+    [
+      0.9940306544303894,
+      0.9988034963607788,
+      0.9905561208724976,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.09909407049417496,
+    "1": 0.0974009558558464,
+    "2": 0.0,
+    "3": 0.13472655415534973
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "He is here today for ongoing management of rheumatoid arthritis."
+      ],
+      "0": [
+        "it did, maybe for a couple of weeks.",
+        "it's about a 3 or, but, typically on a normal day it's around 6.",
+        "since i was last here a couple weeks after that. About, maybe two months.",
+        "i see some pitting around the knee and ankle.",
+        "Let's do it. Sounds go to me.",
+        "we need to check your cmp levels every couple of months."
+      ],
+      "1": [
+        "salt does have a tendency to make your body hold on to water... reducing your salt intake could help with some of the swelling."
+      ]
+    },
+    "3": {
+      "2": [
+        "i'm taking it everyday, and i'm also taking celebrex which i started maybe 2 months ago."
+      ],
+      "0": [
+        "We can give you another steroid injection for that. I also want to get an x-ray of that knee.",
+        "We'll set that up for you... if nothing is helping, we really might need to get a surgery consult."
+      ],
+      "1": [
+        "when it really hurts, is when i've been sitting for a while, and i have to try and get up. I'm stiff getting up i have to use a cane to get my bearings.",
+        "the whole thing was n't swollen this, but i tried to wear compression socks a lot of the time, but it has n't been helping."
+      ]
+    },
+    "2": {
+      "0": [
+        "range of motion slightly diminished"
+      ]
+    },
+    "0": {
+      "0": [
+        "The knee was accessed through the lateral approach with 3 milliliters of initially clear fluid, bloo- blood tinged fluid... injected with 80 milligrams of triamcinolone, and one milliliter of lidocaine.",
+        "The risks, benefits, and alternatives were explained... Verbal consent was attained."
+      ]
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "my breathing isn't what it used to be",
+    "I seem to catch my breath a lot more than I used to.",
+    "moved out in the city [about two years ago] bought this big plot of land.",
+    "I have noticed [symptoms] in all three situations [in the house when the cat isn\u2019t around, outside].",
+    "they gave me a nebulizer that helped",
+    "prescribed me an inhaler that I use when I feel the symptoms coming on.",
+    "eyes water doesn\u2019t make very much sense to me",
+    "I get eyebugers too.",
+    "faint expiratory wheezing bilaterally in all lung fields",
+    "normal chest x-ray and pulmonary function test.",
+    "you have newly diagnosed allergic asthma.",
+    "continue the albuterol inhaler... take it as soon as you start to feel any symptoms",
+    "prescribed Singulair 10 mg once daily.",
+    "proceed with allergy testing... skin testing to target triggers.",
+    "should I come my cats?"
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    2,
+    3,
+    1,
+    1,
+    0,
+    1,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13513503968715668,
+    "calinski_harabasz_score": 3.89011706504539,
+    "davies_bouldin_score": 1.2636976713789778
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9959042072296143,
+      0.9983569383621216,
+      0.993545413017273
+    ],
+    [
+      0.9959042072296143,
+      1.0000001192092896,
+      0.9973210692405701,
+      0.9965724349021912
+    ],
+    [
+      0.9983569383621216,
+      0.9973210692405701,
+      0.9999998807907104,
+      0.9934075474739075
+    ],
+    [
+      0.993545413017273,
+      0.9965724349021912,
+      0.9934075474739075,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09324612468481064,
+    "1": 0.1104450523853302,
+    "2": 0.07142286002635956,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "my breathing isn't what it used to be"
+      ],
+      "0": [
+        "they gave me a nebulizer that helped",
+        "continue the albuterol inhaler... take it as soon as you start to feel any symptoms"
+      ],
+      "1": [
+        "eyes water doesn\u2019t make very much sense to me"
+      ]
+    },
+    "2": {
+      "2": [
+        "I seem to catch my breath a lot more than I used to.",
+        "prescribed me an inhaler that I use when I feel the symptoms coming on."
+      ],
+      "1": [
+        "moved out in the city [about two years ago] bought this big plot of land.",
+        "I get eyebugers too.",
+        "should I come my cats?"
+      ],
+      "0": [
+        "I have noticed [symptoms] in all three situations [in the house when the cat isn\u2019t around, outside]."
+      ]
+    },
+    "3": {
+      "0": [
+        "faint expiratory wheezing bilaterally in all lung fields"
+      ]
+    },
+    "1": {
+      "2": [
+        "normal chest x-ray and pulmonary function test."
+      ],
+      "0": [
+        "you have newly diagnosed allergic asthma.",
+        "proceed with allergy testing... skin testing to target triggers."
+      ],
+      "1": [
+        "prescribed Singulair 10 mg once daily."
+      ]
+    }
+  }
+}

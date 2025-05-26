@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,0,Acid reflux
+S,2,2,"I've had acid reflux since I was around 12, but it has gotten worse over the past few years."
+S,2,0,I've been on omeprazole 40 milligrams twice a day for about a year.
+O,0,2,It feels burning in my chest and also in my throat.
+O,0,0,burning... in my chest and also in my throat
+A,1,2,"Stress and food choices sometimes... spicy foods, soda, citrus, and tomato-based products."
+S,2,0,I have been under a lot of work stress... poor appetite for the past two months.
+S,2,1,My grandmother had esophageal cancer on mom's side... my mom had acid reflux.
+O,0,1,Healed abdominal surgical scar from surgery at one month old for twisted intestines.
+O,0,1,intestines were twisted... surgery when I was around one month old
+P,3,0,Switching to Nexium 40 mg twice daily
+A,1,0,Upper endoscopy (EGD) to look for ulcers or precancerous conditions.
+A,1,1,look for potential causes of GERD... precancerous or cancerous conditions
+A,1,0,Consider Protonix and pH impedance study if EGD is normal and symptoms persist.

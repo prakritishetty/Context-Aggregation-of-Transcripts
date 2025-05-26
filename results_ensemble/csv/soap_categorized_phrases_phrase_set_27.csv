@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,when I came down and I felt my knee just popped it started swelling and I could hardly walk when it happened
+S,0,0,it feels it's on the inside of the knee
+A,2,2,about a four
+S,0,0,I tried some tylenol yesterday
+A,2,0,first time in two years
+P,3,2,your blood pressures been running today... one forty over eighty
+S,0,0,your a1c... was a seven point two
+S,0,0,i skip it [metformin] because it upsets my stomach
+P,3,0,blood sugars... probably about a hundred and fifty
+A,2,1,grade two out of systolic ejection murmur
+O,1,2,pain to palpation of the medial aspect... edema... ecchymosis
+A,2,1,negative varus and valgus test
+O,1,0,x-ray... no fractures no bony abnormalities
+O,1,0,mcl strain... need an mri to determine if torn
+P,3,0,prescribe... meloxicam fifteen milligrams
+O,1,0,knee immobilizer... stay off of that for the next couple of weeks
+S,0,1,consult nutrition... get your diet a little bit better
+P,3,1,up your norvasta... to lower blood pressure to one twenty over eighty
+P,3,1,check your blood sugars daily... log book
+S,0,1,strawberries can lower your blood pressures... but [they have] a lot of sugar
+O,1,1,follow up in two weeks to review your mri results

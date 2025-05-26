@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+A,3,2,"helping my daughter with some heavy equipment and lifted some boxes a little too quickly, and they were a little too heavy."
+S,0,2,I thought I heard a pop when I moved and I had to lie down for about an hour before it relieved the pain. And it's been a little stiff ever since.
+O,1,2,my lower back.
+S,0,0,"I took some Tylenol, I took some ibuprofen, I used a little bit of icy heat on the spot but it really didn't seem to help."
+S,0,0,I felt some tingling in my toes on my foot until about Sunday afternoon. And that seemed to go away.
+S,0,0,It's really tough to find a comfortable spot sleeping at night. I tend to lie on my side and that seemed to help a little bit.
+O,1,1,pain to palpation of the lumbar spine. And you have pain with flexion and extension of the back. And you have a negative straight leg raise.
+O,1,0,back x-ray... normal x-ray of your back.
+S,0,0,"Love peanut butter cups. And I have to say that when we were helping my daughter, we were on the fly and on the go and haven't had a home cooked meal in weeks, our diets were less than stellar."
+O,1,2,your hemoglobin A1c is a little elevated at eight.
+A,3,0,"Blood pressure's a little elevated here in the office... you could be in some pain, which could make your blood pressure go up."
+P,2,0,increase the lisinopril from 10mg to 20mg a day.
+A,3,2,"If I run too much or if I've lift boxes that are a little too heavy, I start to feel the strain."
+O,1,1,"no chest pain, nausea or vomiting... no fever, chills."
+O,1,1,prescribe you some meloxicam 15mg once a day... refer you to physical therapy.
+S,0,1,increase the metformin to 1000mg twice a day. And I'm going to repeat a hemoglobin A1c in about 6 months.
+A,3,1,no that's fine. I agree.

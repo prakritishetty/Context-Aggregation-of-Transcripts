@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "Non-healing foot ulcer on your foot",
+    "I first noticed it when I put on a pair of shoes that were a little bit too tight... saw a blister... burning and stinging... thick soft mushy skin... bad smell with some yellow drainage.",
+    "The blister had become unroofed... underneath it was just this really thick soft mushy skin... turned black around the outside of the wound... cramping in my calf muscle... red streak... super super hot.",
+    "Started me on some antibiotics about six days ago... never had any nausea or vomiting... chills... felt pretty good but... red streak... calf cramping.",
+    "Coughing a lot the last two days... difficult time catching my breath when I'm walking around the house.",
+    "Diabetic and have some diabetic neuropathy... A1c is six point seven... blood sugars have probably been trending in the three to four hundreds the last two weeks... one spike at five or six hundred.",
+    "Necrotic wound on his heel... approximately two by two centimeters... sloughing of the tissue... erythema... foul odor... no bony exposure... no palpable dorsalis pedis or posterior tibial pulse... present via Doppler.",
+    "No evidence of osteomyelitis",
+    "Debridement today in the office... culture and different antibiotic therapy... venous ultrasound... continue antibiotics... follow-up in seven days... monitor blood sugars with endocrinologist.",
+    "Redness moving up the leg... swelling and pain in calf... closely monitor."
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2003052532672882,
+    "calinski_harabasz_score": 3.548516436457424,
+    "davies_bouldin_score": 0.7397701564042851
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9951236248016357,
+      0.9957793354988098,
+      0.9933032393455505
+    ],
+    [
+      0.9951236248016357,
+      1.0,
+      0.9956753849983215,
+      0.995026707649231
+    ],
+    [
+      0.9957793354988098,
+      0.9956753849983215,
+      1.0,
+      0.9965248107910156
+    ],
+    [
+      0.9933032393455505,
+      0.995026707649231,
+      0.9965248107910156,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.038932811468839645,
+    "1": 0.0,
+    "2": 0.06705288589000702,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Non-healing foot ulcer on your foot"
+      ],
+      "0": [
+        "No evidence of osteomyelitis"
+      ],
+      "1": [
+        "Redness moving up the leg... swelling and pain in calf... closely monitor."
+      ]
+    },
+    "2": {
+      "2": [
+        "I first noticed it when I put on a pair of shoes that were a little bit too tight... saw a blister... burning and stinging... thick soft mushy skin... bad smell with some yellow drainage.",
+        "Started me on some antibiotics about six days ago... never had any nausea or vomiting... chills... felt pretty good but... red streak... calf cramping."
+      ],
+      "0": [
+        "The blister had become unroofed... underneath it was just this really thick soft mushy skin... turned black around the outside of the wound... cramping in my calf muscle... red streak... super super hot."
+      ],
+      "1": [
+        "Coughing a lot the last two days... difficult time catching my breath when I'm walking around the house.",
+        "Diabetic and have some diabetic neuropathy... A1c is six point seven... blood sugars have probably been trending in the three to four hundreds the last two weeks... one spike at five or six hundred."
+      ]
+    },
+    "3": {
+      "0": [
+        "Necrotic wound on his heel... approximately two by two centimeters... sloughing of the tissue... erythema... foul odor... no bony exposure... no palpable dorsalis pedis or posterior tibial pulse... present via Doppler."
+      ]
+    },
+    "1": {
+      "0": [
+        "Debridement today in the office... culture and different antibiotic therapy... venous ultrasound... continue antibiotics... follow-up in seven days... monitor blood sugars with endocrinologist."
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,0,Iron deficiency anemia
+S,1,2,"Feeling fatigued often during the day, and even feverish with chills at times."
+S,1,2,Can't catch my breath and feel I'm wheezing.
+A,2,1,"Headaches, which is not me."
+S,1,0,Chilling sensations. I also get cold easily. I feel I have to really bundle up.
+S,1,2,Anxiety and depression feel it has been getting worse lately.
+A,2,0,Anemic since I was 13 years old.
+A,2,2,Heavy periods until I had a hysterectomy in 1996.
+S,1,0,Colonoscopy about five to six years ago... no polyps. They said they'd see me in 10 years.
+O,0,2,"Taking 25 milligram ferrous sulfate tablets, twice daily."
+O,0,0,"Vitamin B12, just the over-the-counter stuff."
+O,0,0,Physical exam is normal without any significant findings.
+O,0,0,Upper endoscopy and colonoscopy to check for internal bleeding.
+S,1,1,"If those tests come back fine, we'll have you swallow a pill camera (capsule endoscopy)."
+P,3,0,Referral to a hematologist to assess IV iron or storage issues.
+O,0,2,Continue iron pills with orange juice for better absorption (vitamin C).
+O,0,0,Recheck blood work after 8-12 weeks.
+O,0,0,"Schedule upper endoscopy, colonoscopy, and hematologist appointment."
+O,0,1,Use bowel prep before colonoscopy.
+O,0,0,"No pacemaker, defibrillator, sleep apnea, or oxygen use."
+O,0,0,Alcohol consumption: once or twice a year.

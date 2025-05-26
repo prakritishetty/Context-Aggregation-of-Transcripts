@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,My blood sugar isn't under control...they've been running in the 300's
+S,1,2,My diet hasn't changed at all...most of my sugars come from fruit
+S,1,0,I have not...I do not get up at night with reflux
+S,1,1,My knee...I just noticed it when you said it
+S,1,0,Nauseous a couple of days back...because I was sitting in the back of a car
+O,0,2,Your knee shows some erythema and insect bite with associated fluctuance
+O,0,0,Lyme titer is a little elevated...positive for strep
+O,0,1,Hyperglycemia is probably related to some infections going on in your body
+O,0,0,Amoxicillin 500 mg three times a day...order a western blot PCR for Lyme
+P,3,0,You're certain I don't have alpha-gal syndrome...inflammatory response to that
+S,1,0,No recent weight gain or fluid retention...I prefer to sleep on my side
+A,2,0,Thyroid's a bit enlarged here
+A,2,0,For sure...That sounds good

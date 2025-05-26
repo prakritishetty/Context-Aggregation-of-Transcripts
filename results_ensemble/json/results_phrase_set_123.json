@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "I was golfing and I hurt my back when I went for my backswing.",
+    "I felt the pop, and I immediately had to hit the ground.",
+    "By Monday morning, it loosened up a little bit, but it's still pretty sore.",
+    "I had a struggle in my foot dropped foot. I had some struggling with my leg.",
+    "I had surgery about 10 years ago on my lower back.",
+    "Taking my medications, watching my diet, trying to exercise regularly.",
+    "I love jelly beans... That's been a struggle, but I'm getting through it.",
+    "I monitor it regularly. Not always, I can forget, but I'm pretty good about it.",
+    "Decreased range of motion with flexion and extension... Positive straight leg raise... 4 out of 5 on your [right] and 5 out of 5 on your left.",
+    "A 2 out of 6 systolic ejection murmur, which we've heard in the past... That's stable.",
+    "Normal x-ray of your lumbar spine.",
+    "Your hemoglobin A1c has been a little high at 8.",
+    "Prescribe meloxicam 15 milligrams once a day... refer you to physical therapy... order an MRI.",
+    "Increase your metformin to 1,000 milligrams twice daily... repeat hemoglobin A1c in a couple months.",
+    "Continue you on your current medications, your lisinopril and your lasix.",
+    "No problem.",
+    "No questions."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    3,
+    3,
+    1,
+    2,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    1,
+    2,
+    2,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "P",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18155771493911743,
+    "calinski_harabasz_score": 5.478364384869103,
+    "davies_bouldin_score": 1.4572585293740024
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.997053861618042,
+      0.997947633266449,
+      0.9957221746444702
+    ],
+    [
+      0.997053861618042,
+      1.0000001192092896,
+      0.9983474612236023,
+      0.9957435131072998
+    ],
+    [
+      0.997947633266449,
+      0.9983474612236023,
+      0.9999999403953552,
+      0.9983616471290588
+    ],
+    [
+      0.9957221746444702,
+      0.9957435131072998,
+      0.9983616471290588,
+      0.9999995827674866
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09158243983983994,
+    "1": -0.04535435140132904,
+    "2": 0.04770299792289734,
+    "3": 0.22255608439445496
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I was golfing and I hurt my back when I went for my backswing.",
+        "I felt the pop, and I immediately had to hit the ground.",
+        "I had a struggle in my foot dropped foot. I had some struggling with my leg.",
+        "I love jelly beans... That's been a struggle, but I'm getting through it."
+      ],
+      "0": [
+        "By Monday morning, it loosened up a little bit, but it's still pretty sore.",
+        "I monitor it regularly. Not always, I can forget, but I'm pretty good about it."
+      ],
+      "1": [
+        "I had surgery about 10 years ago on my lower back."
+      ]
+    },
+    "2": {
+      "2": [
+        "Taking my medications, watching my diet, trying to exercise regularly."
+      ],
+      "0": [
+        "A 2 out of 6 systolic ejection murmur, which we've heard in the past... That's stable."
+      ],
+      "1": [
+        "Your hemoglobin A1c has been a little high at 8."
+      ]
+    },
+    "1": {
+      "2": [
+        "Decreased range of motion with flexion and extension... Positive straight leg raise... 4 out of 5 on your [right] and 5 out of 5 on your left."
+      ],
+      "0": [
+        "Prescribe meloxicam 15 milligrams once a day... refer you to physical therapy... order an MRI."
+      ],
+      "1": [
+        "Increase your metformin to 1,000 milligrams twice daily... repeat hemoglobin A1c in a couple months."
+      ]
+    },
+    "0": {
+      "2": [
+        "Normal x-ray of your lumbar spine."
+      ],
+      "0": [
+        "Continue you on your current medications, your lisinopril and your lasix."
+      ],
+      "1": [
+        "No problem.",
+        "No questions."
+      ]
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "Right ankle pain after a fall.",
+    "I was taking out the trash last night and I ended up slipping on a patch of ice and when I fell I heard this pop.",
+    "At first no my friend who was visiting thankfully had to help me get into the house and I and I'm able to put a little bit of weight on it but I'm I'm still limping.",
+    "It's a six it's uncomfortable.",
+    "It's constant it's a throbbing pain and when I touch it it feels kinda warm.",
+    "I took some ibuprofen last night and this morning... not really [helped].",
+    "No no numbness and I don't think I've had any tingling or anything.",
+    "There is ecchymosis you have that bruising of the lateral malleolus associated with swelling... tenderness to palpation of the anterior laterally in the soft tissue.",
+    "X-ray of your ankle... no fractures no bony abnormalities which is really good.",
+    "Keep your leg elevated... continue to ice it five times a day for twenty minutes... an air cast to stabilize the ankle... crutches and stay off that leg for about one to two days.",
+    "A couple of days... still sore for the next couple of weeks... two to three weeks you should be back to normal.",
+    "If you continue to have pain after this week if you feel it's not getting better please feel free to contact the office and we can get you back in and possibly do an MRI.",
+    "You can't get a doctor's note if you if I write a note I'm gonna tell your boss that you have to go to work."
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19420817494392395,
+    "calinski_harabasz_score": 3.700314356084136,
+    "davies_bouldin_score": 1.0195362168595532
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9972733855247498,
+      0.9978084564208984,
+      0.9962897300720215
+    ],
+    [
+      0.9972733855247498,
+      1.0,
+      0.997272253036499,
+      0.9968266487121582
+    ],
+    [
+      0.9978084564208984,
+      0.997272253036499,
+      0.9999998807907104,
+      0.9961311221122742
+    ],
+    [
+      0.9962897300720215,
+      0.9968266487121582,
+      0.9961311221122742,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13140061497688293,
+    "1": 0.023397743701934814,
+    "2": 0.06585396826267242,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "Right ankle pain after a fall."
+      ],
+      "0": [
+        "It's a six it's uncomfortable."
+      ],
+      "2": [
+        "You can't get a doctor's note if you if I write a note I'm gonna tell your boss that you have to go to work."
+      ]
+    },
+    "2": {
+      "2": [
+        "I was taking out the trash last night and I ended up slipping on a patch of ice and when I fell I heard this pop.",
+        "It's constant it's a throbbing pain and when I touch it it feels kinda warm."
+      ],
+      "0": [
+        "At first no my friend who was visiting thankfully had to help me get into the house and I and I'm able to put a little bit of weight on it but I'm I'm still limping.",
+        "I took some ibuprofen last night and this morning... not really [helped]."
+      ],
+      "1": [
+        "No no numbness and I don't think I've had any tingling or anything."
+      ]
+    },
+    "1": {
+      "2": [
+        "There is ecchymosis you have that bruising of the lateral malleolus associated with swelling... tenderness to palpation of the anterior laterally in the soft tissue."
+      ],
+      "0": [
+        "X-ray of your ankle... no fractures no bony abnormalities which is really good."
+      ],
+      "1": [
+        "Keep your leg elevated... continue to ice it five times a day for twenty minutes... an air cast to stabilize the ankle... crutches and stay off that leg for about one to two days.",
+        "A couple of days... still sore for the next couple of weeks... two to three weeks you should be back to normal."
+      ]
+    },
+    "3": {
+      "0": [
+        "If you continue to have pain after this week if you feel it's not getting better please feel free to contact the office and we can get you back in and possibly do an MRI."
+      ]
+    }
+  }
+}

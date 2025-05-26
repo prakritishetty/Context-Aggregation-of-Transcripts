@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Shortness of breath with hemoptysis.",
+    "History of diabetes, high blood pressure, and asthma.",
+    "I wake up with shortness of breath... I get back home and I'm again short of breath... I've been coughing up blood.",
+    "About a couple of weeks",
+    "three weeks or",
+    "Three to four cups a day.",
+    "Oxygen level... ninety four percent on pulse oxygenation.",
+    "Blood pressure has been running somewhat on the low side... lower nineties.",
+    "Blood sugar has been high and low... spiking over two hundred after meals... around one fifty in the morning.",
+    "Some rales and rhonchi on the right... diminished breath sounds... 2/6 systolic ejection murmur... 1+ nonpitting edema on both lower extremities... no calf tenderness.",
+    "Chest x-ray... CAT scan of the chest... blood work... refer to the emergency department.",
+    "Increase metformin to 750 mg twice daily... order another hemoglobin A1c.",
+    "Hold off on Norvasc until we address the shortness of breath.",
+    "No questions... I can bike no problem... I'm good.",
+    "Come back in about three weeks to discuss diabetes treatment."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    1,
+    3,
+    3,
+    3,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12480027973651886,
+    "calinski_harabasz_score": 3.1032010706062514,
+    "davies_bouldin_score": 1.268349611577706
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9979398250579834,
+      0.9956298470497131,
+      0.9984226822853088
+    ],
+    [
+      0.9979398250579834,
+      0.9999999403953552,
+      0.9955989122390747,
+      0.9971436262130737
+    ],
+    [
+      0.9956298470497131,
+      0.9955989122390747,
+      1.0,
+      0.9928689002990723
+    ],
+    [
+      0.9984226822853088,
+      0.9971436262130737,
+      0.9928689002990723,
+      0.9999995231628418
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.022525275126099586,
+    "1": 0.07050484418869019,
+    "2": 0.0,
+    "3": 0.0529918372631073
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Shortness of breath with hemoptysis.",
+        "History of diabetes, high blood pressure, and asthma.",
+        "Hold off on Norvasc until we address the shortness of breath."
+      ],
+      "0": [
+        "Oxygen level... ninety four percent on pulse oxygenation.",
+        "Chest x-ray... CAT scan of the chest... blood work... refer to the emergency department.",
+        "Increase metformin to 750 mg twice daily... order another hemoglobin A1c."
+      ],
+      "1": [
+        "Come back in about three weeks to discuss diabetes treatment."
+      ]
+    },
+    "1": {
+      "2": [
+        "I wake up with shortness of breath... I get back home and I'm again short of breath... I've been coughing up blood."
+      ],
+      "0": [
+        "Blood pressure has been running somewhat on the low side... lower nineties.",
+        "Blood sugar has been high and low... spiking over two hundred after meals... around one fifty in the morning."
+      ],
+      "1": [
+        "No questions... I can bike no problem... I'm good."
+      ]
+    },
+    "3": {
+      "2": [
+        "About a couple of weeks"
+      ],
+      "0": [
+        "three weeks or"
+      ],
+      "1": [
+        "Three to four cups a day."
+      ]
+    },
+    "2": {
+      "0": [
+        "Some rales and rhonchi on the right... diminished breath sounds... 2/6 systolic ejection murmur... 1+ nonpitting edema on both lower extremities... no calf tenderness."
+      ]
+    }
+  }
+}

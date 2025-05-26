@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,it seems that i was outside and i fell down i was walking a bit and i did have a pain in my chest
+O,0,2,my blood pressure was two hundred over ninety
+S,2,0,did n't think anything of it and i just kept on going
+O,0,1,your ankles were swelling a little bit too and did you have some shortness of breath
+O,0,0,i have but i miss them every year and today i took one
+S,2,1,i've just been eating anything honestly... lot of chips... salty even though the light salt ones
+A,1,1,echocardiogram... shows preserved ejection fraction of fifty five percent and normal diastolic filling and mild to moderate mitral regurgitation
+A,1,0,continue your bumex two milligrams once daily... continue the cozaar one hundred milligrams daily... norvasc five milligrams once daily
+O,0,1,i'm gon na write you a consult to nutrition since it sounds maybe we can give you some advice on watching your diet
+O,0,1,weigh yourself daily... call me if you gain three pounds in two days
+O,0,1,order a renal artery ultrasound just to make sure that we're not missing anything there
+A,1,2,reports chest pain... shortness of breath... bilateral ankle swelling
+P,3,0,2/6 stable systolic ejection murmur
+O,0,1,no problems sleeping... lungs are clear bilaterally
+O,0,1,i will do my best [to take medications on time and follow diet]

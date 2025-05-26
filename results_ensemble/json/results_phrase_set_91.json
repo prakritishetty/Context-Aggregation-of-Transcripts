@@ -1,0 +1,203 @@
+{
+  "phrases": [
+    "High blood pressure and palpitations.",
+    "I saw you were recently in the emergency room with high blood pressure and some palpitations.",
+    "That was back in March, but my girlfriend and I, we talked about it, and on that day I had a few cups of coffee, and no breakfast. It was probably more of a panic attack than anything else.",
+    "I've had issues with my blood pressure since I was young.",
+    "A lot of my family does have high blood pressure.",
+    "I have a new primary doctor, and she put me on a new medication about a month ago.",
+    "My new med is a combo med, something 40-25.",
+    "Are you still taking the amlodipine, 10 milligrams daily?",
+    "Every day. Every morning, I take it when I get up, and it's been running at about 146 to 155 lately.",
+    "You're not down in the 120s yet?",
+    "I'm trying to back off of [salt]. I'm doing good with it, not eating too much.",
+    "I do try to walk on the treadmill when I can.",
+    "The DASH eating plan... has been shown to lower blood pressure.",
+    "If you do your treadmill routinely for 30 minutes or most days, that could be seven to 10 points off your blood pressure.",
+    "Your heart and lungs sound good, that's great.",
+    "I'm gonna take a look at your ankles and feet... no swelling.",
+    "There's medicine called spironolactone... we should give that a try.",
+    "The spironolactone combined with hydrochlorothiazide can cause your sodium levels to go down.",
+    "One in 100 guys might develop tenderness in their chest, swollen breasts, or enlarged breasts.",
+    "We'll schedule a followup in two weeks to check your blood pressure and electrolytes.",
+    "If the new med doesn't work, the next step would be sending him to the resistant hypertension clinic.",
+    "There is something called a renal denervation... lower blood pressure without medication.",
+    "I'll definitely check that out.",
+    "Sounds good to me."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    0,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09856989234685898,
+    "calinski_harabasz_score": 3.8171519706667922,
+    "davies_bouldin_score": 1.5500495524287177
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9985544085502625,
+      0.9979433417320251,
+      0.995832622051239
+    ],
+    [
+      0.9985544085502625,
+      1.000000238418579,
+      0.9988683462142944,
+      0.9969561100006104
+    ],
+    [
+      0.9979433417320251,
+      0.9988683462142944,
+      0.9999998807907104,
+      0.9966989755630493
+    ],
+    [
+      0.995832622051239,
+      0.9969561100006104,
+      0.9966989755630493,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1998130828142166,
+    "1": 0.10667680948972702,
+    "2": 0.060025691986083984,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "High blood pressure and palpitations."
+      ],
+      "1": [
+        "You're not down in the 120s yet?",
+        "Your heart and lungs sound good, that's great.",
+        "I'll definitely check that out.",
+        "Sounds good to me."
+      ],
+      "0": [
+        "I do try to walk on the treadmill when I can."
+      ]
+    },
+    "0": {
+      "0": [
+        "I saw you were recently in the emergency room with high blood pressure and some palpitations.",
+        "I've had issues with my blood pressure since I was young.",
+        "A lot of my family does have high blood pressure.",
+        "I'm trying to back off of [salt]. I'm doing good with it, not eating too much.",
+        "I'm gonna take a look at your ankles and feet... no swelling."
+      ],
+      "2": [
+        "That was back in March, but my girlfriend and I, we talked about it, and on that day I had a few cups of coffee, and no breakfast. It was probably more of a panic attack than anything else."
+      ],
+      "1": [
+        "I have a new primary doctor, and she put me on a new medication about a month ago.",
+        "Every day. Every morning, I take it when I get up, and it's been running at about 146 to 155 lately."
+      ]
+    },
+    "3": {
+      "0": [
+        "My new med is a combo med, something 40-25."
+      ]
+    },
+    "2": {
+      "1": [
+        "Are you still taking the amlodipine, 10 milligrams daily?",
+        "If you do your treadmill routinely for 30 minutes or most days, that could be seven to 10 points off your blood pressure.",
+        "The spironolactone combined with hydrochlorothiazide can cause your sodium levels to go down.",
+        "One in 100 guys might develop tenderness in their chest, swollen breasts, or enlarged breasts.",
+        "We'll schedule a followup in two weeks to check your blood pressure and electrolytes.",
+        "If the new med doesn't work, the next step would be sending him to the resistant hypertension clinic.",
+        "There is something called a renal denervation... lower blood pressure without medication."
+      ],
+      "2": [
+        "The DASH eating plan... has been shown to lower blood pressure."
+      ],
+      "0": [
+        "There's medicine called spironolactone... we should give that a try."
+      ]
+    }
+  }
+}

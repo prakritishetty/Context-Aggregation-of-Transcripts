@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "I was trying to go out and play some pickup soccer games over the weekend and went to go plank kick the ball and just felt a pop in my knee.",
+    "about three days ago",
+    "it it's swollen some some of that swelling has gone down",
+    "my knee is just not as functionally it's not moving as as what it used to be it seems to be a little limited",
+    "it's somewhere between six and seven it's about four or five with some of the swelling going down",
+    "the ibuprofen helped a little bit but i'm on it pretty on a pretty regular basis",
+    "marked limp on your looks it's your leg upon ambulation",
+    "significant effusion in the knee just a slight bit of ecchymosis",
+    "pain with palpation at the medial joint line",
+    "difficulty with some passive range of motion",
+    "lacking a few degrees of terminal extension to about a hundred and fifteen degrees",
+    "lacking about maybe twenty to thirty degrees of terminal flexion on the secondary secondary to the pain here",
+    "positive lachman exam",
+    "your knee injury is really suggestive of anterior cruciate ligament tear",
+    "order an mri because i wan na evaluate the integrity of that acl",
+    "order some ant nflammatory medication meloxicam fifty milligrams a day",
+    "ice the knee",
+    "moderate your activities",
+    "wear a knee immobilizer and also use crutches when you walk around",
+    "no jogging for a while until we get results of that mri",
+    "i typically sit behind a desk but it's not been very comfortable sitting here lately"
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    3,
+    0,
+    2,
+    0,
+    0,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1702524721622467,
+    "calinski_harabasz_score": 5.34508295194293,
+    "davies_bouldin_score": 1.391035380279117
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9951390027999878,
+      0.9984688758850098,
+      0.9938371181488037
+    ],
+    [
+      0.9951390027999878,
+      1.000000238418579,
+      0.9963588714599609,
+      0.9953734874725342
+    ],
+    [
+      0.9984688758850098,
+      0.9963588714599609,
+      0.9999996423721313,
+      0.9961585998535156
+    ],
+    [
+      0.9938371181488037,
+      0.9953734874725342,
+      0.9961585998535156,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.16947321593761444,
+    "1": 0.020136425271630287,
+    "2": -0.01270073838531971,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I was trying to go out and play some pickup soccer games over the weekend and went to go plank kick the ball and just felt a pop in my knee."
+      ],
+      "1": [
+        "it it's swollen some some of that swelling has gone down",
+        "it's somewhere between six and seven it's about four or five with some of the swelling going down",
+        "the ibuprofen helped a little bit but i'm on it pretty on a pretty regular basis",
+        "i typically sit behind a desk but it's not been very comfortable sitting here lately"
+      ],
+      "0": [
+        "my knee is just not as functionally it's not moving as as what it used to be it seems to be a little limited"
+      ]
+    },
+    "0": {
+      "2": [
+        "about three days ago",
+        "lacking a few degrees of terminal extension to about a hundred and fifteen degrees",
+        "moderate your activities"
+      ],
+      "0": [
+        "positive lachman exam",
+        "ice the knee"
+      ],
+      "1": [
+        "order an mri because i wan na evaluate the integrity of that acl"
+      ]
+    },
+    "2": {
+      "2": [
+        "marked limp on your looks it's your leg upon ambulation",
+        "order some ant nflammatory medication meloxicam fifty milligrams a day"
+      ],
+      "0": [
+        "significant effusion in the knee just a slight bit of ecchymosis",
+        "pain with palpation at the medial joint line",
+        "difficulty with some passive range of motion",
+        "lacking about maybe twenty to thirty degrees of terminal flexion on the secondary secondary to the pain here"
+      ],
+      "1": [
+        "wear a knee immobilizer and also use crutches when you walk around",
+        "no jogging for a while until we get results of that mri"
+      ]
+    },
+    "3": {
+      "0": [
+        "your knee injury is really suggestive of anterior cruciate ligament tear"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1403 @@
+Job ID: 34222677
+Node: gypsum-gpu049
+Start time: Tue May 13 10:26:18 AM UTC 2025
+Installing requirements
+Requirement already satisfied: datasets in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (3.5.0)
+Requirement already satisfied: transformers>=4.30.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (4.51.3)
+Requirement already satisfied: vllm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.5.4)
+Requirement already satisfied: huggingface_hub in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (0.30.2)
+Requirement already satisfied: pandas>=1.3.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (2.2.3)
+Requirement already satisfied: tqdm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (4.67.1)
+Requirement already satisfied: accelerate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (1.6.0)
+Requirement already satisfied: openai>=1.0.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (1.78.1)
+Requirement already satisfied: torch>=2.0.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (2.4.0)
+Requirement already satisfied: bert-score in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (0.3.13)
+Requirement already satisfied: numpy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (1.26.4)
+Requirement already satisfied: scikit-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (1.6.1)
+Requirement already satisfied: matplotlib in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 13)) (3.10.1)
+Requirement already satisfied: seaborn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 14)) (0.13.2)
+Requirement already satisfied: scipy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 15)) (1.15.2)
+Requirement already satisfied: umap-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 16)) (0.5.7)
+Requirement already satisfied: evaluate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 17)) (0.4.3)
+Requirement already satisfied: sentence-transformers in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (4.1.0)
+Collecting llama-cpp-python (from -r requirements.txt (line 19))
+  Downloading llama_cpp_python-0.3.9.tar.gz (67.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.9/67.9 MB 3.2 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: bitsandbytes>=0.41.1 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 20)) (0.45.5)
+Requirement already satisfied: filelock in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.18.0)
+Requirement already satisfied: pyarrow>=15.0.0 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (19.0.1)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (0.3.8)
+Requirement already satisfied: requests>=2.32.2 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (2.32.3)
+Requirement already satisfied: xxhash in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.5.0)
+Requirement already satisfied: multiprocess<0.70.17 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (0.70.16)
+Requirement already satisfied: fsspec<=2024.12.0,>=2023.1.0 in ./myenv/lib/python3.12/site-packages (from fsspec[http]<=2024.12.0,>=2023.1.0->datasets->-r requirements.txt (line 1)) (2024.12.0)
+Requirement already satisfied: aiohttp in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.11.18)
+Requirement already satisfied: packaging in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (2024.11.6)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (0.21.1)
+Requirement already satisfied: safetensors>=0.4.3 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (0.5.3)
+Requirement already satisfied: cmake>=3.21 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (4.0.2)
+Requirement already satisfied: ninja in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (1.11.1.4)
+Requirement already satisfied: psutil in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (7.0.0)
+Requirement already satisfied: sentencepiece in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.2.0)
+Requirement already satisfied: py-cpuinfo in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (9.0.0)
+Requirement already satisfied: fastapi in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.115.12)
+Requirement already satisfied: uvicorn[standard] in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.34.2)
+Requirement already satisfied: pydantic>=2.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.11.3)
+Requirement already satisfied: pillow in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (11.2.1)
+Requirement already satisfied: prometheus-client>=0.18.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.21.1)
+Requirement already satisfied: prometheus-fastapi-instrumentator>=7.0.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (7.1.0)
+Requirement already satisfied: tiktoken>=0.6.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.9.0)
+Requirement already satisfied: lm-format-enforcer==0.10.3 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.10.3)
+Requirement already satisfied: outlines<0.1,>=0.0.43 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.0.46)
+Requirement already satisfied: typing-extensions in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (4.13.2)
+Requirement already satisfied: pyzmq in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (26.4.0)
+Requirement already satisfied: ray>=2.9 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.43.0)
+Requirement already satisfied: nvidia-ml-py in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (12.575.51)
+Requirement already satisfied: torchvision==0.19 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.19.0)
+Requirement already satisfied: xformers==0.0.27.post2 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.0.27.post2)
+Requirement already satisfied: vllm-flash-attn==2.6.1 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: sympy in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (1.13.1)
+Requirement already satisfied: networkx in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.4.2)
+Requirement already satisfied: jinja2 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.1.6)
+Requirement already satisfied: setuptools in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (79.0.1)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.20.5 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (2.20.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: triton==3.0.0 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.0.0)
+Requirement already satisfied: interegular>=0.3.2 in ./myenv/lib/python3.12/site-packages (from lm-format-enforcer==0.10.3->vllm->-r requirements.txt (line 3)) (0.3.3)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in ./myenv/lib/python3.12/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=2.0.0->-r requirements.txt (line 9)) (12.4.127)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: anyio<5,>=3.5.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (4.9.0)
+Requirement already satisfied: distro<2,>=1.7.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (1.9.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (0.28.1)
+Requirement already satisfied: jiter<1,>=0.4.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (0.9.0)
+Requirement already satisfied: sniffio in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (1.3.1)
+Requirement already satisfied: joblib>=1.2.0 in ./myenv/lib/python3.12/site-packages (from scikit-learn->-r requirements.txt (line 12)) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in ./myenv/lib/python3.12/site-packages (from scikit-learn->-r requirements.txt (line 12)) (3.6.0)
+Requirement already satisfied: contourpy>=1.0.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (4.57.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (3.2.3)
+Requirement already satisfied: numba>=0.51.2 in ./myenv/lib/python3.12/site-packages (from umap-learn->-r requirements.txt (line 16)) (0.61.2)
+Requirement already satisfied: pynndescent>=0.5 in ./myenv/lib/python3.12/site-packages (from umap-learn->-r requirements.txt (line 16)) (0.5.13)
+Requirement already satisfied: diskcache>=5.6.1 in ./myenv/lib/python3.12/site-packages (from llama-cpp-python->-r requirements.txt (line 19)) (5.6.3)
+Requirement already satisfied: idna>=2.8 in ./myenv/lib/python3.12/site-packages (from anyio<5,>=3.5.0->openai>=1.0.0->-r requirements.txt (line 8)) (3.10)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.1.2 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (25.3.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.6.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (6.4.3)
+Requirement already satisfied: propcache>=0.2.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (0.3.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.20.0)
+Requirement already satisfied: certifi in ./myenv/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (2025.4.26)
+Requirement already satisfied: httpcore==1.* in ./myenv/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (1.0.9)
+Requirement already satisfied: h11>=0.16 in ./myenv/lib/python3.12/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./myenv/lib/python3.12/site-packages (from jinja2->torch>=2.0.0->-r requirements.txt (line 9)) (3.0.2)
+Requirement already satisfied: llvmlite<0.45,>=0.44.0dev0 in ./myenv/lib/python3.12/site-packages (from numba>=0.51.2->umap-learn->-r requirements.txt (line 16)) (0.44.0)
+Requirement already satisfied: lark in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (1.2.2)
+Requirement already satisfied: nest-asyncio in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (1.6.0)
+Requirement already satisfied: cloudpickle in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (3.1.1)
+Requirement already satisfied: referencing in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (0.36.2)
+Requirement already satisfied: jsonschema in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (4.23.0)
+Requirement already satisfied: pycountry in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (24.6.1)
+Requirement already satisfied: pyairports in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (2.1.1)
+Requirement already satisfied: starlette<1.0.0,>=0.30.0 in ./myenv/lib/python3.12/site-packages (from prometheus-fastapi-instrumentator>=7.0.0->vllm->-r requirements.txt (line 3)) (0.46.2)
+Requirement already satisfied: annotated-types>=0.6.0 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.1 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (2.33.1)
+Requirement already satisfied: typing-inspection>=0.4.0 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (0.4.0)
+Requirement already satisfied: six>=1.5 in ./myenv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas>=1.3.0->-r requirements.txt (line 5)) (1.17.0)
+Requirement already satisfied: click>=7.0 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (8.1.8)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (1.1.0)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (4.25.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./myenv/lib/python3.12/site-packages (from requests>=2.32.2->datasets->-r requirements.txt (line 1)) (3.4.1)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./myenv/lib/python3.12/site-packages (from requests>=2.32.2->datasets->-r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./myenv/lib/python3.12/site-packages (from sympy->torch>=2.0.0->-r requirements.txt (line 9)) (1.3.0)
+Requirement already satisfied: httptools>=0.6.3 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (0.6.4)
+Requirement already satisfied: python-dotenv>=0.13 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (1.1.0)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (0.21.0)
+Requirement already satisfied: watchfiles>=0.13 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (1.0.5)
+Requirement already satisfied: websockets>=10.4 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (15.0.1)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./myenv/lib/python3.12/site-packages (from jsonschema->outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (2025.4.1)
+Requirement already satisfied: rpds-py>=0.7.1 in ./myenv/lib/python3.12/site-packages (from jsonschema->outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (0.24.0)
+Building wheels for collected packages: llama-cpp-python
+  Building wheel for llama-cpp-python (pyproject.toml): started
+  Building wheel for llama-cpp-python (pyproject.toml): still running...
+  Building wheel for llama-cpp-python (pyproject.toml): still running...
+  Building wheel for llama-cpp-python (pyproject.toml): still running...
+  Building wheel for llama-cpp-python (pyproject.toml): still running...
+  Building wheel for llama-cpp-python (pyproject.toml): finished with status 'done'
+  Created wheel for llama-cpp-python: filename=llama_cpp_python-0.3.9-cp312-cp312-linux_x86_64.whl size=4131373 sha256=66e08cbbf1838133e2b1d1656125b07be7e5580f39e05e8d7966f6702d73729e
+  Stored in directory: /home/psshetty_umass_edu/.cache/pip/wheels/e9/22/42/98dca29f6195951fae2aa548582827a45306350e282ab30617
+Successfully built llama-cpp-python
+Installing collected packages: llama-cpp-python
+Successfully installed llama-cpp-python-0.3.9
+Finished installing requirements
+Using device: cuda
+Using device: cuda
+Error processing entry 0: 404 Client Error. (Request ID: Root=1-68231fe7-1c9a28a87abc6e072fcb8ce8;bfbbec26-ee5e-429f-b1df-834fd282c058)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 1: 404 Client Error. (Request ID: Root=1-68231fe7-607475e87a2acfe93dde17ca;c3fc6760-4284-4ba5-af12-a13140220683)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 2: 404 Client Error. (Request ID: Root=1-68231fe7-5fe773d8240a2cd27e74a8f4;89e321e0-a83c-499a-ab9a-45da3dc64a5f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 3: 404 Client Error. (Request ID: Root=1-68231fe7-01e5423461f8708e0de1e627;7de7a092-40f7-494f-97ca-532bb8dae2f7)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 4: 404 Client Error. (Request ID: Root=1-68231fe7-604c0f3b3b6a1e16672456aa;94d73284-5fb3-4217-a48a-cb588d218fe1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 5: 404 Client Error. (Request ID: Root=1-68231fe7-1df816632fbf93ce453cd021;4b841434-b8d5-4ed1-b9ca-f15ce37da15c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 6: 404 Client Error. (Request ID: Root=1-68231fe7-428a73af08e887654f579b4a;9944b3a1-a031-4008-bb1e-f5d7db7f5bed)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 7: 404 Client Error. (Request ID: Root=1-68231fe7-11e9a60f31ac3e9b6c30921b;b3d54320-7a46-4aad-8a35-a539b5c6b948)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 8: 404 Client Error. (Request ID: Root=1-68231fe7-73f6615d7f32c2a27b76facd;4ac56f3d-50fe-42ac-a45d-cde4c075ccee)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 9: 404 Client Error. (Request ID: Root=1-68231fe7-0fd31f6266b51a0d62a9f148;43e3e6b3-7858-4748-a073-86972293e837)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 10: 404 Client Error. (Request ID: Root=1-68231fe7-6236edbe7317cd740d2fd616;5299c66a-8b18-4efd-99fe-b3c6c2f26737)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 11: 404 Client Error. (Request ID: Root=1-68231fe7-7f612c0f4e13bc870332fca1;9072df4f-265f-47b5-a233-52db1bcc76b6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 12: 404 Client Error. (Request ID: Root=1-68231fe7-74bbe1a348f18d9e4995a433;a0b46b9e-fe4d-4928-80f3-893645b523a1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 13: 404 Client Error. (Request ID: Root=1-68231fe7-63d8cc97660235a90950999b;bda3b6d4-2624-4e5e-82ce-36ed25fa0f31)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 14: 404 Client Error. (Request ID: Root=1-68231fe7-7fef466b0d083bb73093225a;02eed3ff-f9af-449c-8bf7-670ae2884617)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 15: 404 Client Error. (Request ID: Root=1-68231fe7-52dd0ef47f38deb0679ac922;29fa96bd-73ee-47ff-8b33-2a4475c547d4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 16: 404 Client Error. (Request ID: Root=1-68231fe7-1273d4dd317cea46461756e4;734bdb0c-fc10-4da2-8d9f-c16b5ad9fb7b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 17: 404 Client Error. (Request ID: Root=1-68231fe8-167aea147df4405274bbc574;5422a8df-35dd-4321-a5bd-545db7815f90)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 18: 404 Client Error. (Request ID: Root=1-68231fe8-71030aa1456d25e3376c75de;439c6f91-a2a3-40f6-b48a-65b066eb7d08)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 19: 404 Client Error. (Request ID: Root=1-68231fe8-54257e7d713c2a2a282990e0;01a3777c-c325-4eeb-9128-0edf8e1ad6e1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 20: 404 Client Error. (Request ID: Root=1-68231fe8-4e14c93c7eaaa1004d8b2dfd;084d268d-2e27-4db9-ad20-7e556f8433c4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 21: 404 Client Error. (Request ID: Root=1-68231fe8-1a9d03dd6929128d6fa41a9f;7e5a9926-0cfe-48e2-aae4-2d7972245526)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 22: 404 Client Error. (Request ID: Root=1-68231fe8-3ac66b974d7dec53569825f2;2803b646-f50d-4019-a886-e44412d987b2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 23: 404 Client Error. (Request ID: Root=1-68231fe8-01d9b9f22b850c4c1494e660;24479aa8-3a32-433d-b2bd-21f1842f099e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 24: 404 Client Error. (Request ID: Root=1-68231fe8-5a9f05b91124b83d627c8b1b;f8a87b70-a0d4-4721-b464-9212779ab202)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 25: 404 Client Error. (Request ID: Root=1-68231fe8-1292abbe6be36ded6483e5ab;7d386609-f2e2-4407-afe1-ba10ac8d26ae)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 26: 404 Client Error. (Request ID: Root=1-68231fe8-00b355a52ec641ca6afe43a0;5d357af4-539b-4ca0-8545-e74d5a31fc6d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 27: 404 Client Error. (Request ID: Root=1-68231fe8-6accc6096152f5f16fce5deb;cd67a96c-053f-4cac-8ccd-88aa38f9b940)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 28: 404 Client Error. (Request ID: Root=1-68231fe8-4a24e1ef04cbabe02082531a;c234a42f-6cec-42ec-9500-2332a211e84c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 29: 404 Client Error. (Request ID: Root=1-68231fe9-0bedc6a756f451234cd1d466;4cb0cf59-f225-4e6b-a05d-5df92328aa22)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 30: 404 Client Error. (Request ID: Root=1-68231fe9-60b92be0421f084471ab5b5d;a8d50bb2-828d-4a6e-864e-4197a0e1e1a9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 31: 404 Client Error. (Request ID: Root=1-68231fe9-5f06cabd2e39ee4b7a0bc4ab;5a393e16-aede-4bd6-b7a9-6aa7e0d58086)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 32: 404 Client Error. (Request ID: Root=1-68231fe9-75c0a75061b5ad467065d6cc;ada4de7b-6346-4e29-ac66-9d1a89c9de3f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 33: 404 Client Error. (Request ID: Root=1-68231fe9-2fd9c0df5eb696617e7d5437;51628605-9f2b-47de-a298-89c1834d2428)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 34: 404 Client Error. (Request ID: Root=1-68231fe9-6a4f60fa2fb08be2233e3141;24b4bf25-8fe8-48e8-8ed5-ce2bf6d184eb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 35: 404 Client Error. (Request ID: Root=1-68231fe9-1215dbae37db7fda6a4bc8f3;c4ceeb5c-43a1-4f5f-bc63-8bce9bf52583)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 36: 404 Client Error. (Request ID: Root=1-68231fe9-6d19ab49646057db63bddff9;a0380068-9f5d-4be5-933c-539634f79ccd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 37: 404 Client Error. (Request ID: Root=1-68231fe9-4c1db33477d26fc27b008931;7e932f65-fb68-4fa3-acef-9ceb27f069f6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 38: 404 Client Error. (Request ID: Root=1-68231fe9-72a37a5c21ab87eb7554872f;7911b642-6152-4be2-b760-4cf1d437bcb1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 39: 404 Client Error. (Request ID: Root=1-68231fe9-236379a2791917a734ff1988;6d82d710-e347-475e-8cd7-6be8c18d545b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 40: 404 Client Error. (Request ID: Root=1-68231fe9-718300fd545b0c29251e11ed;0853f98f-f378-4a38-837f-be99a3e2410c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 41: 404 Client Error. (Request ID: Root=1-68231fe9-1da8c8b256d0e8be01e29342;0543876d-7e35-4919-b410-325c09dc86a8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 42: 404 Client Error. (Request ID: Root=1-68231fe9-032ed5371709800252f50fe6;51d0372f-d565-424c-83b4-14f32cda2250)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 43: 404 Client Error. (Request ID: Root=1-68231fe9-7a7abc2c124f5f8e1d3d3b76;20cfb799-d794-45af-af27-b642182a42a2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 44: 404 Client Error. (Request ID: Root=1-68231fe9-241b06211f7dab385c3a20e3;50abca0d-cdbc-4a45-bd8e-a1b9bdc5524c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 45: 404 Client Error. (Request ID: Root=1-68231fe9-07c087ea7dd342be63bca2a7;dfa08bae-07a3-431c-a629-33013ce6e70d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 46: 404 Client Error. (Request ID: Root=1-68231fe9-15fad8f62da4d4ec25fb869d;3cb2340d-7b99-452e-8b0a-521b032b57b7)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 47: 404 Client Error. (Request ID: Root=1-68231fe9-5b07463533269a2b099c28dc;f8149dbc-f603-4074-b984-6b722cb85d03)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 48: 404 Client Error. (Request ID: Root=1-68231fe9-4f877b2d11f1d3db042cc223;3b067700-be9d-4122-a6c5-0b6981b88e25)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 49: 404 Client Error. (Request ID: Root=1-68231fea-33937c374faab6d7614adcbe;8d639978-a11f-475c-a436-af2576db9acf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 50: 404 Client Error. (Request ID: Root=1-68231fea-4b1b43772e2255f424d8dae3;decbce71-a2a4-4aa4-afe6-36bcb8cfda8e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 51: 404 Client Error. (Request ID: Root=1-68231fea-447aa38d792e1d57323a1f96;e6a70718-a80e-4529-9707-d40bb566eab9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 52: 404 Client Error. (Request ID: Root=1-68231fea-351ee9620f2873ff60f98684;4f4c7577-c8d0-4674-8288-74f7f341bd63)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 53: 404 Client Error. (Request ID: Root=1-68231fea-2a811af35b6daf92182a46aa;61858d58-917e-4d95-86a0-2eaec98d03a6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 54: 404 Client Error. (Request ID: Root=1-68231fef-0b5aee09281e2cf64089cee6;e77dc171-2dbe-4fae-a300-370c1eee56dd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 55: 404 Client Error. (Request ID: Root=1-68231fef-558a8c863d35c78f10f80de6;1c6be988-9e31-4349-8b5f-6f395cfee81a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 56: 404 Client Error. (Request ID: Root=1-68231fef-22b163a327270ae233be8c1b;a97297de-f101-46fd-b76c-b1c94493c1d2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 57: 404 Client Error. (Request ID: Root=1-68231fef-02916add0d52aec34dee10fc;0f138ced-8afe-4283-a2ea-d52c73d2e1ab)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 58: 404 Client Error. (Request ID: Root=1-68231fef-3dc0d3ac719b42360fd5a0f8;8e6edd99-6de7-46c8-a085-dfe46b852f91)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 59: 404 Client Error. (Request ID: Root=1-68231fef-7904b2be69e2e8632b81b436;1c1b2707-20c5-431a-b060-927d04fd7f7f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 60: 404 Client Error. (Request ID: Root=1-68231fef-49c7c2d443dcfad254b7e0a7;2a684426-4ea9-475a-9a8e-4711f4857d44)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 61: 404 Client Error. (Request ID: Root=1-68231fef-6735cc5168a050fe346566d4;6cfe7f35-6230-41ce-8f8a-bee8036e1373)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 62: 404 Client Error. (Request ID: Root=1-68231fef-6e0e168949c4627001467a82;50ed692b-c066-498e-883b-0972cf3ae150)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 63: 404 Client Error. (Request ID: Root=1-68231fef-6828b77f502d7161413488f4;e8528b5e-0dd4-483d-8054-b46199492d5e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 64: 404 Client Error. (Request ID: Root=1-68231fef-34b91e77316e11ee209db00e;f83fff52-49b6-463e-8c67-ae9aa87c829d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 65: 404 Client Error. (Request ID: Root=1-68231ff0-01ae1bb074f9c38a12b2936e;a9bdc18b-41f0-4492-969b-38713f81a61c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 66: 404 Client Error. (Request ID: Root=1-68231ff0-4a361f7f3936a16c6ebe1e8e;2585d470-81e6-453f-87a0-0207cebf7fbd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 67: 404 Client Error. (Request ID: Root=1-68231ff0-0f1e6b82771b721130c5d553;e61a0a20-fd11-423c-a45d-a78d04572854)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 68: 404 Client Error. (Request ID: Root=1-68231ff0-01ebc9d564f356dd4683c964;dd86ea2e-a560-487c-9991-f90a3de0f51f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 69: 404 Client Error. (Request ID: Root=1-68231ff0-6e2caaf9116e31477df0d4b7;45ef21e6-ea2f-49ee-b9cd-fd308e4af373)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 70: 404 Client Error. (Request ID: Root=1-68231ff0-6ae76d9e43edf0ba54398317;0d862506-b72d-45e2-99ce-d32a9558fa8a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 71: 404 Client Error. (Request ID: Root=1-68231ff0-00ab716b6de6e343373ade44;a646c86b-32c1-4f89-9234-5ef2bbbc333b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 72: 404 Client Error. (Request ID: Root=1-68231ff0-228b0c1137195689093ea340;6912834e-1b09-4a61-b872-cfeb2d1f74cd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 73: 404 Client Error. (Request ID: Root=1-68231ff0-55a916c506234b176ce47973;9c560c7b-70f6-40b4-94b5-175e8aceb7cb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 74: 404 Client Error. (Request ID: Root=1-68231ff0-0e08ee85420a181d77b8ccb4;0aa60984-95dd-469a-a10a-b942a7dd66b8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 75: 404 Client Error. (Request ID: Root=1-68231ff0-69ad728e4abe0bf05c3f9f98;de834cc2-5f3e-4246-af09-736b3359b63c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 76: 404 Client Error. (Request ID: Root=1-68231ff0-0194a0db4bc7408d753a6ab4;cf95af8d-180f-4bd5-a2be-5dfdc0180047)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 77: 404 Client Error. (Request ID: Root=1-68231ff0-3747f0c116ddd7e8019db80a;356d048b-15ec-40bb-b0ad-bab3cd3f6123)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 78: 404 Client Error. (Request ID: Root=1-68231ff0-638af82c6007080128684843;41262747-f6c2-49da-a353-c1e7c4726b95)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 79: 404 Client Error. (Request ID: Root=1-68231ff0-62f4f875543ca91f1acc4fc1;8627acbe-e32b-460e-9b44-2876bff160f2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 80: 404 Client Error. (Request ID: Root=1-68231ff0-221cc12107806a735513c4ac;32eadfe6-4e01-4d94-911c-25818923e6d9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 81: 404 Client Error. (Request ID: Root=1-68231ff0-2105541e5fccbb87451313d6;a7b8f97a-f034-41b2-b44c-d212c20d3eac)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 82: 404 Client Error. (Request ID: Root=1-68231ff0-780924e0368962fc07f9f7cb;02987f48-d50f-4e17-959d-2a18b5535bcb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 83: 404 Client Error. (Request ID: Root=1-68231ff1-2536d67e14d554351d269c19;5963c65f-d8ea-4308-8a68-fb674e7a8c85)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 84: 404 Client Error. (Request ID: Root=1-68231ff1-6067c7995b040be95197d796;91b8ddd4-67fa-4de2-bc9f-238afdee16f4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 85: 404 Client Error. (Request ID: Root=1-68231ff1-32265c5c2dfed1843caf5f2f;d31ce63d-011b-4023-b933-71db0a1e604f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 86: 404 Client Error. (Request ID: Root=1-68231ff1-0c36c3091d11fa7646b1499b;cb368656-cfaa-4b54-a884-b13a6e56a97f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 87: 404 Client Error. (Request ID: Root=1-68231ff1-0488390f54e5c26b009eea70;7b4b4f97-b81a-4070-8cfa-b38dc815ec1e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 88: 404 Client Error. (Request ID: Root=1-68231ff1-6c13b772784f95b41fac7f17;25d2d7bf-0e34-4407-93f7-361707f51383)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 89: 404 Client Error. (Request ID: Root=1-68231ff1-06dd1d763963089a4891e54e;9eae5bd7-ee91-43df-84d2-e35c847a561f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 90: 404 Client Error. (Request ID: Root=1-68231ff1-0a4efe0c7a6fe60e4a438771;1c4fd82c-f12a-49c0-8de7-8dce96041cbe)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 91: 404 Client Error. (Request ID: Root=1-68231ff1-3dd366bc0a65c1d2020b191b;8c32383b-ac26-4f87-af6c-e55c181ff3c6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 92: 404 Client Error. (Request ID: Root=1-68231ff1-6c97ffc30b97357a196224e9;318c3312-c154-46d2-b12c-90f6573607ff)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 93: 404 Client Error. (Request ID: Root=1-68231ff1-32830ac92c9e613576c46c2c;33c26f34-6988-4ac6-83d2-b056556dcf47)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 94: 404 Client Error. (Request ID: Root=1-68231ff1-424874c42e0492283bc9630e;ba1928fc-4d4a-4f0d-9c1f-679a888e03b7)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 95: 404 Client Error. (Request ID: Root=1-68231ff2-6d993f94057b1796575ce02c;2c241aee-8de3-43c6-9d04-5bc5f09620ee)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 96: 404 Client Error. (Request ID: Root=1-68231ff2-571c61db56a65787593a3995;02629f62-690d-447d-ac5c-7d5ddf276159)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 97: 404 Client Error. (Request ID: Root=1-68231ff2-426206a00050de6a737e0fc1;418c70bc-3d39-4dd4-bf46-6e4004d5f2ca)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 98: 404 Client Error. (Request ID: Root=1-68231ff2-280c82862ea30e9447415752;1b1794c5-8d6d-4a3f-9a9c-4ee6f710d449)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 99: 404 Client Error. (Request ID: Root=1-68231ff2-50b9de8e0ff1578d69b2f347;934dace6-3cdf-4c73-ac6d-913ab7612f88)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 100: 404 Client Error. (Request ID: Root=1-68231ff2-1c00964e603aa4f45ea7dee5;2e60f062-bb7a-4a85-9e2f-17d5166c6767)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 101: 404 Client Error. (Request ID: Root=1-68231ff2-2e067ee65bcf2155097e498d;0b196163-2e3c-47bb-acfb-2143bd1fe801)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 102: 404 Client Error. (Request ID: Root=1-68231ff2-0b8e477a450d89247c30dd67;e57f80cf-6fea-4fc4-b48c-0de7071f7e9f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 103: 404 Client Error. (Request ID: Root=1-68231ff2-058ce4b10a84392323eb1d31;4d10b002-0227-472a-b48a-0c496094ce36)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 104: 404 Client Error. (Request ID: Root=1-68231ff2-01359e0b0a7c9b06499f643b;421093e4-d84c-44a8-840b-9324bb761f62)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 105: 404 Client Error. (Request ID: Root=1-68231ff2-4957b6e65cf7edb369bd0091;ff4b111b-51e3-4eb5-b4bf-6867d99337da)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 106: 404 Client Error. (Request ID: Root=1-68231ff2-3edfe337618eb8f903c5db77;c3b7cade-a69e-41b3-b3ab-12f3f73e9743)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 107: 404 Client Error. (Request ID: Root=1-68231ff2-59063674629d47ff22862615;888cbc90-c419-4e65-b1e0-c3d8f229b923)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 108: 404 Client Error. (Request ID: Root=1-68231ff2-15fc86ae08ad005f36378e78;bc2b11cd-f9d4-4044-8c83-cb910fbd715a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 109: 404 Client Error. (Request ID: Root=1-68231ff2-520b17b62006473f53ee3bd2;3ba3bab0-3eaf-4b06-84f4-7c2ddb0b5ae6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 110: 404 Client Error. (Request ID: Root=1-68231ff2-2adb3cb579fe6ba47d44e49e;ceb1f66d-82ca-4337-833c-af7bcfa55eea)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 111: 404 Client Error. (Request ID: Root=1-68231ff3-57aa6a3e6129685c2e667f1b;06f64bc3-6018-451b-b84a-71c1bafe4ebf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 112: 404 Client Error. (Request ID: Root=1-68231ff3-637be056781a21cc779b9460;46ccff46-85de-4cd7-ad4c-d6184a8b9faa)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 113: 404 Client Error. (Request ID: Root=1-68231ff3-3b5482b82930a01947474ef5;b020ec48-24bd-4e5d-9d74-d9d0bb69f70e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 114: 404 Client Error. (Request ID: Root=1-68231ff3-60d96f3669c1ab602b3b2011;30ecafb4-d45d-441b-8bdd-b3490e533ef3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 115: 404 Client Error. (Request ID: Root=1-68231ff3-49f4a1431ba92598100e6665;a0d23671-b708-4eec-bf66-c23b557f001a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 116: 404 Client Error. (Request ID: Root=1-68231ff3-3a370d5109a7ae1407eed8f8;cd6fa56b-aa76-4d2f-bd49-9897e059f5f9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 117: 404 Client Error. (Request ID: Root=1-68231ff3-02e6831b0509180046ffa53c;cb4ea230-7d39-4899-87bf-39a0cd91c9a4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 118: 404 Client Error. (Request ID: Root=1-68231ff3-510b448906356fd12b5922e3;04715507-e5c7-4c31-a7e7-f600508e75e8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 119: 404 Client Error. (Request ID: Root=1-68231ff3-507bdd0a73e6b78f55fc47c9;d2e96a7d-65c7-4d3f-a94a-deb05d35ec41)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 120: 404 Client Error. (Request ID: Root=1-68231ff3-5548738227ab5a6144276ed6;2082d89b-3b13-42bb-86e7-2b9bfda72719)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 121: 404 Client Error. (Request ID: Root=1-68231ff3-7fd9245b67d48fc768f3766f;b585d748-68c3-4eef-96a0-23df55efb9d5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 122: 404 Client Error. (Request ID: Root=1-68231ff3-61ca041176927efc45a8c52f;d564f13a-3d16-4b0b-8b52-eb78af30b6fe)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 123: 404 Client Error. (Request ID: Root=1-68231ff3-7c93aa5116a6dc675aa12193;1f5c16d6-13ec-4598-affb-d55b0f60a107)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 124: 404 Client Error. (Request ID: Root=1-68231ff3-3f2f0f8f33cb34ff12415558;178aac17-4a5e-41ee-aacd-72da4da7724a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 125: 404 Client Error. (Request ID: Root=1-68231ff3-62dad2754d5b15f337aa6a36;57b176b8-7a28-486f-b60b-e9a55442fa52)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 126: 404 Client Error. (Request ID: Root=1-68231ff4-624a304c494fd8273d05d507;c7b075ca-6a4b-4e1e-87b7-f6f88617383b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 127: 404 Client Error. (Request ID: Root=1-68231ff4-1fe46ec94eb15835448a3158;ccdb4e62-509c-47bf-97db-d5baf5868735)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 128: 404 Client Error. (Request ID: Root=1-68231ff4-657a4f4d15c4168840231800;38568c3e-df7d-43a9-9ea1-f7b9b5a0cab1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 129: 404 Client Error. (Request ID: Root=1-68231ff4-1309a2c067f13c7d624b754c;35dde0a0-4179-419e-91f0-c0695b2c21bf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 130: 404 Client Error. (Request ID: Root=1-68231ff4-317c86c636b6fc6b6a0a3506;84aded54-0be8-4038-a4d8-04a83b8745f4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 131: 404 Client Error. (Request ID: Root=1-68231ff4-500721ba4555cd9e20c463b5;ed2c94e0-4edd-4eed-bac4-f7fdcaa3ae9e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 132: 404 Client Error. (Request ID: Root=1-68231ff4-7e57433d75b983b00820dae7;a810d407-68fb-4f63-bb19-42d6447372ee)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 133: 404 Client Error. (Request ID: Root=1-68231ff4-1a14d9b47d9b85373be2f8c9;cb923097-f38c-4358-8451-539c1540a856)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 134: 404 Client Error. (Request ID: Root=1-68231ff4-639eefd94ada17244f21d77a;7688f7de-6526-4eec-91c3-8948a5cdc3c6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 135: 404 Client Error. (Request ID: Root=1-68231ff4-63e2594b7fd7086c6cdc54e3;8074c856-28e9-4b3e-b220-c22b910f8617)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 136: 404 Client Error. (Request ID: Root=1-68231ff4-3e4ac30653ba4c4441a8105e;085c9171-a94a-42d0-8592-ad62dae6bfbf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 137: 404 Client Error. (Request ID: Root=1-68231ff4-2a906f7419afa584093333b9;094228a0-c7f7-4822-97a1-ce41d938f946)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 138: 404 Client Error. (Request ID: Root=1-68231ff4-3f26e53030e088d66ce3ddd4;2a65f694-6033-4c05-af16-974ca64adc6c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 139: 404 Client Error. (Request ID: Root=1-68231ff4-450a71fa4aa503214e68e712;5ca23e28-a456-43fa-b410-2ec09bbcb0ce)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 140: 404 Client Error. (Request ID: Root=1-68231ff4-325aa4132fd31acb592f0f18;56d1c870-7aa0-432e-b733-5d0457405a98)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 141: 404 Client Error. (Request ID: Root=1-68231ff4-2f3552dd146bc10a43b1cd21;7fbf645b-6ccc-439a-87c2-d246dcf0c8e1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 142: 404 Client Error. (Request ID: Root=1-68231ff5-2f96a60e6616223d171998ad;0bfdc501-2a68-4fe9-8dac-32d411095577)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 143: 404 Client Error. (Request ID: Root=1-68231ff5-4ce241ee6a1765975af80950;3accce3f-53fd-4154-b901-ef346a3aee46)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 144: 404 Client Error. (Request ID: Root=1-68231ff5-5bc2f7c26359ba190e53581f;13018230-ddf4-49f2-be85-0a8a02b81bfd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 145: 404 Client Error. (Request ID: Root=1-68231ff5-1c5f54106a7ff1424c3e55b1;cd3c7015-055b-46e5-a4dd-c12d9813b578)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 146: 404 Client Error. (Request ID: Root=1-68231ff5-66c760111c4ec416589711d4;2886402d-a3b2-4924-828b-a06859b6d750)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 147: 404 Client Error. (Request ID: Root=1-68231ff5-29f7f6fd53cc9aed5db61c19;f59bfe6b-4565-4f3f-82e1-b4acd7fbddbd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 148: 404 Client Error. (Request ID: Root=1-68231ff5-700bdc0d1f3fba9456b8732f;e5a28747-efda-439d-a117-f571c915b8de)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 149: 404 Client Error. (Request ID: Root=1-68231ff5-01b6d7bc0e71c2860ed026be;0fe6645c-9abf-49e9-a4b0-c060c677ab57)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 150: 404 Client Error. (Request ID: Root=1-68231ff5-52441133711782a816502e92;d89358cc-9b3d-4792-94ea-fdf252b1171c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 151: 404 Client Error. (Request ID: Root=1-68231ff5-78745f874845e48a56a44ea4;fcbd1afe-4788-448e-93a2-ee11111b652f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 152: 404 Client Error. (Request ID: Root=1-68231ff5-7d9ed7c851816cf55933fa67;3e867e29-46ee-4bf6-a2bc-b4473ac851fa)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 153: 404 Client Error. (Request ID: Root=1-68231ff5-5ddfe38f1ffadeeb6e1bd0e0;60dadb7b-8ff9-4c74-83bc-75a39056cb63)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 154: 404 Client Error. (Request ID: Root=1-68231ff5-5712ab451221c57106a7f77c;14bfed3b-9ecd-4dd4-951f-86f1410a9dc0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 155: 404 Client Error. (Request ID: Root=1-68231ff5-238b05b46bf089bc13f3727b;437e2c57-051c-4fa6-98f9-428eb81218ad)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 156: 404 Client Error. (Request ID: Root=1-68231ff6-3963c0c42bef9dda009b4c39;890102d5-a5fb-4097-b685-579698b8be32)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 157: 404 Client Error. (Request ID: Root=1-68231ff6-05fccdd826c67c413b777852;a9fe6056-cbe6-4459-9bd9-a90fc0e8f2c2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 158: 404 Client Error. (Request ID: Root=1-68231ff6-01e9a0ad0ee35281556cb538;6744d5d5-e0cf-4cde-9b97-a12ae8254ed0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 159: 404 Client Error. (Request ID: Root=1-68231ff6-5a59822d1b1d99ed314ced3f;813d9d93-ea6c-4ff2-95c4-08724c6d51bf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 160: 404 Client Error. (Request ID: Root=1-68231ff6-596cac7846fef28058e18444;58b22487-938b-4074-b1d9-11e402da9a0b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 161: 404 Client Error. (Request ID: Root=1-68231ff6-31a610956c9749793505b57e;3643f2c2-e83c-4216-b48d-8f3d47adfdd5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 162: 404 Client Error. (Request ID: Root=1-68231ff6-30a5b9cc3c716d4b4a8b8fe0;b8dcd0ee-0ef1-4ebf-bcb4-8ab3924c4dc5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 163: 404 Client Error. (Request ID: Root=1-68231ff6-4fbbc02a6f0ca1da7b967329;6b0fb535-e0df-450b-94db-4fe06748ff98)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 164: 404 Client Error. (Request ID: Root=1-68231ff6-301bdd063d43a0fb2bab7094;44531002-b753-431d-a249-e442a1f7fde5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 165: 404 Client Error. (Request ID: Root=1-68231ff7-345b95bf6c63bdf04426a273;fc521d7e-c9f7-45b8-97c1-6673e9b3aa91)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 166: 404 Client Error. (Request ID: Root=1-68231ff7-71aa417a0e2950321b2f2b7e;5ff6fbb3-3b29-4d83-aa99-c4e91260957c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 167: 404 Client Error. (Request ID: Root=1-68231ff7-0a71b79340d42ca201a4fe04;42b0fd94-a0ef-4061-b57a-a93a1943dd50)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 168: 404 Client Error. (Request ID: Root=1-68231ff7-26eb82ed54747b7178b0638d;a1a64f13-3d64-427b-82a5-e74f5cc7af3f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 169: 404 Client Error. (Request ID: Root=1-68231ff7-286bc84a2332fcf9626a048a;80039c95-9225-4a2a-9e48-af595d864d9f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 170: 404 Client Error. (Request ID: Root=1-68231ff7-3c0f1d6967d2ea553807cdf3;06d1be19-af32-4ecd-b2f0-fac7ded2e8db)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 171: 404 Client Error. (Request ID: Root=1-68231ff7-5de7c1ab2aaa218723d3b627;9b7e9a40-36b5-42c8-b7fe-5265f5463bb4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 172: 404 Client Error. (Request ID: Root=1-68231ff7-7646bdc94bd7ff0c1a53ba9b;01909d80-9f45-4849-924f-92ed355edae2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 173: 404 Client Error. (Request ID: Root=1-68231ff7-0bf8f87c3c47243614cc942d;fbd72a59-f84e-4465-955b-97f61012cb48)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 174: 404 Client Error. (Request ID: Root=1-68231ff7-32f4be8b1f8fce247cbb7714;6b237787-20f1-41a7-9e73-ce7a434a6b5d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 175: 404 Client Error. (Request ID: Root=1-68231ff7-5c9bd1f861144b444eb69ab3;2b9b0b46-e5f7-421a-9cc0-a168617968c0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 176: 404 Client Error. (Request ID: Root=1-68231ff7-6886794b0f9601de1103a9e5;53ddbbd5-bc2a-4922-b009-9f76cad41353)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 177: 404 Client Error. (Request ID: Root=1-68231ff7-24c8e43c765097580648b1d0;a235e46d-dfc8-485f-aa1d-5bdaf6275e17)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 178: 404 Client Error. (Request ID: Root=1-68231ff7-469744452e8b7dbb6300c190;62f1191e-e8a4-4d24-a8ab-0cf2275d9081)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 179: 404 Client Error. (Request ID: Root=1-68231ff7-1188689a5685a77853849ccd;f4ecab91-7001-4a4d-b776-9d63537bce87)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 180: 404 Client Error. (Request ID: Root=1-68231ff7-7e161f4d01fd9e104357bd2f;38e6559e-6b6e-4649-a22f-6c132e7664d4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 181: 404 Client Error. (Request ID: Root=1-68231ff7-62717abd61165c9941f6fb28;ea8cf9e1-1603-4ea7-938b-f64268b34945)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 182: 404 Client Error. (Request ID: Root=1-68231ff7-6bac94397921f2724c7343c4;64f986a9-89bf-4927-9ba8-799471ed2f5c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 183: 404 Client Error. (Request ID: Root=1-68231ff7-7b8d738018b9c9691b4e6d1b;4bcc748a-a92b-479d-8fa8-e678cf8f0ea8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 184: 404 Client Error. (Request ID: Root=1-68231ff7-5aa2544b45583294322a54d0;2ce50cb8-8ee8-429d-bbec-c6e08843e048)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 185: 404 Client Error. (Request ID: Root=1-68231ff8-186b98ec7fb1f10922bb354a;8ae1c994-0427-46e4-97b5-646d2d149207)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 186: 404 Client Error. (Request ID: Root=1-68231ff8-4837fc874e58abdd739470db;8ccfb88a-4df0-48da-ab68-6c829b213ba9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 187: 404 Client Error. (Request ID: Root=1-68231ff8-2c26986d22ef03c1743312a5;a4426f4a-d5fd-4b58-a792-0209610eb5e5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 188: 404 Client Error. (Request ID: Root=1-68231ff8-131ae9820633acba2db7ac12;a2f1b51a-08ec-42b8-9c8e-87a9733f4785)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 189: 404 Client Error. (Request ID: Root=1-68231ff8-6785eee519b98032649dacac;3441b11c-4e35-44e3-bc61-2ba4e87ce002)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 190: 404 Client Error. (Request ID: Root=1-68231ff8-5da82f574b1068fe4a93fac3;8c4b4fc2-3733-4808-bb72-87fc0596ada3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 191: 404 Client Error. (Request ID: Root=1-68231ff8-121878200f8d985108968134;7af85daa-aaec-4a90-8240-563034b68613)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 192: 404 Client Error. (Request ID: Root=1-68231ff8-3b0354b326b1119e69e547b0;fe2554c7-00ce-4a13-bf9d-f420ea1a730e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 193: 404 Client Error. (Request ID: Root=1-68231ff8-4e3407ed7a7152766bcecb3e;979ebb6b-890c-4c6f-8565-4fed3faa0efb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 194: 404 Client Error. (Request ID: Root=1-68231ff8-1f415e3c71e0618e593dabeb;09127984-93b0-4ee2-9692-4a353ba7fb12)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 195: 404 Client Error. (Request ID: Root=1-68231ff8-2e0059757be67d3d6131f6e0;60ddea39-b95a-4d6b-88fc-fb5a25fc007d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 196: 404 Client Error. (Request ID: Root=1-68231ff8-02c10d4e45707f0d7a24e0d4;6798c3d0-8527-409f-a445-4c418a3e4f2e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 197: 404 Client Error. (Request ID: Root=1-68231ff8-1ddf780b37ce7ad80767c9f2;6fb79a27-740b-4647-8fcd-7ff716e64cf3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 198: 404 Client Error. (Request ID: Root=1-68231ff8-6b6d2b431e0890074df7652b;29ea4d63-f55d-4bdf-9499-1ca4d5dfe19e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 199: 404 Client Error. (Request ID: Root=1-68231ff8-0fbd815c03a0fd2027989e9b;b403f728-b2bf-4a0c-9b4c-6fa1cec6be03)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 200: 404 Client Error. (Request ID: Root=1-68231ff8-41063a6352e1719339426bef;13a77bef-cc49-457b-b54b-cb8d357e1134)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 201: 404 Client Error. (Request ID: Root=1-68231ff8-24c5b47d0066e7217e8a84b9;d13c1eda-caea-4c1a-96a2-f23a73f2d6d8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 202: 404 Client Error. (Request ID: Root=1-68231ff9-6cd53a7853619ae132f65e25;de9fd922-5230-4eba-82be-7c19d4d2a650)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 203: 404 Client Error. (Request ID: Root=1-68231ff9-0a59fe4e64c12a013a396e69;2038efd4-ea8a-46c4-a4d4-48a50d153c54)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 204: 404 Client Error. (Request ID: Root=1-68231ff9-292a812a1920c29b0433ff72;2be0e262-33a4-4c5f-996f-050bbfa4fd1e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 205: 404 Client Error. (Request ID: Root=1-68231ff9-711fd88a52d27aaa40f19af7;f9d58dd6-3b37-4369-bf56-3e8adb90b075)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 206: 404 Client Error. (Request ID: Root=1-68231ff9-72df545c4cd54f433c35c203;269569a7-24c5-48de-ae93-d013e0084204)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Results saved to key_phrases_results.csv
+Using device: cuda
+Error processing entry 0: 404 Client Error. (Request ID: Root=1-68231ff9-15911e5a1d3f638d79c36108;52e4d02d-d048-4a64-abeb-afac1904170d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 1: 404 Client Error. (Request ID: Root=1-68231ffa-3159548419741794666e7593;c273f0b2-ad09-4204-bf62-f381f828ba1a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 2: 404 Client Error. (Request ID: Root=1-68231ffa-7d41f5962ea1efc137fa02ab;8c9d1172-0b8c-4845-95c5-e9957591de18)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 3: 404 Client Error. (Request ID: Root=1-68231ffa-651cc66e5dda22bd6280ef6e;c8115cf8-f1fe-40bc-a240-49a98856e829)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 4: 404 Client Error. (Request ID: Root=1-68231ffa-278c376162cb51d44157eb97;456decfa-6f89-4d93-9756-20aa6cff9069)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 5: 404 Client Error. (Request ID: Root=1-68231ffa-1306c24f0c31fde55aa48ff0;6443dc9b-9735-45d6-8325-7b21ef635339)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 6: 404 Client Error. (Request ID: Root=1-68231ffa-3e9bf1e00e5f533a772b709b;ab088280-a8e0-4a73-972c-cb92d6d2ad47)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 7: 404 Client Error. (Request ID: Root=1-68231ffa-5b7f52e72b7e5ef2049a07ba;9582894f-95a7-4acb-b924-092786f1b926)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 8: 404 Client Error. (Request ID: Root=1-68231ffa-1cd9b8363413bd20359b2f9d;9b2e1159-451f-4779-8500-b773ea8dc9c0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 9: 404 Client Error. (Request ID: Root=1-68231ffa-6cc1662e01a61f457622459c;1c999887-0af5-4ba4-9ea6-747858055a8d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 10: 404 Client Error. (Request ID: Root=1-68231ffa-22b33c9f7a8a614e2ff51c55;99e5ddf7-d0ea-4417-8bf7-767b061f89ea)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 11: 404 Client Error. (Request ID: Root=1-68231ffa-79b8e9f44264027b7f382da5;b95c0d37-aa48-42eb-b9a7-788327fb4daa)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 12: 404 Client Error. (Request ID: Root=1-68231ffa-74b0f6820fdc09d131d82285;c7f39b64-ef69-4400-b906-2111436d2ff3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 13: 404 Client Error. (Request ID: Root=1-68231ffa-0de7ebd0368b5f6d31c19662;566cc243-4d83-45a9-af8e-96ad012e38b0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 14: 404 Client Error. (Request ID: Root=1-68231ffa-342eefb950a869f157cb8061;ae7c332c-4277-4779-a982-a347e5ee823a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 15: 404 Client Error. (Request ID: Root=1-68231ffb-11c7d58d17546414459a4ae4;a6450799-978b-4677-a57a-e3ded226de09)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 16: 404 Client Error. (Request ID: Root=1-68231ffb-03add8a07c48260e672c436d;aa9a22fa-9b7f-4e73-bc2f-ad1de0813791)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 17: 404 Client Error. (Request ID: Root=1-68231ffb-407df5825e19cc8675969d95;0fb8b20b-ab2a-4a79-a945-0126a806de78)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 18: 404 Client Error. (Request ID: Root=1-68231ffb-5be306bf4b69d3363d389070;5de2bb40-6611-427d-a645-870c24135166)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 19: 404 Client Error. (Request ID: Root=1-68231ffb-6b1303133b79f3211a667254;80cc5397-5948-4f47-ba82-89dbf5aaec4b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 20: 404 Client Error. (Request ID: Root=1-68231ffb-579e519e772d326037ecea4c;83664148-3610-4273-89ba-3ce2e2324d2c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 21: 404 Client Error. (Request ID: Root=1-68231ffb-72ae7ffe237385f3587414ff;51e7f769-9fa3-4cd5-9acb-a9b9e1cfb775)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 22: 404 Client Error. (Request ID: Root=1-68231ffb-7869ef23221aa63d3fe4ca87;14f54f04-426a-4797-9d2a-ac86acf88f58)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 23: 404 Client Error. (Request ID: Root=1-68231ffb-406d2389663903dd4ad8387e;ebbe50b4-f917-403d-8a83-42c268c1ddbc)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 24: 404 Client Error. (Request ID: Root=1-68231ffb-0f9113d46b7212ef0e61fa90;71c283d2-22c0-4817-8fd7-e76e62b8de25)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 25: 404 Client Error. (Request ID: Root=1-68231ffb-10a6135d60f7e7335285f70e;c49b1f32-34c6-4480-aba9-cba512008a6a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 26: 404 Client Error. (Request ID: Root=1-68231ffb-08039ec8541eb856486ad8ad;6da43c59-f74b-4102-907d-6fbf231c9cc3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 27: 404 Client Error. (Request ID: Root=1-68231ffb-742de4c6016153f90cc3c59a;17bf0271-0b2f-4f25-9d0c-54db8502f0f3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 28: 404 Client Error. (Request ID: Root=1-68231ffb-1845287867ef7b674b7a5064;5351521e-a03d-48c3-829b-c58bec516153)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 29: 404 Client Error. (Request ID: Root=1-68231ffb-2bd7b1995fb52aaa0cbe7057;0967aae5-0398-4677-bf48-4ce519804ce4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 30: 404 Client Error. (Request ID: Root=1-68231ffb-5775b5ce2de34b0f7345714d;e6b794ed-a0f0-4a2b-92a5-5e1bfb8a44e6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 31: 404 Client Error. (Request ID: Root=1-68231ffb-62b899d37eac7aab4046b5f4;40ddc6dd-c858-4586-a048-16968f25dc52)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 32: 404 Client Error. (Request ID: Root=1-68231ffb-0d70415e6adc17d96e45f1cd;f79a859e-5b88-432a-8ef9-15fcd74843f1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 33: 404 Client Error. (Request ID: Root=1-68231ffc-0f1261e14550f30733e968eb;e4785b7f-fc10-449d-8db9-f2bc0de457ad)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 34: 404 Client Error. (Request ID: Root=1-68231ffc-3ec88cf01abfd6bc04f242b7;15e0223a-7c7f-49a6-bbc7-ec87adc339d8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 35: 404 Client Error. (Request ID: Root=1-68231ffc-7588f0fd5b6b61f92c303663;6e79f606-ee0f-47e4-9ec0-17d14a2c6dde)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 36: 404 Client Error. (Request ID: Root=1-68231ffc-04bcff84052030b666b9e880;cd83fabd-ebc2-4f2e-a5c4-23992a1b3d63)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 37: 404 Client Error. (Request ID: Root=1-68231ffc-4a44d49638539192673f5bd9;92e37841-86e4-49ba-9b1b-7c6784813ba0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 38: 404 Client Error. (Request ID: Root=1-68231ffc-302cbbac70d81fe83f10f74b;1431ecbb-3160-48a4-bff5-2f91ade08dad)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 39: 404 Client Error. (Request ID: Root=1-68231ffc-416aeda403fafbd045036221;e5ac09cc-20f5-4a6c-845a-2da900290093)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 40: 404 Client Error. (Request ID: Root=1-68231ffc-6e8b446f3a8d39df0419c50e;a461bede-f39c-4693-b621-cf24056955bb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 41: 404 Client Error. (Request ID: Root=1-68231ffc-4e62748d6014b151061a2b6d;63e13f77-a001-4d05-9678-26c3f87cf41f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 42: 404 Client Error. (Request ID: Root=1-68231ffc-1cc3af0f275022846a1b74b7;da9f0f2b-9e0f-4a3f-9dce-fbb4d298f9ec)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 43: 404 Client Error. (Request ID: Root=1-68231ffc-75b82af6545737863caa5c9f;3c0ce2f3-4cfc-4f11-beee-d89e4f241db4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 44: 404 Client Error. (Request ID: Root=1-68231ffc-17f65a42469651eb4e66484e;59b6644f-cc9b-4065-819f-fd8d8e6edd09)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 45: 404 Client Error. (Request ID: Root=1-68231ffc-773054c9791e97540cabdf89;3afc53db-d0fb-4831-8ac6-4c71849d1163)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 46: 404 Client Error. (Request ID: Root=1-68231ffc-509e54f11e5d75e563b3aa96;02ae22e3-2ada-4408-ab17-4244f7364a67)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 47: 404 Client Error. (Request ID: Root=1-68231ffc-61d5ec034a23b567079ed0a5;c459db7c-49d7-4cc3-ad99-88fa53027411)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 48: 404 Client Error. (Request ID: Root=1-68231ffc-2f473e2b075c7b3a196532df;6b26b8bc-8d37-4637-b22d-7cc58f20d462)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 49: 404 Client Error. (Request ID: Root=1-68231ffd-65ebe1a426ee9a2b7fa767bc;84a6be75-7d2b-466b-b4d2-b80d5f8edf14)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 50: 404 Client Error. (Request ID: Root=1-68231ffd-4d839fa641cc4bfc508788f7;04d14bfd-ffb9-404c-b225-b2dcee70c115)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 51: 404 Client Error. (Request ID: Root=1-68231ffd-5659d3dc6dd405461ada050e;50c9618e-8489-4ecf-b14d-5b769cb48664)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 52: 404 Client Error. (Request ID: Root=1-68231ffd-1adb31cd6af99167125343a3;771be48d-382c-42ac-aa33-cd1a585ee5db)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 53: 404 Client Error. (Request ID: Root=1-68231ffd-7fa1dc940d18179f0645b9b0;c83e54f1-e68b-4d82-9ce9-27d38d9ee6ee)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 54: 404 Client Error. (Request ID: Root=1-68231ffd-7a2206537534909146e50038;ecf51461-7c7f-4231-8e66-00f24293e477)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 55: 404 Client Error. (Request ID: Root=1-68231ffd-4ee698185c03cc5c0929ba94;74313a76-cdd3-45fe-9056-8e79974fb919)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 56: 404 Client Error. (Request ID: Root=1-68231ffd-7e9db2ee1590b96740215a7b;b9a4ea56-ab9c-4aa2-a742-46cb5ea1e7e5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 57: 404 Client Error. (Request ID: Root=1-68231ffd-4fdedcc4557898280ac56516;ed106849-37da-4eb3-ac79-6db121bd2dc9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 58: 404 Client Error. (Request ID: Root=1-68231ffd-158e161b15bf7f1f585c2305;d90e9384-0120-42a1-8f01-3ca7ef491801)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 59: 404 Client Error. (Request ID: Root=1-68231ffd-462471464cce1bed24bbc26d;4cd47ac8-446f-47f1-86a4-d1e481043345)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 60: 404 Client Error. (Request ID: Root=1-68231ffd-518ac3843d3420e2282e7c69;d7f3d971-7133-4d38-8647-132fb5402d8a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 61: 404 Client Error. (Request ID: Root=1-68231ffd-0ec0210722297aaf60264f73;46fa219f-470f-42a1-bb7c-84602ce69f48)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 62: 404 Client Error. (Request ID: Root=1-68231ffe-7e45fe602e36a15c5519658c;8e0d4874-1819-443e-94da-c0a028c6bfda)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 63: 404 Client Error. (Request ID: Root=1-68231ffe-0ed9408946e30c40721f2073;0fe775c1-6aaa-4887-8515-c2382890e9cb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 64: 404 Client Error. (Request ID: Root=1-68231ffe-079853bf65c295ec3a974284;e6c2d215-fedc-4085-88a6-baa2aa37cc53)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 65: 404 Client Error. (Request ID: Root=1-68231ffe-6aefdd0351b34ee116091892;1c243b8d-564a-4187-a94c-7ba33b0673ea)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 66: 404 Client Error. (Request ID: Root=1-68231ffe-19fa861d373b9c4e102fbcc6;bc5b623f-0e91-4177-85cd-8a3e4c1f9e73)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 67: 404 Client Error. (Request ID: Root=1-68231ffe-2b5ab9f22be7040d706cb552;0a06539b-e3da-4d23-900d-11a6d21e32e0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 68: 404 Client Error. (Request ID: Root=1-68231ffe-46c77a2d041534e356e13a40;e5ea19b5-281e-477f-8aa3-c3f6e204df35)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 69: 404 Client Error. (Request ID: Root=1-68231ffe-55b07f8e738c2cf37d16b490;ee66596c-0050-407c-a1f7-c33fd1e969c3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 70: 404 Client Error. (Request ID: Root=1-68231ffe-606255e03092b887645b6eca;88b78e26-2d7f-408b-8a3a-1744ba1a4d44)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 71: 404 Client Error. (Request ID: Root=1-68231ffe-7a715172659418de7e111926;e708c046-4440-48df-8788-8bd6b4e7c41d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 72: 404 Client Error. (Request ID: Root=1-68231ffe-7713d00d557f9a467b3c00a4;5efee4d1-62ac-49a4-8e05-faa42352a4ca)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 73: 404 Client Error. (Request ID: Root=1-68231ffe-4d5bbfa2783adea66e29f89c;39a1acf3-1776-4d52-a35c-a623a7e325e2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 74: 404 Client Error. (Request ID: Root=1-68231ffe-0e048d8b7199c68146edd64a;c396fdde-c4d7-46c2-815a-e47495e00336)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 75: 404 Client Error. (Request ID: Root=1-68231ffe-1e8ac7ee22024b593706d0f6;683e6cf5-eff8-4482-a8df-d963b0bcd1c4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 76: 404 Client Error. (Request ID: Root=1-68231ffe-7441a8914351a5bb46f7a11e;266722c2-d032-4fda-aa03-3d9fe75565cc)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 77: 404 Client Error. (Request ID: Root=1-68231ffe-2f6401991f66f2612bc4e604;502bb1b4-dc77-4f4c-902a-111234f50cae)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 78: 404 Client Error. (Request ID: Root=1-68231fff-713a0703367857bd77d70c40;6b9b6ab7-9069-41a5-9e58-19903152d3ff)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 79: 404 Client Error. (Request ID: Root=1-68231fff-78ac0424598d64b91736a448;e5ffe7b8-30d0-4c6c-bbda-09ec0219402c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 80: 404 Client Error. (Request ID: Root=1-68231fff-7ed57f2c7d5ce8823bed88e8;fb166e7c-ecca-4b6e-865e-408d913cf9f2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 81: 404 Client Error. (Request ID: Root=1-68231fff-5a7ed9a80a68e4b36b3a269f;d0af66e9-916e-4857-939b-fd390d048ef3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 82: 404 Client Error. (Request ID: Root=1-68231fff-65af7a68621786a37c944e8a;3b3eba7c-4a50-45ff-ba86-41d03589119a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 83: 404 Client Error. (Request ID: Root=1-68231fff-609b9b81423e13a50255a9ce;992df321-1eab-4628-95ff-9ea07944eb4c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 84: 404 Client Error. (Request ID: Root=1-68231fff-5012ddb62d9bfe1e3e034719;2c297f9d-daf5-453d-8dc9-11eda144bdc0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 85: 404 Client Error. (Request ID: Root=1-68231fff-5b07361679f8ddf74bc3aa11;91c14839-6448-4ba4-98b2-fe78f6fd6adc)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 86: 404 Client Error. (Request ID: Root=1-68231fff-6b69006e5463ec8a068f1bd2;8cefafaf-f814-40f8-838f-f26a0d88d301)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 87: 404 Client Error. (Request ID: Root=1-68231fff-45a745796c2ac0402f9a71d1;8e8ed7ee-0bea-4466-9d2b-c07c697a6fb7)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 88: 404 Client Error. (Request ID: Root=1-68231fff-6088de99507a97953ba06dd1;b077fb90-2181-43ed-98c4-76d27544a605)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 89: 404 Client Error. (Request ID: Root=1-68231fff-198027d24110565c11ce8040;c2af7ccf-d6ca-4177-bd27-cf1a30608e17)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 90: 404 Client Error. (Request ID: Root=1-68231fff-3c9a7c4e5e3cb6561a759a62;9ac8ecd2-b472-4662-9121-b5b399d9bc6e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 91: 404 Client Error. (Request ID: Root=1-68231fff-0fa8212f6287e8927ba2d3b6;d8860366-de7f-4849-aeb9-5f1d571b0ac8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 92: 404 Client Error. (Request ID: Root=1-68231fff-55f81bc116df3add0edc839f;b0698531-42c7-4f97-84f8-aff4ba86bd72)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 93: 404 Client Error. (Request ID: Root=1-68231fff-5aaf63372847b474742251ba;7369188b-c671-4e20-be46-8aa6ae006eea)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 94: 404 Client Error. (Request ID: Root=1-68231fff-2c2e06e6627d93b53d737f95;924dbb0d-bf5a-4be0-874c-450ea154257c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 95: 404 Client Error. (Request ID: Root=1-68231fff-3e7c405a3c4ea6e522500b8f;b56dfeba-21c0-4d6f-9e1f-d4dfec969e5e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 96: 404 Client Error. (Request ID: Root=1-68231fff-7f9d03b07790a85b0f57ef5b;843deeac-88ac-4e08-974a-317ab5b93492)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 97: 404 Client Error. (Request ID: Root=1-68232000-7ab0950d3b5220af07c2f759;201073de-5b86-4d88-846b-25f6fbf56e94)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 98: 404 Client Error. (Request ID: Root=1-68232000-36af66e636d300713c2ed0b2;9a2e70ef-511b-4297-abc4-094098c50dec)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 99: 404 Client Error. (Request ID: Root=1-68232000-77c1c6320b14d55f4ba132e8;f0d9dd1f-cd6a-421b-ad19-e9490e683601)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 100: 404 Client Error. (Request ID: Root=1-68232000-4e6b241e6272d7c92641b021;3230ac8e-8bdf-47c7-aa38-e7a97e023549)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 101: 404 Client Error. (Request ID: Root=1-68232000-21a12653316dd472353dfa87;0b00da0f-fbe8-4c6f-816a-8fc110056e8b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 102: 404 Client Error. (Request ID: Root=1-68232000-2b1fa43f0ccf5e203cb3af08;fad0da1c-90f1-476e-b53a-2cd3167fa6d4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 103: 404 Client Error. (Request ID: Root=1-68232000-7c150c9045f0e2ac0ab59c3d;44f7e1ee-83ec-420b-b641-f73a73700bfd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 104: 404 Client Error. (Request ID: Root=1-68232000-3cc5fa86225957d65486cadd;a9fa736e-d080-4af0-9573-f7b7c71c0176)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 105: 404 Client Error. (Request ID: Root=1-68232000-765fe02e734146ed4499f901;5d7fd64b-ed04-4e69-895d-e49dde0846db)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 106: 404 Client Error. (Request ID: Root=1-68232000-034ae513325dde883d6f256a;62e05fd8-8716-415f-8573-b9422546990d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 107: 404 Client Error. (Request ID: Root=1-68232000-6937c5f92e4e3d27116db16e;0d90df5f-8c7b-4ceb-99d7-6cced67a752c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 108: 404 Client Error. (Request ID: Root=1-68232000-10409e9c187844e57dd6419f;a3327586-1201-4f2e-9b74-6593242d5c96)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 109: 404 Client Error. (Request ID: Root=1-68232000-5fabf4d80dacf8421d75b805;fb3405c6-3f2f-4b1a-bb36-8ddd34510855)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 110: 404 Client Error. (Request ID: Root=1-68232000-17627b2e2cfc5a4f19845ab2;98f893fb-a546-4ce2-bfcf-b5d066799d97)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 111: 404 Client Error. (Request ID: Root=1-68232000-333dbf704230b4385957140d;8b5aff1c-c761-4062-a128-17cee887c0aa)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 112: 404 Client Error. (Request ID: Root=1-68232000-182ecf482a64266760f775d1;c1aea093-3eb9-4873-8d08-cdeb154dd41a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 113: 404 Client Error. (Request ID: Root=1-68232000-4445b0a273d60045749430b2;bc52aa63-b56c-43e7-a37d-ce05e6f5c49c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 114: 404 Client Error. (Request ID: Root=1-68232000-3f8e655664d0dfb71fa86dc4;e0da12c6-e34d-4792-905c-78718ff6a793)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 115: 404 Client Error. (Request ID: Root=1-68232001-1200115873ded8661b1ee991;b1d80881-71a9-46af-98e8-407cf0538edf)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 116: 404 Client Error. (Request ID: Root=1-68232001-7f47f2c705335565395516c3;1d727d8e-22b3-43ad-8f96-5fee40573e98)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 117: 404 Client Error. (Request ID: Root=1-68232001-7929ea9b69b2361e502049d0;46cbe116-c61b-45a6-b1f3-cd2196448b67)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 118: 404 Client Error. (Request ID: Root=1-68232001-425743100a6443ec6b1303a3;95155074-9755-48eb-8c3b-eea207295011)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 119: 404 Client Error. (Request ID: Root=1-68232001-6a046e9313dba49200da36f8;3bbfef97-c9a9-4732-b2c1-04c6ace99ff6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 120: 404 Client Error. (Request ID: Root=1-68232001-2be90cc42c95140909f84bf7;e8d074d4-87b9-478d-95d7-16bb7356ab25)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 121: 404 Client Error. (Request ID: Root=1-68232001-04cc1ecb421ec5ce56ffdccc;141a3fd2-edb1-420a-9eae-4ef1f20bbec0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 122: 404 Client Error. (Request ID: Root=1-68232001-7bcc6d9b176a3ee50f34b089;8efd1322-1621-4266-9c69-478523de1187)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 123: 404 Client Error. (Request ID: Root=1-68232001-40dfbde214cab1221af9c726;a9a66a60-8bd7-4e7f-83d1-a5458e10a003)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 124: 404 Client Error. (Request ID: Root=1-68232001-4a5d2555050e94792c6a1599;f5d15863-0e0b-4550-b284-a04b0f6669ff)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 125: 404 Client Error. (Request ID: Root=1-68232001-3592a18d5301358a3f61298b;edfd8f75-f1e7-473e-bceb-05fce7b31ca2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 126: 404 Client Error. (Request ID: Root=1-68232001-12f238d6260229d75a0700e5;53bd049b-d65c-470e-bb9c-ed1c953205a2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 127: 404 Client Error. (Request ID: Root=1-68232001-6824c9ba17522fed5f482e38;6b887c46-6ede-4a73-8a48-1e567cdad5c2)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 128: 404 Client Error. (Request ID: Root=1-68232001-3e8cf72d5176b9c635fde7f8;2f313dac-b98a-4577-b308-cc6ec8bf5a88)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 129: 404 Client Error. (Request ID: Root=1-68232001-462ed76e276d6db64e5e78ca;5fcdaaf9-52a3-4943-aa38-3a72a89b89ce)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 130: 404 Client Error. (Request ID: Root=1-68232001-742817f8669687d1688ff3a0;9b2a404c-713b-4d71-99fd-12b867946dfa)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 131: 404 Client Error. (Request ID: Root=1-68232001-2a6ed8bb468a0a853dcc724e;ee0a35f2-f188-47b8-8414-80e30cd4d22f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 132: 404 Client Error. (Request ID: Root=1-68232001-08cf16fc18aef01005d0a3f3;a0891b92-55ef-4b04-a10b-8e4d247b7647)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 133: 404 Client Error. (Request ID: Root=1-68232001-40d46acc41be5e4d549d5eac;3aa1dab7-a84f-4e4e-ad56-5186a64c686f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 134: 404 Client Error. (Request ID: Root=1-68232001-18151a9c443afff8339206e7;c40ccd19-b32b-41dd-9473-bbce36bbefb6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 135: 404 Client Error. (Request ID: Root=1-68232002-421a4c994d88b999389416ad;1852be84-cb92-4c0e-8016-272a9ed2b2e6)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 136: 404 Client Error. (Request ID: Root=1-68232002-174f927c005247082ed8d95a;7cb0c8d6-0642-4815-8d06-c25d067330b1)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 137: 404 Client Error. (Request ID: Root=1-68232002-7fdc42bb60f4d73735bc66ec;53421426-fce9-41b9-a3da-fb1fa03f409c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 138: 404 Client Error. (Request ID: Root=1-68232002-563ad94e74af111b1a9530f3;34446c33-7a78-4cff-9a3a-117fcb409cfc)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 139: 404 Client Error. (Request ID: Root=1-68232002-1f242ffe419c1fcb34cc2565;507d5868-c52d-43f9-b9da-81566dc326e7)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 140: 404 Client Error. (Request ID: Root=1-68232002-766f5f72113da2931efd4b70;d1a7cb13-ccec-4612-a56e-b2be523c5411)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 141: 404 Client Error. (Request ID: Root=1-68232002-684a07f317fbbd034f72882b;e50f6786-b4a4-4df8-becc-6f2487469b67)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 142: 404 Client Error. (Request ID: Root=1-68232002-24308646525f03c505ca786b;c46fa4b4-16a3-4d35-a1a2-54ccb2ee62c0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 143: 404 Client Error. (Request ID: Root=1-68232002-670a0fd9287c328007063f2d;79628828-a653-443b-bc6b-859339c58c62)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 144: 404 Client Error. (Request ID: Root=1-68232002-2f52e6786eb44ddd6fa98253;c562bdaa-767e-4cdd-b3d7-3756d1b12ab0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 145: 404 Client Error. (Request ID: Root=1-68232002-59869185063a815f0de1b520;8e71604c-6089-4948-b083-298d0d1b3e58)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 146: 404 Client Error. (Request ID: Root=1-68232002-7dbfb7e06b20a54d28ad829b;f377700c-9ddd-4b10-8606-eb6d26283227)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 147: 404 Client Error. (Request ID: Root=1-68232002-5b6e1a28681b32292b4a8dc4;2f53d96a-23ac-4b91-be48-0ff7f600268e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 148: 404 Client Error. (Request ID: Root=1-68232002-3c7d27d72fecf7dd5f5584f7;64f9715c-00b0-4f48-89fd-620eaf8d3d6d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 149: 404 Client Error. (Request ID: Root=1-68232002-67e5e69c49c050063bf1ef38;578f2b32-2bf8-4af4-aa02-9d653f287f3a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 150: 404 Client Error. (Request ID: Root=1-68232002-7cfc2d5e49cbd57765fbe067;222280f8-a9b2-4515-b079-814dbd58971f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 151: 404 Client Error. (Request ID: Root=1-68232002-5e6237445eab6b035310d2a2;53437066-e1ab-4504-bf00-f7af6ac611eb)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 152: 404 Client Error. (Request ID: Root=1-68232003-0a14c098033339e36e5a9383;d7e1b3f7-b93f-4e99-b4a3-b5b02e8f659b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 153: 404 Client Error. (Request ID: Root=1-68232003-6432d7160915b51b3a567045;6bd8fa87-f6b7-4802-a9e7-126638d3d58c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 154: 404 Client Error. (Request ID: Root=1-68232003-150d245f5baef8ff1e15b7c4;95325d56-6e1d-415f-8786-1d78ae7fa1bc)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 155: 404 Client Error. (Request ID: Root=1-68232003-1544bc5a7e750dff28b5bb21;0e960cd6-78fd-450f-a433-c865febf208d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 156: 404 Client Error. (Request ID: Root=1-68232003-34582c226654cdd817c71fa6;aa3a3917-3ed7-400b-b80b-cfc1e00d820d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 157: 404 Client Error. (Request ID: Root=1-68232003-25ec35af70f5fcce08366112;e5281f6a-2cba-4a20-a83b-448600f7915d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 158: 404 Client Error. (Request ID: Root=1-68232003-3fbc08cb10faa0dc007adb36;49b9d2da-5485-4679-a915-89e46665291a)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 159: 404 Client Error. (Request ID: Root=1-68232003-137a9c37785fed2728b525f8;2508687f-03f8-4b5d-84ae-f9d5c7d33bf9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 160: 404 Client Error. (Request ID: Root=1-68232003-23747f406ffe5b4e4853e96a;5827245f-e601-486a-8fd0-c33b6ea6798f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 161: 404 Client Error. (Request ID: Root=1-68232003-00dafd3a39e660ce011129d7;c30e6bcf-d4cd-4781-9617-110b20308b05)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 162: 404 Client Error. (Request ID: Root=1-68232003-01ac81d34f67e3c54f440f5f;28b04020-1107-4cbe-a6fb-05bda8c13199)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 163: 404 Client Error. (Request ID: Root=1-68232003-23e74d49472287fd4d40c667;9f64a440-3a16-46a6-9c8a-7adc697e0b4e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 164: 404 Client Error. (Request ID: Root=1-68232003-5a63a7d80b1795293d426a61;38a73e05-a322-45d8-8acb-e85bc0c4e23f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 165: 404 Client Error. (Request ID: Root=1-68232003-318f4e047ed7df9a3fbd925b;ed816d2b-c7ce-4c91-b283-8612e9da74a8)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 166: 404 Client Error. (Request ID: Root=1-68232003-258c8a270d53afc1026f6da5;4f0453e4-27eb-4307-bace-d93f22234793)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 167: 404 Client Error. (Request ID: Root=1-68232003-2301c7ff78b350d5308ed49d;5c7ddce6-d567-45fd-9cb3-e103aac47cc5)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 168: 404 Client Error. (Request ID: Root=1-68232003-59a27bb30451a49d67e6f5df;d1c439d5-8bcf-4a8a-804d-1329c5667528)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 169: 404 Client Error. (Request ID: Root=1-68232003-3baf8d616eecb94c3ba5101e;6c3df005-b113-47ef-b99b-ebd52dfe3417)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 170: 404 Client Error. (Request ID: Root=1-68232003-1001e25877fccc9475a7e763;7451f625-bf51-4b42-a1e9-503eb9b0e2d4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 171: 404 Client Error. (Request ID: Root=1-68232004-483f9c1e2d2343f508413c58;2547cabf-d7e6-4f72-b129-b819aeb57156)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 172: 404 Client Error. (Request ID: Root=1-68232004-2a862e144dda9e8962287de8;040b4756-180e-4c6a-bbc5-a4ab4d2cff63)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 173: 404 Client Error. (Request ID: Root=1-68232004-588616f16c4e6b6d4a0efb92;17142508-94b3-43f0-9381-34e3c1e7a8ba)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 174: 404 Client Error. (Request ID: Root=1-68232004-21a621363746c24a1555c02a;64485f52-b2ae-43d4-ac8d-eb2fd8b10df4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 175: 404 Client Error. (Request ID: Root=1-68232004-1bbfa7937f68d6c50593e34c;9065b31f-04d0-4795-b34f-c322dc88fe2b)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 176: 404 Client Error. (Request ID: Root=1-68232004-11a00b545cac22270cf9c86f;9fad8c20-2f42-43f2-8b69-eb63a6024d9c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 177: 404 Client Error. (Request ID: Root=1-68232004-202aa32040eed36f4c8f7c0c;72ee5a88-86ea-4df4-a6f6-5244f110678c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 178: 404 Client Error. (Request ID: Root=1-68232004-74f547fc6e5f86723bbb9c63;73020240-a16a-4890-9824-191f31faecc0)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 179: 404 Client Error. (Request ID: Root=1-68232004-6a4e248d4aa4598003343d0d;8c523961-dfe0-4873-82d0-ca08baae87de)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 180: 404 Client Error. (Request ID: Root=1-68232004-2bfa7ab32a4dfef81055cac6;b61d151b-f735-4be9-95b3-8362df4c6502)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 181: 404 Client Error. (Request ID: Root=1-68232004-26b2bd847a4ea89a3adc6c1b;79628376-4c9a-40c5-902c-7cdc55dc0ff4)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 182: 404 Client Error. (Request ID: Root=1-68232004-0cc4bddd442ac8fa7d5c45a7;4906223f-58c8-4390-a35d-fc678c0fb585)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 183: 404 Client Error. (Request ID: Root=1-68232004-1e4964245b9c961178111d5d;e258a588-128b-4185-80cd-ef2cdbfdbbcd)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 184: 404 Client Error. (Request ID: Root=1-68232004-4829a382705f16433fa509cc;3818657c-967c-43ac-a6ed-4bbd96b4ad73)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 185: 404 Client Error. (Request ID: Root=1-68232004-1947cc2b629cdca70d821398;9efd2ea9-0696-4ff1-8c35-33109a4dbf63)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 186: 404 Client Error. (Request ID: Root=1-68232004-032f6b8d5fb4d8fd798e95b3;195f25fa-8940-42ab-ac5e-59bb24d198ed)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 187: 404 Client Error. (Request ID: Root=1-68232005-524ca13e5d2731b46a3ca626;6783aef2-c44d-415f-862e-244e3e115a6f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 188: 404 Client Error. (Request ID: Root=1-68232005-6d3992a61d253f924d1c0bbc;08f9519c-efcc-47c0-921e-04b0e5489b2e)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 189: 404 Client Error. (Request ID: Root=1-68232005-70c5df0618f408391f60ce2e;e6c9ce29-3e7e-4048-816c-0907ff65eb04)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 190: 404 Client Error. (Request ID: Root=1-68232005-09e61f7c3ebd2b424093109c;94e5eb37-8f86-4868-b6bd-33479a1370a3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 191: 404 Client Error. (Request ID: Root=1-68232005-4728cb7b4010cbfe6578066b;da19fe5c-e9c8-4a1e-8cb1-eb4f557b9903)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 192: 404 Client Error. (Request ID: Root=1-68232005-0e4f5139347276bc41493405;43e445cd-712f-48a7-a99e-42e2f15a5859)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 193: 404 Client Error. (Request ID: Root=1-68232005-53c215ff771a009f2a54a08a;23b10307-a46c-42a4-8ac4-6b2f0cb7d0a3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 194: 404 Client Error. (Request ID: Root=1-68232005-6431159524907f8d214c71d1;9810c171-1954-4891-b917-a44abf4a7f59)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 195: 404 Client Error. (Request ID: Root=1-68232005-6993b2e15a7f3a4819ea5dc9;f3324c4f-d820-48d1-9eef-94428731103d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 196: 404 Client Error. (Request ID: Root=1-68232005-0a97f49c7c0938763ddf0978;45411ece-f293-4f69-a5a8-a39287d31689)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 197: 404 Client Error. (Request ID: Root=1-68232005-5f60b3c700655ef3164eec44;9dce92e6-74bc-4c9f-85ec-5b75a4b0dbb3)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 198: 404 Client Error. (Request ID: Root=1-68232005-2aa1571859128eab5fab42ae;5094ee42-e5b9-42bc-a54c-b30fd032b255)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 199: 404 Client Error. (Request ID: Root=1-68232005-75719f5126f5328c69883e3c;05f0a2c1-60ab-45e8-93d1-433d02acbd3f)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 200: 404 Client Error. (Request ID: Root=1-68232005-681455210d24811d34f6d3c8;cefbd6ce-0715-4be3-bab6-b67654e21d26)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 201: 404 Client Error. (Request ID: Root=1-68232006-3d29ee364262cf74354edd25;73b7e459-5d12-4766-863d-f5e4b2744556)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 202: 404 Client Error. (Request ID: Root=1-68232006-2baadf0300a1f6e21b7f7b04;36648b39-7ec5-4d06-93a0-49806c2c087d)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 203: 404 Client Error. (Request ID: Root=1-68232006-1e2bbb5c52a9bc666438ec79;d1c5c698-fdfc-4b8c-a9ac-f227e74bc6c9)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 204: 404 Client Error. (Request ID: Root=1-68232006-63b8a09f1713bd7b7acc8d20;ac1e94b2-cb55-41fc-895a-1ea48f8c6f40)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 205: 404 Client Error. (Request ID: Root=1-68232006-4c0448e97c371c5124cc2483;c63eaf18-66c0-4c25-9839-57dd1a63b762)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Error processing entry 206: 404 Client Error. (Request ID: Root=1-68232006-1bd4f06c11b70129419d24f6;98d27092-bccd-4c6e-adbe-0c09c672468c)
+
+Entry Not Found for url: https://huggingface.co/mradermacher/Clinician-Note-2.0a-GGUF/resolve/main/clinician-note-2.0a.Q4_K_M.gguf.
+Results saved to key_phrases_results.csv
+End time: Tue May 13 10:33:48 AM UTC 2025

@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,2,Difficulty swallowing.
+P,3,2,It's been hard for me to swallow certain foods and I also have pain when I swallow down in my chest.
+P,3,0,It's really just the bigger pieces of food that seem they're getting stuck.
+P,3,1,"I've been drinking more, eating things like pizza burgers... it's been pretty busy"
+O,1,2,I've gained some weight
+O,1,0,My belly hurts up here
+S,0,2,Two areas of mild narrowing in the mid and lower portions of your esophagus... consistent with esophagitis.
+A,2,0,Acute esophagitis.
+S,0,0,Prescribe protonix 40 mg once a day... first thing in the morning.
+S,0,0,Carafate 1 gram four times a day for one month.
+A,2,1,Schedule you for an upper endoscopy.
+S,0,1,"Eat slowly and chew your food more thoroughly... avoid citrus foods, fruits, and spicy foods until your symptoms improve."
+O,1,0,See you again next week for that endoscopy.
+S,0,0,Pain to palpation of epigastric area... no peritoneal signs or rebound.
+O,1,1,I can see how that would increase your stress

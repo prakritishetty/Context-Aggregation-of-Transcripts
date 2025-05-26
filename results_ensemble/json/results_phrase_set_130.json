@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "Roger is a 62-year-old male here for emergency room follow-up for some chest pain.",
+    "We were doing a bunch of yard work and it was really hot over the weekend and I was short of breath and I felt a little chest pain for probably about an hour or.",
+    "No, I never have [had chest pain before].",
+    "After we were done, I felt fine ever since, but I thought it was worth looking into.",
+    "No other symptoms since?",
+    "No, not on my immediate family, but I have on my cousin's side of the family [for heart disease].",
+    "No problem in rehab and recovery [after knee surgery].",
+    "No chest pain while you were doing exercises in PT for your knee? No.",
+    "They were a little concerned about [blood pressure], but they kept me there for a few hours and it seemed to regulate after effect. It didn't seem to be a problem when I went home.",
+    "Your blood pressure was about 180 over 95 when you went into the emergency room.",
+    "I feel a little enlarged thyroid here that's not tender. You have a carotid bruit on the right side and your lungs are clear. Your heart is in a regular rate and rhythm, but I hear a three out of six systolic ejection murmur. Your abdomen is nice and soft. There is the healed scar on your knee from your prior knee surgery, and there's no lower extremity edema.",
+    "Your EKG is normal.",
+    "Your ejection fraction on echocardiogram was abnormal [described as 'a little bit of a low pumping function'].",
+    "Your blood pressure's still high.",
+    "I suspect an element of coronary artery disease as well as pumping dysfunction.",
+    "We'll change your blood pressure regimen. We'll put you on carvedilol, 25 milligrams twice a day. That helps with coronary disease as well as your pumping function of your heart.",
+    "I want to go ahead and order a cardiac catheterization on you and make sure that we don't have any blockages in your heart arteries responsible for the chest pain.",
+    "Continue lisinopril 10 milligrams a day.",
+    "Schedule that cath for you.",
+    "Sounds good",
+    "could be related to severe hypertension or heart disease"
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    2,
+    1,
+    2,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    1,
+    2,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16196095943450928,
+    "calinski_harabasz_score": 5.368627316353616,
+    "davies_bouldin_score": 1.262319921762811
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9981049299240112,
+      0.9974958896636963,
+      0.9954040050506592
+    ],
+    [
+      0.9981049299240112,
+      1.0,
+      0.9932254552841187,
+      0.9911048412322998
+    ],
+    [
+      0.9974958896636963,
+      0.9932254552841187,
+      1.0000001192092896,
+      0.9944828748703003
+    ],
+    [
+      0.9954040050506592,
+      0.9911048412322998,
+      0.9944828748703003,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07678665965795517,
+    "1": 0.011508842930197716,
+    "2": 0.16279789805412292,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Roger is a 62-year-old male here for emergency room follow-up for some chest pain."
+      ],
+      "1": [
+        "No, I never have [had chest pain before].",
+        "No, not on my immediate family, but I have on my cousin's side of the family [for heart disease].",
+        "Your blood pressure was about 180 over 95 when you went into the emergency room.",
+        "Your blood pressure's still high.",
+        "We'll change your blood pressure regimen. We'll put you on carvedilol, 25 milligrams twice a day. That helps with coronary disease as well as your pumping function of your heart.",
+        "I want to go ahead and order a cardiac catheterization on you and make sure that we don't have any blockages in your heart arteries responsible for the chest pain."
+      ],
+      "0": [
+        "No chest pain while you were doing exercises in PT for your knee? No.",
+        "Your ejection fraction on echocardiogram was abnormal [described as 'a little bit of a low pumping function']."
+      ]
+    },
+    "2": {
+      "2": [
+        "We were doing a bunch of yard work and it was really hot over the weekend and I was short of breath and I felt a little chest pain for probably about an hour or."
+      ],
+      "0": [
+        "After we were done, I felt fine ever since, but I thought it was worth looking into."
+      ],
+      "1": [
+        "They were a little concerned about [blood pressure], but they kept me there for a few hours and it seemed to regulate after effect. It didn't seem to be a problem when I went home."
+      ]
+    },
+    "1": {
+      "2": [
+        "No other symptoms since?",
+        "No problem in rehab and recovery [after knee surgery].",
+        "I suspect an element of coronary artery disease as well as pumping dysfunction.",
+        "Continue lisinopril 10 milligrams a day."
+      ],
+      "0": [
+        "Your EKG is normal.",
+        "Schedule that cath for you."
+      ],
+      "1": [
+        "Sounds good",
+        "could be related to severe hypertension or heart disease"
+      ]
+    },
+    "3": {
+      "0": [
+        "I feel a little enlarged thyroid here that's not tender. You have a carotid bruit on the right side and your lungs are clear. Your heart is in a regular rate and rhythm, but I hear a three out of six systolic ejection murmur. Your abdomen is nice and soft. There is the healed scar on your knee from your prior knee surgery, and there's no lower extremity edema."
+      ]
+    }
+  }
+}

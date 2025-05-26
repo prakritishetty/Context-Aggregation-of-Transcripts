@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,"I've been feeling tired, really lacking a lot of energy, and I have swollen joints in my elbows, just really hurts."
+S,1,2,"I've been a little nauseous. I have n't been able to eat much. I've been trying just to keep,, toast and crackers and that's all about I've been able to stomach, really."
+P,2,0,Michelle is a 31-year-old female with a past medical history of type 2 diabetes and hypertension who presents with abnormal lab finding.
+O,0,2,"You had had an insect bite, and, it came back positive for Lyme."
+S,1,0,Have you noticed any other rash anywhere else? [Patient]: I have. [Doctor]: Sometimes they describe it as looking as a bull's-eye. [Patient]: Yes.
+S,1,0,"On physical examination, you do have some swelling of your elbow joints bilaterally. Does it hurt when I touch them? [Patient]: It does."
+S,1,0,"On your skin examination, you do have a bull's-eye rash on your abdomen on the left-hand side. It’s warm to palpation. Any pain with that? [Patient]: No, no pain for that."
+O,0,0,"Hey, Dragon, show me the Lyme titer. You can see here, in reviewing the results of your Lyme titer, it is elevated."
+A,3,2,"In reviewing the results of your labs, everything else looks good. Again, you don’t have an elevated white blood cell count or anything that."
+S,1,1,"I want to prescribe you doxycycline, 100 milligrams twice a day. You have to take it for three weeks."
+A,3,0,I’m going to touch base with an infectious disease doctor to make sure that there’s not anything else that we need to do.
+O,0,1,I want you to continue to record your blood pressure regularly.
+A,3,0,I’m going to order a hemoglobin A1c and just this. Make sure we don’t have to make any changes to the metformin.
+A,3,1,"I’m going to continue you on the lisinopril, 10 milligrams a day, and I’m going to go ahead and order a lipid panel."
+A,3,0,You’re doing a really good job of managing your hypertension.
+O,0,1,You have been compliant with dietary modifications including limiting your sodium intake.
+O,0,1,I want to see you again next week for a follow-up for this.

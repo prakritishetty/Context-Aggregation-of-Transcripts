@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,i was in a car crash
+O,2,0,the third crash i had surgery but i was fine until this crash
+S,1,2,that's when i was coming home from the pain clinic because my neck hurt and my back hurt but that was in february
+S,1,0,they had prescribed it recently i was i was on fentanyl [...] i have n't gotten a prescription for several weeks
+A,0,2,on a scale of one to ten [...] twelve
+S,1,1,it's the sharp incapacitating pain i ca n't work
+A,0,0,numbness [patient] my left arm and my leg
+A,0,0,any spasms [patient] of course
+A,0,0,pain on palpation both on the bony process and on the muscle
+A,0,1,moderate range of movement
+P,3,0,we're gon na upgrade to an mri
+A,0,0,robaxin 1500 mg every 6 to 8 hours
+S,1,1,i want you to put ice on that [...] and roll through these exercises every morning
+P,3,0,we'll see about locally injecting the area
+S,1,1,we're gon na give you off for work because you ca n't move

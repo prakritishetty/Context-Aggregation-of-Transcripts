@@ -1,0 +1,25 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,I really don't know where I got it but I do get out in the woods and I do spend a lot of time out in the yard but I've got a tick bite around my knee and it's been over a week and it just burns and just quite annoying.
+S,0,1,"I have not [fever or chills], it just feels warm on that spot."
+S,0,0,Nothing other than my typical arthritic pain [regarding joint pain].
+S,0,0,"I did go hunting not long ago, couple of weeks ago."
+O,1,0,There is evidence of a bull’s eye rash over the knee
+S,0,1,My concern is that you might have Lyme disease based on the presentation of your knee
+S,0,1,I'm going to start you on doxycycline 100 mg twice a day for about three weeks
+S,0,1,I'm also going to send a Lyme titer as a Western blot to see if you do in fact have Lyme disease
+P,3,2,Your blood sugars are running in the one twenties
+S,0,1,I’d like to avoid intravenous antibiotics which we can avoid but I wanted to see how you do with this
+P,3,0,Continue lisinopril 20 mg once a day
+P,3,1,Order a lipid panel just to make sure that everything is with your cholesterol
+P,3,1,Order a hemoglobin A1c and continue you on the metformin 1000 mg twice daily
+P,3,1,I can go ahead and order a basic metabolic panel just to make sure that your kidney function is stable
+O,1,2,Full range of motion of the knee
+O,1,2,There is pain to palpation of the anterior knee
+O,1,0,"Denies any fever, chills, flu-like symptoms, body aches, or trouble waking"
+O,1,2,Reports warmth on the right knee
+A,2,0,Reports headache
+O,1,0,"Blood pressure is 122/70 mmHg, heart rate 67 bpm, temperature 98.4°F"
+O,1,0,Neck is supple without thyromegaly or lymphadenopathy
+A,2,0,Lungs clear bilaterally
+O,1,0,"Heart has regular rate and rhythm, no murmurs, gallops, or rubs"
+O,1,1,"Erythema, edema, and fluctuance over the right patella"

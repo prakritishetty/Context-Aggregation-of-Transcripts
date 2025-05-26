@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,Right foot pain.
+S,0,1,Dropped a landscape brick on your foot yesterday while doing yard work.
+P,3,2,"It's a little sore today but I hurt my foot before... sometimes it'll give me trouble, feels a little sore, swells up at times."
+P,3,0,Twenty years ago I broke my ankle... had to put in a cast... my other ankle too is sore sometimes and I've had surgery for that too.
+S,0,0,Eleven out of ten.
+A,2,2,The whole foot is numb... been for a long time.
+P,3,1,I kept working... it's got swollen... my doctor told me I had to go see you.
+S,0,1,No I feel taking the medicine.
+O,1,0,Bruising on the bottom and top part of the foot... associated swelling... tenderness to palpation for midfoot... strong bounding dorsalis pedis pulse... capillary refill is brisk in less than three seconds.
+O,1,0,Dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and presence of bony fragments.
+A,2,0,Lisfranc fracture... fracture to your second metatarsal bone and the top of your foot.
+A,2,1,You're most likely going to need surgery... plates and screws... outpatient surgery... same day... non-weight-bearing for six to eight weeks... cast and crutches.
+A,2,0,Order an MRI just to assess if there is any injuries to those ligaments.
+A,2,1,If we have poor bone alignment or ligament healing... losing the arch in your foot... developing arthritis.
+S,0,1,What about putting in a cast can I just stay in the cast?
+S,0,1,If the surgery is going to be tomorrow when am I going to get my MRI?
+S,0,1,We'll get you your MRI this afternoon.

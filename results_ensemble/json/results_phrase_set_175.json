@@ -1,0 +1,207 @@
+{
+  "phrases": [
+    "Recurrent lung infections.",
+    "I'm a farmer.",
+    "coughing a lot a lot of mucus even had some shortness of breath and even a low-grade fever.",
+    "every month or every other month especially over the past six months.",
+    "started unloading a lot of hay which I don't usually do",
+    "my symptoms start the days that I'm unloading hay.",
+    "no I don't [wear a mask]",
+    "none of us do.",
+    "I've been helping my brother out",
+    "there is ten of us [siblings].",
+    "no I have never had any problems with allergies,",
+    "I don't smoke,",
+    "live with anybody who does.",
+    "respiratory rate is twenty",
+    "oxygen satting fine at ninety nine percent.",
+    "some fine rales on your lung exam",
+    "no murmurs rubs or gallops.",
+    "round glass opacities",
+    "hypersensitivity pneumonitis... another name is farmer's lung",
+    "bacteria and/or mold in the hay.",
+    "prescribe a course of an oral steroid,",
+    "CT scan of your lungs,",
+    "pulmonary function test.",
+    "eliminate your exposure to the hay or wear a respirator when moving hay.",
+    "the patient understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    2,
+    0,
+    2,
+    2,
+    0,
+    1,
+    2,
+    1,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    2,
+    2,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10096284002065659,
+    "calinski_harabasz_score": 3.823319871301851,
+    "davies_bouldin_score": 1.6102481418341728
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9987478256225586,
+      0.9970731139183044,
+      0.9951706528663635
+    ],
+    [
+      0.9987478256225586,
+      0.9999997019767761,
+      0.9983428120613098,
+      0.9957790374755859
+    ],
+    [
+      0.9970731139183044,
+      0.9983428120613098,
+      1.0000001192092896,
+      0.9940871000289917
+    ],
+    [
+      0.9951706528663635,
+      0.9957790374755859,
+      0.9940871000289917,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06276389956474304,
+    "1": 0.07875416427850723,
+    "2": 0.18010491132736206,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Recurrent lung infections.",
+        "respiratory rate is twenty",
+        "round glass opacities",
+        "bacteria and/or mold in the hay.",
+        "pulmonary function test.",
+        "the patient understands and agrees with the recommended medical treatment plan."
+      ],
+      "0": [
+        "oxygen satting fine at ninety nine percent.",
+        "some fine rales on your lung exam",
+        "no murmurs rubs or gallops."
+      ],
+      "1": [
+        "prescribe a course of an oral steroid,",
+        "CT scan of your lungs,"
+      ]
+    },
+    "1": {
+      "1": [
+        "I'm a farmer.",
+        "none of us do.",
+        "there is ten of us [siblings].",
+        "live with anybody who does."
+      ],
+      "2": [
+        "coughing a lot a lot of mucus even had some shortness of breath and even a low-grade fever.",
+        "my symptoms start the days that I'm unloading hay.",
+        "eliminate your exposure to the hay or wear a respirator when moving hay."
+      ],
+      "0": [
+        "every month or every other month especially over the past six months."
+      ]
+    },
+    "2": {
+      "2": [
+        "started unloading a lot of hay which I don't usually do",
+        "I've been helping my brother out"
+      ],
+      "0": [
+        "no I don't [wear a mask]",
+        "I don't smoke,"
+      ],
+      "1": [
+        "no I have never had any problems with allergies,"
+      ]
+    },
+    "3": {
+      "0": [
+        "hypersensitivity pneumonitis... another name is farmer's lung"
+      ]
+    }
+  }
+}

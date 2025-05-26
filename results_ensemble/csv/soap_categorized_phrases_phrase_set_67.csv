@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,0,i was in a car accident
+A,0,2,hit in the back and my neck went forward and my head went forward really quick
+A,0,0,that was about a week ago
+S,1,2,on a scale of one to ten how severe is it [patient] i would say it's about a seven
+S,1,1,it's not a constant pain but whenever i move my head which is a lot i i feel it
+A,0,2,it's in the back of my neck
+S,1,0,i've tried some ibuprofen that helped a little bit but not too much... just about five out of ten
+P,2,2,positive pain to palpation of the soft tissues of the neck
+P,2,0,positive pain with flexion
+P,2,0,severe positive pain to extension
+P,2,0,positive pain with rotation
+P,2,1,positive pain on lateral bending
+S,1,1,no i didn't want to do that... no that i know about
+S,1,1,i had a couple early on... no it just stays on monday
+A,0,0,no hearing any hearing problems visual disturbances
+S,1,1,i played football years ago but i didn't have any issues with my neck though
+O,3,0,motrin six hundred milligrams every six to eight hours
+O,3,0,flexeril ten milligrams every twelve hours as needed
+A,0,0,i also want to order an mri
+A,0,1,refer you to either physical rehab or a chiropractor once we get the results of the mri
+A,0,0,this is commonly referred to as whiplash

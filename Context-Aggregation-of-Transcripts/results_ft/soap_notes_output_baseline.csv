@@ -1,0 +1,12 @@
+dialogue,doctor_notes,generated_soap_note
+"Doctor: What brings you back into the clinic today, miss? 
+Patient: I came in for a refill of my blood pressure medicine. 
+Doctor: It looks like Doctor Kumar followed up with you last time regarding your hypertension, osteoarthritis, osteoporosis, hypothyroidism, allergic rhinitis and kidney stones.  Have you noticed any changes or do you have any concerns regarding these issues?  
+Patient: No. 
+Doctor: Have you had any fever or chills, cough, congestion, nausea, vomiting, chest pain, chest pressure?
+Patient: No.  
+Doctor: Great. Also, for our records, how old are you and what race do you identify yourself as?
+Patient: I am seventy six years old and identify as a white female.","Symptoms: no fever, no chills, no cough, no congestion, no nausea, no vomiting, no chest pain, no chest pressure.
+Diagnosis: hypertension, osteoarthritis, osteoporosis, hypothyroidism, allergic rhinitis, kidney stones
+History of Patient: 76-year-old white female, presents to the clinic today originally for hypertension and a med check, followed by Dr. Kumar, issues stable
+Plan of Action: N/A",

@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,back pain on my side lasting about a week
+A,0,0,blood in my urine
+P,3,2,pain moved down to lower side
+P,3,0,constant pain
+P,3,2,no pain during urination
+P,3,0,nausea without vomiting
+A,0,1,father has history of kidney stones
+O,1,2,first occurrence of kidney stones
+O,1,0,0.5 cm kidney stone in proximal ureter
+A,0,1,no hydronephrosis
+P,3,1,prescribed ibuprofen 800 mg for pain
+O,1,1,provided urine strainer to monitor stone passage
+A,0,0,"ordered BMP, urinalysis, urine culture"
+S,2,0,follow-up in 1-2 weeks; lithotripsy if persistent symptoms

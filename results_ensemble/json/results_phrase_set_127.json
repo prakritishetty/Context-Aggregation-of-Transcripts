@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Your hemoglobin is low.",
+    "Over the past couple of months, I've been really tired and dizzy.",
+    "I've been getting tired even just walking a mile or going to work, doing things that I've done in the past every day.",
+    "I had a colonoscopy three years ago for blood in my stools, but nothing since.",
+    "I\u2019ve been traveling a lot... I stopped at McDonald\u2019s and got two cheeseburgers. I could be doing better. I\u2019ve noticed some swelling in my legs.",
+    "No, I haven\u2019t [seen blood in stools]. I did about three years ago, and I did a colonoscopy for that, but nothing since.",
+    "No issues since [the colonoscopy showed mild diverticulosis].",
+    "No weight loss or passing out... just a bit dizzy.",
+    "I get seasonal allergies, so some nasal congestion.",
+    "I hear a three out of six systolic ejection murmur.",
+    "Trace to one plus pitting edema in your ankles.",
+    "We\u2019ll send off some more labs and anemia profile... refer you back to gastroenterology for another evaluation.",
+    "Start you on some Lasix 40 mg once a day... continue your Toprol 50 mg daily and lisinopril 10 mg daily.",
+    "Watch your salt intake... weigh yourself every day. Call me if your weight starts to go up.",
+    "Continue to watch your diet and stay hydrated... despite the diuretic.",
+    "Not that I can think of."
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    3,
+    3,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19371744990348816,
+    "calinski_harabasz_score": 4.340196288175147,
+    "davies_bouldin_score": 0.9137597490537153
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9952425360679626,
+      0.9961111545562744,
+      0.9976159334182739
+    ],
+    [
+      0.9952425360679626,
+      0.9999997615814209,
+      0.9955993294715881,
+      0.9980664253234863
+    ],
+    [
+      0.9961111545562744,
+      0.9955993294715881,
+      1.0000003576278687,
+      0.9948316812515259
+    ],
+    [
+      0.9976159334182739,
+      0.9980664253234863,
+      0.9948316812515259,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0454951748251915,
+    "1": 0.19057784974575043,
+    "2": 0.0,
+    "3": 0.24162305891513824
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Your hemoglobin is low.",
+        "No issues since [the colonoscopy showed mild diverticulosis].",
+        "Trace to one plus pitting edema in your ankles.",
+        "Not that I can think of."
+      ],
+      "0": [
+        "No weight loss or passing out... just a bit dizzy.",
+        "I get seasonal allergies, so some nasal congestion.",
+        "I hear a three out of six systolic ejection murmur."
+      ],
+      "1": [
+        "Start you on some Lasix 40 mg once a day... continue your Toprol 50 mg daily and lisinopril 10 mg daily.",
+        "Watch your salt intake... weigh yourself every day. Call me if your weight starts to go up.",
+        "Continue to watch your diet and stay hydrated... despite the diuretic."
+      ]
+    },
+    "3": {
+      "2": [
+        "Over the past couple of months, I've been really tired and dizzy."
+      ],
+      "0": [
+        "I've been getting tired even just walking a mile or going to work, doing things that I've done in the past every day."
+      ],
+      "1": [
+        "I had a colonoscopy three years ago for blood in my stools, but nothing since."
+      ]
+    },
+    "1": {
+      "0": [
+        "I\u2019ve been traveling a lot... I stopped at McDonald\u2019s and got two cheeseburgers. I could be doing better. I\u2019ve noticed some swelling in my legs.",
+        "No, I haven\u2019t [seen blood in stools]. I did about three years ago, and I did a colonoscopy for that, but nothing since."
+      ]
+    },
+    "2": {
+      "0": [
+        "We\u2019ll send off some more labs and anemia profile... refer you back to gastroenterology for another evaluation."
+      ]
+    }
+  }
+}

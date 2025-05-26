@@ -1,0 +1,207 @@
+{
+  "phrases": [
+    "Right ankle injury.",
+    "I was doing something I didn't really want to be doing and I fell and my ankle hurts.",
+    "My ankle twisted outward",
+    "the pain is on my outer ankle.",
+    "I have some numbing going on in other places",
+    "you're limping.",
+    "I've taken Tylenol",
+    "it didn't help.",
+    "I heard an a crack crackle",
+    "Three years",
+    "Temperature is ninety eight. Six,",
+    "blood pressure is fine at one eighteen over seventy seven,",
+    "heart rate looks good at seventy seven.",
+    "Edema and erythema on the lateral malleolus,",
+    "associated ecchymosis and a few excoriations,",
+    "pain to palpation of the lateral malleolus.",
+    "Ankle x-ray shows that you have no acute fracture or bony abnormality.",
+    "Acute ankle sprain.",
+    "Put you in an air cast,",
+    "prescribe some meloxicam fifteen milligrams once a day,",
+    "ice the area for about twenty minutes five times a day,",
+    "weight-bear as tolerated.",
+    "Anticipating you to start feeling better in the next couple of weeks",
+    "consider physical therapy or pursuing further imaging."
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2,
+    3,
+    0,
+    3,
+    2,
+    2,
+    2,
+    3,
+    1,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13275904953479767,
+    "calinski_harabasz_score": 3.813261951001673,
+    "davies_bouldin_score": 1.7410097602392451
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9980120658874512,
+      0.9979950785636902,
+      0.9977647662162781
+    ],
+    [
+      0.9980120658874512,
+      1.000000238418579,
+      0.9980206489562988,
+      0.9972440004348755
+    ],
+    [
+      0.9979950785636902,
+      0.9980206489562988,
+      1.0,
+      0.9984391927719116
+    ],
+    [
+      0.9977647662162781,
+      0.9972440004348755,
+      0.9984391927719116,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09523594379425049,
+    "1": 0.106350377202034,
+    "2": -0.065314881503582,
+    "3": 0.16428829729557037
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "Right ankle injury.",
+        "Acute ankle sprain."
+      ],
+      "0": [
+        "pain to palpation of the lateral malleolus."
+      ],
+      "1": [
+        "weight-bear as tolerated.",
+        "consider physical therapy or pursuing further imaging."
+      ]
+    },
+    "1": {
+      "2": [
+        "I was doing something I didn't really want to be doing and I fell and my ankle hurts."
+      ],
+      "0": [
+        "My ankle twisted outward",
+        "I have some numbing going on in other places",
+        "I've taken Tylenol",
+        "I heard an a crack crackle",
+        "Anticipating you to start feeling better in the next couple of weeks"
+      ],
+      "1": [
+        "the pain is on my outer ankle.",
+        "you're limping.",
+        "it didn't help."
+      ]
+    },
+    "2": {
+      "2": [
+        "Three years"
+      ],
+      "0": [
+        "Edema and erythema on the lateral malleolus,",
+        "associated ecchymosis and a few excoriations,",
+        "prescribe some meloxicam fifteen milligrams once a day,"
+      ],
+      "1": [
+        "Put you in an air cast,",
+        "ice the area for about twenty minutes five times a day,"
+      ]
+    },
+    "0": {
+      "2": [
+        "Temperature is ninety eight. Six,"
+      ],
+      "0": [
+        "blood pressure is fine at one eighteen over seventy seven,"
+      ],
+      "1": [
+        "heart rate looks good at seventy seven.",
+        "Ankle x-ray shows that you have no acute fracture or bony abnormality."
+      ]
+    }
+  }
+}

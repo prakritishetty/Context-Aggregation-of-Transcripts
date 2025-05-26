@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,3,2,"I've been struggling with my depression, a bit more just because we've been trapped really inside and remotely over the past year."
+A,0,2,Prozac 20 milligrams a day
+O,1,2,"The medication has helped me in the past, and maybe just increasing the dose might help me through this patch."
+S,3,0,Chronic back pain that we've been dealing with... bothers me when I sit for long periods at my desk at work.
+O,1,0,"A little bit of numbing, but nothing tingling or hurting down my legs."
+O,1,1,Symptoms improve when I stand up or change position.
+O,1,1,No weakness in my legs.
+S,3,1,"Had a congenital artery when I was a baby... CABG... heart's been doing, doing, and arteries have been looking good."
+P,2,0,Physical therapy referral ordered
+A,0,2,Increase Prozac from 20 mg to 40 mg once daily.
+A,0,0,"3 out of 6 systolic ejection murmur, stable"
+A,0,1,Pain to palpation of the lumbar spine... decreased flexion of the back
+A,0,1,Order an echocardiogram... continue aspirin 81 mg daily
+A,0,2,Denies any edema or weakness in legs
+A,0,0,Echocardiogram and lumbar spine x-ray results stable from last year
+P,2,0,Prefers physical therapy over pain medication for back pain

@@ -1,0 +1,135 @@
+{
+  "phrases": [
+    "I went to see my pcp for a cough which they diagnosed as bronchitis but they did that chest x-ray to make sure I didn't have pneumonia and they found this lung nodule I went for a cat scan that confirmed it and they referred me here to you I'm really nervous document.",
+    "I take methotrexate 7 and a half milligrams every week.",
+    "I stopped smoking probably about seven years ago.",
+    "My mom did have breast cancer but she is doing.",
+    "your vital signs look good today blood pressure of one twenty four over seventy six heart rate of seventy respiration rate of sixteen o2 sat on room air of ninety eight percent and you are afebrile.",
+    "the results of that chest ct do show a solitary two centimeter nodule in the lateral aspect of the upper lobe it appears the nodule is smooth in appearance and no evidence of any type of emphysematous disease is present.",
+    "I'm going to order some pft which is pulmonary function test... I'm also going to schedule a pet ct this is gon na help to determine if that nodule is metabolically active meaning if it lights up it it can suggest that it's cancer or inflammatory.",
+    "suggest that we do remove this via video assisted thoracoscopy which means it's just gon na be three small incisions made on the side of your chest i'm gon na go in with a camera and a scope and we'll remove that along with a very small portion of your lung you're gon na be under general anesthesia and it'll take about an hour and a half or post procedure you're gon na be admitted and you will have a chest tube in until the following day and i'm gon na go ahead and take that out at bedside most likely you're gon na be in the hospital for one night and go home the next day.",
+    "no i do n't think i'll be i'm scared"
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    3,
+    1,
+    2,
+    2,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14804308116436005,
+    "calinski_harabasz_score": 2.6431283575138784,
+    "davies_bouldin_score": 1.0659519983155556
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9967159032821655,
+      0.9962453842163086,
+      0.9952875971794128
+    ],
+    [
+      0.9967159032821655,
+      1.000000238418579,
+      0.9942223429679871,
+      0.9974128007888794
+    ],
+    [
+      0.9962453842163086,
+      0.9942223429679871,
+      1.0,
+      0.9960968494415283
+    ],
+    [
+      0.9952875971794128,
+      0.9974128007888794,
+      0.9960968494415283,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.060379981994628906,
+    "1": 0.032358113676309586,
+    "2": -0.167555570602417,
+    "3": 0.11504992842674255
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I went to see my pcp for a cough which they diagnosed as bronchitis but they did that chest x-ray to make sure I didn't have pneumonia and they found this lung nodule I went for a cat scan that confirmed it and they referred me here to you I'm really nervous document."
+      ],
+      "0": [
+        "I'm going to order some pft which is pulmonary function test... I'm also going to schedule a pet ct this is gon na help to determine if that nodule is metabolically active meaning if it lights up it it can suggest that it's cancer or inflammatory."
+      ],
+      "1": [
+        "suggest that we do remove this via video assisted thoracoscopy which means it's just gon na be three small incisions made on the side of your chest i'm gon na go in with a camera and a scope and we'll remove that along with a very small portion of your lung you're gon na be under general anesthesia and it'll take about an hour and a half or post procedure you're gon na be admitted and you will have a chest tube in until the following day and i'm gon na go ahead and take that out at bedside most likely you're gon na be in the hospital for one night and go home the next day."
+      ]
+    },
+    "3": {
+      "0": [
+        "I take methotrexate 7 and a half milligrams every week.",
+        "I stopped smoking probably about seven years ago."
+      ]
+    },
+    "1": {
+      "0": [
+        "My mom did have breast cancer but she is doing.",
+        "no i do n't think i'll be i'm scared"
+      ]
+    },
+    "2": {
+      "0": [
+        "your vital signs look good today blood pressure of one twenty four over seventy six heart rate of seventy respiration rate of sixteen o2 sat on room air of ninety eight percent and you are afebrile.",
+        "the results of that chest ct do show a solitary two centimeter nodule in the lateral aspect of the upper lobe it appears the nodule is smooth in appearance and no evidence of any type of emphysematous disease is present."
+      ]
+    }
+  }
+}

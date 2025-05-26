@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,my throat has been hurting me for four days and I had a fever last night because I was really sweaty but I didn’t take my temperature because I was already in bed.
+S,2,2,every time I swallow I’m even having trouble eating I can drink the really cold water feels good.
+S,2,0,last night I was chills and I had a lot of sweating and it’s really hard to swallow.
+O,1,2,my tonsils are swollen too
+S,2,1,when I was a kid I had strep throat but I haven’t had anything as an adult
+O,1,0,I take it every morning with my multivitamin and my vitamin D
+O,1,1,I take it with my breakfast and with my dinner
+S,2,2,my blood pressure is all over the place sometimes it could be one twenty for the top number sometimes it could be one forty for the top number I don’t really remember the bottom number though
+S,2,1,sometimes I get if I take it first thing in the morning it’ll be eighty or ninety but at night sometimes it could be one forty
+A,3,0,on throat examination there is bilateral erythema and edema of the peritonsillar space with exudates present bilaterally the uvula is midline
+P,0,2,temperature: 100.4 degrees F. Blood pressure: 132/80 mm Hg. Heart rate: 84 BPM
+P,0,0,prescribe amoxicillin 500 mg three times a day for ten days
+P,0,0,increase lisinopril to forty milligrams once a day
+P,0,1,order a hemoglobin A1c
+O,1,1,besides my wine at night I really just drink water all day
+O,1,1,I really my chips with my wine
+S,2,0,I do have little kids that go to school they’ve always got those little runny noses or cough but nobody is really complaining of anything
+S,2,1,showing signs of an upper respiratory infection and I’m concerned that you might have some strep in the back of your throat
+P,0,1,sounds good
+P,0,1,that’s everything

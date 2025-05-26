@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+O,2,2,stepping off a curb
+S,1,2,turned over my ankle.
+S,1,2,the outside of my knee.
+O,2,0,"it clicks when I walk,"
+S,1,0,"feels locked and I have to ease into walking again,"
+S,1,2,pain when I rest it on my heel.
+P,0,2,"no unless I stand on one foot for an extended period of time,"
+O,2,1,full squat... the most clicking.
+S,1,2,ibuprofen... at night helps me settle down and sleep better.
+S,1,1,I ride the bike... peloton.
+S,1,1,broken my foot my second toe... numbness depending upon the shoe.
+P,0,0,"slight edema... slight effusion,"
+P,0,0,"no pain to palpation,"
+P,0,1,"positive varus test,"
+P,0,1,negative Lachman sign.
+A,3,2,no acute fracture or bony abnormality.
+A,3,0,lateral collateral ligament strain.
+P,0,0,"refer to physical therapy,"
+P,0,0,"prescribe meloxicam 15 mg,"
+A,3,1,consider an MRI if pain does not improve.

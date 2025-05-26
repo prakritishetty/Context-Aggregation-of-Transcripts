@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "next patient is melissa sanchez... being seen in office today for status post mitral valve repair done on 8/3/2020.",
+    "At her previous follow-up on 9/17, we felt that she was doing quite from a cardiac standpoint, and we recommended she continue with the same medication.",
+    "I'm still getting some chest pains sometimes, and my breathing gets shallow... if I feel that, if I'm exerting myself, I slow down a bit which helps... episodes last a few minutes... goes away for a couple weeks.",
+    "I've been trying to keep up with that. There's a lot of extra pills, but I have a reminder app, I do pretty.",
+    "Ecg taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response. T-wave inversion anteriorly... no significant changes compared to the previous study.",
+    "Head and neck no jvd detected... lungs have reduced breath, but auscultation and percussion are clear... rhythm is irregularly irregular... trace peripheral edema on extremities.",
+    "it's when your heart doesn't beat with the correct rhythm, and whatever rhythm it doesn't have a pattern to it... part of the atrial fibrillation.",
+    "Coumadin 4 milligrams, lasix at 40 milligrams a day, and the atenolol, you're taking that every day as... 50 milligrams every day.",
+    "Continue on your current meds... let's do a followup in about six to nine months.",
+    "history of mitral regurgitation and atrial fibrillation, history of diabetes, asthma, and recurrent chest discomfort with negative cardiac workup for coronary artery disease."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    3,
+    3,
+    2,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11810348927974701,
+    "calinski_harabasz_score": 2.336696648880224,
+    "davies_bouldin_score": 1.2956792546316085
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9954465627670288,
+      0.9979279041290283,
+      0.9955912232398987
+    ],
+    [
+      0.9954465627670288,
+      0.9999999403953552,
+      0.9972814917564392,
+      0.9971089363098145
+    ],
+    [
+      0.9979279041290283,
+      0.9972814917564392,
+      1.0000003576278687,
+      0.997076153755188
+    ],
+    [
+      0.9955912232398987,
+      0.9971089363098145,
+      0.997076153755188,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09469873458147049,
+    "1": -0.030520610511302948,
+    "2": -0.06582126766443253,
+    "3": 0.01461066398769617
+  },
+  "cluster_phrases": {
+    "1": {
+      "0": [
+        "next patient is melissa sanchez... being seen in office today for status post mitral valve repair done on 8/3/2020.",
+        "history of mitral regurgitation and atrial fibrillation, history of diabetes, asthma, and recurrent chest discomfort with negative cardiac workup for coronary artery disease."
+      ]
+    },
+    "0": {
+      "1": [
+        "At her previous follow-up on 9/17, we felt that she was doing quite from a cardiac standpoint, and we recommended she continue with the same medication."
+      ],
+      "0": [
+        "I'm still getting some chest pains sometimes, and my breathing gets shallow... if I feel that, if I'm exerting myself, I slow down a bit which helps... episodes last a few minutes... goes away for a couple weeks."
+      ],
+      "2": [
+        "I've been trying to keep up with that. There's a lot of extra pills, but I have a reminder app, I do pretty."
+      ]
+    },
+    "3": {
+      "0": [
+        "Ecg taken on 12/26/2020 reveals atrial fibrillation with a controlled ventricular response. T-wave inversion anteriorly... no significant changes compared to the previous study.",
+        "Head and neck no jvd detected... lungs have reduced breath, but auscultation and percussion are clear... rhythm is irregularly irregular... trace peripheral edema on extremities."
+      ]
+    },
+    "2": {
+      "2": [
+        "it's when your heart doesn't beat with the correct rhythm, and whatever rhythm it doesn't have a pattern to it... part of the atrial fibrillation."
+      ],
+      "0": [
+        "Coumadin 4 milligrams, lasix at 40 milligrams a day, and the atenolol, you're taking that every day as... 50 milligrams every day."
+      ],
+      "1": [
+        "Continue on your current meds... let's do a followup in about six to nine months."
+      ]
+    }
+  }
+}

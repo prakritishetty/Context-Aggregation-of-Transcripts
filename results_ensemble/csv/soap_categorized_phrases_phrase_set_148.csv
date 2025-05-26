@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+A,3,1,Sophia Jackson is a 57-year-old female here for a surgical consult for melanoma of the inferior back.
+O,1,0,"Her dermatologist referred her after biopsying a 0.7 millimeter lesion on her inferior back, which was diagnosed as melanoma."
+O,1,2,The lesion was noticed by her mother during a visit last month.
+O,1,0,She had the biopsy on April 10th due to family history of melanoma (mother and maternal aunt).
+A,3,0,She denies a personal history of atypical nevi and reports annual mole checks by her primary care provider.
+O,1,0,Mother and maternal aunt both had melanoma.
+A,3,2,Maternal grandfather had pancreatic cancer; no family history of breast or ovarian cancers.
+P,2,2,Owns an auto repair shop.
+P,2,0,"Current smoker since teens, actively trying to quit."
+P,2,0,No reported medical conditions; allergic to Augmentin.
+P,2,0,Prior surgeries: cholecystectomy and appendectomy.
+S,0,2,On the inferior back: 1 cm shave biopsy site with no residual pigmentation; no intrinsic or satellite lesions.
+S,0,0,"No axillary, cervical, or supraclavicular lymphadenopathy."
+S,0,0,"Soft, nontender lymph node in the groin (right side noted in pathology)."
+P,2,0,"Shave biopsy of inferior back: malignant melanoma, invasive, superficial spreading."
+S,0,1,"Clark level 4, Breslow thickness 0.7 mm."
+S,0,2,"Radial growth phase present; no vertical growth, ulceration, or lymphatic invasion."
+S,0,1,"Peripheral margin positive, deep margin negative; stage 1."
+S,0,0,Recommended ultrasound of the groin lymph node to rule out metastatic disease.
+O,1,1,"If ultrasound is normal, wide local excision with 1-2 cm margin is planned."
+S,0,2,"Primary closure preferred, but skin graft may be needed."
+P,2,0,"Emphasized sun avoidance, skin self-examination, and ABCDE mole surveillance."
+P,2,1,Patient understands risks/benefits and consents to proceed.
+O,1,0,Dermatologist’s photo showed an asymmetric black/brown nevus with irregular border.
+O,1,0,Follow-up with dermatologist for ongoing surveillance is critical.

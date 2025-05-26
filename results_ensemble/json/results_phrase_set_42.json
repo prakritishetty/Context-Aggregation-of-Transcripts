@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "Albert is a 62-year-old male, with a past medical history significant for depression, type 2 diabetes, and kidney transplant, who is here today for emergency room follow-up.",
+    "I wasn\u2019t really staying on top of my blood sugar readings, and I felt kinda woozy over the weekend.",
+    "My mother was in the hospital the last week. She had a bit of a fall and had to do a hip replacement. She\u2019s feeling better but we have been just grabbing meals at the cafeteria or picking up fast food on our way home, and I just really wasn\u2019t monitoring what I was eating.",
+    "Your hemoglobin A1c is about 8, and that\u2019s a little high.",
+    "I want you to continue monitoring your blood sugar and let me know how they\u2019re running because we might have to adjust that further.",
+    "Increase your Lantus to 20 units at night.",
+    "My wife got me into meditation recently, and I find that relaxing. I\u2019d like to continue that, at least for a couple more months and see how it goes.",
+    "I\u2019ve been pretty diligent about it, following doctor\u2019s orders; it\u2019s been pretty good so far.",
+    "Your kidney function is good.",
+    "1+ edema in your lower extremities.",
+    "I deny any chest pain, shortness of breath, lightheadedness, or dizziness.",
+    "I want to hold off on any therapy. I\u2019d like to continue meditation for a couple more months and see how it goes.",
+    "The patient understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    1,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2985140085220337,
+    "calinski_harabasz_score": 6.5219444390483705,
+    "davies_bouldin_score": 0.6692406341504473
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9946629405021667,
+      0.9930339455604553,
+      0.9908367395401001
+    ],
+    [
+      0.9946629405021667,
+      1.0000001192092896,
+      0.9939531087875366,
+      0.9965846538543701
+    ],
+    [
+      0.9930339455604553,
+      0.9939531087875366,
+      1.000000238418579,
+      0.9901240468025208
+    ],
+    [
+      0.9908367395401001,
+      0.9965846538543701,
+      0.9901240468025208,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.2032899409532547,
+    "1": 0.10554150491952896,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Albert is a 62-year-old male, with a past medical history significant for depression, type 2 diabetes, and kidney transplant, who is here today for emergency room follow-up."
+      ]
+    },
+    "0": {
+      "2": [
+        "I wasn\u2019t really staying on top of my blood sugar readings, and I felt kinda woozy over the weekend.",
+        "My mother was in the hospital the last week. She had a bit of a fall and had to do a hip replacement. She\u2019s feeling better but we have been just grabbing meals at the cafeteria or picking up fast food on our way home, and I just really wasn\u2019t monitoring what I was eating.",
+        "I want you to continue monitoring your blood sugar and let me know how they\u2019re running because we might have to adjust that further.",
+        "I\u2019ve been pretty diligent about it, following doctor\u2019s orders; it\u2019s been pretty good so far."
+      ],
+      "0": [
+        "Your hemoglobin A1c is about 8, and that\u2019s a little high."
+      ],
+      "1": [
+        "My wife got me into meditation recently, and I find that relaxing. I\u2019d like to continue that, at least for a couple more months and see how it goes.",
+        "I want to hold off on any therapy. I\u2019d like to continue meditation for a couple more months and see how it goes."
+      ]
+    },
+    "1": {
+      "2": [
+        "Increase your Lantus to 20 units at night."
+      ],
+      "0": [
+        "Your kidney function is good.",
+        "I deny any chest pain, shortness of breath, lightheadedness, or dizziness."
+      ],
+      "1": [
+        "1+ edema in your lower extremities."
+      ]
+    },
+    "3": {
+      "0": [
+        "The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    }
+  }
+}

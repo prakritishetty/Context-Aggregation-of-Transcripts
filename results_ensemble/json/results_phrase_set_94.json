@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "four or five times a week hard alcohol",
+    "I'm only taking half of the lisinopril... I felt lethargic and tired, I only took a half dose the next time",
+    "the first time I took it I felt lethargic and tired... headaches or the swooshing that started in my left ear",
+    "In the mornings I'm seeing lower numbers... in the evenings... 130 to 150 over 95 to 100",
+    "With a shot, it's not you can un-take it",
+    "The shot is given about once a month... we can schedule you for May 17th",
+    "It will certainly help your blood pressure if you're able to stop drinking",
+    "Are there any possible side effects?",
+    "alert, pleasant, in no acute distress... no murmur, no gallop, JVP flat",
+    "I will see her back week of June 14th, which is likely around the time of her second naltrexone injection",
+    "Recommend upgrading influenza vaccination and Shingrix #2, she defers this",
+    "We both agree if you were able to stop drinking your blood pressure would cease to be an issue for you",
+    "taking the full dose of [hydrochlorothiazide]... no chest tightness or pressure",
+    "I'm taking my medicine in the morning... when I come here it's always high but it goes down"
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    3,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0,
+    1,
+    2,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12220656126737595,
+    "calinski_harabasz_score": 2.715162668275271,
+    "davies_bouldin_score": 1.584609034845304
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9978532791137695,
+      0.9970671534538269,
+      0.9961587190628052
+    ],
+    [
+      0.9978532791137695,
+      1.0000001192092896,
+      0.9983564615249634,
+      0.9978635907173157
+    ],
+    [
+      0.9970671534538269,
+      0.9983564615249634,
+      1.0,
+      0.9958800077438354
+    ],
+    [
+      0.9961587190628052,
+      0.9978635907173157,
+      0.9958800077438354,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.009076262824237347,
+    "1": 0.024502869695425034,
+    "2": -0.11629164963960648,
+    "3": 0.18021196126937866
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "four or five times a week hard alcohol"
+      ],
+      "0": [
+        "Are there any possible side effects?"
+      ],
+      "1": [
+        "alert, pleasant, in no acute distress... no murmur, no gallop, JVP flat",
+        "taking the full dose of [hydrochlorothiazide]... no chest tightness or pressure"
+      ]
+    },
+    "3": {
+      "2": [
+        "I'm only taking half of the lisinopril... I felt lethargic and tired, I only took a half dose the next time"
+      ],
+      "0": [
+        "the first time I took it I felt lethargic and tired... headaches or the swooshing that started in my left ear"
+      ],
+      "1": [
+        "I'm taking my medicine in the morning... when I come here it's always high but it goes down"
+      ]
+    },
+    "1": {
+      "2": [
+        "In the mornings I'm seeing lower numbers... in the evenings... 130 to 150 over 95 to 100",
+        "I will see her back week of June 14th, which is likely around the time of her second naltrexone injection"
+      ],
+      "0": [
+        "With a shot, it's not you can un-take it"
+      ],
+      "1": [
+        "It will certainly help your blood pressure if you're able to stop drinking",
+        "We both agree if you were able to stop drinking your blood pressure would cease to be an issue for you"
+      ]
+    },
+    "0": {
+      "0": [
+        "The shot is given about once a month... we can schedule you for May 17th",
+        "Recommend upgrading influenza vaccination and Shingrix #2, she defers this"
+      ]
+    }
+  }
+}

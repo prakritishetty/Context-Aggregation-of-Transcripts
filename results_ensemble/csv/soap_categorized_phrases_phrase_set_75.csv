@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,difficulty swallowing... something is always stuck in my throat... have to wash it down on occasion.
+O,1,0,noticed over the last four to five weeks.
+S,2,0,painful... solids require more effort... never fully choked but worried about choking.
+A,3,0,"no coughing... no blood in stools or vomiting... no weight loss, chest pain, or shortness of breath."
+P,0,2,taking metformin 500 mg twice a day... checks blood sugars ~80% of the time... within target range.
+P,0,0,Norvasc... blood pressure in office 120/50... home readings occasionally lower but mostly in range.
+A,3,0,"no neck swelling, masses, or lymph nodes... normal thyroid... clear lungs, normal heart... epigastric tenderness."
+P,0,1,narrowing in the throat/esophagus... possible stricture requiring dilation.
+P,0,0,refer to gastroenterology for scope... start Prilosec 20 mg daily.
+S,2,1,"chew food thoroughly, avoid hard solids without care... ER if food gets stuck."
+P,0,1,"repeat hemoglobin A1c, kidney function tests... eye referral for retinopathy."
+O,1,0,Norvasc refill requested and provided.

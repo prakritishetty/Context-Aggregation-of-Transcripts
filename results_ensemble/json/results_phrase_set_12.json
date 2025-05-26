@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "Ever since my car wreck last December when I broke them, once they healed, I noticed it more\u2014the tingling and numbness.",
+    "Both have gotten worse over the last month.",
+    "The splint seems to help. I wear the left one also sometimes.",
+    "I\u2019ve been having some mild stiffness in my neck too. I hit my head during the accident, and they told me it was a contusion.",
+    "On the right, I can really notice it from my middle and ring finger all the way up to my forearm, and on my left, a bit more the pinky and the ring and not the middle.",
+    "Mainly just sore. Sometimes they throb, but overall, they feel weaker too, especially when I\u2019m using them. The tingling happens some more, but when they hurt, it goes away and the tingling\u2019s just dull.",
+    "Really, just more at night, and it just comes and goes throughout the day.",
+    "Feeling something? No, not that I can think of really. In general, they might be less sensitive than they should be, but I can still feel.",
+    "They gave me some nerve pain medicine, but I haven\u2019t been taking it. I should be.",
+    "I had pre-diabetes, but I got it under control changing my diet.",
+    "I\u2019m still taking those [carvedilol and Lexapro]. Sulfa just causes me to break out in a rash.",
+    "Sensations normal except pinprick sensation diminished in the third and fourth fingers on the right and the fourth and fifth fingers on the left. Reflexes are 1+ and symmetric, 2+ knees, toes are downgoing bilaterally. Tinel\u2019s sign positive at both wrists and both elbows.",
+    "No metastatic disease. No acute intracranial abnormalities.",
+    "I discussed my impression with the patient. I will schedule her for EMG/NCV. If her symptoms do not resolve, we can consider Hand Clinic referral for possible symptomatic injections or carpal tunnel release surgery, although she can pursue these through her current orthopedist. I encouraged her to wear her splints."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    2,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12902376055717468,
+    "calinski_harabasz_score": 3.655676077273399,
+    "davies_bouldin_score": 1.187898077889887
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9956454038619995,
+      0.9935675859451294,
+      0.9953306913375854
+    ],
+    [
+      0.9956454038619995,
+      1.0,
+      0.9982486367225647,
+      0.9941025376319885
+    ],
+    [
+      0.9935675859451294,
+      0.9982486367225647,
+      1.000000238418579,
+      0.9936884045600891
+    ],
+    [
+      0.9953306913375854,
+      0.9941025376319885,
+      0.9936884045600891,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0742688998579979,
+    "1": 0.13465802371501923,
+    "2": 0.1821184903383255,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Ever since my car wreck last December when I broke them, once they healed, I noticed it more\u2014the tingling and numbness.",
+        "On the right, I can really notice it from my middle and ring finger all the way up to my forearm, and on my left, a bit more the pinky and the ring and not the middle.",
+        "I had pre-diabetes, but I got it under control changing my diet."
+      ],
+      "1": [
+        "Both have gotten worse over the last month.",
+        "Really, just more at night, and it just comes and goes throughout the day.",
+        "Feeling something? No, not that I can think of really. In general, they might be less sensitive than they should be, but I can still feel."
+      ],
+      "0": [
+        "The splint seems to help. I wear the left one also sometimes."
+      ]
+    },
+    "2": {
+      "2": [
+        "I\u2019ve been having some mild stiffness in my neck too. I hit my head during the accident, and they told me it was a contusion."
+      ],
+      "0": [
+        "Mainly just sore. Sometimes they throb, but overall, they feel weaker too, especially when I\u2019m using them. The tingling happens some more, but when they hurt, it goes away and the tingling\u2019s just dull.",
+        "I\u2019m still taking those [carvedilol and Lexapro]. Sulfa just causes me to break out in a rash."
+      ],
+      "1": [
+        "They gave me some nerve pain medicine, but I haven\u2019t been taking it. I should be."
+      ]
+    },
+    "0": {
+      "0": [
+        "Sensations normal except pinprick sensation diminished in the third and fourth fingers on the right and the fourth and fifth fingers on the left. Reflexes are 1+ and symmetric, 2+ knees, toes are downgoing bilaterally. Tinel\u2019s sign positive at both wrists and both elbows.",
+        "No metastatic disease. No acute intracranial abnormalities."
+      ]
+    },
+    "3": {
+      "0": [
+        "I discussed my impression with the patient. I will schedule her for EMG/NCV. If her symptoms do not resolve, we can consider Hand Clinic referral for possible symptomatic injections or carpal tunnel release surgery, although she can pursue these through her current orthopedist. I encouraged her to wear her splints."
+      ]
+    }
+  }
+}

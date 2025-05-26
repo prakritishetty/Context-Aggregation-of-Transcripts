@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "sudden visual distortions and some blurring of your vision",
+    "straight lines and your door frames have been looking crooked to you",
+    "trouble adjusting to those dim lights",
+    "you're still smoking a pack of cigarettes a day",
+    "I take my blood pressure when I can remember to do",
+    "posterior chamber intraocular lenses in both eyes",
+    "drusen in the macula, thickening of the retina, presence of subretinal fluid and exudates accumulation. Positive for hemorrhage",
+    "choroidal neovascular membrane can be visualized",
+    "fluorescein angiography reveals focal areas of leakage in the eye consistent with neurovascular age related macular degeneration",
+    "neovascular age related macular degeneration",
+    "advanced to a stage that usually leads to more severe vision loss",
+    "abnormal blood vessels start to grow beneath the retina and they will leak fluid and blood and hints the name wet amd",
+    "most common cause for severe loss of vision",
+    "injection of lucentes once a month",
+    "injected into the vitreous portion of the eye after it's been numbed",
+    "may slow the rate of vision decline or stop further vision loss but however the disease and loss it may also progress despite treatment",
+    "i do not no that sounds great"
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    3,
+    3,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11480090022087097,
+    "calinski_harabasz_score": 3.451774328798191,
+    "davies_bouldin_score": 1.620903249375944
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9975641965866089,
+      0.9954779148101807,
+      0.9971978664398193
+    ],
+    [
+      0.9975641965866089,
+      1.0000004768371582,
+      0.9979516863822937,
+      0.9985133409500122
+    ],
+    [
+      0.9954779148101807,
+      0.9979516863822937,
+      1.0,
+      0.997012197971344
+    ],
+    [
+      0.9971978664398193,
+      0.9985133409500122,
+      0.997012197971344,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.047690533101558685,
+    "1": 0.06477036327123642,
+    "2": -0.02299213968217373,
+    "3": -0.030639508739113808
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "sudden visual distortions and some blurring of your vision"
+      ],
+      "0": [
+        "choroidal neovascular membrane can be visualized",
+        "neovascular age related macular degeneration"
+      ],
+      "1": [
+        "advanced to a stage that usually leads to more severe vision loss",
+        "most common cause for severe loss of vision"
+      ]
+    },
+    "0": {
+      "2": [
+        "straight lines and your door frames have been looking crooked to you",
+        "i do not no that sounds great"
+      ],
+      "0": [
+        "trouble adjusting to those dim lights"
+      ],
+      "1": [
+        "you're still smoking a pack of cigarettes a day",
+        "I take my blood pressure when I can remember to do"
+      ]
+    },
+    "3": {
+      "2": [
+        "posterior chamber intraocular lenses in both eyes"
+      ],
+      "0": [
+        "injection of lucentes once a month"
+      ],
+      "1": [
+        "injected into the vitreous portion of the eye after it's been numbed"
+      ]
+    },
+    "2": {
+      "2": [
+        "drusen in the macula, thickening of the retina, presence of subretinal fluid and exudates accumulation. Positive for hemorrhage"
+      ],
+      "0": [
+        "fluorescein angiography reveals focal areas of leakage in the eye consistent with neurovascular age related macular degeneration",
+        "may slow the rate of vision decline or stop further vision loss but however the disease and loss it may also progress despite treatment"
+      ],
+      "1": [
+        "abnormal blood vessels start to grow beneath the retina and they will leak fluid and blood and hints the name wet amd"
+      ]
+    }
+  }
+}

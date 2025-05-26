@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,"I've been having constant pain in my left shoulder and left elbow for a while, about five months or. Hurts all the time. Pretty bad at times."
+S,1,2,"I fell five months ago going up a stairs, and the pain has been present since."
+S,1,0,"The pain is worse when I lift, and I haven't been able to lift more than 15 or 20 pounds which is very frustrating."
+S,1,0,"Over the past one to two weeks, I've stopped hitting the gym because the pain just wasn't worth it honestly."
+S,1,2,"I have iced a bit, but I have not taken anything for the pain."
+P,3,0,"No tingling or numbless, numbness, thankfully."
+S,1,1,My wife and I walk about 30 minutes almost every day. We have done this since I retired from my office job last year.
+A,2,0,"Left shoulder and elbow, tender subacromial space, no warmth, erythema or deformity. Positive Hawkins-Kennedy and Neer’s test. Normal proximal and distal upper extremity strength. Intact median, radial, ulnar sensation and abduction to 90 degrees. Normal empty can test."
+S,1,2,"You are dealing with impingement syndrome of your left shoulder. I don't think there's an additional injury or issue with your wrist, but because everything is connected, you're experiencing pain in your wrist because of your shoulder."
+O,0,0,"First option would be to start with physical therapy. I would recommend two sessions per week as any other exercises they give you to do at home. We can start there and if that doesn't improve your pain, we could try a cortisone injection."
+O,0,0,I the idea of starting with the physical therapy and have a next step if it doesn’t help. I am not opposed to a shot but would try the therapy first.
+P,3,0,"Please continue to ice, especially your shoulder, and rest as much as you can."

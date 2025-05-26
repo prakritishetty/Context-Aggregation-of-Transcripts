@@ -1,0 +1,211 @@
+{
+  "phrases": [
+    "I\u2019ve been considering a breast reduction for six or seven years.",
+    "I do have a lot of pain in my back and neck, but I don\u2019t know if it\u2019s all from my breasts.",
+    "I mostly wear a 34 E sports bra because it\u2019s more comfortable.",
+    "I experience numbness and tingling in my hands sometimes.",
+    "They [breasts] are always sweaty underneath.",
+    "My activities are limited because of the size\u2014working out and running hurt.",
+    "My mother had breast cancer at age 40, so they recommended mammograms starting at 30.",
+    "I take propranolol for migraines.",
+    "I lost 10 pounds recently and want to lose 20 more.",
+    "I\u2019ll be on my husband\u2019s insurance plan in July, which is not Blue Cross.",
+    "We may wait until July to submit for insurance approval.",
+    "The surgery involves incisions around the nipple, straight down, and underneath, forming an anchor shape.",
+    "You\u2019ll have drains for about a week post-surgery.",
+    "There\u2019s a 30% chance breastfeeding may not be possible after the procedure.",
+    "Scars may take a year to mature and fade.",
+    "A free nipple graft may be needed, which could affect sensation.",
+    "You\u2019ll need to avoid heavy lifting for six weeks and driving for two to three weeks.",
+    "An overnight hospital stay is required to manage pain and nausea.",
+    "I want to be a B or C cup.",
+    "I\u2019m ready as soon as my insurance is switched over.",
+    "You\u2019re a great candidate for a breast reduction.",
+    "We\u2019ll submit photos and documentation to your insurance once you\u2019re on the new plan.",
+    "The minimum tissue resection based on your body surface area is 1,792 grams.",
+    "Your breasts are asymmetrical with severe ptosis bilaterally.",
+    "No masses, tenderness, or lymphadenopathy were found during the exam."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    2,
+    1,
+    2,
+    0,
+    2,
+    2,
+    0,
+    3,
+    1,
+    0,
+    3,
+    3,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    3,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11532842367887497,
+    "calinski_harabasz_score": 4.133427351913645,
+    "davies_bouldin_score": 1.7920045323557434
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9975409507751465,
+      0.9985072016716003,
+      0.9981353878974915
+    ],
+    [
+      0.9975409507751465,
+      0.9999999403953552,
+      0.9975473284721375,
+      0.998572587966919
+    ],
+    [
+      0.9985072016716003,
+      0.9975473284721375,
+      1.0000003576278687,
+      0.9979735612869263
+    ],
+    [
+      0.9981353878974915,
+      0.998572587966919,
+      0.9979735612869263,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.26459911465644836,
+    "1": 0.16129472851753235,
+    "2": 0.11733212321996689,
+    "3": 0.15089987218379974
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I\u2019ve been considering a breast reduction for six or seven years.",
+        "I do have a lot of pain in my back and neck, but I don\u2019t know if it\u2019s all from my breasts.",
+        "You\u2019ll have drains for about a week post-surgery.",
+        "I\u2019m ready as soon as my insurance is switched over.",
+        "You\u2019re a great candidate for a breast reduction."
+      ],
+      "1": [
+        "I mostly wear a 34 E sports bra because it\u2019s more comfortable.",
+        "I\u2019ll be on my husband\u2019s insurance plan in July, which is not Blue Cross.",
+        "You\u2019ll need to avoid heavy lifting for six weeks and driving for two to three weeks.",
+        "We\u2019ll submit photos and documentation to your insurance once you\u2019re on the new plan."
+      ],
+      "0": [
+        "My mother had breast cancer at age 40, so they recommended mammograms starting at 30."
+      ]
+    },
+    "2": {
+      "2": [
+        "I experience numbness and tingling in my hands sometimes."
+      ],
+      "0": [
+        "My activities are limited because of the size\u2014working out and running hurt."
+      ],
+      "1": [
+        "I take propranolol for migraines.",
+        "I lost 10 pounds recently and want to lose 20 more.",
+        "I want to be a B or C cup."
+      ]
+    },
+    "1": {
+      "2": [
+        "They [breasts] are always sweaty underneath."
+      ],
+      "0": [
+        "The surgery involves incisions around the nipple, straight down, and underneath, forming an anchor shape.",
+        "A free nipple graft may be needed, which could affect sensation."
+      ],
+      "1": [
+        "An overnight hospital stay is required to manage pain and nausea.",
+        "Your breasts are asymmetrical with severe ptosis bilaterally.",
+        "No masses, tenderness, or lymphadenopathy were found during the exam."
+      ]
+    },
+    "3": {
+      "2": [
+        "We may wait until July to submit for insurance approval."
+      ],
+      "0": [
+        "There\u2019s a 30% chance breastfeeding may not be possible after the procedure.",
+        "The minimum tissue resection based on your body surface area is 1,792 grams."
+      ],
+      "1": [
+        "Scars may take a year to mature and fade."
+      ]
+    }
+  }
+}

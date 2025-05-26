@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "I was playing in a soccer game yesterday and I was trying to steal the ball from another player and she ended up falling directly onto my foot... my body ended up twisting around her and I accidentally felt a pain in my foot.",
+    "No I had to stop playing away and being helped off the field.",
+    "I've been keeping it elevated, icing it, the trainer wrapped it yesterday and taking ibuprofen as...",
+    "Without ibuprofen I would say my pain is a three... With your ibuprofen... a seven eight.",
+    "Since I was four five I've been playing a long time... started playing that way and played all throughout school.",
+    "Bruising on the bottom of your foot and on the top... associated swelling... tenderness to palpation of your midfoot... positive for the piano key test... brisk capillary refill... dorsalis pedis pulse is intact and strong... motor and sensation intact to light touch.",
+    "Subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and the presence of a bony fragment in the Lisfranc joint space.",
+    "Your foot pain is due to a Lisfranc fracture which is a fracture to one of your second metatarsal bones at the top of your foot where the metatarsals meet your cuboids...",
+    "You're most likely going to need surgery... to place the bones back in their proper position and using plates and screws will hold them there while they heal... day surgery... cast... crutches... no use of the left foot for six to eight weeks.",
+    "Poor bone and ligament healing can lead to losing the arch of your foot and you're becoming flat-footed... high likelihood of developing arthritis in that foot.",
+    "Out the rest of the season but we are going to get you fixed up and ready for next season."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    2,
+    2,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14809714257717133,
+    "calinski_harabasz_score": 3.6913636200888282,
+    "davies_bouldin_score": 1.0291150457921037
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9938151836395264,
+      0.9972412586212158,
+      0.9914002418518066
+    ],
+    [
+      0.9938151836395264,
+      0.9999999403953552,
+      0.9976158738136292,
+      0.996376097202301
+    ],
+    [
+      0.9972412586212158,
+      0.9976158738136292,
+      0.9999996423721313,
+      0.9946919679641724
+    ],
+    [
+      0.9914002418518066,
+      0.996376097202301,
+      0.9946919679641724,
+      1.0000004768371582
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.008658118546009064,
+    "1": 0.05108201503753662,
+    "2": 0.07453153282403946,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I was playing in a soccer game yesterday and I was trying to steal the ball from another player and she ended up falling directly onto my foot... my body ended up twisting around her and I accidentally felt a pain in my foot."
+      ],
+      "0": [
+        "No I had to stop playing away and being helped off the field."
+      ],
+      "1": [
+        "I've been keeping it elevated, icing it, the trainer wrapped it yesterday and taking ibuprofen as...",
+        "Without ibuprofen I would say my pain is a three... With your ibuprofen... a seven eight.",
+        "Since I was four five I've been playing a long time... started playing that way and played all throughout school."
+      ]
+    },
+    "0": {
+      "0": [
+        "Bruising on the bottom of your foot and on the top... associated swelling... tenderness to palpation of your midfoot... positive for the piano key test... brisk capillary refill... dorsalis pedis pulse is intact and strong... motor and sensation intact to light touch.",
+        "Subtle dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and the presence of a bony fragment in the Lisfranc joint space."
+      ]
+    },
+    "2": {
+      "2": [
+        "Your foot pain is due to a Lisfranc fracture which is a fracture to one of your second metatarsal bones at the top of your foot where the metatarsals meet your cuboids..."
+      ],
+      "0": [
+        "You're most likely going to need surgery... to place the bones back in their proper position and using plates and screws will hold them there while they heal... day surgery... cast... crutches... no use of the left foot for six to eight weeks."
+      ],
+      "1": [
+        "Poor bone and ligament healing can lead to losing the arch of your foot and you're becoming flat-footed... high likelihood of developing arthritis in that foot."
+      ]
+    },
+    "3": {
+      "0": [
+        "Out the rest of the season but we are going to get you fixed up and ready for next season."
+      ]
+    }
+  }
+}

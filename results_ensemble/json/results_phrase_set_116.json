@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "Every time I start walking I'm just having this pressure and chest pain in my chest.",
+    "Probably maybe three months.",
+    "It mainly happens when I'm walking.",
+    "It's a dull it's kinda a pressure.",
+    "I don't see any signs of a heart attack or anything.",
+    "My first diagnosis [...] is unstable angina [...] considering your history of diabetes and the suspected history of high blood pressure and your family history of heart disease.",
+    "Start you on [...] aspirin daily [...] nitroglycerin [...] take the pill if the chest pain does not go away after stopping activity.",
+    "Refer you to cardiology [...] stress test to look at your heart.",
+    "Continue the metformin [...] hemoglobin A1c today [...] follow up in two weeks.",
+    "Blood pressure's been running a little bit high [...] start you on hydrochlorothiazide.",
+    "Use a blood pressure cuff at home [...] log your readings via MyChart.",
+    "1+ nonpitting edema in the ankles.",
+    "Take up to three pills every five minutes [...] if it doesn\u2019t go away, go to the hospital.",
+    "Continue to stay away from pop and sweet things.",
+    "Keep your appointment with ophthalmology for diabetic retinopathy.",
+    "Family history of heart disease."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    3,
+    1,
+    1,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    0,
+    1,
+    2,
+    0,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10462820529937744,
+    "calinski_harabasz_score": 3.3003193379777236,
+    "davies_bouldin_score": 1.319794529606896
+  },
+  "similarity_matrix": [
+    [
+      1.0000004768371582,
+      0.9978047609329224,
+      0.9979445934295654,
+      0.9968735575675964
+    ],
+    [
+      0.9978047609329224,
+      0.9999998211860657,
+      0.9986736178398132,
+      0.9949447512626648
+    ],
+    [
+      0.9979445934295654,
+      0.9986736178398132,
+      0.9999999403953552,
+      0.9946438670158386
+    ],
+    [
+      0.9968735575675964,
+      0.9949447512626648,
+      0.9946438670158386,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.086911641061306,
+    "1": 0.11405442655086517,
+    "2": 0.041882067918777466,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "1": [
+        "Every time I start walking I'm just having this pressure and chest pain in my chest.",
+        "I don't see any signs of a heart attack or anything.",
+        "Take up to three pills every five minutes [...] if it doesn\u2019t go away, go to the hospital."
+      ],
+      "2": [
+        "Probably maybe three months."
+      ],
+      "0": [
+        "It mainly happens when I'm walking.",
+        "It's a dull it's kinda a pressure.",
+        "Continue to stay away from pop and sweet things."
+      ]
+    },
+    "2": {
+      "2": [
+        "My first diagnosis [...] is unstable angina [...] considering your history of diabetes and the suspected history of high blood pressure and your family history of heart disease."
+      ],
+      "0": [
+        "Start you on [...] aspirin daily [...] nitroglycerin [...] take the pill if the chest pain does not go away after stopping activity."
+      ],
+      "1": [
+        "Blood pressure's been running a little bit high [...] start you on hydrochlorothiazide."
+      ]
+    },
+    "0": {
+      "2": [
+        "Refer you to cardiology [...] stress test to look at your heart.",
+        "Use a blood pressure cuff at home [...] log your readings via MyChart."
+      ],
+      "0": [
+        "Continue the metformin [...] hemoglobin A1c today [...] follow up in two weeks.",
+        "Keep your appointment with ophthalmology for diabetic retinopathy."
+      ],
+      "1": [
+        "Family history of heart disease."
+      ]
+    },
+    "3": {
+      "0": [
+        "1+ nonpitting edema in the ankles."
+      ]
+    }
+  }
+}

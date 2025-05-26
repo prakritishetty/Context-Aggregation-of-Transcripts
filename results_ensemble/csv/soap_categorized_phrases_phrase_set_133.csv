@@ -1,0 +1,12 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,0,Louis is a 58-year-old male here for follow up from an emergency room visit.
+S,1,2,"I was playing tennis on Saturday. It was really, really hot that day, very humid. And about after about a half an hour I was very short of breath, I was struggling breathing. I thought I was having a heart attack, got really nervous. My wife took me to the ER and, everything checked out, but I was just very upset about it."
+S,1,0,"probably, probably about six hours after we got home, I felt very light-head and very dizzy and, Sunday, I felt fine."
+S,1,1,"I have. I have. I've been,, very diligent with it. And,, I'm in touch with the doctor and far, good, other than this episode on saturday."
+S,1,1,"I cheat every and., I try and stay away from the junk food and the salty foods. But, for the most part, I've been doing a good job of that."
+A,0,2,"That was three months ago, thursday, and everything's been fine ever since."
+A,0,0,"That healed up nicely, no problems ever since."
+O,2,0,"your neck is very supple. I do n't appreciate any fibular venous distention. Your heart is a regular rate and rhythm, no murmur. Your lungs have some fine crackles in them, bilaterally. And you have trace lower extremity edema in both legs."
+A,0,1,"this is,, a s- a stable ecg for you. This shows that you have some left ventricular hypertrophy which caused your congestive heart failure."
+A,0,1,"in reviewing the results of your echocardiogram, it shows that your pumping function of your heart is a little low,, but it's stable."
+A,0,0,it looks they got all of that and everything's fine.

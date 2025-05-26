@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "it seems that i was outside and i fell down i was walking a bit and i did have a pain in my chest",
+    "my blood pressure was two hundred over ninety",
+    "did n't think anything of it and i just kept on going",
+    "your ankles were swelling a little bit too and did you have some shortness of breath",
+    "i have but i miss them every year and today i took one",
+    "i've just been eating anything honestly... lot of chips... salty even though the light salt ones",
+    "echocardiogram... shows preserved ejection fraction of fifty five percent and normal diastolic filling and mild to moderate mitral regurgitation",
+    "continue your bumex two milligrams once daily... continue the cozaar one hundred milligrams daily... norvasc five milligrams once daily",
+    "i'm gon na write you a consult to nutrition since it sounds maybe we can give you some advice on watching your diet",
+    "weigh yourself daily... call me if you gain three pounds in two days",
+    "order a renal artery ultrasound just to make sure that we're not missing anything there",
+    "reports chest pain... shortness of breath... bilateral ankle swelling",
+    "2/6 stable systolic ejection murmur",
+    "no problems sleeping... lungs are clear bilaterally",
+    "i will do my best [to take medications on time and follow diet]"
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10476934909820557,
+    "calinski_harabasz_score": 3.756758329540037,
+    "davies_bouldin_score": 1.2370519609159738
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9974988698959351,
+      0.9983436465263367,
+      0.9945546388626099
+    ],
+    [
+      0.9974988698959351,
+      1.0,
+      0.994059681892395,
+      0.9965112805366516
+    ],
+    [
+      0.9983436465263367,
+      0.994059681892395,
+      1.0,
+      0.9900815486907959
+    ],
+    [
+      0.9945546388626099,
+      0.9965112805366516,
+      0.9900815486907959,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.04196089878678322,
+    "1": -0.19437116384506226,
+    "2": -0.0048099481500685215,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "it seems that i was outside and i fell down i was walking a bit and i did have a pain in my chest"
+      ],
+      "0": [
+        "did n't think anything of it and i just kept on going"
+      ],
+      "1": [
+        "i've just been eating anything honestly... lot of chips... salty even though the light salt ones"
+      ]
+    },
+    "0": {
+      "2": [
+        "my blood pressure was two hundred over ninety"
+      ],
+      "1": [
+        "your ankles were swelling a little bit too and did you have some shortness of breath",
+        "i'm gon na write you a consult to nutrition since it sounds maybe we can give you some advice on watching your diet",
+        "weigh yourself daily... call me if you gain three pounds in two days",
+        "order a renal artery ultrasound just to make sure that we're not missing anything there",
+        "no problems sleeping... lungs are clear bilaterally",
+        "i will do my best [to take medications on time and follow diet]"
+      ],
+      "0": [
+        "i have but i miss them every year and today i took one"
+      ]
+    },
+    "1": {
+      "1": [
+        "echocardiogram... shows preserved ejection fraction of fifty five percent and normal diastolic filling and mild to moderate mitral regurgitation"
+      ],
+      "0": [
+        "continue your bumex two milligrams once daily... continue the cozaar one hundred milligrams daily... norvasc five milligrams once daily"
+      ],
+      "2": [
+        "reports chest pain... shortness of breath... bilateral ankle swelling"
+      ]
+    },
+    "3": {
+      "0": [
+        "2/6 stable systolic ejection murmur"
+      ]
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "phrases": [
+    "I was skiing in Vermont last weekend and I caught my ski when I was coming off the lift and I fell and my knee popped and it's hurt ever since.",
+    "it hurts on the outside but it also feels it won't hold my weight",
+    "it\u2019s been hurting ever since",
+    "the feeling of instability and buckling.",
+    "I had to be taken down by the ski patrol I was unable to bear weight.",
+    "I was immediately able to bend it but not really",
+    "somewhat [able to straighten] but it really hurts when I try to straighten all the way.",
+    "no numbing or tingling in [my] toes",
+    "can feel [my] toes.",
+    "taking ibuprofen",
+    "is helping somewhat",
+    "edema and an effusion over the knee,",
+    "pain to palpation of the lateral knee,",
+    "decreased flexion and extension,",
+    "positive Lachman sign.",
+    "x-ray of the knee did not show any bony abnormality",
+    "concerned that you have ruptured your ACL.",
+    "order a knee MRI to confirm,",
+    "continue ibuprofen 600 to 800 mg every 8 hours,",
+    "brace to support the knee.",
+    "active with skiing and taking care of her 4-year-old twins",
+    "get back into running.",
+    "husband is home with me but he also works a job where he is gone quite a bit.",
+    "regular heart rate and rhythm, clear lungs,",
+    "palpable dorsalis pedis and posterior tibial pulse,",
+    "no leg edema in the ankle.",
+    "see you again soon"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    3,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    1,
+    2,
+    2,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    2,
+    0,
+    1,
+    2,
+    2,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1458042860031128,
+    "calinski_harabasz_score": 5.781279070281184,
+    "davies_bouldin_score": 1.523187784011304
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9969707727432251,
+      0.998762845993042,
+      0.9938023090362549
+    ],
+    [
+      0.9969707727432251,
+      1.0000001192092896,
+      0.9958303570747375,
+      0.9950411319732666
+    ],
+    [
+      0.998762845993042,
+      0.9958303570747375,
+      1.0,
+      0.9956145286560059
+    ],
+    [
+      0.9938023090362549,
+      0.9950411319732666,
+      0.9956145286560059,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.023095695301890373,
+    "1": 0.13646094501018524,
+    "2": 0.05281369388103485,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I was skiing in Vermont last weekend and I caught my ski when I was coming off the lift and I fell and my knee popped and it's hurt ever since."
+      ],
+      "0": [
+        "it hurts on the outside but it also feels it won't hold my weight",
+        "it\u2019s been hurting ever since"
+      ],
+      "1": [
+        "I had to be taken down by the ski patrol I was unable to bear weight.",
+        "I was immediately able to bend it but not really",
+        "somewhat [able to straighten] but it really hurts when I try to straighten all the way.",
+        "husband is home with me but he also works a job where he is gone quite a bit."
+      ]
+    },
+    "0": {
+      "2": [
+        "the feeling of instability and buckling.",
+        "can feel [my] toes."
+      ],
+      "0": [
+        "taking ibuprofen",
+        "is helping somewhat",
+        "positive Lachman sign.",
+        "get back into running.",
+        "see you again soon"
+      ],
+      "1": [
+        "concerned that you have ruptured your ACL."
+      ]
+    },
+    "2": {
+      "2": [
+        "no numbing or tingling in [my] toes",
+        "edema and an effusion over the knee,",
+        "pain to palpation of the lateral knee,",
+        "decreased flexion and extension,",
+        "continue ibuprofen 600 to 800 mg every 8 hours,",
+        "brace to support the knee.",
+        "active with skiing and taking care of her 4-year-old twins",
+        "regular heart rate and rhythm, clear lungs,",
+        "palpable dorsalis pedis and posterior tibial pulse,"
+      ],
+      "0": [
+        "order a knee MRI to confirm,"
+      ],
+      "1": [
+        "no leg edema in the ankle."
+      ]
+    },
+    "3": {
+      "0": [
+        "x-ray of the knee did not show any bony abnormality"
+      ]
+    }
+  }
+}

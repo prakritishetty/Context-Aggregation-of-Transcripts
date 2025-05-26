@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "presents for hospital follow-up after an anterior STEMI status post drug-eluting stent and LAD and newly reduced ejection fraction ejection fraction thirty five percent and moderate mitral regurgitation",
+    "past medical history significant for CAD status post prior status post prior RCA stent in twenty eighteen hypertension and diabetes mellitus",
+    "I've been feeling tired every... but overall I feel pretty [good]",
+    "I've been doing some short walks around the house around the block... I stay pretty close to the house",
+    "I've been taking my medicine... I don't want my [vessel] to close up",
+    "they told me that I'm really gonna have to watch salt and they said that there is a lot of salt in pizza",
+    "Grade 3 out of 6 systolic ejection murmur... heard at the left base",
+    "newly reduced left ventricular dysfunction... ejection fraction thirty-five percent",
+    "Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily... refer you to cardiac rehab",
+    "Add Aldactone 12.5 mg daily... repeat echocardiogram in about two months",
+    "hoping to be able to go out and do [gardening and photography]",
+    "vital signs look good today",
+    "normal sinus rhythm... evolutionary changes anticipated",
+    "no swelling or edema on your radial artery... cath site is clean, dry, and intact",
+    "continue home blood pressure monitoring... blood pressures seem fine at this time",
+    "you're very compliant... medications and following through with those"
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16011829674243927,
+    "calinski_harabasz_score": 4.4343397657718375,
+    "davies_bouldin_score": 1.3385688807517766
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9961722493171692,
+      0.9982157349586487,
+      0.9956378936767578
+    ],
+    [
+      0.9961722493171692,
+      0.9999997615814209,
+      0.9928438067436218,
+      0.9910869598388672
+    ],
+    [
+      0.9982157349586487,
+      0.9928438067436218,
+      0.9999996423721313,
+      0.9950491786003113
+    ],
+    [
+      0.9956378936767578,
+      0.9910869598388672,
+      0.9950491786003113,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.06114082783460617,
+    "1": 0.1844390630722046,
+    "2": 0.034403976052999496,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "presents for hospital follow-up after an anterior STEMI status post drug-eluting stent and LAD and newly reduced ejection fraction ejection fraction thirty five percent and moderate mitral regurgitation"
+      ],
+      "0": [
+        "past medical history significant for CAD status post prior status post prior RCA stent in twenty eighteen hypertension and diabetes mellitus"
+      ],
+      "1": [
+        "Grade 3 out of 6 systolic ejection murmur... heard at the left base",
+        "newly reduced left ventricular dysfunction... ejection fraction thirty-five percent"
+      ]
+    },
+    "1": {
+      "2": [
+        "I've been feeling tired every... but overall I feel pretty [good]",
+        "I've been taking my medicine... I don't want my [vessel] to close up"
+      ],
+      "0": [
+        "I've been doing some short walks around the house around the block... I stay pretty close to the house"
+      ],
+      "1": [
+        "they told me that I'm really gonna have to watch salt and they said that there is a lot of salt in pizza"
+      ]
+    },
+    "0": {
+      "2": [
+        "Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily... refer you to cardiac rehab",
+        "Add Aldactone 12.5 mg daily... repeat echocardiogram in about two months"
+      ],
+      "0": [
+        "hoping to be able to go out and do [gardening and photography]",
+        "vital signs look good today",
+        "normal sinus rhythm... evolutionary changes anticipated",
+        "you're very compliant... medications and following through with those"
+      ],
+      "1": [
+        "continue home blood pressure monitoring... blood pressures seem fine at this time"
+      ]
+    },
+    "3": {
+      "0": [
+        "no swelling or edema on your radial artery... cath site is clean, dry, and intact"
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "it's my upper arm. It hurts really, really bad.",
+    "i was playing volleyball yesterday, last night. And i went to spike the ball... somebody across from me kinda kicked my legs from under me as i was going up, and i fell and landed on my arm.",
+    "it's a nine. Nine out of 10.",
+    "i've been taking ibuprofen every six hours, but it's really not helping at all.",
+    "i have gallstones... i take pepcid. [...] i had a lumbar fusion about six years ago.",
+    "swelling and erythema- on that shoulder. You've got, tenderness over your shoulder. Normal pulses.",
+    "proximal humerus fracture. You kinda think of your humerus as a snow cone, and you knocked the top off the snow cone.",
+    "we're going to put you in a long arm cast and a sling... check you in two weeks... if they haven't realigned, we're gonna have to talk about doing surgery.",
+    "i'm going to prescribe you some pain medicine. [...] Lortab 5 milligram. [...] one to two tablets every six hours as needed for pain.",
+    "we'll get you checked out. [...] follow up in 2 weeks for repeat imaging.",
+    "no, i don't have any allergies."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    0,
+    3,
+    1,
+    1,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17123545706272125,
+    "calinski_harabasz_score": 2.643394508965264,
+    "davies_bouldin_score": 1.0069170813606414
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9975757598876953,
+      0.9968178272247314,
+      0.9969245195388794
+    ],
+    [
+      0.9975757598876953,
+      1.000000238418579,
+      0.9979619979858398,
+      0.9974110126495361
+    ],
+    [
+      0.9968178272247314,
+      0.9979619979858398,
+      1.0,
+      0.9970669150352478
+    ],
+    [
+      0.9969245195388794,
+      0.9974110126495361,
+      0.9970669150352478,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03367046266794205,
+    "1": 0.06512017548084259,
+    "2": 0.1027793139219284,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "it's my upper arm. It hurts really, really bad.",
+        "i was playing volleyball yesterday, last night. And i went to spike the ball... somebody across from me kinda kicked my legs from under me as i was going up, and i fell and landed on my arm.",
+        "we're going to put you in a long arm cast and a sling... check you in two weeks... if they haven't realigned, we're gonna have to talk about doing surgery."
+      ],
+      "0": [
+        "i've been taking ibuprofen every six hours, but it's really not helping at all."
+      ],
+      "1": [
+        "i have gallstones... i take pepcid. [...] i had a lumbar fusion about six years ago.",
+        "i'm going to prescribe you some pain medicine. [...] Lortab 5 milligram. [...] one to two tablets every six hours as needed for pain."
+      ]
+    },
+    "2": {
+      "0": [
+        "it's a nine. Nine out of 10.",
+        "no, i don't have any allergies."
+      ]
+    },
+    "0": {
+      "0": [
+        "swelling and erythema- on that shoulder. You've got, tenderness over your shoulder. Normal pulses.",
+        "we'll get you checked out. [...] follow up in 2 weeks for repeat imaging."
+      ]
+    },
+    "3": {
+      "0": [
+        "proximal humerus fracture. You kinda think of your humerus as a snow cone, and you knocked the top off the snow cone."
+      ]
+    }
+  }
+}

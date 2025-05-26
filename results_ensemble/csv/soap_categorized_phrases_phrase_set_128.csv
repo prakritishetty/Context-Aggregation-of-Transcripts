@@ -1,0 +1,23 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,"Bryan is a 55-year-old male with a past medical history significant for prior discectomy, who presents with back pain."
+O,1,2,"My wife made me push a refrigerator out through the other room, and when I was helping to move it, I felt something in my back on the lower side."
+P,0,2,This was about five days ago.
+P,0,0,It hurts to bend over.
+A,3,2,I have that history of discectomy.
+O,1,1,I'm just worried that something happened.
+O,1,0,"I have been taking ibuprofen... I tried once Tylenol and ibuprofen at the same time, and that gave me some relief."
+P,0,0,"No, nothing significant that."
+A,3,0,No numbness or tingling in legs.
+A,3,0,No problems with bladder or bowels.
+A,3,1,Pain to palpation of the lumbar spine... decreased flexion and extension of the back... positive straight leg raise on the right... strength is good bilaterally in lower extremities.
+O,1,1,Vital signs look really good... blood pressure's nice and controlled.
+P,0,0,Labs here all look good.
+O,1,1,X-ray of your lumbar spine... good bony alignment. I don't see any fracture or anything.
+O,1,1,Lumbar strain. I don't think anything else is going on.
+O,1,1,I don't think [it's related to the prior discectomy].
+P,0,1,Order an MRI just to be sure.
+A,3,1,Prescribe meloxicam 15 mg once a day... Ultram 50 mg every four hours as needed.
+P,0,1,Refer you to physical therapy once we get the MRI results back.
+A,3,1,Discontinue ibuprofen... may continue Tylenol if you wish.
+P,0,0,It's something that we can fix.
+O,1,1,"The MRI will confirm, but I don't think there's anything wrong with the area where you had surgery before."

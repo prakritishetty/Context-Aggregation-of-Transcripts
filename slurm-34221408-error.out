@@ -1,0 +1,12 @@
+  0%|          | 0/207 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:53<00:53, 53.63s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 36.92s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 39.44s/it]
+Device set to use cuda:0
+  0%|          | 1/207 [03:06<10:40:32, 186.56s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:35<00:35, 35.09s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:35<00:00, 14.91s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [00:35<00:00, 17.94s/it]
+Some parameters are on the meta device because they were offloaded to the cpu.
+Device set to use cuda:0
+slurmstepd-gypsum-gpu091: error: *** JOB 34221408 ON gypsum-gpu091 CANCELLED AT 2025-05-13T09:53:15 ***

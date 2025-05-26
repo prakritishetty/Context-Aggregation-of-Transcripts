@@ -1,0 +1,207 @@
+{
+  "phrases": [
+    "left elbow that's really been bothering me... after work, it's really hard for me to open and close my left elbow, and it's been just really stiff and, and hurts.",
+    "swelling there on the tip",
+    "a little bit of weakness",
+    "no numbing or tingling in hands,",
+    "no fever or chills.",
+    "last seizure was a year ago,",
+    "still taking Keppra,",
+    "therapy has been good... still feel a little down and stressed,",
+    "peptic ulcer disease... endoscopy showed gastritis.",
+    "erythema and edema of the left elbow,",
+    "pain to palpation of the olecranon,",
+    "warm to palpation,",
+    "pain with flexion and extension.",
+    "olecranon bursitis caused by repetitive trauma",
+    "It's just caused by repetitive trauma",
+    "meloxicam 15mg once a day,",
+    "continue Keppra 500mg twice daily,",
+    "start Lexapro 10mg once daily,",
+    "continue Protonix 40mg before meals.",
+    "right-handed... can still write,",
+    "nasal congestion from allergies,",
+    "no suicidal or homicidal ideations.",
+    "left arm x-ray shows no evidence of elbow fracture,",
+    "endoscopy results showed gastritis.",
+    "understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    3,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.08316969126462936,
+    "calinski_harabasz_score": 3.2048809673875573,
+    "davies_bouldin_score": 1.9723446734084127
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.998908519744873,
+      0.9942954182624817,
+      0.9977182149887085
+    ],
+    [
+      0.998908519744873,
+      1.0000001192092896,
+      0.9966219663619995,
+      0.9979088306427002
+    ],
+    [
+      0.9942954182624817,
+      0.9966219663619995,
+      1.0,
+      0.995581865310669
+    ],
+    [
+      0.9977182149887085,
+      0.9979088306427002,
+      0.995581865310669,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.020915048196911812,
+    "1": 0.05312603339552879,
+    "2": 0.06825631856918335,
+    "3": 0.03126189857721329
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "left elbow that's really been bothering me... after work, it's really hard for me to open and close my left elbow, and it's been just really stiff and, and hurts.",
+        "therapy has been good... still feel a little down and stressed,"
+      ]
+    },
+    "0": {
+      "2": [
+        "swelling there on the tip",
+        "warm to palpation,",
+        "understands and agrees with the recommended medical treatment plan."
+      ],
+      "0": [
+        "no numbing or tingling in hands,",
+        "erythema and edema of the left elbow,",
+        "pain to palpation of the olecranon,",
+        "pain with flexion and extension."
+      ],
+      "1": [
+        "still taking Keppra,",
+        "meloxicam 15mg once a day,",
+        "continue Keppra 500mg twice daily,",
+        "start Lexapro 10mg once daily,",
+        "nasal congestion from allergies,",
+        "endoscopy results showed gastritis."
+      ]
+    },
+    "1": {
+      "2": [
+        "a little bit of weakness"
+      ],
+      "1": [
+        "no fever or chills.",
+        "continue Protonix 40mg before meals.",
+        "no suicidal or homicidal ideations."
+      ],
+      "0": [
+        "last seizure was a year ago,",
+        "peptic ulcer disease... endoscopy showed gastritis.",
+        "right-handed... can still write,"
+      ]
+    },
+    "3": {
+      "2": [
+        "olecranon bursitis caused by repetitive trauma"
+      ],
+      "0": [
+        "It's just caused by repetitive trauma"
+      ],
+      "1": [
+        "left arm x-ray shows no evidence of elbow fracture,"
+      ]
+    }
+  }
+}

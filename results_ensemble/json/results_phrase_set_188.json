@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Right knee pain.",
+    "Trying to change a light bulb, and I was up on a ladder and I kinda had a little bit of a stumble and kinda twisted my knee as I was trying to catch my fall.",
+    "It hurts in, in, in the inside of my knee.",
+    "It doesn\u2019t seem to help much",
+    "I\u2019ve been taking ibuprofen",
+    "Atrial fibrillation.",
+    "I have had a nose job.",
+    "Tender over the medial portion of your knee over the medial meniscus area",
+    "Pain with valgus stressing",
+    "Normal sensation.",
+    "No fractures there. I don\u2019t see any\u2026 there\u2019s a little bit of fluid\u2026 no dislocation.",
+    "Acute medial meniscus sprain or strain.",
+    "Use some crutches temporarily for the next couple days",
+    "Motrin 800 mg every 6 hours with food",
+    "Follow-up in about a week",
+    "MRI if not better."
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    1,
+    1,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17789992690086365,
+    "calinski_harabasz_score": 4.69669058006982,
+    "davies_bouldin_score": 1.3055249784927183
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9978247880935669,
+      0.9962564706802368,
+      0.9933959245681763
+    ],
+    [
+      0.9978247880935669,
+      0.9999998807907104,
+      0.9933744072914124,
+      0.997373104095459
+    ],
+    [
+      0.9962564706802368,
+      0.9933744072914124,
+      1.0,
+      0.990370512008667
+    ],
+    [
+      0.9933959245681763,
+      0.997373104095459,
+      0.990370512008667,
+      1.0000005960464478
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.005067559890449047,
+    "1": 0.2241857498884201,
+    "2": 0.24278542399406433,
+    "3": 0.049521077424287796
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Right knee pain.",
+        "Atrial fibrillation.",
+        "Normal sensation."
+      ],
+      "0": [
+        "Pain with valgus stressing"
+      ],
+      "1": [
+        "Use some crutches temporarily for the next couple days",
+        "Motrin 800 mg every 6 hours with food",
+        "Follow-up in about a week",
+        "MRI if not better."
+      ]
+    },
+    "3": {
+      "0": [
+        "Trying to change a light bulb, and I was up on a ladder and I kinda had a little bit of a stumble and kinda twisted my knee as I was trying to catch my fall.",
+        "No fractures there. I don\u2019t see any\u2026 there\u2019s a little bit of fluid\u2026 no dislocation."
+      ]
+    },
+    "1": {
+      "2": [
+        "It hurts in, in, in the inside of my knee."
+      ],
+      "0": [
+        "It doesn\u2019t seem to help much",
+        "I\u2019ve been taking ibuprofen"
+      ],
+      "1": [
+        "I have had a nose job."
+      ]
+    },
+    "2": {
+      "0": [
+        "Tender over the medial portion of your knee over the medial meniscus area",
+        "Acute medial meniscus sprain or strain."
+      ]
+    }
+  }
+}

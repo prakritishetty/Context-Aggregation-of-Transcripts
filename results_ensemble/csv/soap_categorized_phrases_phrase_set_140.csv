@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,"I haven't been able to take the thyroid medicine, the one that you prescribed, as I'm still taking my old one, the price was a little high on the new one."
+O,1,0,"The coupon should help, and it should only be about $3"
+S,0,1,"They’re charging me $100 for it [Epiduo gel], I don’t know if this is because it’s Walmart, or if I should try somewhere else."
+S,0,1,Let’s try something else… Sometimes it can be cheaper if we just prescribe you the individual ingredients… clindamycin gel and benzoyl peroxide.
+S,0,0,"I do think your liver enzymes are going to get better once you lose the weight, though."
+S,0,1,"My cousin was telling me to ask you about CLA, because it’s supposed to help your metabolism. Is that to take?"
+S,0,1,"Chromium is just a supplement and it won’t help that much… it won’t hurt, but it also won’t help that much."
+A,2,2,"Your cholesterol was quite high… total cholesterol 222, LDL 153 (should be <100), non-HDL 178 (should be <130)."
+S,0,0,Your vitamin D deficiency… you need to take one [supplement] today.
+A,2,1,"The dexamethasone test you passed, which means you don’t have Cushing’s syndrome. Two of the salivary cortisol tests were normal, one was abnormal."
+S,0,0,Your ALT was 128… back in October was 254. This is much better.
+A,2,0,"The weight loss study… involves a medication for diabetes treatment, weekly injections, and a stipend. BMI criteria: >30 or >27 with conditions like high cholesterol."
+A,2,1,"I have a friend who might be interested, and she does have diabetes."
+A,2,1,"If you have diabetes, you won’t qualify."
+O,1,0,"The unithroid, with the discount code, should only be about $9 for 90 days."
+S,0,0,We might give you some [clindamycin topical]… apply at night to avoid sun reaction.
+A,2,1,"Avoid alcohol and fatty foods, low-carb diet… low cholesterol foods."
+P,3,0,Repeat levels of everything before next visit.
+S,0,2,Sensitive skin… I get rashes with different products.
+P,3,0,"Phexxi, which is a spermicide… apply before intercourse."

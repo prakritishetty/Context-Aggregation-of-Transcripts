@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "She has a past medical history of uterine fibroids and anemia. She's a new patient with a referral from the ER of esophagitis.",
+    "When I called to make the appointment, I was having chest pains, but it stopped after four days, and I haven't had any since.",
+    "Early October. [Doctor] of 2020, correct? [Patient] Yes.",
+    "It was here in the center of my chest, behind my breastbone. It felt like I was having a heart attack. The pain was really sharp.",
+    "They did a bunch of testing and didn't find anything.",
+    "With eating.",
+    "I did. [Doctor]. And that's also resolved since the initial episode three months ago? [Patient] Yes.",
+    "Since you mention anxiety, I was going through a really stressful job transition around the time this happened.",
+    "It hurts a little. [Doctor]. And even when I press lightly this? [Patient] Yes, just a little uncomfortable.",
+    "Possible etiologies could be anxiety, esophagitis, which is irritation of the esophagus. But typically with these... these cause the pain that would last for a long time rather than that isolated incident you had... it's also possible that you had intense heartburn for a few days.",
+    "I'm comfortable with that option. But what do you think? [Patient] I'd to hold off on the EGD and wait to see if I have more symptoms.",
+    "You can call the office if you have any additional episodes of pain or any other symptoms you're concerned about."
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    1,
+    0,
+    3,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11919892579317093,
+    "calinski_harabasz_score": 3.528723340369289,
+    "davies_bouldin_score": 1.1512535234342998
+  },
+  "similarity_matrix": [
+    [
+      0.9999997019767761,
+      0.9951796531677246,
+      0.9962542653083801,
+      0.9983763694763184
+    ],
+    [
+      0.9951796531677246,
+      1.0,
+      0.9932310581207275,
+      0.9970781207084656
+    ],
+    [
+      0.9962542653083801,
+      0.9932310581207275,
+      1.0000001192092896,
+      0.9966895580291748
+    ],
+    [
+      0.9983763694763184,
+      0.9970781207084656,
+      0.9966895580291748,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11234386265277863,
+    "1": 0.15294137597084045,
+    "2": 0.06701777875423431,
+    "3": 0.17202484607696533
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "She has a past medical history of uterine fibroids and anemia. She's a new patient with a referral from the ER of esophagitis.",
+        "Possible etiologies could be anxiety, esophagitis, which is irritation of the esophagus. But typically with these... these cause the pain that would last for a long time rather than that isolated incident you had... it's also possible that you had intense heartburn for a few days."
+      ]
+    },
+    "0": {
+      "2": [
+        "When I called to make the appointment, I was having chest pains, but it stopped after four days, and I haven't had any since.",
+        "It was here in the center of my chest, behind my breastbone. It felt like I was having a heart attack. The pain was really sharp."
+      ],
+      "0": [
+        "I did. [Doctor]. And that's also resolved since the initial episode three months ago? [Patient] Yes."
+      ],
+      "1": [
+        "Since you mention anxiety, I was going through a really stressful job transition around the time this happened.",
+        "It hurts a little. [Doctor]. And even when I press lightly this? [Patient] Yes, just a little uncomfortable.",
+        "I'm comfortable with that option. But what do you think? [Patient] I'd to hold off on the EGD and wait to see if I have more symptoms."
+      ]
+    },
+    "1": {
+      "0": [
+        "Early October. [Doctor] of 2020, correct? [Patient] Yes.",
+        "With eating."
+      ]
+    },
+    "3": {
+      "0": [
+        "They did a bunch of testing and didn't find anything.",
+        "You can call the office if you have any additional episodes of pain or any other symptoms you're concerned about."
+      ]
+    }
+  }
+}

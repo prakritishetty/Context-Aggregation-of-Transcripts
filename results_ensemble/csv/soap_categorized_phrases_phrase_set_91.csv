@@ -1,0 +1,25 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,High blood pressure and palpitations.
+S,0,0,I saw you were recently in the emergency room with high blood pressure and some palpitations.
+S,0,2,"That was back in March, but my girlfriend and I, we talked about it, and on that day I had a few cups of coffee, and no breakfast. It was probably more of a panic attack than anything else."
+S,0,0,I've had issues with my blood pressure since I was young.
+S,0,0,A lot of my family does have high blood pressure.
+S,0,1,"I have a new primary doctor, and she put me on a new medication about a month ago."
+P,3,0,"My new med is a combo med, something 40-25."
+A,2,1,"Are you still taking the amlodipine, 10 milligrams daily?"
+S,0,1,"Every day. Every morning, I take it when I get up, and it's been running at about 146 to 155 lately."
+O,1,1,You're not down in the 120s yet?
+S,0,0,"I'm trying to back off of [salt]. I'm doing good with it, not eating too much."
+O,1,0,I do try to walk on the treadmill when I can.
+A,2,2,The DASH eating plan... has been shown to lower blood pressure.
+A,2,1,"If you do your treadmill routinely for 30 minutes or most days, that could be seven to 10 points off your blood pressure."
+O,1,1,"Your heart and lungs sound good, that's great."
+S,0,0,I'm gonna take a look at your ankles and feet... no swelling.
+A,2,0,There's medicine called spironolactone... we should give that a try.
+A,2,1,The spironolactone combined with hydrochlorothiazide can cause your sodium levels to go down.
+A,2,1,"One in 100 guys might develop tenderness in their chest, swollen breasts, or enlarged breasts."
+A,2,1,We'll schedule a followup in two weeks to check your blood pressure and electrolytes.
+A,2,1,"If the new med doesn't work, the next step would be sending him to the resistant hypertension clinic."
+A,2,1,There is something called a renal denervation... lower blood pressure without medication.
+O,1,1,I'll definitely check that out.
+O,1,1,Sounds good to me.

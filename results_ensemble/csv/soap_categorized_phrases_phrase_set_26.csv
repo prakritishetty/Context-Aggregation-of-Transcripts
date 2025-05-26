@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,Left shoulder pain that I've been having for a few weeks
+S,0,2,I’ve been doing a lot with renovating my basement
+O,1,0,No trauma that I can think of at all
+O,1,2,Pain is isolated to my left shoulder
+S,0,2,Can’t even raise my arm over my head because that’s it—it really hurts
+S,0,0,The pain is always there… when I sleep directly on it the pain goes up
+S,0,0,Without any Tylenol my pain is a seven… with Tylenol it goes down to a two or three
+A,2,2,Limited active and passive range of motion… tenderness of the greater tuberosity of the humerus
+A,2,0,No tenderness at the sternoclavicular or clavicular joints
+O,1,1,X-ray of that left shoulder… no fracture or bony abnormality
+A,2,1,Assessment: rotator cuff tendinopathy
+O,1,1,Order an MRI of your shoulder… refer you for physical therapy for approximately six to eight weeks
+P,3,0,"Continue to take Tylenol p.r.n. If symptoms don’t improve, consider a steroid injection"
+S,0,1,I’m really active—do you think that this pain will ever go away?
+S,0,0,I do believe that pain is gonna go away… many of my patients are successful with PT

@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "sudden onset of pain in my back",
+    "radiated almost down to my groin",
+    "never had that before",
+    "father's had them in the past",
+    "CT scan... showed a stone measuring 0.5 centimeters located in the proximal ureter",
+    "no evidence of hydronephrosis",
+    "push fluids... pass the stone",
+    "prescribe oxycodone 5 mg every 6 to 8 hours for pain",
+    "continue to strain urine... until the stone passes",
+    "urinalysis and urine culture... rule out infection",
+    "follow up in about one to two weeks",
+    "lithotripsy... break up the stone",
+    "denies any blood in urine",
+    "tenderness on the right side",
+    "vitals look good... no fever, blood pressure and heart rate are fine"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    2,
+    3,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13887812197208405,
+    "calinski_harabasz_score": 2.964680635252279,
+    "davies_bouldin_score": 1.2963736281637792
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.997779130935669,
+      0.9983793497085571,
+      0.9969931840896606
+    ],
+    [
+      0.997779130935669,
+      0.9999998807907104,
+      0.9983835220336914,
+      0.9971478581428528
+    ],
+    [
+      0.9983793497085571,
+      0.9983835220336914,
+      1.0000001192092896,
+      0.9955579042434692
+    ],
+    [
+      0.9969931840896606,
+      0.9971478581428528,
+      0.9955579042434692,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07255437225103378,
+    "1": 0.10836449265480042,
+    "2": -0.1393093317747116,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "sudden onset of pain in my back",
+        "radiated almost down to my groin"
+      ],
+      "0": [
+        "never had that before",
+        "father's had them in the past",
+        "tenderness on the right side"
+      ],
+      "1": [
+        "denies any blood in urine"
+      ]
+    },
+    "0": {
+      "2": [
+        "CT scan... showed a stone measuring 0.5 centimeters located in the proximal ureter"
+      ],
+      "0": [
+        "continue to strain urine... until the stone passes",
+        "urinalysis and urine culture... rule out infection",
+        "lithotripsy... break up the stone"
+      ],
+      "1": [
+        "vitals look good... no fever, blood pressure and heart rate are fine"
+      ]
+    },
+    "2": {
+      "2": [
+        "no evidence of hydronephrosis"
+      ],
+      "0": [
+        "prescribe oxycodone 5 mg every 6 to 8 hours for pain"
+      ],
+      "1": [
+        "follow up in about one to two weeks"
+      ]
+    },
+    "3": {
+      "0": [
+        "push fluids... pass the stone"
+      ]
+    }
+  }
+}

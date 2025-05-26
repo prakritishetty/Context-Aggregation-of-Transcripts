@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "I'm 100, we can't really get around that one.",
+    "My doctor says that I have a heart murmur.",
+    "I get short of breath if I walk too fast or too long, or if I tried to drink a whole glass of water without stopping.",
+    "I do have a walker, I don\u2019t know. Maybe when I walk to the end of the driveway or I walk around the culdesac.",
+    "I started taking pain pills for my legs.",
+    "My ankles swell... I lost a little bit of weight, but I still weigh a 120 pounds, but I normally weigh about 130 pounds.",
+    "I feel overly tired because I take all that medication.",
+    "It was my son, not my brother.",
+    "4/6 systolic murmur at the upper sternal border with mild radiation to the carotids.",
+    "Aortic stenosis... one of your main valves of your heart has narrowed a bit.",
+    "Transcatheter aortic valve replacement, or we just call it TAVR.",
+    "Because of your age and medical history, that wouldn\u2019t be a good option for you.",
+    "Sinus rhythm with frequent PVCs as well as anterior septal infarct pattern.",
+    "Statin could be indicated... possibly to stop your statin.",
+    "We will see you back here in about three or four weeks to discuss the results and your next steps.",
+    "Compared to six months ago or a year ago? I would say probably 70 to 80% from about six months ago.",
+    "I do take a pill for that when it does get bad... only when I do feel dizzy.",
+    "Let\u2019s schedule you for an echocardiogram... to assess your overall cardiac structure and function.",
+    "The valve view of where diseased... to assess overa- overall cardiac structure and function.",
+    "We don\u2019t have to make any decisions today... wanted to go over a couple of these things."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    0,
+    3,
+    3,
+    2,
+    0,
+    3,
+    2,
+    1,
+    1,
+    0,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13792261481285095,
+    "calinski_harabasz_score": 5.513466509173412,
+    "davies_bouldin_score": 1.6112091549845993
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9945046901702881,
+      0.9955528974533081,
+      0.9980045557022095
+    ],
+    [
+      0.9945046901702881,
+      0.9999997019767761,
+      0.9987500309944153,
+      0.9976938962936401
+    ],
+    [
+      0.9955528974533081,
+      0.9987500309944153,
+      1.0000001192092896,
+      0.9979791045188904
+    ],
+    [
+      0.9980045557022095,
+      0.9976938962936401,
+      0.9979791045188904,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06633134931325912,
+    "1": 0.12513074278831482,
+    "2": 0.06534332036972046,
+    "3": 0.0031020566821098328
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I'm 100, we can't really get around that one."
+      ],
+      "0": [
+        "My doctor says that I have a heart murmur.",
+        "I started taking pain pills for my legs.",
+        "It was my son, not my brother."
+      ],
+      "1": [
+        "I get short of breath if I walk too fast or too long, or if I tried to drink a whole glass of water without stopping.",
+        "My ankles swell... I lost a little bit of weight, but I still weigh a 120 pounds, but I normally weigh about 130 pounds.",
+        "I feel overly tired because I take all that medication.",
+        "Compared to six months ago or a year ago? I would say probably 70 to 80% from about six months ago.",
+        "I do take a pill for that when it does get bad... only when I do feel dizzy."
+      ]
+    },
+    "2": {
+      "2": [
+        "I do have a walker, I don\u2019t know. Maybe when I walk to the end of the driveway or I walk around the culdesac."
+      ],
+      "0": [
+        "Because of your age and medical history, that wouldn\u2019t be a good option for you.",
+        "We will see you back here in about three or four weeks to discuss the results and your next steps."
+      ],
+      "1": [
+        "We don\u2019t have to make any decisions today... wanted to go over a couple of these things."
+      ]
+    },
+    "0": {
+      "2": [
+        "4/6 systolic murmur at the upper sternal border with mild radiation to the carotids."
+      ],
+      "0": [
+        "Sinus rhythm with frequent PVCs as well as anterior septal infarct pattern.",
+        "The valve view of where diseased... to assess overa- overall cardiac structure and function."
+      ],
+      "1": [
+        "Let\u2019s schedule you for an echocardiogram... to assess your overall cardiac structure and function."
+      ]
+    },
+    "3": {
+      "2": [
+        "Aortic stenosis... one of your main valves of your heart has narrowed a bit."
+      ],
+      "0": [
+        "Transcatheter aortic valve replacement, or we just call it TAVR."
+      ],
+      "1": [
+        "Statin could be indicated... possibly to stop your statin."
+      ]
+    }
+  }
+}

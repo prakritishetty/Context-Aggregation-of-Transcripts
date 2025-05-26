@@ -1,0 +1,139 @@
+{
+  "phrases": [
+    "I've been going to therapy once a week for the past year, mostly virtually, but starting to get in-person. Virtual was a bit of a struggle, but I feel being in-person with someone really helps me.",
+    "Yes, I do. I have my husband and my kids are down the street from me, I'm very lucky.",
+    "I've been using the cuff once a day, and they seem pretty normal.",
+    "slight 2/6 systolic ejection murmur, which we've heard in the past, that's stable. Your lungs are nice and clear, and you have some trace lower extremity edema bilaterally.",
+    "you were talking about some nasal congestion",
+    "you're due for a mammogram, we'll go ahead and schedule that.",
+    "Can I take all my medicine at the same time? Does it matter?",
+    "You can set an alarm that it reminds you to take your medication. But, you can, you can take them altogether.",
+    "I don't think. It doesn't sound to me I need to start you on any medication at this time, unless you feel differently.",
+    "Continue on the lisinopril, 20 milligrams a day. And I want you to continue to watch your blood pressures as, and if they start rising, I want you to contact me."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    3,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1596648395061493,
+    "calinski_harabasz_score": 2.624481915895086,
+    "davies_bouldin_score": 0.8501398226093154
+  },
+  "similarity_matrix": [
+    [
+      0.9999995827674866,
+      0.9973653554916382,
+      0.998152494430542,
+      0.9966694116592407
+    ],
+    [
+      0.9973653554916382,
+      0.9999998211860657,
+      0.9968523383140564,
+      0.9946303367614746
+    ],
+    [
+      0.998152494430542,
+      0.9968523383140564,
+      0.9999997615814209,
+      0.9955782890319824
+    ],
+    [
+      0.9966694116592407,
+      0.9946303367614746,
+      0.9955782890319824,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.12517282366752625,
+    "1": 0.0,
+    "2": 0.2558492422103882,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I've been going to therapy once a week for the past year, mostly virtually, but starting to get in-person. Virtual was a bit of a struggle, but I feel being in-person with someone really helps me."
+      ],
+      "1": [
+        "Yes, I do. I have my husband and my kids are down the street from me, I'm very lucky.",
+        "I don't think. It doesn't sound to me I need to start you on any medication at this time, unless you feel differently."
+      ],
+      "0": [
+        "I've been using the cuff once a day, and they seem pretty normal.",
+        "you're due for a mammogram, we'll go ahead and schedule that.",
+        "Continue on the lisinopril, 20 milligrams a day. And I want you to continue to watch your blood pressures as, and if they start rising, I want you to contact me."
+      ]
+    },
+    "3": {
+      "0": [
+        "slight 2/6 systolic ejection murmur, which we've heard in the past, that's stable. Your lungs are nice and clear, and you have some trace lower extremity edema bilaterally."
+      ]
+    },
+    "1": {
+      "0": [
+        "you were talking about some nasal congestion"
+      ]
+    },
+    "2": {
+      "0": [
+        "Can I take all my medicine at the same time? Does it matter?",
+        "You can set an alarm that it reminds you to take your medication. But, you can, you can take them altogether."
+      ]
+    }
+  }
+}

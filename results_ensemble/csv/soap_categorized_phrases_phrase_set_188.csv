@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,Right knee pain.
+O,3,0,"Trying to change a light bulb, and I was up on a ladder and I kinda had a little bit of a stumble and kinda twisted my knee as I was trying to catch my fall."
+S,1,2,"It hurts in, in, in the inside of my knee."
+S,1,0,It doesn’t seem to help much
+S,1,0,I’ve been taking ibuprofen
+P,0,2,Atrial fibrillation.
+S,1,1,I have had a nose job.
+A,2,0,Tender over the medial portion of your knee over the medial meniscus area
+P,0,0,Pain with valgus stressing
+P,0,2,Normal sensation.
+O,3,0,No fractures there. I don’t see any… there’s a little bit of fluid… no dislocation.
+A,2,0,Acute medial meniscus sprain or strain.
+P,0,1,Use some crutches temporarily for the next couple days
+P,0,1,Motrin 800 mg every 6 hours with food
+P,0,1,Follow-up in about a week
+P,0,1,MRI if not better.

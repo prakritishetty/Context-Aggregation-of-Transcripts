@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "I haven't been able to take the thyroid medicine, the one that you prescribed, as I'm still taking my old one, the price was a little high on the new one.",
+    "The coupon should help, and it should only be about $3",
+    "They\u2019re charging me $100 for it [Epiduo gel], I don\u2019t know if this is because it\u2019s Walmart, or if I should try somewhere else.",
+    "Let\u2019s try something else\u2026 Sometimes it can be cheaper if we just prescribe you the individual ingredients\u2026 clindamycin gel and benzoyl peroxide.",
+    "I do think your liver enzymes are going to get better once you lose the weight, though.",
+    "My cousin was telling me to ask you about CLA, because it\u2019s supposed to help your metabolism. Is that to take?",
+    "Chromium is just a supplement and it won\u2019t help that much\u2026 it won\u2019t hurt, but it also won\u2019t help that much.",
+    "Your cholesterol was quite high\u2026 total cholesterol 222, LDL 153 (should be <100), non-HDL 178 (should be <130).",
+    "Your vitamin D deficiency\u2026 you need to take one [supplement] today.",
+    "The dexamethasone test you passed, which means you don\u2019t have Cushing\u2019s syndrome. Two of the salivary cortisol tests were normal, one was abnormal.",
+    "Your ALT was 128\u2026 back in October was 254. This is much better.",
+    "The weight loss study\u2026 involves a medication for diabetes treatment, weekly injections, and a stipend. BMI criteria: >30 or >27 with conditions like high cholesterol.",
+    "I have a friend who might be interested, and she does have diabetes.",
+    "If you have diabetes, you won\u2019t qualify.",
+    "The unithroid, with the discount code, should only be about $9 for 90 days.",
+    "We might give you some [clindamycin topical]\u2026 apply at night to avoid sun reaction.",
+    "Avoid alcohol and fatty foods, low-carb diet\u2026 low cholesterol foods.",
+    "Repeat levels of everything before next visit.",
+    "Sensitive skin\u2026 I get rashes with different products.",
+    "Phexxi, which is a spermicide\u2026 apply before intercourse."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    2,
+    2,
+    1,
+    0,
+    2,
+    3,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12804505228996277,
+    "calinski_harabasz_score": 3.871877784668031,
+    "davies_bouldin_score": 1.5977752402652399
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9948824644088745,
+      0.9986616373062134,
+      0.9952790141105652
+    ],
+    [
+      0.9948824644088745,
+      1.0,
+      0.9967055320739746,
+      0.9962800741195679
+    ],
+    [
+      0.9986616373062134,
+      0.9967055320739746,
+      1.000000238418579,
+      0.9974163770675659
+    ],
+    [
+      0.9952790141105652,
+      0.9962800741195679,
+      0.9974163770675659,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1015603095293045,
+    "1": 0.4513152241706848,
+    "2": 0.07027862221002579,
+    "3": 0.09842235594987869
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I haven't been able to take the thyroid medicine, the one that you prescribed, as I'm still taking my old one, the price was a little high on the new one.",
+        "Sensitive skin\u2026 I get rashes with different products."
+      ],
+      "1": [
+        "They\u2019re charging me $100 for it [Epiduo gel], I don\u2019t know if this is because it\u2019s Walmart, or if I should try somewhere else.",
+        "Let\u2019s try something else\u2026 Sometimes it can be cheaper if we just prescribe you the individual ingredients\u2026 clindamycin gel and benzoyl peroxide.",
+        "My cousin was telling me to ask you about CLA, because it\u2019s supposed to help your metabolism. Is that to take?",
+        "Chromium is just a supplement and it won\u2019t help that much\u2026 it won\u2019t hurt, but it also won\u2019t help that much."
+      ],
+      "0": [
+        "I do think your liver enzymes are going to get better once you lose the weight, though.",
+        "Your vitamin D deficiency\u2026 you need to take one [supplement] today.",
+        "Your ALT was 128\u2026 back in October was 254. This is much better.",
+        "We might give you some [clindamycin topical]\u2026 apply at night to avoid sun reaction."
+      ]
+    },
+    "1": {
+      "0": [
+        "The coupon should help, and it should only be about $3",
+        "The unithroid, with the discount code, should only be about $9 for 90 days."
+      ]
+    },
+    "2": {
+      "2": [
+        "Your cholesterol was quite high\u2026 total cholesterol 222, LDL 153 (should be <100), non-HDL 178 (should be <130)."
+      ],
+      "1": [
+        "The dexamethasone test you passed, which means you don\u2019t have Cushing\u2019s syndrome. Two of the salivary cortisol tests were normal, one was abnormal.",
+        "I have a friend who might be interested, and she does have diabetes.",
+        "If you have diabetes, you won\u2019t qualify.",
+        "Avoid alcohol and fatty foods, low-carb diet\u2026 low cholesterol foods."
+      ],
+      "0": [
+        "The weight loss study\u2026 involves a medication for diabetes treatment, weekly injections, and a stipend. BMI criteria: >30 or >27 with conditions like high cholesterol."
+      ]
+    },
+    "3": {
+      "0": [
+        "Repeat levels of everything before next visit.",
+        "Phexxi, which is a spermicide\u2026 apply before intercourse."
+      ]
+    }
+  }
+}

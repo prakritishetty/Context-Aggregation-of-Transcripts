@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "pain starts up in the flank and radiates down to my groin",
+    "it comes and goes... depends on how much I've been drinking and activities",
+    "no blood... episode where the pain radiated to one of my testicles",
+    "taking ibuprofen... persists",
+    "pain score... 4 out of ten when it gets a little more out of control... 1 or 2 out of ten",
+    "family has had kidney stones in the past",
+    "had them before... passed some by myself and had surgery a couple times",
+    "CT scan... 0.5 cm in proximal ureter, no hydronephrosis",
+    "prescribe tramadol 50 mg for breakthrough pain",
+    "follow up in one to two weeks if still having symptoms",
+    "continue to push fluids and hopefully pass the stone",
+    "urinalysis and urine culture to rule out infection",
+    "consider lithotripsy if stone not passed by follow-up"
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    1,
+    2,
+    1,
+    0,
+    3,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11078082770109177,
+    "calinski_harabasz_score": 2.3974063097255516,
+    "davies_bouldin_score": 1.4149938872474637
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9984281063079834,
+      0.9979320764541626,
+      0.9972304701805115
+    ],
+    [
+      0.9984281063079834,
+      0.9999996423721313,
+      0.99761962890625,
+      0.9977879524230957
+    ],
+    [
+      0.9979320764541626,
+      0.99761962890625,
+      0.9999997615814209,
+      0.9960627555847168
+    ],
+    [
+      0.9972304701805115,
+      0.9977879524230957,
+      0.9960627555847168,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03658764436841011,
+    "1": -0.0023612380027770996,
+    "2": -0.01846860535442829,
+    "3": 0.03763717785477638
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "pain starts up in the flank and radiates down to my groin"
+      ],
+      "0": [
+        "no blood... episode where the pain radiated to one of my testicles"
+      ],
+      "1": [
+        "pain score... 4 out of ten when it gets a little more out of control... 1 or 2 out of ten"
+      ]
+    },
+    "3": {
+      "0": [
+        "it comes and goes... depends on how much I've been drinking and activities",
+        "had them before... passed some by myself and had surgery a couple times"
+      ]
+    },
+    "2": {
+      "0": [
+        "taking ibuprofen... persists",
+        "prescribe tramadol 50 mg for breakthrough pain"
+      ]
+    },
+    "0": {
+      "2": [
+        "family has had kidney stones in the past",
+        "consider lithotripsy if stone not passed by follow-up"
+      ],
+      "0": [
+        "CT scan... 0.5 cm in proximal ureter, no hydronephrosis",
+        "follow up in one to two weeks if still having symptoms",
+        "urinalysis and urine culture to rule out infection"
+      ],
+      "1": [
+        "continue to push fluids and hopefully pass the stone"
+      ]
+    }
+  }
+}

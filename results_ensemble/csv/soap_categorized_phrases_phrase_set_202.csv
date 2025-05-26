@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,you came in to see us today for an evaluation of that elbow pain
+O,3,1,I really got into ceramics and doing pottery and over the past week I started to develop this elbow pain
+S,0,0,it hurts a lot in the inside of my elbow
+S,0,0,it stays mostly at my elbow but it can go down a bit into my forearm
+O,3,0,no nothing... I can't think of anything
+O,3,2,it's difficult for me sometimes to lift and do things because of that pain
+S,0,1,I've tried ibuprofen that helps a little but not much
+A,2,2,positive for pain to palpation... moderate tenderness of the medial epicondyle
+S,0,2,positive for pain when you pronate that forearm
+A,2,0,positive for pain with resistance against flexion of that left wrist
+P,1,2,don't see any fracture or bony abnormality
+A,2,1,consistent with medial epicondylitis caused by overuse and potential damage of those tendons that bend the wrist towards the palm
+S,0,1,order a sling and want you to wear the sling while you're awake
+P,1,0,apply ice to the elbow for twenty minutes three times a day
+P,1,1,take ibuprofen 600 mg every 6 hours with food for a full week
+P,1,1,hold off for the next couple of weeks on doing any type of pottery work
+S,0,1,see you again in a week and see how you're doing

@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,swelling and the pain
+P,1,2,felt something stretched
+P,1,0,squatting or bending
+P,1,1,Frequent water skier
+O,3,0,no side effects.
+P,1,1,Aleve twice a day
+A,0,0,"ecchymosis, edema, effusion present,"
+A,0,1,"pain to palpation medially,"
+A,0,1,"decreased range of motion,"
+A,0,2,"negative varus and valgus test,"
+O,3,0,negative Lachman sign.
+S,2,0,medial collateral ligament strain
+P,1,2,agrees with the plan

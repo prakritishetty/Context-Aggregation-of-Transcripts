@@ -1,0 +1,239 @@
+{
+  "phrases": [
+    "it's hurting on the inside of my elbow",
+    "when I roll over and it just wakes me up",
+    "pain radiates down my arm and along that inside of my arm",
+    "on a scale of one to ten... about a seven",
+    "ibuprofen isn't really helping",
+    "tried a little bit of ice at first",
+    "I've been doing some pottery... making a ceramic bowl and I'm gonna paint it... working on it a lot",
+    "for my son's birthday",
+    "it\u2019s been hurting for about four days and it\u2019s just not getting better",
+    "no, I haven\u2019t [injured my elbow before]",
+    "history of hypertension... on ten milligrams of lisinopril",
+    "checking my blood pressures regularly... one teens to one thirties",
+    "taking my medications everyday... set an alarm for that lisinopril",
+    "diabetes... on five hundred milligrams of metformin twice a day",
+    "sometimes I forget... having a medication twice a day",
+    "I have a sweet tooth... love to bake... make cakes and cinnamon rolls",
+    "moderate tenderness at the medial epicondyle",
+    "pain with resisted pronation of forearm",
+    "pain with flexion and bending the wrist",
+    "no bruising or swelling... no discoloration or lesions",
+    "x-ray of my elbow... no fracture or bony abnormality",
+    "consistent with medial epicondylitis",
+    "order a sling for your arm... apply ice for twenty minutes three times a day",
+    "take six hundred milligrams of ibuprofen every six hours",
+    "hold off on pottery for the next couple of weeks",
+    "increase metformin to a thousand milligrams twice a day",
+    "order an A1C... evaluate other options if sugars aren\u2019t under control",
+    "refer to diabetic counseling",
+    "continue lisinopril at ten milligrams",
+    "walk around the neighborhood... one to two miles a day",
+    "I\u2019ll just let him know that I maybe I\u2019ll take a picture of what I have far",
+    "friends tell me something about combining a protein if I eat something sweet"
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    2,
+    1,
+    3,
+    1,
+    3,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    3,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "S",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1389492005109787,
+    "calinski_harabasz_score": 5.590430425891574,
+    "davies_bouldin_score": 1.7955145318311465
+  },
+  "similarity_matrix": [
+    [
+      0.9999995827674866,
+      0.9982264637947083,
+      0.9984598159790039,
+      0.9977193474769592
+    ],
+    [
+      0.9982264637947083,
+      0.9999999403953552,
+      0.9971128702163696,
+      0.9976381063461304
+    ],
+    [
+      0.9984598159790039,
+      0.9971128702163696,
+      1.0,
+      0.9963048100471497
+    ],
+    [
+      0.9977193474769592,
+      0.9976381063461304,
+      0.9963048100471497,
+      1.0000004768371582
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.020097140222787857,
+    "1": -0.10737988352775574,
+    "2": 0.15092527866363525,
+    "3": 0.043328095227479935
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "it's hurting on the inside of my elbow",
+        "when I roll over and it just wakes me up",
+        "ibuprofen isn't really helping",
+        "it\u2019s been hurting for about four days and it\u2019s just not getting better",
+        "no, I haven\u2019t [injured my elbow before]",
+        "I\u2019ll just let him know that I maybe I\u2019ll take a picture of what I have far",
+        "friends tell me something about combining a protein if I eat something sweet"
+      ],
+      "0": [
+        "I've been doing some pottery... making a ceramic bowl and I'm gonna paint it... working on it a lot"
+      ],
+      "1": [
+        "for my son's birthday",
+        "sometimes I forget... having a medication twice a day"
+      ]
+    },
+    "2": {
+      "2": [
+        "pain radiates down my arm and along that inside of my arm"
+      ],
+      "0": [
+        "moderate tenderness at the medial epicondyle",
+        "consistent with medial epicondylitis"
+      ],
+      "1": [
+        "pain with resisted pronation of forearm",
+        "pain with flexion and bending the wrist"
+      ]
+    },
+    "1": {
+      "2": [
+        "on a scale of one to ten... about a seven",
+        "order an A1C... evaluate other options if sugars aren\u2019t under control"
+      ],
+      "0": [
+        "tried a little bit of ice at first"
+      ],
+      "1": [
+        "walk around the neighborhood... one to two miles a day"
+      ]
+    },
+    "0": {
+      "1": [
+        "history of hypertension... on ten milligrams of lisinopril",
+        "take six hundred milligrams of ibuprofen every six hours",
+        "hold off on pottery for the next couple of weeks",
+        "increase metformin to a thousand milligrams twice a day",
+        "refer to diabetic counseling",
+        "continue lisinopril at ten milligrams"
+      ],
+      "2": [
+        "checking my blood pressures regularly... one teens to one thirties",
+        "taking my medications everyday... set an alarm for that lisinopril",
+        "diabetes... on five hundred milligrams of metformin twice a day",
+        "order a sling for your arm... apply ice for twenty minutes three times a day"
+      ],
+      "0": [
+        "I have a sweet tooth... love to bake... make cakes and cinnamon rolls",
+        "no bruising or swelling... no discoloration or lesions",
+        "x-ray of my elbow... no fracture or bony abnormality"
+      ]
+    }
+  }
+}

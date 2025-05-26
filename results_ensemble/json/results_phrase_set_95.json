@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "Full-spectrum sexually transmitted disease testing.",
+    "Discomfort, a change in discharge, and odor in her vaginal region.",
+    "The side of her vagina is starting to become painful.",
+    "Change in the odor, color, and consistency of her vaginal discharge.",
+    "Her partner has been in sexual encounters with other people.",
+    "Her sexual partner has been having multiple partners for some period of time.",
+    "She had an abnormal Pap Smear around the age of 20.",
+    "Her most recent Pap Smear approximately 6 months ago was normal.",
+    "Pelvic exam demonstrates no external lesions. Normal labia majora and labia minora. Normal physiological discharge with normal color and smell.",
+    "Cervix is normal. Vaginal wall is normal. No cervical motion tenderness or masses noted.",
+    "Screening for gonorrhea, chlamydia, trichomoniasis, syphilis, HIV, and hepatitis C.",
+    "High risk due to an abnormal Pap Smear in the past and the recent discovery of her sexual partner having multiple partners."
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.30733054876327515,
+    "calinski_harabasz_score": 5.601250257573633,
+    "davies_bouldin_score": 0.8515144686374263
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9958298802375793,
+      0.9967433214187622,
+      0.99753737449646
+    ],
+    [
+      0.9958298802375793,
+      1.0,
+      0.9927127361297607,
+      0.9953680038452148
+    ],
+    [
+      0.9967433214187622,
+      0.9927127361297607,
+      0.9999999403953552,
+      0.9973651170730591
+    ],
+    [
+      0.99753737449646,
+      0.9953680038452148,
+      0.9973651170730591,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.25288069248199463,
+    "1": 0.20905140042304993,
+    "2": -0.041449207812547684,
+    "3": 0.5160300135612488
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Full-spectrum sexually transmitted disease testing.",
+        "Screening for gonorrhea, chlamydia, trichomoniasis, syphilis, HIV, and hepatitis C."
+      ]
+    },
+    "3": {
+      "0": [
+        "Discomfort, a change in discharge, and odor in her vaginal region.",
+        "Change in the odor, color, and consistency of her vaginal discharge."
+      ]
+    },
+    "0": {
+      "2": [
+        "The side of her vagina is starting to become painful."
+      ],
+      "0": [
+        "Her partner has been in sexual encounters with other people.",
+        "Her sexual partner has been having multiple partners for some period of time.",
+        "She had an abnormal Pap Smear around the age of 20.",
+        "High risk due to an abnormal Pap Smear in the past and the recent discovery of her sexual partner having multiple partners."
+      ],
+      "1": [
+        "Her most recent Pap Smear approximately 6 months ago was normal."
+      ]
+    },
+    "1": {
+      "0": [
+        "Pelvic exam demonstrates no external lesions. Normal labia majora and labia minora. Normal physiological discharge with normal color and smell.",
+        "Cervix is normal. Vaginal wall is normal. No cervical motion tenderness or masses noted."
+      ]
+    }
+  }
+}

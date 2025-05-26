@@ -1,0 +1,227 @@
+{
+  "phrases": [
+    "I'm having more fatigue, but I don't know if it's age or if it's just drained at the end of the day.",
+    "After a long bike ride, I'll sit down and boom. I'm out.",
+    "I can't go as fast as I used to. I'm still riding, and after a long bike ride, I'll sit down and boom. I'm out.",
+    "My wife and friends tell me that when I walk, I purse my lips when I'm breathing.",
+    "I noticed a little nodule on my testicle. I know I have this little nodule on my testicle.",
+    "The patient underwent an aortic valve replacement and ascending aortic aneurysm repair on 1/22/2013.",
+    "His last stress test was September 9th, 2019.",
+    "I asked Dr. Lewis for an echocardiogram to see how I'm doing.",
+    "Alkaline phosphatase was elevated to 156.",
+    "Total cholesterol of 247, HDL of 66, LDL of 166, and triglycerides at 74.",
+    "Vitamin D level was at the high end of normal at 94.",
+    "He takes vitamin D3: 50,000 units on Sundays and 2000 units the other six days.",
+    "Pursed lip breathing noted. The exhalation phase is low.",
+    "Lungs are clear to auscultation, no wheezing.",
+    "Testicle with two to three millimeters palpable nodule.",
+    "I ride my bike. I can\u2019t go as fast as I used to. My typical ride is 20, 30 miles.",
+    "I get six to seven hours of sleep a night.",
+    "I believe I snore a little bit, but she\u2019s never said anything about me not breathing.",
+    "I\u2019m going to order an echocardiogram and a stress test.",
+    "I recommend following up with cardiology, Dr. Vincent Sanchez would be a great fit for you.",
+    "We\u2019re going to check a few labs today: alkaline phosphatase and gamma GT.",
+    "I\u2019ve ordered pulmonary function tests (PFTs) for further evaluation.",
+    "Referral placed to urology for a possible ultrasound for the testicular nodule.",
+    "Recommend the shingles vaccine and MMR titer.",
+    "Return in about a year for your wellness visit.",
+    "Fully vaccinated against COVID-19: first dose 1/15/2021, second dose 2/5/2021.",
+    "He denies any wheezing.",
+    "No hernia palpable.",
+    "Not concerned about depression; I\u2019m a pretty happy guy overall."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    3,
+    2,
+    3,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    2,
+    2,
+    1,
+    2,
+    1,
+    0,
+    1,
+    1,
+    2,
+    1,
+    0,
+    2,
+    1,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.14834679663181305,
+    "calinski_harabasz_score": 5.714949385345741,
+    "davies_bouldin_score": 1.8490389353016878
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9973940253257751,
+      0.9983925819396973,
+      0.9952809810638428
+    ],
+    [
+      0.9973940253257751,
+      1.0,
+      0.9985209703445435,
+      0.9979080557823181
+    ],
+    [
+      0.9983925819396973,
+      0.9985209703445435,
+      1.0000001192092896,
+      0.9973353147506714
+    ],
+    [
+      0.9952809810638428,
+      0.9979080557823181,
+      0.9973353147506714,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.044659752398729324,
+    "1": 0.2102666199207306,
+    "2": 0.015948036685585976,
+    "3": 0.24416670203208923
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "I'm having more fatigue, but I don't know if it's age or if it's just drained at the end of the day.",
+        "I can't go as fast as I used to. I'm still riding, and after a long bike ride, I'll sit down and boom. I'm out."
+      ],
+      "2": [
+        "After a long bike ride, I'll sit down and boom. I'm out.",
+        "My wife and friends tell me that when I walk, I purse my lips when I'm breathing.",
+        "I noticed a little nodule on my testicle. I know I have this little nodule on my testicle.",
+        "I ride my bike. I can\u2019t go as fast as I used to. My typical ride is 20, 30 miles."
+      ],
+      "1": [
+        "I believe I snore a little bit, but she\u2019s never said anything about me not breathing.",
+        "Not concerned about depression; I\u2019m a pretty happy guy overall."
+      ]
+    },
+    "2": {
+      "2": [
+        "The patient underwent an aortic valve replacement and ascending aortic aneurysm repair on 1/22/2013."
+      ],
+      "1": [
+        "His last stress test was September 9th, 2019.",
+        "Alkaline phosphatase was elevated to 156.",
+        "Vitamin D level was at the high end of normal at 94.",
+        "He takes vitamin D3: 50,000 units on Sundays and 2000 units the other six days.",
+        "Lungs are clear to auscultation, no wheezing.",
+        "I get six to seven hours of sleep a night.",
+        "Referral placed to urology for a possible ultrasound for the testicular nodule."
+      ],
+      "0": [
+        "Total cholesterol of 247, HDL of 66, LDL of 166, and triglycerides at 74."
+      ]
+    },
+    "1": {
+      "2": [
+        "I asked Dr. Lewis for an echocardiogram to see how I'm doing.",
+        "I\u2019m going to order an echocardiogram and a stress test."
+      ],
+      "0": [
+        "I recommend following up with cardiology, Dr. Vincent Sanchez would be a great fit for you."
+      ],
+      "1": [
+        "We\u2019re going to check a few labs today: alkaline phosphatase and gamma GT.",
+        "I\u2019ve ordered pulmonary function tests (PFTs) for further evaluation.",
+        "Return in about a year for your wellness visit."
+      ]
+    },
+    "0": {
+      "2": [
+        "Pursed lip breathing noted. The exhalation phase is low."
+      ],
+      "0": [
+        "Testicle with two to three millimeters palpable nodule.",
+        "Recommend the shingles vaccine and MMR titer.",
+        "Fully vaccinated against COVID-19: first dose 1/15/2021, second dose 2/5/2021."
+      ],
+      "1": [
+        "He denies any wheezing.",
+        "No hernia palpable."
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "Right shoulder pain.",
+    "The onset of his pain began a few weeks ago, when he was performing different projects in his backyard.",
+    "it's more on the outside and it's kinda tender on the outside when I raise my arm up.",
+    "whenever I move it I can definitely feel some pain",
+    "bothering me at night also [because] I sleep on that side.",
+    "I hurt that same shoulder because it's my dominant hand... playing baseball when I was younger.",
+    "no numbness in my arm or hands.",
+    "taking some Advil and icing as much as I can... dulls it a little bit.",
+    "limited active and passive range of motion",
+    "tenderness at the greater tuberosity of the humerus.",
+    "good hand grip",
+    "sensation to touch is intact.",
+    "shoulder x-ray... no fracture.",
+    "rotator cuff tendinopathy",
+    "bilateral foot pain.",
+    "order an MRI... refer you to physical therapy for six to eight weeks,",
+    "continue Tylenol,",
+    "consider a steroid injection if symptoms don\u2019t improve.",
+    "my both my feet are really sore... stiff and stuff... soreness... ice on them keep them elevated.",
+    "soak your feet in Epsom salts to relax the muscles and reduce soreness."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    1,
+    3,
+    1,
+    1,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    1,
+    1,
+    2,
+    1,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    2,
+    1,
+    1,
+    2,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13957014679908752,
+    "calinski_harabasz_score": 4.624162021246569,
+    "davies_bouldin_score": 1.6941137100222816
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9961624145507812,
+      0.9976352453231812,
+      0.9953398704528809
+    ],
+    [
+      0.9961624145507812,
+      1.0000001192092896,
+      0.998723030090332,
+      0.9985520839691162
+    ],
+    [
+      0.9976352453231812,
+      0.998723030090332,
+      0.9999997615814209,
+      0.9982573986053467
+    ],
+    [
+      0.9953398704528809,
+      0.9985520839691162,
+      0.9982573986053467,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1201094537973404,
+    "1": 0.15080037713050842,
+    "2": 0.11962217092514038,
+    "3": -0.1707015484571457
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Right shoulder pain.",
+        "bilateral foot pain.",
+        "consider a steroid injection if symptoms don\u2019t improve."
+      ],
+      "0": [
+        "good hand grip"
+      ],
+      "1": [
+        "continue Tylenol,"
+      ]
+    },
+    "0": {
+      "2": [
+        "The onset of his pain began a few weeks ago, when he was performing different projects in his backyard."
+      ],
+      "1": [
+        "it's more on the outside and it's kinda tender on the outside when I raise my arm up.",
+        "bothering me at night also [because] I sleep on that side.",
+        "I hurt that same shoulder because it's my dominant hand... playing baseball when I was younger.",
+        "taking some Advil and icing as much as I can... dulls it a little bit.",
+        "my both my feet are really sore... stiff and stuff... soreness... ice on them keep them elevated."
+      ],
+      "0": [
+        "whenever I move it I can definitely feel some pain"
+      ]
+    },
+    "2": {
+      "2": [
+        "no numbness in my arm or hands.",
+        "sensation to touch is intact.",
+        "soak your feet in Epsom salts to relax the muscles and reduce soreness."
+      ],
+      "0": [
+        "tenderness at the greater tuberosity of the humerus."
+      ],
+      "1": [
+        "shoulder x-ray... no fracture."
+      ]
+    },
+    "3": {
+      "2": [
+        "limited active and passive range of motion"
+      ],
+      "0": [
+        "rotator cuff tendinopathy"
+      ],
+      "1": [
+        "order an MRI... refer you to physical therapy for six to eight weeks,"
+      ]
+    }
+  }
+}

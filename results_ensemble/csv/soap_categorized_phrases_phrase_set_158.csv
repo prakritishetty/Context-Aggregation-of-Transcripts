@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,my blood pressure has been quite high
+O,3,2,added to medications but and but I I wasn't [taking them] before but I am and we're still having a hard time controlling my blood pressure
+O,3,0,my last blood work [...] she said something about my kidneys
+O,3,1,before I wasn't [taking medications] but I am [...] I've noticed that it has been getting higher the other day was even as high as one seventy over ninety
+O,3,1,during football season it's really difficult [...] I really love watching my games have a lot of pizza wings subs
+S,0,1,I occasionally take nonsteroidals [...] Advil or Motrin or Aleve
+S,0,0,both my parents do have high blood pressure and one of them did have kidney disease
+S,0,1,blood pressure [...] one sixty nine over seventy four
+A,2,0,hear a two over six systolic ejection murmur [...] small amount of one plus pitting edema bilaterally
+A,2,0,"order a renal artery ultrasound [...] urine collection, morning aldosterone levels, reining levels, and a twenty four hour urine"
+P,1,2,decrease your alcohol [...] bring it down to maybe one or two a week
+S,0,1,stop taking any nonsteroidal medicines [...] take Tylenol for any pain
+S,0,1,prescribe [...] Cardura four milligrams once a day
+P,1,0,return in three weeks [...] record all of your blood pressures [...] at the same time every day
+P,1,1,referral to a nutritionist [...] help with salt intake
+P,1,0,uncontrolled hypertension [...] multifactorial [...] need to be changing your medicine around

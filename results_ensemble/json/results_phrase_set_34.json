@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "I was up on a ladder painting and kinda reaching out and fell took a fall and kinda braced myself but I was painting.",
+    "this happened about three weeks ago",
+    "I iced the arm and I also took some Advil.",
+    "pain all the time",
+    "about a six",
+    "down to about a four",
+    "I did when I initially hurt it but I'm not no longer having any numbness or tingling.",
+    "limited active and passive range of motion",
+    "tenderness to the greater tuberosity of the humerus",
+    "no fracture or bony abnormality",
+    "rotator cuff tendinopathy",
+    "order an MRI of that shoulder",
+    "refer you to physical therapy",
+    "six to eight weeks",
+    "steroid injection",
+    "continue to take an NSAID",
+    "see you again in two weeks"
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18001918494701385,
+    "calinski_harabasz_score": 4.210465412666951,
+    "davies_bouldin_score": 1.3366374690466485
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9980029463768005,
+      0.9972747564315796,
+      0.9959844350814819
+    ],
+    [
+      0.9980029463768005,
+      1.0000001192092896,
+      0.9979029893875122,
+      0.9942193031311035
+    ],
+    [
+      0.9972747564315796,
+      0.9979029893875122,
+      0.9999999403953552,
+      0.9945226907730103
+    ],
+    [
+      0.9959844350814819,
+      0.9942193031311035,
+      0.9945226907730103,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03886077180504799,
+    "1": -0.21819405257701874,
+    "2": 0.027615852653980255,
+    "3": 0.07720815390348434
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I was up on a ladder painting and kinda reaching out and fell took a fall and kinda braced myself but I was painting."
+      ],
+      "0": [
+        "I iced the arm and I also took some Advil."
+      ],
+      "1": [
+        "I did when I initially hurt it but I'm not no longer having any numbness or tingling."
+      ]
+    },
+    "0": {
+      "2": [
+        "this happened about three weeks ago"
+      ],
+      "0": [
+        "pain all the time",
+        "about a six",
+        "down to about a four",
+        "order an MRI of that shoulder",
+        "continue to take an NSAID"
+      ],
+      "1": [
+        "refer you to physical therapy",
+        "six to eight weeks",
+        "see you again in two weeks"
+      ]
+    },
+    "2": {
+      "2": [
+        "limited active and passive range of motion"
+      ],
+      "0": [
+        "tenderness to the greater tuberosity of the humerus"
+      ],
+      "1": [
+        "no fracture or bony abnormality"
+      ]
+    },
+    "1": {
+      "0": [
+        "rotator cuff tendinopathy",
+        "steroid injection"
+      ]
+    }
+  }
+}

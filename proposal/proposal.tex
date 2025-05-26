@@ -1,0 +1,386 @@
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{naaclhlt2019}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{float}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{url}
+
+\aclfinalcopy 
+
+\title{Hierarchical Context Aggregation for Quality Automated Medical Notes}
+
+\author{Prakriti Shetty \\
+  {\tt \small psshetty@umass.edu} \\\And
+  Priya Balakrishnan \\
+  {\tt \small pbalakrishna@umass.edu} \\\And
+  Avinash Nandyala \\
+  {\tt \small anandyala@umass.edu} \\\And
+  Donald Winkleman \\
+  {\tt \small dwinkelman@umass.edu} \\}
+  
+% \setlength\textwidth{16.0cm}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Electronic Health Records (EHRs) have been widely adopted to digitize and automate the collection of patient records, including medical history, consultation notes, and overall case documentation. However, current EHR systems primarily rely on manual data entry, which requires healthcare professionals to manually input information. This manual approach leads to several issues, such as data-entry errors, inconsistent documentation, reduced readability, and increased administrative workload. Consequently, this process not only affects data accuracy and usability but also contributes to physician dissatisfaction due to the significant time investment required for documentation. 
+
+To mitigate these challenges, recent advancements have explored automated clinical documentation systems, commonly referred to as digital scribes. These systems aim to capture and transcribe physician-patient conversations into structured clinical notes, allowing healthcare professionals to focus on patient care rather than administrative tasks. However, many existing solutions primarily depend on automatic speech recognition (ASR) followed by named entity recognition (NER) to extract relevant medical terms, often presenting the output as a tabular summary of keywords. While such approaches offer some level of automation, they fail to capture the nuanced and structured nature of clinical documentation required for effective decision-making and seamless integration into EHR systems.
+
+In this work, we propose an advanced automated pipeline that processes audio transcripts from doctor-patient interactions to systematically extract key medical information and categorize it according to the standard SOAP (Subjective, Objective, Assessment, Plan) format. Our approach enhances traditional methods by incorporating hierarchical clustering for topic categorization, enabling fine-grained segmentation of medical discussions within the SOAP framework. This structured organization ensures that clinical notes are not only comprehensive and contextually accurate but also readily adaptable for integration into modern EHR systems, ultimately improving workflow efficiency and reducing the documentation burden on healthcare providers.
+
+\section{Related work}
+\cite{SR}'s systematic review on intelligent solutions for automatic speech recognition (ASR) and automatic documentation in medical interviews provided a comprehensive understanding of the problem landscape. Most of the selected studies followed a standardized pipeline, beginning with speech capture using tools such as the Google Speech-to-Text API or commercial ASR systems like Dragon NaturallySpeaking (Nuance). Speaker diarization and recognition were commonly implemented using Hidden Markov Models (HMMs) and Gaussian Mixture Models (GMMs), followed by speech enhancement techniques using Generative Adversarial Networks (GANs), or noise suppression using CNNs. The extracted information was then aligned with medical knowledge bases, including SNOMED-CT and BioPortal, to ensure accuracy and contextual relevance. Finally, structured tabular summaries were generated using machine learning and deep learning techniques, including Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs) such as Long Short-Term Memory (LSTM) networks, and Natural Language Processing (NLP) and Knowledge Extraction modules.
+
+\subsection*{Speaker Normalisation}
+\cite{aliero2023systematic} provides a comprehensive methodology review of text normalization research across 54 papers from 2018-2022. It subdivides text normalization techniques into four methods shown in figure 1.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.85\linewidth]{figs/normalization.png}
+    \caption{Text Normalization Techniques and some of their classification}
+    \label{fig:enter-label}
+\end{figure}
+Neural networks generally have high accuracy, especially with the exponential growth in LLM capabilities in recent years, but come at the cost of computational complexity. Rule-Based and Statistical Methods have the opposite tradeoff for general translation. However, Rule-Based techniques can succeed in domain-specific areas such as medicine when processing to and from specific terminology. 
+\par
+Recently, research has shifted towards exploring hybrid approaches which generally utilize neural networks alongside rule-based, statistical methods, or both. For the small tradeoff in computational efficiency that comes with using multiple methods, higher accuracy can be achieved on domain-specific language normalization. Therefore, this technique would be best suited for our application.
+
+
+\subsection*{Topic Categorization}
+Topic categorization in medical dialogues has traditionally relied on manual annotation by domain experts. 
+However, recent research suggests automated approaches using hierarchical clustering can achieve comparable results. 
+Two notable papers propose hierarchical clustering methods for topic modeling: \cite{kapoor2024qualitativeinsightstoolqualit} focused specifically on news reports achieving strong performance metrics, and \cite{khandelwal2025usingllmbasedapproachesenhance} presented a more generalized document-level approach that enables nuanced topic categorization.
+While some approaches like prompt-based classification and document-to-document summarization techniques exist, they tend to require more manual effort or may not be as well-suited for dialogue-specific topic modeling.
+
+\subsection*{Generation of Doctor Notes}
+Prior work in automated clinical documentation has explored various approaches to structuring transcribed medical conversations. \cite{wenceslao} mapped transcribed text to multiple clinically relevant categories, including time expression identification, medical entity identification, attribute classification, and primary diagnosis classification. Similarly, \cite{khattak} structured clinical notes into distinct categories, such as sign and symptom mentions, measurement annotations, disease and disorder mentions, medication mentions, and procedure mentions, thereby facilitating more organized and accessible documentation. 
+
+\cite{understandingmedicalconvo} employed a Named Entity Recognition (NER) tagging approach using Recurrent Neural Network Transducers (RNN-Ts) instead of conventional Conditional Random Fields (CRFs). This choice was motivated by the need to capture temporal dependencies, which play a crucial role in knowledge extraction. 
+Building upon this, \cite{dlbasedtranscribing} proposed a more structured approach, reducing lengthy text transcripts into a labeled set categorized into four key aspects: patient details, symptoms, previous prescriptions, and the current medical situation, and used a Support Vector Machine (SVM) model to evaluate classification accuracy.
+
+A more contextually aware strategy was introduced by \cite{contextagg}, who incorporated real-time health information extracted from consultation transcripts to construct patient profiles. This approach aimed to enhance the utility of extracted data for clinical decision-making and personalized patient care by integrating dynamically updated medical information alongside demographic details such as age and gender. An alternative line of research has explored generating summaries or paraphrased versions of transcriptions to improve clarity and expressiveness, but without much success.
+
+In our work, we adopt the SOAP (Subjective, Objective, Assessment, and Plan) format for clinical documentation, originally introduced by \cite{SOAP}. This structured framework has long been a cornerstone of problem-oriented medical notes, providing a standardized and interpretable format for organizing clinical information. However, we extend this approach by integrating the contextual profiling methodology proposed by \cite{contextagg}. Unlike their approach, which includes demographic attributes, our dataset does not contain patient demographic information. Instead, we synthesize a structured patient profile solely from the consultation transcript, ensuring that relevant clinical context is preserved without introducing demographic fields. By combining these methodologies, our approach seeks to balance structured documentation with dynamic, context-aware medical information extraction, ultimately enhancing both the usability and comprehensiveness of automated clinical notes.
+\section{Data}
+
+Our project requires high-quality medical dialogue data to develop a tool that transforms doctor-patient conversations into structured doctor notes in the SOAP format. To achieve this, we will utilize multiple publicly available datasets that contain real-world medical conversations.
+
+The \textbf{MedDialog-EN dataset} is a large-scale English-language corpus featuring approximately 300,000 medical consultations and 500,000 utterances. These conversations span 2 broad medical specialties, including internal medicine, pediatrics, and dentistry, and further branch into 172 fine-grained sub-specialties. Each consultation consists of two components, a description of the patient's medical condition and conversations between the patient and doctor \cite{zeng-etal-2020-meddialog}.
+This dataset is freely accessible and has been widely adopted in medical NLP research, making it a reliable resource for our project. The detailed patient condition descriptions serve as essential context for generating structured medical summaries in the SOAP note format. 
+
+The \textbf{Zenodo dataset} consists of English-language transcripts of psychiatric consultations, specifically created for training machine learning models to generate psychiatric case notes from doctor-patient conversations.\cite{kazi2020dataset}
+
+This dataset is structured in JSON format, with each transcript containing doctor-patient interactions along with corresponding case notes \cite{kazi2020dataset}. Its clear annotations, structured dialogue format, and focus on psychiatric consultations make it a valuable resource for our project.
+
+The \textbf{MTS-Dialog Augmented Dataset} consists of 3,600 medical dialogue-summary pairs, created by augmenting the original 1,200 training samples through back translation using French and Spanish. The dataset is designed for medical conversation summarization, making it relevant to our goal. \cite{mts-dialog}
+
+Each conversation is paired with a human-written summary, making it particularly useful for training dialogue summarization models. To enhance linguistic diversity and improve model generalization, the dataset was expanded through back translation, where English dialogues were translated into French and Spanish and then back into English \cite{mts-dialog}. This augmentation technique helps create more varied sentence structures and phrasing, ensuring that models trained on this dataset are more robust and adaptable to real-world medical conversations.
+
+The \textbf{VRBot (KaMed)} dataset is a Chinese medical dialogue corpus sourced from ChunyuDoctor, an online medical consultation platform. It contains long-form, multi-turn conversations spanning over 100 hospital departments and incorporates external medical knowledge from CMeKG, China’s largest medical knowledge graph \cite{li2021semi}. Since our model operates in English, we would need to translate this dataset using MarianMT or similar machine translation models. However, its inclusion in our training pipeline is conditional. We will evaluate its impact on model performance and integrate it only if it provides measurable improvements to SOAP note generation.
+
+
+\section{Approach}
+Our broad baseline algorithm is that of Unsupervised Hierarchical Clustering for topic annotation in medical consultation transcripts. \\We define our problem statement as follows:
+\\\\Given a raw speech transcript dataset $D$ (English) from a doctor-patient consultation, we process it using the following pipeline to generate tabulated doctor notes $N$ as our result.
+\begin{enumerate}
+    \item \textbf{Extraction of data}: Our raw speech transcript dataset $D$ can be in a variety of forms, spanning CSV files to JSON formats. Our first step will be to extract all of them to a common CSV where every entry $T$ is a multi-turn conversation between the doctor and the patient during a particular medical consultation.
+    \item \textbf{Spoken Language Normalization}: Given a speech transcript $T$, we aim to transform colloquial spoken English into a more formal written format by eliminating fillers and pauses. Additionally, we plan to ground the transcript against a medical terminology database to enhance contextual accuracy and domain-specific coherence. At the end of this exercise, we have an enhanced transcript $T'$, with meaningful and concise sentences. 
+        \par
+        Following the recommendation of Aliero et al \cite{aliero2023systematic}, we will utilize a hybrid text normalization technique known as a rule-based multihead attention model. We plan to use an AI agent system with an open-source LLM like phi4 to normalize transcripts. For our model’s runtime environment, we’ll use Ollama, and LangChain. LangChain additionally supports various rule-based text normalization functions which we plan to utilize before and after the use of our LLM. The LLM will have access to a ChromaDB database representing the standard academic style it should translate the medical transcripts to. This data will be effectively relayed to the LLM as context in its translation via LangChain.
+        \par
+        We will be running this step on the cloud, likely on google colab or similar, as this offers more processing power than we have locally and better supports collaboration. Application of LangChain’s rule-based normalization capabilities, proper preprocessing of our medical terminology database, and effective prompt engineering for our base model will all be essential for this step.
+    \item \textbf{Key-Phrase Extraction}: At this point, we extract a set of key phrases $K$ from our transcript $T'$ in preparation for clustering in the next step. \\ Note that we also maintain a separate set $K_p$ of the dialogues spoken exclusively by the patient, which will be used for further analysis in the next step. 
+    \item \textbf{Topic Categorization}: Given the set $K$ (and $K_p$) of key phrases corresponding to the transcript $T'$, we employ hierarchical clustering to group phrases pertaining to the same topic together hierarchically, such that we finally end up with 4 main clusters corresponding to the $SOAP$ format for clinical notes ($SOAP$ stands for Subjective, Objective, Assessment, Plan). 
+    % \item \textbf{Topic Focused Summarisation}: Next, we sample sentences from eve
+    \item \textbf{Generation of Doctor Notes}: We generate doctor notes $N$ in the tabular format according to the $SOAP$ standard for clinical notes, with provisions for more fine-grained categorization within the 4 broad segments.
+\end{enumerate}
+
+Figure \ref{fig:pipeline} provides a diagrammatic description of our entire pipeline, illustrating the flow from raw transcript processing through normalization, key-phrase extraction, and topic categorization, to the final generation of structured SOAP notes.\\
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=1\textwidth]{figs/pipeline1.png}
+    \includegraphics[width=1\linewidth]{figs/pipeline2.png}
+    
+    \caption{Our proposed pipeline for automated clinical documentation generation from doctor-patient conversations. The system processes raw transcripts through multiple stages including normalization, key-phrase extraction, topic categorization using hierarchical clustering, and finally generates structured SOAP notes.}
+    \label{fig:pipeline}
+\end{figure*}
+Let's now delve into the intricacies of every aspect of our approach, complete with the tooling and methods we plan to implement.
+\subsection{Spoken Language Normalization}
+\subsubsection{Input and Output}  
+Given a speech transcript \( T \), the goal is to transform colloquial spoken English into a more formal written format by eliminating fillers, pauses, and irregular speech patterns. Additionally, the transcript is grounded against a medical terminology database to enhance contextual accuracy and domain-specific coherence. The output is an enhanced transcript \( T' \) with meaningful and concise sentences, facilitating further downstream processing.
+\subsubsection{Plan}  
+Following the recommendation of \cite{aliero2023systematic}, we employ a hybrid text normalization approach based on a rule-based multihead attention model. Specifically, we use an AI agent system with an open-source LLM like Phi-4 to perform spoken-to-written text normalization. The model is provided with a ChromaDB knowledge base containing medical and academic language standards. LangChain facilitates structured data retrieval from ChromaDB, ensuring context-aware normalization. Additionally, LangChain’s rule-based text normalization functions are applied before and after the LLM processing to refine the output further.
+\subsubsection{Evaluation}  
+The effectiveness of the normalised transcripts can be evaluated using topic coherence assessment metrics \cite{stammbach2023revisitingautomatedtopicmodel}, which measure how semantically meaningful and consistent the identified topics are within the medical context. 
+
+\subsection*{3.2 Key-Phrase Extraction}
+\subsubsection*{3.2.1 Input and Output}
+We will use the transcript $T'$ as input in the key phrase extraction step. 
+The output of this step is a set of key phrases $K = {k_1, k_2, \ldots, k_m}$ where each $k_i$ represents a significant thematic element within the corpus of transcripts. 
+These key phrases serve as semantic anchors for topic categorization.
+\subsubsection*{3.2.2 Plan} 
+The \cite{kapoor2024qualitativeinsightstoolqualit} approach takes advantage of the contextual understanding and clustering algorithms of LLM to identify relevant key phrases from text documents. Although the original paper implements multiple clustering methods, including K-Means, the following algorithm focuses specifically on the hierarchical clustering component for key phrase extraction for medical dialogues.
+
+Our plan for key-phrase extraction follows a structured approach that leverages both the semantic understanding capabilities of large language models and the organizational power of hierarchical clustering. We first extract candidate phrases from each transcript using an LLM and then verify their coherence to filter out potential hallucinations. Next, we compute semantic similarities between the remaining phrases and apply hierarchical clustering to identify natural groupings. Finally, we select exemplar terms from each cluster to serve as our definitive key phrases. This approach maintains the semantic richness of manual annotation while providing a scalable and automated alternative.
+
+The hierarchical clustering approach offers several advantages over alternative methods. 
+Unlike partitional clustering techniques that require a predefined number of clusters, hierarchical clustering discovers the natural structure within the data. 
+This property is particularly valuable for transcript analysis where the optimal number of topics is rarely known a priori. 
+Additionally, the resulting dendrogram provides insights into the relationships between different topics, enabling multi-level topic exploration if desired.
+The algorithm below is adapted from the QualIT approach presented by  \cite{kapoor2024qualitativeinsightstoolqualit}, with modifications to specifically handle medical dialogue transcripts and incorporate hallucination checks for clinical accuracy. The complete algorithm is detailed in Algorithm~\ref{alg:key_phrase_extraction}.
+
+\begin{algorithm}
+    {\small
+    \caption{Key-Phrase Extraction via LLM, Hallucination Check, and Hierarchical Clustering}
+    \label{alg:key_phrase_extraction}
+    \begin{algorithmic}
+    \REQUIRE Set of transcripts $T' = \{t_1, t_2, \ldots, t_n\}$, coherence threshold $\theta$, embedding model $E$, large language model $LLM$
+    \ENSURE Set of key phrases $K = \{k_1, k_2, \ldots, k_m\}$
+    
+    
+    \STATE \textbf{Initialize:} $P \gets \emptyset$ \COMMENT{All candidate phrases}
+    
+    \STATE \textbf{Step 1: Key Phrase Extraction via LLM}
+    \FOR{each transcript $t_i \in T'$}
+        \STATE $P_i \gets LLM\bigl(t_i,\text{"Extract key phrases from this transcript"}\bigr)$
+        \STATE $P \gets P \cup P_i$ \COMMENT{Accumulate key phrase candidates}
+    \ENDFOR
+    \\
+
+    \STATE \textbf{Step 2: Hallucination Check / Coherence Filtering}
+    \STATE $P' \gets \emptyset$ \COMMENT{Filtered set of phrases}
+    \FOR{each phrase $p \in P$}
+        \STATE \textit{Compute coherence score:}
+        \[
+            C_p = \frac{1}{n} \sum_{j=1}^{n} \frac{E(p) \cdot E(t_j)}{\|E(p)\| \cdot \|E(t_j)\|}
+        \]
+        \IF{$C_p \geq \theta$}
+            \STATE $P' \gets P' \cup \{p\}$ \COMMENT{Keep phrases above threshold}
+        \ENDIF
+    \ENDFOR
+    \\
+
+
+    \STATE \textbf{Step 3: Construct Similarity Matrix}
+    \STATE $V \gets \emptyset$ \COMMENT{Store embeddings for all filtered phrases}
+    \FOR{each phrase $p \in P'$}
+        \STATE $v_p \gets E(p)$
+        \STATE $V \gets V \cup \{v_p\}$
+    \ENDFOR
+    
+    \STATE \textit{Compute similarity matrix} $S$ where:
+    \[
+        S_{ij} = \frac{v_i \cdot v_j}{\|v_i\|\|v_j\|}
+    \]
+    \STATE \textit{Convert to distance matrix} $D$ where:
+    \[
+        D_{ij} = 1 - S_{ij}
+    \]
+    \\
+
+
+    \STATE \textbf{Step 4: Hierarchical Clustering}
+    \STATE $H \gets \text{HierarchicalClustering}(D, \text{"complete"})$ 
+    \COMMENT{Build cluster tree using a linkage method, e.g., `complete`}
+    
+    \STATE \textit{Use Silhouette score to find optimal cluster count $m_{opt}$}:
+    \[
+        s(i) = \begin{cases}
+        \frac{b(i) - a(i)}{\max(a(i), b(i))}, & \text{if } |C_i|>1\\
+        0, & \text{if } |C_i|=1
+        \end{cases}
+    \]
+    \STATE $m_{opt} \gets \text{DetermineBestClusterCount}(H, S)$
+    \STATE $G \gets \text{CutTree}(H, m_{opt})$ 
+    \COMMENT{Obtains $m_{opt}$ clusters, $G = \{G_1, G_2, \ldots, G_{m_{opt}}\}$}
+    
+
+
+    \STATE \textbf{Step 5: Exemplar (Centroid) Selection}
+    \STATE $K \gets \emptyset$ \COMMENT{Final set of key phrases}
+    \FOR{each cluster $G_i \in G$}
+        \STATE \textit{Compute centroid}:
+        \[
+            c_i = \frac{1}{|G_i|}\sum_{v \in G_i} v
+        \]
+        \STATE \textit{Find exemplar}: 
+        \[
+            e_i = \arg\min_{p_j \in G_i} \| E(p_j) - c_i \|_2
+        \]
+        \STATE $K \gets K \cup \{e_i\}$
+    \ENDFOR
+    
+    \STATE \textbf{Output:} $K = \{k_1, k_2, \ldots, k_{m_{opt}}\}$ 
+    \COMMENT{Final set of extracted key phrases}
+    
+    \end{algorithmic}
+    }
+    \end{algorithm}
+    
+\subsubsection*{3.2.3 Evaluation} 
+We will evaluate the key-phrase extraction algorithm using both intrinsic and extrinsic metrics. For clustering quality assessment, we will employ the Silhouette Coefficient and Calinski-Harabasz Index to measure intra-cluster cohesion and inter-cluster separation. We will also compute ROUGE-L and BLEU scores to compare our automatically extracted phrases against manually annotated reference phrases from a subset of the corpus. For hallucination detection performance, we will calculate precision, recall, and F1 scores using a test set of deliberately injected non-coherent phrases. 
+% \subsubsection*{3.2.4 Resources}
+
+\subsection*{3.3 Topic Categorization}
+\subsubsection*{3.3.1 Input and Output}
+We use the output of the of key-phrase extraction step as input to the topic categorization step. ie., all the key phrases extracted from the transcript are used as input to the topic categorization step.
+\subsubsection*{3.3.2 Plan}
+This step transforms the clustered key phrases into a comprehensive, medically accurate SOAP note by generating coherent prose for each section. The process follows a modular approach similar to the Cluster2Sent algorithm210, where semantically related key phrases guide the generation of individual sentences that are then combined into section-specific narratives.
+
+We first process each SOAP section independently, using the corresponding categorized key phrases as semantic anchors. For each section, we employ an abstractive summarization approach that preserves medical accuracy while ensuring the generated text adheres to the distinct writing styles characteristic of each SOAP component. The Subjective and Objective sections typically present concise, factual statements drawn directly from patient-reported information and clinical observations, while the Assessment section synthesizes this information into diagnostic conclusions, and the Plan section articulates actionable treatment recommendations.
+
+By generating each section separately, we maintain the structure and purpose of clinical documentation while ensuring the faithful representation of the transcript content. This modular approach helps prevent information hallucination and ensures that the generated notes maintain clinical accuracy and relevance
+The generation process follows Algorithm~\ref{alg:soap_generation}:
+
+\begin{algorithm}[H]
+    \caption{SOAP Note Generation from Categorized Key Phrases}
+    \label{alg:soap_generation}
+    \begin{algorithmic}
+        \REQUIRE Categorized key phrase clusters $C_S$, $C_O$, $C_A$, $C_P$; fine-tuned section-specific models $M_S$, $M_O$, $M_A$, $M_P$
+        \ENSURE Complete SOAP note $N = {N_S, N_O, N_A, N_P}$
+
+        \FOR{each section $i \in {S, O, A, P}$}
+            \STATE $C_i' \gets \text{OrderPhrasesByRelevance}(C_i)$ \COMMENT{Order phrases by clinical relevance}
+            \STATE $prompt_i \gets \text{ConstructPrompt}(C_i')$ \COMMENT{Create section-specific prompt}
+            \STATE $N_i \gets M_i(prompt_i)$ \COMMENT{Generate section text using appropriate model}
+            \STATE $N_i \gets \text{PostProcess}(N_i)$ \COMMENT{Ensure clinical consistency and coherence}
+        \ENDFOR
+
+        \STATE \RETURN $N = {N_S, N_O, N_A, N_P}$
+    \end{algorithmic}
+\end{algorithm}
+
+\subsubsection*{3.3.3 Evaluation}
+% Our evaluation methodology for topic categorization and SOAP note generation follows a multi-faceted approach spanning automated metrics and clinical expert assessment. For categorization accuracy, we compute multi-class precision, recall, and F1 scores against a gold-standard dataset of manually annotated doctor-patient conversations with key phrases labeled according to SOAP sections. We will employ BERTScore and ROUGE-N metrics to assess semantic similarity with reference notes. Clinical validity is evaluated through blinded assessment by practicing physicians using a specialized rubric covering factual correctness (absence of hallucinations), completeness, clinical relevance, and adherence to SOAP structure. \\
+
+The effectiveness of these automated approaches can be evaluated using topic coherence assessment metrics \cite{stammbach2023revisitingautomatedtopicmodel} , which measure how semantically meaningful and consistent the identified topics are within the medical context. We will evaluate topic categorization using multiple coherence metrics tailored to the SOAP format. For each category (S, O, A, P), we will calculate normalized pointwise mutual information (NPMI) between key phrases within the same cluster, measuring statistical coherence based on co-occurrence patterns. Semantic coherence is assessed by computing the average cosine similarity between phrase embeddings within each SOAP section using clinical domain-specific models such as ClinicalBERT. This approach evaluates semantic relationships rather than just term co-occurrence. For external validation, we can compare automatically generated SOAP categorizations with a gold standard datasets of manually categorized transcripts like \cite{zeng-etal-2020-meddialog} and \cite{finley-etal-2018-automated}, calculating precision, recall, and F1 scores for each SOAP section independently.
+% \subsubsection*{3.3.4 Resources}
+
+% \subsection*{3.4 Generation of Doctor Notes}
+% \subsubsection*{3.1.1 Input and Output}
+% \subsubsection*{3.1.2 Plan} give a description of what this step does
+% \subsubsection*{3.1.3 Tooling} exact models/algos
+% \subsubsection*{3.1.4 Resources}
+
+\section{Schedule}
+Our project is divided into several key phases, with estimated time allocations for each. Responsibilities will be distributed among team members based on expertise, and certain tasks will be completed collaboratively.
+
+\begin{itemize}
+    \item \textbf{Data Acquisition and Preprocessing (2 weeks)}
+    \begin{itemize}
+        \item Collect and clean medical dialogue datasets (MedDialog-EN, Zenodo, MTS-Dialog, and potentially VRBot).
+        \item Convert all datasets into a common format.
+        \item Perform spoken language normalization, including paraphrasing colloquial expressions, grounding terms in medical terminology, and handling fillers and pauses.
+        \item Conduct initial data quality assessment.
+    \end{itemize}
+
+    \item \textbf{Key-Phrase Extraction and Topic Categorization (2 weeks)}
+    \begin{itemize}
+        \item Implement key-phrase extraction techniques to identify important medical information from transcripts.
+        \item Apply hierarchical clustering to categorize extracted phrases into SOAP note sections.
+        \item Tune clustering parameters and evaluate topic coherence using relevant metrics.
+    \end{itemize}
+
+    \item \textbf{Doctor Note Generation (1 week)}
+    \begin{itemize}
+        \item Develop a model to structure extracted information into SOAP-format doctor notes.
+        \item Implement summarization techniques to improve coherence and readability.
+        \item Validate model outputs against human-written notes.
+    \end{itemize}
+
+    \item \textbf{Model Evaluation and Error Analysis (3 weeks)}
+    \begin{itemize}
+        \item Analyze the performance of generated SOAP notes.
+        \item Identify common model errors and refine clustering/summarization approaches.
+        \item Compare results with existing medical documentation methods.
+    \end{itemize}
+
+    \item \textbf{Final Report and Documentation (1 week)}
+    \begin{itemize}
+        \item Compile findings and results into a structured report.
+        \item Document methodologies, datasets, and evaluation metrics.
+        \item Prepare a presentation if required.
+    \end{itemize}
+\end{itemize}
+
+
+
+\section{Tools}
+\begin{itemize}
+  \item LangChain for creating AI agents for steps like spoken language normalization and implementation of RAG
+  \item Vector database like ChromaDB
+  \item Ollama for downloading and running models
+  \item Selenium for any necessary web scraping
+  \item Google Colab for GPUs
+  \item Phi4, a SOTA 14b llm by Microsoft
+  \item Deepseek R1, a SOTA 14b llm by Deepseek with COT
+  \item Sklearn for common ML algorithms like random forest
+  \item UnityHPC and Colab for GPUs
+\end{itemize}
+
+\section{Estimation of API Credits}
+We use LLMs in 3 major steps of our pipeline, namely the spoken language normalisation, key phrase extraction and topic categorisation.\\
+Our MedDialog dataset consists of 300,000 transcripts, and we can safely assume 10-20 words per transcript, which translates to roughly 15-20 tokens (courtesy TikTokeniser)  Assuming an average of 20 tokens per transcript, and a GPT-4o pricing of $\$2.5$ for every $1M$ input tokens, we estimate a $\$15$ usage per stage of the pipeline. Since we have three major stages of the pipeline that relies on the usage of LLMs, we incur a total estimated cost of $\$45$.
+
+
+\section{AI Disclosure}
+
+\begin{itemize}
+    \item Did you use any AI assistance to complete this proposal? If so, please also specify what AI you used.
+    \begin{itemize}
+        \item Yes, we used AI assistance from ChatGPT to refine and improve the clarity of certain sections of this proposal. The AI was primarily used for structuring text, rewording sentences for better readability, and formatting content in LaTeX.
+    \end{itemize}
+\end{itemize}
+
+\noindent\textit{If you answered yes to the above question, please complete the following as well:}
+
+\begin{itemize}
+    \item  If you used a large language model to assist you, please paste *all* of the prompts that you used below. Add a separate bullet for each prompt, and specify which part of the proposal is associated with which prompt.
+    \begin{itemize}
+        \item \textbf{Introduction Section:}  
+        \begin{itemize}
+            \item "I have written an introduction about the limitations of EHRs, but I think it needs to better explain why automated transcription is a good idea and provide a brief summary of our approach. Can you help me refine it?"  
+        \end{itemize}
+        
+        \item \textbf{Data Section:}  
+        \begin{itemize}
+            \item "I have written the data section but want to make sure it is paraphrased well and doesn’t copy directly from my notes. Can you check if it reads naturally and make adjustments where needed?"  
+            \item "Here is my VRBot dataset paragraph. I need to keep it short (one paragraph max) and mention that we may or may not use this dataset based on whether it improves our model. Can you refine it?"  
+        \end{itemize}
+        
+        \item \textbf{Schedule Section:}  
+        \begin{itemize}
+            \item "I have broken down my project into subtasks and estimated timelines, but I need help making it more structured and readable. Can you format it properly?"  
+            \item "I need this schedule section converted into LaTeX format while keeping it clean and professional. Can you help with that?"  
+        \end{itemize}
+        
+        \item \textbf{Approach Section:}  
+        \begin{itemize}
+            \item "I have written the approach section, but I think it needs to be more detailed and specific. Can you help me refine it?"
+            \item "I need to add a new section about the limitations of our approach. Can you help me write it?"
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Free response:} For each section or paragraph for which you used assistance, describe your overall experience with the AI. How helpful was it? Did it just directly give you a good output, or did you have to edit it? Was its output ever obviously wrong or irrelevant? Did you use it to generate new text, check your own ideas, or rewrite text?
+    \begin{itemize}
+        \item The AI was very helpful in refining my writing and improving the structure of the proposal. It assisted in paraphrasing sentences for readability, and formatting LaTeX sections properly. However, the core content and ideas were written by me, and the AI was mainly used to ensure the proposal was well-structured and professional.  
+        \item In some cases, the AI’s initial suggestions were too detailed or slightly off from my intended meaning, so I had to make adjustments to align them with my vision. For example, in the VRBot dataset paragraph, I asked for a shorter version, but I still had to manually tweak it to fit the overall flow.  
+    \end{itemize}
+\end{itemize}
+
+
+
+\bibliographystyle{apalike}
+\footnotesize
+\bibliography{yourbib}
+
+
+\end{document}

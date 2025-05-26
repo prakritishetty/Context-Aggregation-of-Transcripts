@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "I've been having constant pain in my left shoulder and left elbow for a while, about five months or. Hurts all the time. Pretty bad at times.",
+    "I fell five months ago going up a stairs, and the pain has been present since.",
+    "The pain is worse when I lift, and I haven't been able to lift more than 15 or 20 pounds which is very frustrating.",
+    "Over the past one to two weeks, I've stopped hitting the gym because the pain just wasn't worth it honestly.",
+    "I have iced a bit, but I have not taken anything for the pain.",
+    "No tingling or numbless, numbness, thankfully.",
+    "My wife and I walk about 30 minutes almost every day. We have done this since I retired from my office job last year.",
+    "Left shoulder and elbow, tender subacromial space, no warmth, erythema or deformity. Positive Hawkins-Kennedy and Neer\u2019s test. Normal proximal and distal upper extremity strength. Intact median, radial, ulnar sensation and abduction to 90 degrees. Normal empty can test.",
+    "You are dealing with impingement syndrome of your left shoulder. I don't think there's an additional injury or issue with your wrist, but because everything is connected, you're experiencing pain in your wrist because of your shoulder.",
+    "First option would be to start with physical therapy. I would recommend two sessions per week as any other exercises they give you to do at home. We can start there and if that doesn't improve your pain, we could try a cortisone injection.",
+    "I the idea of starting with the physical therapy and have a next step if it doesn\u2019t help. I am not opposed to a shot but would try the therapy first.",
+    "Please continue to ice, especially your shoulder, and rest as much as you can."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    3,
+    1,
+    2,
+    1,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.20371264219284058,
+    "calinski_harabasz_score": 3.945844741186093,
+    "davies_bouldin_score": 0.9815916474156585
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9980177879333496,
+      0.9928555488586426,
+      0.9964897632598877
+    ],
+    [
+      0.9980177879333496,
+      0.9999998211860657,
+      0.9935657382011414,
+      0.9971523284912109
+    ],
+    [
+      0.9928555488586426,
+      0.9935657382011414,
+      1.0000001192092896,
+      0.9942596554756165
+    ],
+    [
+      0.9964897632598877,
+      0.9971523284912109,
+      0.9942596554756165,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.3166619837284088,
+    "1": 0.19205239415168762,
+    "2": 0.0,
+    "3": 0.030456334352493286
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I've been having constant pain in my left shoulder and left elbow for a while, about five months or. Hurts all the time. Pretty bad at times.",
+        "I fell five months ago going up a stairs, and the pain has been present since.",
+        "I have iced a bit, but I have not taken anything for the pain.",
+        "You are dealing with impingement syndrome of your left shoulder. I don't think there's an additional injury or issue with your wrist, but because everything is connected, you're experiencing pain in your wrist because of your shoulder."
+      ],
+      "0": [
+        "The pain is worse when I lift, and I haven't been able to lift more than 15 or 20 pounds which is very frustrating.",
+        "Over the past one to two weeks, I've stopped hitting the gym because the pain just wasn't worth it honestly."
+      ],
+      "1": [
+        "My wife and I walk about 30 minutes almost every day. We have done this since I retired from my office job last year."
+      ]
+    },
+    "3": {
+      "0": [
+        "No tingling or numbless, numbness, thankfully.",
+        "Please continue to ice, especially your shoulder, and rest as much as you can."
+      ]
+    },
+    "2": {
+      "0": [
+        "Left shoulder and elbow, tender subacromial space, no warmth, erythema or deformity. Positive Hawkins-Kennedy and Neer\u2019s test. Normal proximal and distal upper extremity strength. Intact median, radial, ulnar sensation and abduction to 90 degrees. Normal empty can test."
+      ]
+    },
+    "0": {
+      "0": [
+        "First option would be to start with physical therapy. I would recommend two sessions per week as any other exercises they give you to do at home. We can start there and if that doesn't improve your pain, we could try a cortisone injection.",
+        "I the idea of starting with the physical therapy and have a next step if it doesn\u2019t help. I am not opposed to a shot but would try the therapy first."
+      ]
+    }
+  }
+}

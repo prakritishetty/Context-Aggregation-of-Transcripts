@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "high blood pressure check.",
+    "I've always struggled with high blood pressure, but it's seeming to get really out of control lately.",
+    "you're on Norvasc and we had to increase your dose, you're on 10 milligrams a day.",
+    "they have been over 150.",
+    "I have had some headaches. I don't know if that's just because of more stress at work or because of the high blood pressure.",
+    "no, nothing that.",
+    "everything's been good and solid there.",
+    "heart is irregular rate and rhythm. I do hear a slight two out of six systolic ejection murmur. Your lungs are clear. I do see the scar on the left left plank for your kidney transplant which is healed. You have no lower extremity edema.",
+    "kidney function looks really good",
+    "ekg looks great, perfectly normal.",
+    "prescribe you coreg 25 milligrams, twice a day.",
+    "get a lipid panel and some routine labs on you just to make sure that everything is.",
+    "continue you on all of those medications.",
+    "schedule a follow-up appointment with me, and we'll see what your blood pressure looks in a couple weeks."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    1,
+    2,
+    1,
+    2,
+    2,
+    3,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17749439179897308,
+    "calinski_harabasz_score": 4.0532554243262275,
+    "davies_bouldin_score": 1.2157055273497799
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9976928234100342,
+      0.9982699751853943,
+      0.9957610368728638
+    ],
+    [
+      0.9976928234100342,
+      1.0000004768371582,
+      0.9963992834091187,
+      0.9960699081420898
+    ],
+    [
+      0.9982699751853943,
+      0.9963992834091187,
+      1.0,
+      0.9937474727630615
+    ],
+    [
+      0.9957610368728638,
+      0.9960699081420898,
+      0.9937474727630615,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0657680556178093,
+    "1": 0.1779250055551529,
+    "2": 0.12372295558452606,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "high blood pressure check."
+      ],
+      "0": [
+        "they have been over 150."
+      ],
+      "1": [
+        "no, nothing that.",
+        "everything's been good and solid there.",
+        "ekg looks great, perfectly normal."
+      ]
+    },
+    "1": {
+      "2": [
+        "I've always struggled with high blood pressure, but it's seeming to get really out of control lately."
+      ],
+      "0": [
+        "you're on Norvasc and we had to increase your dose, you're on 10 milligrams a day.",
+        "schedule a follow-up appointment with me, and we'll see what your blood pressure looks in a couple weeks."
+      ],
+      "1": [
+        "I have had some headaches. I don't know if that's just because of more stress at work or because of the high blood pressure."
+      ]
+    },
+    "3": {
+      "0": [
+        "heart is irregular rate and rhythm. I do hear a slight two out of six systolic ejection murmur. Your lungs are clear. I do see the scar on the left left plank for your kidney transplant which is healed. You have no lower extremity edema."
+      ]
+    },
+    "0": {
+      "2": [
+        "kidney function looks really good"
+      ],
+      "0": [
+        "prescribe you coreg 25 milligrams, twice a day.",
+        "continue you on all of those medications."
+      ],
+      "1": [
+        "get a lipid panel and some routine labs on you just to make sure that everything is."
+      ]
+    }
+  }
+}

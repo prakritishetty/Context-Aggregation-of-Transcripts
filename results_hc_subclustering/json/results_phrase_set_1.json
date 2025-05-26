@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "shortness of breath",
+    "took a very long bike ride, about three hours or and i got back, i was very light headed, i was short of breath",
+    "it was hard to catch my breath afterwards",
+    "maybe i did have a little chest pain but it eventually went away after about an hour",
+    "no chest pain,",
+    "no nausea or vomiting or abdominal pain,",
+    "no one else sick in your family",
+    "migraines under control with Imitrex,",
+    "reflux managed with Protonix,",
+    "cataract surgery about four and a half months ago",
+    "slight wheeze, expiratory wheeze, bilaterally",
+    "trace lower extremity edema in your lower extremities",
+    "normal chest x-ray,",
+    "normal pulmonary function tests,",
+    "all labs look quite good",
+    "may have had an asthma exacerbation from exercising and with the allergies",
+    "prescribe albuterol inhaler, two puffs every four hours as needed for wheezing or for shortness of breath",
+    "order a pulmonary referral",
+    "see you in a couple weeks",
+    "if you have this shortness of breath again, i want you to call me away"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": {
+    "0": 7,
+    "1": 1,
+    "2": 2,
+    "3": 1,
+    "4": 12,
+    "5": 12,
+    "6": 11,
+    "7": 3,
+    "8": 4,
+    "9": 13,
+    "10": 8,
+    "11": 14,
+    "12": 9,
+    "13": 9,
+    "14": 15,
+    "15": 5,
+    "16": 6,
+    "17": 10,
+    "18": 11,
+    "19": 2
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "S",
+    "2": "S",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19239018857479095,
+    "calinski_harabasz_score": 4.3819074630737305,
+    "davies_bouldin_score": 1.0726500052216446
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9965016841888428,
+      0.9973167181015015,
+      0.9959876537322998
+    ],
+    [
+      0.9965016841888428,
+      0.999999463558197,
+      0.9917775392532349,
+      0.9943118095397949
+    ],
+    [
+      0.9973167181015015,
+      0.9917775392532349,
+      0.9999998807907104,
+      0.9924523830413818
+    ],
+    [
+      0.9959876537322998,
+      0.9943118095397949,
+      0.9924523830413818,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.02753506228327751,
+    "1": 0.1645372062921524,
+    "2": 0.27051642537117004,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "7": [
+        "shortness of breath"
+      ],
+      "12": [
+        "no chest pain,",
+        "no nausea or vomiting or abdominal pain,"
+      ],
+      "11": [
+        "no one else sick in your family",
+        "see you in a couple weeks"
+      ],
+      "13": [
+        "cataract surgery about four and a half months ago"
+      ],
+      "8": [
+        "slight wheeze, expiratory wheeze, bilaterally"
+      ],
+      "14": [
+        "trace lower extremity edema in your lower extremities"
+      ],
+      "9": [
+        "normal chest x-ray,",
+        "normal pulmonary function tests,"
+      ],
+      "5": [
+        "may have had an asthma exacerbation from exercising and with the allergies"
+      ],
+      "6": [
+        "prescribe albuterol inhaler, two puffs every four hours as needed for wheezing or for shortness of breath"
+      ],
+      "10": [
+        "order a pulmonary referral"
+      ]
+    },
+    "1": {
+      "1": [
+        "took a very long bike ride, about three hours or and i got back, i was very light headed, i was short of breath",
+        "maybe i did have a little chest pain but it eventually went away after about an hour"
+      ],
+      "2": [
+        "it was hard to catch my breath afterwards",
+        "if you have this shortness of breath again, i want you to call me away"
+      ]
+    },
+    "2": {
+      "3": [
+        "migraines under control with Imitrex,"
+      ],
+      "4": [
+        "reflux managed with Protonix,"
+      ]
+    },
+    "3": {
+      "15": [
+        "all labs look quite good"
+      ]
+    }
+  }
+}

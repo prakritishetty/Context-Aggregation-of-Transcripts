@@ -1,0 +1,27 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,newly diagnosed hypercholesterolemia
+S,0,0,17-year-old non-binary immensipated minor with no significant past medical history
+O,1,2,enjoys being outside and riding their bike on trails
+S,0,1,denies any history of smoking
+O,1,1,parents smoked when they lived with them
+S,0,2,cousin who died of a heart attack in their 40's
+A,2,2,no family history of hypercholesterolemia
+S,0,0,blood pressure looks good
+S,0,0,no xanthomas noted
+S,0,1,lungs clear bilaterally
+S,0,1,"no murmurs, gallops or rubs"
+S,0,0,no hepatomegaly or splenomegaly
+S,0,1,no thyromegaly
+A,2,0,Recent cholesterol level is reviewed and shows patient is elevated at 210
+A,2,2,elevated cholesterol consistent with hypercholesterolemia
+P,3,0,American Academy of Pediatrics recommends screening between ages 9–11 and 17–20
+S,0,2,link between high cholesterol and premature heart attacks
+A,2,1,full cholesterol panel
+S,0,2,genetic testing
+S,0,0,"Hemoglobin A1c, CMP, thyroid study, and liver panel"
+O,1,0,balanced diet with foods low in saturated fat and sugars
+O,1,0,meet with a nutritionist
+O,1,1,"continue active lifestyle, especially bike riding"
+O,1,0,follow-up in 3 to 6 months after dietary changes
+A,2,1,repeat cholesterol level
+S,0,2,understands and agrees with the recommended medical treatment plan

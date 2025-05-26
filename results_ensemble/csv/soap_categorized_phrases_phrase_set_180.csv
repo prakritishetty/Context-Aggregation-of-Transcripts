@@ -1,0 +1,9 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,0,I was playing basketball and Jerry ran into me and the inside of my knee hurts.
+P,3,0,I landed on my side I was not able to continue on.
+S,1,0,On the inside
+S,1,0,Yes it hurts
+A,2,0,I do see some ecchymosis and swelling on the inside of that knee and when I push around that knee I can see that there is fluid in the knee a little bit of fluid in the knee we call that effusion.
+O,0,0,There is a negative varus and valgus stress test.
+A,2,0,The bony alignment's in good position I don't see any evidence of any fractures I do notice the effusion around the knee.
+O,0,0,You have may have a medial collateral ligament strain from maybe the twisting motion before you fell to the ground.

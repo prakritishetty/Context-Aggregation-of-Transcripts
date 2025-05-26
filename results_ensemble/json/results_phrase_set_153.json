@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Left shoulder pain for the last three weeks and it's not getting better.",
+    "I\u2019ve been doing a lot of work in my basement and I even put in a new ceiling.",
+    "I can\u2019t recall falling on it, injuring it, or getting hit.",
+    "It\u2019s pretty much all the time anytime I put any pressure on it when I\u2019m trying to sleep it hurts even more.",
+    "Tylenol usually works for me and it does take the edge off but I still have pain.",
+    "I iced it initially but I haven\u2019t iced it at all recently.",
+    "No numbness or tingling in my arm or fingers.",
+    "Limited active and passive range of motion with tenderness at the greater tuberosity of the humerus.",
+    "X-ray of the shoulder was normal, no fractures or bony abnormalities.",
+    "Assessment: likely rotator cuff tendinopathy.",
+    "Ordering an MRI of the left shoulder to evaluate further.",
+    "Referring to physical therapy for 6 to 8 weeks to strengthen the shoulder muscles.",
+    "Continue Tylenol for pain; consider a steroid injection if symptoms don\u2019t improve.",
+    "Patient is very active and asks if the pain will go away with treatment.",
+    "Physical therapy should alleviate pain and allow return to activities like renovating, jogging, and lifting weights."
+  ],
+  "cluster_labels": [
+    1,
+    2,
+    2,
+    2,
+    1,
+    2,
+    3,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13366517424583435,
+    "calinski_harabasz_score": 4.366082977246727,
+    "davies_bouldin_score": 1.3532833444025987
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9974024891853333,
+      0.9942516684532166,
+      0.9980811476707458
+    ],
+    [
+      0.9974024891853333,
+      1.000000238418579,
+      0.997994601726532,
+      0.9981811046600342
+    ],
+    [
+      0.9942516684532166,
+      0.997994601726532,
+      1.0,
+      0.9967094659805298
+    ],
+    [
+      0.9980811476707458,
+      0.9981811046600342,
+      0.9967094659805298,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.18127168715000153,
+    "1": 0.1685444861650467,
+    "2": 0.21402035653591156,
+    "3": -0.036223821341991425
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Left shoulder pain for the last three weeks and it's not getting better."
+      ],
+      "0": [
+        "Tylenol usually works for me and it does take the edge off but I still have pain.",
+        "Patient is very active and asks if the pain will go away with treatment."
+      ],
+      "1": [
+        "X-ray of the shoulder was normal, no fractures or bony abnormalities."
+      ]
+    },
+    "2": {
+      "2": [
+        "I\u2019ve been doing a lot of work in my basement and I even put in a new ceiling."
+      ],
+      "0": [
+        "I can\u2019t recall falling on it, injuring it, or getting hit.",
+        "I iced it initially but I haven\u2019t iced it at all recently."
+      ],
+      "1": [
+        "It\u2019s pretty much all the time anytime I put any pressure on it when I\u2019m trying to sleep it hurts even more."
+      ]
+    },
+    "3": {
+      "0": [
+        "No numbness or tingling in my arm or fingers.",
+        "Continue Tylenol for pain; consider a steroid injection if symptoms don\u2019t improve."
+      ]
+    },
+    "0": {
+      "2": [
+        "Limited active and passive range of motion with tenderness at the greater tuberosity of the humerus."
+      ],
+      "0": [
+        "Assessment: likely rotator cuff tendinopathy."
+      ],
+      "1": [
+        "Ordering an MRI of the left shoulder to evaluate further.",
+        "Referring to physical therapy for 6 to 8 weeks to strengthen the shoulder muscles.",
+        "Physical therapy should alleviate pain and allow return to activities like renovating, jogging, and lifting weights."
+      ]
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "Anna is a 44-year-old female with a past medical history significant for arthritis, gout, and reflux, who presents today for follow up of her chronic problems.",
+    "my arthritis is starting to get better... I've been trying to move my body, doing pilates, lifting weights... helped me build up some muscle, the joint pain is has been going away.",
+    "The physical therapy's gone really. I've built up my strength back and it's been really great.",
+    "I'm walking about a mile, a mile and a half a day.",
+    "The medication helped it go down and go away. Hopefully, it doesn't come back.",
+    "still been having some episodes and... throwing up in the mornings... vomiting.",
+    "abdominal pain and bloated all the time.",
+    "probably two days ago. yes. normal. no blood.",
+    "some pain to your upper quadrant when I press on it... no rebound or guarding... your knee shows a little bit of an effusion... slight pain to palpation and some decreased range of motion.",
+    "we'll have to look into that... gall bladder.",
+    "Looking at your autoimmune panel here... everything seemed to be fine.",
+    "knee x-ray... no fracture... residual arthritis.",
+    "get a upper quadrant ultrasound to rule out any gallstones... check some labs.",
+    "continue on the omeprazole, 40 milligrams, once a day... continue with those dietary modifications.",
+    "continue you on the allopurinol, 100 milligrams, once daily.",
+    "continue pilates and using the knee... talk about further imaging or intervention at that time."
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "P",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1416885405778885,
+    "calinski_harabasz_score": 3.475423679834594,
+    "davies_bouldin_score": 1.1158976174561959
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9980427026748657,
+      0.9947872161865234,
+      0.9972519874572754
+    ],
+    [
+      0.9980427026748657,
+      0.9999999403953552,
+      0.9928474426269531,
+      0.9950070381164551
+    ],
+    [
+      0.9947872161865234,
+      0.9928474426269531,
+      1.0,
+      0.9934003353118896
+    ],
+    [
+      0.9972519874572754,
+      0.9950070381164551,
+      0.9934003353118896,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13629791140556335,
+    "1": 0.46806779503822327,
+    "2": 0.0,
+    "3": 0.2438618689775467
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Anna is a 44-year-old female with a past medical history significant for arthritis, gout, and reflux, who presents today for follow up of her chronic problems."
+      ]
+    },
+    "3": {
+      "2": [
+        "my arthritis is starting to get better... I've been trying to move my body, doing pilates, lifting weights... helped me build up some muscle, the joint pain is has been going away."
+      ],
+      "0": [
+        "The physical therapy's gone really. I've built up my strength back and it's been really great."
+      ],
+      "1": [
+        "The medication helped it go down and go away. Hopefully, it doesn't come back."
+      ]
+    },
+    "0": {
+      "2": [
+        "I'm walking about a mile, a mile and a half a day."
+      ],
+      "1": [
+        "still been having some episodes and... throwing up in the mornings... vomiting.",
+        "abdominal pain and bloated all the time.",
+        "we'll have to look into that... gall bladder.",
+        "Looking at your autoimmune panel here... everything seemed to be fine.",
+        "knee x-ray... no fracture... residual arthritis.",
+        "get a upper quadrant ultrasound to rule out any gallstones... check some labs.",
+        "continue pilates and using the knee... talk about further imaging or intervention at that time."
+      ],
+      "0": [
+        "probably two days ago. yes. normal. no blood.",
+        "some pain to your upper quadrant when I press on it... no rebound or guarding... your knee shows a little bit of an effusion... slight pain to palpation and some decreased range of motion."
+      ]
+    },
+    "1": {
+      "0": [
+        "continue on the omeprazole, 40 milligrams, once a day... continue with those dietary modifications.",
+        "continue you on the allopurinol, 100 milligrams, once daily."
+      ]
+    }
+  }
+}

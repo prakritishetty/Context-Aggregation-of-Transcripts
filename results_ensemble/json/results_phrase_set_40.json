@@ -1,0 +1,199 @@
+{
+  "phrases": [
+    "presenting today with an upper respiratory infection.",
+    "I started to feel really tired, was short of breath.",
+    "we're not wearing masks as much at the end of the summer and I caught my first cold and it just got worse.",
+    "I've had both [COVID vaccines].",
+    "none whatsoever [seasonal allergies].",
+    "it was lifting or carrying something... got really winded.",
+    "not yet, but I feel that's next",
+    "I felt a little warm, but I just thought it was because I was exerting myself",
+    "my elbows hurt quite a bit and my knees were pretty tired... tension around my knees... lifting the bags.",
+    "my wife got me into barre classes, to help me relax and it's working.",
+    "monitoring my sugar levels while I'm going to work... not on weekends... diet's been pretty good except for house parties.",
+    "monitoring blood pressures at home... during the week, but not on weekends... under control.",
+    "scattered rhonchi bilaterally... clears with cough,",
+    "edema of lower extremities,",
+    "pain to palpation of bilateral elbows.",
+    "no airspace disease, no pneumonia.",
+    "hemoglobin A1c is a little elevated at eight.",
+    "send a covid test... Robitussin for cough... ibuprofen/tylenol for fever.",
+    "maybe in a few months we'll check on that [psychotherapy/medication].",
+    "increase metformin to 1000 mg twice daily... repeat hemoglobin A1c in four months.",
+    "continue lisinopril 20 mg daily... order a lipid panel.",
+    "make a follow-up appointment... see you again in about four months."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    3,
+    0,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3,
+    2,
+    2,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13238686323165894,
+    "calinski_harabasz_score": 6.67123996297392,
+    "davies_bouldin_score": 1.5998742841489235
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9943907260894775,
+      0.9980791807174683,
+      0.9971345663070679
+    ],
+    [
+      0.9943907260894775,
+      1.0000001192092896,
+      0.9946770668029785,
+      0.9987074136734009
+    ],
+    [
+      0.9980791807174683,
+      0.9946770668029785,
+      1.0,
+      0.9966589212417603
+    ],
+    [
+      0.9971345663070679,
+      0.9987074136734009,
+      0.9966589212417603,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.01779201067984104,
+    "1": 0.16789868474006653,
+    "2": 0.1443524807691574,
+    "3": 0.08731939643621445
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "presenting today with an upper respiratory infection."
+      ],
+      "1": [
+        "none whatsoever [seasonal allergies].",
+        "scattered rhonchi bilaterally... clears with cough,",
+        "edema of lower extremities,",
+        "pain to palpation of bilateral elbows.",
+        "no airspace disease, no pneumonia.",
+        "send a covid test... Robitussin for cough... ibuprofen/tylenol for fever."
+      ],
+      "0": [
+        "monitoring blood pressures at home... during the week, but not on weekends... under control."
+      ]
+    },
+    "1": {
+      "2": [
+        "I started to feel really tired, was short of breath.",
+        "we're not wearing masks as much at the end of the summer and I caught my first cold and it just got worse.",
+        "my wife got me into barre classes, to help me relax and it's working."
+      ],
+      "0": [
+        "I felt a little warm, but I just thought it was because I was exerting myself"
+      ],
+      "1": [
+        "my elbows hurt quite a bit and my knees were pretty tired... tension around my knees... lifting the bags.",
+        "monitoring my sugar levels while I'm going to work... not on weekends... diet's been pretty good except for house parties."
+      ]
+    },
+    "3": {
+      "2": [
+        "I've had both [COVID vaccines]."
+      ],
+      "0": [
+        "it was lifting or carrying something... got really winded.",
+        "not yet, but I feel that's next"
+      ],
+      "1": [
+        "maybe in a few months we'll check on that [psychotherapy/medication].",
+        "make a follow-up appointment... see you again in about four months."
+      ]
+    },
+    "2": {
+      "2": [
+        "hemoglobin A1c is a little elevated at eight."
+      ],
+      "0": [
+        "increase metformin to 1000 mg twice daily... repeat hemoglobin A1c in four months."
+      ],
+      "1": [
+        "continue lisinopril 20 mg daily... order a lipid panel."
+      ]
+    }
+  }
+}

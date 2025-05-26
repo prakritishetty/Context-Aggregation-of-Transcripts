@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,Your hemoglobin is low.
+P,3,2,"Over the past couple of months, I've been really tired and dizzy."
+P,3,0,"I've been getting tired even just walking a mile or going to work, doing things that I've done in the past every day."
+P,3,1,"I had a colonoscopy three years ago for blood in my stools, but nothing since."
+S,1,0,I’ve been traveling a lot... I stopped at McDonald’s and got two cheeseburgers. I could be doing better. I’ve noticed some swelling in my legs.
+S,1,0,"No, I haven’t [seen blood in stools]. I did about three years ago, and I did a colonoscopy for that, but nothing since."
+O,0,2,No issues since [the colonoscopy showed mild diverticulosis].
+O,0,0,No weight loss or passing out... just a bit dizzy.
+O,0,0,"I get seasonal allergies, so some nasal congestion."
+O,0,0,I hear a three out of six systolic ejection murmur.
+O,0,2,Trace to one plus pitting edema in your ankles.
+A,2,0,We’ll send off some more labs and anemia profile... refer you back to gastroenterology for another evaluation.
+O,0,1,Start you on some Lasix 40 mg once a day... continue your Toprol 50 mg daily and lisinopril 10 mg daily.
+O,0,1,Watch your salt intake... weigh yourself every day. Call me if your weight starts to go up.
+O,0,1,Continue to watch your diet and stay hydrated... despite the diuretic.
+O,0,2,Not that I can think of.

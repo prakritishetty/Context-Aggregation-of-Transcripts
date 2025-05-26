@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+P,2,2,He is here today for an acne follow-up.
+S,3,0,"At the last visit on 3/3/21 he was prescribed the following : clindamycin lotion,, trent- tretinoin cream, 4-5 % benzoyl peroxide wash for ace and 5-10 % for chest and back."
+O,1,2,"what did you do for your skin this morning ? [patient] i washed it with,, the benzoyl peroxide and i put the antibiotic thing, and the sunscreen moisture stuff as."
+O,1,2,"what did you do last night ? [patient], i washed my face with the benzol peroxide, i put,, the -tretinoin cream..."
+O,1,0,"have you had any redness, peeling, dryness, or irritation with the use of these medications at all ? [patient]. Not at all."
+O,1,1,i have n't put much effort into it because it has n't' really bothered me.
+P,2,0,"this looks a lot better, a lot better."
+A,0,2,"scattered inflammatory papules and pustules across the upper back and posterior shoulders. There are less than 5 inflammatory papules on the forehead, cheeks, and chin."
+O,1,2,"i'm happy with how things are going. Are you- are you happy with how things are going ? [patient]. [doctor] all,, if that little bit bothers you, i would use a 5-10 % benzoyl peroxide base..."
+P,2,1,"i recommend for the chest and back is the, the panoxyl 10 %."
+O,1,1,i'm going ahead and tee up a one year prescription for you because at this point i'll want to see you once a year.
+A,0,0,i'm going to go ahead and send in a new refill for the clindamycin with 11 refills. And the tretinoin cream with three refills.
+A,0,1,"acne vulgaris is improved and controlled on the face, but there is a mild flare on the back."
+A,0,0,initiation treatment with panoxyl 10 % foaming wash to the back in the shower daily.

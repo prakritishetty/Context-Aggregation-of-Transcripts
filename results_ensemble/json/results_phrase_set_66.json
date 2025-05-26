@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "Headaches... have been getting a lot more frequent and a lot more severe.",
+    "Pulsing sensation... mostly on my side and it even seems it's behind my eye.",
+    "When I start to jog, my headaches come back on a lot worse.",
+    "Ringing in my ears for a few months... blurred vision on the side of my vision.",
+    "No, I haven't [numbness or tingling in hands, feet, or face].",
+    "Funduscopic exam shows papilledema.",
+    "Concerning for idiopathic intracranial hypertension... increased pressure in your brain without any known cause.",
+    "If the pressure continues to increase, this can lead to some permanent changes in your vision.",
+    "An MRI... spinal tap to evaluate the pressure in the brain... seen by a neurophthalmologist.",
+    "Medications to help decrease that pressure... exercise and weight loss are also important.",
+    "MRI needs preapproval from insurance... will contact you to schedule.",
+    "Does that mean I will need surgery?"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    3,
+    1,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16718237102031708,
+    "calinski_harabasz_score": 2.78880346213589,
+    "davies_bouldin_score": 1.0550209412717997
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9978311061859131,
+      0.9954385757446289,
+      0.9972354173660278
+    ],
+    [
+      0.9978311061859131,
+      1.000000238418579,
+      0.99518883228302,
+      0.9971726536750793
+    ],
+    [
+      0.9954385757446289,
+      0.99518883228302,
+      1.0,
+      0.9951969385147095
+    ],
+    [
+      0.9972354173660278,
+      0.9971726536750793,
+      0.9951969385147095,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06735432893037796,
+    "1": 0.22663427889347076,
+    "2": 0.0,
+    "3": 0.17781034111976624
+  },
+  "cluster_phrases": {
+    "0": {
+      "0": [
+        "Headaches... have been getting a lot more frequent and a lot more severe.",
+        "When I start to jog, my headaches come back on a lot worse.",
+        "No, I haven't [numbness or tingling in hands, feet, or face]."
+      ],
+      "2": [
+        "Pulsing sensation... mostly on my side and it even seems it's behind my eye.",
+        "Ringing in my ears for a few months... blurred vision on the side of my vision."
+      ],
+      "1": [
+        "Funduscopic exam shows papilledema.",
+        "Does that mean I will need surgery?"
+      ]
+    },
+    "3": {
+      "0": [
+        "Concerning for idiopathic intracranial hypertension... increased pressure in your brain without any known cause.",
+        "An MRI... spinal tap to evaluate the pressure in the brain... seen by a neurophthalmologist."
+      ]
+    },
+    "1": {
+      "0": [
+        "If the pressure continues to increase, this can lead to some permanent changes in your vision.",
+        "Medications to help decrease that pressure... exercise and weight loss are also important."
+      ]
+    },
+    "2": {
+      "0": [
+        "MRI needs preapproval from insurance... will contact you to schedule."
+      ]
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "It's doing much better.",
+    "I started using doxycycline only one a day because the pharmacist said if it's getting better, to just limit it to once a day.",
+    "When I started doing it only once a day, it seems the same and it's not continuing to get better. It's kinda plateaued a little bit.",
+    "No, I'm not [breastfeeding].",
+    "I didn\u2019t take the elidel because when I read about it I got worried.",
+    "The pharmacist said if it's getting better, to just limit it to once a day.",
+    "Bilateral medial cheeks, there are a few really faint erythematous papules and just maybe a little bit of redness around and underneath your nostrils.",
+    "Fitzpatrick skin type IV to V.",
+    "I would go ahead and go back to twice a day, every day, with the doxycycline.",
+    "We could try ointment form [tacrolimus].",
+    "The insurance is not covering [Elidel]. It was coming to around $850 after insurance.",
+    "You're using the metro cream? Yes. After my face wash, I immediately apply the cream.",
+    "I would do something really basic like Vanicream. Or even, if it's just really dry, you could use a little bit of petroleum jelly.",
+    "Continue using the same face wash, continue with metro cream, and increase the use of doxycycline to twice a day.",
+    "Twice a day until rash is gone, and once a day for another week before stopping.",
+    "Gently wash her eyelids once a day with a gentle cleanser such as Vanicream, also use Bruder mask as needed.",
+    "Stay away from any anti-aging thing, any plant thing.",
+    "Doxycycline can give you bad upset stomach or heartburn. It will make you sunburn, even if you never sunburn.",
+    "It can cause this weird tingly or needle-sensation or make it redder or flush. But it should only last a few seconds and go away."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    1,
+    2,
+    1,
+    1,
+    0,
+    3,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    1,
+    2,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11926771700382233,
+    "calinski_harabasz_score": 3.6471916977705163,
+    "davies_bouldin_score": 1.4583555153423102
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9974923729896545,
+      0.9984748363494873,
+      0.9956331849098206
+    ],
+    [
+      0.9974923729896545,
+      1.0000001192092896,
+      0.9981480836868286,
+      0.9910703301429749
+    ],
+    [
+      0.9984748363494873,
+      0.9981480836868286,
+      1.000000238418579,
+      0.9951069355010986
+    ],
+    [
+      0.9956331849098206,
+      0.9910703301429749,
+      0.9951069355010986,
+      1.0000007152557373
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03971186280250549,
+    "1": 0.18289168179035187,
+    "2": 0.06444418430328369,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "It's doing much better.",
+        "I would go ahead and go back to twice a day, every day, with the doxycycline.",
+        "We could try ointment form [tacrolimus]."
+      ],
+      "0": [
+        "No, I'm not [breastfeeding]."
+      ],
+      "1": [
+        "Stay away from any anti-aging thing, any plant thing."
+      ]
+    },
+    "1": {
+      "2": [
+        "I started using doxycycline only one a day because the pharmacist said if it's getting better, to just limit it to once a day.",
+        "The pharmacist said if it's getting better, to just limit it to once a day.",
+        "The insurance is not covering [Elidel]. It was coming to around $850 after insurance."
+      ],
+      "1": [
+        "When I started doing it only once a day, it seems the same and it's not continuing to get better. It's kinda plateaued a little bit.",
+        "I would do something really basic like Vanicream. Or even, if it's just really dry, you could use a little bit of petroleum jelly."
+      ],
+      "0": [
+        "I didn\u2019t take the elidel because when I read about it I got worried."
+      ]
+    },
+    "0": {
+      "2": [
+        "Bilateral medial cheeks, there are a few really faint erythematous papules and just maybe a little bit of redness around and underneath your nostrils.",
+        "Gently wash her eyelids once a day with a gentle cleanser such as Vanicream, also use Bruder mask as needed."
+      ],
+      "1": [
+        "You're using the metro cream? Yes. After my face wash, I immediately apply the cream.",
+        "Twice a day until rash is gone, and once a day for another week before stopping.",
+        "Doxycycline can give you bad upset stomach or heartburn. It will make you sunburn, even if you never sunburn.",
+        "It can cause this weird tingly or needle-sensation or make it redder or flush. But it should only last a few seconds and go away."
+      ],
+      "0": [
+        "Continue using the same face wash, continue with metro cream, and increase the use of doxycycline to twice a day."
+      ]
+    },
+    "3": {
+      "0": [
+        "Fitzpatrick skin type IV to V."
+      ]
+    }
+  }
+}

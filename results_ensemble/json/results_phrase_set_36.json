@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "i was skiing with some friends... the front end of the skis i dug into the snow and i ended up doing a cart wheel but kinda stopped halfway through and could feel a pop in my my knee and just pain after that came about through the knee",
+    "it occurred over the weekend on saturday",
+    "a little bit but it's definitely swollen and it's definitely painful",
+    "just taking some advil and just icing icing on and off a little heat here and there just trying to comfort but that's about it",
+    "it's the knee no it's the first time i've had any knee injuries",
+    "edema and ecchymosis around surrounding your knee",
+    "positive pain to palpation",
+    "pain with flexion and extension",
+    "full range of motion here",
+    "x-ray there's no fracture appreciated no bony abnormalities",
+    "rest that apply ice two three times a day for twenty minutes at a time take some nsaids or nonsteroidal anti-inflamma medication such as ibuprofen every six to eight hours as needed",
+    "if that doesn't improve we can go ahead and maybe come back in and we might do some physical therapy",
+    "my shoulder feels a little bruised",
+    "landed on that lead shoulder when i fell",
+    "tender i can feel it being tender when i raise it up",
+    "we'll just go ahead and get an x-ray of that shoulder too just to be sure"
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    1,
+    3,
+    1,
+    0,
+    2,
+    2,
+    2,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2,
+    2,
+    1,
+    1,
+    2,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "P",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.140694260597229,
+    "calinski_harabasz_score": 3.6181936960804193,
+    "davies_bouldin_score": 1.5091830067406182
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9979830384254456,
+      0.9973794221878052,
+      0.9942922592163086
+    ],
+    [
+      0.9979830384254456,
+      1.0000001192092896,
+      0.996383786201477,
+      0.9976410865783691
+    ],
+    [
+      0.9973794221878052,
+      0.996383786201477,
+      1.0,
+      0.99125075340271
+    ],
+    [
+      0.9942922592163086,
+      0.9976410865783691,
+      0.99125075340271,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.19470159709453583,
+    "1": 0.08332963287830353,
+    "2": 0.1029769703745842,
+    "3": -0.11225641518831253
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "i was skiing with some friends... the front end of the skis i dug into the snow and i ended up doing a cart wheel but kinda stopped halfway through and could feel a pop in my my knee and just pain after that came about through the knee",
+        "just taking some advil and just icing icing on and off a little heat here and there just trying to comfort but that's about it"
+      ]
+    },
+    "0": {
+      "1": [
+        "it occurred over the weekend on saturday"
+      ],
+      "0": [
+        "edema and ecchymosis around surrounding your knee"
+      ],
+      "2": [
+        "rest that apply ice two three times a day for twenty minutes at a time take some nsaids or nonsteroidal anti-inflamma medication such as ibuprofen every six to eight hours as needed"
+      ]
+    },
+    "1": {
+      "2": [
+        "a little bit but it's definitely swollen and it's definitely painful",
+        "if that doesn't improve we can go ahead and maybe come back in and we might do some physical therapy",
+        "tender i can feel it being tender when i raise it up",
+        "we'll just go ahead and get an x-ray of that shoulder too just to be sure"
+      ],
+      "1": [
+        "it's the knee no it's the first time i've had any knee injuries",
+        "my shoulder feels a little bruised",
+        "landed on that lead shoulder when i fell"
+      ],
+      "0": [
+        "x-ray there's no fracture appreciated no bony abnormalities"
+      ]
+    },
+    "2": {
+      "2": [
+        "positive pain to palpation"
+      ],
+      "0": [
+        "pain with flexion and extension"
+      ],
+      "1": [
+        "full range of motion here"
+      ]
+    }
+  }
+}

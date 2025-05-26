@@ -1,0 +1,28 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,I've been having some shortness of breath.
+O,1,2,It's been about a week.
+O,1,0,This happened about six months ago and I came in and they changed my Lasix dose and I seemed to get better.
+O,1,2,"The pumping function of your heart was a little low, that what we call that ejection fraction was about thirty-five percent."
+O,1,0,The last couple of weeks and I/we've had a bunch of family get-togethers and I/I don't think my diet has been everything it should have been.
+A,0,2,"Yes, definitely"
+P,2,2,I take it every day
+O,1,1,"No, it seems about the same"
+A,0,1,Walking around stairs in particular walking quickly
+P,2,0,I’ve gone from one pillow to two pillows
+O,1,0,I took Motrin to get rid of [foot pain] and I took Motrin for a while and I stopped as quickly as I could.
+P,2,0,Tylenol’s lovely it just isn’t very effective.
+A,0,0,Jugular venous distension up to about nine centimeters
+A,0,0,Bibasilar crackles with occasional rhonchi that clears when you cough
+A,0,0,Three out of six systolic ejection murmur heard at the left base
+A,0,1,One to two plus pitting edema bilaterally
+A,0,1,Increase your Lasix from forty milligrams a day to eighty milligrams a day
+A,0,1,Order a chest x-ray just to make sure that we are not missing anything else
+A,0,0,Order another echocardiogram to check out that heart murmur
+P,2,0,Don’t please don’t take anymore Motrin or Advil
+A,0,1,Order a complete metabolic panel just to make sure that your kidney function is stable
+A,0,1,Order a uric acid just to see
+P,2,1,I want you to call me in two days and let me know how your weight has been with increasing the diuretic
+A,0,1,Referral to a dietitian
+O,1,2,Your blood pressure is about one thirty-five over eighty
+S,3,0,Recent dietary indiscretion may have contributed to this development
+A,0,1,Possible gout flare related to his chronic kidney disease

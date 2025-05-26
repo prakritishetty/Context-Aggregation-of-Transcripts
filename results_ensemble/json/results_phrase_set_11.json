@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "numbness and tingling of both hands",
+    "broken them [both wrists] in a motor vehicle accident last december",
+    "splint helps. Both have really gotten worse over the last month",
+    "mild stiffness in my neck... contusion from hitting my head during the accident",
+    "tingling and numbness radiates from the hands into the forearms",
+    "3rd and 4th fingers on the right and 4th and 5th on the left",
+    "symptoms come and go, mostly at night",
+    "denies complete loss of sensation but notes fingers feel less sensitive",
+    "nerve pain medicine prescribed but not taken consistently",
+    "currently takes Coreg for hypertension and Lexapro for anxiety",
+    "Tinel\u2019s sign positive at both wrists and elbows",
+    "bilateral carpal tunnel syndrome or cubital tunnel syndrome",
+    "schedule EMG testing to pinpoint nerve irritation",
+    "consider referral to Hand Clinic for injections or surgery"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    0,
+    1,
+    2,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    1,
+    0,
+    2,
+    2,
+    1,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10081656277179718,
+    "calinski_harabasz_score": 2.7088115278740514,
+    "davies_bouldin_score": 1.1458883766835353
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9957667589187622,
+      0.9983996152877808,
+      0.993306577205658
+    ],
+    [
+      0.9957667589187622,
+      1.0,
+      0.9958332180976868,
+      0.9901337623596191
+    ],
+    [
+      0.9983996152877808,
+      0.9958332180976868,
+      1.000000238418579,
+      0.9928892850875854
+    ],
+    [
+      0.993306577205658,
+      0.9901337623596191,
+      0.9928892850875854,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.038053326308727264,
+    "1": 0.0,
+    "2": 0.13541865348815918,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "numbness and tingling of both hands",
+        "tingling and numbness radiates from the hands into the forearms",
+        "3rd and 4th fingers on the right and 4th and 5th on the left",
+        "denies complete loss of sensation but notes fingers feel less sensitive",
+        "Tinel\u2019s sign positive at both wrists and elbows"
+      ],
+      "1": [
+        "broken them [both wrists] in a motor vehicle accident last december",
+        "splint helps. Both have really gotten worse over the last month",
+        "symptoms come and go, mostly at night"
+      ],
+      "0": [
+        "mild stiffness in my neck... contusion from hitting my head during the accident"
+      ]
+    },
+    "2": {
+      "2": [
+        "nerve pain medicine prescribed but not taken consistently"
+      ],
+      "0": [
+        "schedule EMG testing to pinpoint nerve irritation"
+      ],
+      "1": [
+        "consider referral to Hand Clinic for injections or surgery"
+      ]
+    },
+    "3": {
+      "0": [
+        "currently takes Coreg for hypertension and Lexapro for anxiety"
+      ]
+    },
+    "1": {
+      "0": [
+        "bilateral carpal tunnel syndrome or cubital tunnel syndrome"
+      ]
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "both my elbows but my elbow is hurting me the most",
+    "I lift quite a bit of weights... I lift heavy weights",
+    "probably year and a half ago",
+    "the more I use my hands or my arms the more it hurts",
+    "limited range of motion on extension",
+    "pain with flexion and extension",
+    "pain on the medial side with palpation",
+    "pain with supination",
+    "sensation is normal to the touch",
+    "pulses equal in all extremities",
+    "no fractures or any bony misalignment",
+    "medial epicondylitis",
+    "take the blood out of say my thigh and inject it into my tendon",
+    "activates the healing",
+    "expecting a newborn soon"
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    3,
+    2,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12110820412635803,
+    "calinski_harabasz_score": 2.588901935794038,
+    "davies_bouldin_score": 1.5152611478017397
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.997402012348175,
+      0.9983266592025757,
+      0.9978736042976379
+    ],
+    [
+      0.997402012348175,
+      0.9999998807907104,
+      0.9975865483283997,
+      0.9978163242340088
+    ],
+    [
+      0.9983266592025757,
+      0.9975865483283997,
+      0.9999998807907104,
+      0.9973417520523071
+    ],
+    [
+      0.9978736042976379,
+      0.9978163242340088,
+      0.9973417520523071,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.02987631782889366,
+    "1": 0.14457391202449799,
+    "2": -0.058256130665540695,
+    "3": 0.14050818979740143
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "both my elbows but my elbow is hurting me the most"
+      ],
+      "0": [
+        "the more I use my hands or my arms the more it hurts"
+      ],
+      "1": [
+        "take the blood out of say my thigh and inject it into my tendon"
+      ]
+    },
+    "1": {
+      "0": [
+        "I lift quite a bit of weights... I lift heavy weights",
+        "sensation is normal to the touch"
+      ]
+    },
+    "2": {
+      "2": [
+        "probably year and a half ago"
+      ],
+      "0": [
+        "pulses equal in all extremities"
+      ],
+      "1": [
+        "activates the healing",
+        "expecting a newborn soon"
+      ]
+    },
+    "0": {
+      "2": [
+        "limited range of motion on extension"
+      ],
+      "0": [
+        "pain with flexion and extension",
+        "pain on the medial side with palpation",
+        "pain with supination",
+        "medial epicondylitis"
+      ],
+      "1": [
+        "no fractures or any bony misalignment"
+      ]
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "phrases": [
+    "She's here to establish care for a history of DCIS.",
+    "You've come to see me today because you had a breast lumpectomy last year. Is that?",
+    "Yes. On January 20th, 2020.",
+    "The pathology confirmed DCIS. Looks they also removed 5 lymph nodes, which, thankfully, were negative for malignancy.",
+    "Your last mammogram was in January 2021? And that was normal.",
+    "Based on those results, they decided to do an ultrasound-guided core needle biopsy on December 5th, 2019. Pathology results during that biopsy came back as grade two, ER positive, PR positive, DCIS, or ductal carcinoma in situ.",
+    "You also had radiation after the lumpectomy?",
+    "I did. We also talked about endocrine therapy, but I decided against that.",
+    "I have five. And they're all having kids of their own, it's getting even bigger.",
+    "I do my self breast exams religiously and haven't felt anything since.",
+    "Your exam looks good, no masses, just some skin changes from that radiation.",
+    "I was found to have a calcification in your breast during a mammogram in October 2019. Was that just a normal screening mammogram?",
+    "The report states the mass was point four by two by three centimeters.",
+    "I have that you were allergic to penicillin. Any other allergies?",
+    "Just penicillin.",
+    "I have a sigmoid polyp and that was removed and it wasn't cancerous.",
+    "I am working on exercise and cutting back on fatty foods to see if I can get it lower without any medication.",
+    "Your ECOG performance status today is zero.",
+    "I used to smoke, but really, everybody did back then and I probably quit about 30 years ago.",
+    "I do drink socially, but never more than that.",
+    "I have that you take CoQ10, vitamin D, vitamin C, fish oil, and elderberry fruit. Is that all?",
+    "We'll keep a close eye on you and take good care of you.",
+    "I have a few more questions for you. When was your last colonoscopy?",
+    "The patient reports that she performs self-breast exams regularly at home.",
+    "Your last menstrual period was probably around 30 years ago.",
+    "She is due for a mammogram in 04/2022.",
+    "I bet. Sounds fun.",
+    "I feel I have a good grasp of what's been going on with you."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    2,
+    1,
+    2,
+    1,
+    3,
+    3,
+    3,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    3,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    1,
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1087004542350769,
+    "calinski_harabasz_score": 4.848076305917476,
+    "davies_bouldin_score": 1.6692496208430658
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9983300566673279,
+      0.9949409365653992,
+      0.9958937168121338
+    ],
+    [
+      0.9983300566673279,
+      1.0000001192092896,
+      0.9960139989852905,
+      0.9985527992248535
+    ],
+    [
+      0.9949409365653992,
+      0.9960139989852905,
+      1.0000001192092896,
+      0.9948405623435974
+    ],
+    [
+      0.9958937168121338,
+      0.9985527992248535,
+      0.9948405623435974,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11232300847768784,
+    "1": 0.13921807706356049,
+    "2": 0.1803513467311859,
+    "3": 0.15450355410575867
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "She's here to establish care for a history of DCIS.",
+        "Your ECOG performance status today is zero.",
+        "The patient reports that she performs self-breast exams regularly at home.",
+        "She is due for a mammogram in 04/2022.",
+        "I bet. Sounds fun."
+      ],
+      "2": [
+        "Yes. On January 20th, 2020.",
+        "Just penicillin."
+      ],
+      "0": [
+        "The report states the mass was point four by two by three centimeters."
+      ]
+    },
+    "1": {
+      "0": [
+        "You've come to see me today because you had a breast lumpectomy last year. Is that?",
+        "I was found to have a calcification in your breast during a mammogram in October 2019. Was that just a normal screening mammogram?",
+        "I have that you take CoQ10, vitamin D, vitamin C, fish oil, and elderberry fruit. Is that all?"
+      ],
+      "2": [
+        "Your last mammogram was in January 2021? And that was normal.",
+        "You also had radiation after the lumpectomy?",
+        "Your exam looks good, no masses, just some skin changes from that radiation.",
+        "I have that you were allergic to penicillin. Any other allergies?",
+        "I have a few more questions for you. When was your last colonoscopy?"
+      ],
+      "1": [
+        "I have a sigmoid polyp and that was removed and it wasn't cancerous.",
+        "I am working on exercise and cutting back on fatty foods to see if I can get it lower without any medication.",
+        "I do drink socially, but never more than that.",
+        "We'll keep a close eye on you and take good care of you.",
+        "Your last menstrual period was probably around 30 years ago."
+      ]
+    },
+    "2": {
+      "0": [
+        "The pathology confirmed DCIS. Looks they also removed 5 lymph nodes, which, thankfully, were negative for malignancy.",
+        "Based on those results, they decided to do an ultrasound-guided core needle biopsy on December 5th, 2019. Pathology results during that biopsy came back as grade two, ER positive, PR positive, DCIS, or ductal carcinoma in situ."
+      ]
+    },
+    "3": {
+      "2": [
+        "I did. We also talked about endocrine therapy, but I decided against that."
+      ],
+      "0": [
+        "I have five. And they're all having kids of their own, it's getting even bigger.",
+        "I do my self breast exams religiously and haven't felt anything since.",
+        "I feel I have a good grasp of what's been going on with you."
+      ],
+      "1": [
+        "I used to smoke, but really, everybody did back then and I probably quit about 30 years ago."
+      ]
+    }
+  }
+}

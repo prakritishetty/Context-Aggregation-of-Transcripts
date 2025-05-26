@@ -1,0 +1,205 @@
+{
+  "phrases": [
+    "follow-up to an abnormal lab finding",
+    "Your hemoglobin was low",
+    "I know the nurse told you about Dax. I'd like to tell Dax a little bit about you when we get started.",
+    "Your hemoglobin was low.",
+    "I've been feeling really tired lately. Over the past couple of months, I've noticed that my energy has really gone down.",
+    "I used to be really active... I've just been tired and exhausted and I haven't been able to really keep up with the way I was going with my exercise.",
+    "I've noticed a little bit [weight loss], but that's because I've been doing really well with my exercise.",
+    "I haven't been smoking. I quit cold turkey and I haven't gone back since.",
+    "During the changes of season, it gets a little bit harder for me to breathe, but that's just because of my allergies.",
+    "I've been doing really well with [diet]... staying away from the French fries, and all the other salty foods that I love to eat.",
+    "No swelling in your legs or anything?",
+    "No, not that I've noticed.",
+    "No blood in your stools at all?",
+    "No, not really.",
+    "Are your stools dark or charry or black looking?",
+    "No, not that I've noticed.",
+    "Are you spotting a lot with your periods?",
+    "No, I'm not.",
+    "Any weight loss?",
+    "I've noticed a little bit...",
+    "I hear a slight two out of six systolic heart, systolic ejection murmur on your heart exam.",
+    "Your abdomen... had some tenderness to palpation in your lower quadrant on your abdominal exam.",
+    "No lower extremity edema.",
+    "Your hemoglobin level is 8.2. Somebody you should have a hemoglobin of about 13, 14.",
+    "We need to investigate why it's low... some of your anemia labs are still pending at this time that's part of the workup.",
+    "I'm going to order an endoscopy and a colonoscopy just to make sure that you're not bleeding from inside your belly.",
+    "Continue staying away from smoking. It doesn't sound like you need any inhalers at this time.",
+    "Continue you on the Toprol, continue you on the lisinopril and we'll continue you on your current diuretic dosing of 20, lasix 20 milligrams a day.",
+    "I'll be in touch when those labs come back to see what further workup we need to do.",
+    "I'm going to go ahead and order that referral to gastroenterology.",
+    "You feel you have a good support system?",
+    "My boyfriend is great and I have my brother down the road.",
+    "I'll be in touch over the next week or so, and we'll get this all sorted out."
+  ],
+  "cluster_labels": [
+    3,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    2,
+    3,
+    2,
+    1,
+    1,
+    1,
+    3,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "subcluster_labels": {
+    "0": 0,
+    "1": 2,
+    "2": 1,
+    "3": 2,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 1,
+    "18": 0,
+    "19": 1,
+    "20": 2,
+    "21": 2,
+    "22": 0,
+    "23": 2,
+    "24": 2,
+    "25": 1,
+    "26": 1,
+    "27": 0,
+    "28": 1,
+    "29": 1,
+    "30": 0,
+    "31": 1,
+    "32": 1
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "S",
+    "2": "S",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18513062596321106,
+    "calinski_harabasz_score": 5.925519943237305,
+    "davies_bouldin_score": 1.5784148430454672
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9906340837478638,
+      0.9893247485160828,
+      0.9887235760688782
+    ],
+    [
+      0.9906340837478638,
+      0.9999999403953552,
+      0.9903792142868042,
+      0.9847902059555054
+    ],
+    [
+      0.9893247485160828,
+      0.9903792142868042,
+      0.9999995231628418,
+      0.9865359663963318
+    ],
+    [
+      0.9887235760688782,
+      0.9847902059555054,
+      0.9865359663963318,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06654447317123413,
+    "1": 0.13301178812980652,
+    "2": 0.19299498200416565,
+    "3": -0.04039054736495018
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "follow-up to an abnormal lab finding",
+        "No lower extremity edema.",
+        "Continue you on the Toprol, continue you on the lisinopril and we'll continue you on your current diuretic dosing of 20, lasix 20 milligrams a day."
+      ]
+    },
+    "2": {
+      "2": [
+        "Your hemoglobin was low",
+        "Your hemoglobin was low.",
+        "I hear a slight two out of six systolic heart, systolic ejection murmur on your heart exam.",
+        "Your abdomen... had some tenderness to palpation in your lower quadrant on your abdominal exam.",
+        "Your hemoglobin level is 8.2. Somebody you should have a hemoglobin of about 13, 14."
+      ]
+    },
+    "1": {
+      "1": [
+        "I know the nurse told you about Dax. I'd like to tell Dax a little bit about you when we get started.",
+        "I've been feeling really tired lately. Over the past couple of months, I've noticed that my energy has really gone down.",
+        "I used to be really active... I've just been tired and exhausted and I haven't been able to really keep up with the way I was going with my exercise.",
+        "I've noticed a little bit [weight loss], but that's because I've been doing really well with my exercise.",
+        "I haven't been smoking. I quit cold turkey and I haven't gone back since.",
+        "During the changes of season, it gets a little bit harder for me to breathe, but that's just because of my allergies.",
+        "I've been doing really well with [diet]... staying away from the French fries, and all the other salty foods that I love to eat.",
+        "I've noticed a little bit...",
+        "I'm going to order an endoscopy and a colonoscopy just to make sure that you're not bleeding from inside your belly.",
+        "Continue staying away from smoking. It doesn't sound like you need any inhalers at this time.",
+        "I'll be in touch when those labs come back to see what further workup we need to do.",
+        "I'm going to go ahead and order that referral to gastroenterology.",
+        "My boyfriend is great and I have my brother down the road.",
+        "I'll be in touch over the next week or so, and we'll get this all sorted out."
+      ],
+      "2": [
+        "We need to investigate why it's low... some of your anemia labs are still pending at this time that's part of the workup."
+      ]
+    },
+    "0": {
+      "0": [
+        "No swelling in your legs or anything?",
+        "No, not that I've noticed.",
+        "No blood in your stools at all?",
+        "No, not really.",
+        "Are your stools dark or charry or black looking?",
+        "No, not that I've noticed.",
+        "Are you spotting a lot with your periods?",
+        "Any weight loss?",
+        "You feel you have a good support system?"
+      ],
+      "1": [
+        "No, I'm not."
+      ]
+    }
+  }
+}

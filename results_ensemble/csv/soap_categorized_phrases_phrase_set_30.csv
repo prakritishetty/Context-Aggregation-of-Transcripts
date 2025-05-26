@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,0,2,"Back pain, usually on the left, sometimes sharp, sometimes moving."
+S,1,2,I’ve had some back pain it’s usually on the left and he asked some questions and he said I should come see you.
+S,1,0,I’ve been having these sore throats and fibroid I’m told I have strep... I’ve had four in the last five months.
+S,1,0,I’ve been drinking a lot more water and I do realize that I wake up sometimes during the night to use the restroom to pee more than I normally do.
+S,1,0,I ride a bike every so often... I’m in the process of switching jobs. My new job will be at a restaurant.
+S,1,0,I have a brother who smokes I’ve told him not to smoke he doesn’t listen.
+P,3,0,No tenderness on palpation... no erythema no swelling... no wheezes rales rhonchi... heart sounds great no murmur no rub no gallop.
+A,0,1,The CT is showing a couple things that we are a little concerned about... potentially caused by glomerular nephritis.
+O,2,0,"Lipid panel, UA, CMP, CBC, vitamin D, and a TSH."
+A,0,0,Refer you to an ENT... consider taking out your tonsils.
+S,1,1,They are going to be free ninety nine because your mom is paying for them... I have a class after this and have to go to work.
+A,0,1,Come back in a week... we could do that over the phone by the way.
+A,0,1,Do I need to get a shot today?... When do I have to do those tests?
+A,0,0,Watch your salt intake... provide a work note.
+A,0,1,The free food at the restaurant might be an issue because your salt intake is about to be very important.

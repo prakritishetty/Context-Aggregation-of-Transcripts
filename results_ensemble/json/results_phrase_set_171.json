@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "back pain on my side lasting about a week",
+    "blood in my urine",
+    "pain moved down to lower side",
+    "constant pain",
+    "no pain during urination",
+    "nausea without vomiting",
+    "father has history of kidney stones",
+    "first occurrence of kidney stones",
+    "0.5 cm kidney stone in proximal ureter",
+    "no hydronephrosis",
+    "prescribed ibuprofen 800 mg for pain",
+    "provided urine strainer to monitor stone passage",
+    "ordered BMP, urinalysis, urine culture",
+    "follow-up in 1-2 weeks; lithotripsy if persistent symptoms"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    3,
+    3,
+    3,
+    3,
+    0,
+    1,
+    1,
+    0,
+    3,
+    1,
+    0,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.0871296152472496,
+    "calinski_harabasz_score": 2.7931820749888074,
+    "davies_bouldin_score": 1.4567551958901963
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9984825849533081,
+      0.9964849948883057,
+      0.9989357590675354
+    ],
+    [
+      0.9984825849533081,
+      0.9999998807907104,
+      0.995922863483429,
+      0.9974452257156372
+    ],
+    [
+      0.9964849948883057,
+      0.995922863483429,
+      1.000000238418579,
+      0.9951566457748413
+    ],
+    [
+      0.9989357590675354,
+      0.9974452257156372,
+      0.9951566457748413,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.016178278252482414,
+    "1": 0.2427791804075241,
+    "2": 0.0,
+    "3": 0.06218208000063896
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "back pain on my side lasting about a week"
+      ],
+      "0": [
+        "blood in my urine",
+        "ordered BMP, urinalysis, urine culture"
+      ],
+      "1": [
+        "father has history of kidney stones",
+        "no hydronephrosis"
+      ]
+    },
+    "3": {
+      "2": [
+        "pain moved down to lower side",
+        "no pain during urination"
+      ],
+      "0": [
+        "constant pain",
+        "nausea without vomiting"
+      ],
+      "1": [
+        "prescribed ibuprofen 800 mg for pain"
+      ]
+    },
+    "1": {
+      "2": [
+        "first occurrence of kidney stones"
+      ],
+      "0": [
+        "0.5 cm kidney stone in proximal ureter"
+      ],
+      "1": [
+        "provided urine strainer to monitor stone passage"
+      ]
+    },
+    "2": {
+      "0": [
+        "follow-up in 1-2 weeks; lithotripsy if persistent symptoms"
+      ]
+    }
+  }
+}

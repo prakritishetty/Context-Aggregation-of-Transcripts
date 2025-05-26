@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "I'm just on one and that seems to be enough.",
+    "there was a little extra pain in my feet... when I have a day off where I'm moving around a lot they do tend to hurt a bit more.",
+    "I did n't take it on the week that I got the first shot... I felt absolutely horrible until I took it again a week later.",
+    "they said, 'no, just go ahead and take it, I did.",
+    "We do have to keep an eye out on it since it's a high-risk medication.",
+    "I just wanted to know why I was getting all these bruises here, when I bump myself.",
+    "That's probably from the prednisone, it can increase bruising.",
+    "Full range of motion. Dystrophy of all the nails of the toes.",
+    "we're still on track for discontinuing the prednisone... continue with the methotrexate.",
+    "Make sure to stop by the front desk and make an appointment for the blood work, and I'll see you in three months."
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    3,
+    3,
+    1,
+    3,
+    0,
+    2,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17317886650562286,
+    "calinski_harabasz_score": 4.04485324421728,
+    "davies_bouldin_score": 1.042735583891992
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9983310699462891,
+      0.9964176416397095,
+      0.9962258338928223
+    ],
+    [
+      0.9983310699462891,
+      1.0000001192092896,
+      0.995079517364502,
+      0.998099684715271
+    ],
+    [
+      0.9964176416397095,
+      0.995079517364502,
+      0.9999998807907104,
+      0.9920608997344971
+    ],
+    [
+      0.9962258338928223,
+      0.998099684715271,
+      0.9920608997344971,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.23409093916416168,
+    "1": 0.17027221620082855,
+    "2": 0.0,
+    "3": 0.1016945168375969
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I'm just on one and that seems to be enough."
+      ],
+      "0": [
+        "We do have to keep an eye out on it since it's a high-risk medication."
+      ],
+      "1": [
+        "Make sure to stop by the front desk and make an appointment for the blood work, and I'll see you in three months."
+      ]
+    },
+    "3": {
+      "2": [
+        "there was a little extra pain in my feet... when I have a day off where I'm moving around a lot they do tend to hurt a bit more.",
+        "I just wanted to know why I was getting all these bruises here, when I bump myself."
+      ],
+      "0": [
+        "I did n't take it on the week that I got the first shot... I felt absolutely horrible until I took it again a week later."
+      ],
+      "1": [
+        "they said, 'no, just go ahead and take it, I did."
+      ]
+    },
+    "0": {
+      "0": [
+        "That's probably from the prednisone, it can increase bruising.",
+        "we're still on track for discontinuing the prednisone... continue with the methotrexate."
+      ]
+    },
+    "2": {
+      "0": [
+        "Full range of motion. Dystrophy of all the nails of the toes."
+      ]
+    }
+  }
+}

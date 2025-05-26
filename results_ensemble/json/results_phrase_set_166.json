@@ -1,0 +1,223 @@
+{
+  "phrases": [
+    "difficulty urinating over the last six months",
+    "stream is weak,",
+    "not emptying bladder fully,",
+    "sometimes if I stand there long enough I can kinda go a little bit more,",
+    "getting up three or four times a night to go to the bathroom.",
+    "no burning when I urinate,",
+    "no problems with my bowels,",
+    "no urinary retention,",
+    "no chest pain or shortness of breath.",
+    "enlarged prostate appreciated on physical exam,",
+    "slight 3 out of 6 systolic ejection murmur heard at the left base,",
+    "lungs clear bilaterally,",
+    "abdomen nontender and nondistended.",
+    "history of coronary artery disease with stent placement in 2018,",
+    "diabetes managed with metformin.",
+    "start on Flomax 0.4 mg once at night,",
+    "refer to a urologist,",
+    "order PSA, urinalysis, and urine culture,",
+    "continue Lipitor 40 mg, aspirin, and metoprolol,",
+    "order echocardiogram to follow up on murmur,",
+    "continue metformin 1000 mg twice daily,",
+    "order hemoglobin A1c.",
+    "follow up in 3 to 4 weeks,",
+    "call or message if concerns arise.",
+    "patient understands and agrees with the recommended medical treatment plan.",
+    "patient denies recent constipation,",
+    "no history of catheter insertion for retention,",
+    "social history includes exercise attempts and college football interest."
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    0,
+    2,
+    1,
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    3,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    1,
+    2,
+    0,
+    2,
+    2,
+    2,
+    1,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.12458556890487671,
+    "calinski_harabasz_score": 3.7179965567289925,
+    "davies_bouldin_score": 1.776024463408536
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9988884925842285,
+      0.9982126951217651,
+      0.9980546236038208
+    ],
+    [
+      0.9988884925842285,
+      1.0,
+      0.9975039958953857,
+      0.9980661869049072
+    ],
+    [
+      0.9982126951217651,
+      0.9975039958953857,
+      1.0000001192092896,
+      0.9971364736557007
+    ],
+    [
+      0.9980546236038208,
+      0.9980661869049072,
+      0.9971364736557007,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0331093855202198,
+    "1": 0.05876804143190384,
+    "2": 0.1673934906721115,
+    "3": 0.26002949476242065
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "difficulty urinating over the last six months",
+        "not emptying bladder fully,",
+        "no urinary retention,",
+        "slight 3 out of 6 systolic ejection murmur heard at the left base,",
+        "continue metformin 1000 mg twice daily,",
+        "no history of catheter insertion for retention,"
+      ],
+      "1": [
+        "enlarged prostate appreciated on physical exam,",
+        "start on Flomax 0.4 mg once at night,",
+        "refer to a urologist,",
+        "order PSA, urinalysis, and urine culture,",
+        "order echocardiogram to follow up on murmur,",
+        "follow up in 3 to 4 weeks,"
+      ],
+      "0": [
+        "history of coronary artery disease with stent placement in 2018,",
+        "continue Lipitor 40 mg, aspirin, and metoprolol,"
+      ]
+    },
+    "3": {
+      "2": [
+        "stream is weak,"
+      ],
+      "0": [
+        "lungs clear bilaterally,"
+      ],
+      "1": [
+        "patient denies recent constipation,"
+      ]
+    },
+    "2": {
+      "1": [
+        "sometimes if I stand there long enough I can kinda go a little bit more,"
+      ],
+      "0": [
+        "no burning when I urinate,"
+      ],
+      "2": [
+        "no problems with my bowels,"
+      ]
+    },
+    "1": {
+      "2": [
+        "getting up three or four times a night to go to the bathroom.",
+        "no chest pain or shortness of breath.",
+        "diabetes managed with metformin.",
+        "call or message if concerns arise.",
+        "social history includes exercise attempts and college football interest."
+      ],
+      "0": [
+        "abdomen nontender and nondistended.",
+        "order hemoglobin A1c."
+      ],
+      "1": [
+        "patient understands and agrees with the recommended medical treatment plan."
+      ]
+    }
+  }
+}

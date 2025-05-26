@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "Acid reflux",
+    "I've had acid reflux since I was around 12, but it has gotten worse over the past few years.",
+    "I've been on omeprazole 40 milligrams twice a day for about a year.",
+    "It feels burning in my chest and also in my throat.",
+    "burning... in my chest and also in my throat",
+    "Stress and food choices sometimes... spicy foods, soda, citrus, and tomato-based products.",
+    "I have been under a lot of work stress... poor appetite for the past two months.",
+    "My grandmother had esophageal cancer on mom's side... my mom had acid reflux.",
+    "Healed abdominal surgical scar from surgery at one month old for twisted intestines.",
+    "intestines were twisted... surgery when I was around one month old",
+    "Switching to Nexium 40 mg twice daily",
+    "Upper endoscopy (EGD) to look for ulcers or precancerous conditions.",
+    "look for potential causes of GERD... precancerous or cancerous conditions",
+    "Consider Protonix and pH impedance study if EGD is normal and symptoms persist."
+  ],
+  "cluster_labels": [
+    3,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    0,
+    0,
+    3,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1345139592885971,
+    "calinski_harabasz_score": 3.3280138957928393,
+    "davies_bouldin_score": 1.4579428000029786
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9978429079055786,
+      0.9981319904327393,
+      0.9973771572113037
+    ],
+    [
+      0.9978429079055786,
+      1.000000238418579,
+      0.9964413642883301,
+      0.998032808303833
+    ],
+    [
+      0.9981319904327393,
+      0.9964413642883301,
+      1.0000001192092896,
+      0.9953079223632812
+    ],
+    [
+      0.9973771572113037,
+      0.998032808303833,
+      0.9953079223632812,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13862331211566925,
+    "1": 0.0639556348323822,
+    "2": 0.1579979509115219,
+    "3": -0.15530650317668915
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "Acid reflux",
+        "Switching to Nexium 40 mg twice daily"
+      ]
+    },
+    "2": {
+      "2": [
+        "I've had acid reflux since I was around 12, but it has gotten worse over the past few years."
+      ],
+      "0": [
+        "I've been on omeprazole 40 milligrams twice a day for about a year.",
+        "I have been under a lot of work stress... poor appetite for the past two months."
+      ],
+      "1": [
+        "My grandmother had esophageal cancer on mom's side... my mom had acid reflux."
+      ]
+    },
+    "0": {
+      "2": [
+        "It feels burning in my chest and also in my throat."
+      ],
+      "0": [
+        "burning... in my chest and also in my throat"
+      ],
+      "1": [
+        "Healed abdominal surgical scar from surgery at one month old for twisted intestines.",
+        "intestines were twisted... surgery when I was around one month old"
+      ]
+    },
+    "1": {
+      "2": [
+        "Stress and food choices sometimes... spicy foods, soda, citrus, and tomato-based products."
+      ],
+      "0": [
+        "Upper endoscopy (EGD) to look for ulcers or precancerous conditions.",
+        "Consider Protonix and pH impedance study if EGD is normal and symptoms persist."
+      ],
+      "1": [
+        "look for potential causes of GERD... precancerous or cancerous conditions"
+      ]
+    }
+  }
+}

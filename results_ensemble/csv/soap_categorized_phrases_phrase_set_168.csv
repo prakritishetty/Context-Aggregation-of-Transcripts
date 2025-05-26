@@ -1,0 +1,23 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,2,I've been in a lot of pain it started about three days ago.
+S,0,2,the pain that you're having is it constant or does it come and go
+P,3,0,it's constant... I can't get comfortable.
+S,0,0,I started seeing some blood
+A,2,2,this might be my third time
+P,3,1,no fever some chills and I just can't eat and I do feel a little nauseous.
+P,3,0,I've been taking Tylenol I have had to try some ibuprofen... it's not really working.
+A,2,0,usually about three four days to pass it
+P,3,1,your blood pressure was a little bit high... probably because you are in a bunch of pain.
+S,0,0,you were up there in the one eighties which was really high
+A,2,2,my french fries
+A,2,1,we don't want strokes we don't want a scope and all the french fries
+S,0,0,your A1c was a little bit higher at seven point three
+A,2,0,those have been pretty good they are in the low one hundreds
+O,1,2,grade two out of six systolic ejection murmur... not really worried about that currently.
+O,1,2,tenderness to palpation of the abdomen... CVA tenderness on your flank.
+O,1,0,prescribe you some oxycodone five milligrams... continue to take that Tylenol for breakthrough pain.
+O,1,2,push fluids... urine strainer... refer you to urology.
+O,1,1,keep you on that two point five Norvasc... home blood pressure monitoring 3 times per week.
+O,1,1,refer you to nutrition to a dietitian... write a diet for you.
+O,1,1,continue metformin 500 mg daily... home glucose monitoring before meals.
+S,0,1,that sounds good and I just want this pain to go away thank you

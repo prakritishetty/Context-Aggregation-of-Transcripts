@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+O,2,0,Follow-up after an interior STEMI where we had to put in another stent
+S,0,0,No chest pain or shortness of breath
+S,0,2,Bilateral leg swelling since being sent home from the hospital
+S,0,0,Three over six systolic ejection murmur heard at the left base
+S,0,2,"Lower limb edema, pitting one plus"
+O,2,0,EKG shows normal sinus rhythm with evolutionary changes after STEMI
+S,0,0,Reduced ejection fraction of thirty-five percent
+P,3,2,"Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily"
+S,0,1,Refer to cardiac rehab for exercise confidence
+S,0,0,Newly reduced left ventricular dysfunction and moderate mitral regurgitation
+P,3,0,Prescribe Lasix 40 mg daily and Aldactone 12.5 mg daily for acute heart failure
+S,0,0,Repeat echocardiogram in two months
+P,3,1,Retain lisinopril 20 mg daily for hypertension and heart failure
+A,1,2,"Encourage diet changes, especially reducing preserved meats like pepperoni"
+A,1,0,Patient agrees to continue walking and monitoring diabetes with metformin
+A,1,1,Patient understands and agrees with the treatment plan

@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "She's here for a new visit with her mother for acne located on the face, which started about two years ago and is present most every day.",
+    "She has been using persa-gel and washing regularly, which is somewhat helpful.",
+    "The biggest flare, probably, was when she started school sports in the fall, just with all the sweating.",
+    "No associated symptoms including itching, bleeding, or pain.",
+    "In the morning, I wipe my face with water and a washcloth. At night, I use an elf facial cleanser called the super clarity cleanser, followed by a toner and the persa-gel.",
+    "She wears sunscreen in the summer, spf 30.",
+    "Multiple benign nevi on the trunk and extremities. Scattered skin colored papules. Open and closed comedones. And erythmateous papules on the face, primarily on the forehead and with also some on the central cheeks and chin.",
+    "Mild to moderate acne, mostly comodonal with small inflammatory component.",
+    "Start with a topical therapy first... adapalene, 0.1% cream... apply in a thin layer to the areas you generally get acne... follow that with clean and clear persa-gel... noncomedogenic moisturizer.",
+    "You will need to wear sunscreen when you are outside.",
+    "We will see if you have any progress over the next six months and follow up at that time.",
+    "Multiple benign moles on your arms, legs, back and abdomen. This means they all look normal with no worrisome features.",
+    "She plays basketball and volleyball and tap."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    3,
+    2,
+    3,
+    1,
+    1,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10690956562757492,
+    "calinski_harabasz_score": 2.4598467276877067,
+    "davies_bouldin_score": 1.5615672585587965
+  },
+  "similarity_matrix": [
+    [
+      1.0000003576278687,
+      0.9986816048622131,
+      0.9965997934341431,
+      0.9972840547561646
+    ],
+    [
+      0.9986816048622131,
+      0.9999997615814209,
+      0.9973835349082947,
+      0.9961013793945312
+    ],
+    [
+      0.9965997934341431,
+      0.9973835349082947,
+      1.000000238418579,
+      0.9970591068267822
+    ],
+    [
+      0.9972840547561646,
+      0.9961013793945312,
+      0.9970591068267822,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.04415996000170708,
+    "1": 0.1641412079334259,
+    "2": 0.028180912137031555,
+    "3": -0.12116315960884094
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "She's here for a new visit with her mother for acne located on the face, which started about two years ago and is present most every day.",
+        "In the morning, I wipe my face with water and a washcloth. At night, I use an elf facial cleanser called the super clarity cleanser, followed by a toner and the persa-gel."
+      ],
+      "0": [
+        "The biggest flare, probably, was when she started school sports in the fall, just with all the sweating."
+      ],
+      "1": [
+        "Multiple benign moles on your arms, legs, back and abdomen. This means they all look normal with no worrisome features."
+      ]
+    },
+    "1": {
+      "2": [
+        "She has been using persa-gel and washing regularly, which is somewhat helpful."
+      ],
+      "0": [
+        "She wears sunscreen in the summer, spf 30.",
+        "You will need to wear sunscreen when you are outside.",
+        "We will see if you have any progress over the next six months and follow up at that time."
+      ],
+      "1": [
+        "She plays basketball and volleyball and tap."
+      ]
+    },
+    "2": {
+      "0": [
+        "No associated symptoms including itching, bleeding, or pain.",
+        "Mild to moderate acne, mostly comodonal with small inflammatory component."
+      ]
+    },
+    "3": {
+      "0": [
+        "Multiple benign nevi on the trunk and extremities. Scattered skin colored papules. Open and closed comedones. And erythmateous papules on the face, primarily on the forehead and with also some on the central cheeks and chin.",
+        "Start with a topical therapy first... adapalene, 0.1% cream... apply in a thin layer to the areas you generally get acne... follow that with clean and clear persa-gel... noncomedogenic moisturizer."
+      ]
+    }
+  }
+}

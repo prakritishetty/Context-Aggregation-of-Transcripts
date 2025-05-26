@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "itchy scalp pain",
+    "it's been a while but probably worsening in the past six months",
+    "still quite itchy",
+    "white dander on your clothes",
+    "demarcated scaly erythematous plaques",
+    "on my body no not really",
+    "nothing new I do dye my hair but I've been doing that for years",
+    "Head & Shoulders",
+    "Denies fever or weight loss",
+    "no joint pain",
+    "maybe my sister... she does report just having a dry scalp",
+    "BP 130/68, HR 98, RR 18, Temperature 97.7",
+    "demarcated scaly erythematous plaques... diffusely present across the back of the skull",
+    "scalp psoriasis",
+    "clobetasol 0.05% solution twice daily",
+    "continue using T/Gel shampoo",
+    "steroids for flare-ups",
+    "follow-up in 3 months or sooner if worsens",
+    "I'll just use that steroid solution and just as needed if it's really bad"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    3,
+    0,
+    0,
+    0,
+    3,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    2,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10137257725000381,
+    "calinski_harabasz_score": 4.81482088528323,
+    "davies_bouldin_score": 1.2741666615113134
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9986361265182495,
+      0.995485246181488,
+      0.9941734671592712
+    ],
+    [
+      0.9986361265182495,
+      1.0,
+      0.994347870349884,
+      0.9972438812255859
+    ],
+    [
+      0.995485246181488,
+      0.994347870349884,
+      0.999999463558197,
+      0.9914581179618835
+    ],
+    [
+      0.9941734671592712,
+      0.9972438812255859,
+      0.9914581179618835,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.13192175328731537,
+    "1": -0.0164367463439703,
+    "2": 0.0,
+    "3": 0.11454632133245468
+  },
+  "cluster_phrases": {
+    "0": {
+      "0": [
+        "itchy scalp pain",
+        "Head & Shoulders",
+        "Denies fever or weight loss",
+        "no joint pain",
+        "BP 130/68, HR 98, RR 18, Temperature 97.7",
+        "steroids for flare-ups",
+        "follow-up in 3 months or sooner if worsens"
+      ],
+      "2": [
+        "demarcated scaly erythematous plaques",
+        "scalp psoriasis",
+        "clobetasol 0.05% solution twice daily"
+      ],
+      "1": [
+        "continue using T/Gel shampoo"
+      ]
+    },
+    "1": {
+      "2": [
+        "it's been a while but probably worsening in the past six months",
+        "white dander on your clothes"
+      ],
+      "0": [
+        "still quite itchy"
+      ],
+      "1": [
+        "on my body no not really"
+      ]
+    },
+    "3": {
+      "2": [
+        "nothing new I do dye my hair but I've been doing that for years"
+      ],
+      "0": [
+        "maybe my sister... she does report just having a dry scalp"
+      ],
+      "1": [
+        "I'll just use that steroid solution and just as needed if it's really bad"
+      ]
+    },
+    "2": {
+      "0": [
+        "demarcated scaly erythematous plaques... diffusely present across the back of the skull"
+      ]
+    }
+  }
+}

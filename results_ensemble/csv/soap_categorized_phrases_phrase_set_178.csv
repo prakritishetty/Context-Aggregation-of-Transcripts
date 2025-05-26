@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,1,I start to feel there is some phlegm building up in my throat and I start coughing my chest gets tight I start wheezing and I just have to sit down or else I'm gon na get lightheaded too.
+A,0,2,The thing that I hate about that inhaler is I start getting shaky is that supposed to be happening?
+O,1,2,Yes that is unfortunately normal and a side effect with the inhaler.
+A,0,0,Pretty much every time I do any aerobic workout.
+A,0,0,If I'm around somebody who has been smoking a lot or is currently smoking but I usually just step away I do n't even to be around them.
+S,2,0,It's a lot of sadness a lot of I do n't really I kinda feel I do n't really want to do anything my friends will go out and I'll just be I'd rather be at home I am really tired a lot too.
+S,2,2,There's just it I feel there's a lot of pressure and I get it but there are times where I'm just really down and I i do n't really know what else I can do.
+O,1,0,I have an albuterol inhaler
+O,1,0,I'm using two puffs of the inhaler for the symptoms.
+A,0,1,We could try a daily medication since it looks you might be having a little bit of allergies maybe we can try some singulair
+O,1,0,Start with that once you are on that daily and you can continue to use the albuterol inhaler.
+A,0,0,I will have you come back in about six weeks and follow up and see how you're doing with that.
+A,0,1,Let's consider having you start seeing a therapist that would be a good place to start
+P,3,0,We will do some screening questionnaires and and follow up in a couple weeks on that too.
+A,0,1,I do see just a little bit of fluid in the ears
+O,1,1,Throat looks fine no tonsils.

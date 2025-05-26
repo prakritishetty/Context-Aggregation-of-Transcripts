@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "I\u2019ve been putting a few more miles on the bike each day\u2026 my knees have been killing me, just more in the last three or four days",
+    "both equally",
+    "stiff and sore",
+    "swelling\u2026 redness\u2026 inflamed in the morning",
+    "no other joints bothering you\u2026 just the knees",
+    "no fever, chills, abdominal pain, nausea, or vomiting",
+    "coronary artery disease\u2026 stent placed last year",
+    "taking aspirin every day\u2026 no problems with Crestor",
+    "lupus\u2026 been in the background\u2026 no issues with kidney function",
+    "bilateral edema and slight erythema\u2026 slight effusion present on the knee",
+    "pain to palpation of the knee\u2026 decreased range of motion bilaterally",
+    "2/6 systolic ejection murmur\u2026 stable",
+    "knee x-ray\u2026 no boney abnormality, no fracture",
+    "EKG\u2026 looks really good, no concerns from a heart standpoint",
+    "concerned that it might be from a flareup of your lupus",
+    "order an autoimmune panel",
+    "order a lipid panel and another echocardiogram",
+    "continue current regimen",
+    "no questions"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    3,
+    1,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "P",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16145169734954834,
+    "calinski_harabasz_score": 5.079072754548044,
+    "davies_bouldin_score": 1.2727514173021017
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.99498450756073,
+      0.9981641173362732,
+      0.9960219860076904
+    ],
+    [
+      0.99498450756073,
+      1.0,
+      0.9969648122787476,
+      0.9962183237075806
+    ],
+    [
+      0.9981641173362732,
+      0.9969648122787476,
+      0.9999998807907104,
+      0.996558666229248
+    ],
+    [
+      0.9960219860076904,
+      0.9962183237075806,
+      0.996558666229248,
+      0.9999994039535522
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13817954063415527,
+    "1": 0.11651516705751419,
+    "2": 0.021303128451108932,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I\u2019ve been putting a few more miles on the bike each day\u2026 my knees have been killing me, just more in the last three or four days"
+      ],
+      "0": [
+        "swelling\u2026 redness\u2026 inflamed in the morning",
+        "no other joints bothering you\u2026 just the knees",
+        "taking aspirin every day\u2026 no problems with Crestor",
+        "EKG\u2026 looks really good, no concerns from a heart standpoint"
+      ],
+      "1": [
+        "lupus\u2026 been in the background\u2026 no issues with kidney function"
+      ]
+    },
+    "1": {
+      "2": [
+        "both equally"
+      ],
+      "1": [
+        "stiff and sore",
+        "continue current regimen",
+        "no questions"
+      ],
+      "0": [
+        "order an autoimmune panel",
+        "order a lipid panel and another echocardiogram"
+      ]
+    },
+    "2": {
+      "2": [
+        "no fever, chills, abdominal pain, nausea, or vomiting"
+      ],
+      "1": [
+        "coronary artery disease\u2026 stent placed last year",
+        "2/6 systolic ejection murmur\u2026 stable"
+      ],
+      "0": [
+        "bilateral edema and slight erythema\u2026 slight effusion present on the knee",
+        "pain to palpation of the knee\u2026 decreased range of motion bilaterally",
+        "knee x-ray\u2026 no boney abnormality, no fracture"
+      ]
+    },
+    "3": {
+      "0": [
+        "concerned that it might be from a flareup of your lupus"
+      ]
+    }
+  }
+}

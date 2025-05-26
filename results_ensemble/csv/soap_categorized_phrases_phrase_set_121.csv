@@ -1,0 +1,27 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,2,joint pain.
+A,0,2,"over the the weekend, we've been moving boxes up and down our basements stairs, and by the end of the day my knees were just killing me."
+P,3,0,equally painful.
+O,1,2,it was just the repetition and the weight of the boxes.
+A,0,2,"a little tylenol. I iced them for a bit. Nothing really seemed to help, though."
+A,0,2,saturday night it kept me up for a bit. They were pretty sore.
+O,1,0,"does it prevent you from doing,, your activities of daily living, walking and exercising and things that ?"
+S,2,0,"Andrew is a 62-year-old male with a past medical history significant for a kidney transplant, hypothyroidism, and arthritis."
+A,0,2,i know that you've had the kidney transplant a few years ago for some polycystic kidneys.
+A,0,0,"you're taking your immunosuppressive medications ? [patient] yes, i am."
+O,1,0,"in terms of your hyperthyroidism, how are you doing with the synthroid ? are you doing ? [patient], yes, i am. [doctor] you're taking it regularly ? [patient] on the clock, yes."
+A,0,1,it's hard because you ca n't take certain medications 'cause of your kidney transplant.
+O,1,0,"every once in a while, my elbow, but nothing, nothing out of the ordinary."
+O,1,0,no headaches ? [patient] no headaches.
+A,0,2,"on physical examination, on your heart exam, i do appreciate a little two out of six systolic ejection murmur- [patient] mm-. [doctor]. Which we've heard in the past., that seems stable."
+A,0,1,"on your knee exam, there is some edema and some erythema of your knee, but your left knee looks fine, ?, you do have some pain to palpation of the knee and some decreased range of motion,, on exam."
+A,0,1,x-ray before you came in... shows that there's good bony alignment. There's no acute fracture.
+A,0,0,"your white blood cell count is not elevated, which is good., we get concerned about that in somebody who's immunocompromised. [patient] mm-. [doctor] and it looks your kidney function is also very good."
+A,0,1,"for your knee pain, that this is an acute exacerbation of your arthritis, ? i wan na go ahead and if. And prescribe some ultram 50 milligrams every six hours as needed."
+O,1,1,i also wan na go ahead and just order an autoimmune panel.
+O,1,1,i wan na go ahead and order some thyroid labs.
+O,1,1,we'll talk about further imaging and possibly referral to physical therapy.
+O,1,1,continue you on this. On the synthroid.
+P,3,2,continue current regimen
+P,3,1,Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.
+A,0,1,you ca n't take some of those ant nflammatory medications because of your kidney transplant.

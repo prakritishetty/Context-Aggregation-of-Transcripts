@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "My blood sugar isn't under control...they've been running in the 300's",
+    "My diet hasn't changed at all...most of my sugars come from fruit",
+    "I have not...I do not get up at night with reflux",
+    "My knee...I just noticed it when you said it",
+    "Nauseous a couple of days back...because I was sitting in the back of a car",
+    "Your knee shows some erythema and insect bite with associated fluctuance",
+    "Lyme titer is a little elevated...positive for strep",
+    "Hyperglycemia is probably related to some infections going on in your body",
+    "Amoxicillin 500 mg three times a day...order a western blot PCR for Lyme",
+    "You're certain I don't have alpha-gal syndrome...inflammatory response to that",
+    "No recent weight gain or fluid retention...I prefer to sleep on my side",
+    "Thyroid's a bit enlarged here",
+    "For sure...That sounds good"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    2,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2493414580821991,
+    "calinski_harabasz_score": 4.283839634506331,
+    "davies_bouldin_score": 0.9423238769755279
+  },
+  "similarity_matrix": [
+    [
+      1.0000003576278687,
+      0.9963951110839844,
+      0.9953188896179199,
+      0.9960371255874634
+    ],
+    [
+      0.9963951110839844,
+      1.0,
+      0.9956704378128052,
+      0.9955071806907654
+    ],
+    [
+      0.9953188896179199,
+      0.9956704378128052,
+      1.0,
+      0.9921039342880249
+    ],
+    [
+      0.9960371255874634,
+      0.9955071806907654,
+      0.9921039342880249,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.01571417786180973,
+    "1": 0.14514566957950592,
+    "2": -0.12389310449361801,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "My blood sugar isn't under control...they've been running in the 300's",
+        "My diet hasn't changed at all...most of my sugars come from fruit"
+      ],
+      "0": [
+        "I have not...I do not get up at night with reflux",
+        "Nauseous a couple of days back...because I was sitting in the back of a car",
+        "No recent weight gain or fluid retention...I prefer to sleep on my side"
+      ],
+      "1": [
+        "My knee...I just noticed it when you said it"
+      ]
+    },
+    "0": {
+      "2": [
+        "Your knee shows some erythema and insect bite with associated fluctuance"
+      ],
+      "0": [
+        "Lyme titer is a little elevated...positive for strep",
+        "Amoxicillin 500 mg three times a day...order a western blot PCR for Lyme"
+      ],
+      "1": [
+        "Hyperglycemia is probably related to some infections going on in your body"
+      ]
+    },
+    "3": {
+      "0": [
+        "You're certain I don't have alpha-gal syndrome...inflammatory response to that"
+      ]
+    },
+    "2": {
+      "0": [
+        "Thyroid's a bit enlarged here",
+        "For sure...That sounds good"
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,52-year-old male with newly diagnosed pituitary lesion.
+A,1,2,Worsening headaches over the past few months.
+A,1,2,"Headaches located behind the eyes, described as a dull nagging ache."
+A,1,0,"Onset was gradual, starting at 3 out of 10 severity and gradually worsening to 6 out of 10."
+A,1,2,Headaches tend to be worse in the morning and last a few hours at a time.
+S,2,0,Patient reports bumping into door frames recently.
+A,1,1,"No fever, rash, neck stiffness, numbness, weakness, or syncope."
+O,0,0,Visual field testing reveals bitemporal hemianopia.
+O,0,0,MRI brain with contrast shows pituitary lesion compressing the optic chiasm.
+O,0,0,"Pituitary hormone profile demonstrates a low TSH, all other results normal."
+O,0,0,"Diagnosis: pituitary adenoma, likely benign but requires pathological confirmation."
+O,0,1,Surgical intervention via transsphenoidal approach is indicated to decompress the optic chiasm.
+A,1,1,"Risks include infection, spinal fluid leak, stroke, and death."
+P,3,0,Patient will undergo pre-surgery visual field testing with ophthalmology to establish baseline.
+P,3,0,Patient understands risks and wishes to proceed with surgery despite no guarantees of vision recovery.

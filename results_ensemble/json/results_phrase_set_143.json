@@ -1,0 +1,139 @@
+{
+  "phrases": [
+    "I did when I came in last time when I saw your PA, Ruth Sanchez in March. She said I, she said she found a lump here under my left breast, but I haven\u2019t felt it since. But I did the massages.",
+    "That scar did widen a little bit. Let me take a closer look... the incisions are healed though with no signs of infection or any redness on either breast, I\u2019m not concerned.",
+    "I\u2019m not really having any more.",
+    "The only thing that is really going to help out that is to, to cut it out and re-close it.",
+    "Let\u2019s take a look in six months and we\u2019ll go from there. Sound a plan?",
+    "I wouldn\u2019t do any revisions for scar tissue until we\u2019re at least a year out.",
+    "Keep doing that twice a day. The gel is going to lighten the color a little bit...",
+    "Let\u2019s just get some pictures today we can keep up with them. And keep an eye on these scars and we\u2019ll go from there.",
+    "I was using it everyday, but I don\u2019t think I need it.",
+    "Sounds good."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.141991525888443,
+    "calinski_harabasz_score": 3.3403780730026216,
+    "davies_bouldin_score": 1.0104617026867857
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9977990388870239,
+      0.9978584051132202,
+      0.9937394261360168
+    ],
+    [
+      0.9977990388870239,
+      1.000000238418579,
+      0.995398759841919,
+      0.9961004853248596
+    ],
+    [
+      0.9978584051132202,
+      0.995398759841919,
+      0.9999997019767761,
+      0.9889098405838013
+    ],
+    [
+      0.9937394261360168,
+      0.9961004853248596,
+      0.9889098405838013,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.26068565249443054,
+    "1": 0.19683058559894562,
+    "2": 0.10844720900058746,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "I did when I came in last time when I saw your PA, Ruth Sanchez in March. She said I, she said she found a lump here under my left breast, but I haven\u2019t felt it since. But I did the massages.",
+        "That scar did widen a little bit. Let me take a closer look... the incisions are healed though with no signs of infection or any redness on either breast, I\u2019m not concerned."
+      ]
+    },
+    "0": {
+      "2": [
+        "I\u2019m not really having any more.",
+        "I wouldn\u2019t do any revisions for scar tissue until we\u2019re at least a year out.",
+        "Let\u2019s just get some pictures today we can keep up with them. And keep an eye on these scars and we\u2019ll go from there."
+      ],
+      "0": [
+        "Let\u2019s take a look in six months and we\u2019ll go from there. Sound a plan?"
+      ],
+      "1": [
+        "I was using it everyday, but I don\u2019t think I need it."
+      ]
+    },
+    "1": {
+      "0": [
+        "The only thing that is really going to help out that is to, to cut it out and re-close it.",
+        "Keep doing that twice a day. The gel is going to lighten the color a little bit..."
+      ]
+    },
+    "3": {
+      "0": [
+        "Sounds good."
+      ]
+    }
+  }
+}

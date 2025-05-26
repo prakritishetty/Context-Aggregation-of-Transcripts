@@ -1,0 +1,191 @@
+{
+  "phrases": [
+    "i was in a car accident",
+    "hit in the back and my neck went forward and my head went forward really quick",
+    "that was about a week ago",
+    "on a scale of one to ten how severe is it [patient] i would say it's about a seven",
+    "it's not a constant pain but whenever i move my head which is a lot i i feel it",
+    "it's in the back of my neck",
+    "i've tried some ibuprofen that helped a little bit but not too much... just about five out of ten",
+    "positive pain to palpation of the soft tissues of the neck",
+    "positive pain with flexion",
+    "severe positive pain to extension",
+    "positive pain with rotation",
+    "positive pain on lateral bending",
+    "no i didn't want to do that... no that i know about",
+    "i had a couple early on... no it just stays on monday",
+    "no hearing any hearing problems visual disturbances",
+    "i played football years ago but i didn't have any issues with my neck though",
+    "motrin six hundred milligrams every six to eight hours",
+    "flexeril ten milligrams every twelve hours as needed",
+    "i also want to order an mri",
+    "refer you to either physical rehab or a chiropractor once we get the results of the mri",
+    "this is commonly referred to as whiplash"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    1,
+    3,
+    3,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    1,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.22409972548484802,
+    "calinski_harabasz_score": 5.824302079815494,
+    "davies_bouldin_score": 1.4037022193967812
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9978471994400024,
+      0.99820876121521,
+      0.9974936246871948
+    ],
+    [
+      0.9978471994400024,
+      1.0000001192092896,
+      0.9944958090782166,
+      0.9939995408058167
+    ],
+    [
+      0.99820876121521,
+      0.9944958090782166,
+      0.9999998211860657,
+      0.9967325329780579
+    ],
+    [
+      0.9974936246871948,
+      0.9939995408058167,
+      0.9967325329780579,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.04027466103434563,
+    "1": 0.010582190938293934,
+    "2": 0.4540237784385681,
+    "3": 0.5146329402923584
+  },
+  "cluster_phrases": {
+    "0": {
+      "0": [
+        "i was in a car accident",
+        "that was about a week ago",
+        "no hearing any hearing problems visual disturbances",
+        "i also want to order an mri",
+        "this is commonly referred to as whiplash"
+      ],
+      "2": [
+        "hit in the back and my neck went forward and my head went forward really quick",
+        "it's in the back of my neck"
+      ],
+      "1": [
+        "refer you to either physical rehab or a chiropractor once we get the results of the mri"
+      ]
+    },
+    "1": {
+      "2": [
+        "on a scale of one to ten how severe is it [patient] i would say it's about a seven"
+      ],
+      "1": [
+        "it's not a constant pain but whenever i move my head which is a lot i i feel it",
+        "no i didn't want to do that... no that i know about",
+        "i had a couple early on... no it just stays on monday",
+        "i played football years ago but i didn't have any issues with my neck though"
+      ],
+      "0": [
+        "i've tried some ibuprofen that helped a little bit but not too much... just about five out of ten"
+      ]
+    },
+    "2": {
+      "2": [
+        "positive pain to palpation of the soft tissues of the neck"
+      ],
+      "0": [
+        "positive pain with flexion",
+        "severe positive pain to extension",
+        "positive pain with rotation"
+      ],
+      "1": [
+        "positive pain on lateral bending"
+      ]
+    },
+    "3": {
+      "0": [
+        "motrin six hundred milligrams every six to eight hours",
+        "flexeril ten milligrams every twelve hours as needed"
+      ]
+    }
+  }
+}

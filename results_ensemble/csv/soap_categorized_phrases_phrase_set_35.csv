@@ -1,0 +1,18 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,2,I have trouble adjusting in the dark dim environment.
+S,2,0,when I look at straight lines in your door frame it looks things have been looking a little crooked to me.
+S,2,2,straight lines they always look wavy to me.
+A,1,2,history of high blood pressure.
+A,1,1,smoking about a pack a day.
+O,0,2,"drusen in the macula, retinal thickening, presence of subretinal fluid and exudate accumulation, and it is positive for a hemorrhage for your left eye."
+O,0,0,choroidal neovascular membrane can also be visualized in that test.
+O,0,2,focal area of the leakage in the eye is consistent with neurovascular age-related macular degeneration.
+A,1,0,"neovascular age-related macular degeneration, also called wet macular degeneration."
+O,0,1,this happens when those abnormal blood vessels start to grow beneath the retina leaking fluid and blood.
+A,1,1,injections of lucent... once a month.
+P,3,0,patients report no pain at all for the actual injection.
+O,0,1,injections given over time can slow the rate of the vision decline and maybe even stop it.
+S,2,1,there could be a situation where you may still note a small amount of vision loss.
+A,1,1,important to take your blood pressure medication as prescribed.
+A,1,1,cut back or quit smoking altogether.
+S,2,0,as long as you think it won't hurt a lot that will be good.

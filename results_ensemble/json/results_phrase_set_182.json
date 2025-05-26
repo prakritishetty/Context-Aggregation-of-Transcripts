@@ -1,0 +1,167 @@
+{
+  "phrases": [
+    "I'm having a lot of trouble sleeping... can't get comfortable when I lay down in bed.",
+    "I feel I'm just choking a few minutes after I lay down to sleep... can't catch my breath.",
+    "This has been going on for about the past two weeks.",
+    "Your oxygen level here is ninety-two... a little bit on the low side.",
+    "I can't see my ankles anymore... gained about ten pounds.",
+    "I don't think I am [taking Lasix regularly].",
+    "I'm bringing a whole bunch of yuck up once in a while... first thing in the morning.",
+    "I did it a couple of weeks ago [checking blood sugar]... it was about two thirty.",
+    "Slight swelling in your neck... mild JVD... rales in both bases... 1.5+ pitting edema in ankles.",
+    "Increase Lasix from 20 mg to 60 mg for four days... use albuterol and Atrovent.",
+    "Check your weights daily... follow up in a couple of days.",
+    "Order another hemoglobin A1c... adjust metformin or add medication.",
+    "Prescribe Naprosyn and Flexeril... exercises to get off the couch.",
+    "If symptoms don\u2019t improve... we may have to increase the dose or send you to the hospital.",
+    "Alright sounds good... no questions."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    2,
+    0,
+    2,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "P",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1599966585636139,
+    "calinski_harabasz_score": 4.007705305101144,
+    "davies_bouldin_score": 1.3309391866709692
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9982888698577881,
+      0.9983319640159607,
+      0.9969074726104736
+    ],
+    [
+      0.9982888698577881,
+      0.9999998807907104,
+      0.9954019784927368,
+      0.9949429035186768
+    ],
+    [
+      0.9983319640159607,
+      0.9954019784927368,
+      1.000000238418579,
+      0.9967743158340454
+    ],
+    [
+      0.9969074726104736,
+      0.9949429035186768,
+      0.9967743158340454,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1558033674955368,
+    "1": 0.16388097405433655,
+    "2": 0.019869128242135048,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I'm having a lot of trouble sleeping... can't get comfortable when I lay down in bed.",
+        "I feel I'm just choking a few minutes after I lay down to sleep... can't catch my breath.",
+        "I'm bringing a whole bunch of yuck up once in a while... first thing in the morning."
+      ],
+      "0": [
+        "I can't see my ankles anymore... gained about ten pounds.",
+        "I did it a couple of weeks ago [checking blood sugar]... it was about two thirty."
+      ],
+      "1": [
+        "I don't think I am [taking Lasix regularly]."
+      ]
+    },
+    "0": {
+      "2": [
+        "This has been going on for about the past two weeks."
+      ],
+      "0": [
+        "Your oxygen level here is ninety-two... a little bit on the low side.",
+        "If symptoms don\u2019t improve... we may have to increase the dose or send you to the hospital."
+      ],
+      "1": [
+        "Check your weights daily... follow up in a couple of days.",
+        "Alright sounds good... no questions."
+      ]
+    },
+    "3": {
+      "0": [
+        "Slight swelling in your neck... mild JVD... rales in both bases... 1.5+ pitting edema in ankles."
+      ]
+    },
+    "2": {
+      "2": [
+        "Increase Lasix from 20 mg to 60 mg for four days... use albuterol and Atrovent."
+      ],
+      "0": [
+        "Order another hemoglobin A1c... adjust metformin or add medication."
+      ],
+      "1": [
+        "Prescribe Naprosyn and Flexeril... exercises to get off the couch."
+      ]
+    }
+  }
+}

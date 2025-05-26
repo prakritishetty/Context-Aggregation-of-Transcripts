@@ -1,0 +1,11 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,0,Andrea Roberts is a 52-year-old female [...] who presents today for her annual exam.
+S,3,2,"I've been walking you told me to and exercising and doing yoga, [...] that's helped with my arthritis a lot [...] I haven't had any joint pain recently."
+S,3,0,"I've still been having palpitations. The last one I had was about a week ago. [...] when I start to get stressed, they start to flare up again. [...] I've been trying meditation, trying running with my dog [...] but it hasn't really been working."
+P,1,2,"you're in and out of a-fib, you have what we call a conversion pause."
+S,3,1,"I cut out soda and that's helped seemed to help, and the medication's been helping too. [...] I haven't had a flare up in over five months."
+O,0,2,"On your heart examination, I do appreciate a slight 2/6 systolic [...] ejection murmur [...] your lungs are nice and clear. [...] edema and some erythema [...] pain to palpation of the elbow."
+P,1,0,refer you to cardiology for a cardiac ablation [...] maps out where that rhythm is coming from and burns it [...] to keep you in a normal rhythm.
+O,0,0,"continue you on the methotrexate 2.5mg, once weekly [...] continue on the protonix, 40mg a day."
+O,0,1,"no chest pain, shortness of breath, nausea or vomiting [...] nasal congestion because of my allergies."
+P,1,1,"denies issues with stiffness, pain, or flare ups [...] denies issues with [methotrexate]."

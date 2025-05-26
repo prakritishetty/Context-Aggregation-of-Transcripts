@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "Annual exam.",
+    "congestive heart failure, depression and hypertension",
+    "I've been traveling a lot recently... I feel safer about traveling. I've been doing a lot of hiking.",
+    "I resisted... the salty foods that I love to eat. I've been doing a really good job.",
+    "I'm still forgetting to take my blood pressure medication. And I've noticed when work gets more stressful, my blood pressure goes up.",
+    "I've been going every week... for the past year... that's been really helpful for me.",
+    "No, not that I've noticed",
+    "Grade 3/6 systolic ejection murmur... 1+ pitting edema of the bilateral lower extremities.",
+    "Echocardiogram... decreased ejection fraction of 45%. Mitral regurgitation is present. Lipid panel: Elevated cholesterol.",
+    "Increase your lisinopril to 40 milligrams a day... start you on some Lasix, 20 milligrams a day.",
+    "Your blood pressure's high... retaining a little bit of fluid.",
+    "It's been a lot of long hours, late nights... with the responsibility comes the stress.",
+    "Repeat another echocardiogram... schedule for a mammogram.",
+    "Can I take all my pills at the same time?",
+    "You can certainly take them all at the same time... set an alarm.",
+    "Endorsing some nasal congestion from some of the fall pollen and allergies.",
+    "No, nothing that... [no feelings of wanting to harm self/others]."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    3,
+    3,
+    3,
+    3,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17413242161273956,
+    "calinski_harabasz_score": 4.550042443821536,
+    "davies_bouldin_score": 1.4180470013080808
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9981390237808228,
+      0.9959461688995361,
+      0.9978107213973999
+    ],
+    [
+      0.9981390237808228,
+      0.9999997615814209,
+      0.9954633712768555,
+      0.9939180016517639
+    ],
+    [
+      0.9959461688995361,
+      0.9954633712768555,
+      1.0000001192092896,
+      0.9928125143051147
+    ],
+    [
+      0.9978107213973999,
+      0.9939180016517639,
+      0.9928125143051147,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.053504254668951035,
+    "1": 0.10280779749155045,
+    "2": 0.06274133920669556,
+    "3": 0.2637888491153717
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Annual exam."
+      ],
+      "0": [
+        "congestive heart failure, depression and hypertension"
+      ],
+      "1": [
+        "Endorsing some nasal congestion from some of the fall pollen and allergies."
+      ]
+    },
+    "3": {
+      "2": [
+        "I've been traveling a lot recently... I feel safer about traveling. I've been doing a lot of hiking."
+      ],
+      "0": [
+        "I resisted... the salty foods that I love to eat. I've been doing a really good job.",
+        "I've been going every week... for the past year... that's been really helpful for me."
+      ],
+      "1": [
+        "I'm still forgetting to take my blood pressure medication. And I've noticed when work gets more stressful, my blood pressure goes up."
+      ]
+    },
+    "0": {
+      "2": [
+        "No, not that I've noticed"
+      ],
+      "0": [
+        "Increase your lisinopril to 40 milligrams a day... start you on some Lasix, 20 milligrams a day.",
+        "Your blood pressure's high... retaining a little bit of fluid.",
+        "It's been a lot of long hours, late nights... with the responsibility comes the stress.",
+        "Repeat another echocardiogram... schedule for a mammogram."
+      ],
+      "1": [
+        "Can I take all my pills at the same time?",
+        "You can certainly take them all at the same time... set an alarm.",
+        "No, nothing that... [no feelings of wanting to harm self/others]."
+      ]
+    },
+    "2": {
+      "0": [
+        "Grade 3/6 systolic ejection murmur... 1+ pitting edema of the bilateral lower extremities.",
+        "Echocardiogram... decreased ejection fraction of 45%. Mitral regurgitation is present. Lipid panel: Elevated cholesterol."
+      ]
+    }
+  }
+}

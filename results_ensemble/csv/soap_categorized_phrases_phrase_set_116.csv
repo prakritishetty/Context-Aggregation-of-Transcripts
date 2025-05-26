@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,1,Every time I start walking I'm just having this pressure and chest pain in my chest.
+O,1,2,Probably maybe three months.
+O,1,0,It mainly happens when I'm walking.
+O,1,0,It's a dull it's kinda a pressure.
+O,1,1,I don't see any signs of a heart attack or anything.
+A,2,2,My first diagnosis [...] is unstable angina [...] considering your history of diabetes and the suspected history of high blood pressure and your family history of heart disease.
+A,2,0,Start you on [...] aspirin daily [...] nitroglycerin [...] take the pill if the chest pain does not go away after stopping activity.
+P,0,2,Refer you to cardiology [...] stress test to look at your heart.
+P,0,0,Continue the metformin [...] hemoglobin A1c today [...] follow up in two weeks.
+A,2,1,Blood pressure's been running a little bit high [...] start you on hydrochlorothiazide.
+P,0,2,Use a blood pressure cuff at home [...] log your readings via MyChart.
+S,3,0,1+ nonpitting edema in the ankles.
+O,1,1,"Take up to three pills every five minutes [...] if it doesn’t go away, go to the hospital."
+O,1,0,Continue to stay away from pop and sweet things.
+P,0,0,Keep your appointment with ophthalmology for diabetic retinopathy.
+P,0,1,Family history of heart disease.

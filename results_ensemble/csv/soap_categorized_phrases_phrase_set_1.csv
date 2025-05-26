@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,1,shortness of breath
+S,1,2,"took a very long bike ride, about three hours or and i got back, i was very light headed, i was short of breath"
+S,1,0,it was hard to catch my breath afterwards
+S,1,1,maybe i did have a little chest pain but it eventually went away after about an hour
+P,0,2,"no chest pain,"
+P,0,2,"no nausea or vomiting or abdominal pain,"
+P,0,2,no one else sick in your family
+A,2,0,"migraines under control with Imitrex,"
+A,2,0,"reflux managed with Protonix,"
+P,0,0,cataract surgery about four and a half months ago
+P,0,1,"slight wheeze, expiratory wheeze, bilaterally"
+P,0,2,trace lower extremity edema in your lower extremities
+P,0,1,"normal chest x-ray,"
+P,0,1,"normal pulmonary function tests,"
+O,3,0,all labs look quite good
+P,0,2,may have had an asthma exacerbation from exercising and with the allergies
+P,0,2,"prescribe albuterol inhaler, two puffs every four hours as needed for wheezing or for shortness of breath"
+P,0,1,order a pulmonary referral
+P,0,2,see you in a couple weeks
+S,1,0,"if you have this shortness of breath again, i want you to call me away"

@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,"Ever since my car wreck last December when I broke them, once they healed, I noticed it more—the tingling and numbness."
+S,1,1,Both have gotten worse over the last month.
+S,1,0,The splint seems to help. I wear the left one also sometimes.
+A,2,2,"I’ve been having some mild stiffness in my neck too. I hit my head during the accident, and they told me it was a contusion."
+S,1,2,"On the right, I can really notice it from my middle and ring finger all the way up to my forearm, and on my left, a bit more the pinky and the ring and not the middle."
+A,2,0,"Mainly just sore. Sometimes they throb, but overall, they feel weaker too, especially when I’m using them. The tingling happens some more, but when they hurt, it goes away and the tingling’s just dull."
+S,1,1,"Really, just more at night, and it just comes and goes throughout the day."
+S,1,1,"Feeling something? No, not that I can think of really. In general, they might be less sensitive than they should be, but I can still feel."
+A,2,1,"They gave me some nerve pain medicine, but I haven’t been taking it. I should be."
+S,1,2,"I had pre-diabetes, but I got it under control changing my diet."
+A,2,0,I’m still taking those [carvedilol and Lexapro]. Sulfa just causes me to break out in a rash.
+O,0,0,"Sensations normal except pinprick sensation diminished in the third and fourth fingers on the right and the fourth and fifth fingers on the left. Reflexes are 1+ and symmetric, 2+ knees, toes are downgoing bilaterally. Tinel’s sign positive at both wrists and both elbows."
+O,0,0,No metastatic disease. No acute intracranial abnormalities.
+P,3,0,"I discussed my impression with the patient. I will schedule her for EMG/NCV. If her symptoms do not resolve, we can consider Hand Clinic referral for possible symptomatic injections or carpal tunnel release surgery, although she can pursue these through her current orthopedist. I encouraged her to wear her splints."

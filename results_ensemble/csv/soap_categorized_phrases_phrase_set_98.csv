@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,pain in my belly that I've had for several weeks
+O,2,0,"Right-sided abdominal pain underneath my ribs, squeezing and severe (rated 8/10), comes and goes, accompanied by nausea"
+S,0,0,"Most of the time it comes after I eat, either immediately or a couple of hours later"
+P,3,2,"Type 2 diabetes managed with diet and exercise; followed a keto diet, lost 25 pounds"
+S,0,1,Both my dad and my mom had gallbladder disease and had to have their gallbladders out
+A,1,2,"Positive for Murphy's sign, slight guarding in the right upper quadrant without rebound tenderness"
+A,1,0,Abdominal ultrasound shows multiple gallstones in the gallbladder with mild thickening; common bile duct size normal at 4.1 mm
+A,1,1,"Mild cholecystitis with gallstones, no frank obstruction"
+A,1,1,"Recommend laparoscopic cholecystectomy, surgery to take 1–1.5 hours, overnight hospital stay for monitoring"
+P,3,0,"Avoid high-fat foods, eat high-fiber foods; resume walking in 1–2 days, no hiking until post-op week"
+P,3,0,Back on your feet pretty quick; can walk outdoors on solid ground after a couple of days
+A,1,1,"See you next week for surgery, then follow-up 1 week post-op"
+P,3,1,Continue managing diabetes with diet/exercise; follow up with primary care/endocrinologist
+S,0,0,Still having pain despite dietary changes
+O,2,0,"Low-grade fevers during severe pain episodes, no vomiting"
+P,3,0,Enjoys nature photography and hiking; plans to resume outdoor activities post-surgery

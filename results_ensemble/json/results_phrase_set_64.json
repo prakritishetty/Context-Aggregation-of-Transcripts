@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "My back has been bothering me for a long time.",
+    "Thirty years ago when I fell off the roof it was really really bothersome they said maybe there was a fracture or something.",
+    "It\u2019s been really bad for about a month.",
+    "It\u2019s an electrical toothache and it goes down the whole leg.",
+    "It\u2019s less bad I didn\u2019t take my medications because I wanted you to see me as I am but it\u2019s six out of ten but when it gets really bad I\u2019d say it\u2019s thirteen out of ten.",
+    "Sitting in the waiting area for thirty minutes and that definitely makes the symptoms worse.",
+    "The only thing that seems to make it better is laying down.",
+    "Standing walking seems to make it worse coughing sneezing makes it worse.",
+    "Positive for pain to palpation at the L4 vertebrae.",
+    "Positive for pain with flexion and extension of your back.",
+    "4 out of 5 strength in the left and five out of five on the does look that reflexes are brisk and motor and sensory is intact in both lower extremities.",
+    "The MRI shows a disk herniation at the level of L4 L5 vertebrae and it is associated with some nerve root impingement.",
+    "Acute disk herniation at L4 L5 with that nerve root impingement that\u2019s causing that pain down your leg and your lower back pain.",
+    "I\u2019m going to recommend an epidural steroid injection and we\u2019re going to do that today for you if you agree to it.",
+    "I want you to see PT and I want you to see me again in about a month.",
+    "I\u2019ve been bedridden",
+    "I\u2019ve had to use a cane",
+    "Denied any numbness or tingling",
+    "I\u2019ve tried NSAIDs in the past without relief",
+    "done some PT."
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    1,
+    1,
+    3,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    1,
+    1,
+    0,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1624840795993805,
+    "calinski_harabasz_score": 4.973284939810196,
+    "davies_bouldin_score": 1.3506809324236833
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9972370862960815,
+      0.9954793453216553,
+      0.9939123392105103
+    ],
+    [
+      0.9972370862960815,
+      1.000000238418579,
+      0.9969233274459839,
+      0.9978116750717163
+    ],
+    [
+      0.9954793453216553,
+      0.9969233274459839,
+      1.0000001192092896,
+      0.9917841553688049
+    ],
+    [
+      0.9939123392105103,
+      0.9978116750717163,
+      0.9917841553688049,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0920359343290329,
+    "1": 0.24285705387592316,
+    "2": 0.16172204911708832,
+    "3": 0.05947789177298546
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "My back has been bothering me for a long time.",
+        "It\u2019s been really bad for about a month.",
+        "It\u2019s an electrical toothache and it goes down the whole leg.",
+        "I want you to see PT and I want you to see me again in about a month."
+      ],
+      "0": [
+        "Sitting in the waiting area for thirty minutes and that definitely makes the symptoms worse.",
+        "Standing walking seems to make it worse coughing sneezing makes it worse."
+      ],
+      "1": [
+        "I\u2019ve been bedridden",
+        "I\u2019ve had to use a cane",
+        "I\u2019ve tried NSAIDs in the past without relief"
+      ]
+    },
+    "3": {
+      "2": [
+        "Thirty years ago when I fell off the roof it was really really bothersome they said maybe there was a fracture or something."
+      ],
+      "0": [
+        "It\u2019s less bad I didn\u2019t take my medications because I wanted you to see me as I am but it\u2019s six out of ten but when it gets really bad I\u2019d say it\u2019s thirteen out of ten."
+      ],
+      "1": [
+        "I\u2019m going to recommend an epidural steroid injection and we\u2019re going to do that today for you if you agree to it."
+      ]
+    },
+    "2": {
+      "0": [
+        "The only thing that seems to make it better is laying down.",
+        "done some PT."
+      ]
+    },
+    "0": {
+      "2": [
+        "Positive for pain to palpation at the L4 vertebrae.",
+        "Positive for pain with flexion and extension of your back.",
+        "Denied any numbness or tingling"
+      ],
+      "0": [
+        "4 out of 5 strength in the left and five out of five on the does look that reflexes are brisk and motor and sensory is intact in both lower extremities."
+      ],
+      "1": [
+        "The MRI shows a disk herniation at the level of L4 L5 vertebrae and it is associated with some nerve root impingement.",
+        "Acute disk herniation at L4 L5 with that nerve root impingement that\u2019s causing that pain down your leg and your lower back pain."
+      ]
+    }
+  }
+}

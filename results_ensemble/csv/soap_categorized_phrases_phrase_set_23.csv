@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,2,i just woke up one day it was hurting
+S,0,2,from my elbow all the way up to the neck
+O,1,2,achiness achiness heaviness
+A,2,0,no nothing nothing really unusual mowed grass and that's about it
+O,1,0,some motrin
+S,0,0,not really still kinda comes and goes and aches
+S,0,1,chest pain comes with the elbow pain arm pain
+S,0,0,it kinda goes up my neck sometimes too
+A,2,0,slight murmur with your heart here and i don't think we've heard that before
+P,3,2,concerned you might be having a mild heart attack
+P,3,0,aspirin and nitroglycerin
+S,0,0,i do n't check them
+A,2,1,blood pressure is a little bit high it was one fifty over ninety
+O,1,1,one twenty five over seventy two
+P,3,1,denies any shortness of breath

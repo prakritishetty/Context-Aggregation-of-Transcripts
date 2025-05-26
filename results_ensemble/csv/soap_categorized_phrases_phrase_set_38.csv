@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,pain starts up in the flank and radiates down to my groin
+S,3,0,it comes and goes... depends on how much I've been drinking and activities
+O,1,0,no blood... episode where the pain radiated to one of my testicles
+P,2,0,taking ibuprofen... persists
+O,1,1,pain score... 4 out of ten when it gets a little more out of control... 1 or 2 out of ten
+A,0,2,family has had kidney stones in the past
+S,3,0,had them before... passed some by myself and had surgery a couple times
+A,0,0,"CT scan... 0.5 cm in proximal ureter, no hydronephrosis"
+P,2,0,prescribe tramadol 50 mg for breakthrough pain
+A,0,0,follow up in one to two weeks if still having symptoms
+A,0,1,continue to push fluids and hopefully pass the stone
+A,0,0,urinalysis and urine culture to rule out infection
+A,0,2,consider lithotripsy if stone not passed by follow-up

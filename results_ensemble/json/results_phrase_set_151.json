@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "in the groin area.",
+    "this has been going on since february 2020.",
+    "it hurts when i pivot",
+    "it catches and i almost fall.",
+    "rate the pain to range from two through seven out of 10.",
+    "i've lost 110 pounds. [...] with weight watchers.",
+    "it started if i took a step back [...] while walking around the infusion room.",
+    "heel walk and toe walk are intact.",
+    "range of motion is decreased in hip with pain in the groin and internal and external rotation.",
+    "resisted hip flection causes pain in the groin region.",
+    "mr arthrogram [...] show high grade condromalacia [...] subchondral marrow edema and cyst formation.",
+    "cortisone injection into the hip joint [...] today while you're here.",
+    "follow up appointment in three months [...] for another injection if needed.",
+    "i would to definitely get the injection.",
+    "the weight loss has really decreased all the pain",
+    "allergic to percocet, vicodin and regulin.",
+    "i do n't want to stay still"
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17485208809375763,
+    "calinski_harabasz_score": 3.7130044788436054,
+    "davies_bouldin_score": 1.1335056104667751
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9975085854530334,
+      0.9958560466766357,
+      0.9934349060058594
+    ],
+    [
+      0.9975085854530334,
+      1.0,
+      0.9971275329589844,
+      0.9957224130630493
+    ],
+    [
+      0.9958560466766357,
+      0.9971275329589844,
+      0.9999998211860657,
+      0.9908531904220581
+    ],
+    [
+      0.9934349060058594,
+      0.9957224130630493,
+      0.9908531904220581,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0861402079463005,
+    "1": 0.15742075443267822,
+    "2": -0.05142497271299362,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "in the groin area."
+      ],
+      "0": [
+        "rate the pain to range from two through seven out of 10."
+      ],
+      "1": [
+        "heel walk and toe walk are intact.",
+        "resisted hip flection causes pain in the groin region."
+      ]
+    },
+    "0": {
+      "2": [
+        "this has been going on since february 2020."
+      ],
+      "1": [
+        "it hurts when i pivot",
+        "it catches and i almost fall.",
+        "the weight loss has really decreased all the pain",
+        "i do n't want to stay still"
+      ],
+      "0": [
+        "i've lost 110 pounds. [...] with weight watchers.",
+        "it started if i took a step back [...] while walking around the infusion room.",
+        "cortisone injection into the hip joint [...] today while you're here.",
+        "follow up appointment in three months [...] for another injection if needed.",
+        "i would to definitely get the injection."
+      ]
+    },
+    "2": {
+      "0": [
+        "range of motion is decreased in hip with pain in the groin and internal and external rotation.",
+        "mr arthrogram [...] show high grade condromalacia [...] subchondral marrow edema and cyst formation."
+      ]
+    },
+    "3": {
+      "0": [
+        "allergic to percocet, vicodin and regulin."
+      ]
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "I'm really comfortable. I eat whatever I want, and I feel much better.",
+    "I moved over from caffeine over to green tea... doesn't cause as much problem as when I was drinking many energy drinks a day.",
+    "Getting rid of that reflux really helped my attitude improve. My job's going great. Everything's phenomenal.",
+    "All my kids call and check on me every day.",
+    "No symptoms at all",
+    "1+ pitting edema bilaterally in your lower extremities.",
+    "Slight 2/6 systolic ejection murmur, stable.",
+    "Endoscopy... showed some mild gastritis.",
+    "I\u2019ll do a little more exercise too.",
+    "Continue Protonix 40 mg daily... lifestyle modifications with dietary stuff.",
+    "Denies chest pain or dyspnea on exertion... lungs clear... appropriate mood and affect.",
+    "Retaining a little bit of fluid, maybe just from standing all day."
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    1,
+    3,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09984616190195084,
+    "calinski_harabasz_score": 3.162482490897146,
+    "davies_bouldin_score": 1.2203315475247436
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9957952499389648,
+      0.9969982504844666,
+      0.9978989362716675
+    ],
+    [
+      0.9957952499389648,
+      1.0,
+      0.9916994571685791,
+      0.9983765482902527
+    ],
+    [
+      0.9969982504844666,
+      0.9916994571685791,
+      1.0,
+      0.9948157668113708
+    ],
+    [
+      0.9978989362716675,
+      0.9983765482902527,
+      0.9948157668113708,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.05103784054517746,
+    "1": 0.29933100938796997,
+    "2": 0.0,
+    "3": 0.10182883590459824
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I'm really comfortable. I eat whatever I want, and I feel much better."
+      ],
+      "0": [
+        "Getting rid of that reflux really helped my attitude improve. My job's going great. Everything's phenomenal."
+      ],
+      "1": [
+        "I\u2019ll do a little more exercise too."
+      ]
+    },
+    "3": {
+      "1": [
+        "I moved over from caffeine over to green tea... doesn't cause as much problem as when I was drinking many energy drinks a day."
+      ],
+      "0": [
+        "All my kids call and check on me every day."
+      ],
+      "2": [
+        "Retaining a little bit of fluid, maybe just from standing all day."
+      ]
+    },
+    "0": {
+      "2": [
+        "No symptoms at all"
+      ],
+      "0": [
+        "Slight 2/6 systolic ejection murmur, stable."
+      ],
+      "1": [
+        "Endoscopy... showed some mild gastritis.",
+        "Continue Protonix 40 mg daily... lifestyle modifications with dietary stuff.",
+        "Denies chest pain or dyspnea on exertion... lungs clear... appropriate mood and affect."
+      ]
+    },
+    "2": {
+      "0": [
+        "1+ pitting edema bilaterally in your lower extremities."
+      ]
+    }
+  }
+}

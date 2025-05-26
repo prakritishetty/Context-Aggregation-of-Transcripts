@@ -1,0 +1,25 @@
+soap_category,main_cluster,subcluster,phrase
+O,3,2,Right ankle injury.
+S,1,2,I was doing something I didn't really want to be doing and I fell and my ankle hurts.
+S,1,0,My ankle twisted outward
+S,1,1,the pain is on my outer ankle.
+S,1,0,I have some numbing going on in other places
+S,1,1,you're limping.
+S,1,0,I've taken Tylenol
+S,1,1,it didn't help.
+S,1,0,I heard an a crack crackle
+P,2,2,Three years
+A,0,2,"Temperature is ninety eight. Six,"
+A,0,0,"blood pressure is fine at one eighteen over seventy seven,"
+A,0,1,heart rate looks good at seventy seven.
+P,2,0,"Edema and erythema on the lateral malleolus,"
+P,2,0,"associated ecchymosis and a few excoriations,"
+O,3,0,pain to palpation of the lateral malleolus.
+A,0,1,Ankle x-ray shows that you have no acute fracture or bony abnormality.
+O,3,2,Acute ankle sprain.
+P,2,1,"Put you in an air cast,"
+P,2,0,"prescribe some meloxicam fifteen milligrams once a day,"
+P,2,1,"ice the area for about twenty minutes five times a day,"
+O,3,1,weight-bear as tolerated.
+S,1,0,Anticipating you to start feeling better in the next couple of weeks
+O,3,1,consider physical therapy or pursuing further imaging.

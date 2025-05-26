@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "my primary care doctor wanted me to see you for this back pain that I've been having for a couple of years",
+    "it all happened I started having back pain after I was moving furniture one weekend",
+    "it feels a sharp stabbing pain in my back and it does go down even down to my leg sometimes all the way down to my toe it feels my big toe",
+    "I just can't get comfortable which is worse when I sit down",
+    "I do get some numbness and tingling especially to my leg that goes down to my foot",
+    "I've tried some physical therapy before and when it gets really bad they've even had to prescribe some strong pain medications for me but that was only temporary and they even mentioned surgery to me in the past but I really would to avoid surgery",
+    "midline tenderness at L4 L5 disk space with -sided lumbar paravertebral tenderness",
+    "pain with lumbar flexion",
+    "supine straight leg test is positive",
+    "decreased sensation to light touch at the lateral thigh at L4 dermatome",
+    "patellar and Achilles reflexes are symmetrical",
+    "MRI... shows disk herniation with nerve impingement",
+    "symptoms are consistent with an L4 L5 herniated disk with radiculopathy",
+    "spinal injection with a strong inflammatory medication called a corticosteroid... under fluoroscopy",
+    "we usually do not do more than four times a year",
+    "not a long procedure... relatively quick and common and you should be out of the office within an hour",
+    "alright thank you"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    3,
+    2,
+    1,
+    2,
+    2,
+    1,
+    3,
+    3,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    0,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1638742983341217,
+    "calinski_harabasz_score": 4.808551697638481,
+    "davies_bouldin_score": 1.4708687464235894
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.993321418762207,
+      0.9940793514251709,
+      0.9969297647476196
+    ],
+    [
+      0.993321418762207,
+      0.9999999403953552,
+      0.997488260269165,
+      0.9975380897521973
+    ],
+    [
+      0.9940793514251709,
+      0.997488260269165,
+      0.9999999403953552,
+      0.9968672394752502
+    ],
+    [
+      0.9969297647476196,
+      0.9975380897521973,
+      0.9968672394752502,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06071164458990097,
+    "1": 0.04480542242527008,
+    "2": 0.06578559428453445,
+    "3": -0.09702447801828384
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "my primary care doctor wanted me to see you for this back pain that I've been having for a couple of years",
+        "it all happened I started having back pain after I was moving furniture one weekend",
+        "I just can't get comfortable which is worse when I sit down"
+      ],
+      "0": [
+        "it feels a sharp stabbing pain in my back and it does go down even down to my leg sometimes all the way down to my toe it feels my big toe",
+        "I do get some numbness and tingling especially to my leg that goes down to my foot"
+      ],
+      "1": [
+        "I've tried some physical therapy before and when it gets really bad they've even had to prescribe some strong pain medications for me but that was only temporary and they even mentioned surgery to me in the past but I really would to avoid surgery"
+      ]
+    },
+    "2": {
+      "2": [
+        "midline tenderness at L4 L5 disk space with -sided lumbar paravertebral tenderness"
+      ],
+      "0": [
+        "decreased sensation to light touch at the lateral thigh at L4 dermatome"
+      ],
+      "1": [
+        "MRI... shows disk herniation with nerve impingement",
+        "symptoms are consistent with an L4 L5 herniated disk with radiculopathy"
+      ]
+    },
+    "1": {
+      "2": [
+        "pain with lumbar flexion"
+      ],
+      "0": [
+        "patellar and Achilles reflexes are symmetrical"
+      ],
+      "1": [
+        "spinal injection with a strong inflammatory medication called a corticosteroid... under fluoroscopy"
+      ]
+    },
+    "3": {
+      "2": [
+        "supine straight leg test is positive"
+      ],
+      "0": [
+        "we usually do not do more than four times a year",
+        "alright thank you"
+      ],
+      "1": [
+        "not a long procedure... relatively quick and common and you should be out of the office within an hour"
+      ]
+    }
+  }
+}

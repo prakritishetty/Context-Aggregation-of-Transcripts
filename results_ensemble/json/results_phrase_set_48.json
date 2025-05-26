@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "I'm having this left shoulder pain lately, and it's paining a lot.",
+    "I was in gymnastics class... Maybe I must have toppled over into some weird position, it started to pain since, because of a certain move.",
+    "It's been a week, doctor.",
+    "Any movement on my left shoulder hurts.",
+    "I did take a Tylenol for two or three days, but that didn't help at all.",
+    "Pain with any movement of the left shoulder.",
+    "From the x-ray, it doesn't look there is any broken bone or fracture.",
+    "Continue using the pain reliever, maybe just 600 milligram of ibuprofen three times a day and use it for a week.",
+    "If it's still painful, you can use ice or heat pad... might help relieve your pain.",
+    "Definitely not [carrying heavy weights]. Use hand instead... rest your left arm while it's healing.",
+    "Come back to see me if the pain still there after maybe three weeks... may repeat the left shoulder x-ray at that time.",
+    "I did have past surgery on my left arm... that doesn't seem related to your pain.",
+    "You can also try Advil... Aleve."
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    3,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.142888605594635,
+    "calinski_harabasz_score": 2.760818904660496,
+    "davies_bouldin_score": 1.4616020258006417
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9986405372619629,
+      0.9989496469497681,
+      0.9980859756469727
+    ],
+    [
+      0.9986405372619629,
+      1.0,
+      0.9976751804351807,
+      0.9983171224594116
+    ],
+    [
+      0.9989496469497681,
+      0.9976751804351807,
+      0.9999998807907104,
+      0.9981836080551147
+    ],
+    [
+      0.9980859756469727,
+      0.9983171224594116,
+      0.9981836080551147,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.10957756638526917,
+    "1": 0.27082815766334534,
+    "2": 0.18079490959644318,
+    "3": 0.1092347651720047
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "I'm having this left shoulder pain lately, and it's paining a lot.",
+        "I did take a Tylenol for two or three days, but that didn't help at all."
+      ],
+      "0": [
+        "I was in gymnastics class... Maybe I must have toppled over into some weird position, it started to pain since, because of a certain move."
+      ],
+      "1": [
+        "I did have past surgery on my left arm... that doesn't seem related to your pain."
+      ]
+    },
+    "3": {
+      "0": [
+        "It's been a week, doctor.",
+        "You can also try Advil... Aleve."
+      ]
+    },
+    "1": {
+      "2": [
+        "Any movement on my left shoulder hurts."
+      ],
+      "0": [
+        "Pain with any movement of the left shoulder."
+      ],
+      "1": [
+        "Definitely not [carrying heavy weights]. Use hand instead... rest your left arm while it's healing."
+      ]
+    },
+    "0": {
+      "2": [
+        "From the x-ray, it doesn't look there is any broken bone or fracture."
+      ],
+      "0": [
+        "Continue using the pain reliever, maybe just 600 milligram of ibuprofen three times a day and use it for a week.",
+        "If it's still painful, you can use ice or heat pad... might help relieve your pain."
+      ],
+      "1": [
+        "Come back to see me if the pain still there after maybe three weeks... may repeat the left shoulder x-ray at that time."
+      ]
+    }
+  }
+}

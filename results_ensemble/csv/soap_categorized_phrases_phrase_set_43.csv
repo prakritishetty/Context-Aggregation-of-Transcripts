@@ -1,0 +1,8 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,0,presents for an annual exam.
+P,3,0,traveling all over the country... It's been a stressful summer... lack of sleep... nothing really seems to help though.
+O,0,2,on fosamax... any issues with your joints? no... no broken bones recently? no.
+S,1,0,last time you saw the neurologist? six months ago... taking the medication? yes... any issues with that? none... leg weakness... improved... lingering issue with my knee surgery.
+S,1,0,"weakness of lower extremities... right is about 4 out of 5, the left is about 3 out of 5... reflexes are really good... arthritic changes of the knee."
+O,0,0,x-ray of your knee shows some changes from arthritis.
+O,0,1,"continue on the fosamax... order a refill of fosamax 1 tab per week, 11 refills... continue to see the neurologist and comply with medication regimen."

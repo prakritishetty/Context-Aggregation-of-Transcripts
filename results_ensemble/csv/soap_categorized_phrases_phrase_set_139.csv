@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,abnormal lab findings
+O,0,2,low hemoglobin
+O,0,2,very lightheaded
+O,0,0,slightly decreased appetite
+A,1,2,nauseous at times when sitting in the back of the car
+A,1,2,no blood in stools
+A,1,0,"no abdominal pain, fever, chills, vomiting, or recent weight loss"
+O,0,1,none of that
+A,1,2,no night sweats or cough
+P,3,1,knee replacement... works just fine
+P,3,0,lung cancer... biopsy... benign
+O,0,2,tenderness to the lower quadrant
+O,0,1,"heart regular, lungs clear"
+O,0,2,hemoglobin is 8.2
+P,3,2,gastritis and a slight polyp with biopsy pending
+A,1,1,protonix 40 mg once a day
+A,1,1,"reduce caffeine, avoid NSAIDs and alcohol"
+O,0,2,repeat CBC ordered
+O,0,2,patient agrees with the treatment plan
+S,2,0,You're the doctor. I don't know what it is.

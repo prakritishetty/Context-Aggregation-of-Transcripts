@@ -1,0 +1,12 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,I was at a birthday party...rammed my back into the railing of the staircase. And maybe a twisting.
+O,1,2,It's more on the [side]
+S,0,0,"If I'm lying flat it hurts a little more, and any twisting motion for sure."
+O,1,0,I had a fusion done
+O,1,2,I take medication for anxiety
+O,1,1,Straight leg raise is negative
+P,3,0,Sensation is intact
+A,2,0,"It doesn't appear to have any compression fractures or anything that... essentially, except for the fusion, a normal exam."
+S,0,0,You have a strain of your lower back.
+S,0,1,"Continue the Motrin at 800mg, three times a day with food. I want you to use some ice and heat, alternating on your back. But I do want you walking."
+S,0,0,"If it's not [improving], or it's getting worse, I want you to come back and see me over the next week."

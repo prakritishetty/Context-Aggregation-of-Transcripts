@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "I have high blood sugar, osteoarthritis, atrial fibrillation, and reflux.",
+    "I've been eating a ton of sweets recently... there is always something sweet available.",
+    "I just felt really light-headed and I could see spots, really dizzy.",
+    "They gave me some fluids and told me to cut out sweets and get back into my normal routine.",
+    "I'm still staying with my family... my mom and grandmother are big bakers.",
+    "Your thyroid is a little enlarged but non-tender... heart is in irregular rate and rhythm.",
+    "Both your blood sugar and hemoglobin A1c are elevated.",
+    "You do have this diagnosis of diabetes... we're not sure if it's type I or type II.",
+    "Start you on metformin 500 mg twice a day... glucometer to monitor.",
+    "Continue metoprolol 25 mg twice daily... protonix 40 mg once daily.",
+    "I've been taking the medication that you prescribed to me and that's been helping a lot.",
+    "Only when I'm really anxious. I feel it, pumping a little bit.",
+    "I do have osteoarthritis though, that... nothing out of the norm for me.",
+    "No, not at this time"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    3,
+    3,
+    1,
+    1,
+    0,
+    1,
+    2,
+    2,
+    3,
+    3,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15540479123592377,
+    "calinski_harabasz_score": 5.027290931952871,
+    "davies_bouldin_score": 1.2916915181159354
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9973741173744202,
+      0.9974749088287354,
+      0.9949489831924438
+    ],
+    [
+      0.9973741173744202,
+      1.0000001192092896,
+      0.9969443678855896,
+      0.9988265633583069
+    ],
+    [
+      0.9974749088287354,
+      0.9969443678855896,
+      1.0,
+      0.9943916201591492
+    ],
+    [
+      0.9949489831924438,
+      0.9988265633583069,
+      0.9943916201591492,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.11947009712457657,
+    "1": 0.15784747898578644,
+    "2": 0.23335000872612,
+    "3": 0.20256538689136505
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I have high blood sugar, osteoarthritis, atrial fibrillation, and reflux."
+      ],
+      "0": [
+        "Both your blood sugar and hemoglobin A1c are elevated."
+      ],
+      "1": [
+        "No, not at this time"
+      ]
+    },
+    "1": {
+      "2": [
+        "I've been eating a ton of sweets recently... there is always something sweet available.",
+        "You do have this diagnosis of diabetes... we're not sure if it's type I or type II."
+      ],
+      "0": [
+        "I'm still staying with my family... my mom and grandmother are big bakers.",
+        "I do have osteoarthritis though, that... nothing out of the norm for me."
+      ],
+      "1": [
+        "Your thyroid is a little enlarged but non-tender... heart is in irregular rate and rhythm."
+      ]
+    },
+    "3": {
+      "2": [
+        "I just felt really light-headed and I could see spots, really dizzy."
+      ],
+      "0": [
+        "They gave me some fluids and told me to cut out sweets and get back into my normal routine.",
+        "I've been taking the medication that you prescribed to me and that's been helping a lot."
+      ],
+      "1": [
+        "Only when I'm really anxious. I feel it, pumping a little bit."
+      ]
+    },
+    "2": {
+      "0": [
+        "Start you on metformin 500 mg twice a day... glucometer to monitor.",
+        "Continue metoprolol 25 mg twice daily... protonix 40 mg once daily."
+      ]
+    }
+  }
+}

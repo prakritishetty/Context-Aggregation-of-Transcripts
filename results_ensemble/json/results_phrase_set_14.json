@@ -1,0 +1,199 @@
+{
+  "phrases": [
+    "I really don't think it was a UTI.",
+    "I felt much better when I got home and finally pooped.",
+    "I told them when I was admitted, and they did X-rays and everything, but they said, 'no.'",
+    "I take MiraLAX every day... when I don't go, I double up on that.",
+    "I have it [lactulose]... it takes about two days to work and it's a brutal two days.",
+    "I'm unvaccinated... we don't know the side effects... vaccine injury... I'm young and healthy enough to beat it... take vitamin C and multivitamins.",
+    "The cultures are not very impressive.",
+    "Inflammation can do that... backed up and inflamed.",
+    "We'll repeat the CBC to ensure it trends downward.",
+    "You're high risk... I've seen people die from COVID... vaccine is safe.",
+    "The virus is becoming more contagious but less deadly... pandemics end this way.",
+    "I wondered if automatic dysreflexia can affect the white count?",
+    "typically, it doesn't.",
+    "if you do get dehydrated even just a little bit it can lead to further worsening constipation issues.",
+    "I recommend combining MiraLAX with lactulose as a rescue.",
+    "The only true preventative mechanism for COVID is the vaccine... supplements are not necessarily going to help.",
+    "I've had healthy people die from COVID.",
+    "the virus starts losing its potency... how most pandemics end.",
+    "She believes her hospitalization was more likely due to her dysreflexia, from her quadriplegia that typically occurs.",
+    "Her leukocytosis may have been due to inflammation from constipation.",
+    "Follow-up labs and appointments have been ordered for CBC and cholesterol in 2-3 weeks.",
+    "She is hesitant about the vaccine... considers herself homeopathic in some viewpoints."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    3,
+    0,
+    0,
+    2,
+    0,
+    3,
+    1,
+    3,
+    2,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16269487142562866,
+    "calinski_harabasz_score": 3.9807918303190526,
+    "davies_bouldin_score": 1.5527675739036138
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9977530241012573,
+      0.9974170327186584,
+      0.9976610541343689
+    ],
+    [
+      0.9977530241012573,
+      0.9999998807907104,
+      0.9974974393844604,
+      0.9971235990524292
+    ],
+    [
+      0.9974170327186584,
+      0.9974974393844604,
+      1.0000001192092896,
+      0.9965965151786804
+    ],
+    [
+      0.9976610541343689,
+      0.9971235990524292,
+      0.9965965151786804,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.05078645050525665,
+    "1": 0.14207418262958527,
+    "2": 0.05188431963324547,
+    "3": 0.21250884234905243
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I really don't think it was a UTI."
+      ],
+      "0": [
+        "I felt much better when I got home and finally pooped.",
+        "I told them when I was admitted, and they did X-rays and everything, but they said, 'no.'",
+        "I take MiraLAX every day... when I don't go, I double up on that.",
+        "I have it [lactulose]... it takes about two days to work and it's a brutal two days.",
+        "I'm unvaccinated... we don't know the side effects... vaccine injury... I'm young and healthy enough to beat it... take vitamin C and multivitamins.",
+        "You're high risk... I've seen people die from COVID... vaccine is safe.",
+        "I've had healthy people die from COVID."
+      ],
+      "1": [
+        "She is hesitant about the vaccine... considers herself homeopathic in some viewpoints."
+      ]
+    },
+    "0": {
+      "2": [
+        "The cultures are not very impressive.",
+        "typically, it doesn't.",
+        "I recommend combining MiraLAX with lactulose as a rescue."
+      ],
+      "0": [
+        "Inflammation can do that... backed up and inflamed.",
+        "We'll repeat the CBC to ensure it trends downward."
+      ],
+      "1": [
+        "I wondered if automatic dysreflexia can affect the white count?"
+      ]
+    },
+    "3": {
+      "2": [
+        "The virus is becoming more contagious but less deadly... pandemics end this way."
+      ],
+      "0": [
+        "The only true preventative mechanism for COVID is the vaccine... supplements are not necessarily going to help."
+      ],
+      "1": [
+        "the virus starts losing its potency... how most pandemics end."
+      ]
+    },
+    "2": {
+      "2": [
+        "if you do get dehydrated even just a little bit it can lead to further worsening constipation issues."
+      ],
+      "0": [
+        "She believes her hospitalization was more likely due to her dysreflexia, from her quadriplegia that typically occurs.",
+        "Her leukocytosis may have been due to inflammation from constipation."
+      ],
+      "1": [
+        "Follow-up labs and appointments have been ordered for CBC and cholesterol in 2-3 weeks."
+      ]
+    }
+  }
+}

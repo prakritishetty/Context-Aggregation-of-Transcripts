@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "Follow-up after an interior STEMI where we had to put in another stent",
+    "No chest pain or shortness of breath",
+    "Bilateral leg swelling since being sent home from the hospital",
+    "Three over six systolic ejection murmur heard at the left base",
+    "Lower limb edema, pitting one plus",
+    "EKG shows normal sinus rhythm with evolutionary changes after STEMI",
+    "Reduced ejection fraction of thirty-five percent",
+    "Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily",
+    "Refer to cardiac rehab for exercise confidence",
+    "Newly reduced left ventricular dysfunction and moderate mitral regurgitation",
+    "Prescribe Lasix 40 mg daily and Aldactone 12.5 mg daily for acute heart failure",
+    "Repeat echocardiogram in two months",
+    "Retain lisinopril 20 mg daily for hypertension and heart failure",
+    "Encourage diet changes, especially reducing preserved meats like pepperoni",
+    "Patient agrees to continue walking and monitoring diabetes with metformin",
+    "Patient understands and agrees with the treatment plan"
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    3,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10915344208478928,
+    "calinski_harabasz_score": 2.659464206112739,
+    "davies_bouldin_score": 1.5461990520546052
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.997910737991333,
+      0.9978123903274536,
+      0.9986427426338196
+    ],
+    [
+      0.997910737991333,
+      0.9999998807907104,
+      0.9964779615402222,
+      0.9970349669456482
+    ],
+    [
+      0.9978123903274536,
+      0.9964779615402222,
+      0.9999998807907104,
+      0.9967007040977478
+    ],
+    [
+      0.9986427426338196,
+      0.9970349669456482,
+      0.9967007040977478,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.02927066944539547,
+    "1": 0.07862668484449387,
+    "2": 0.1172589510679245,
+    "3": 0.19439494609832764
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Follow-up after an interior STEMI where we had to put in another stent",
+        "EKG shows normal sinus rhythm with evolutionary changes after STEMI"
+      ]
+    },
+    "0": {
+      "0": [
+        "No chest pain or shortness of breath",
+        "Three over six systolic ejection murmur heard at the left base",
+        "Reduced ejection fraction of thirty-five percent",
+        "Newly reduced left ventricular dysfunction and moderate mitral regurgitation",
+        "Repeat echocardiogram in two months"
+      ],
+      "2": [
+        "Bilateral leg swelling since being sent home from the hospital",
+        "Lower limb edema, pitting one plus"
+      ],
+      "1": [
+        "Refer to cardiac rehab for exercise confidence"
+      ]
+    },
+    "3": {
+      "2": [
+        "Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily"
+      ],
+      "0": [
+        "Prescribe Lasix 40 mg daily and Aldactone 12.5 mg daily for acute heart failure"
+      ],
+      "1": [
+        "Retain lisinopril 20 mg daily for hypertension and heart failure"
+      ]
+    },
+    "1": {
+      "2": [
+        "Encourage diet changes, especially reducing preserved meats like pepperoni"
+      ],
+      "0": [
+        "Patient agrees to continue walking and monitoring diabetes with metformin"
+      ],
+      "1": [
+        "Patient understands and agrees with the treatment plan"
+      ]
+    }
+  }
+}

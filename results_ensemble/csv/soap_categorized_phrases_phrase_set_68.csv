@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+A,1,2,Right shoulder pain.
+S,0,2,"The onset of his pain began a few weeks ago, when he was performing different projects in his backyard."
+S,0,1,it's more on the outside and it's kinda tender on the outside when I raise my arm up.
+S,0,0,whenever I move it I can definitely feel some pain
+S,0,1,bothering me at night also [because] I sleep on that side.
+S,0,1,I hurt that same shoulder because it's my dominant hand... playing baseball when I was younger.
+O,2,2,no numbness in my arm or hands.
+S,0,1,taking some Advil and icing as much as I can... dulls it a little bit.
+P,3,2,limited active and passive range of motion
+O,2,0,tenderness at the greater tuberosity of the humerus.
+A,1,0,good hand grip
+O,2,2,sensation to touch is intact.
+O,2,1,shoulder x-ray... no fracture.
+P,3,0,rotator cuff tendinopathy
+A,1,2,bilateral foot pain.
+P,3,1,"order an MRI... refer you to physical therapy for six to eight weeks,"
+A,1,1,"continue Tylenol,"
+A,1,2,consider a steroid injection if symptoms don’t improve.
+S,0,1,my both my feet are really sore... stiff and stuff... soreness... ice on them keep them elevated.
+O,2,2,soak your feet in Epsom salts to relax the muscles and reduce soreness.

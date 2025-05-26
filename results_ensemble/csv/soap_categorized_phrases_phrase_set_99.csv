@@ -1,0 +1,27 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,Right shoulder injury.
+S,0,0,I kinda landed on my shoulder a little bit weird one time.
+S,0,1,about four days ago.
+S,0,2,it's kinda on the back side around here.
+S,0,2,they are about the same
+S,0,0,I can't lift my shoulder to touch my ear because of pain.
+S,0,1,just a little bit of Tylenol trying to take it easy.
+S,0,1,Tylenol does not provide relief.
+P,3,2,no numbness or tingling in my fingers.
+S,0,2,the rest of it's doing it's just the shoulder.
+S,0,1,I'm right-handed.
+S,0,0,had an appendectomy maybe three-four years ago.
+P,3,0,pain to palpation of the posterior shoulder at the acromioclavicular joint.
+P,3,1,decreased abduction and adduction to about ninety degrees only.
+P,3,0,pain with supination and pronation of the arm.
+O,1,2,palpable radial artery pulse.
+O,1,0,acute acromioclavicular joint fracture.
+S,0,1,put you in a sling.
+O,1,1,prescribe meloxicam 15 mg once a day.
+O,1,1,order a CT scan of your shoulder.
+O,1,2,refer you to physical therapy.
+A,2,2,avoid tackle football
+A,2,0,flag football in the future.
+S,0,1,when can I get back out on the field?
+A,2,1,a slight headache
+S,0,1,our bones get a little bit weaker as we get older.

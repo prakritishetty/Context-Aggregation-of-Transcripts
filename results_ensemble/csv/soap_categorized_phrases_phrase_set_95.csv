@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,0,Full-spectrum sexually transmitted disease testing.
+P,3,0,"Discomfort, a change in discharge, and odor in her vaginal region."
+S,0,2,The side of her vagina is starting to become painful.
+P,3,0,"Change in the odor, color, and consistency of her vaginal discharge."
+S,0,0,Her partner has been in sexual encounters with other people.
+S,0,0,Her sexual partner has been having multiple partners for some period of time.
+S,0,0,She had an abnormal Pap Smear around the age of 20.
+S,0,1,Her most recent Pap Smear approximately 6 months ago was normal.
+O,1,0,Pelvic exam demonstrates no external lesions. Normal labia majora and labia minora. Normal physiological discharge with normal color and smell.
+O,1,0,Cervix is normal. Vaginal wall is normal. No cervical motion tenderness or masses noted.
+A,2,0,"Screening for gonorrhea, chlamydia, trichomoniasis, syphilis, HIV, and hepatitis C."
+S,0,0,High risk due to an abnormal Pap Smear in the past and the recent discovery of her sexual partner having multiple partners.

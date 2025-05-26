@@ -1,0 +1,12 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,"I hurt my,, finger when I was skiing this past weekend."
+S,0,0,"I was going downhill, double diamonds, double black diamonds, and I just lost control, and I flipped down a few ways, but somewhere along the way, I, I jammed my, my index finger on something."
+O,1,2,About five days of this index finger pain.
+S,0,1,"I took some ibuprofen., didn't really seem to help."
+O,1,0,Have you iced it or put a splint on it?
+O,1,1,it's about a seven.
+P,3,0,"no, interestingly enough, this is the only one."
+O,1,1,I have chronic constipation.
+S,0,1,"yes, I had my appendix out when I was seven."
+A,2,0,"With your x-ray, and with your exam, looks you have a sprain of your distar- distal interphalangeal joint. It's called your dip joint, of your index finger."
+S,0,0,we're gon na put a splint on that finger. I'm gon na give you a strong antiinflammatory called mobic. You'll take 15 milligrams once a day. I'll prescribe 14 of those for you. And I want you to come back and see me in two weeks...

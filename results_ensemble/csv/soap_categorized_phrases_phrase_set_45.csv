@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,complaints of shortness of breath.
+S,2,2,"I’ve noticed that I’ve been swelling up a little bit. A lot of it has to do with going to some house parties, eating some salty foods. I feel really lethargic."
+O,1,0,shortness of breath when walking up a flight of stairs.
+P,3,2,probably about 10 days
+A,0,2,problems lying flat in bed? [Patient]: I’m a little uncomfortable when I wake up in the morning and I feel pretty stiff.
+A,0,2,"Do you ever wake up acutely short of breath at night? [Patient]: It happened once, probably about a week ago, but it hasn’t happened since."
+S,2,0,I’ve been pretty good about monitoring [blood sugars] during the working week. But on Saturdays or Sundays we’re busy I forget to monitor it.
+P,3,0,I love chocolate bars.
+S,2,1,"It’s been a crazy year and a half. I’ve tried some natural solutions. In the summer I did stretches outdoors every morning, which was great, but the weather changed and I’ve got to find some alternatives. I’m not ready to try any medications just yet."
+A,0,0,I’m open to some suggestions.
+A,0,1,I’m better [with alcohol intake] during the holiday season.
+P,3,0,cutting back on my Red Bull and caffeine.
+O,1,0,a slight 3 out of 6 systolic ejection murmur.
+P,3,0,"some crackles, bilaterally, at the bases."
+O,1,1,1+ pitting edema.
+A,0,1,retaining some fluid. It’s probably from some of the dietary indiscretion.
+O,1,2,Acute heart failure exacerbation.
+A,0,1,Initiate Lasix 40 milligrams a day. I want you to weigh yourself every day.
+A,0,1,"Refer you to psychiatry, just for some talk therapy to help you through that. No medications."
+A,0,1,"Continue you on the omeprazole, 20 milligrams a day."
+P,3,1,No. No. Absolutely not

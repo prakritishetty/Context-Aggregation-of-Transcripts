@@ -1,0 +1,29 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,1,She's here to establish care for a history of DCIS.
+O,1,0,You've come to see me today because you had a breast lumpectomy last year. Is that?
+S,0,2,"Yes. On January 20th, 2020."
+A,2,0,"The pathology confirmed DCIS. Looks they also removed 5 lymph nodes, which, thankfully, were negative for malignancy."
+O,1,2,Your last mammogram was in January 2021? And that was normal.
+A,2,0,"Based on those results, they decided to do an ultrasound-guided core needle biopsy on December 5th, 2019. Pathology results during that biopsy came back as grade two, ER positive, PR positive, DCIS, or ductal carcinoma in situ."
+O,1,2,You also had radiation after the lumpectomy?
+P,3,2,"I did. We also talked about endocrine therapy, but I decided against that."
+P,3,0,"I have five. And they're all having kids of their own, it's getting even bigger."
+P,3,0,I do my self breast exams religiously and haven't felt anything since.
+O,1,2,"Your exam looks good, no masses, just some skin changes from that radiation."
+O,1,0,I was found to have a calcification in your breast during a mammogram in October 2019. Was that just a normal screening mammogram?
+S,0,0,The report states the mass was point four by two by three centimeters.
+O,1,2,I have that you were allergic to penicillin. Any other allergies?
+S,0,2,Just penicillin.
+O,1,1,I have a sigmoid polyp and that was removed and it wasn't cancerous.
+O,1,1,I am working on exercise and cutting back on fatty foods to see if I can get it lower without any medication.
+S,0,1,Your ECOG performance status today is zero.
+P,3,1,"I used to smoke, but really, everybody did back then and I probably quit about 30 years ago."
+O,1,1,"I do drink socially, but never more than that."
+O,1,0,"I have that you take CoQ10, vitamin D, vitamin C, fish oil, and elderberry fruit. Is that all?"
+O,1,1,We'll keep a close eye on you and take good care of you.
+O,1,2,I have a few more questions for you. When was your last colonoscopy?
+S,0,1,The patient reports that she performs self-breast exams regularly at home.
+O,1,1,Your last menstrual period was probably around 30 years ago.
+S,0,1,She is due for a mammogram in 04/2022.
+S,0,1,I bet. Sounds fun.
+P,3,0,I feel I have a good grasp of what's been going on with you.

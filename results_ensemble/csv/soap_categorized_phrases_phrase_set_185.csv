@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,2,0,"Gabriel is a 43-year-old male today here for back pain evaluation and also has a past medical history of diabetes, high blood pressure, and high cholesterol."
+A,0,2,I was working in the yard and bent over to pick something up and I got this pain and across the lower part of my back and it went down my left leg and it's been going on for about four days and just doesn’t seem to be getting any better.
+A,0,1,no surgeries I’ve had back pain occasionally over the years.
+A,0,0,I’ve had ibuprofen it it helped some.
+O,1,2,no loss of bowel or bladder function at all.
+A,0,1,I have had some some swelling in my ankles though.
+A,0,1,it started maybe I don’t know a month or two after I started the norvasc.
+O,1,0,you do have this one plus nonpitting edema of your lower extremities.
+O,1,1,start you on some ant-inflammatory naprosyn 500 milligrams twice a day and flexeril ten milligrams twice a day... refer you to physical therapy.
+A,0,1,do n’t think you need an x-ray at this stage.
+P,3,0,order another hemoglobin A1c today we’ll check that again today and and reemphasizing the controlling your diet and exercise is super important.
+A,0,1,stop the norvasc and we’ll put you on some hydrochlorothiazide ten milligrams once a day.
+O,1,1,order a CBC and a BMP... get another EKG and also a chest x-ray.
+O,1,1,come back in about two weeks.

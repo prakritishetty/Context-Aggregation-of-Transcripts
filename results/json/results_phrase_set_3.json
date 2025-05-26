@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "Annual exam.",
+    "I've been doing,, everything,, with my herniated disc in my back has been doing really. I have n't had any,, back pain, or any,, limitations in movement, that's been doing.",
+    "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+    "I am back to work. I have n't had any issues, and i've had full range of motion, and it's- it feels really good.",
+    "Back to work with full range of motion and no issues since carpal tunnel release.",
+    "Over the last month I've been having a bit of chest pain, but I haven't had any of the other symptoms you mentioned.",
+    "It does [happen when walking], ... it does [go away with rest], ... no [at rest].",
+    "It's a burn. ... feels it's burning, ... located in the middle. ... about three- three times a week.",
+    "No numbing and tingling in your hands? [Patient] no.",
+    "No lower extremity edema, or muscle aches, or fever chills?",
+    "Slight three out of six systolic ejection murmur, which we've heard before. Your lungs are nice and clear,, I don't appreciate any carotid bruits, and- and you have no lower extremity edema, you have healed,, surgical scars on your- on your,, wrist.",
+    "Echocardiogram from last year,, you did have a slightly low pumping function of your heart at 45%, ... mitral regurgitation, that's just a leaky heart valve.",
+    "Continue you on your asprin, and your toprol, ... order a stress test ... start you on crestor 20mg, once a day.",
+    "ECG prior coronary artery disease. No new changes.",
+    "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+    "Back to work with full range of motion and no issues since carpal tunnel release.",
+    "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned.",
+    "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week.",
+    "It does [happen when walking]... it does [go away with rest]... no [at rest].",
+    "No numbing and tingling in your hands? [Patient] no.",
+    "No lower extremity edema, or muscle aches, or fever chills?",
+    "No, nothing...",
+    "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen.",
+    "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist.",
+    "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation.",
+    "ECG prior coronary artery disease. No new changes.",
+    "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily.",
+    "If you have recurrent symptoms, let me know."
+  ],
+  "cluster_labels": [
+    1,
+    3,
+    3,
+    3,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    1,
+    3,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    1,
+    1,
+    1,
+    2,
+    0
+  ],
+  "subcluster_labels": {
+    "0": 0,
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 0,
+    "9": 0,
+    "10": 2,
+    "11": 2,
+    "13": 0,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 1,
+    "18": 1,
+    "19": 0,
+    "20": 0,
+    "21": 1,
+    "22": 2,
+    "23": 0,
+    "24": 1,
+    "25": 0,
+    "27": 1,
+    "12": 0,
+    "26": 0
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "S",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.22289259731769562,
+    "calinski_harabasz_score": 6.424500465393066,
+    "davies_bouldin_score": 1.5121827116697748
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9929108619689941,
+      0.9750539064407349,
+      0.9894869923591614
+    ],
+    [
+      0.9929108619689941,
+      1.000000238418579,
+      0.9753597378730774,
+      0.9870352149009705
+    ],
+    [
+      0.9750539064407349,
+      0.9753597378730774,
+      1.0000003576278687,
+      0.9629332423210144
+    ],
+    [
+      0.9894869923591614,
+      0.9870352149009705,
+      0.9629332423210144,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07471617311239243,
+    "1": 0.1459064930677414,
+    "2": 0.5983630418777466,
+    "3": 0.32226231694221497
+  },
+  "cluster_phrases": {
+    "1": {
+      "0": [
+        "Annual exam.",
+        "ECG prior coronary artery disease. No new changes.",
+        "Slight three out of six systolic ejection murmur... lungs are nice and clear... no carotid bruits... no lower extremity edema... healed surgical scars on your wrist.",
+        "ECG prior coronary artery disease. No new changes."
+      ],
+      "2": [
+        "Back to work with full range of motion and no issues since carpal tunnel release.",
+        "Slight three out of six systolic ejection murmur, which we've heard before. Your lungs are nice and clear,, I don't appreciate any carotid bruits, and- and you have no lower extremity edema, you have healed,, surgical scars on your- on your,, wrist.",
+        "Echocardiogram from last year,, you did have a slightly low pumping function of your heart at 45%, ... mitral regurgitation, that's just a leaky heart valve.",
+        "Back to work with full range of motion and no issues since carpal tunnel release."
+      ],
+      "1": [
+        "Echocardiogram from last year... slightly low pumping function of your heart at 45%... mitral regurgitation."
+      ]
+    },
+    "3": {
+      "2": [
+        "I've been doing,, everything,, with my herniated disc in my back has been doing really. I have n't had any,, back pain, or any,, limitations in movement, that's been doing.",
+        "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+        "I am back to work. I have n't had any issues, and i've had full range of motion, and it's- it feels really good.",
+        "Over the last month I've been having a bit of chest pain, but I haven't had any of the other symptoms you mentioned.",
+        "I've been doing well with my herniated disc in my back, no back pain or limitations in movement.",
+        "Over the last month, I\u2019ve been having a bit of chest pain, but I haven\u2019t had any of the other symptoms you mentioned.",
+        "I\u2019ve had a little bit of congestion, just from allergies, because of the pollen."
+      ]
+    },
+    "0": {
+      "1": [
+        "It does [happen when walking], ... it does [go away with rest], ... no [at rest].",
+        "It's a burn. ... feels it's burning, ... located in the middle. ... about three- three times a week.",
+        "It\u2019s a burn... feels it\u2019s burning... located in the middle... about three times a week.",
+        "It does [happen when walking]... it does [go away with rest]... no [at rest].",
+        "No, nothing...",
+        "If you have recurrent symptoms, let me know."
+      ],
+      "0": [
+        "No numbing and tingling in your hands? [Patient] no.",
+        "No lower extremity edema, or muscle aches, or fever chills?",
+        "No numbing and tingling in your hands? [Patient] no.",
+        "No lower extremity edema, or muscle aches, or fever chills?"
+      ]
+    },
+    "2": {
+      "0": [
+        "Continue you on your asprin, and your toprol, ... order a stress test ... start you on crestor 20mg, once a day.",
+        "Continue aspirin and Toprol... order a stress test... start you on Crestor 20mg, once daily."
+      ]
+    }
+  }
+}

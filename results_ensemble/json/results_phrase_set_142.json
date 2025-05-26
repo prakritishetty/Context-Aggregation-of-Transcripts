@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "Paul Edwards, date of birth is January 15th 1962. He's a 59 year old HIV positive gentleman here for hypogonadism.",
+    "Patient was last seen on November 24th 2020.",
+    "He's on 1 milliliter every 10 days, his levels were less than 300 to begin with.",
+    "He's on finasteride currently. He also takes cialis daily he takes all his pills just from me.",
+    "His other area of concern is gynecomastia which is. Which we will discuss with him today.",
+    "Last PSA was 0.66 and his last testosterone was greater than 1,500.",
+    "the testosterone's going. ... seeing some good improvements in my bloodwork.",
+    "the finasteride i'm only taking half a pill, it's the 5 milligram one.",
+    "on the days i work out i take 5 milligrams otherwise i take two and a half milligram pills, but,, i have been out of it.",
+    "look at this. ... cholesterol and triglycerides. ... 5 months later look at my numbers.",
+    "but i have n't seen a lot of data on the impact on cholesterol. Regardless, we will take it.",
+    "i also read that it- it's cardioprotective.",
+    "your red blood cell count has increased. ... it's fine though.",
+    "in terms of estrogen control i've been hearing that indole-3-carbinol, or broccoli extract, supposedly can improve my estrogen levels. Have you ever heard of it ?",
+    "your levels are fine and we checked your estra- estradiol and it was not elevated.",
+    "what about increasing my testosterone to 175 milligrams ? i'm at 140.",
+    "your peaks are getting greater than 1,500, putting you at a higher chance of needing to come off due to blood thickness.",
+    "this is why people get into problems with this stuff, ? it's, back in the day when it was n't prescribed by doctors and people would get it at gyms and stuff and they would take huge doses. And they would have a heart attack at 50.",
+    "i have a little med calendar and i put checks and ts on it. That helps me.",
+    "I provided paper prescription refills for Cialis and Finasteride."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    3,
+    0,
+    2,
+    1,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    3,
+    3,
+    3,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    2,
+    2,
+    1,
+    2,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11707134544849396,
+    "calinski_harabasz_score": 3.318785452524878,
+    "davies_bouldin_score": 1.63965355356555
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9974689483642578,
+      0.9971604347229004,
+      0.998699963092804
+    ],
+    [
+      0.9974689483642578,
+      1.000000238418579,
+      0.9957603812217712,
+      0.9981265664100647
+    ],
+    [
+      0.9971604347229004,
+      0.9957603812217712,
+      1.0,
+      0.9964666366577148
+    ],
+    [
+      0.998699963092804,
+      0.9981265664100647,
+      0.9964666366577148,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0663607269525528,
+    "1": -0.04923006892204285,
+    "2": -0.00889685656875372,
+    "3": 0.13547901809215546
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Paul Edwards, date of birth is January 15th 1962. He's a 59 year old HIV positive gentleman here for hypogonadism.",
+        "His other area of concern is gynecomastia which is. Which we will discuss with him today."
+      ]
+    },
+    "1": {
+      "2": [
+        "Patient was last seen on November 24th 2020."
+      ],
+      "0": [
+        "Last PSA was 0.66 and his last testosterone was greater than 1,500."
+      ],
+      "1": [
+        "I provided paper prescription refills for Cialis and Finasteride."
+      ]
+    },
+    "3": {
+      "2": [
+        "He's on 1 milliliter every 10 days, his levels were less than 300 to begin with.",
+        "your levels are fine and we checked your estra- estradiol and it was not elevated.",
+        "your peaks are getting greater than 1,500, putting you at a higher chance of needing to come off due to blood thickness."
+      ],
+      "1": [
+        "the testosterone's going. ... seeing some good improvements in my bloodwork.",
+        "your red blood cell count has increased. ... it's fine though.",
+        "what about increasing my testosterone to 175 milligrams ? i'm at 140."
+      ],
+      "0": [
+        "look at this. ... cholesterol and triglycerides. ... 5 months later look at my numbers."
+      ]
+    },
+    "0": {
+      "2": [
+        "He's on finasteride currently. He also takes cialis daily he takes all his pills just from me.",
+        "the finasteride i'm only taking half a pill, it's the 5 milligram one.",
+        "but i have n't seen a lot of data on the impact on cholesterol. Regardless, we will take it.",
+        "in terms of estrogen control i've been hearing that indole-3-carbinol, or broccoli extract, supposedly can improve my estrogen levels. Have you ever heard of it ?",
+        "this is why people get into problems with this stuff, ? it's, back in the day when it was n't prescribed by doctors and people would get it at gyms and stuff and they would take huge doses. And they would have a heart attack at 50."
+      ],
+      "0": [
+        "on the days i work out i take 5 milligrams otherwise i take two and a half milligram pills, but,, i have been out of it."
+      ],
+      "1": [
+        "i also read that it- it's cardioprotective.",
+        "i have a little med calendar and i put checks and ts on it. That helps me."
+      ]
+    }
+  }
+}

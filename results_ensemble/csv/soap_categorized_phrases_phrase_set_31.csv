@@ -1,0 +1,29 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,cough started about a week ago or I just started bringing up some yellow stuff
+O,1,2,not feeling the greatest the last two days though
+P,0,2,feeling warm but never really took my temperature
+P,0,0,no chills just a little bit of achy at times
+O,1,2,no shortness of breath
+P,0,0,congested kinda drainage down my throat and a little bit of pressure in my sinuses
+P,0,0,twisted my knee... I fell down the stairs... four or five stairs
+P,0,1,my knee... hurts mostly on the inside... little bit of a limp
+O,1,0,don’t check it at all
+P,0,1,I don’t take my blood sugars either... I’m a bad patient
+S,3,2,history of hypertension... we kinda battled with that over the past year
+O,1,0,taking the lisinopril 20 milligrams a day
+O,1,0,taking the metformin... big pill
+S,3,0,temperature is ninety eight point four
+S,3,1,blood pressure is one twenty five over sixty two
+O,1,2,oxygenation is ninety seven percent on room air
+A,2,2,pain to palpation of the bilateral maxillary sinuses
+A,2,0,erythema and edema of the nasal turbinates bilaterally with associated yellow discharge
+O,1,2,coarse rhonchi present bilaterally that clears with cough
+A,2,1,pain to palpation on the knee... decreased flexion and extension... ecchymosis to the medial knee
+O,1,1,viral syndrome at this time... mild bronchitis
+O,1,2,prescribe guaifenesin six hundred milligrams twice a day
+O,1,1,no antibiotics at this time... consider a chest x-ray if symptoms worsen
+A,2,1,medial collateral ligament strain... meloxicam fifteen milligrams once a day... physical therapy... knee x-ray
+O,1,1,continue lisinopril... order a lipid panel
+O,1,0,order a hemoglobin A1c... monitor your sugar intake... report blood sugars through patient portal
+P,0,1,I’ll try that I try my best
+P,0,1,you’re a bad patient that’s it happens... want you to stay healthy

@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "I was at a birthday party...rammed my back into the railing of the staircase. And maybe a twisting.",
+    "It's more on the [side]",
+    "If I'm lying flat it hurts a little more, and any twisting motion for sure.",
+    "I had a fusion done",
+    "I take medication for anxiety",
+    "Straight leg raise is negative",
+    "Sensation is intact",
+    "It doesn't appear to have any compression fractures or anything that... essentially, except for the fusion, a normal exam.",
+    "You have a strain of your lower back.",
+    "Continue the Motrin at 800mg, three times a day with food. I want you to use some ice and heat, alternating on your back. But I do want you walking.",
+    "If it's not [improving], or it's getting worse, I want you to come back and see me over the next week."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    3,
+    2,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1207197904586792,
+    "calinski_harabasz_score": 2.9236226225047206,
+    "davies_bouldin_score": 0.9681011787564007
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.997916579246521,
+      0.9963279962539673,
+      0.9954537153244019
+    ],
+    [
+      0.997916579246521,
+      1.000000238418579,
+      0.9946427345275879,
+      0.9976842999458313
+    ],
+    [
+      0.9963279962539673,
+      0.9946427345275879,
+      0.9999997019767761,
+      0.9925221800804138
+    ],
+    [
+      0.9954537153244019,
+      0.9976842999458313,
+      0.9925221800804138,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1268194615840912,
+    "1": 0.11456350237131119,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I was at a birthday party...rammed my back into the railing of the staircase. And maybe a twisting."
+      ],
+      "0": [
+        "If I'm lying flat it hurts a little more, and any twisting motion for sure.",
+        "You have a strain of your lower back.",
+        "If it's not [improving], or it's getting worse, I want you to come back and see me over the next week."
+      ],
+      "1": [
+        "Continue the Motrin at 800mg, three times a day with food. I want you to use some ice and heat, alternating on your back. But I do want you walking."
+      ]
+    },
+    "1": {
+      "2": [
+        "It's more on the [side]",
+        "I take medication for anxiety"
+      ],
+      "0": [
+        "I had a fusion done"
+      ],
+      "1": [
+        "Straight leg raise is negative"
+      ]
+    },
+    "3": {
+      "0": [
+        "Sensation is intact"
+      ]
+    },
+    "2": {
+      "0": [
+        "It doesn't appear to have any compression fractures or anything that... essentially, except for the fusion, a normal exam."
+      ]
+    }
+  }
+}

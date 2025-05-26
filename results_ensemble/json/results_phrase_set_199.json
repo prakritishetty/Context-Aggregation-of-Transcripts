@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "it just gives out and here I'm going to fall but I usually catch myself... I have to hold a grocery cart and that helps a lot.",
+    "it comes and goes and it passes just about as quickly as it comes... doesn't last that long.",
+    "No... not that I can recall",
+    "deep in the patella... the whole kneecap fades.",
+    "Not interfering with things I do... won\u2019t be able to participate in line dancing due to knee concerns.",
+    "Blood pressure runs around 120 over 70... currently controlled.",
+    "Taking Farxiga and amlodipine... lisinopril and hydrochlorothiazide... metformin morning and night.",
+    "Fasting morning blood sugars are about 130... slightly higher but not extremely.",
+    "No ecchymosis or edema, no effusion, no pain to palpation... full range of motion, negative varus and valgus test.",
+    "No evidence of fracture or bony abnormality.",
+    "Some arthritis in the knee... systolic ejection murmur heard on heart exam.",
+    "Prescribe meloxicam 15 mg daily... physical therapy... continue lisinopril... order echocardiogram, hemoglobin A1c, and lipid panel.",
+    "Trip to Columbus, Georgia... Lion\u2019s Club function with line dancing planned."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "A",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13615073263645172,
+    "calinski_harabasz_score": 3.0986033255608927,
+    "davies_bouldin_score": 1.1533777467471005
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9961211085319519,
+      0.9952974319458008,
+      0.997917115688324
+    ],
+    [
+      0.9961211085319519,
+      0.9999996423721313,
+      0.9950717091560364,
+      0.9970653653144836
+    ],
+    [
+      0.9952974319458008,
+      0.9950717091560364,
+      0.9999999403953552,
+      0.9944958090782166
+    ],
+    [
+      0.997917115688324,
+      0.9970653653144836,
+      0.9944958090782166,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.010937249287962914,
+    "1": -0.046538095921278,
+    "2": 0.0,
+    "3": -0.14098720252513885
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "it just gives out and here I'm going to fall but I usually catch myself... I have to hold a grocery cart and that helps a lot."
+      ],
+      "0": [
+        "it comes and goes and it passes just about as quickly as it comes... doesn't last that long.",
+        "No... not that I can recall"
+      ],
+      "1": [
+        "Not interfering with things I do... won\u2019t be able to participate in line dancing due to knee concerns."
+      ]
+    },
+    "2": {
+      "0": [
+        "deep in the patella... the whole kneecap fades."
+      ]
+    },
+    "3": {
+      "2": [
+        "Blood pressure runs around 120 over 70... currently controlled."
+      ],
+      "0": [
+        "Taking Farxiga and amlodipine... lisinopril and hydrochlorothiazide... metformin morning and night."
+      ],
+      "1": [
+        "Fasting morning blood sugars are about 130... slightly higher but not extremely."
+      ]
+    },
+    "0": {
+      "2": [
+        "No ecchymosis or edema, no effusion, no pain to palpation... full range of motion, negative varus and valgus test."
+      ],
+      "0": [
+        "No evidence of fracture or bony abnormality.",
+        "Some arthritis in the knee... systolic ejection murmur heard on heart exam."
+      ],
+      "1": [
+        "Prescribe meloxicam 15 mg daily... physical therapy... continue lisinopril... order echocardiogram, hemoglobin A1c, and lipid panel.",
+        "Trip to Columbus, Georgia... Lion\u2019s Club function with line dancing planned."
+      ]
+    }
+  }
+}

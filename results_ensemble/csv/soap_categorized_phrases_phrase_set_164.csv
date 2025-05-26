@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+A,1,2,Right knee pain.
+S,0,2,"I do jogs, I sign up for the 5k, sometimes the marathon, and I haven't been doing longer distances because..."
+S,0,0,"When I'm running, my knee here it just starts to ache and it's it's just to the point where I need your opinion."
+S,0,0,It is worse towards the end of the day... once I'm on my feet all day it starts to ache towards the afternoon.
+S,0,0,I do ice and ibuprofen... I talked to [Dr. Wood] about it over the years.
+S,0,1,I don't think no [family history of arthritis or immune diseases].
+O,2,2,"No redness, no swelling... a small amount of effusion... tender to palpation over the lateral aspect of the knee."
+O,2,0,Blood pressure was one twenty over sixty... heart rate was fifty eight... respirations were fourteen.
+O,2,1,Joint spaces of that knee are maintained... no evidence of any fracture or arthritis.
+A,1,0,You have a knee sprain from overuse.
+O,2,2,Stay on two Tylenol 500 mg and two ibuprofen 200 mg tablets three times a day... physical therapy to strengthen the lower extremities... no running for two weeks.
+A,1,1,Can I lift weights and do my squats and those type of exercises at the gym?
+P,3,0,Absolutely... those are good exercises... get that first physical therapy appointment in.
+P,3,0,Follow up with you in two weeks... start adding some additional activity.

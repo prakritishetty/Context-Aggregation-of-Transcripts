@@ -1,0 +1,2 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:51<00:51, 51.53s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:25<00:00, 41.34s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:25<00:00, 42.88s/it]
+Processing transcripts:   0%|          | 0/207 [00:00<?, ?it/s]Processing transcripts: 100%|██████████| 207/207 [00:00<00:00, 3109.37it/s]

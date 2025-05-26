@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,3,0,sharp pain on the side of my abdomen below my ribs for the last several days.
+A,3,0,the pain moves to my lower abdomen into my groin
+S,0,2,comes and goes... pretty bad... can't find a comfortable position.
+S,0,0,it kinda burns a little bit [when urinating]
+S,0,0,urine looks a little dark sometimes.
+S,0,1,I've had kidney stones before... but this is taking a lot longer.
+S,0,1,my father had [kidney stones].
+S,0,0,taken some Tylenol but it hasn't really helped.
+P,2,2,positive CVA tenderness on the flank... tenderness over your kidney... inflammation there.
+P,2,0,0.5 cm kidney stone located in the proximal ureter... no evidence of hydronephrosis.
+O,1,0,acute nephrolithiasis or kidney stone.
+P,2,1,push fluids... prescribed oxycodone 5 mg every 6 to 8 hours... alternate with Tylenol.
+O,1,0,"basic metabolic panel, urinalysis, and urine culture."
+P,2,0,follow up in 1 to 2 weeks... discuss further treatment such as lithotripsy or ureteroscopy.
+S,0,0,contact me if you're having worsening symptoms over the next week.

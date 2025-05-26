@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "pain in my belly that I've had for several weeks",
+    "Right-sided abdominal pain underneath my ribs, squeezing and severe (rated 8/10), comes and goes, accompanied by nausea",
+    "Most of the time it comes after I eat, either immediately or a couple of hours later",
+    "Type 2 diabetes managed with diet and exercise; followed a keto diet, lost 25 pounds",
+    "Both my dad and my mom had gallbladder disease and had to have their gallbladders out",
+    "Positive for Murphy's sign, slight guarding in the right upper quadrant without rebound tenderness",
+    "Abdominal ultrasound shows multiple gallstones in the gallbladder with mild thickening; common bile duct size normal at 4.1 mm",
+    "Mild cholecystitis with gallstones, no frank obstruction",
+    "Recommend laparoscopic cholecystectomy, surgery to take 1\u20131.5 hours, overnight hospital stay for monitoring",
+    "Avoid high-fat foods, eat high-fiber foods; resume walking in 1\u20132 days, no hiking until post-op week",
+    "Back on your feet pretty quick; can walk outdoors on solid ground after a couple of days",
+    "See you next week for surgery, then follow-up 1 week post-op",
+    "Continue managing diabetes with diet/exercise; follow up with primary care/endocrinologist",
+    "Still having pain despite dietary changes",
+    "Low-grade fevers during severe pain episodes, no vomiting",
+    "Enjoys nature photography and hiking; plans to resume outdoor activities post-surgery"
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    0,
+    3,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    1,
+    3,
+    0,
+    2,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    2,
+    1,
+    2,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.0989387035369873,
+    "calinski_harabasz_score": 2.5931453891716245,
+    "davies_bouldin_score": 1.674184642348013
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9979903697967529,
+      0.9972742795944214,
+      0.9984505772590637
+    ],
+    [
+      0.9979903697967529,
+      0.9999997019767761,
+      0.9978822469711304,
+      0.9988012313842773
+    ],
+    [
+      0.9972742795944214,
+      0.9978822469711304,
+      1.0000001192092896,
+      0.9970943927764893
+    ],
+    [
+      0.9984505772590637,
+      0.9988012313842773,
+      0.9970943927764893,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06550689786672592,
+    "1": -0.005224994383752346,
+    "2": 0.10559365898370743,
+    "3": 0.11442210525274277
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "pain in my belly that I've had for several weeks"
+      ],
+      "0": [
+        "Most of the time it comes after I eat, either immediately or a couple of hours later",
+        "Still having pain despite dietary changes"
+      ],
+      "1": [
+        "Both my dad and my mom had gallbladder disease and had to have their gallbladders out"
+      ]
+    },
+    "2": {
+      "0": [
+        "Right-sided abdominal pain underneath my ribs, squeezing and severe (rated 8/10), comes and goes, accompanied by nausea",
+        "Low-grade fevers during severe pain episodes, no vomiting"
+      ]
+    },
+    "3": {
+      "2": [
+        "Type 2 diabetes managed with diet and exercise; followed a keto diet, lost 25 pounds"
+      ],
+      "0": [
+        "Avoid high-fat foods, eat high-fiber foods; resume walking in 1\u20132 days, no hiking until post-op week",
+        "Back on your feet pretty quick; can walk outdoors on solid ground after a couple of days",
+        "Enjoys nature photography and hiking; plans to resume outdoor activities post-surgery"
+      ],
+      "1": [
+        "Continue managing diabetes with diet/exercise; follow up with primary care/endocrinologist"
+      ]
+    },
+    "1": {
+      "2": [
+        "Positive for Murphy's sign, slight guarding in the right upper quadrant without rebound tenderness"
+      ],
+      "0": [
+        "Abdominal ultrasound shows multiple gallstones in the gallbladder with mild thickening; common bile duct size normal at 4.1 mm"
+      ],
+      "1": [
+        "Mild cholecystitis with gallstones, no frank obstruction",
+        "Recommend laparoscopic cholecystectomy, surgery to take 1\u20131.5 hours, overnight hospital stay for monitoring",
+        "See you next week for surgery, then follow-up 1 week post-op"
+      ]
+    }
+  }
+}

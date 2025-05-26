@@ -1,0 +1,195 @@
+{
+  "phrases": [
+    "I passed what looked like two small stones last week after I scheduled this appointment.",
+    "For the past six weeks, I've had a few episodes of bright red urine the color of cherry Kool-Aid.",
+    "Last week, I was constantly having to pee and it hurt something terrible.",
+    "At the time, I'd say an eight [on a pain scale of 0-10].",
+    "No, after passing those stones, things have felt a lot better.",
+    "There is a six millimeter left renal stone non-obstructing.",
+    "You should drink about half of your body weight in ounces of water a day.",
+    "I drink more Mountain Dew than anything.",
+    "You should avoid foods rich in sodium, oxalate, and animal protein.",
+    "Foods like spinach, chocolate, beets, rhubarb, and soy products.",
+    "I'll do whatever it takes to try to avoid getting these stones again.",
+    "If you experience any severe pain or bright red blood in your urine, you should go to the emergency room.",
+    "I see you're only taking Alavert 10 milligrams a day and have no drug allergies.",
+    "The blood in your urine was due to the kidney stones.",
+    "Since it's not obstructing or causing pain, I don't recommend any surgical intervention at this time.",
+    "Here's a handout that you can look over. It goes over the dietary recommendations and what to avoid.",
+    "Follow up in 1 year with renal ultrasound, sooner should symptoms arise.",
+    "No flank pain or tenderness in your lower back?",
+    "The left kidney is 10.8 centimeters in length and five centimeters wide. There is a six millimeter left renal stone non-obstructing.",
+    "Pre-void 533 milliliters and 0 milliliters post-void.",
+    "Urine dipstick today: negative for leukocytes, nitrates, protein, ketone, bilirubin, and glucose. Trace blood, intact."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    3,
+    0,
+    2,
+    3,
+    0,
+    1,
+    1,
+    0,
+    3,
+    0,
+    3,
+    0,
+    0,
+    1,
+    3,
+    2,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    1,
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09698843955993652,
+    "calinski_harabasz_score": 3.7029296624227355,
+    "davies_bouldin_score": 1.7782247667564266
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9975057244300842,
+      0.9964406490325928,
+      0.9989385008811951
+    ],
+    [
+      0.9975057244300842,
+      0.9999999403953552,
+      0.9975963830947876,
+      0.9985417127609253
+    ],
+    [
+      0.9964406490325928,
+      0.9975963830947876,
+      0.9999996423721313,
+      0.9976792335510254
+    ],
+    [
+      0.9989385008811951,
+      0.9985417127609253,
+      0.9976792335510254,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.12000732868909836,
+    "1": 0.047473739832639694,
+    "2": 0.21287448704242706,
+    "3": 0.012739148922264576
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "I passed what looked like two small stones last week after I scheduled this appointment.",
+        "Last week, I was constantly having to pee and it hurt something terrible.",
+        "I'll do whatever it takes to try to avoid getting these stones again.",
+        "I see you're only taking Alavert 10 milligrams a day and have no drug allergies.",
+        "Since it's not obstructing or causing pain, I don't recommend any surgical intervention at this time.",
+        "Here's a handout that you can look over. It goes over the dietary recommendations and what to avoid."
+      ],
+      "2": [
+        "For the past six weeks, I've had a few episodes of bright red urine the color of cherry Kool-Aid."
+      ],
+      "0": [
+        "No, after passing those stones, things have felt a lot better.",
+        "I drink more Mountain Dew than anything."
+      ]
+    },
+    "3": {
+      "2": [
+        "At the time, I'd say an eight [on a pain scale of 0-10]."
+      ],
+      "0": [
+        "You should drink about half of your body weight in ounces of water a day.",
+        "If you experience any severe pain or bright red blood in your urine, you should go to the emergency room.",
+        "The blood in your urine was due to the kidney stones."
+      ],
+      "1": [
+        "No flank pain or tenderness in your lower back?"
+      ]
+    },
+    "2": {
+      "2": [
+        "There is a six millimeter left renal stone non-obstructing."
+      ],
+      "0": [
+        "The left kidney is 10.8 centimeters in length and five centimeters wide. There is a six millimeter left renal stone non-obstructing."
+      ],
+      "1": [
+        "Pre-void 533 milliliters and 0 milliliters post-void."
+      ]
+    },
+    "1": {
+      "2": [
+        "You should avoid foods rich in sodium, oxalate, and animal protein."
+      ],
+      "0": [
+        "Foods like spinach, chocolate, beets, rhubarb, and soy products."
+      ],
+      "1": [
+        "Follow up in 1 year with renal ultrasound, sooner should symptoms arise.",
+        "Urine dipstick today: negative for leukocytes, nitrates, protein, ketone, bilirubin, and glucose. Trace blood, intact."
+      ]
+    }
+  }
+}

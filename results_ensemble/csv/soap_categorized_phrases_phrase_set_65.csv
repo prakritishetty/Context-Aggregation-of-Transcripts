@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,I'm just really anxious about my recent blood work that my PCP did and said that I have hepatitis C. I'm just really surprised because I've been feeling fine.
+S,1,1,"Years ago I used to party a lot and even use IV drugs, but I've been clean for over fifteen years."
+S,1,0,"I do smoke; I'm down to one to two cigarettes a day. It's just really been tough to just get rid of those two, but I've cut down a lot. I used to be up to one point or a pack and a half a day."
+S,1,2,"I used to drink a lot, a lot more alcohol. I probably would say I drink about a beer a day... and maybe slightly more on the weekends but nothing how I used to."
+P,0,2,"Hypertension, diabetes, and also depression."
+S,1,1,I do feel tend to be really tired at the end of the day after working.
+P,0,0,No jaundice on skin exam.
+P,0,0,Heart exam: a nice regular rate and rhythm with a two out of six systolic murmur.
+P,0,0,"Lungs are clear with no wheezes, rales, or rhonchi."
+P,0,0,Abdomen is soft with no hepatospleno splenomegaly.
+O,2,0,"HCV antibody test was positive, and your liver panel showed an elevated AST at 39, but your ALT, albumin, and total bilirubin were all within normal limits."
+A,3,0,Confirm the diagnosis with some additional blood work that includes checking the HCV RNA and also the HCV genotype... determine the severity of your liver disease by checking for fibrosis of the liver... ordering a special ultrasound [Fibroscan].
+P,0,1,"Yes, we can start with the same screening that you have had for you for all of them first."
+S,1,1,"Alright, perfect. I'll make sure I'll have them set up an appointment with our family doctor... see you in about three weeks."

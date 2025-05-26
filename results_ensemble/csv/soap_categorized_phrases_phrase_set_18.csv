@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+A,3,1,lower left back pain when was your back surgery
+O,0,0,status post lumbar microdiscectomy performed in 11/2020
+S,2,2,disk broke off and just wrapped around and connected to my spinal thecal sac
+S,2,0,horrible nerve pain down my leg in my back just horrible awful things
+P,1,2,highly highly dosed up on gabapentin
+P,1,0,ibuprofen 800 milligrams a day
+A,3,0,pain with weight-bearing
+A,3,2,pain with palpation to the left side around the L5
+O,0,0,no evidence of fracture or other abnormalities... previous surgical site healed properly
+S,2,1,muscle pull there from having a misalignment in your spine
+P,1,0,prescribe some physical therapy... meloxicam instead of ibuprofen
+P,1,1,requested some Vicodin... prescribed Demerol
+P,1,0,refer to pain management for narcotics

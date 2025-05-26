@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,"about a week ago I started to get a cold. And, in the last two or three days, it seemed to move into my chest."
+S,0,2,"I had some post nasal drip for, again, for the beginning of week. And... it left my head. It went down to my upper, chest."
+P,1,2,Deny chest pain other than the congestion
+P,1,2,"other than the congestion, no chest pain"
+P,1,0,Deny fever and shortness of breath
+P,1,0,no shortness of breath
+O,3,0,"Logan is a 57-year-old male, with a past medical history significant for coronary artery bypass grafting, hyperlipidemia, and OCD."
+S,0,0,I’m on Crestor 20 milligrams a day. I’m tolerating it well. No muscle aches.
+A,2,2,Had coronary artery bypass grafting last year. Doing great. No chest pain.
+S,0,0,I’ve gotten both vaccines. On both stages.
+A,2,0,"On exam, you do have some cervical lymphadenopathy. And your lungs have bilateral ronchi in them, and some wheezing."
+P,1,1,Oxygenation is 96%.
+P,1,1,The results of your... COVID test are positive.
+S,0,1,You probably have a very low-level positivity. The vaccine has helped you. It seems to be very mild at this time.
+A,2,1,Quarantine for 10 days. Avoid household family members. Call me if symptoms worsen.
+A,2,1,Continue Crestor 20 mg a day. Continue watching diet. Order another lipid panel in 6 months.
+P,1,1,Do a stress test in six months for coronary artery disease monitoring.
+S,0,0,Did a little travel over the last week... diet wasn’t great but mostly good.

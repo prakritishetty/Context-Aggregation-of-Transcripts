@@ -1,0 +1,215 @@
+{
+  "phrases": [
+    "Right shoulder injury.",
+    "I kinda landed on my shoulder a little bit weird one time.",
+    "about four days ago.",
+    "it's kinda on the back side around here.",
+    "they are about the same",
+    "I can't lift my shoulder to touch my ear because of pain.",
+    "just a little bit of Tylenol trying to take it easy.",
+    "Tylenol does not provide relief.",
+    "no numbness or tingling in my fingers.",
+    "the rest of it's doing it's just the shoulder.",
+    "I'm right-handed.",
+    "had an appendectomy maybe three-four years ago.",
+    "pain to palpation of the posterior shoulder at the acromioclavicular joint.",
+    "decreased abduction and adduction to about ninety degrees only.",
+    "pain with supination and pronation of the arm.",
+    "palpable radial artery pulse.",
+    "acute acromioclavicular joint fracture.",
+    "put you in a sling.",
+    "prescribe meloxicam 15 mg once a day.",
+    "order a CT scan of your shoulder.",
+    "refer you to physical therapy.",
+    "avoid tackle football",
+    "flag football in the future.",
+    "when can I get back out on the field?",
+    "a slight headache",
+    "our bones get a little bit weaker as we get older."
+  ],
+  "cluster_labels": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    3,
+    3,
+    3,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    2,
+    2,
+    0,
+    1,
+    1,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17777760326862335,
+    "calinski_harabasz_score": 5.270530743694163,
+    "davies_bouldin_score": 1.5069518548208665
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9977971315383911,
+      0.9975049495697021,
+      0.9977505207061768
+    ],
+    [
+      0.9977971315383911,
+      1.0000003576278687,
+      0.9980233907699585,
+      0.9984763264656067
+    ],
+    [
+      0.9975049495697021,
+      0.9980233907699585,
+      1.0000001192092896,
+      0.9961766600608826
+    ],
+    [
+      0.9977505207061768,
+      0.9984763264656067,
+      0.9961766600608826,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09342879056930542,
+    "1": 0.15712369978427887,
+    "2": 0.23397296667099,
+    "3": 0.08563806861639023
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "Right shoulder injury.",
+        "palpable radial artery pulse.",
+        "refer you to physical therapy."
+      ],
+      "0": [
+        "acute acromioclavicular joint fracture."
+      ],
+      "1": [
+        "prescribe meloxicam 15 mg once a day.",
+        "order a CT scan of your shoulder."
+      ]
+    },
+    "0": {
+      "0": [
+        "I kinda landed on my shoulder a little bit weird one time.",
+        "I can't lift my shoulder to touch my ear because of pain.",
+        "had an appendectomy maybe three-four years ago."
+      ],
+      "1": [
+        "about four days ago.",
+        "just a little bit of Tylenol trying to take it easy.",
+        "Tylenol does not provide relief.",
+        "I'm right-handed.",
+        "put you in a sling.",
+        "when can I get back out on the field?",
+        "our bones get a little bit weaker as we get older."
+      ],
+      "2": [
+        "it's kinda on the back side around here.",
+        "they are about the same",
+        "the rest of it's doing it's just the shoulder."
+      ]
+    },
+    "3": {
+      "2": [
+        "no numbness or tingling in my fingers."
+      ],
+      "0": [
+        "pain to palpation of the posterior shoulder at the acromioclavicular joint.",
+        "pain with supination and pronation of the arm."
+      ],
+      "1": [
+        "decreased abduction and adduction to about ninety degrees only."
+      ]
+    },
+    "2": {
+      "2": [
+        "avoid tackle football"
+      ],
+      "0": [
+        "flag football in the future."
+      ],
+      "1": [
+        "a slight headache"
+      ]
+    }
+  }
+}

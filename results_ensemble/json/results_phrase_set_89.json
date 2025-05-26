@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "I've been using the medication you prescribed me last time and going to therapy every week. And that's really helped me manage.",
+    "It's been a little bit up and down... hasn't really stayed put.",
+    "my diet's been a little all over the place. I have been really stressed with work and putting in more hours... eating a lot of frozen meals.",
+    "I have some headaches but i just thought that was looking at a computer screen all day.",
+    "my carpal tunnel release has been doing... great. No numbness or tingling in your hands?",
+    "your exam's essentially normal... your labs are essentially normal.",
+    "increase your lisinopril to 10 milligrams a day... come back in a month.",
+    "depression... doing great... continue current regimen.",
+    "denies any thoughts of self-harm or harming others.",
+    "your blood pressure is a little bit high.",
+    "Neurologically intact... strength is good, pulses are good.",
+    "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    1,
+    1,
+    2,
+    0,
+    1,
+    2,
+    0,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17333798110485077,
+    "calinski_harabasz_score": 3.90712309307161,
+    "davies_bouldin_score": 1.2616984250954117
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9984430074691772,
+      0.9942066073417664,
+      0.9966261982917786
+    ],
+    [
+      0.9984430074691772,
+      1.0000001192092896,
+      0.9956803321838379,
+      0.9958879351615906
+    ],
+    [
+      0.9942066073417664,
+      0.9956803321838379,
+      0.9999998807907104,
+      0.9900019764900208
+    ],
+    [
+      0.9966261982917786,
+      0.9958879351615906,
+      0.9900019764900208,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07332154363393784,
+    "1": 0.1409192830324173,
+    "2": 0.0,
+    "3": 0.15409818291664124
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I've been using the medication you prescribed me last time and going to therapy every week. And that's really helped me manage."
+      ],
+      "0": [
+        "It's been a little bit up and down... hasn't really stayed put."
+      ],
+      "1": [
+        "my diet's been a little all over the place. I have been really stressed with work and putting in more hours... eating a lot of frozen meals.",
+        "I have some headaches but i just thought that was looking at a computer screen all day."
+      ]
+    },
+    "0": {
+      "2": [
+        "my carpal tunnel release has been doing... great. No numbness or tingling in your hands?"
+      ],
+      "0": [
+        "your exam's essentially normal... your labs are essentially normal."
+      ],
+      "1": [
+        "increase your lisinopril to 10 milligrams a day... come back in a month.",
+        "your blood pressure is a little bit high."
+      ]
+    },
+    "1": {
+      "2": [
+        "depression... doing great... continue current regimen."
+      ],
+      "0": [
+        "denies any thoughts of self-harm or harming others."
+      ],
+      "1": [
+        "Neurologically intact... strength is good, pulses are good."
+      ]
+    },
+    "2": {
+      "0": [
+        "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    }
+  }
+}

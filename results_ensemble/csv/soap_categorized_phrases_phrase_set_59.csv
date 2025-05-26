@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,1,Bryan it's nice to see you again in the office today what's going on
+S,1,2,I was in my yard yesterday and I was raking leaves and I felt fine and when I got into my house about two hours later my back started tightening up and I started getting pins and needles in my foot
+S,1,0,I had it once about three years ago but it went away after a day
+S,1,0,Put some ice on it and I tried two Advils and it didn't help
+S,1,1,The only thing that helped was a hot shower and it feels a little better when I sit
+S,1,0,Does it get better when you're laying down sitting standing?
+S,1,0,He is his pain tolerance is high and he wouldn't be saying anything if it really wasn't a problem
+O,0,2,Some pain to palpation around the L5
+O,0,0,Dorsiflexion is normal looks pulses are equal in all extremities
+O,0,1,X-rays obtained and reviewed in office today were normal
+P,2,0,"I recommend we treat this conservatively with rest, meloxicam, and formal physical therapy"
+P,2,0,"If he fails to improve, we can consider obtaining an MRI for further evaluation"
+A,3,0,He should have an MRI we are really worried about it
+A,3,0,Let's give it two weeks and call me back and we'll get you an MRI if it's still not improving

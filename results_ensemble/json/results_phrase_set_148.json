@@ -1,0 +1,211 @@
+{
+  "phrases": [
+    "Sophia Jackson is a 57-year-old female here for a surgical consult for melanoma of the inferior back.",
+    "Her dermatologist referred her after biopsying a 0.7 millimeter lesion on her inferior back, which was diagnosed as melanoma.",
+    "The lesion was noticed by her mother during a visit last month.",
+    "She had the biopsy on April 10th due to family history of melanoma (mother and maternal aunt).",
+    "She denies a personal history of atypical nevi and reports annual mole checks by her primary care provider.",
+    "Mother and maternal aunt both had melanoma.",
+    "Maternal grandfather had pancreatic cancer; no family history of breast or ovarian cancers.",
+    "Owns an auto repair shop.",
+    "Current smoker since teens, actively trying to quit.",
+    "No reported medical conditions; allergic to Augmentin.",
+    "Prior surgeries: cholecystectomy and appendectomy.",
+    "On the inferior back: 1 cm shave biopsy site with no residual pigmentation; no intrinsic or satellite lesions.",
+    "No axillary, cervical, or supraclavicular lymphadenopathy.",
+    "Soft, nontender lymph node in the groin (right side noted in pathology).",
+    "Shave biopsy of inferior back: malignant melanoma, invasive, superficial spreading.",
+    "Clark level 4, Breslow thickness 0.7 mm.",
+    "Radial growth phase present; no vertical growth, ulceration, or lymphatic invasion.",
+    "Peripheral margin positive, deep margin negative; stage 1.",
+    "Recommended ultrasound of the groin lymph node to rule out metastatic disease.",
+    "If ultrasound is normal, wide local excision with 1-2 cm margin is planned.",
+    "Primary closure preferred, but skin graft may be needed.",
+    "Emphasized sun avoidance, skin self-examination, and ABCDE mole surveillance.",
+    "Patient understands risks/benefits and consents to proceed.",
+    "Dermatologist\u2019s photo showed an asymmetric black/brown nevus with irregular border.",
+    "Follow-up with dermatologist for ongoing surveillance is critical."
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    1,
+    1,
+    3,
+    1,
+    3,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    1,
+    2,
+    0,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.11143317073583603,
+    "calinski_harabasz_score": 3.953575099610221,
+    "davies_bouldin_score": 1.7652152797706055
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.99762362241745,
+      0.9981695413589478,
+      0.9962424635887146
+    ],
+    [
+      0.99762362241745,
+      1.0000003576278687,
+      0.997166633605957,
+      0.9978064298629761
+    ],
+    [
+      0.9981695413589478,
+      0.997166633605957,
+      0.9999998807907104,
+      0.9968518018722534
+    ],
+    [
+      0.9962424635887146,
+      0.9978064298629761,
+      0.9968518018722534,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.10238932073116302,
+    "1": 0.14135348796844482,
+    "2": 0.01565926894545555,
+    "3": 0.03054427169263363
+  },
+  "cluster_phrases": {
+    "3": {
+      "1": [
+        "Sophia Jackson is a 57-year-old female here for a surgical consult for melanoma of the inferior back."
+      ],
+      "0": [
+        "She denies a personal history of atypical nevi and reports annual mole checks by her primary care provider."
+      ],
+      "2": [
+        "Maternal grandfather had pancreatic cancer; no family history of breast or ovarian cancers."
+      ]
+    },
+    "1": {
+      "0": [
+        "Her dermatologist referred her after biopsying a 0.7 millimeter lesion on her inferior back, which was diagnosed as melanoma.",
+        "She had the biopsy on April 10th due to family history of melanoma (mother and maternal aunt).",
+        "Mother and maternal aunt both had melanoma.",
+        "Dermatologist\u2019s photo showed an asymmetric black/brown nevus with irregular border.",
+        "Follow-up with dermatologist for ongoing surveillance is critical."
+      ],
+      "2": [
+        "The lesion was noticed by her mother during a visit last month."
+      ],
+      "1": [
+        "If ultrasound is normal, wide local excision with 1-2 cm margin is planned."
+      ]
+    },
+    "2": {
+      "2": [
+        "Owns an auto repair shop."
+      ],
+      "0": [
+        "Current smoker since teens, actively trying to quit.",
+        "No reported medical conditions; allergic to Augmentin.",
+        "Prior surgeries: cholecystectomy and appendectomy.",
+        "Shave biopsy of inferior back: malignant melanoma, invasive, superficial spreading.",
+        "Emphasized sun avoidance, skin self-examination, and ABCDE mole surveillance."
+      ],
+      "1": [
+        "Patient understands risks/benefits and consents to proceed."
+      ]
+    },
+    "0": {
+      "2": [
+        "On the inferior back: 1 cm shave biopsy site with no residual pigmentation; no intrinsic or satellite lesions.",
+        "Radial growth phase present; no vertical growth, ulceration, or lymphatic invasion.",
+        "Primary closure preferred, but skin graft may be needed."
+      ],
+      "0": [
+        "No axillary, cervical, or supraclavicular lymphadenopathy.",
+        "Soft, nontender lymph node in the groin (right side noted in pathology).",
+        "Recommended ultrasound of the groin lymph node to rule out metastatic disease."
+      ],
+      "1": [
+        "Clark level 4, Breslow thickness 0.7 mm.",
+        "Peripheral margin positive, deep margin negative; stage 1."
+      ]
+    }
+  }
+}

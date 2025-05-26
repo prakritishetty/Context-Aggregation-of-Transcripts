@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "about a week ago I started to get a cold. And, in the last two or three days, it seemed to move into my chest.",
+    "I had some post nasal drip for, again, for the beginning of week. And... it left my head. It went down to my upper, chest.",
+    "Deny chest pain other than the congestion",
+    "other than the congestion, no chest pain",
+    "Deny fever and shortness of breath",
+    "no shortness of breath",
+    "Logan is a 57-year-old male, with a past medical history significant for coronary artery bypass grafting, hyperlipidemia, and OCD.",
+    "I\u2019m on Crestor 20 milligrams a day. I\u2019m tolerating it well. No muscle aches.",
+    "Had coronary artery bypass grafting last year. Doing great. No chest pain.",
+    "I\u2019ve gotten both vaccines. On both stages.",
+    "On exam, you do have some cervical lymphadenopathy. And your lungs have bilateral ronchi in them, and some wheezing.",
+    "Oxygenation is 96%.",
+    "The results of your... COVID test are positive.",
+    "You probably have a very low-level positivity. The vaccine has helped you. It seems to be very mild at this time.",
+    "Quarantine for 10 days. Avoid household family members. Call me if symptoms worsen.",
+    "Continue Crestor 20 mg a day. Continue watching diet. Order another lipid panel in 6 months.",
+    "Do a stress test in six months for coronary artery disease monitoring.",
+    "Did a little travel over the last week... diet wasn\u2019t great but mostly good."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    0,
+    2,
+    2,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17707882821559906,
+    "calinski_harabasz_score": 4.17612295445245,
+    "davies_bouldin_score": 1.3219059523843917
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9961416125297546,
+      0.9978787302970886,
+      0.9935355186462402
+    ],
+    [
+      0.9961416125297546,
+      0.9999998807907104,
+      0.9971665143966675,
+      0.9945603013038635
+    ],
+    [
+      0.9978787302970886,
+      0.9971665143966675,
+      0.9999995231628418,
+      0.9949025511741638
+    ],
+    [
+      0.9935355186462402,
+      0.9945603013038635,
+      0.9949025511741638,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.15407483279705048,
+    "1": 0.04954744130373001,
+    "2": 0.10046380758285522,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "about a week ago I started to get a cold. And, in the last two or three days, it seemed to move into my chest.",
+        "I had some post nasal drip for, again, for the beginning of week. And... it left my head. It went down to my upper, chest."
+      ],
+      "0": [
+        "I\u2019m on Crestor 20 milligrams a day. I\u2019m tolerating it well. No muscle aches.",
+        "I\u2019ve gotten both vaccines. On both stages.",
+        "Did a little travel over the last week... diet wasn\u2019t great but mostly good."
+      ],
+      "1": [
+        "You probably have a very low-level positivity. The vaccine has helped you. It seems to be very mild at this time."
+      ]
+    },
+    "1": {
+      "2": [
+        "Deny chest pain other than the congestion",
+        "other than the congestion, no chest pain"
+      ],
+      "0": [
+        "Deny fever and shortness of breath",
+        "no shortness of breath"
+      ],
+      "1": [
+        "Oxygenation is 96%.",
+        "The results of your... COVID test are positive.",
+        "Do a stress test in six months for coronary artery disease monitoring."
+      ]
+    },
+    "3": {
+      "0": [
+        "Logan is a 57-year-old male, with a past medical history significant for coronary artery bypass grafting, hyperlipidemia, and OCD."
+      ]
+    },
+    "2": {
+      "2": [
+        "Had coronary artery bypass grafting last year. Doing great. No chest pain."
+      ],
+      "0": [
+        "On exam, you do have some cervical lymphadenopathy. And your lungs have bilateral ronchi in them, and some wheezing."
+      ],
+      "1": [
+        "Quarantine for 10 days. Avoid household family members. Call me if symptoms worsen.",
+        "Continue Crestor 20 mg a day. Continue watching diet. Order another lipid panel in 6 months."
+      ]
+    }
+  }
+}

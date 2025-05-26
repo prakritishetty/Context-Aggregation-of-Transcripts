@@ -1,0 +1,29 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,difficulty urinating over the last six months
+P,3,2,"stream is weak,"
+S,0,2,"not emptying bladder fully,"
+A,2,1,"sometimes if I stand there long enough I can kinda go a little bit more,"
+O,1,2,getting up three or four times a night to go to the bathroom.
+A,2,0,"no burning when I urinate,"
+A,2,2,"no problems with my bowels,"
+S,0,2,"no urinary retention,"
+O,1,2,no chest pain or shortness of breath.
+S,0,1,"enlarged prostate appreciated on physical exam,"
+S,0,2,"slight 3 out of 6 systolic ejection murmur heard at the left base,"
+P,3,0,"lungs clear bilaterally,"
+O,1,0,abdomen nontender and nondistended.
+S,0,0,"history of coronary artery disease with stent placement in 2018,"
+O,1,2,diabetes managed with metformin.
+S,0,1,"start on Flomax 0.4 mg once at night,"
+S,0,1,"refer to a urologist,"
+S,0,1,"order PSA, urinalysis, and urine culture,"
+S,0,0,"continue Lipitor 40 mg, aspirin, and metoprolol,"
+S,0,1,"order echocardiogram to follow up on murmur,"
+S,0,2,"continue metformin 1000 mg twice daily,"
+O,1,0,order hemoglobin A1c.
+S,0,1,"follow up in 3 to 4 weeks,"
+O,1,2,call or message if concerns arise.
+O,1,1,patient understands and agrees with the recommended medical treatment plan.
+P,3,1,"patient denies recent constipation,"
+S,0,2,"no history of catheter insertion for retention,"
+O,1,2,social history includes exercise attempts and college football interest.

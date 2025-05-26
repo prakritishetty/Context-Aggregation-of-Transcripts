@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "I hurt my,, finger when I was skiing this past weekend.",
+    "I was going downhill, double diamonds, double black diamonds, and I just lost control, and I flipped down a few ways, but somewhere along the way, I, I jammed my, my index finger on something.",
+    "About five days of this index finger pain.",
+    "I took some ibuprofen., didn't really seem to help.",
+    "Have you iced it or put a splint on it?",
+    "it's about a seven.",
+    "no, interestingly enough, this is the only one.",
+    "I have chronic constipation.",
+    "yes, I had my appendix out when I was seven.",
+    "With your x-ray, and with your exam, looks you have a sprain of your distar- distal interphalangeal joint. It's called your dip joint, of your index finger.",
+    "we're gon na put a splint on that finger. I'm gon na give you a strong antiinflammatory called mobic. You'll take 15 milligrams once a day. I'll prescribe 14 of those for you. And I want you to come back and see me in two weeks..."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    3,
+    1,
+    0,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13672877848148346,
+    "calinski_harabasz_score": 3.1193079342347674,
+    "davies_bouldin_score": 0.8768076182380263
+  },
+  "similarity_matrix": [
+    [
+      1.0000003576278687,
+      0.9974493980407715,
+      0.9961428642272949,
+      0.9946413040161133
+    ],
+    [
+      0.9974493980407715,
+      0.9999998807907104,
+      0.9962997436523438,
+      0.9970188736915588
+    ],
+    [
+      0.9961428642272949,
+      0.9962997436523438,
+      1.0000004768371582,
+      0.9933043718338013
+    ],
+    [
+      0.9946413040161133,
+      0.9970188736915588,
+      0.9933043718338013,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.047236718237400055,
+    "1": 0.20763488113880157,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I hurt my,, finger when I was skiing this past weekend."
+      ],
+      "0": [
+        "I was going downhill, double diamonds, double black diamonds, and I just lost control, and I flipped down a few ways, but somewhere along the way, I, I jammed my, my index finger on something.",
+        "we're gon na put a splint on that finger. I'm gon na give you a strong antiinflammatory called mobic. You'll take 15 milligrams once a day. I'll prescribe 14 of those for you. And I want you to come back and see me in two weeks..."
+      ],
+      "1": [
+        "I took some ibuprofen., didn't really seem to help.",
+        "yes, I had my appendix out when I was seven."
+      ]
+    },
+    "1": {
+      "2": [
+        "About five days of this index finger pain."
+      ],
+      "0": [
+        "Have you iced it or put a splint on it?"
+      ],
+      "1": [
+        "it's about a seven.",
+        "I have chronic constipation."
+      ]
+    },
+    "3": {
+      "0": [
+        "no, interestingly enough, this is the only one."
+      ]
+    },
+    "2": {
+      "0": [
+        "With your x-ray, and with your exam, looks you have a sprain of your distar- distal interphalangeal joint. It's called your dip joint, of your index finger."
+      ]
+    }
+  }
+}

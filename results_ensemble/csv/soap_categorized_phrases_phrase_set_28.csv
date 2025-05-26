@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+P,2,2,elevated and fluctuating blood pressures
+P,2,2,blood pressure readings recently... occasionally over one eighty
+O,1,2,lightheaded slight headache
+A,0,2,chest heaviness... no sustained... no breathing difficulty
+P,2,0,still taking the lisinopril twenty milligrams twice per day
+A,0,2,mild bibasilar rales... no wheezes or rhonchi
+A,0,0,grade three out of six systolic ejection murmur... unchanged from prior
+O,1,0,trace lower extremity edema bilaterally
+P,2,0,increase your lisinopril to sixty milligrams twice per day
+P,2,0,add twenty five milligrams per day of hydrochlorothiazide
+P,2,1,check your blood pressure measurements twice a day for the next two weeks
+P,2,1,follow-up in two weeks
+A,0,1,"send a cholesterol panel, CBC with differential, comprehensive metabolic panel, and urinalysis"
+O,1,0,continue atorvastatin for hyperlipidemia
+S,3,0,continue golfing... stay active as best you can
+O,1,1,take Tylenol for mild pain
+A,0,2,six to eight glasses of water per day... increase with activity or dehydration
+A,0,1,not more than a couple alcoholic drinks a week
+A,0,1,"no syncope, fever, nausea, vomiting, or diarrhea"
+A,0,1,no sustained chest pain or palpitations

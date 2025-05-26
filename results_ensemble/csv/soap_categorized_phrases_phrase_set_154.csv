@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,my ankles were swelling and couldn't get them to go down even when I went to bed and couldn't breathe very good had to get propped up in bed
+S,1,0,I called my friend Diane and she said I probably ought to call nine one one since I was having a hard time talking
+S,1,1,my blood pressure was high also it was two hundred over ninety
+A,3,2,I might miss one but I try to take them all time
+A,3,0,I eat those probably everyday
+A,3,0,I have almost incontinence
+P,0,2,your blood pressure looks pretty good today at one twenty eight over seventy two
+P,0,0,your lungs are clear bilaterally and your lower extremities show just trace edema
+O,2,0,echocardiogram i reviewed those results and it does show a preserved ef of fifty five percent abnormal diastolic filling and mild-to-moderate mitral regurgitation
+P,0,0,continue on your Bumex 2 mg once daily
+P,0,1,keep a log of what your blood pressures are and when it's up think about what you've eaten
+P,0,2,order a renal artery ultrasound just to be sure we're not missing anything
+P,0,0,see you again in three months
+A,3,1,i'll i'll give that a try anything that will help
+A,3,1,i'll try to use it everyday

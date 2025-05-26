@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,Headache and high blood pressure
+S,1,2,alright theresa i understand that you're you're having a bit of some headache here and your blood pressure has been running high
+O,0,2,throbbing headaches on the top of my head
+S,1,1,they're throbbing
+S,1,0,I don't really take [chlorthalidone] because it gives me a stomachache
+S,1,1,I probably take [metformin] every other day
+S,1,0,sometimes I feel dizzy and my vision gets a little blurry
+O,0,2,172 over 98
+P,3,0,your blood pressure is running quite a bit high it was one seventy two over ninety eight
+S,1,1,I love McDonald's I eat it all the time
+O,0,2,a two out of six systolic ejection murmur... unchanged from last year
+A,2,0,1+ pitting edema noted in the bilateral lower extremities
+O,0,0,Continue current medication regimen
+O,0,0,increase metformin to fifteen hundred milligrams
+O,0,1,Monitor blood pressure three times a week
+O,0,0,follow up in a month
+O,0,0,speak to a nutritionist
+O,0,1,Set a reminder on your iPhone
+O,0,2,One seventy [blood sugar] this morning
+S,1,1,You're retaining a lot of that salt that you're eating

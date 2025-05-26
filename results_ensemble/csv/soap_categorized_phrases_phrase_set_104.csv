@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,2,I've had it for about a week and... tried some over the counter stuff but it doesn't go away.
+P,3,0,I twisted on my left and maybe I might have picked something up... the pain came back after a few hours.
+P,3,0,It's more towards the middle maybe on the lower side... aggravated when I do some sudden movement to the left.
+A,2,0,The pain is located in the center but goes across to the left side.
+O,1,2,Lungs are clear and your heart has a regular rate and rhythm.
+S,0,2,"Pain to palpation of the midline of the lower back, especially on the left... mildly positive straight leg rise on the right, positive on the left."
+S,0,0,History of diabetes... taking metformin twice a day.
+A,2,0,Blood sugar numbers have been a bit towards the higher side.
+P,3,1,Family owns the bakery... I end up getting some stuff but it's not that much.
+S,0,1,Order a low back x-ray... start with physical therapy... take 400 mg ibuprofen up to 3 times a day... Flexeril as a muscle relaxant.
+S,0,0,A1C test needed... continue diet and exercise... check blood sugar first thing in the morning.
+S,0,0,Avoid donuts and sweets from the bakery... occasional treats are fine but watch carbohydrates.
+O,1,0,Referral to a pain doctor if pain continues after x-ray and possible CAT scan.
+O,1,1,No numbness or tingling in feet during physical exam.

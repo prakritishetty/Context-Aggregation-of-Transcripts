@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "it's been a crazy year and a half and the anxiety, the pressure of getting ready for Thanksgiving was really starting to wear on me",
+    "I started going for long walks outside every morning... But with the seasons changing and it getting cold out, I have not been able to keep doing it and need to find something new to do",
+    "I'm not ready yet to try any meds, I'd to look into some alternative options",
+    "Did n't stick to the diet too much through the thanksgiving week but it's a little bit better. I've been trying to really monitor it",
+    "Your hemoglobin A1c is elevated. It's at eight. I'd to see it closer to six",
+    "I'm gon na go ahead and increase the metformin to 1000 milligrams twice a day",
+    "you're doing a good job with that keep up the good work",
+    "I'm gon na go ahead and order an echocardiogram just to recheck it. Just that heart murmur",
+    "a slight two out of six systolic ejection murmur heard at the left base, which we've heard in the past",
+    "you do have one plus non-pitting edema bilaterally in your lower extremities",
+    "refer you to psychiatry not for medications, but just for some talk therapy that type of thing",
+    "no. [to questions about suicidal/homicidal ideation]",
+    "Denies chest pain, shortness of breath, belly pain, blood in your stool, weight loss",
+    "order a hemoglobin A1c in the next couple months",
+    "order a lipid panel",
+    "that might just be from your diet recently"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    3,
+    1,
+    3,
+    0,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13517284393310547,
+    "calinski_harabasz_score": 4.6449790747445725,
+    "davies_bouldin_score": 1.414993803826837
+  },
+  "similarity_matrix": [
+    [
+      0.9999996423721313,
+      0.9946761131286621,
+      0.9975576400756836,
+      0.9981106519699097
+    ],
+    [
+      0.9946761131286621,
+      0.9999999403953552,
+      0.9898350834846497,
+      0.9981294870376587
+    ],
+    [
+      0.9975576400756836,
+      0.9898350834846497,
+      1.0,
+      0.9949963092803955
+    ],
+    [
+      0.9981106519699097,
+      0.9981294870376587,
+      0.9949963092803955,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0572747178375721,
+    "1": 0.11331837624311447,
+    "2": 0.25321853160858154,
+    "3": 0.01768805831670761
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "it's been a crazy year and a half and the anxiety, the pressure of getting ready for Thanksgiving was really starting to wear on me"
+      ],
+      "0": [
+        "I started going for long walks outside every morning... But with the seasons changing and it getting cold out, I have not been able to keep doing it and need to find something new to do"
+      ],
+      "1": [
+        "Did n't stick to the diet too much through the thanksgiving week but it's a little bit better. I've been trying to really monitor it"
+      ]
+    },
+    "3": {
+      "2": [
+        "I'm not ready yet to try any meds, I'd to look into some alternative options"
+      ],
+      "0": [
+        "Your hemoglobin A1c is elevated. It's at eight. I'd to see it closer to six",
+        "I'm gon na go ahead and order an echocardiogram just to recheck it. Just that heart murmur"
+      ],
+      "1": [
+        "you're doing a good job with that keep up the good work"
+      ]
+    },
+    "0": {
+      "2": [
+        "I'm gon na go ahead and increase the metformin to 1000 milligrams twice a day",
+        "that might just be from your diet recently"
+      ],
+      "1": [
+        "a slight two out of six systolic ejection murmur heard at the left base, which we've heard in the past",
+        "refer you to psychiatry not for medications, but just for some talk therapy that type of thing",
+        "no. [to questions about suicidal/homicidal ideation]",
+        "Denies chest pain, shortness of breath, belly pain, blood in your stool, weight loss"
+      ],
+      "0": [
+        "you do have one plus non-pitting edema bilaterally in your lower extremities"
+      ]
+    },
+    "2": {
+      "0": [
+        "order a hemoglobin A1c in the next couple months",
+        "order a lipid panel"
+      ]
+    }
+  }
+}

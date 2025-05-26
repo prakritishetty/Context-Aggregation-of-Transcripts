@@ -1,0 +1,25 @@
+soap_category,main_cluster,subcluster,phrase
+S,3,2,your sugars are not very controlled
+P,0,2,increase your glimepiride
+O,1,2,I'm still taking the two milligrams
+P,0,2,"take two of the pills, twice a day"
+O,1,2,"we do n't have any pasta in the house. We do n't often have bread, and if we do, we buy wheat bread"
+P,0,2,try to cut down on the number of slices you eat per day
+S,3,1,I just got new glasses
+O,1,0,he did that and i had to wait for a month to get healed up and he wrote my prescription
+S,3,0,Not happy with this lens ; it's kinda funny. The other one is good
+S,3,1,Are you taking all of those?
+S,3,1,"A couple of weeks ago, it was 116 on the dot"
+O,1,1,the feet is what we call peripheral neuropathy
+P,0,0,mildly decreased sensation in the tips of the first and second toes
+P,0,1,still smoking
+P,0,2,not ready to quit
+O,1,2,i've been coughing here lately because i've been congested
+S,3,1,it's relatively clear
+S,3,1,it takes me a little more time
+P,0,1,once in a while
+O,1,2,"Heart exam : rhythm is regular, normal rate, s1 and s2 are crisp. I do not hear any murmurs today"
+A,2,0,Extremities are without edema. Pulses are palpable on the dorsalis pedis posterial tibial. She has thickened nails
+P,0,2,Hemoglobin A1C 9.9%
+P,0,0,"Watch for low sugars, weak, shaky, sweaty"
+P,0,2,The new prescription will be for four milligrams twice a day

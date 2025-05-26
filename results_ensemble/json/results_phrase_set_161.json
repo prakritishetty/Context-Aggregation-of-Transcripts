@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "Right ankle pain.",
+    "Yesterday I was going to take out the trash and it was quite icy... I slipped and fell and I'm pretty sure I heard a pop.",
+    "Initially when I first fell I was unable to walk on it at all... today I have been able to put a little bit more weight on it but I'm still limping.",
+    "I iced it last night and kept it elevated and I also took some ibuprofen last night and this morning before coming in today.",
+    "It's a four out of ten... a six out of ten without ibuprofen and it goes down to a one with ibuprofen.",
+    "Ecchymosis over the lateral malleolus associated with some edema... positive for tenderness to palpation of the anterior lateral soft tissue... no bony tenderness... brisk capillary refill of less than three seconds... strong dorsalis pedis pulse... sensation intact to light touch.",
+    "No fracture.",
+    "Symptoms consistent with an ankle sprain of your lateral ligament complex more specifically your anterior talofibular ligament.",
+    "Keep your leg elevated... continue to ice... prescribe an air cast to stabilize the ankle... crutches to stay off the leg for a couple of days... follow up in fourteen days.",
+    "Start walking on it as tolerated",
+    "Continue taking NSAIDs/ibuprofen as needed for pain and inflammation."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    3,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "A",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.2767724096775055,
+    "calinski_harabasz_score": 4.737165452679672,
+    "davies_bouldin_score": 0.8022183879351608
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9955354332923889,
+      0.9944166541099548,
+      0.9942526817321777
+    ],
+    [
+      0.9955354332923889,
+      1.0,
+      0.9954932928085327,
+      0.9917294979095459
+    ],
+    [
+      0.9944166541099548,
+      0.9954932928085327,
+      1.0,
+      0.9945040941238403
+    ],
+    [
+      0.9942526817321777,
+      0.9917294979095459,
+      0.9945040941238403,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.18822544813156128,
+    "1": 0.04041885957121849,
+    "2": -0.1023823618888855,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Right ankle pain.",
+        "Start walking on it as tolerated"
+      ],
+      "0": [
+        "No fracture."
+      ],
+      "1": [
+        "Continue taking NSAIDs/ibuprofen as needed for pain and inflammation."
+      ]
+    },
+    "1": {
+      "2": [
+        "Yesterday I was going to take out the trash and it was quite icy... I slipped and fell and I'm pretty sure I heard a pop."
+      ],
+      "0": [
+        "Initially when I first fell I was unable to walk on it at all... today I have been able to put a little bit more weight on it but I'm still limping.",
+        "I iced it last night and kept it elevated and I also took some ibuprofen last night and this morning before coming in today."
+      ],
+      "1": [
+        "It's a four out of ten... a six out of ten without ibuprofen and it goes down to a one with ibuprofen."
+      ]
+    },
+    "2": {
+      "0": [
+        "Ecchymosis over the lateral malleolus associated with some edema... positive for tenderness to palpation of the anterior lateral soft tissue... no bony tenderness... brisk capillary refill of less than three seconds... strong dorsalis pedis pulse... sensation intact to light touch.",
+        "Keep your leg elevated... continue to ice... prescribe an air cast to stabilize the ankle... crutches to stay off the leg for a couple of days... follow up in fourteen days."
+      ]
+    },
+    "3": {
+      "0": [
+        "Symptoms consistent with an ankle sprain of your lateral ligament complex more specifically your anterior talofibular ligament."
+      ]
+    }
+  }
+}

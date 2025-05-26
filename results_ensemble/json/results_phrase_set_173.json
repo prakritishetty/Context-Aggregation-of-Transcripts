@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "Right foot pain.",
+    "Dropped a landscape brick on your foot yesterday while doing yard work.",
+    "It's a little sore today but I hurt my foot before... sometimes it'll give me trouble, feels a little sore, swells up at times.",
+    "Twenty years ago I broke my ankle... had to put in a cast... my other ankle too is sore sometimes and I've had surgery for that too.",
+    "Eleven out of ten.",
+    "The whole foot is numb... been for a long time.",
+    "I kept working... it's got swollen... my doctor told me I had to go see you.",
+    "No I feel taking the medicine.",
+    "Bruising on the bottom and top part of the foot... associated swelling... tenderness to palpation for midfoot... strong bounding dorsalis pedis pulse... capillary refill is brisk in less than three seconds.",
+    "Dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and presence of bony fragments.",
+    "Lisfranc fracture... fracture to your second metatarsal bone and the top of your foot.",
+    "You're most likely going to need surgery... plates and screws... outpatient surgery... same day... non-weight-bearing for six to eight weeks... cast and crutches.",
+    "Order an MRI just to assess if there is any injuries to those ligaments.",
+    "If we have poor bone alignment or ligament healing... losing the arch in your foot... developing arthritis.",
+    "What about putting in a cast can I just stay in the cast?",
+    "If the surgery is going to be tomorrow when am I going to get my MRI?",
+    "We'll get you your MRI this afternoon."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    3,
+    3,
+    0,
+    2,
+    3,
+    0,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17420533299446106,
+    "calinski_harabasz_score": 4.4375268287397205,
+    "davies_bouldin_score": 1.5005840756086681
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9947904348373413,
+      0.9985847473144531,
+      0.9963512420654297
+    ],
+    [
+      0.9947904348373413,
+      0.9999997615814209,
+      0.9971084594726562,
+      0.992294430732727
+    ],
+    [
+      0.9985847473144531,
+      0.9971084594726562,
+      1.000000238418579,
+      0.9963291883468628
+    ],
+    [
+      0.9963512420654297,
+      0.992294430732727,
+      0.9963291883468628,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09358082711696625,
+    "1": 0.027716150507330894,
+    "2": 0.06373327225446701,
+    "3": 0.20548564195632935
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Right foot pain."
+      ],
+      "1": [
+        "Dropped a landscape brick on your foot yesterday while doing yard work.",
+        "No I feel taking the medicine.",
+        "What about putting in a cast can I just stay in the cast?",
+        "If the surgery is going to be tomorrow when am I going to get my MRI?",
+        "We'll get you your MRI this afternoon."
+      ],
+      "0": [
+        "Eleven out of ten."
+      ]
+    },
+    "3": {
+      "2": [
+        "It's a little sore today but I hurt my foot before... sometimes it'll give me trouble, feels a little sore, swells up at times."
+      ],
+      "0": [
+        "Twenty years ago I broke my ankle... had to put in a cast... my other ankle too is sore sometimes and I've had surgery for that too."
+      ],
+      "1": [
+        "I kept working... it's got swollen... my doctor told me I had to go see you."
+      ]
+    },
+    "2": {
+      "2": [
+        "The whole foot is numb... been for a long time."
+      ],
+      "0": [
+        "Lisfranc fracture... fracture to your second metatarsal bone and the top of your foot.",
+        "Order an MRI just to assess if there is any injuries to those ligaments."
+      ],
+      "1": [
+        "You're most likely going to need surgery... plates and screws... outpatient surgery... same day... non-weight-bearing for six to eight weeks... cast and crutches.",
+        "If we have poor bone alignment or ligament healing... losing the arch in your foot... developing arthritis."
+      ]
+    },
+    "1": {
+      "0": [
+        "Bruising on the bottom and top part of the foot... associated swelling... tenderness to palpation for midfoot... strong bounding dorsalis pedis pulse... capillary refill is brisk in less than three seconds.",
+        "Dorsal displacement of the base of the second metatarsal with a three millimeter separation of the first and second metatarsal bases and presence of bony fragments."
+      ]
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "phrases": [
+    "Bryan is a 55-year-old male with a past medical history significant for prior discectomy, who presents with back pain.",
+    "My wife made me push a refrigerator out through the other room, and when I was helping to move it, I felt something in my back on the lower side.",
+    "This was about five days ago.",
+    "It hurts to bend over.",
+    "I have that history of discectomy.",
+    "I'm just worried that something happened.",
+    "I have been taking ibuprofen... I tried once Tylenol and ibuprofen at the same time, and that gave me some relief.",
+    "No, nothing significant that.",
+    "No numbness or tingling in legs.",
+    "No problems with bladder or bowels.",
+    "Pain to palpation of the lumbar spine... decreased flexion and extension of the back... positive straight leg raise on the right... strength is good bilaterally in lower extremities.",
+    "Vital signs look really good... blood pressure's nice and controlled.",
+    "Labs here all look good.",
+    "X-ray of your lumbar spine... good bony alignment. I don't see any fracture or anything.",
+    "Lumbar strain. I don't think anything else is going on.",
+    "I don't think [it's related to the prior discectomy].",
+    "Order an MRI just to be sure.",
+    "Prescribe meloxicam 15 mg once a day... Ultram 50 mg every four hours as needed.",
+    "Refer you to physical therapy once we get the MRI results back.",
+    "Discontinue ibuprofen... may continue Tylenol if you wish.",
+    "It's something that we can fix.",
+    "The MRI will confirm, but I don't think there's anything wrong with the area where you had surgery before."
+  ],
+  "cluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    3,
+    1,
+    1,
+    0,
+    3,
+    3,
+    3,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    3,
+    0,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17007189989089966,
+    "calinski_harabasz_score": 5.26883406266558,
+    "davies_bouldin_score": 1.289601138534045
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9974550008773804,
+      0.9922531843185425,
+      0.998379647731781
+    ],
+    [
+      0.9974550008773804,
+      0.9999998807907104,
+      0.9923104643821716,
+      0.997560977935791
+    ],
+    [
+      0.9922531843185425,
+      0.9923104643821716,
+      1.000000238418579,
+      0.9932060241699219
+    ],
+    [
+      0.998379647731781,
+      0.997560977935791,
+      0.9932060241699219,
+      0.9999996423721313
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.13069675862789154,
+    "1": 0.11456258594989777,
+    "2": 0.0,
+    "3": -0.05091738700866699
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Bryan is a 55-year-old male with a past medical history significant for prior discectomy, who presents with back pain."
+      ]
+    },
+    "1": {
+      "2": [
+        "My wife made me push a refrigerator out through the other room, and when I was helping to move it, I felt something in my back on the lower side."
+      ],
+      "1": [
+        "I'm just worried that something happened.",
+        "Vital signs look really good... blood pressure's nice and controlled.",
+        "X-ray of your lumbar spine... good bony alignment. I don't see any fracture or anything.",
+        "Lumbar strain. I don't think anything else is going on.",
+        "I don't think [it's related to the prior discectomy].",
+        "The MRI will confirm, but I don't think there's anything wrong with the area where you had surgery before."
+      ],
+      "0": [
+        "I have been taking ibuprofen... I tried once Tylenol and ibuprofen at the same time, and that gave me some relief."
+      ]
+    },
+    "0": {
+      "2": [
+        "This was about five days ago."
+      ],
+      "0": [
+        "It hurts to bend over.",
+        "No, nothing significant that.",
+        "Labs here all look good.",
+        "It's something that we can fix."
+      ],
+      "1": [
+        "Order an MRI just to be sure.",
+        "Refer you to physical therapy once we get the MRI results back."
+      ]
+    },
+    "3": {
+      "2": [
+        "I have that history of discectomy."
+      ],
+      "0": [
+        "No numbness or tingling in legs.",
+        "No problems with bladder or bowels."
+      ],
+      "1": [
+        "Pain to palpation of the lumbar spine... decreased flexion and extension of the back... positive straight leg raise on the right... strength is good bilaterally in lower extremities.",
+        "Prescribe meloxicam 15 mg once a day... Ultram 50 mg every four hours as needed.",
+        "Discontinue ibuprofen... may continue Tylenol if you wish."
+      ]
+    }
+  }
+}

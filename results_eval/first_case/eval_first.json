@@ -1,0 +1,936 @@
+{
+    "raw_results": {
+        "structure": [
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": true
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            },
+            {
+                "section_presence": {
+                    "S": true,
+                    "O": true,
+                    "A": true,
+                    "P": true
+                },
+                "order_correct": false
+            }
+        ],
+        "qa_comb": [
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 1.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            },
+            {
+                "accuracy": 0.0,
+                "n_questions": 1
+            }
+        ],
+        "clin_comb": [
+            {
+                "bertscore_f1": 0.1811457946896553,
+                "embedding_similarity": 0.23287147283554077
+            },
+            {
+                "bertscore_f1": 0.20731846349579947,
+                "embedding_similarity": 0.5432950258255005
+            },
+            {
+                "bertscore_f1": 0.18588500320911408,
+                "embedding_similarity": 0.10949358344078064
+            },
+            {
+                "bertscore_f1": 0.1580373677942488,
+                "embedding_similarity": 0.241556316614151
+            },
+            {
+                "bertscore_f1": 0.29146772623062134,
+                "embedding_similarity": 0.161727175116539
+            },
+            {
+                "bertscore_f1": 0.2073411558355604,
+                "embedding_similarity": 0.25346410274505615
+            },
+            {
+                "bertscore_f1": 0.18217110261321068,
+                "embedding_similarity": 0.3186303973197937
+            },
+            {
+                "bertscore_f1": 0.17601412907242775,
+                "embedding_similarity": 0.12966108322143555
+            },
+            {
+                "bertscore_f1": 0.15888391435146332,
+                "embedding_similarity": 0.2039012461900711
+            },
+            {
+                "bertscore_f1": 0.14855747090445626,
+                "embedding_similarity": 0.3202149271965027
+            },
+            {
+                "bertscore_f1": 0.17972729756281927,
+                "embedding_similarity": 0.3461776375770569
+            },
+            {
+                "bertscore_f1": 0.2316196049962725,
+                "embedding_similarity": 0.5485883951187134
+            },
+            {
+                "bertscore_f1": 0.231722286769322,
+                "embedding_similarity": 0.5124961137771606
+            },
+            {
+                "bertscore_f1": 0.22214798463715446,
+                "embedding_similarity": 0.4208219349384308
+            },
+            {
+                "bertscore_f1": 0.14246136801583426,
+                "embedding_similarity": 0.5088036060333252
+            },
+            {
+                "bertscore_f1": 0.14388980184282577,
+                "embedding_similarity": 0.5761507749557495
+            },
+            {
+                "bertscore_f1": 0.17283039291699728,
+                "embedding_similarity": 0.5128054618835449
+            },
+            {
+                "bertscore_f1": 0.12990890608893502,
+                "embedding_similarity": 0.6588255167007446
+            },
+            {
+                "bertscore_f1": 0.15011855959892273,
+                "embedding_similarity": 0.5257663130760193
+            },
+            {
+                "bertscore_f1": 0.2732164621353149,
+                "embedding_similarity": 0.33479681611061096
+            }
+        ],
+        "perplexity": [
+            {
+                "perplexity": 26.137086868286133
+            },
+            {
+                "perplexity": 20.403335571289062
+            },
+            {
+                "perplexity": 30.047151565551758
+            },
+            {
+                "perplexity": 22.510324478149414
+            },
+            {
+                "perplexity": 24.19731330871582
+            },
+            {
+                "perplexity": 24.778844833374023
+            },
+            {
+                "perplexity": 26.638046264648438
+            },
+            {
+                "perplexity": 19.4036922454834
+            },
+            {
+                "perplexity": 28.219709396362305
+            },
+            {
+                "perplexity": 21.217241287231445
+            },
+            {
+                "perplexity": 29.817951202392578
+            },
+            {
+                "perplexity": 27.40118980407715
+            },
+            {
+                "perplexity": 36.1367073059082
+            },
+            {
+                "perplexity": 20.84197998046875
+            },
+            {
+                "perplexity": 24.892005920410156
+            },
+            {
+                "perplexity": 23.405712127685547
+            },
+            {
+                "perplexity": 25.81827163696289
+            },
+            {
+                "perplexity": 33.33757019042969
+            },
+            {
+                "perplexity": 25.10463523864746
+            },
+            {
+                "perplexity": 22.017969131469727
+            }
+        ],
+        "llm": [
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 3,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 3,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 3,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            },
+            {
+                "Subjective": 5,
+                "Objective": 5,
+                "Assessment": 5,
+                "Plan": 5,
+                "Coherence": 5,
+                "Fluency": 5
+            }
+        ]
+    },
+    "dataframe_results": [
+        {
+            "sample_id": 0,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.1811457946896553,
+            "embedding_similarity": 0.23287147283554077,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 1,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.20731846349579947,
+            "embedding_similarity": 0.5432950258255005,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 2,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.18588500320911408,
+            "embedding_similarity": 0.10949358344078064,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 3,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.1580373677942488,
+            "embedding_similarity": 0.241556316614151,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 4,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.29146772623062134,
+            "embedding_similarity": 0.161727175116539,
+            "llm_Subjective": 5,
+            "llm_Objective": 3,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 5,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.2073411558355604,
+            "embedding_similarity": 0.25346410274505615,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 6,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.18217110261321068,
+            "embedding_similarity": 0.3186303973197937,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 7,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.17601412907242775,
+            "embedding_similarity": 0.12966108322143555,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 8,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.15888391435146332,
+            "embedding_similarity": 0.2039012461900711,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 9,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.14855747090445626,
+            "embedding_similarity": 0.3202149271965027,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 10,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.17972729756281927,
+            "embedding_similarity": 0.3461776375770569,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 11,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.2316196049962725,
+            "embedding_similarity": 0.5485883951187134,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 12,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.231722286769322,
+            "embedding_similarity": 0.5124961137771606,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 13,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.22214798463715446,
+            "embedding_similarity": 0.4208219349384308,
+            "llm_Subjective": 5,
+            "llm_Objective": 3,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 14,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.14246136801583426,
+            "embedding_similarity": 0.5088036060333252,
+            "llm_Subjective": 5,
+            "llm_Objective": 3,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 15,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 1.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.14388980184282577,
+            "embedding_similarity": 0.5761507749557495,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 16,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.17283039291699728,
+            "embedding_similarity": 0.5128054618835449,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 17,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": true,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.12990890608893502,
+            "embedding_similarity": 0.6588255167007446,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 18,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.15011855959892273,
+            "embedding_similarity": 0.5257663130760193,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        },
+        {
+            "sample_id": 19,
+            "section_presence_S": true,
+            "section_presence_O": true,
+            "section_presence_A": true,
+            "section_presence_P": true,
+            "order_correct": false,
+            "qa_accuracy": 0.0,
+            "qa_n_questions": 1,
+            "bertscore_f1": 0.2732164621353149,
+            "embedding_similarity": 0.33479681611061096,
+            "llm_Subjective": 5,
+            "llm_Objective": 5,
+            "llm_Assessment": 5,
+            "llm_Plan": 5,
+            "llm_Coherence": 5,
+            "llm_Fluency": 5
+        }
+    ]
+}

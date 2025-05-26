@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,1,I heard a snap and instant pain when I was on the trampoline.
+S,0,2,That's the first time I'd ever done something like that.
+S,0,0,I tried to elevate it and that was about it.
+S,0,0,The Tylenol didn't really help.
+S,0,1,My blood pressure is 180 over 80.
+S,0,2,I don't monitor my blood pressures at home.
+S,0,1,I check my blood sugars 4 to 5 times a week.
+S,0,2,I’m not consistent with exercise.
+S,0,2,I’m trying to watch my carbs but not counting.
+P,1,2,There’s ecchymosis and edema along the lateral aspect of the knee.
+P,1,1,"No effusion and decent range of motion, but pain with movement."
+O,2,0,The X-ray showed no evidence of fracture or bony abnormality.
+P,1,0,Prescribe meloxicam 15 mg daily for pain and swelling.
+P,1,1,Refer to physical therapy to strengthen muscles around the knee.
+A,3,0,Order an echocardiogram to evaluate hypertension.
+P,1,0,Continue lisinopril 20 mg but may need medication adjustment.
+A,3,0,Order an A1C and lipid panel for diabetes management.
+P,1,0,Continue metformin 500 mg as prescribed.

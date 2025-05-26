@@ -1,0 +1,143 @@
+{
+  "phrases": [
+    "Right knee pain after slipping and falling, feeling a pop, swelling, and pain during flexion/extension.",
+    "Accidental slip and fall on property a week ago caused knee issues.",
+    "Pain score 4/5 during mobility, minimal pain when stationary.",
+    "Pain to palpation of the medial knee, limited flexion/extension, edema, and effusion noted.",
+    "X-ray shows no fractures or bony abnormalities.",
+    "Diagnosed with medial collateral ligament (MCL) strain.",
+    "Prescribed ibuprofen 800 mg twice daily, knee brace, icing (20 mins, 3-4x/day), and elevation/rest for 2-3 weeks.",
+    "Continuing lisinopril 20 mg daily; diet non-compliant, referred to nutritionist for sodium intake reduction.",
+    "Grade 2/6 systolic ejection murmur heard on heart exam (pre-existing).",
+    "Avoid strenuous activity; family assistance advised for yard work."
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    3,
+    1,
+    0,
+    2,
+    1,
+    0,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "P",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.08536873757839203,
+    "calinski_harabasz_score": 2.371783331423176,
+    "davies_bouldin_score": 1.1964666488896345
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9967454671859741,
+      0.9953163862228394,
+      0.9983728528022766
+    ],
+    [
+      0.9967454671859741,
+      1.0,
+      0.9954854249954224,
+      0.9983542561531067
+    ],
+    [
+      0.9953163862228394,
+      0.9954854249954224,
+      1.0000001192092896,
+      0.9960677027702332
+    ],
+    [
+      0.9983728528022766,
+      0.9983542561531067,
+      0.9960677027702332,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.04024186357855797,
+    "1": -0.04268703982234001,
+    "2": 0.0,
+    "3": 0.09251383692026138
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "Right knee pain after slipping and falling, feeling a pop, swelling, and pain during flexion/extension."
+      ],
+      "0": [
+        "Pain score 4/5 during mobility, minimal pain when stationary."
+      ],
+      "1": [
+        "Grade 2/6 systolic ejection murmur heard on heart exam (pre-existing)."
+      ]
+    },
+    "0": {
+      "2": [
+        "Accidental slip and fall on property a week ago caused knee issues."
+      ],
+      "0": [
+        "X-ray shows no fractures or bony abnormalities."
+      ],
+      "1": [
+        "Continuing lisinopril 20 mg daily; diet non-compliant, referred to nutritionist for sodium intake reduction.",
+        "Avoid strenuous activity; family assistance advised for yard work."
+      ]
+    },
+    "1": {
+      "0": [
+        "Pain to palpation of the medial knee, limited flexion/extension, edema, and effusion noted.",
+        "Prescribed ibuprofen 800 mg twice daily, knee brace, icing (20 mins, 3-4x/day), and elevation/rest for 2-3 weeks."
+      ]
+    },
+    "2": {
+      "0": [
+        "Diagnosed with medial collateral ligament (MCL) strain."
+      ]
+    }
+  }
+}

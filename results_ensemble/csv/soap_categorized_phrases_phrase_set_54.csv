@@ -1,0 +1,22 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,1,I passed what looked like two small stones last week after I scheduled this appointment.
+S,0,2,"For the past six weeks, I've had a few episodes of bright red urine the color of cherry Kool-Aid."
+S,0,1,"Last week, I was constantly having to pee and it hurt something terrible."
+A,3,2,"At the time, I'd say an eight [on a pain scale of 0-10]."
+S,0,0,"No, after passing those stones, things have felt a lot better."
+P,2,2,There is a six millimeter left renal stone non-obstructing.
+A,3,0,You should drink about half of your body weight in ounces of water a day.
+S,0,0,I drink more Mountain Dew than anything.
+O,1,2,"You should avoid foods rich in sodium, oxalate, and animal protein."
+O,1,0,"Foods like spinach, chocolate, beets, rhubarb, and soy products."
+S,0,1,I'll do whatever it takes to try to avoid getting these stones again.
+A,3,0,"If you experience any severe pain or bright red blood in your urine, you should go to the emergency room."
+S,0,1,I see you're only taking Alavert 10 milligrams a day and have no drug allergies.
+A,3,0,The blood in your urine was due to the kidney stones.
+S,0,1,"Since it's not obstructing or causing pain, I don't recommend any surgical intervention at this time."
+S,0,1,Here's a handout that you can look over. It goes over the dietary recommendations and what to avoid.
+O,1,1,"Follow up in 1 year with renal ultrasound, sooner should symptoms arise."
+A,3,1,No flank pain or tenderness in your lower back?
+P,2,0,The left kidney is 10.8 centimeters in length and five centimeters wide. There is a six millimeter left renal stone non-obstructing.
+P,2,1,Pre-void 533 milliliters and 0 milliliters post-void.
+O,1,1,"Urine dipstick today: negative for leukocytes, nitrates, protein, ketone, bilirubin, and glucose. Trace blood, intact."

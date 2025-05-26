@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "I'm thankful to be alive but definitely struggling and definitely scary time for me.",
+    "I've been home a couple of weeks... doing very light work... taking my medication... feel better than I did.",
+    "When I go up and downstairs I do feel I have shortness of breath.",
+    "I take it twice a day every twelve hours",
+    "I take the baby aspirin at night is that...",
+    "Blood pressure looks good... 127 over 60.",
+    "slight three out of six systolic ejection murmur heard at the left base.",
+    "ejection fraction was at about fifty percent which is low normal but not bad.",
+    "mild mitral regurgitation.",
+    "Continue on your brilinta... for at least one year... aspirin lifelong.",
+    "enroll you into cardiac rehab... dietary education and counseling.",
+    "resume swimming... do a few laps here and there.",
+    "order a some liver function studies and a lipid panel... see you again in six weeks.",
+    "I wan na go ahead and put in another echocardiogram for about six months.",
+    "No that's it thank you very much"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    1,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19416950643062592,
+    "calinski_harabasz_score": 3.184632589941272,
+    "davies_bouldin_score": 1.0662394038452219
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9963197112083435,
+      0.9975621700286865,
+      0.9958441257476807
+    ],
+    [
+      0.9963197112083435,
+      1.0000003576278687,
+      0.9969722032546997,
+      0.9948840141296387
+    ],
+    [
+      0.9975621700286865,
+      0.9969722032546997,
+      1.000000238418579,
+      0.9945394992828369
+    ],
+    [
+      0.9958441257476807,
+      0.9948840141296387,
+      0.9945394992828369,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0146271251142025,
+    "1": 0.26942867040634155,
+    "2": 0.14239336550235748,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I'm thankful to be alive but definitely struggling and definitely scary time for me.",
+        "I've been home a couple of weeks... doing very light work... taking my medication... feel better than I did.",
+        "When I go up and downstairs I do feel I have shortness of breath."
+      ],
+      "0": [
+        "I take it twice a day every twelve hours",
+        "I take the baby aspirin at night is that...",
+        "Blood pressure looks good... 127 over 60.",
+        "I wan na go ahead and put in another echocardiogram for about six months.",
+        "No that's it thank you very much"
+      ],
+      "1": [
+        "resume swimming... do a few laps here and there."
+      ]
+    },
+    "1": {
+      "0": [
+        "slight three out of six systolic ejection murmur heard at the left base.",
+        "mild mitral regurgitation."
+      ]
+    },
+    "3": {
+      "0": [
+        "ejection fraction was at about fifty percent which is low normal but not bad."
+      ]
+    },
+    "2": {
+      "2": [
+        "Continue on your brilinta... for at least one year... aspirin lifelong."
+      ],
+      "0": [
+        "enroll you into cardiac rehab... dietary education and counseling."
+      ],
+      "1": [
+        "order a some liver function studies and a lipid panel... see you again in six weeks."
+      ]
+    }
+  }
+}

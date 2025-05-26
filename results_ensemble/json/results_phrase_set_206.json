@@ -1,0 +1,203 @@
+{
+  "phrases": [
+    "I really don't know where I got it but I do get out in the woods and I do spend a lot of time out in the yard but I've got a tick bite around my knee and it's been over a week and it just burns and just quite annoying.",
+    "I have not [fever or chills], it just feels warm on that spot.",
+    "Nothing other than my typical arthritic pain [regarding joint pain].",
+    "I did go hunting not long ago, couple of weeks ago.",
+    "There is evidence of a bull\u2019s eye rash over the knee",
+    "My concern is that you might have Lyme disease based on the presentation of your knee",
+    "I'm going to start you on doxycycline 100 mg twice a day for about three weeks",
+    "I'm also going to send a Lyme titer as a Western blot to see if you do in fact have Lyme disease",
+    "Your blood sugars are running in the one twenties",
+    "I\u2019d like to avoid intravenous antibiotics which we can avoid but I wanted to see how you do with this",
+    "Continue lisinopril 20 mg once a day",
+    "Order a lipid panel just to make sure that everything is with your cholesterol",
+    "Order a hemoglobin A1c and continue you on the metformin 1000 mg twice daily",
+    "I can go ahead and order a basic metabolic panel just to make sure that your kidney function is stable",
+    "Full range of motion of the knee",
+    "There is pain to palpation of the anterior knee",
+    "Denies any fever, chills, flu-like symptoms, body aches, or trouble waking",
+    "Reports warmth on the right knee",
+    "Reports headache",
+    "Blood pressure is 122/70 mmHg, heart rate 67 bpm, temperature 98.4\u00b0F",
+    "Neck is supple without thyromegaly or lymphadenopathy",
+    "Lungs clear bilaterally",
+    "Heart has regular rate and rhythm, no murmurs, gallops, or rubs",
+    "Erythema, edema, and fluctuance over the right patella"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    0,
+    3,
+    3,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    2,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    2,
+    1,
+    0,
+    1,
+    1,
+    1,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16002294421195984,
+    "calinski_harabasz_score": 4.868726768612382,
+    "davies_bouldin_score": 1.5454427060601967
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9966338872909546,
+      0.992733359336853,
+      0.9971070289611816
+    ],
+    [
+      0.9966338872909546,
+      1.000000238418579,
+      0.9959859848022461,
+      0.9982632398605347
+    ],
+    [
+      0.992733359336853,
+      0.9959859848022461,
+      1.0000001192092896,
+      0.9948436617851257
+    ],
+    [
+      0.9971070289611816,
+      0.9982632398605347,
+      0.9948436617851257,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.030837031081318855,
+    "1": -0.004200537223368883,
+    "2": 0.05709639936685562,
+    "3": -0.04757169634103775
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I really don't know where I got it but I do get out in the woods and I do spend a lot of time out in the yard but I've got a tick bite around my knee and it's been over a week and it just burns and just quite annoying."
+      ],
+      "1": [
+        "I have not [fever or chills], it just feels warm on that spot.",
+        "My concern is that you might have Lyme disease based on the presentation of your knee",
+        "I'm going to start you on doxycycline 100 mg twice a day for about three weeks",
+        "I'm also going to send a Lyme titer as a Western blot to see if you do in fact have Lyme disease",
+        "I\u2019d like to avoid intravenous antibiotics which we can avoid but I wanted to see how you do with this"
+      ],
+      "0": [
+        "Nothing other than my typical arthritic pain [regarding joint pain].",
+        "I did go hunting not long ago, couple of weeks ago."
+      ]
+    },
+    "1": {
+      "0": [
+        "There is evidence of a bull\u2019s eye rash over the knee",
+        "Denies any fever, chills, flu-like symptoms, body aches, or trouble waking",
+        "Blood pressure is 122/70 mmHg, heart rate 67 bpm, temperature 98.4\u00b0F",
+        "Neck is supple without thyromegaly or lymphadenopathy",
+        "Heart has regular rate and rhythm, no murmurs, gallops, or rubs"
+      ],
+      "2": [
+        "Full range of motion of the knee",
+        "There is pain to palpation of the anterior knee",
+        "Reports warmth on the right knee"
+      ],
+      "1": [
+        "Erythema, edema, and fluctuance over the right patella"
+      ]
+    },
+    "3": {
+      "2": [
+        "Your blood sugars are running in the one twenties"
+      ],
+      "0": [
+        "Continue lisinopril 20 mg once a day"
+      ],
+      "1": [
+        "Order a lipid panel just to make sure that everything is with your cholesterol",
+        "Order a hemoglobin A1c and continue you on the metformin 1000 mg twice daily",
+        "I can go ahead and order a basic metabolic panel just to make sure that your kidney function is stable"
+      ]
+    },
+    "2": {
+      "0": [
+        "Reports headache",
+        "Lungs clear bilaterally"
+      ]
+    }
+  }
+}

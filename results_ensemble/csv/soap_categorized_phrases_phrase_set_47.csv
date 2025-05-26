@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,"Cheryl is a 34-year-old female with a past medical history significant for hypertension, who presents today with back pain."
+O,1,2,"I’ve been walking a lot lately. I’ve been walking 30 minutes to an hour or a day. And all of a sudden, when I was walking, my back just seized up on me."
+P,3,0,It was about six days ago.
+O,1,0,"I’ve been taking ibuprofen, and I’ve been putting some heat on it. But it’s still pretty stiff."
+O,1,0,"I have been lifting more, probably around three times a week. I don’t know if it was because I was doing deadlifts that day and walked."
+P,3,0,It was the lower back. Both equally.
+O,1,0,"No, I haven’t felt anything that [numbness/tingling]. No weakness in my lower extremities."
+S,0,0,"On physical examination, everything looks good. On your back exam, you do have some pain to palpation on the lateral aspect of your lumbar spine, and you do have pain with flexion and extension, and you have a negative straight leg raise."
+S,0,1,Back x-ray reveals good boney alignment. There’s no obvious fracture.
+O,1,1,Your labs… all look great. There’s no elevated white blood cell count. There’s no signs of infection.
+O,1,0,"I want to prescribe meloxicam, 15 milligrams once a day. I want you to ice the area, and you can also apply heat sometimes. I’m going to refer you to physical therapy just to do some strengthening exercises of your back."
+S,0,0,"Regarding her hypertension, she states she has been doing readings at home and that has been looking great. She has been watching her diet which has helped. She is taking lisinopril."
+O,1,0,"You’re doing a really good job with [blood pressure]. I want you to continue on the lisinopril, 10 milligrams a day."
+A,2,0,"The patient endorses nasal congestion, which she attributes to her seasonal allergies."
+A,2,0,The patient understands and agrees with the recommended medical treatment plan.

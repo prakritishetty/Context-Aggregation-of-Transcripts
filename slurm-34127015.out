@@ -1,0 +1,334 @@
+Job ID: 34127015
+Node: gypsum-gpu096
+Start time: Sun May 11 11:38:45 PM UTC 2025
+Installing requirements
+Requirement already satisfied: datasets in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (3.5.0)
+Requirement already satisfied: transformers>=4.30.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (4.51.3)
+Requirement already satisfied: vllm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.5.4)
+Requirement already satisfied: huggingface_hub in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (0.30.2)
+Requirement already satisfied: pandas>=1.3.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (2.2.3)
+Requirement already satisfied: tqdm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (4.67.1)
+Requirement already satisfied: accelerate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (1.6.0)
+Collecting openai>=1.0.0 (from -r requirements.txt (line 8))
+  Using cached openai-1.78.0-py3-none-any.whl.metadata (25 kB)
+Requirement already satisfied: torch>=2.0.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (2.4.0)
+Requirement already satisfied: bert-score in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (0.3.13)
+Requirement already satisfied: numpy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (1.26.4)
+Requirement already satisfied: scikit-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (1.6.1)
+Requirement already satisfied: matplotlib in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 13)) (3.10.1)
+Requirement already satisfied: seaborn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 14)) (0.13.2)
+Requirement already satisfied: scipy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 15)) (1.15.2)
+Requirement already satisfied: umap-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 16)) (0.5.7)
+Requirement already satisfied: evaluate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 17)) (0.4.3)
+Requirement already satisfied: sentence-transformers in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (4.1.0)
+Requirement already satisfied: filelock in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.18.0)
+Requirement already satisfied: pyarrow>=15.0.0 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (19.0.1)
+Requirement already satisfied: dill<0.3.9,>=0.3.0 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (0.3.8)
+Requirement already satisfied: requests>=2.32.2 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (2.32.3)
+Requirement already satisfied: xxhash in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.5.0)
+Requirement already satisfied: multiprocess<0.70.17 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (0.70.16)
+Requirement already satisfied: fsspec<=2024.12.0,>=2023.1.0 in ./myenv/lib/python3.12/site-packages (from fsspec[http]<=2024.12.0,>=2023.1.0->datasets->-r requirements.txt (line 1)) (2024.12.0)
+Requirement already satisfied: aiohttp in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (3.11.18)
+Requirement already satisfied: packaging in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (25.0)
+Requirement already satisfied: pyyaml>=5.1 in ./myenv/lib/python3.12/site-packages (from datasets->-r requirements.txt (line 1)) (6.0.2)
+Requirement already satisfied: regex!=2019.12.17 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (2024.11.6)
+Requirement already satisfied: tokenizers<0.22,>=0.21 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (0.21.1)
+Requirement already satisfied: safetensors>=0.4.3 in ./myenv/lib/python3.12/site-packages (from transformers>=4.30.0->-r requirements.txt (line 2)) (0.5.3)
+Requirement already satisfied: cmake>=3.21 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (4.0.2)
+Requirement already satisfied: ninja in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (1.11.1.4)
+Requirement already satisfied: psutil in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (7.0.0)
+Requirement already satisfied: sentencepiece in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.2.0)
+Requirement already satisfied: py-cpuinfo in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (9.0.0)
+Requirement already satisfied: fastapi in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.115.12)
+Requirement already satisfied: uvicorn[standard] in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.34.2)
+Requirement already satisfied: pydantic>=2.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.11.3)
+Requirement already satisfied: pillow in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (11.2.1)
+Requirement already satisfied: prometheus-client>=0.18.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.21.1)
+Requirement already satisfied: prometheus-fastapi-instrumentator>=7.0.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (7.1.0)
+Requirement already satisfied: tiktoken>=0.6.0 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.9.0)
+Requirement already satisfied: lm-format-enforcer==0.10.3 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.10.3)
+Requirement already satisfied: outlines<0.1,>=0.0.43 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.0.46)
+Requirement already satisfied: typing-extensions in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (4.13.2)
+Requirement already satisfied: pyzmq in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (26.4.0)
+Requirement already satisfied: ray>=2.9 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.43.0)
+Requirement already satisfied: nvidia-ml-py in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (12.575.51)
+Requirement already satisfied: torchvision==0.19 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.19.0)
+Requirement already satisfied: xformers==0.0.27.post2 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (0.0.27.post2)
+Requirement already satisfied: vllm-flash-attn==2.6.1 in ./myenv/lib/python3.12/site-packages (from vllm->-r requirements.txt (line 3)) (2.6.1)
+Requirement already satisfied: sympy in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (1.13.1)
+Requirement already satisfied: networkx in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.4.2)
+Requirement already satisfied: jinja2 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.1.6)
+Requirement already satisfied: setuptools in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (79.0.1)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==9.1.0.70 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.20.5 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (2.20.5)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (12.1.105)
+Requirement already satisfied: triton==3.0.0 in ./myenv/lib/python3.12/site-packages (from torch>=2.0.0->-r requirements.txt (line 9)) (3.0.0)
+Requirement already satisfied: interegular>=0.3.2 in ./myenv/lib/python3.12/site-packages (from lm-format-enforcer==0.10.3->vllm->-r requirements.txt (line 3)) (0.3.3)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in ./myenv/lib/python3.12/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=2.0.0->-r requirements.txt (line 9)) (12.4.127)
+Requirement already satisfied: python-dateutil>=2.8.2 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in ./myenv/lib/python3.12/site-packages (from pandas>=1.3.0->-r requirements.txt (line 5)) (2025.2)
+Requirement already satisfied: anyio<5,>=3.5.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (4.9.0)
+Requirement already satisfied: distro<2,>=1.7.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (1.9.0)
+Requirement already satisfied: httpx<1,>=0.23.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (0.28.1)
+Requirement already satisfied: jiter<1,>=0.4.0 in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (0.9.0)
+Requirement already satisfied: sniffio in ./myenv/lib/python3.12/site-packages (from openai>=1.0.0->-r requirements.txt (line 8)) (1.3.1)
+Requirement already satisfied: joblib>=1.2.0 in ./myenv/lib/python3.12/site-packages (from scikit-learn->-r requirements.txt (line 12)) (1.4.2)
+Requirement already satisfied: threadpoolctl>=3.1.0 in ./myenv/lib/python3.12/site-packages (from scikit-learn->-r requirements.txt (line 12)) (3.6.0)
+Requirement already satisfied: contourpy>=1.0.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (4.57.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in ./myenv/lib/python3.12/site-packages (from matplotlib->-r requirements.txt (line 13)) (3.2.3)
+Requirement already satisfied: numba>=0.51.2 in ./myenv/lib/python3.12/site-packages (from umap-learn->-r requirements.txt (line 16)) (0.61.2)
+Requirement already satisfied: pynndescent>=0.5 in ./myenv/lib/python3.12/site-packages (from umap-learn->-r requirements.txt (line 16)) (0.5.13)
+Requirement already satisfied: idna>=2.8 in ./myenv/lib/python3.12/site-packages (from anyio<5,>=3.5.0->openai>=1.0.0->-r requirements.txt (line 8)) (3.10)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.1.2 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (25.3.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.6.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (6.4.3)
+Requirement already satisfied: propcache>=0.2.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (0.3.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./myenv/lib/python3.12/site-packages (from aiohttp->datasets->-r requirements.txt (line 1)) (1.20.0)
+Requirement already satisfied: certifi in ./myenv/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (2025.4.26)
+Requirement already satisfied: httpcore==1.* in ./myenv/lib/python3.12/site-packages (from httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (1.0.9)
+Requirement already satisfied: h11>=0.16 in ./myenv/lib/python3.12/site-packages (from httpcore==1.*->httpx<1,>=0.23.0->openai>=1.0.0->-r requirements.txt (line 8)) (0.16.0)
+Requirement already satisfied: llvmlite<0.45,>=0.44.0dev0 in ./myenv/lib/python3.12/site-packages (from numba>=0.51.2->umap-learn->-r requirements.txt (line 16)) (0.44.0)
+Requirement already satisfied: lark in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (1.2.2)
+Requirement already satisfied: nest-asyncio in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (1.6.0)
+Requirement already satisfied: cloudpickle in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (3.1.1)
+Requirement already satisfied: diskcache in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (5.6.3)
+Requirement already satisfied: referencing in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (0.36.2)
+Requirement already satisfied: jsonschema in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (4.23.0)
+Requirement already satisfied: pycountry in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (24.6.1)
+Requirement already satisfied: pyairports in ./myenv/lib/python3.12/site-packages (from outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (2.1.1)
+Requirement already satisfied: starlette<1.0.0,>=0.30.0 in ./myenv/lib/python3.12/site-packages (from prometheus-fastapi-instrumentator>=7.0.0->vllm->-r requirements.txt (line 3)) (0.46.2)
+Requirement already satisfied: annotated-types>=0.6.0 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.1 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (2.33.1)
+Requirement already satisfied: typing-inspection>=0.4.0 in ./myenv/lib/python3.12/site-packages (from pydantic>=2.0->vllm->-r requirements.txt (line 3)) (0.4.0)
+Requirement already satisfied: six>=1.5 in ./myenv/lib/python3.12/site-packages (from python-dateutil>=2.8.2->pandas>=1.3.0->-r requirements.txt (line 5)) (1.17.0)
+Requirement already satisfied: click>=7.0 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (8.1.8)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (1.1.0)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in ./myenv/lib/python3.12/site-packages (from ray>=2.9->vllm->-r requirements.txt (line 3)) (4.25.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in ./myenv/lib/python3.12/site-packages (from requests>=2.32.2->datasets->-r requirements.txt (line 1)) (3.4.1)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./myenv/lib/python3.12/site-packages (from requests>=2.32.2->datasets->-r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: MarkupSafe>=2.0 in ./myenv/lib/python3.12/site-packages (from jinja2->torch>=2.0.0->-r requirements.txt (line 9)) (3.0.2)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./myenv/lib/python3.12/site-packages (from sympy->torch>=2.0.0->-r requirements.txt (line 9)) (1.3.0)
+Requirement already satisfied: httptools>=0.6.3 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (0.6.4)
+Requirement already satisfied: python-dotenv>=0.13 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (1.1.0)
+Requirement already satisfied: uvloop!=0.15.0,!=0.15.1,>=0.14.0 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (0.21.0)
+Requirement already satisfied: watchfiles>=0.13 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (1.0.5)
+Requirement already satisfied: websockets>=10.4 in ./myenv/lib/python3.12/site-packages (from uvicorn[standard]->vllm->-r requirements.txt (line 3)) (15.0.1)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./myenv/lib/python3.12/site-packages (from jsonschema->outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (2025.4.1)
+Requirement already satisfied: rpds-py>=0.7.1 in ./myenv/lib/python3.12/site-packages (from jsonschema->outlines<0.1,>=0.0.43->vllm->-r requirements.txt (line 3)) (0.24.0)
+Using cached openai-1.78.0-py3-none-any.whl (680 kB)
+Installing collected packages: openai
+  Attempting uninstall: openai
+    Found existing installation: openai 0.28.0
+    Uninstalling openai-0.28.0:
+      Successfully uninstalled openai-0.28.0
+Successfully installed openai-1.78.0
+Finished installing requirements
+Using device: cuda
+All phrases: 207
+Loaded 207 phrase sets
+Processing phrase set 0 with 19 phrases
+Results for phrase set 0 saved to results_ensemble/
+Processing phrase set 1 with 20 phrases
+Results for phrase set 1 saved to results_ensemble/
+Processing phrase set 2 with 31 phrases
+Results for phrase set 2 saved to results_ensemble/
+Processing phrase set 3 with 14 phrases
+Results for phrase set 3 saved to results_ensemble/
+Processing phrase set 4 with 10 phrases
+Results for phrase set 4 saved to results_ensemble/
+Processing phrase set 5 with 18 phrases
+Results for phrase set 5 saved to results_ensemble/
+Processing phrase set 6 with 19 phrases
+Results for phrase set 6 saved to results_ensemble/
+Processing phrase set 7 with 13 phrases
+Results for phrase set 7 saved to results_ensemble/
+Processing phrase set 8 with 12 phrases
+Results for phrase set 8 saved to results_ensemble/
+Processing phrase set 9 with 16 phrases
+Results for phrase set 9 saved to results_ensemble/
+Processing phrase set 10 with 24 phrases
+Results for phrase set 10 saved to results_ensemble/
+Processing phrase set 11 with 14 phrases
+Results for phrase set 11 saved to results_ensemble/
+Processing phrase set 12 with 14 phrases
+Results for phrase set 12 saved to results_ensemble/
+Processing phrase set 13 with 14 phrases
+Results for phrase set 13 saved to results_ensemble/
+Processing phrase set 14 with 22 phrases
+Results for phrase set 14 saved to results_ensemble/
+Processing phrase set 15 with 14 phrases
+Results for phrase set 15 saved to results_ensemble/
+Processing phrase set 16 with 12 phrases
+Results for phrase set 16 saved to results_ensemble/
+Processing phrase set 17 with 0 phrases
+Warning: Empty embeddings array, skipping hierarchical clustering
+Skipping phrase set 17 due to empty embeddings
+Processing phrase set 18 with 13 phrases
+Results for phrase set 18 saved to results_ensemble/
+Processing phrase set 19 with 17 phrases
+Results for phrase set 19 saved to results_ensemble/
+Processing phrase set 20 with 24 phrases
+Results for phrase set 20 saved to results_ensemble/
+Processing phrase set 21 with 15 phrases
+Results for phrase set 21 saved to results_ensemble/
+Processing phrase set 22 with 29 phrases
+Results for phrase set 22 saved to results_ensemble/
+Processing phrase set 23 with 15 phrases
+Results for phrase set 23 saved to results_ensemble/
+Processing phrase set 24 with 20 phrases
+Results for phrase set 24 saved to results_ensemble/
+Processing phrase set 25 with 23 phrases
+Results for phrase set 25 saved to results_ensemble/
+Processing phrase set 26 with 15 phrases
+Results for phrase set 26 saved to results_ensemble/
+Processing phrase set 27 with 21 phrases
+Results for phrase set 27 saved to results_ensemble/
+Processing phrase set 28 with 20 phrases
+Results for phrase set 28 saved to results_ensemble/
+Processing phrase set 29 with 0 phrases
+Warning: Empty embeddings array, skipping hierarchical clustering
+Skipping phrase set 29 due to empty embeddings
+Processing phrase set 30 with 15 phrases
+Results for phrase set 30 saved to results_ensemble/
+Processing phrase set 31 with 28 phrases
+Results for phrase set 31 saved to results_ensemble/
+Processing phrase set 32 with 20 phrases
+Results for phrase set 32 saved to results_ensemble/
+Processing phrase set 33 with 24 phrases
+Results for phrase set 33 saved to results_ensemble/
+Processing phrase set 34 with 17 phrases
+Results for phrase set 34 saved to results_ensemble/
+Processing phrase set 35 with 17 phrases
+Results for phrase set 35 saved to results_ensemble/
+Processing phrase set 36 with 16 phrases
+Results for phrase set 36 saved to results_ensemble/
+Processing phrase set 37 with 16 phrases
+Results for phrase set 37 saved to results_ensemble/
+Processing phrase set 38 with 13 phrases
+Results for phrase set 38 saved to results_ensemble/
+Processing phrase set 39 with 27 phrases
+Results for phrase set 39 saved to results_ensemble/
+Processing phrase set 40 with 22 phrases
+Results for phrase set 40 saved to results_ensemble/
+Processing phrase set 41 with 10 phrases
+Results for phrase set 41 saved to results_ensemble/
+Processing phrase set 42 with 13 phrases
+Results for phrase set 42 saved to results_ensemble/
+Processing phrase set 43 with 7 phrases
+Results for phrase set 43 saved to results_ensemble/
+Processing phrase set 44 with 14 phrases
+Results for phrase set 44 saved to results_ensemble/
+Processing phrase set 45 with 21 phrases
+Results for phrase set 45 saved to results_ensemble/
+Processing phrase set 46 with 11 phrases
+Results for phrase set 46 saved to results_ensemble/
+Processing phrase set 47 with 15 phrases
+Results for phrase set 47 saved to results_ensemble/
+Processing phrase set 48 with 13 phrases
+Results for phrase set 48 saved to results_ensemble/
+Processing phrase set 49 with 10 phrases
+Results for phrase set 49 saved to results_ensemble/
+Processing phrase set 50 with 12 phrases
+Results for phrase set 50 saved to results_ensemble/
+Processing phrase set 51 with 25 phrases
+Results for phrase set 51 saved to results_ensemble/
+Processing phrase set 52 with 13 phrases
+Results for phrase set 52 saved to results_ensemble/
+Processing phrase set 53 with 25 phrases
+Results for phrase set 53 saved to results_ensemble/
+Processing phrase set 54 with 21 phrases
+Results for phrase set 54 saved to results_ensemble/
+Processing phrase set 55 with 10 phrases
+Results for phrase set 55 saved to results_ensemble/
+Processing phrase set 56 with 10 phrases
+Results for phrase set 56 saved to results_ensemble/
+Processing phrase set 57 with 20 phrases
+Results for phrase set 57 saved to results_ensemble/
+Processing phrase set 58 with 15 phrases
+Results for phrase set 58 saved to results_ensemble/
+Processing phrase set 59 with 14 phrases
+Results for phrase set 59 saved to results_ensemble/
+Processing phrase set 60 with 19 phrases
+Results for phrase set 60 saved to results_ensemble/
+Processing phrase set 61 with 5 phrases
+Results for phrase set 61 saved to results_ensemble/
+Processing phrase set 62 with 18 phrases
+Results for phrase set 62 saved to results_ensemble/
+Processing phrase set 63 with 18 phrases
+Results for phrase set 63 saved to results_ensemble/
+Processing phrase set 64 with 20 phrases
+Results for phrase set 64 saved to results_ensemble/
+Processing phrase set 65 with 14 phrases
+Results for phrase set 65 saved to results_ensemble/
+Processing phrase set 66 with 12 phrases
+Results for phrase set 66 saved to results_ensemble/
+Processing phrase set 67 with 21 phrases
+Results for phrase set 67 saved to results_ensemble/
+Processing phrase set 68 with 20 phrases
+Results for phrase set 68 saved to results_ensemble/
+Processing phrase set 69 with 19 phrases
+Results for phrase set 69 saved to results_ensemble/
+Processing phrase set 70 with 23 phrases
+Results for phrase set 70 saved to results_ensemble/
+Processing phrase set 71 with 17 phrases
+Results for phrase set 71 saved to results_ensemble/
+Processing phrase set 72 with 17 phrases
+Results for phrase set 72 saved to results_ensemble/
+Processing phrase set 73 with 13 phrases
+Results for phrase set 73 saved to results_ensemble/
+Processing phrase set 74 with 9 phrases
+Results for phrase set 74 saved to results_ensemble/
+Processing phrase set 75 with 12 phrases
+Results for phrase set 75 saved to results_ensemble/
+Processing phrase set 76 with 0 phrases
+Warning: Empty embeddings array, skipping hierarchical clustering
+Skipping phrase set 76 due to empty embeddings
+Processing phrase set 77 with 16 phrases
+Results for phrase set 77 saved to results_ensemble/
+Processing phrase set 78 with 27 phrases
+Results for phrase set 78 saved to results_ensemble/
+Processing phrase set 79 with 15 phrases
+Results for phrase set 79 saved to results_ensemble/
+Processing phrase set 80 with 14 phrases
+Results for phrase set 80 saved to results_ensemble/
+Processing phrase set 81 with 11 phrases
+Results for phrase set 81 saved to results_ensemble/
+Processing phrase set 82 with 25 phrases
+Results for phrase set 82 saved to results_ensemble/
+Processing phrase set 83 with 14 phrases
+Results for phrase set 83 saved to results_ensemble/
+Processing phrase set 84 with 11 phrases
+Results for phrase set 84 saved to results_ensemble/
+Processing phrase set 85 with 11 phrases
+Results for phrase set 85 saved to results_ensemble/
+Processing phrase set 86 with 17 phrases
+Results for phrase set 86 saved to results_ensemble/
+Processing phrase set 87 with 14 phrases
+Results for phrase set 87 saved to results_ensemble/
+Processing phrase set 88 with 12 phrases
+Results for phrase set 88 saved to results_ensemble/
+Processing phrase set 89 with 12 phrases
+Results for phrase set 89 saved to results_ensemble/
+Processing phrase set 90 with 25 phrases
+Results for phrase set 90 saved to results_ensemble/
+Processing phrase set 91 with 24 phrases
+Results for phrase set 91 saved to results_ensemble/
+Processing phrase set 92 with 17 phrases
+Results for phrase set 92 saved to results_ensemble/
+Processing phrase set 93 with 1 phrases
+Warning: Only 1 samples available, reducing number of clusters from 4 to 1
+End time: Mon May 12 01:10:55 AM UTC 2025

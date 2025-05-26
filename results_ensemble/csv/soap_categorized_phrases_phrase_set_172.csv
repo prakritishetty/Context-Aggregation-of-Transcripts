@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,0,itchy scalp pain
+S,1,2,it's been a while but probably worsening in the past six months
+S,1,0,still quite itchy
+S,1,2,white dander on your clothes
+O,0,2,demarcated scaly erythematous plaques
+S,1,1,on my body no not really
+P,3,2,nothing new I do dye my hair but I've been doing that for years
+O,0,0,Head & Shoulders
+O,0,0,Denies fever or weight loss
+O,0,0,no joint pain
+P,3,0,maybe my sister... she does report just having a dry scalp
+O,0,0,"BP 130/68, HR 98, RR 18, Temperature 97.7"
+A,2,0,demarcated scaly erythematous plaques... diffusely present across the back of the skull
+O,0,2,scalp psoriasis
+O,0,2,clobetasol 0.05% solution twice daily
+O,0,1,continue using T/Gel shampoo
+O,0,0,steroids for flare-ups
+O,0,0,follow-up in 3 months or sooner if worsens
+P,3,1,I'll just use that steroid solution and just as needed if it's really bad

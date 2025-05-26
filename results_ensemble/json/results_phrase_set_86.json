@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "I've been feeling tired, really lacking a lot of energy, and I have swollen joints in my elbows, just really hurts.",
+    "I've been a little nauseous. I have n't been able to eat much. I've been trying just to keep,, toast and crackers and that's all about I've been able to stomach, really.",
+    "Michelle is a 31-year-old female with a past medical history of type 2 diabetes and hypertension who presents with abnormal lab finding.",
+    "You had had an insect bite, and, it came back positive for Lyme.",
+    "Have you noticed any other rash anywhere else? [Patient]: I have. [Doctor]: Sometimes they describe it as looking as a bull's-eye. [Patient]: Yes.",
+    "On physical examination, you do have some swelling of your elbow joints bilaterally. Does it hurt when I touch them? [Patient]: It does.",
+    "On your skin examination, you do have a bull's-eye rash on your abdomen on the left-hand side. It\u2019s warm to palpation. Any pain with that? [Patient]: No, no pain for that.",
+    "Hey, Dragon, show me the Lyme titer. You can see here, in reviewing the results of your Lyme titer, it is elevated.",
+    "In reviewing the results of your labs, everything else looks good. Again, you don\u2019t have an elevated white blood cell count or anything that.",
+    "I want to prescribe you doxycycline, 100 milligrams twice a day. You have to take it for three weeks.",
+    "I\u2019m going to touch base with an infectious disease doctor to make sure that there\u2019s not anything else that we need to do.",
+    "I want you to continue to record your blood pressure regularly.",
+    "I\u2019m going to order a hemoglobin A1c and just this. Make sure we don\u2019t have to make any changes to the metformin.",
+    "I\u2019m going to continue you on the lisinopril, 10 milligrams a day, and I\u2019m going to go ahead and order a lipid panel.",
+    "You\u2019re doing a really good job of managing your hypertension.",
+    "You have been compliant with dietary modifications including limiting your sodium intake.",
+    "I want to see you again next week for a follow-up for this."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    3,
+    1,
+    3,
+    0,
+    3,
+    3,
+    3,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15049578249454498,
+    "calinski_harabasz_score": 4.0070934838389505,
+    "davies_bouldin_score": 1.3166094012577558
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9980329871177673,
+      0.994261622428894,
+      0.998385488986969
+    ],
+    [
+      0.9980329871177673,
+      1.000000238418579,
+      0.9920654892921448,
+      0.997941255569458
+    ],
+    [
+      0.994261622428894,
+      0.9920654892921448,
+      1.0,
+      0.992942214012146
+    ],
+    [
+      0.998385488986969,
+      0.997941255569458,
+      0.992942214012146,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.18512405455112457,
+    "1": 0.11282515525817871,
+    "2": 0.0,
+    "3": 0.21378831565380096
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I've been feeling tired, really lacking a lot of energy, and I have swollen joints in my elbows, just really hurts.",
+        "I've been a little nauseous. I have n't been able to eat much. I've been trying just to keep,, toast and crackers and that's all about I've been able to stomach, really."
+      ],
+      "0": [
+        "Have you noticed any other rash anywhere else? [Patient]: I have. [Doctor]: Sometimes they describe it as looking as a bull's-eye. [Patient]: Yes.",
+        "On physical examination, you do have some swelling of your elbow joints bilaterally. Does it hurt when I touch them? [Patient]: It does.",
+        "On your skin examination, you do have a bull's-eye rash on your abdomen on the left-hand side. It\u2019s warm to palpation. Any pain with that? [Patient]: No, no pain for that."
+      ],
+      "1": [
+        "I want to prescribe you doxycycline, 100 milligrams twice a day. You have to take it for three weeks."
+      ]
+    },
+    "2": {
+      "0": [
+        "Michelle is a 31-year-old female with a past medical history of type 2 diabetes and hypertension who presents with abnormal lab finding."
+      ]
+    },
+    "0": {
+      "2": [
+        "You had had an insect bite, and, it came back positive for Lyme."
+      ],
+      "0": [
+        "Hey, Dragon, show me the Lyme titer. You can see here, in reviewing the results of your Lyme titer, it is elevated."
+      ],
+      "1": [
+        "I want you to continue to record your blood pressure regularly.",
+        "You have been compliant with dietary modifications including limiting your sodium intake.",
+        "I want to see you again next week for a follow-up for this."
+      ]
+    },
+    "3": {
+      "2": [
+        "In reviewing the results of your labs, everything else looks good. Again, you don\u2019t have an elevated white blood cell count or anything that."
+      ],
+      "0": [
+        "I\u2019m going to touch base with an infectious disease doctor to make sure that there\u2019s not anything else that we need to do.",
+        "I\u2019m going to order a hemoglobin A1c and just this. Make sure we don\u2019t have to make any changes to the metformin.",
+        "You\u2019re doing a really good job of managing your hypertension."
+      ],
+      "1": [
+        "I\u2019m going to continue you on the lisinopril, 10 milligrams a day, and I\u2019m going to go ahead and order a lipid panel."
+      ]
+    }
+  }
+}

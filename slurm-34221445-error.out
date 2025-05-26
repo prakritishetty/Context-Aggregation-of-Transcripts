@@ -1,0 +1,65 @@
+  0%|          | 0/207 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.39s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 39.16s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 40.85s/it]
+Device set to use cuda:0
+  0%|          | 1/207 [01:31<5:13:41, 91.37s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:46<00:46, 46.92s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:15<00:00, 36.38s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:15<00:00, 37.97s/it]
+Device set to use cuda:0
+  1%|          | 2/207 [02:51<4:49:20, 84.69s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:49<00:49, 49.90s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 39.31s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 40.91s/it]
+Device set to use cuda:0
+  1%|▏         | 3/207 [04:17<4:49:26, 85.13s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.69s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 39.48s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 41.17s/it]
+Device set to use cuda:0
+  2%|▏         | 4/207 [05:43<4:50:07, 85.75s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.09s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 39.47s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 41.07s/it]
+Device set to use cuda:0
+  2%|▏         | 5/207 [07:10<4:49:54, 86.11s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.31s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:25<00:00, 41.27s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:25<00:00, 42.64s/it]
+Device set to use cuda:0
+  3%|▎         | 6/207 [08:44<4:57:15, 88.73s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.41s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:23<00:00, 39.96s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:23<00:00, 41.54s/it]
+Device set to use cuda:0
+  3%|▎         | 7/207 [10:11<4:54:35, 88.38s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.15s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 39.30s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 40.93s/it]
+Device set to use cuda:0
+  4%|▍         | 8/207 [11:38<4:51:00, 87.74s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.85s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 39.49s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:22<00:00, 41.20s/it]
+Device set to use cuda:0
+  4%|▍         | 9/207 [13:05<4:48:49, 87.52s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:49<00:49, 49.27s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 38.86s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.43s/it]
+Device set to use cuda:0
+  5%|▍         | 10/207 [14:30<4:44:47, 86.74s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.31s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 39.17s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 40.85s/it]
+Device set to use cuda:0
+  5%|▌         | 11/207 [15:56<4:42:24, 86.45s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:50<00:50, 50.52s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 39.25s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:21<00:00, 40.95s/it]
+Device set to use cuda:0
+  6%|▌         | 12/207 [17:26<4:44:35, 87.57s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:49<00:49, 49.57s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 38.89s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.50s/it]
+slurmstepd-gypsum-gpu081: error: *** JOB 34221445 ON gypsum-gpu081 CANCELLED AT 2025-05-13T10:18:23 ***

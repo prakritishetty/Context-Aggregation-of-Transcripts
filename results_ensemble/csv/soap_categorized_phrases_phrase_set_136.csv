@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,0,"I was bowling and as I was running up to the lane, I had my bowling ball all the way back, and when I slung it forward, I hit it into my leg instead of the lane and I fell."
+S,0,2,It’s very sore
+O,1,2,"A little bit on the back- back end, that side"
+S,0,0,I’ve been going back and forth between taking ibuprofen and Tylenol
+O,1,0,Yes. I have eczema
+S,0,0,I take fluocinonide when it gets really itchy
+P,3,0,I had a… some diverticulosis and I went into diverticulitis and they ended up going in and having to remove a little bit of my colon
+A,2,0,You have some significant tenderness to the lateral aspect of your upper leg
+A,2,0,No pain or tenderness with flexion or extension of the lower leg
+S,0,1,"This is a normal femur… really don’t see any evidence of a fracture or any swelling, it’s essentially a normal x-ray"
+S,0,0,"I’m going to start you on an ant-inflammatory. It’s going to be Mobic 15 milligrams, once a day"
+O,1,1,Use some ice for the pain

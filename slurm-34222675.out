@@ -1,0 +1,24 @@
+Job ID: 34222675
+Node: gypsum-gpu049
+Start time: Tue May 13 10:25:47 AM UTC 2025
+Installing requirements
+Requirement already satisfied: datasets in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 1)) (3.5.0)
+Requirement already satisfied: transformers>=4.30.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 2)) (4.51.3)
+Requirement already satisfied: vllm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 3)) (0.5.4)
+Requirement already satisfied: huggingface_hub in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 4)) (0.30.2)
+Requirement already satisfied: pandas>=1.3.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 5)) (2.2.3)
+Requirement already satisfied: tqdm in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 6)) (4.67.1)
+Requirement already satisfied: accelerate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 7)) (1.6.0)
+Requirement already satisfied: openai>=1.0.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 8)) (1.78.1)
+Requirement already satisfied: torch>=2.0.0 in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 9)) (2.4.0)
+Requirement already satisfied: bert-score in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 10)) (0.3.13)
+Requirement already satisfied: numpy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 11)) (1.26.4)
+Requirement already satisfied: scikit-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 12)) (1.6.1)
+Requirement already satisfied: matplotlib in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 13)) (3.10.1)
+Requirement already satisfied: seaborn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 14)) (0.13.2)
+Requirement already satisfied: scipy in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 15)) (1.15.2)
+Requirement already satisfied: umap-learn in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 16)) (0.5.7)
+Requirement already satisfied: evaluate in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 17)) (0.4.3)
+Requirement already satisfied: sentence-transformers in ./myenv/lib/python3.12/site-packages (from -r requirements.txt (line 18)) (4.1.0)
+Collecting llama-cpp-python (from -r requirements.txt (line 19))
+  Downloading llama_cpp_python-0.3.9.tar.gz (67.9 MB)

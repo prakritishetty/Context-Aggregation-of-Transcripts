@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "I'm just really anxious about my recent blood work that my PCP did and said that I have hepatitis C. I'm just really surprised because I've been feeling fine.",
+    "Years ago I used to party a lot and even use IV drugs, but I've been clean for over fifteen years.",
+    "I do smoke; I'm down to one to two cigarettes a day. It's just really been tough to just get rid of those two, but I've cut down a lot. I used to be up to one point or a pack and a half a day.",
+    "I used to drink a lot, a lot more alcohol. I probably would say I drink about a beer a day... and maybe slightly more on the weekends but nothing how I used to.",
+    "Hypertension, diabetes, and also depression.",
+    "I do feel tend to be really tired at the end of the day after working.",
+    "No jaundice on skin exam.",
+    "Heart exam: a nice regular rate and rhythm with a two out of six systolic murmur.",
+    "Lungs are clear with no wheezes, rales, or rhonchi.",
+    "Abdomen is soft with no hepatospleno splenomegaly.",
+    "HCV antibody test was positive, and your liver panel showed an elevated AST at 39, but your ALT, albumin, and total bilirubin were all within normal limits.",
+    "Confirm the diagnosis with some additional blood work that includes checking the HCV RNA and also the HCV genotype... determine the severity of your liver disease by checking for fibrosis of the liver... ordering a special ultrasound [Fibroscan].",
+    "Yes, we can start with the same screening that you have had for you for all of them first.",
+    "Alright, perfect. I'll make sure I'll have them set up an appointment with our family doctor... see you in about three weeks."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    2,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "O",
+      "1": "A",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "S",
+    "2": "O",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.22879838943481445,
+    "calinski_harabasz_score": 4.584951961693672,
+    "davies_bouldin_score": 0.8509177590244881
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9959985613822937,
+      0.994479775428772,
+      0.9952544569969177
+    ],
+    [
+      0.9959985613822937,
+      0.999999463558197,
+      0.9936210513114929,
+      0.99091637134552
+    ],
+    [
+      0.994479775428772,
+      0.9936210513114929,
+      1.0000003576278687,
+      0.9915313124656677
+    ],
+    [
+      0.9952544569969177,
+      0.99091637134552,
+      0.9915313124656677,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.03441653400659561,
+    "1": 0.08483674377202988,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I'm just really anxious about my recent blood work that my PCP did and said that I have hepatitis C. I'm just really surprised because I've been feeling fine.",
+        "I used to drink a lot, a lot more alcohol. I probably would say I drink about a beer a day... and maybe slightly more on the weekends but nothing how I used to."
+      ],
+      "1": [
+        "Years ago I used to party a lot and even use IV drugs, but I've been clean for over fifteen years.",
+        "I do feel tend to be really tired at the end of the day after working.",
+        "Alright, perfect. I'll make sure I'll have them set up an appointment with our family doctor... see you in about three weeks."
+      ],
+      "0": [
+        "I do smoke; I'm down to one to two cigarettes a day. It's just really been tough to just get rid of those two, but I've cut down a lot. I used to be up to one point or a pack and a half a day."
+      ]
+    },
+    "0": {
+      "2": [
+        "Hypertension, diabetes, and also depression."
+      ],
+      "0": [
+        "No jaundice on skin exam.",
+        "Heart exam: a nice regular rate and rhythm with a two out of six systolic murmur.",
+        "Lungs are clear with no wheezes, rales, or rhonchi.",
+        "Abdomen is soft with no hepatospleno splenomegaly."
+      ],
+      "1": [
+        "Yes, we can start with the same screening that you have had for you for all of them first."
+      ]
+    },
+    "2": {
+      "0": [
+        "HCV antibody test was positive, and your liver panel showed an elevated AST at 39, but your ALT, albumin, and total bilirubin were all within normal limits."
+      ]
+    },
+    "3": {
+      "0": [
+        "Confirm the diagnosis with some additional blood work that includes checking the HCV RNA and also the HCV genotype... determine the severity of your liver disease by checking for fibrosis of the liver... ordering a special ultrasound [Fibroscan]."
+      ]
+    }
+  }
+}

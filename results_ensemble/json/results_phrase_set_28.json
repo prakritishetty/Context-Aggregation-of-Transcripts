@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "elevated and fluctuating blood pressures",
+    "blood pressure readings recently... occasionally over one eighty",
+    "lightheaded slight headache",
+    "chest heaviness... no sustained... no breathing difficulty",
+    "still taking the lisinopril twenty milligrams twice per day",
+    "mild bibasilar rales... no wheezes or rhonchi",
+    "grade three out of six systolic ejection murmur... unchanged from prior",
+    "trace lower extremity edema bilaterally",
+    "increase your lisinopril to sixty milligrams twice per day",
+    "add twenty five milligrams per day of hydrochlorothiazide",
+    "check your blood pressure measurements twice a day for the next two weeks",
+    "follow-up in two weeks",
+    "send a cholesterol panel, CBC with differential, comprehensive metabolic panel, and urinalysis",
+    "continue atorvastatin for hyperlipidemia",
+    "continue golfing... stay active as best you can",
+    "take Tylenol for mild pain",
+    "six to eight glasses of water per day... increase with activity or dehydration",
+    "not more than a couple alcoholic drinks a week",
+    "no syncope, fever, nausea, vomiting, or diarrhea",
+    "no sustained chest pain or palpitations"
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    1,
+    0,
+    2,
+    0,
+    0,
+    1,
+    2,
+    2,
+    2,
+    2,
+    0,
+    1,
+    3,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.10188758373260498,
+    "calinski_harabasz_score": 3.012266656520332,
+    "davies_bouldin_score": 1.5836516111380115
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.9978353977203369,
+      0.9989063739776611,
+      0.9965139627456665
+    ],
+    [
+      0.9978353977203369,
+      1.0000001192092896,
+      0.9980335235595703,
+      0.9953553676605225
+    ],
+    [
+      0.9989063739776611,
+      0.9980335235595703,
+      0.9999998807907104,
+      0.9957319498062134
+    ],
+    [
+      0.9965139627456665,
+      0.9953553676605225,
+      0.9957319498062134,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.009135945700109005,
+    "1": -0.10468674451112747,
+    "2": -0.0004447003302630037,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "elevated and fluctuating blood pressures",
+        "blood pressure readings recently... occasionally over one eighty"
+      ],
+      "0": [
+        "still taking the lisinopril twenty milligrams twice per day",
+        "increase your lisinopril to sixty milligrams twice per day",
+        "add twenty five milligrams per day of hydrochlorothiazide"
+      ],
+      "1": [
+        "check your blood pressure measurements twice a day for the next two weeks",
+        "follow-up in two weeks"
+      ]
+    },
+    "1": {
+      "2": [
+        "lightheaded slight headache"
+      ],
+      "0": [
+        "trace lower extremity edema bilaterally",
+        "continue atorvastatin for hyperlipidemia"
+      ],
+      "1": [
+        "take Tylenol for mild pain"
+      ]
+    },
+    "0": {
+      "2": [
+        "chest heaviness... no sustained... no breathing difficulty",
+        "mild bibasilar rales... no wheezes or rhonchi",
+        "six to eight glasses of water per day... increase with activity or dehydration"
+      ],
+      "0": [
+        "grade three out of six systolic ejection murmur... unchanged from prior"
+      ],
+      "1": [
+        "send a cholesterol panel, CBC with differential, comprehensive metabolic panel, and urinalysis",
+        "not more than a couple alcoholic drinks a week",
+        "no syncope, fever, nausea, vomiting, or diarrhea",
+        "no sustained chest pain or palpitations"
+      ]
+    },
+    "3": {
+      "0": [
+        "continue golfing... stay active as best you can"
+      ]
+    }
+  }
+}

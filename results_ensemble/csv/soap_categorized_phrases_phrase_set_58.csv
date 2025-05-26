@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,my breathing isn't what it used to be
+S,2,2,I seem to catch my breath a lot more than I used to.
+S,2,1,moved out in the city [about two years ago] bought this big plot of land.
+S,2,0,"I have noticed [symptoms] in all three situations [in the house when the cat isn’t around, outside]."
+P,0,0,they gave me a nebulizer that helped
+S,2,2,prescribed me an inhaler that I use when I feel the symptoms coming on.
+P,0,1,eyes water doesn’t make very much sense to me
+S,2,1,I get eyebugers too.
+A,3,0,faint expiratory wheezing bilaterally in all lung fields
+O,1,2,normal chest x-ray and pulmonary function test.
+O,1,0,you have newly diagnosed allergic asthma.
+P,0,0,continue the albuterol inhaler... take it as soon as you start to feel any symptoms
+O,1,1,prescribed Singulair 10 mg once daily.
+O,1,0,proceed with allergy testing... skin testing to target triggers.
+S,2,1,should I come my cats?

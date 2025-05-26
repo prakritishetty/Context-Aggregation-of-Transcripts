@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "He is here today for an acne follow-up.",
+    "At the last visit on 3/3/21 he was prescribed the following : clindamycin lotion,, trent- tretinoin cream, 4-5 % benzoyl peroxide wash for ace and 5-10 % for chest and back.",
+    "what did you do for your skin this morning ? [patient] i washed it with,, the benzoyl peroxide and i put the antibiotic thing, and the sunscreen moisture stuff as.",
+    "what did you do last night ? [patient], i washed my face with the benzol peroxide, i put,, the -tretinoin cream...",
+    "have you had any redness, peeling, dryness, or irritation with the use of these medications at all ? [patient]. Not at all.",
+    "i have n't put much effort into it because it has n't' really bothered me.",
+    "this looks a lot better, a lot better.",
+    "scattered inflammatory papules and pustules across the upper back and posterior shoulders. There are less than 5 inflammatory papules on the forehead, cheeks, and chin.",
+    "i'm happy with how things are going. Are you- are you happy with how things are going ? [patient]. [doctor] all,, if that little bit bothers you, i would use a 5-10 % benzoyl peroxide base...",
+    "i recommend for the chest and back is the, the panoxyl 10 %.",
+    "i'm going ahead and tee up a one year prescription for you because at this point i'll want to see you once a year.",
+    "i'm going to go ahead and send in a new refill for the clindamycin with 11 refills. And the tretinoin cream with three refills.",
+    "acne vulgaris is improved and controlled on the face, but there is a mild flare on the back.",
+    "initiation treatment with panoxyl 10 % foaming wash to the back in the shower daily."
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    2,
+    0,
+    1,
+    0,
+    2,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.13088290393352509,
+    "calinski_harabasz_score": 3.0374081029170226,
+    "davies_bouldin_score": 1.246690703787469
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.996856689453125,
+      0.9975770711898804,
+      0.9960894584655762
+    ],
+    [
+      0.996856689453125,
+      0.9999998807907104,
+      0.9978102445602417,
+      0.9949724078178406
+    ],
+    [
+      0.9975770711898804,
+      0.9978102445602417,
+      0.9999997615814209,
+      0.9944447875022888
+    ],
+    [
+      0.9960894584655762,
+      0.9949724078178406,
+      0.9944447875022888,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.047519415616989136,
+    "1": 0.012955037876963615,
+    "2": 0.0940423235297203,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "He is here today for an acne follow-up."
+      ],
+      "0": [
+        "this looks a lot better, a lot better."
+      ],
+      "1": [
+        "i recommend for the chest and back is the, the panoxyl 10 %."
+      ]
+    },
+    "3": {
+      "0": [
+        "At the last visit on 3/3/21 he was prescribed the following : clindamycin lotion,, trent- tretinoin cream, 4-5 % benzoyl peroxide wash for ace and 5-10 % for chest and back."
+      ]
+    },
+    "1": {
+      "2": [
+        "what did you do for your skin this morning ? [patient] i washed it with,, the benzoyl peroxide and i put the antibiotic thing, and the sunscreen moisture stuff as.",
+        "what did you do last night ? [patient], i washed my face with the benzol peroxide, i put,, the -tretinoin cream...",
+        "i'm happy with how things are going. Are you- are you happy with how things are going ? [patient]. [doctor] all,, if that little bit bothers you, i would use a 5-10 % benzoyl peroxide base..."
+      ],
+      "0": [
+        "have you had any redness, peeling, dryness, or irritation with the use of these medications at all ? [patient]. Not at all."
+      ],
+      "1": [
+        "i have n't put much effort into it because it has n't' really bothered me.",
+        "i'm going ahead and tee up a one year prescription for you because at this point i'll want to see you once a year."
+      ]
+    },
+    "0": {
+      "2": [
+        "scattered inflammatory papules and pustules across the upper back and posterior shoulders. There are less than 5 inflammatory papules on the forehead, cheeks, and chin."
+      ],
+      "0": [
+        "i'm going to go ahead and send in a new refill for the clindamycin with 11 refills. And the tretinoin cream with three refills.",
+        "initiation treatment with panoxyl 10 % foaming wash to the back in the shower daily."
+      ],
+      "1": [
+        "acne vulgaris is improved and controlled on the face, but there is a mild flare on the back."
+      ]
+    }
+  }
+}

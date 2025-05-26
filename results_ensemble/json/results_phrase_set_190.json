@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "presenting for his annual exam.",
+    "past medical history significant for depression and prior lobectomy as well as hypertension.",
+    "we dropped my oldest daughter off at college and moved her into her dorm, little stressful, little chaotic in the heat of the summer.",
+    "I've been staying on top of the meds, and I haven't had any incidents in a while.",
+    "I'm pretty regular with the medications during the business week, but on the weekends, if I'm on the fly or doing something, sometimes I forget to bring it with me.",
+    "sometimes if it's relatively humid, I'll struggle a little bit, and I might feel a little bit of pounding in my chest.",
+    "hear a slight two out of six systolic ejection murmur, and your lungs sound nice and clear... pain to palpation of the sinuses here.",
+    "blood pressure looks quite at 120 over 80... trends... much better over the last several years.",
+    "ekg is completely normal... chest x-ray... looks really good.",
+    "continue Prozac 20 milligrams daily... continue Norvasc... order an echocardiogram for that murmur.",
+    "order routine blood work... follow up with the patient via the portal.",
+    "I don't think we need to do any more workup of that... follow up with the surgeon anymore.",
+    "The patient understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    3,
+    1,
+    1,
+    3,
+    0,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "llm": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "A",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "A",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19985204935073853,
+    "calinski_harabasz_score": 4.433248204385781,
+    "davies_bouldin_score": 1.177515245823569
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.995813250541687,
+      0.9946321249008179,
+      0.9966885447502136
+    ],
+    [
+      0.995813250541687,
+      1.0000001192092896,
+      0.9980029463768005,
+      0.9972185492515564
+    ],
+    [
+      0.9946321249008179,
+      0.9980029463768005,
+      0.9999998211860657,
+      0.9951604604721069
+    ],
+    [
+      0.9966885447502136,
+      0.9972185492515564,
+      0.9951604604721069,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.21238447725772858,
+    "1": 0.10598967224359512,
+    "2": 0.1966046690940857,
+    "3": -0.01192416064441204
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "presenting for his annual exam.",
+        "order routine blood work... follow up with the patient via the portal."
+      ],
+      "0": [
+        "past medical history significant for depression and prior lobectomy as well as hypertension."
+      ],
+      "1": [
+        "The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    },
+    "2": {
+      "2": [
+        "we dropped my oldest daughter off at college and moved her into her dorm, little stressful, little chaotic in the heat of the summer."
+      ],
+      "0": [
+        "I've been staying on top of the meds, and I haven't had any incidents in a while."
+      ],
+      "1": [
+        "I'm pretty regular with the medications during the business week, but on the weekends, if I'm on the fly or doing something, sometimes I forget to bring it with me.",
+        "sometimes if it's relatively humid, I'll struggle a little bit, and I might feel a little bit of pounding in my chest."
+      ]
+    },
+    "3": {
+      "0": [
+        "hear a slight two out of six systolic ejection murmur, and your lungs sound nice and clear... pain to palpation of the sinuses here.",
+        "continue Prozac 20 milligrams daily... continue Norvasc... order an echocardiogram for that murmur."
+      ]
+    },
+    "1": {
+      "2": [
+        "blood pressure looks quite at 120 over 80... trends... much better over the last several years."
+      ],
+      "0": [
+        "ekg is completely normal... chest x-ray... looks really good."
+      ],
+      "1": [
+        "I don't think we need to do any more workup of that... follow up with the surgeon anymore."
+      ]
+    }
+  }
+}

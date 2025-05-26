@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "I'm doing really good. I'm here I'm just ready to quit smoking and but I've been having quite a hard time with it.",
+    "Started in high school, smoking here and there with friends or at parties... up to a pack and a half a day.",
+    "History of gout and type two diabetes.",
+    "Motivated because I am about to be a father any day... be there for my daughter growing up.",
+    "Tried to quit before by going cold turkey... relapsed due to work stress.",
+    "Stress can often be a trigger for smoking... started learning meditation and joined the gym.",
+    "Consider using a smoking cessation aid... friends mentioned the patch had success.",
+    "Chosen next Monday (birthday) as quit date.",
+    "Prescribed 21 mg nicotine patch... change location daily to avoid skin irritation.",
+    "Follow-up in two weeks to reevaluate patch dosage and discuss triggers.",
+    "Monitor stress levels, especially around new fatherhood... continue gym routine and meditation.",
+    "Maintain type two diabetes with diet/exercise... order hemoglobin A1c for next visit.",
+    "Continue allopurinol for gout... avoid uric acid-exacerbating foods.",
+    "Physical exam: clear lungs, regular heart rhythm, 2/6 systolic murmur, no carotid bruits.",
+    "Vitals: BP 128/88, HR 68, oxygen saturation 98%.",
+    "Patient agrees to plan, no questions.",
+    "Congratulations on the baby... excited about next Monday as quit date."
+  ],
+  "cluster_labels": [
+    2,
+    3,
+    1,
+    2,
+    3,
+    3,
+    2,
+    1,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1236962154507637,
+    "calinski_harabasz_score": 3.586564267365825,
+    "davies_bouldin_score": 1.6011757003532843
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9983354806900024,
+      0.9958219528198242,
+      0.9983581900596619
+    ],
+    [
+      0.9983354806900024,
+      1.0000001192092896,
+      0.9951844215393066,
+      0.9976637363433838
+    ],
+    [
+      0.9958219528198242,
+      0.9951844215393066,
+      1.000000238418579,
+      0.9980678558349609
+    ],
+    [
+      0.9983581900596619,
+      0.9976637363433838,
+      0.9980678558349609,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.0357527956366539,
+    "1": 0.03648657724261284,
+    "2": 0.09397215396165848,
+    "3": 0.12663231790065765
+  },
+  "cluster_phrases": {
+    "2": {
+      "2": [
+        "I'm doing really good. I'm here I'm just ready to quit smoking and but I've been having quite a hard time with it."
+      ],
+      "0": [
+        "Motivated because I am about to be a father any day... be there for my daughter growing up."
+      ],
+      "1": [
+        "Consider using a smoking cessation aid... friends mentioned the patch had success."
+      ]
+    },
+    "3": {
+      "2": [
+        "Started in high school, smoking here and there with friends or at parties... up to a pack and a half a day."
+      ],
+      "0": [
+        "Tried to quit before by going cold turkey... relapsed due to work stress.",
+        "Stress can often be a trigger for smoking... started learning meditation and joined the gym.",
+        "Monitor stress levels, especially around new fatherhood... continue gym routine and meditation."
+      ],
+      "1": [
+        "Congratulations on the baby... excited about next Monday as quit date."
+      ]
+    },
+    "1": {
+      "2": [
+        "History of gout and type two diabetes."
+      ],
+      "0": [
+        "Chosen next Monday (birthday) as quit date."
+      ],
+      "1": [
+        "Patient agrees to plan, no questions."
+      ]
+    },
+    "0": {
+      "2": [
+        "Prescribed 21 mg nicotine patch... change location daily to avoid skin irritation.",
+        "Follow-up in two weeks to reevaluate patch dosage and discuss triggers.",
+        "Continue allopurinol for gout... avoid uric acid-exacerbating foods."
+      ],
+      "0": [
+        "Maintain type two diabetes with diet/exercise... order hemoglobin A1c for next visit."
+      ],
+      "1": [
+        "Physical exam: clear lungs, regular heart rhythm, 2/6 systolic murmur, no carotid bruits.",
+        "Vitals: BP 128/88, HR 68, oxygen saturation 98%."
+      ]
+    }
+  }
+}

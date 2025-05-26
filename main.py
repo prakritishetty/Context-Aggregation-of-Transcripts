@@ -1,8 +1,17 @@
-import components.step1_dataExtraction.medDialog as medDialog
+# import src.components.step1_dataExtraction.medDialog as medDialog
+# from src.components.step3_keyPhraseExtraction.kpe import main_extractKPE
+from src.components.step4_hierarchicalClustering.hc_7_may import main_hc
+from src.components.step3_keyPhraseExtraction.kpe_for_ft import main_extractKPE_for_ft
+# from src.components.step4_hierarchicalClustering.hc_subclustering import main_hc_subclustering
+# from src.components.step6_evaluation.eval import eval
 
 
 
 if __name__ == "__main__":
-    medDialogObj = medDialog
+    # medDialogObj = medDialog
+    main_extractKPE_for_ft()
+    # main_hc()
+    # eval_kpe()
+    # eval_hc()
 
 

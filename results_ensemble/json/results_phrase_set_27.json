@@ -1,0 +1,195 @@
+{
+  "phrases": [
+    "when I came down and I felt my knee just popped it started swelling and I could hardly walk when it happened",
+    "it feels it's on the inside of the knee",
+    "about a four",
+    "I tried some tylenol yesterday",
+    "first time in two years",
+    "your blood pressures been running today... one forty over eighty",
+    "your a1c... was a seven point two",
+    "i skip it [metformin] because it upsets my stomach",
+    "blood sugars... probably about a hundred and fifty",
+    "grade two out of systolic ejection murmur",
+    "pain to palpation of the medial aspect... edema... ecchymosis",
+    "negative varus and valgus test",
+    "x-ray... no fractures no bony abnormalities",
+    "mcl strain... need an mri to determine if torn",
+    "prescribe... meloxicam fifteen milligrams",
+    "knee immobilizer... stay off of that for the next couple of weeks",
+    "consult nutrition... get your diet a little bit better",
+    "up your norvasta... to lower blood pressure to one twenty over eighty",
+    "check your blood sugars daily... log book",
+    "strawberries can lower your blood pressures... but [they have] a lot of sugar",
+    "follow up in two weeks to review your mri results"
+  ],
+  "cluster_labels": [
+    0,
+    0,
+    2,
+    0,
+    2,
+    3,
+    0,
+    0,
+    3,
+    2,
+    1,
+    2,
+    1,
+    1,
+    3,
+    1,
+    0,
+    3,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.08482767641544342,
+    "calinski_harabasz_score": 3.2458747906128393,
+    "davies_bouldin_score": 1.693642961869704
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.997630774974823,
+      0.9964759349822998,
+      0.9981938004493713
+    ],
+    [
+      0.997630774974823,
+      0.9999997615814209,
+      0.9969470500946045,
+      0.998316764831543
+    ],
+    [
+      0.9964759349822998,
+      0.9969470500946045,
+      1.0000001192092896,
+      0.9975695013999939
+    ],
+    [
+      0.9981938004493713,
+      0.998316764831543,
+      0.9975695013999939,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.07233352214097977,
+    "1": 0.07250803709030151,
+    "2": -0.0926610454916954,
+    "3": 0.06057751923799515
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "when I came down and I felt my knee just popped it started swelling and I could hardly walk when it happened"
+      ],
+      "0": [
+        "it feels it's on the inside of the knee",
+        "I tried some tylenol yesterday",
+        "your a1c... was a seven point two",
+        "i skip it [metformin] because it upsets my stomach"
+      ],
+      "1": [
+        "consult nutrition... get your diet a little bit better",
+        "strawberries can lower your blood pressures... but [they have] a lot of sugar"
+      ]
+    },
+    "2": {
+      "2": [
+        "about a four"
+      ],
+      "0": [
+        "first time in two years"
+      ],
+      "1": [
+        "grade two out of systolic ejection murmur",
+        "negative varus and valgus test"
+      ]
+    },
+    "3": {
+      "2": [
+        "your blood pressures been running today... one forty over eighty"
+      ],
+      "0": [
+        "blood sugars... probably about a hundred and fifty",
+        "prescribe... meloxicam fifteen milligrams"
+      ],
+      "1": [
+        "up your norvasta... to lower blood pressure to one twenty over eighty",
+        "check your blood sugars daily... log book"
+      ]
+    },
+    "1": {
+      "2": [
+        "pain to palpation of the medial aspect... edema... ecchymosis"
+      ],
+      "0": [
+        "x-ray... no fractures no bony abnormalities",
+        "mcl strain... need an mri to determine if torn",
+        "knee immobilizer... stay off of that for the next couple of weeks"
+      ],
+      "1": [
+        "follow up in two weeks to review your mri results"
+      ]
+    }
+  }
+}

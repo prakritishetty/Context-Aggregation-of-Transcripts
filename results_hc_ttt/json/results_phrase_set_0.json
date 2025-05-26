@@ -1,0 +1,149 @@
+{
+  "phrases": [
+    "I ended up going for a walk yesterday 'cause it was sunny and it was really great. And I just felt really light-headed, and I started to fall a bit, and luckily I was with my boyfriend and he caught me, and we went to the ER.",
+    "The blood pressure was pretty high in the ER, almost 200.",
+    "My blood pressures have been running high in the past... once a week, a month, it just skyrockets.",
+    "It usually ends up being I'm traveling a lot that week for work, I'm not eating as...",
+    "You're not taking your blood pressures, I take it?",
+    "No, I don't bring my cuff with me [while traveling].",
+    "I am taking the lisinopril.",
+    "Last year I started therapy and I've been going once a week and that's really helped.",
+    "My boyfriend, my mom, and my brother are amazing and they're all super close to me, it's been good.",
+    "Your heart on your heart exam does show that you have a slight 2 out of 6 systolic ejection murmur.",
+    "You do have some trace pitting edema to your lower extremities bilaterally.",
+    "I have a little bit of nasal congestion, but that's just from my seasonal allergies.",
+    "The ECG looks the same as last year... you do have those changes from your chronic high blood pressure.",
+    "The echocardiogram... shows you have that slightly leaky heart valve, nothing to do for it, and that the heart murmur is stable.",
+    "I want to increase the lisinopril to 40 milligrams once a day.",
+    "Continue to check your blood pressures and report them to me through the patient portal.",
+    "For your depression, I don't think we need to start you on any medication... you can contact me if you need anything.",
+    "No, not at this time [to questions].",
+    "It's good to see you."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    3,
+    3,
+    2,
+    1,
+    1,
+    0,
+    3,
+    2,
+    2,
+    3,
+    2,
+    1,
+    2,
+    2,
+    3,
+    1,
+    1
+  ],
+  "subcluster_labels": {
+    "0": 0,
+    "7": 0,
+    "1": 1,
+    "2": 0,
+    "3": 2,
+    "4": 1,
+    "5": 0,
+    "6": 1,
+    "8": 0,
+    "9": 1,
+    "10": 1,
+    "11": 0,
+    "12": 1,
+    "13": 1,
+    "14": 1,
+    "15": 1,
+    "16": 2,
+    "17": 1,
+    "18": 1
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "P",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.0672549232840538,
+    "calinski_harabasz_score": 3.180396556854248,
+    "davies_bouldin_score": 1.8070442679317593
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9532357454299927,
+      0.9509839415550232,
+      0.9552874565124512
+    ],
+    [
+      0.9532357454299927,
+      0.9999999403953552,
+      0.9883368015289307,
+      0.9900805950164795
+    ],
+    [
+      0.9509839415550232,
+      0.9883368015289307,
+      0.9999998807907104,
+      0.9891433715820312
+    ],
+    [
+      0.9552874565124512,
+      0.9900805950164795,
+      0.9891433715820312,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.19416914880275726,
+    "1": 0.010311154648661613,
+    "2": 0.0932464674115181,
+    "3": 0.09676849097013474
+  },
+  "cluster_phrases": {
+    "0": {
+      "0": [
+        "I ended up going for a walk yesterday 'cause it was sunny and it was really great. And I just felt really light-headed, and I started to fall a bit, and luckily I was with my boyfriend and he caught me, and we went to the ER.",
+        "Last year I started therapy and I've been going once a week and that's really helped."
+      ]
+    },
+    "1": {
+      "1": [
+        "The blood pressure was pretty high in the ER, almost 200.",
+        "I am taking the lisinopril.",
+        "The echocardiogram... shows you have that slightly leaky heart valve, nothing to do for it, and that the heart murmur is stable.",
+        "No, not at this time [to questions].",
+        "It's good to see you."
+      ],
+      "0": [
+        "No, I don't bring my cuff with me [while traveling]."
+      ]
+    },
+    "3": {
+      "0": [
+        "My blood pressures have been running high in the past... once a week, a month, it just skyrockets.",
+        "My boyfriend, my mom, and my brother are amazing and they're all super close to me, it's been good.",
+        "I have a little bit of nasal congestion, but that's just from my seasonal allergies."
+      ],
+      "2": [
+        "It usually ends up being I'm traveling a lot that week for work, I'm not eating as...",
+        "For your depression, I don't think we need to start you on any medication... you can contact me if you need anything."
+      ]
+    },
+    "2": {
+      "1": [
+        "You're not taking your blood pressures, I take it?",
+        "Your heart on your heart exam does show that you have a slight 2 out of 6 systolic ejection murmur.",
+        "You do have some trace pitting edema to your lower extremities bilaterally.",
+        "The ECG looks the same as last year... you do have those changes from your chronic high blood pressure.",
+        "I want to increase the lisinopril to 40 milligrams once a day.",
+        "Continue to check your blood pressures and report them to me through the patient portal."
+      ]
+    }
+  }
+}

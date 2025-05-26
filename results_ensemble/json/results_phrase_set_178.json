@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "I start to feel there is some phlegm building up in my throat and I start coughing my chest gets tight I start wheezing and I just have to sit down or else I'm gon na get lightheaded too.",
+    "The thing that I hate about that inhaler is I start getting shaky is that supposed to be happening?",
+    "Yes that is unfortunately normal and a side effect with the inhaler.",
+    "Pretty much every time I do any aerobic workout.",
+    "If I'm around somebody who has been smoking a lot or is currently smoking but I usually just step away I do n't even to be around them.",
+    "It's a lot of sadness a lot of I do n't really I kinda feel I do n't really want to do anything my friends will go out and I'll just be I'd rather be at home I am really tired a lot too.",
+    "There's just it I feel there's a lot of pressure and I get it but there are times where I'm just really down and I i do n't really know what else I can do.",
+    "I have an albuterol inhaler",
+    "I'm using two puffs of the inhaler for the symptoms.",
+    "We could try a daily medication since it looks you might be having a little bit of allergies maybe we can try some singulair",
+    "Start with that once you are on that daily and you can continue to use the albuterol inhaler.",
+    "I will have you come back in about six weeks and follow up and see how you're doing with that.",
+    "Let's consider having you start seeing a therapist that would be a good place to start",
+    "We will do some screening questionnaires and and follow up in a couple weeks on that too.",
+    "I do see just a little bit of fluid in the ears",
+    "Throat looks fine no tonsils."
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.17254909873008728,
+    "calinski_harabasz_score": 4.802529452551817,
+    "davies_bouldin_score": 1.174004319743955
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9982990026473999,
+      0.9980652332305908,
+      0.9961804747581482
+    ],
+    [
+      0.9982990026473999,
+      0.9999997615814209,
+      0.9947252869606018,
+      0.9957735538482666
+    ],
+    [
+      0.9980652332305908,
+      0.9947252869606018,
+      1.000000238418579,
+      0.9931280612945557
+    ],
+    [
+      0.9961804747581482,
+      0.9957735538482666,
+      0.9931280612945557,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.06608010083436966,
+    "1": 0.19729076325893402,
+    "2": 0.08994493633508682,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "1": [
+        "I start to feel there is some phlegm building up in my throat and I start coughing my chest gets tight I start wheezing and I just have to sit down or else I'm gon na get lightheaded too."
+      ],
+      "0": [
+        "It's a lot of sadness a lot of I do n't really I kinda feel I do n't really want to do anything my friends will go out and I'll just be I'd rather be at home I am really tired a lot too."
+      ],
+      "2": [
+        "There's just it I feel there's a lot of pressure and I get it but there are times where I'm just really down and I i do n't really know what else I can do."
+      ]
+    },
+    "0": {
+      "2": [
+        "The thing that I hate about that inhaler is I start getting shaky is that supposed to be happening?"
+      ],
+      "0": [
+        "Pretty much every time I do any aerobic workout.",
+        "If I'm around somebody who has been smoking a lot or is currently smoking but I usually just step away I do n't even to be around them.",
+        "I will have you come back in about six weeks and follow up and see how you're doing with that."
+      ],
+      "1": [
+        "We could try a daily medication since it looks you might be having a little bit of allergies maybe we can try some singulair",
+        "Let's consider having you start seeing a therapist that would be a good place to start",
+        "I do see just a little bit of fluid in the ears"
+      ]
+    },
+    "1": {
+      "2": [
+        "Yes that is unfortunately normal and a side effect with the inhaler."
+      ],
+      "0": [
+        "I have an albuterol inhaler",
+        "I'm using two puffs of the inhaler for the symptoms.",
+        "Start with that once you are on that daily and you can continue to use the albuterol inhaler."
+      ],
+      "1": [
+        "Throat looks fine no tonsils."
+      ]
+    },
+    "3": {
+      "0": [
+        "We will do some screening questionnaires and and follow up in a couple weeks on that too."
+      ]
+    }
+  }
+}

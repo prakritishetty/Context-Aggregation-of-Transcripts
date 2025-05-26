@@ -1,0 +1,24 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,I did have this hacking cough for about three days.
+S,0,0,she has been sick with the same symptoms and this cough has just started off with a gradual cough and I've just been coughing up some green phlegm here.
+S,0,2,I'm having a little bit of a sore throat here and a little bit of some nasal congestion.
+S,0,1,I haven't had a fever yet
+A,1,2,no shortness of breath.
+S,0,0,I've been taking some cough medication over the counter and it seems it's not really working.
+S,0,2,Around spring time I get a little bit of sneezing and the runny runny nose.
+S,0,2,My blood sugars have been running around one twenty range.
+S,0,1,The metformin is a new medication for you you've been tolerating it
+A,1,0,no diarrhea.
+S,0,1,Blood pressure has been a little bit high I've noticed... one forties the top number... seventies.
+S,0,1,I've been taking [hydrochlorothiazide] everyday.
+S,0,1,I'm having a little bit of trouble with that [sugar intake].
+O,3,2,Bilateral maxillary sinus tenderness
+O,3,0,no frontal sinus tenderness.
+A,1,2,Erythema of the pharynx... no exudates.
+O,3,1,Anterior cervical adenopathy.
+P,2,2,"Lungs are nice and clear... no wheezes, rales or rhonchi."
+A,1,1,2 out of 6 systolic ejection murmur at the left base.
+P,2,0,Upper respiratory infection... most likely it's a virus that's causing your symptoms.
+A,1,2,Continue with... drinking lots of fluids... Coricidin HBP... rest... [and] check for COVID-19.
+P,2,1,Continue you on your metformin 500 mg... [and] check hemoglobin A1c at next visit.
+P,2,0,Increase hydrochlorothiazide to 25 mg once a day... take it in the morning... continue checking blood pressure at home.

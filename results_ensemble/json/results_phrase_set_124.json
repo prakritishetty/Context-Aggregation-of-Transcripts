@@ -1,0 +1,151 @@
+{
+  "phrases": [
+    "having a lot of pain at the end of my middle finger.",
+    "I hit the ceiling of the car",
+    "five days ago.",
+    "stopped at a four-way stop... the person behind me... rear-ended me",
+    "just the middle finger.",
+    "tenderness over the distal phalanx of your middle finger.",
+    "distal phalanx fracture of the middle finger.",
+    "prescription for Tramadol 50 mg every 6 hours as needed for pain,",
+    "finger splint,",
+    "follow-up x-ray in two weeks.",
+    "I\u2019m taking digoxin for afib. Will the tramadol be with that?",
+    "You have atrial fibrillation. You take digoxin."
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    3,
+    1,
+    1,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2,
+    1,
+    1,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09908977895975113,
+    "calinski_harabasz_score": 2.1940024700797527,
+    "davies_bouldin_score": 1.2792375826900404
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.998013973236084,
+      0.9977556467056274,
+      0.9962455630302429
+    ],
+    [
+      0.998013973236084,
+      0.9999999403953552,
+      0.9969325065612793,
+      0.9966179132461548
+    ],
+    [
+      0.9977556467056274,
+      0.9969325065612793,
+      0.9999998807907104,
+      0.9954435229301453
+    ],
+    [
+      0.9962455630302429,
+      0.9966179132461548,
+      0.9954435229301453,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.05590695142745972,
+    "1": 0.09505438804626465,
+    "2": 0.13119825720787048,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "having a lot of pain at the end of my middle finger.",
+        "You have atrial fibrillation. You take digoxin."
+      ],
+      "0": [
+        "five days ago."
+      ],
+      "1": [
+        "I\u2019m taking digoxin for afib. Will the tramadol be with that?"
+      ]
+    },
+    "2": {
+      "0": [
+        "I hit the ceiling of the car",
+        "stopped at a four-way stop... the person behind me... rear-ended me"
+      ]
+    },
+    "1": {
+      "2": [
+        "just the middle finger.",
+        "finger splint,"
+      ],
+      "0": [
+        "tenderness over the distal phalanx of your middle finger."
+      ],
+      "1": [
+        "distal phalanx fracture of the middle finger.",
+        "follow-up x-ray in two weeks."
+      ]
+    },
+    "3": {
+      "0": [
+        "prescription for Tramadol 50 mg every 6 hours as needed for pain,"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,1,I hurt my knee when I was skiing two weeks ago.
+S,0,2,I ran into a tree and twisted my knee.
+O,1,2,I heard a pop in my left knee.
+O,1,0,pain lasts for as long as my walk is.
+O,1,1,swelling and stiff in the morning until I get walking.
+O,1,1,wear a brace and I have used a lot of THC cream on it.
+S,0,0,THC gummies from grandma.
+O,1,1,I had surgery on my knee before when I was fourteen.
+S,0,1,I ski probably three times a week.
+P,3,0,start three times a week
+A,2,0,prescribe meloxicam fifteen milligrams... ibuprofen eight hundred milligrams a day.
+A,2,0,discontinue the use of your THC gummies while taking these medications.
+O,1,1,I would recommend not skiing or doing any gymnastics for.

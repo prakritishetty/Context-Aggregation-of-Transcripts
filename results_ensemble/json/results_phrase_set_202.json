@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "you came in to see us today for an evaluation of that elbow pain",
+    "I really got into ceramics and doing pottery and over the past week I started to develop this elbow pain",
+    "it hurts a lot in the inside of my elbow",
+    "it stays mostly at my elbow but it can go down a bit into my forearm",
+    "no nothing... I can't think of anything",
+    "it's difficult for me sometimes to lift and do things because of that pain",
+    "I've tried ibuprofen that helps a little but not much",
+    "positive for pain to palpation... moderate tenderness of the medial epicondyle",
+    "positive for pain when you pronate that forearm",
+    "positive for pain with resistance against flexion of that left wrist",
+    "don't see any fracture or bony abnormality",
+    "consistent with medial epicondylitis caused by overuse and potential damage of those tendons that bend the wrist towards the palm",
+    "order a sling and want you to wear the sling while you're awake",
+    "apply ice to the elbow for twenty minutes three times a day",
+    "take ibuprofen 600 mg every 6 hours with food for a full week",
+    "hold off for the next couple of weeks on doing any type of pottery work",
+    "see you again in a week and see how you're doing"
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    0,
+    0,
+    3,
+    3,
+    0,
+    2,
+    0,
+    2,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    1,
+    2,
+    2,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09647940844297409,
+    "calinski_harabasz_score": 4.002831636627055,
+    "davies_bouldin_score": 1.653658868590221
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9983654022216797,
+      0.9966624975204468,
+      0.9988875985145569
+    ],
+    [
+      0.9983654022216797,
+      0.9999997615814209,
+      0.998310923576355,
+      0.9960484504699707
+    ],
+    [
+      0.9966624975204468,
+      0.998310923576355,
+      1.000000238418579,
+      0.9946287870407104
+    ],
+    [
+      0.9988875985145569,
+      0.9960484504699707,
+      0.9946287870407104,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.08416040986776352,
+    "1": -0.04239879921078682,
+    "2": 0.1973028928041458,
+    "3": 0.09144493192434311
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "you came in to see us today for an evaluation of that elbow pain",
+        "positive for pain when you pronate that forearm"
+      ],
+      "0": [
+        "it hurts a lot in the inside of my elbow",
+        "it stays mostly at my elbow but it can go down a bit into my forearm"
+      ],
+      "1": [
+        "I've tried ibuprofen that helps a little but not much",
+        "order a sling and want you to wear the sling while you're awake",
+        "see you again in a week and see how you're doing"
+      ]
+    },
+    "3": {
+      "1": [
+        "I really got into ceramics and doing pottery and over the past week I started to develop this elbow pain"
+      ],
+      "0": [
+        "no nothing... I can't think of anything"
+      ],
+      "2": [
+        "it's difficult for me sometimes to lift and do things because of that pain"
+      ]
+    },
+    "2": {
+      "2": [
+        "positive for pain to palpation... moderate tenderness of the medial epicondyle"
+      ],
+      "0": [
+        "positive for pain with resistance against flexion of that left wrist"
+      ],
+      "1": [
+        "consistent with medial epicondylitis caused by overuse and potential damage of those tendons that bend the wrist towards the palm"
+      ]
+    },
+    "1": {
+      "2": [
+        "don't see any fracture or bony abnormality"
+      ],
+      "0": [
+        "apply ice to the elbow for twenty minutes three times a day"
+      ],
+      "1": [
+        "take ibuprofen 600 mg every 6 hours with food for a full week",
+        "hold off for the next couple of weeks on doing any type of pottery work"
+      ]
+    }
+  }
+}

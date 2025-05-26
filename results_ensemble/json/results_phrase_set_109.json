@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "I'm concerned about all the medications I'm taking but I'm doing.",
+    "You are on a fair amount of medications... we need to keep those stents open and help your heart heal.",
+    "When I stand up real fast I get really dizzy.",
+    "We do have you on a beta-blocker metoprolol... if you stand up too quickly it can cause you to be a little dizzy.",
+    "The stents are permanent... you're gonna be on aspirin for the rest of your life... Brilinta for another six months.",
+    "My A1C was close to sixty... my glucose is coming in about 130 fasting.",
+    "I have stage three CKD... kidney function is stable.",
+    "I threw all of those [Motrin/Advil] out.",
+    "I'm a bad patient... haven't seen my nephrologist in a year.",
+    "I need some refills on my medications.",
+    "I do appreciate a slight three out of six systolic ejection murmur... one plus nonpitting edema.",
+    "Life sucks... I've been kinda down ever since I had my heart attack... is there any medication...",
+    "I live with my dog and that's it... it's lonely.",
+    "I'll give that a try... a referral to psychiatry... mild depression.",
+    "Cardiac rehab... to be more active and have some confidence in exercising again.",
+    "Referral to doctor Miller... follow up with your nephrologist.",
+    "Order another hemoglobin A1C... referral for the dietitian.",
+    "Tylenol is okay for headaches instead of Motrin/Advil."
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    3,
+    0,
+    3,
+    3,
+    0,
+    1,
+    1,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    1,
+    2,
+    2,
+    1,
+    1,
+    2,
+    1,
+    0,
+    2,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "P",
+    "2": "O",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.08864125609397888,
+    "calinski_harabasz_score": 3.120427186711792,
+    "davies_bouldin_score": 1.7352554715152455
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9980576038360596,
+      0.9979865550994873,
+      0.9992209672927856
+    ],
+    [
+      0.9980576038360596,
+      1.000000238418579,
+      0.9975008964538574,
+      0.9968501925468445
+    ],
+    [
+      0.9979865550994873,
+      0.9975008964538574,
+      0.9999998807907104,
+      0.9976460933685303
+    ],
+    [
+      0.9992209672927856,
+      0.9968501925468445,
+      0.9976460933685303,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11971030384302139,
+    "1": 0.17277200520038605,
+    "2": 0.27599361538887024,
+    "3": 0.18040645122528076
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "I'm concerned about all the medications I'm taking but I'm doing.",
+        "I need some refills on my medications."
+      ],
+      "0": [
+        "When I stand up real fast I get really dizzy."
+      ],
+      "1": [
+        "Life sucks... I've been kinda down ever since I had my heart attack... is there any medication...",
+        "I live with my dog and that's it... it's lonely."
+      ]
+    },
+    "0": {
+      "2": [
+        "You are on a fair amount of medications... we need to keep those stents open and help your heart heal.",
+        "My A1C was close to sixty... my glucose is coming in about 130 fasting.",
+        "I do appreciate a slight three out of six systolic ejection murmur... one plus nonpitting edema.",
+        "I'll give that a try... a referral to psychiatry... mild depression."
+      ],
+      "0": [
+        "We do have you on a beta-blocker metoprolol... if you stand up too quickly it can cause you to be a little dizzy.",
+        "The stents are permanent... you're gonna be on aspirin for the rest of your life... Brilinta for another six months."
+      ],
+      "1": [
+        "I have stage three CKD... kidney function is stable.",
+        "I'm a bad patient... haven't seen my nephrologist in a year."
+      ]
+    },
+    "2": {
+      "0": [
+        "I threw all of those [Motrin/Advil] out.",
+        "Tylenol is okay for headaches instead of Motrin/Advil."
+      ]
+    },
+    "1": {
+      "1": [
+        "Cardiac rehab... to be more active and have some confidence in exercising again."
+      ],
+      "0": [
+        "Referral to doctor Miller... follow up with your nephrologist."
+      ],
+      "2": [
+        "Order another hemoglobin A1C... referral for the dietitian."
+      ]
+    }
+  }
+}

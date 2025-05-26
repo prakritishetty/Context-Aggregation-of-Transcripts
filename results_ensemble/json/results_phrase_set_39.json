@@ -1,0 +1,215 @@
+{
+  "phrases": [
+    "I've been having some shortness of breath.",
+    "It's been about a week.",
+    "This happened about six months ago and I came in and they changed my Lasix dose and I seemed to get better.",
+    "The pumping function of your heart was a little low, that what we call that ejection fraction was about thirty-five percent.",
+    "The last couple of weeks and I/we've had a bunch of family get-togethers and I/I don't think my diet has been everything it should have been.",
+    "Yes, definitely",
+    "I take it every day",
+    "No, it seems about the same",
+    "Walking around stairs in particular walking quickly",
+    "I\u2019ve gone from one pillow to two pillows",
+    "I took Motrin to get rid of [foot pain] and I took Motrin for a while and I stopped as quickly as I could.",
+    "Tylenol\u2019s lovely it just isn\u2019t very effective.",
+    "Jugular venous distension up to about nine centimeters",
+    "Bibasilar crackles with occasional rhonchi that clears when you cough",
+    "Three out of six systolic ejection murmur heard at the left base",
+    "One to two plus pitting edema bilaterally",
+    "Increase your Lasix from forty milligrams a day to eighty milligrams a day",
+    "Order a chest x-ray just to make sure that we are not missing anything else",
+    "Order another echocardiogram to check out that heart murmur",
+    "Don\u2019t please don\u2019t take anymore Motrin or Advil",
+    "Order a complete metabolic panel just to make sure that your kidney function is stable",
+    "Order a uric acid just to see",
+    "I want you to call me in two days and let me know how your weight has been with increasing the diuretic",
+    "Referral to a dietitian",
+    "Your blood pressure is about one thirty-five over eighty",
+    "Recent dietary indiscretion may have contributed to this development",
+    "Possible gout flare related to his chronic kidney disease"
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    2,
+    1,
+    0,
+    2,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    1,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    0,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    2,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "P",
+    "3": "S"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1201811134815216,
+    "calinski_harabasz_score": 4.227988459494493,
+    "davies_bouldin_score": 1.5083299121143634
+  },
+  "similarity_matrix": [
+    [
+      1.0000001192092896,
+      0.9972102642059326,
+      0.9977585673332214,
+      0.9951975345611572
+    ],
+    [
+      0.9972102642059326,
+      0.9999997615814209,
+      0.9985376596450806,
+      0.9951092004776001
+    ],
+    [
+      0.9977585673332214,
+      0.9985376596450806,
+      1.0000001192092896,
+      0.9945178627967834
+    ],
+    [
+      0.9951975345611572,
+      0.9951092004776001,
+      0.9945178627967834,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.07363495975732803,
+    "1": 0.10033810883760452,
+    "2": 0.07383500784635544,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I've been having some shortness of breath.",
+        "It's been about a week.",
+        "The pumping function of your heart was a little low, that what we call that ejection fraction was about thirty-five percent.",
+        "Your blood pressure is about one thirty-five over eighty"
+      ],
+      "0": [
+        "This happened about six months ago and I came in and they changed my Lasix dose and I seemed to get better.",
+        "The last couple of weeks and I/we've had a bunch of family get-togethers and I/I don't think my diet has been everything it should have been.",
+        "I took Motrin to get rid of [foot pain] and I took Motrin for a while and I stopped as quickly as I could."
+      ],
+      "1": [
+        "No, it seems about the same"
+      ]
+    },
+    "0": {
+      "2": [
+        "Yes, definitely"
+      ],
+      "1": [
+        "Walking around stairs in particular walking quickly",
+        "One to two plus pitting edema bilaterally",
+        "Increase your Lasix from forty milligrams a day to eighty milligrams a day",
+        "Order a chest x-ray just to make sure that we are not missing anything else",
+        "Order a complete metabolic panel just to make sure that your kidney function is stable",
+        "Order a uric acid just to see",
+        "Referral to a dietitian",
+        "Possible gout flare related to his chronic kidney disease"
+      ],
+      "0": [
+        "Jugular venous distension up to about nine centimeters",
+        "Bibasilar crackles with occasional rhonchi that clears when you cough",
+        "Three out of six systolic ejection murmur heard at the left base",
+        "Order another echocardiogram to check out that heart murmur"
+      ]
+    },
+    "2": {
+      "2": [
+        "I take it every day"
+      ],
+      "0": [
+        "I\u2019ve gone from one pillow to two pillows",
+        "Tylenol\u2019s lovely it just isn\u2019t very effective.",
+        "Don\u2019t please don\u2019t take anymore Motrin or Advil"
+      ],
+      "1": [
+        "I want you to call me in two days and let me know how your weight has been with increasing the diuretic"
+      ]
+    },
+    "3": {
+      "0": [
+        "Recent dietary indiscretion may have contributed to this development"
+      ]
+    }
+  }
+}

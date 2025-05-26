@@ -1,0 +1,179 @@
+{
+  "phrases": [
+    "I see a counselor once a week.",
+    "I've been out swimming at the pool a lot this summer and fall.",
+    "No, no, no. But I know I can call you if I do [start medication].",
+    "I agree. I don't think you need to start on any medication at this time.",
+    "I still have my good days and my bad days. I do take my medicine daily, but that burger and wine, every once in a while, sneaks in there, and that salt be. We know what that does.",
+    "Your blood pressure's a little elevated today, 156 over 94.",
+    "I want to go ahead and increase the Norvasc up to 10 mg a day and order an echocardiogram and a lipid panel.",
+    "I'm just progressed to exercises at home.",
+    "I'm stretching with a yoga ball. I'm getting stronger each time.",
+    "I would just continue with the exercises and don't think we need to intervene anymore.",
+    "I do notice that I get a little bit of swelling in my ankles. Mainly near the end of the day. It seems to go away by the next morning.",
+    "1 to 2+ pitting edema in your legs.",
+    "A slight 3 out of 6 systolic ejection murmur, but we've heard that in the past.",
+    "Everything looks good. On your heart exam, that seems stable to me.",
+    "Looking here at your lab results, everything looks really good. Your creatinine, that's your kidney function, that looks stable.",
+    "Your EKG is normal. There's no evidence of any coronary artery disease.",
+    "No questions.",
+    "The patient understands and agrees with the recommended medical treatment plan."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    1,
+    3,
+    2,
+    2,
+    1,
+    1,
+    1,
+    3,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    },
+    "llm": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "A",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "A",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16212797164916992,
+    "calinski_harabasz_score": 4.6931677180110976,
+    "davies_bouldin_score": 1.3856168901739767
+  },
+  "similarity_matrix": [
+    [
+      1.0,
+      0.9960860013961792,
+      0.9974257946014404,
+      0.9928832054138184
+    ],
+    [
+      0.9960860013961792,
+      0.9999999403953552,
+      0.998572587966919,
+      0.9982490539550781
+    ],
+    [
+      0.9974257946014404,
+      0.998572587966919,
+      1.0,
+      0.997163712978363
+    ],
+    [
+      0.9928832054138184,
+      0.9982490539550781,
+      0.997163712978363,
+      1.0000001192092896
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09088847041130066,
+    "1": 0.20681020617485046,
+    "2": 0.12709477543830872,
+    "3": 0.11710108816623688
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "I see a counselor once a week."
+      ],
+      "1": [
+        "I've been out swimming at the pool a lot this summer and fall.",
+        "I'm stretching with a yoga ball. I'm getting stronger each time.",
+        "I would just continue with the exercises and don't think we need to intervene anymore."
+      ],
+      "0": [
+        "No, no, no. But I know I can call you if I do [start medication].",
+        "I agree. I don't think you need to start on any medication at this time.",
+        "I'm just progressed to exercises at home."
+      ]
+    },
+    "3": {
+      "0": [
+        "I still have my good days and my bad days. I do take my medicine daily, but that burger and wine, every once in a while, sneaks in there, and that salt be. We know what that does.",
+        "I do notice that I get a little bit of swelling in my ankles. Mainly near the end of the day. It seems to go away by the next morning."
+      ]
+    },
+    "2": {
+      "2": [
+        "Your blood pressure's a little elevated today, 156 over 94.",
+        "I want to go ahead and increase the Norvasc up to 10 mg a day and order an echocardiogram and a lipid panel."
+      ],
+      "0": [
+        "A slight 3 out of 6 systolic ejection murmur, but we've heard that in the past."
+      ],
+      "1": [
+        "Everything looks good. On your heart exam, that seems stable to me.",
+        "Looking here at your lab results, everything looks really good. Your creatinine, that's your kidney function, that looks stable.",
+        "Your EKG is normal. There's no evidence of any coronary artery disease."
+      ]
+    },
+    "0": {
+      "2": [
+        "1 to 2+ pitting edema in your legs."
+      ],
+      "0": [
+        "No questions."
+      ],
+      "1": [
+        "The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    }
+  }
+}

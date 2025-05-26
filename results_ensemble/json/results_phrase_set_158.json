@@ -1,0 +1,171 @@
+{
+  "phrases": [
+    "my blood pressure has been quite high",
+    "added to medications but and but I I wasn't [taking them] before but I am and we're still having a hard time controlling my blood pressure",
+    "my last blood work [...] she said something about my kidneys",
+    "before I wasn't [taking medications] but I am [...] I've noticed that it has been getting higher the other day was even as high as one seventy over ninety",
+    "during football season it's really difficult [...] I really love watching my games have a lot of pizza wings subs",
+    "I occasionally take nonsteroidals [...] Advil or Motrin or Aleve",
+    "both my parents do have high blood pressure and one of them did have kidney disease",
+    "blood pressure [...] one sixty nine over seventy four",
+    "hear a two over six systolic ejection murmur [...] small amount of one plus pitting edema bilaterally",
+    "order a renal artery ultrasound [...] urine collection, morning aldosterone levels, reining levels, and a twenty four hour urine",
+    "decrease your alcohol [...] bring it down to maybe one or two a week",
+    "stop taking any nonsteroidal medicines [...] take Tylenol for any pain",
+    "prescribe [...] Cardura four milligrams once a day",
+    "return in three weeks [...] record all of your blood pressures [...] at the same time every day",
+    "referral to a nutritionist [...] help with salt intake",
+    "uncontrolled hypertension [...] multifactorial [...] need to be changing your medicine around"
+  ],
+  "cluster_labels": [
+    0,
+    3,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    2,
+    2,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "O",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.144212007522583,
+    "calinski_harabasz_score": 3.6981880916925953,
+    "davies_bouldin_score": 1.577218591752564
+  },
+  "similarity_matrix": [
+    [
+      0.9999998211860657,
+      0.9986221790313721,
+      0.997197687625885,
+      0.9968121647834778
+    ],
+    [
+      0.9986221790313721,
+      1.0,
+      0.9969674348831177,
+      0.9965897798538208
+    ],
+    [
+      0.997197687625885,
+      0.9969674348831177,
+      0.9999998807907104,
+      0.9932369589805603
+    ],
+    [
+      0.9968121647834778,
+      0.9965897798538208,
+      0.9932369589805603,
+      0.9999998807907104
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.05791159346699715,
+    "1": 0.03310822695493698,
+    "2": -0.024856245145201683,
+    "3": 0.05463162064552307
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "my blood pressure has been quite high"
+      ],
+      "1": [
+        "I occasionally take nonsteroidals [...] Advil or Motrin or Aleve",
+        "blood pressure [...] one sixty nine over seventy four",
+        "stop taking any nonsteroidal medicines [...] take Tylenol for any pain",
+        "prescribe [...] Cardura four milligrams once a day"
+      ],
+      "0": [
+        "both my parents do have high blood pressure and one of them did have kidney disease"
+      ]
+    },
+    "3": {
+      "2": [
+        "added to medications but and but I I wasn't [taking them] before but I am and we're still having a hard time controlling my blood pressure"
+      ],
+      "0": [
+        "my last blood work [...] she said something about my kidneys"
+      ],
+      "1": [
+        "before I wasn't [taking medications] but I am [...] I've noticed that it has been getting higher the other day was even as high as one seventy over ninety",
+        "during football season it's really difficult [...] I really love watching my games have a lot of pizza wings subs"
+      ]
+    },
+    "2": {
+      "0": [
+        "hear a two over six systolic ejection murmur [...] small amount of one plus pitting edema bilaterally",
+        "order a renal artery ultrasound [...] urine collection, morning aldosterone levels, reining levels, and a twenty four hour urine"
+      ]
+    },
+    "1": {
+      "2": [
+        "decrease your alcohol [...] bring it down to maybe one or two a week"
+      ],
+      "0": [
+        "return in three weeks [...] record all of your blood pressures [...] at the same time every day",
+        "uncontrolled hypertension [...] multifactorial [...] need to be changing your medicine around"
+      ],
+      "1": [
+        "referral to a nutritionist [...] help with salt intake"
+      ]
+    }
+  }
+}

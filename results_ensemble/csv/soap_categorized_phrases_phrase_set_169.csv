@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,sudden onset of pain in my back
+S,1,2,radiated almost down to my groin
+S,1,0,never had that before
+S,1,0,father's had them in the past
+A,0,2,CT scan... showed a stone measuring 0.5 centimeters located in the proximal ureter
+P,2,2,no evidence of hydronephrosis
+O,3,0,push fluids... pass the stone
+P,2,0,prescribe oxycodone 5 mg every 6 to 8 hours for pain
+A,0,0,continue to strain urine... until the stone passes
+A,0,0,urinalysis and urine culture... rule out infection
+P,2,1,follow up in about one to two weeks
+A,0,0,lithotripsy... break up the stone
+S,1,1,denies any blood in urine
+S,1,0,tenderness on the right side
+A,0,1,"vitals look good... no fever, blood pressure and heart rate are fine"

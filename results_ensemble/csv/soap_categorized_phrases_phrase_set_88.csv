@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,0,it's been mostly my knees
+S,0,1,"I've been doing more stair type workouts, which I thought was building muscle on my knees and supposed to help"
+S,0,2,"no, but I should mention that I had a rotator cuff repair about two years ago"
+S,0,0,"my diabetes... I monitor that and I've been taking medication for that, and that hasn't elevated in any way since the joint pain"
+S,0,2,"your blood pressure's pretty high today, you might be a little nervous here"
+O,3,0,"your left knee you do have a slight erythema and edema. There is a small effusion present over your left knee, you have some decrease flexion and extension of your knee"
+S,0,1,"this is a normal x-ray of your left knee, you may just have a little bit of a strain going on"
+S,0,1,we'll work for you to do some physical therapy and I'd to go ahead and give you an anti-inflammatory medication to help with the pain
+P,1,0,order meloxicam 15mg once a day... order a physical therapy referral... order an autoimmune profile
+S,0,1,because your blood pressure is a little elevated today... continue to monitor it at home and send me a report in the next couple of weeks
+P,1,0,continue you on your metformin 500mg twice a day
+A,2,0,that sounds great

@@ -1,0 +1,175 @@
+{
+  "phrases": [
+    "I'm always coughing and wheezing",
+    "I end up waking up needing to use my inhaler a couple of times a week.",
+    "When I get sick with a cold, I almost always know that my asthma is going to flare",
+    "my aunt's cat triggered a flare.",
+    "It happens every month or every other month for the past six months.",
+    "I\u2019ve had several urgent care visits this past year and once ended up in the emergency department.",
+    "I only use the blue inhaler (Ventolin), taking two puffs daily, and the other inhaler doesn\u2019t work for me.",
+    "Diminished lung sounds throughout with occasional slight expiratory wheezes bilaterally.",
+    "Consistent with asthma.",
+    "Moderate intermittent asthma.",
+    "Flovent 110 mcg, one puff twice daily, and continue Ventolin 2 puffs every 4\u20136 hours as needed.",
+    "Developing an asthma action plan to address triggers like cats and manage symptoms.",
+    "Reevaluation in one month or sooner if symptoms worsen.",
+    "Occasional exposure to smoking in bars irritates my breathing.",
+    "No history of seasonal allergies.",
+    "I\u2019ve never smoked, vape, or used marijuana.",
+    "Understands and agrees with the treatment plan."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    0,
+    2,
+    1,
+    1,
+    0,
+    3,
+    3,
+    0,
+    3,
+    0,
+    0,
+    0,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    2,
+    1,
+    0,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16035111248493195,
+    "calinski_harabasz_score": 3.822027680469618,
+    "davies_bouldin_score": 1.4124015191036228
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9975326657295227,
+      0.9971151947975159,
+      0.9976775646209717
+    ],
+    [
+      0.9975326657295227,
+      1.0000001192092896,
+      0.9950891137123108,
+      0.9946230053901672
+    ],
+    [
+      0.9971151947975159,
+      0.9950891137123108,
+      0.9999998211860657,
+      0.9972776174545288
+    ],
+    [
+      0.9976775646209717,
+      0.9946230053901672,
+      0.9972776174545288,
+      0.9999997019767761
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.0678386390209198,
+    "1": 0.19879600405693054,
+    "2": 0.06233026087284088,
+    "3": 0.37123891711235046
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "I'm always coughing and wheezing"
+      ],
+      "1": [
+        "my aunt's cat triggered a flare.",
+        "Flovent 110 mcg, one puff twice daily, and continue Ventolin 2 puffs every 4\u20136 hours as needed.",
+        "Reevaluation in one month or sooner if symptoms worsen.",
+        "Occasional exposure to smoking in bars irritates my breathing.",
+        "No history of seasonal allergies."
+      ],
+      "0": [
+        "Diminished lung sounds throughout with occasional slight expiratory wheezes bilaterally."
+      ]
+    },
+    "1": {
+      "2": [
+        "I end up waking up needing to use my inhaler a couple of times a week.",
+        "I\u2019ve had several urgent care visits this past year and once ended up in the emergency department."
+      ],
+      "0": [
+        "When I get sick with a cold, I almost always know that my asthma is going to flare"
+      ],
+      "1": [
+        "I only use the blue inhaler (Ventolin), taking two puffs daily, and the other inhaler doesn\u2019t work for me.",
+        "I\u2019ve never smoked, vape, or used marijuana."
+      ]
+    },
+    "2": {
+      "0": [
+        "It happens every month or every other month for the past six months.",
+        "Understands and agrees with the treatment plan."
+      ]
+    },
+    "3": {
+      "2": [
+        "Consistent with asthma."
+      ],
+      "0": [
+        "Moderate intermittent asthma."
+      ],
+      "1": [
+        "Developing an asthma action plan to address triggers like cats and manage symptoms."
+      ]
+    }
+  }
+}

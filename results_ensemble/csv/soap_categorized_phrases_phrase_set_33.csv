@@ -1,0 +1,25 @@
+soap_category,main_cluster,subcluster,phrase
+O,3,2,Back pain for a while... for about a couple of years and tried a couple things but nothing seems to work.
+O,3,1,Played basketball and I bumped one time and I fell and I hit I fell on my back real hard.
+O,3,0,Pain is around a seven... sharp... throbs sometimes.
+O,3,1,Radiates down my left leg... my toes get numb a little sometimes.
+O,3,1,Standing for too long makes me weak... lying on my side makes me feel better.
+O,3,1,I pooped myself once... drinking too [when it happened].
+A,2,2,Had a doc gave me some injections before I’m not sure what they were though... I had to have someone hold me down I don’t want that.
+P,1,2,Physical therapy... charged me and it... a little [help].
+A,2,0,White pill I’m not sure what it was.
+A,2,1,I don’t want needles... can I take a pill?
+O,3,2,Sit at home all day... watch TV... not very active... gained about eighty pounds the past year.
+P,1,0,Fourth cousin has scoliosis... no direct family [history].
+P,1,0,Smoked [before]... not currently smoking.
+S,0,2,Midline tenderness on the L4 L5 disc space with sided lumbar paravertebral tenderness.
+S,0,0,Pain with lumbar flexion and extension.
+S,0,0,Supine straight leg test positive.
+S,0,2,Decreased sensation to light touch at the lateral thigh at L4 dermatome.
+S,0,1,"MRI... disc desiccation, disc bulge with parison paracentral disc herniation resulting in moderate for neural foraminal stenosis."
+S,0,1,Herniated disk at the L4 L5 with radiculopathy... pinching on some nerves.
+P,1,0,Spinal injection with a strong anti-inflammatory medication called a corticosteroid... [with] a prescription for anxiety.
+P,1,2,Pain pills... not a good long-term solution... surgery [if needed].
+P,1,1,Schedule the injection... four times a year.
+A,2,1,I don’t want needles... had to be held down.
+P,1,0,When am I having this injection?

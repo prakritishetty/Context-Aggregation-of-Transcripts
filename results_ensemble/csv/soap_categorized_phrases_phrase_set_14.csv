@@ -1,0 +1,23 @@
+soap_category,main_cluster,subcluster,phrase
+O,1,2,I really don't think it was a UTI.
+O,1,0,I felt much better when I got home and finally pooped.
+O,1,0,"I told them when I was admitted, and they did X-rays and everything, but they said, 'no.'"
+O,1,0,"I take MiraLAX every day... when I don't go, I double up on that."
+O,1,0,I have it [lactulose]... it takes about two days to work and it's a brutal two days.
+O,1,0,I'm unvaccinated... we don't know the side effects... vaccine injury... I'm young and healthy enough to beat it... take vitamin C and multivitamins.
+S,0,2,The cultures are not very impressive.
+S,0,0,Inflammation can do that... backed up and inflamed.
+S,0,0,We'll repeat the CBC to ensure it trends downward.
+O,1,0,You're high risk... I've seen people die from COVID... vaccine is safe.
+P,3,2,The virus is becoming more contagious but less deadly... pandemics end this way.
+S,0,1,I wondered if automatic dysreflexia can affect the white count?
+S,0,2,"typically, it doesn't."
+A,2,2,if you do get dehydrated even just a little bit it can lead to further worsening constipation issues.
+S,0,2,I recommend combining MiraLAX with lactulose as a rescue.
+P,3,0,The only true preventative mechanism for COVID is the vaccine... supplements are not necessarily going to help.
+O,1,0,I've had healthy people die from COVID.
+P,3,1,the virus starts losing its potency... how most pandemics end.
+A,2,0,"She believes her hospitalization was more likely due to her dysreflexia, from her quadriplegia that typically occurs."
+A,2,0,Her leukocytosis may have been due to inflammation from constipation.
+A,2,1,Follow-up labs and appointments have been ordered for CBC and cholesterol in 2-3 weeks.
+O,1,1,She is hesitant about the vaccine... considers herself homeopathic in some viewpoints.

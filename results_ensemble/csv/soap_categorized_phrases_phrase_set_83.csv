@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,2,high blood pressure check.
+O,1,2,"I've always struggled with high blood pressure, but it's seeming to get really out of control lately."
+O,1,0,"you're on Norvasc and we had to increase your dose, you're on 10 milligrams a day."
+A,2,0,they have been over 150.
+O,1,1,I have had some headaches. I don't know if that's just because of more stress at work or because of the high blood pressure.
+A,2,1,"no, nothing that."
+A,2,1,everything's been good and solid there.
+S,3,0,heart is irregular rate and rhythm. I do hear a slight two out of six systolic ejection murmur. Your lungs are clear. I do see the scar on the left left plank for your kidney transplant which is healed. You have no lower extremity edema.
+P,0,2,kidney function looks really good
+A,2,1,"ekg looks great, perfectly normal."
+P,0,0,"prescribe you coreg 25 milligrams, twice a day."
+P,0,1,get a lipid panel and some routine labs on you just to make sure that everything is.
+P,0,0,continue you on all of those medications.
+O,1,0,"schedule a follow-up appointment with me, and we'll see what your blood pressure looks in a couple weeks."

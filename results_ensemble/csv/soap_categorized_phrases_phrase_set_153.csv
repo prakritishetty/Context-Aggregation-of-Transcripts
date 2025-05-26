@@ -1,0 +1,16 @@
+soap_category,main_cluster,subcluster,phrase
+A,1,2,Left shoulder pain for the last three weeks and it's not getting better.
+S,2,2,I’ve been doing a lot of work in my basement and I even put in a new ceiling.
+S,2,0,"I can’t recall falling on it, injuring it, or getting hit."
+S,2,1,It’s pretty much all the time anytime I put any pressure on it when I’m trying to sleep it hurts even more.
+A,1,0,Tylenol usually works for me and it does take the edge off but I still have pain.
+S,2,0,I iced it initially but I haven’t iced it at all recently.
+P,3,0,No numbness or tingling in my arm or fingers.
+O,0,2,Limited active and passive range of motion with tenderness at the greater tuberosity of the humerus.
+A,1,1,"X-ray of the shoulder was normal, no fractures or bony abnormalities."
+O,0,0,Assessment: likely rotator cuff tendinopathy.
+O,0,1,Ordering an MRI of the left shoulder to evaluate further.
+O,0,1,Referring to physical therapy for 6 to 8 weeks to strengthen the shoulder muscles.
+P,3,0,Continue Tylenol for pain; consider a steroid injection if symptoms don’t improve.
+A,1,0,Patient is very active and asks if the pain will go away with treatment.
+O,0,1,"Physical therapy should alleviate pain and allow return to activities like renovating, jogging, and lifting weights."

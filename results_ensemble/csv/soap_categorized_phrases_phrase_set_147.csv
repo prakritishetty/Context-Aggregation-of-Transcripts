@@ -1,0 +1,19 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,Here for chronic abdominal pain.
+S,1,2,I had an abdominal CT on 1/23/2020. Impression is a normal CT of the abdomen.
+O,0,1,The problem is I'm either constipated or have explosive diarrhea.
+S,1,0,"I've been having this pain here in my stomach, around here. [...] In the area of your mid abdomen, just below the belly button? [Patient] Correct."
+A,3,2,"The pain is there all the time? [...] It's a nagging feeling and it just depends. Sometimes it bothers me, sometimes it doesn't. [...] More recently in the past couple months, at least with the constipation and diarrhea."
+A,3,0,"When you're constipated, do you not have a bowel movement or is the stool hard? [...] I usually don't go, but when I do, it's hard. [...] About three to four times a week."
+A,3,0,"If I eat pasta with a creamy sauce, I'm probably gonna have diarrhea. [...] It's usually just one time and it's over."
+A,3,0,"My weight has been stable, although I could stand to lose about 25 pounds."
+A,3,0,My sister does have problems with her stomach too. She has irritable bowel syndrome and that is what I always thought I had even though I've never been diagnosed with it.
+S,1,1,"I've never had any surgery. [...] Your gallbladder, appendix, all those are still intact? [Patient] Yup."
+A,3,1,I've never had a colonoscopy. I thought that happens when you turn 50.
+O,0,0,The hepatomegaly means the liver is enlarged.
+A,3,0,"They said I had some very slightly elevated liver enzymes, but we would recheck them in about six months. [...] The ALT and the AST were elevated."
+O,0,1,Crestor is one of the medications that can cause liver toxicity. It may be a good idea to discuss other alternatives.
+P,2,0,Start a fiber supplement that should help with that. [...] Increase your water intake to at least 48 ounces a day. [...] Avoid trigger foods that may cause episodes of diarrhea.
+P,2,0,We should check your liver enzymes in addition to a few other labs. [...] Schedule a liver ultrasound pending lab results.
+O,0,1,Refrain from drinking any alcohol.
+O,0,1,Let's schedule an appointment when you check out to return in four weeks.

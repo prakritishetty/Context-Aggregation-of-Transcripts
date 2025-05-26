@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "one of the antibodies your body makes to fight infections.",
+    "I get a lot of colds and they do seem to linger for a long time.",
+    "no abdominal infections... no diarrhea.",
+    "started on metformin",
+    "no one in my family has immune deficiencies.",
+    "no fever, normal vitals,",
+    "regular heart rhythm with no murmurs,",
+    "clear lungs,",
+    "soft abdomen without tenderness.",
+    "lab results are consistent with an IgA deficiency.",
+    "other antibodies",
+    "infections that don\u2019t stop",
+    "severe diarrhea.",
+    "if you ever need blood products, they need to know about your IgA deficiency to avoid a strong reaction."
+  ],
+  "cluster_labels": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    3,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    1,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "O",
+      "1": "A",
+      "2": "P",
+      "3": "S"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.19210754334926605,
+    "calinski_harabasz_score": 3.785191289344897,
+    "davies_bouldin_score": 1.1912602046734346
+  },
+  "similarity_matrix": [
+    [
+      1.0000003576278687,
+      0.9980283975601196,
+      0.997795045375824,
+      0.9950934648513794
+    ],
+    [
+      0.9980283975601196,
+      1.0000001192092896,
+      0.9959397315979004,
+      0.9945216178894043
+    ],
+    [
+      0.997795045375824,
+      0.9959397315979004,
+      0.9999998807907104,
+      0.9952825307846069
+    ],
+    [
+      0.9950934648513794,
+      0.9945216178894043,
+      0.9952825307846069,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.24953623116016388,
+    "1": 0.17543594539165497,
+    "2": 0.11451995372772217,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "1": {
+      "2": [
+        "one of the antibodies your body makes to fight infections."
+      ],
+      "1": [
+        "I get a lot of colds and they do seem to linger for a long time.",
+        "if you ever need blood products, they need to know about your IgA deficiency to avoid a strong reaction."
+      ],
+      "0": [
+        "no abdominal infections... no diarrhea.",
+        "no one in my family has immune deficiencies.",
+        "lab results are consistent with an IgA deficiency."
+      ]
+    },
+    "2": {
+      "2": [
+        "started on metformin"
+      ],
+      "0": [
+        "clear lungs,"
+      ],
+      "1": [
+        "other antibodies"
+      ]
+    },
+    "0": {
+      "2": [
+        "no fever, normal vitals,"
+      ],
+      "0": [
+        "regular heart rhythm with no murmurs,"
+      ],
+      "1": [
+        "soft abdomen without tenderness.",
+        "severe diarrhea."
+      ]
+    },
+    "3": {
+      "0": [
+        "infections that don\u2019t stop"
+      ]
+    }
+  }
+}

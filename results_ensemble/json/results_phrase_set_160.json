@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "my throat has been hurting me for four days and I had a fever last night because I was really sweaty but I didn\u2019t take my temperature because I was already in bed.",
+    "every time I swallow I\u2019m even having trouble eating I can drink the really cold water feels good.",
+    "last night I was chills and I had a lot of sweating and it\u2019s really hard to swallow.",
+    "my tonsils are swollen too",
+    "when I was a kid I had strep throat but I haven\u2019t had anything as an adult",
+    "I take it every morning with my multivitamin and my vitamin D",
+    "I take it with my breakfast and with my dinner",
+    "my blood pressure is all over the place sometimes it could be one twenty for the top number sometimes it could be one forty for the top number I don\u2019t really remember the bottom number though",
+    "sometimes I get if I take it first thing in the morning it\u2019ll be eighty or ninety but at night sometimes it could be one forty",
+    "on throat examination there is bilateral erythema and edema of the peritonsillar space with exudates present bilaterally the uvula is midline",
+    "temperature: 100.4 degrees F. Blood pressure: 132/80 mm Hg. Heart rate: 84 BPM",
+    "prescribe amoxicillin 500 mg three times a day for ten days",
+    "increase lisinopril to forty milligrams once a day",
+    "order a hemoglobin A1c",
+    "besides my wine at night I really just drink water all day",
+    "I really my chips with my wine",
+    "I do have little kids that go to school they\u2019ve always got those little runny noses or cough but nobody is really complaining of anything",
+    "showing signs of an upper respiratory infection and I\u2019m concerned that you might have some strep in the back of your throat",
+    "sounds good",
+    "that\u2019s everything"
+  ],
+  "cluster_labels": [
+    2,
+    2,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    2,
+    2,
+    0,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    1,
+    2,
+    1,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.16130587458610535,
+    "calinski_harabasz_score": 6.2151411406316175,
+    "davies_bouldin_score": 1.150748886556474
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9970760345458984,
+      0.9943150877952576,
+      0.9928083419799805
+    ],
+    [
+      0.9970760345458984,
+      1.0000003576278687,
+      0.9981454014778137,
+      0.9936479926109314
+    ],
+    [
+      0.9943150877952576,
+      0.9981454014778137,
+      0.9999999403953552,
+      0.9926271438598633
+    ],
+    [
+      0.9928083419799805,
+      0.9936479926109314,
+      0.9926271438598633,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.11154858022928238,
+    "1": 0.10560262203216553,
+    "2": 0.12448372691869736,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "my throat has been hurting me for four days and I had a fever last night because I was really sweaty but I didn\u2019t take my temperature because I was already in bed.",
+        "last night I was chills and I had a lot of sweating and it\u2019s really hard to swallow.",
+        "I do have little kids that go to school they\u2019ve always got those little runny noses or cough but nobody is really complaining of anything"
+      ],
+      "2": [
+        "every time I swallow I\u2019m even having trouble eating I can drink the really cold water feels good.",
+        "my blood pressure is all over the place sometimes it could be one twenty for the top number sometimes it could be one forty for the top number I don\u2019t really remember the bottom number though"
+      ],
+      "1": [
+        "when I was a kid I had strep throat but I haven\u2019t had anything as an adult",
+        "sometimes I get if I take it first thing in the morning it\u2019ll be eighty or ninety but at night sometimes it could be one forty",
+        "showing signs of an upper respiratory infection and I\u2019m concerned that you might have some strep in the back of your throat"
+      ]
+    },
+    "1": {
+      "2": [
+        "my tonsils are swollen too"
+      ],
+      "0": [
+        "I take it every morning with my multivitamin and my vitamin D"
+      ],
+      "1": [
+        "I take it with my breakfast and with my dinner",
+        "besides my wine at night I really just drink water all day",
+        "I really my chips with my wine"
+      ]
+    },
+    "3": {
+      "0": [
+        "on throat examination there is bilateral erythema and edema of the peritonsillar space with exudates present bilaterally the uvula is midline"
+      ]
+    },
+    "0": {
+      "2": [
+        "temperature: 100.4 degrees F. Blood pressure: 132/80 mm Hg. Heart rate: 84 BPM"
+      ],
+      "0": [
+        "prescribe amoxicillin 500 mg three times a day for ten days",
+        "increase lisinopril to forty milligrams once a day"
+      ],
+      "1": [
+        "order a hemoglobin A1c",
+        "sounds good",
+        "that\u2019s everything"
+      ]
+    }
+  }
+}

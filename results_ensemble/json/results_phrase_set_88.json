@@ -1,0 +1,147 @@
+{
+  "phrases": [
+    "it's been mostly my knees",
+    "I've been doing more stair type workouts, which I thought was building muscle on my knees and supposed to help",
+    "no, but I should mention that I had a rotator cuff repair about two years ago",
+    "my diabetes... I monitor that and I've been taking medication for that, and that hasn't elevated in any way since the joint pain",
+    "your blood pressure's pretty high today, you might be a little nervous here",
+    "your left knee you do have a slight erythema and edema. There is a small effusion present over your left knee, you have some decrease flexion and extension of your knee",
+    "this is a normal x-ray of your left knee, you may just have a little bit of a strain going on",
+    "we'll work for you to do some physical therapy and I'd to go ahead and give you an anti-inflammatory medication to help with the pain",
+    "order meloxicam 15mg once a day... order a physical therapy referral... order an autoimmune profile",
+    "because your blood pressure is a little elevated today... continue to monitor it at home and send me a report in the next couple of weeks",
+    "continue you on your metformin 500mg twice a day",
+    "that sounds great"
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    1,
+    2
+  ],
+  "subcluster_labels": [
+    0,
+    1,
+    2,
+    0,
+    2,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    },
+    "topic": {
+      "0": "P",
+      "1": "O",
+      "2": "A",
+      "3": "S"
+    },
+    "llm": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "P",
+      "2": "A",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "P",
+    "2": "A",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18123465776443481,
+    "calinski_harabasz_score": 3.0926733730443208,
+    "davies_bouldin_score": 0.961177735747309
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9965928792953491,
+      0.9960342645645142,
+      0.9962475895881653
+    ],
+    [
+      0.9965928792953491,
+      1.0,
+      0.9961273074150085,
+      0.9952144026756287
+    ],
+    [
+      0.9960342645645142,
+      0.9961273074150085,
+      1.0000001192092896,
+      0.992329478263855
+    ],
+    [
+      0.9962475895881653,
+      0.9952144026756287,
+      0.992329478263855,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11578096449375153,
+    "1": 0.2527587115764618,
+    "2": 0.2067459523677826,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "it's been mostly my knees",
+        "that sounds great"
+      ]
+    },
+    "0": {
+      "1": [
+        "I've been doing more stair type workouts, which I thought was building muscle on my knees and supposed to help",
+        "this is a normal x-ray of your left knee, you may just have a little bit of a strain going on",
+        "we'll work for you to do some physical therapy and I'd to go ahead and give you an anti-inflammatory medication to help with the pain",
+        "because your blood pressure is a little elevated today... continue to monitor it at home and send me a report in the next couple of weeks"
+      ],
+      "2": [
+        "no, but I should mention that I had a rotator cuff repair about two years ago",
+        "your blood pressure's pretty high today, you might be a little nervous here"
+      ],
+      "0": [
+        "my diabetes... I monitor that and I've been taking medication for that, and that hasn't elevated in any way since the joint pain"
+      ]
+    },
+    "3": {
+      "0": [
+        "your left knee you do have a slight erythema and edema. There is a small effusion present over your left knee, you have some decrease flexion and extension of your knee"
+      ]
+    },
+    "1": {
+      "0": [
+        "order meloxicam 15mg once a day... order a physical therapy referral... order an autoimmune profile",
+        "continue you on your metformin 500mg twice a day"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+soap_category,main_cluster,subcluster,phrase
+O,0,2,"I've been going to therapy once a week for the past year, mostly virtually, but starting to get in-person. Virtual was a bit of a struggle, but I feel being in-person with someone really helps me."
+O,0,1,"Yes, I do. I have my husband and my kids are down the street from me, I'm very lucky."
+O,0,0,"I've been using the cuff once a day, and they seem pretty normal."
+P,3,0,"slight 2/6 systolic ejection murmur, which we've heard in the past, that's stable. Your lungs are nice and clear, and you have some trace lower extremity edema bilaterally."
+S,1,0,you were talking about some nasal congestion
+O,0,0,"you're due for a mammogram, we'll go ahead and schedule that."
+A,2,0,Can I take all my medicine at the same time? Does it matter?
+A,2,0,"You can set an alarm that it reminds you to take your medication. But, you can, you can take them altogether."
+O,0,1,"I don't think. It doesn't sound to me I need to start you on any medication at this time, unless you feel differently."
+O,0,0,"Continue on the lisinopril, 20 milligrams a day. And I want you to continue to watch your blood pressures as, and if they start rising, I want you to contact me."

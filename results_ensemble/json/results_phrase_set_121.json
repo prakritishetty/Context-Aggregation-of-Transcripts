@@ -1,0 +1,211 @@
+{
+  "phrases": [
+    "joint pain.",
+    "over the the weekend, we've been moving boxes up and down our basements stairs, and by the end of the day my knees were just killing me.",
+    "equally painful.",
+    "it was just the repetition and the weight of the boxes.",
+    "a little tylenol. I iced them for a bit. Nothing really seemed to help, though.",
+    "saturday night it kept me up for a bit. They were pretty sore.",
+    "does it prevent you from doing,, your activities of daily living, walking and exercising and things that ?",
+    "Andrew is a 62-year-old male with a past medical history significant for a kidney transplant, hypothyroidism, and arthritis.",
+    "i know that you've had the kidney transplant a few years ago for some polycystic kidneys.",
+    "you're taking your immunosuppressive medications ? [patient] yes, i am.",
+    "in terms of your hyperthyroidism, how are you doing with the synthroid ? are you doing ? [patient], yes, i am. [doctor] you're taking it regularly ? [patient] on the clock, yes.",
+    "it's hard because you ca n't take certain medications 'cause of your kidney transplant.",
+    "every once in a while, my elbow, but nothing, nothing out of the ordinary.",
+    "no headaches ? [patient] no headaches.",
+    "on physical examination, on your heart exam, i do appreciate a little two out of six systolic ejection murmur- [patient] mm-. [doctor]. Which we've heard in the past., that seems stable.",
+    "on your knee exam, there is some edema and some erythema of your knee, but your left knee looks fine, ?, you do have some pain to palpation of the knee and some decreased range of motion,, on exam.",
+    "x-ray before you came in... shows that there's good bony alignment. There's no acute fracture.",
+    "your white blood cell count is not elevated, which is good., we get concerned about that in somebody who's immunocompromised. [patient] mm-. [doctor] and it looks your kidney function is also very good.",
+    "for your knee pain, that this is an acute exacerbation of your arthritis, ? i wan na go ahead and if. And prescribe some ultram 50 milligrams every six hours as needed.",
+    "i also wan na go ahead and just order an autoimmune panel.",
+    "i wan na go ahead and order some thyroid labs.",
+    "we'll talk about further imaging and possibly referral to physical therapy.",
+    "continue you on this. On the synthroid.",
+    "continue current regimen",
+    "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan.",
+    "you ca n't take some of those ant nflammatory medications because of your kidney transplant."
+  ],
+  "cluster_labels": [
+    3,
+    0,
+    3,
+    1,
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    3,
+    3,
+    0
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15690477192401886,
+    "calinski_harabasz_score": 5.694600903454988,
+    "davies_bouldin_score": 1.4231497273279599
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9981626272201538,
+      0.9934751987457275,
+      0.9944066405296326
+    ],
+    [
+      0.9981626272201538,
+      0.9999995231628418,
+      0.9932271242141724,
+      0.9981992244720459
+    ],
+    [
+      0.9934751987457275,
+      0.9932271242141724,
+      1.0,
+      0.9905423521995544
+    ],
+    [
+      0.9944066405296326,
+      0.9981992244720459,
+      0.9905423521995544,
+      0.9999996423721313
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.028434161096811295,
+    "1": 0.07212706655263901,
+    "2": 0.0,
+    "3": 0.27881935238838196
+  },
+  "cluster_phrases": {
+    "3": {
+      "2": [
+        "joint pain.",
+        "continue current regimen"
+      ],
+      "0": [
+        "equally painful."
+      ],
+      "1": [
+        "Patient Agreements: The patient understands and agrees with the recommended medical treatment plan."
+      ]
+    },
+    "0": {
+      "2": [
+        "over the the weekend, we've been moving boxes up and down our basements stairs, and by the end of the day my knees were just killing me.",
+        "a little tylenol. I iced them for a bit. Nothing really seemed to help, though.",
+        "saturday night it kept me up for a bit. They were pretty sore.",
+        "i know that you've had the kidney transplant a few years ago for some polycystic kidneys.",
+        "on physical examination, on your heart exam, i do appreciate a little two out of six systolic ejection murmur- [patient] mm-. [doctor]. Which we've heard in the past., that seems stable."
+      ],
+      "0": [
+        "you're taking your immunosuppressive medications ? [patient] yes, i am.",
+        "your white blood cell count is not elevated, which is good., we get concerned about that in somebody who's immunocompromised. [patient] mm-. [doctor] and it looks your kidney function is also very good."
+      ],
+      "1": [
+        "it's hard because you ca n't take certain medications 'cause of your kidney transplant.",
+        "on your knee exam, there is some edema and some erythema of your knee, but your left knee looks fine, ?, you do have some pain to palpation of the knee and some decreased range of motion,, on exam.",
+        "x-ray before you came in... shows that there's good bony alignment. There's no acute fracture.",
+        "for your knee pain, that this is an acute exacerbation of your arthritis, ? i wan na go ahead and if. And prescribe some ultram 50 milligrams every six hours as needed.",
+        "you ca n't take some of those ant nflammatory medications because of your kidney transplant."
+      ]
+    },
+    "1": {
+      "2": [
+        "it was just the repetition and the weight of the boxes."
+      ],
+      "0": [
+        "does it prevent you from doing,, your activities of daily living, walking and exercising and things that ?",
+        "in terms of your hyperthyroidism, how are you doing with the synthroid ? are you doing ? [patient], yes, i am. [doctor] you're taking it regularly ? [patient] on the clock, yes.",
+        "every once in a while, my elbow, but nothing, nothing out of the ordinary.",
+        "no headaches ? [patient] no headaches."
+      ],
+      "1": [
+        "i also wan na go ahead and just order an autoimmune panel.",
+        "i wan na go ahead and order some thyroid labs.",
+        "we'll talk about further imaging and possibly referral to physical therapy.",
+        "continue you on this. On the synthroid."
+      ]
+    },
+    "2": {
+      "0": [
+        "Andrew is a 62-year-old male with a past medical history significant for a kidney transplant, hypothyroidism, and arthritis."
+      ]
+    }
+  }
+}

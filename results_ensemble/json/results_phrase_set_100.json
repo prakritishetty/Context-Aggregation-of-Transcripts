@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "Injury occurred while moving boxes during his son's college dorm move, resulting in lower back pain.",
+    "Symptoms began approximately four months ago.",
+    "Initially experienced tingling in the toes that resolved within an hour.",
+    "Reports leg weakness only when carrying heavy objects.",
+    "Experiences sharp lower back pain when turning or rolling in sleep, resolving with repositioning.",
+    "Utilized Tylenol, ibuprofen, heat, and ice for pain with minimal relief.",
+    "Previously declined an MRI due to insurance concerns.",
+    "Physical exam revealed decreased lumbar flexion/extension, positive straight leg raise, and paraspinal muscle spasm.",
+    "Bilateral lower extremity strength is intact.",
+    "Lumbar X-ray showed no acute bony abnormalities or fractures.",
+    "Diagnosed with possible acute disc herniation based on history and exam.",
+    "Ordered lumbar spine MRI to evaluate disc herniation.",
+    "Prescribed meloxicam 15 mg daily for pain management.",
+    "Referral to physical therapy through the health system arranged."
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    3,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    2,
+    2,
+    1,
+    3
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "P",
+      "3": "A"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1440308839082718,
+    "calinski_harabasz_score": 2.9258473153446545,
+    "davies_bouldin_score": 1.3812199463696808
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9973728060722351,
+      0.9955397248268127,
+      0.994811475276947
+    ],
+    [
+      0.9973728060722351,
+      1.0000005960464478,
+      0.9973453283309937,
+      0.9980868101119995
+    ],
+    [
+      0.9955397248268127,
+      0.9973453283309937,
+      0.9999996423721313,
+      0.995983362197876
+    ],
+    [
+      0.994811475276947,
+      0.9980868101119995,
+      0.995983362197876,
+      0.9999997615814209
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.15464268624782562,
+    "1": 0.05934522673487663,
+    "2": 0.38856786489486694,
+    "3": 0.12505783140659332
+  },
+  "cluster_phrases": {
+    "0": {
+      "1": [
+        "Injury occurred while moving boxes during his son's college dorm move, resulting in lower back pain."
+      ],
+      "0": [
+        "Physical exam revealed decreased lumbar flexion/extension, positive straight leg raise, and paraspinal muscle spasm."
+      ],
+      "2": [
+        "Lumbar X-ray showed no acute bony abnormalities or fractures."
+      ]
+    },
+    "1": {
+      "2": [
+        "Symptoms began approximately four months ago."
+      ],
+      "0": [
+        "Initially experienced tingling in the toes that resolved within an hour.",
+        "Experiences sharp lower back pain when turning or rolling in sleep, resolving with repositioning.",
+        "Prescribed meloxicam 15 mg daily for pain management."
+      ],
+      "1": [
+        "Utilized Tylenol, ibuprofen, heat, and ice for pain with minimal relief.",
+        "Previously declined an MRI due to insurance concerns.",
+        "Bilateral lower extremity strength is intact."
+      ]
+    },
+    "3": {
+      "0": [
+        "Reports leg weakness only when carrying heavy objects.",
+        "Referral to physical therapy through the health system arranged."
+      ]
+    },
+    "2": {
+      "0": [
+        "Diagnosed with possible acute disc herniation based on history and exam.",
+        "Ordered lumbar spine MRI to evaluate disc herniation."
+      ]
+    }
+  }
+}

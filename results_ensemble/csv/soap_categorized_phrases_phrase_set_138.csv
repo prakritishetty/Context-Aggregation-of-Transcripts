@@ -1,0 +1,20 @@
+soap_category,main_cluster,subcluster,phrase
+P,3,1,I'm doing except for my elbow here.
+P,3,2,moving boxes from the truck into the house and I lifted a box up and I felt this popping... and this strain as I was lifting it up onto the shelf.
+P,3,0,This was just yesterday.
+P,3,1,"I put ice on it. And I've been taking ibuprofen, but it still hurts a lot."
+P,3,1,But as soon as I take it off it starts throbbing and hurting again.
+A,2,2,"Yes, I do. [...] Just an epipen."
+O,0,2,"Carotid. - [Doctor]., no,, your,, neck surgery."
+A,2,0,Tender around that area.
+P,3,1,It hurts when I do that.
+A,2,1,That's about it.
+A,2,1,Swelling there and some redness.
+S,1,2,Pain with flexion and extension of your elbow.
+S,1,0,Pain on the dorsal aspect of your forearm.
+O,0,0,The bones are lined up properly. There's no fracture.
+S,1,1,There's a little bit of swelling there on the lateral elbow.
+O,0,1,"Lateral epicondylitis, and this is inflammation of this area where this tendon in- inserts."
+O,0,2,"Motrin, 800 milligrams every six hours."
+A,2,1,A sling for comfort.
+S,1,1,Follow up with me as needed if you continue to have pain.

@@ -1,0 +1,187 @@
+{
+  "phrases": [
+    "I'm doing except for my elbow here.",
+    "moving boxes from the truck into the house and I lifted a box up and I felt this popping... and this strain as I was lifting it up onto the shelf.",
+    "This was just yesterday.",
+    "I put ice on it. And I've been taking ibuprofen, but it still hurts a lot.",
+    "But as soon as I take it off it starts throbbing and hurting again.",
+    "Yes, I do. [...] Just an epipen.",
+    "Carotid. - [Doctor]., no,, your,, neck surgery.",
+    "Tender around that area.",
+    "It hurts when I do that.",
+    "That's about it.",
+    "Swelling there and some redness.",
+    "Pain with flexion and extension of your elbow.",
+    "Pain on the dorsal aspect of your forearm.",
+    "The bones are lined up properly. There's no fracture.",
+    "There's a little bit of swelling there on the lateral elbow.",
+    "Lateral epicondylitis, and this is inflammation of this area where this tendon in- inserts.",
+    "Motrin, 800 milligrams every six hours.",
+    "A sling for comfort.",
+    "Follow up with me as needed if you continue to have pain."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    0,
+    2,
+    3,
+    2,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    1,
+    2,
+    0,
+    1,
+    1,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1,
+    2,
+    0,
+    0,
+    1,
+    1,
+    2,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "P",
+      "2": "A",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15866047143936157,
+    "calinski_harabasz_score": 4.123780595692778,
+    "davies_bouldin_score": 1.5939011517046948
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9985867142677307,
+      0.9981182813644409,
+      0.997442901134491
+    ],
+    [
+      0.9985867142677307,
+      0.9999997019767761,
+      0.9982036352157593,
+      0.997560977935791
+    ],
+    [
+      0.9981182813644409,
+      0.9982036352157593,
+      0.9999999403953552,
+      0.9978640675544739
+    ],
+    [
+      0.997442901134491,
+      0.997560977935791,
+      0.9978640675544739,
+      0.9999998211860657
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.08928269147872925,
+    "1": 0.19431889057159424,
+    "2": 0.11159376800060272,
+    "3": 0.122198186814785
+  },
+  "cluster_phrases": {
+    "3": {
+      "1": [
+        "I'm doing except for my elbow here.",
+        "I put ice on it. And I've been taking ibuprofen, but it still hurts a lot.",
+        "But as soon as I take it off it starts throbbing and hurting again.",
+        "It hurts when I do that."
+      ],
+      "2": [
+        "moving boxes from the truck into the house and I lifted a box up and I felt this popping... and this strain as I was lifting it up onto the shelf."
+      ],
+      "0": [
+        "This was just yesterday."
+      ]
+    },
+    "2": {
+      "2": [
+        "Yes, I do. [...] Just an epipen."
+      ],
+      "0": [
+        "Tender around that area."
+      ],
+      "1": [
+        "That's about it.",
+        "Swelling there and some redness.",
+        "A sling for comfort."
+      ]
+    },
+    "0": {
+      "2": [
+        "Carotid. - [Doctor]., no,, your,, neck surgery.",
+        "Motrin, 800 milligrams every six hours."
+      ],
+      "0": [
+        "The bones are lined up properly. There's no fracture."
+      ],
+      "1": [
+        "Lateral epicondylitis, and this is inflammation of this area where this tendon in- inserts."
+      ]
+    },
+    "1": {
+      "2": [
+        "Pain with flexion and extension of your elbow."
+      ],
+      "0": [
+        "Pain on the dorsal aspect of your forearm."
+      ],
+      "1": [
+        "There's a little bit of swelling there on the lateral elbow.",
+        "Follow up with me as needed if you continue to have pain."
+      ]
+    }
+  }
+}

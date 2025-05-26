@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "i was in a car crash",
+    "the third crash i had surgery but i was fine until this crash",
+    "that's when i was coming home from the pain clinic because my neck hurt and my back hurt but that was in february",
+    "they had prescribed it recently i was i was on fentanyl [...] i have n't gotten a prescription for several weeks",
+    "on a scale of one to ten [...] twelve",
+    "it's the sharp incapacitating pain i ca n't work",
+    "numbness [patient] my left arm and my leg",
+    "any spasms [patient] of course",
+    "pain on palpation both on the bony process and on the muscle",
+    "moderate range of movement",
+    "we're gon na upgrade to an mri",
+    "robaxin 1500 mg every 6 to 8 hours",
+    "i want you to put ice on that [...] and roll through these exercises every morning",
+    "we'll see about locally injecting the area",
+    "we're gon na give you off for work because you ca n't move"
+  ],
+  "cluster_labels": [
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    1,
+    3,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "S",
+      "2": "O",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "S",
+    "2": "O",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1207176223397255,
+    "calinski_harabasz_score": 3.351321184400704,
+    "davies_bouldin_score": 1.2433673916583656
+  },
+  "similarity_matrix": [
+    [
+      0.9999999403953552,
+      0.9964766502380371,
+      0.9958378076553345,
+      0.9981119632720947
+    ],
+    [
+      0.9964766502380371,
+      0.9999998211860657,
+      0.9961042404174805,
+      0.9960349798202515
+    ],
+    [
+      0.9958378076553345,
+      0.9961042404174805,
+      1.0,
+      0.9951145052909851
+    ],
+    [
+      0.9981119632720947,
+      0.9960349798202515,
+      0.9951145052909851,
+      1.0
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.1208343654870987,
+    "1": -0.02581232413649559,
+    "2": 0.0,
+    "3": 0.10291740298271179
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "i was in a car crash",
+        "on a scale of one to ten [...] twelve"
+      ],
+      "0": [
+        "numbness [patient] my left arm and my leg",
+        "any spasms [patient] of course",
+        "pain on palpation both on the bony process and on the muscle",
+        "robaxin 1500 mg every 6 to 8 hours"
+      ],
+      "1": [
+        "moderate range of movement"
+      ]
+    },
+    "2": {
+      "0": [
+        "the third crash i had surgery but i was fine until this crash"
+      ]
+    },
+    "1": {
+      "2": [
+        "that's when i was coming home from the pain clinic because my neck hurt and my back hurt but that was in february"
+      ],
+      "0": [
+        "they had prescribed it recently i was i was on fentanyl [...] i have n't gotten a prescription for several weeks"
+      ],
+      "1": [
+        "it's the sharp incapacitating pain i ca n't work",
+        "i want you to put ice on that [...] and roll through these exercises every morning",
+        "we're gon na give you off for work because you ca n't move"
+      ]
+    },
+    "3": {
+      "0": [
+        "we're gon na upgrade to an mri",
+        "we'll see about locally injecting the area"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+soap_category,main_cluster,subcluster,phrase
+P,0,2,I’ve been considering a breast reduction for six or seven years.
+P,0,2,"I do have a lot of pain in my back and neck, but I don’t know if it’s all from my breasts."
+P,0,1,I mostly wear a 34 E sports bra because it’s more comfortable.
+O,2,2,I experience numbness and tingling in my hands sometimes.
+S,1,2,They [breasts] are always sweaty underneath.
+O,2,0,My activities are limited because of the size—working out and running hurt.
+P,0,0,"My mother had breast cancer at age 40, so they recommended mammograms starting at 30."
+O,2,1,I take propranolol for migraines.
+O,2,1,I lost 10 pounds recently and want to lose 20 more.
+P,0,1,"I’ll be on my husband’s insurance plan in July, which is not Blue Cross."
+A,3,2,We may wait until July to submit for insurance approval.
+S,1,0,"The surgery involves incisions around the nipple, straight down, and underneath, forming an anchor shape."
+P,0,2,You’ll have drains for about a week post-surgery.
+A,3,0,There’s a 30% chance breastfeeding may not be possible after the procedure.
+A,3,1,Scars may take a year to mature and fade.
+S,1,0,"A free nipple graft may be needed, which could affect sensation."
+P,0,1,You’ll need to avoid heavy lifting for six weeks and driving for two to three weeks.
+S,1,1,An overnight hospital stay is required to manage pain and nausea.
+O,2,1,I want to be a B or C cup.
+P,0,2,I’m ready as soon as my insurance is switched over.
+P,0,2,You’re a great candidate for a breast reduction.
+P,0,1,We’ll submit photos and documentation to your insurance once you’re on the new plan.
+A,3,0,"The minimum tissue resection based on your body surface area is 1,792 grams."
+S,1,1,Your breasts are asymmetrical with severe ptosis bilaterally.
+S,1,1,"No masses, tenderness, or lymphadenopathy were found during the exam."

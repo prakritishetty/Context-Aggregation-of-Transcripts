@@ -1,0 +1,15 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,2,numbness and tingling of both hands
+S,0,1,broken them [both wrists] in a motor vehicle accident last december
+S,0,1,splint helps. Both have really gotten worse over the last month
+S,0,0,mild stiffness in my neck... contusion from hitting my head during the accident
+S,0,2,tingling and numbness radiates from the hands into the forearms
+S,0,2,3rd and 4th fingers on the right and 4th and 5th on the left
+S,0,1,"symptoms come and go, mostly at night"
+S,0,2,denies complete loss of sensation but notes fingers feel less sensitive
+P,2,2,nerve pain medicine prescribed but not taken consistently
+A,3,0,currently takes Coreg for hypertension and Lexapro for anxiety
+S,0,2,Tinel’s sign positive at both wrists and elbows
+O,1,0,bilateral carpal tunnel syndrome or cubital tunnel syndrome
+P,2,0,schedule EMG testing to pinpoint nerve irritation
+P,2,1,consider referral to Hand Clinic for injections or surgery

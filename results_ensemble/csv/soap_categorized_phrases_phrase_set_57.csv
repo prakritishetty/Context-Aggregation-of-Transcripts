@@ -1,0 +1,21 @@
+soap_category,main_cluster,subcluster,phrase
+S,1,2,"I'm 100, we can't really get around that one."
+S,1,0,My doctor says that I have a heart murmur.
+S,1,1,"I get short of breath if I walk too fast or too long, or if I tried to drink a whole glass of water without stopping."
+P,2,2,"I do have a walker, I don’t know. Maybe when I walk to the end of the driveway or I walk around the culdesac."
+S,1,0,I started taking pain pills for my legs.
+S,1,1,"My ankles swell... I lost a little bit of weight, but I still weigh a 120 pounds, but I normally weigh about 130 pounds."
+S,1,1,I feel overly tired because I take all that medication.
+S,1,0,"It was my son, not my brother."
+O,0,2,4/6 systolic murmur at the upper sternal border with mild radiation to the carotids.
+A,3,2,Aortic stenosis... one of your main valves of your heart has narrowed a bit.
+A,3,0,"Transcatheter aortic valve replacement, or we just call it TAVR."
+P,2,0,"Because of your age and medical history, that wouldn’t be a good option for you."
+O,0,0,Sinus rhythm with frequent PVCs as well as anterior septal infarct pattern.
+A,3,1,Statin could be indicated... possibly to stop your statin.
+P,2,0,We will see you back here in about three or four weeks to discuss the results and your next steps.
+S,1,1,Compared to six months ago or a year ago? I would say probably 70 to 80% from about six months ago.
+S,1,1,I do take a pill for that when it does get bad... only when I do feel dizzy.
+O,0,1,Let’s schedule you for an echocardiogram... to assess your overall cardiac structure and function.
+O,0,0,The valve view of where diseased... to assess overa- overall cardiac structure and function.
+P,2,1,We don’t have to make any decisions today... wanted to go over a couple of these things.

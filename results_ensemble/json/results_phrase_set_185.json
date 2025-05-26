@@ -1,0 +1,159 @@
+{
+  "phrases": [
+    "Gabriel is a 43-year-old male today here for back pain evaluation and also has a past medical history of diabetes, high blood pressure, and high cholesterol.",
+    "I was working in the yard and bent over to pick something up and I got this pain and across the lower part of my back and it went down my left leg and it's been going on for about four days and just doesn\u2019t seem to be getting any better.",
+    "no surgeries I\u2019ve had back pain occasionally over the years.",
+    "I\u2019ve had ibuprofen it it helped some.",
+    "no loss of bowel or bladder function at all.",
+    "I have had some some swelling in my ankles though.",
+    "it started maybe I don\u2019t know a month or two after I started the norvasc.",
+    "you do have this one plus nonpitting edema of your lower extremities.",
+    "start you on some ant-inflammatory naprosyn 500 milligrams twice a day and flexeril ten milligrams twice a day... refer you to physical therapy.",
+    "do n\u2019t think you need an x-ray at this stage.",
+    "order another hemoglobin A1c today we\u2019ll check that again today and and reemphasizing the controlling your diet and exercise is super important.",
+    "stop the norvasc and we\u2019ll put you on some hydrochlorothiazide ten milligrams once a day.",
+    "order a CBC and a BMP... get another EKG and also a chest x-ray.",
+    "come back in about two weeks."
+  ],
+  "cluster_labels": [
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    3,
+    0,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    1,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "topic": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "O",
+      "2": "S",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "O",
+    "2": "S",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.18368086218833923,
+    "calinski_harabasz_score": 3.506428698404602,
+    "davies_bouldin_score": 0.9099133907137453
+  },
+  "similarity_matrix": [
+    [
+      0.9999997019767761,
+      0.9969695806503296,
+      0.9948207139968872,
+      0.9958938360214233
+    ],
+    [
+      0.9969695806503296,
+      1.0,
+      0.9950506687164307,
+      0.9952378273010254
+    ],
+    [
+      0.9948207139968872,
+      0.9950506687164307,
+      0.9999996423721313,
+      0.9924540519714355
+    ],
+    [
+      0.9958938360214233,
+      0.9952378273010254,
+      0.9924540519714355,
+      0.9999996423721313
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.11037646979093552,
+    "1": -0.02459154836833477,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "2": {
+      "0": [
+        "Gabriel is a 43-year-old male today here for back pain evaluation and also has a past medical history of diabetes, high blood pressure, and high cholesterol."
+      ]
+    },
+    "0": {
+      "2": [
+        "I was working in the yard and bent over to pick something up and I got this pain and across the lower part of my back and it went down my left leg and it's been going on for about four days and just doesn\u2019t seem to be getting any better."
+      ],
+      "1": [
+        "no surgeries I\u2019ve had back pain occasionally over the years.",
+        "I have had some some swelling in my ankles though.",
+        "it started maybe I don\u2019t know a month or two after I started the norvasc.",
+        "do n\u2019t think you need an x-ray at this stage.",
+        "stop the norvasc and we\u2019ll put you on some hydrochlorothiazide ten milligrams once a day."
+      ],
+      "0": [
+        "I\u2019ve had ibuprofen it it helped some."
+      ]
+    },
+    "1": {
+      "2": [
+        "no loss of bowel or bladder function at all."
+      ],
+      "0": [
+        "you do have this one plus nonpitting edema of your lower extremities."
+      ],
+      "1": [
+        "start you on some ant-inflammatory naprosyn 500 milligrams twice a day and flexeril ten milligrams twice a day... refer you to physical therapy.",
+        "order a CBC and a BMP... get another EKG and also a chest x-ray.",
+        "come back in about two weeks."
+      ]
+    },
+    "3": {
+      "0": [
+        "order another hemoglobin A1c today we\u2019ll check that again today and and reemphasizing the controlling your diet and exercise is super important."
+      ]
+    }
+  }
+}

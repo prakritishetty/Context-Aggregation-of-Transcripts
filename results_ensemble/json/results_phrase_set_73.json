@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "swelling and the pain",
+    "felt something stretched",
+    "squatting or bending",
+    "Frequent water skier",
+    "no side effects.",
+    "Aleve twice a day",
+    "ecchymosis, edema, effusion present,",
+    "pain to palpation medially,",
+    "decreased range of motion,",
+    "negative varus and valgus test,",
+    "negative Lachman sign.",
+    "medial collateral ligament strain",
+    "agrees with the plan"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    1,
+    1,
+    3,
+    1,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    2,
+    0,
+    0,
+    2
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "S",
+      "1": "P",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    },
+    "llm": {
+      "0": "A",
+      "1": "S",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "A",
+      "1": "P",
+      "2": "S",
+      "3": "O"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "A",
+    "1": "P",
+    "2": "S",
+    "3": "O"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.09801702201366425,
+    "calinski_harabasz_score": 2.5575772457997443,
+    "davies_bouldin_score": 1.3093493225359323
+  },
+  "similarity_matrix": [
+    [
+      1.000000238418579,
+      0.9984776973724365,
+      0.996913731098175,
+      0.9979816675186157
+    ],
+    [
+      0.9984776973724365,
+      1.000000238418579,
+      0.9948287606239319,
+      0.9984642267227173
+    ],
+    [
+      0.996913731098175,
+      0.9948287606239319,
+      1.0000001192092896,
+      0.9945852160453796
+    ],
+    [
+      0.9979816675186157,
+      0.9984642267227173,
+      0.9945852160453796,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.03139623999595642,
+    "1": -0.09040208160877228,
+    "2": 0.0,
+    "3": 0.1124100387096405
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "swelling and the pain",
+        "negative varus and valgus test,"
+      ],
+      "0": [
+        "ecchymosis, edema, effusion present,"
+      ],
+      "1": [
+        "pain to palpation medially,",
+        "decreased range of motion,"
+      ]
+    },
+    "1": {
+      "2": [
+        "felt something stretched",
+        "agrees with the plan"
+      ],
+      "0": [
+        "squatting or bending"
+      ],
+      "1": [
+        "Frequent water skier",
+        "Aleve twice a day"
+      ]
+    },
+    "3": {
+      "0": [
+        "no side effects.",
+        "negative Lachman sign."
+      ]
+    },
+    "2": {
+      "0": [
+        "medial collateral ligament strain"
+      ]
+    }
+  }
+}

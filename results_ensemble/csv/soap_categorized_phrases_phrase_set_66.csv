@@ -1,0 +1,13 @@
+soap_category,main_cluster,subcluster,phrase
+S,0,0,Headaches... have been getting a lot more frequent and a lot more severe.
+S,0,2,Pulsing sensation... mostly on my side and it even seems it's behind my eye.
+S,0,0,"When I start to jog, my headaches come back on a lot worse."
+S,0,2,Ringing in my ears for a few months... blurred vision on the side of my vision.
+S,0,0,"No, I haven't [numbness or tingling in hands, feet, or face]."
+S,0,1,Funduscopic exam shows papilledema.
+P,3,0,Concerning for idiopathic intracranial hypertension... increased pressure in your brain without any known cause.
+O,1,0,"If the pressure continues to increase, this can lead to some permanent changes in your vision."
+P,3,0,An MRI... spinal tap to evaluate the pressure in the brain... seen by a neurophthalmologist.
+O,1,0,Medications to help decrease that pressure... exercise and weight loss are also important.
+A,2,0,MRI needs preapproval from insurance... will contact you to schedule.
+S,0,1,Does that mean I will need surgery?

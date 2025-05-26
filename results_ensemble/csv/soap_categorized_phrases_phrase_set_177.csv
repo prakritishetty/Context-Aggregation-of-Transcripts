@@ -1,0 +1,17 @@
+soap_category,main_cluster,subcluster,phrase
+A,2,2,presents for hospital follow-up after an anterior STEMI status post drug-eluting stent and LAD and newly reduced ejection fraction ejection fraction thirty five percent and moderate mitral regurgitation
+A,2,0,past medical history significant for CAD status post prior status post prior RCA stent in twenty eighteen hypertension and diabetes mellitus
+S,1,2,I've been feeling tired every... but overall I feel pretty [good]
+S,1,0,I've been doing some short walks around the house around the block... I stay pretty close to the house
+S,1,2,I've been taking my medicine... I don't want my [vessel] to close up
+S,1,1,they told me that I'm really gonna have to watch salt and they said that there is a lot of salt in pizza
+A,2,1,Grade 3 out of 6 systolic ejection murmur... heard at the left base
+A,2,1,newly reduced left ventricular dysfunction... ejection fraction thirty-five percent
+P,0,2,"Continue aspirin 81 mg daily, Brilinta 90 mg twice daily, Lipitor 80 mg daily, Toprol 50 mg daily... refer you to cardiac rehab"
+P,0,2,Add Aldactone 12.5 mg daily... repeat echocardiogram in about two months
+P,0,0,hoping to be able to go out and do [gardening and photography]
+P,0,0,vital signs look good today
+P,0,0,normal sinus rhythm... evolutionary changes anticipated
+O,3,0,"no swelling or edema on your radial artery... cath site is clean, dry, and intact"
+P,0,1,continue home blood pressure monitoring... blood pressures seem fine at this time
+P,0,0,you're very compliant... medications and following through with those

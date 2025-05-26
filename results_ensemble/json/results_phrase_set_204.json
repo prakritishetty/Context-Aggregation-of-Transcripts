@@ -1,0 +1,163 @@
+{
+  "phrases": [
+    "sharp pain on the side of my abdomen below my ribs for the last several days.",
+    "the pain moves to my lower abdomen into my groin",
+    "comes and goes... pretty bad... can't find a comfortable position.",
+    "it kinda burns a little bit [when urinating]",
+    "urine looks a little dark sometimes.",
+    "I've had kidney stones before... but this is taking a lot longer.",
+    "my father had [kidney stones].",
+    "taken some Tylenol but it hasn't really helped.",
+    "positive CVA tenderness on the flank... tenderness over your kidney... inflammation there.",
+    "0.5 cm kidney stone located in the proximal ureter... no evidence of hydronephrosis.",
+    "acute nephrolithiasis or kidney stone.",
+    "push fluids... prescribed oxycodone 5 mg every 6 to 8 hours... alternate with Tylenol.",
+    "basic metabolic panel, urinalysis, and urine culture.",
+    "follow up in 1 to 2 weeks... discuss further treatment such as lithotripsy or ureteroscopy.",
+    "contact me if you're having worsening symptoms over the next week."
+  ],
+  "cluster_labels": [
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    1,
+    2,
+    1,
+    2,
+    0
+  ],
+  "subcluster_labels": [
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    1,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "A",
+      "1": "O",
+      "2": "P",
+      "3": "S"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "S",
+      "1": "O",
+      "2": "P",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "S",
+    "1": "O",
+    "2": "P",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15593460202217102,
+    "calinski_harabasz_score": 3.6522093809081784,
+    "davies_bouldin_score": 1.2878681001650263
+  },
+  "similarity_matrix": [
+    [
+      0.9999998807907104,
+      0.996327817440033,
+      0.9967789649963379,
+      0.9979871511459351
+    ],
+    [
+      0.996327817440033,
+      1.000000238418579,
+      0.9979053735733032,
+      0.9975686073303223
+    ],
+    [
+      0.9967789649963379,
+      0.9979053735733032,
+      1.0000001192092896,
+      0.9977788925170898
+    ],
+    [
+      0.9979871511459351,
+      0.9975686073303223,
+      0.9977788925170898,
+      1.000000238418579
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.1279197335243225,
+    "1": 0.059906862676143646,
+    "2": 0.040949247777462006,
+    "3": 0.4071696102619171
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "sharp pain on the side of my abdomen below my ribs for the last several days.",
+        "the pain moves to my lower abdomen into my groin"
+      ]
+    },
+    "0": {
+      "2": [
+        "comes and goes... pretty bad... can't find a comfortable position."
+      ],
+      "0": [
+        "it kinda burns a little bit [when urinating]",
+        "urine looks a little dark sometimes.",
+        "taken some Tylenol but it hasn't really helped.",
+        "contact me if you're having worsening symptoms over the next week."
+      ],
+      "1": [
+        "I've had kidney stones before... but this is taking a lot longer.",
+        "my father had [kidney stones]."
+      ]
+    },
+    "2": {
+      "2": [
+        "positive CVA tenderness on the flank... tenderness over your kidney... inflammation there."
+      ],
+      "0": [
+        "0.5 cm kidney stone located in the proximal ureter... no evidence of hydronephrosis.",
+        "follow up in 1 to 2 weeks... discuss further treatment such as lithotripsy or ureteroscopy."
+      ],
+      "1": [
+        "push fluids... prescribed oxycodone 5 mg every 6 to 8 hours... alternate with Tylenol."
+      ]
+    },
+    "1": {
+      "0": [
+        "acute nephrolithiasis or kidney stone.",
+        "basic metabolic panel, urinalysis, and urine culture."
+      ]
+    }
+  }
+}

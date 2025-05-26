@@ -1,0 +1,155 @@
+{
+  "phrases": [
+    "44-year-old female that presents today six weeks status post medial unicompartmental arthroplasty.",
+    "just still the numbness on this side.",
+    "That area of numbness will get smaller as the nerves that innervate the skin across the knee heal.",
+    "the incision looks nice.",
+    "x-rays... look good. Here's what you got going on in there., it looks good. Everything's lined up nicely.",
+    "keep doing your pt to work on your strength, range of motion, and endurance.",
+    "you're probably still gon na have aches and pains occasionally. I usually tell people it's two or three months before you feel you're back to yourself again.",
+    "I don't want you lifting greater than five or 10 pounds, and no standing or sitting longer than a half an hour., usually that means you ca n't do a ups job.",
+    "Resume driving when feel ready to do so.",
+    "we'll talk again in six weeks, and we can discuss your job again at that time.",
+    "I have no pain.",
+    "Anna will bring that note back in to you, and we'll talk in six weeks."
+  ],
+  "cluster_labels": [
+    3,
+    1,
+    0,
+    1,
+    2,
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    1
+  ],
+  "subcluster_labels": [
+    0,
+    2,
+    2,
+    0,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    2,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "A",
+      "2": "S",
+      "3": "O"
+    },
+    "topic": {
+      "0": "S",
+      "1": "O",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "O",
+      "1": "P",
+      "2": "S",
+      "3": "A"
+    },
+    "ensemble": {
+      "0": "P",
+      "1": "O",
+      "2": "S",
+      "3": "A"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "P",
+    "1": "O",
+    "2": "S",
+    "3": "A"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.15982401371002197,
+    "calinski_harabasz_score": 3.408770518436743,
+    "davies_bouldin_score": 1.2112006157376567
+  },
+  "similarity_matrix": [
+    [
+      1.0000003576278687,
+      0.9979092478752136,
+      0.9959995150566101,
+      0.9951367378234863
+    ],
+    [
+      0.9979092478752136,
+      1.000000238418579,
+      0.9976282715797424,
+      0.9931440353393555
+    ],
+    [
+      0.9959995150566101,
+      0.9976282715797424,
+      0.9999997615814209,
+      0.9909231662750244
+    ],
+    [
+      0.9951367378234863,
+      0.9931440353393555,
+      0.9909231662750244,
+      1.0000003576278687
+    ]
+  ],
+  "coherence_scores": {
+    "0": 0.09592067450284958,
+    "1": 0.2437373697757721,
+    "2": 0.010398264974355698,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "3": {
+      "0": [
+        "44-year-old female that presents today six weeks status post medial unicompartmental arthroplasty."
+      ]
+    },
+    "1": {
+      "2": [
+        "just still the numbness on this side.",
+        "I have no pain."
+      ],
+      "0": [
+        "the incision looks nice."
+      ],
+      "1": [
+        "we'll talk again in six weeks, and we can discuss your job again at that time.",
+        "Anna will bring that note back in to you, and we'll talk in six weeks."
+      ]
+    },
+    "0": {
+      "2": [
+        "That area of numbness will get smaller as the nerves that innervate the skin across the knee heal."
+      ],
+      "0": [
+        "keep doing your pt to work on your strength, range of motion, and endurance."
+      ],
+      "1": [
+        "Resume driving when feel ready to do so."
+      ]
+    },
+    "2": {
+      "1": [
+        "x-rays... look good. Here's what you got going on in there., it looks good. Everything's lined up nicely."
+      ],
+      "0": [
+        "you're probably still gon na have aches and pains occasionally. I usually tell people it's two or three months before you feel you're back to yourself again."
+      ],
+      "2": [
+        "I don't want you lifting greater than five or 10 pounds, and no standing or sitting longer than a half an hour., usually that means you ca n't do a ups job."
+      ]
+    }
+  }
+}

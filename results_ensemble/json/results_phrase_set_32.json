@@ -1,0 +1,183 @@
+{
+  "phrases": [
+    "Headache and high blood pressure",
+    "alright theresa i understand that you're you're having a bit of some headache here and your blood pressure has been running high",
+    "throbbing headaches on the top of my head",
+    "they're throbbing",
+    "I don't really take [chlorthalidone] because it gives me a stomachache",
+    "I probably take [metformin] every other day",
+    "sometimes I feel dizzy and my vision gets a little blurry",
+    "172 over 98",
+    "your blood pressure is running quite a bit high it was one seventy two over ninety eight",
+    "I love McDonald's I eat it all the time",
+    "a two out of six systolic ejection murmur... unchanged from last year",
+    "1+ pitting edema noted in the bilateral lower extremities",
+    "Continue current medication regimen",
+    "increase metformin to fifteen hundred milligrams",
+    "Monitor blood pressure three times a week",
+    "follow up in a month",
+    "speak to a nutritionist",
+    "Set a reminder on your iPhone",
+    "One seventy [blood sugar] this morning",
+    "You're retaining a lot of that salt that you're eating"
+  ],
+  "cluster_labels": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    1,
+    0,
+    3,
+    1,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "subcluster_labels": [
+    2,
+    2,
+    2,
+    1,
+    0,
+    1,
+    0,
+    2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1
+  ],
+  "soap_assignments": {
+    "prompt": {
+      "0": "P",
+      "1": "S",
+      "2": "O",
+      "3": "A"
+    },
+    "topic": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    },
+    "llm": {
+      "0": "S",
+      "1": "A",
+      "2": "P",
+      "3": "O"
+    },
+    "ensemble": {
+      "0": "O",
+      "1": "S",
+      "2": "A",
+      "3": "P"
+    }
+  },
+  "cluster_to_soap": {
+    "0": "O",
+    "1": "S",
+    "2": "A",
+    "3": "P"
+  },
+  "evaluation_metrics": {
+    "silhouette_score": 0.1881246119737625,
+    "calinski_harabasz_score": 4.851968184825605,
+    "davies_bouldin_score": 0.9054795978418304
+  },
+  "similarity_matrix": [
+    [
+      0.9999997615814209,
+      0.9966055154800415,
+      0.9951387643814087,
+      0.9942321181297302
+    ],
+    [
+      0.9966055154800415,
+      1.0,
+      0.9919635057449341,
+      0.9961729049682617
+    ],
+    [
+      0.9951387643814087,
+      0.9919635057449341,
+      1.0000003576278687,
+      0.9890135526657104
+    ],
+    [
+      0.9942321181297302,
+      0.9961729049682617,
+      0.9890135526657104,
+      0.9999999403953552
+    ]
+  ],
+  "coherence_scores": {
+    "0": -0.026905905455350876,
+    "1": 0.05678476020693779,
+    "2": 0.0,
+    "3": 0.0
+  },
+  "cluster_phrases": {
+    "0": {
+      "2": [
+        "Headache and high blood pressure",
+        "throbbing headaches on the top of my head",
+        "172 over 98",
+        "a two out of six systolic ejection murmur... unchanged from last year",
+        "One seventy [blood sugar] this morning"
+      ],
+      "0": [
+        "Continue current medication regimen",
+        "increase metformin to fifteen hundred milligrams",
+        "follow up in a month",
+        "speak to a nutritionist"
+      ],
+      "1": [
+        "Monitor blood pressure three times a week",
+        "Set a reminder on your iPhone"
+      ]
+    },
+    "1": {
+      "2": [
+        "alright theresa i understand that you're you're having a bit of some headache here and your blood pressure has been running high"
+      ],
+      "1": [
+        "they're throbbing",
+        "I probably take [metformin] every other day",
+        "I love McDonald's I eat it all the time",
+        "You're retaining a lot of that salt that you're eating"
+      ],
+      "0": [
+        "I don't really take [chlorthalidone] because it gives me a stomachache",
+        "sometimes I feel dizzy and my vision gets a little blurry"
+      ]
+    },
+    "3": {
+      "0": [
+        "your blood pressure is running quite a bit high it was one seventy two over ninety eight"
+      ]
+    },
+    "2": {
+      "0": [
+        "1+ pitting edema noted in the bilateral lower extremities"
+      ]
+    }
+  }
+}
